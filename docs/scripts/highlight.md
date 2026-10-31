@@ -67,7 +67,7 @@ This script first appeared in EPIC5-0.0.8.
 
 ## Source references
 
-- [script/highlight](../../script/highlight): list commands, marker, match priority, event-specific fields, and retained bugs.
-- [source/hook.c](../../source/hook.c): supported event names, prefix lookup, suppression, and hook dispatch.
-- [source/functions.c](../../source/functions.c) and [source/reg.c](../../source/reg.c): `remw`, event userhost lookup, and wildcard matching.
-- [source/parse.c](../../source/parse.c): incoming event fields and ordinary message classification.
+- `script/highlight`: list commands, marker, match priority, event-specific fields, and retained bugs.
+- `source/hook.c`: supported event names, prefix lookup, suppression, and hook dispatch.
+- `source/functions.c` and `source/reg.c`: `remw`, event userhost lookup, and wildcard matching.
+- `source/parse.c`: incoming event fields and ordinary message classification.

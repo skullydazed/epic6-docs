@@ -52,4 +52,4 @@ This prints `hello` when an external `echo` executable is available through `PAT
 
 ## Source
 
-Registration and argument parsing: [source/functions.c](../../source/functions.c). File-handle registration and stream operations: [source/files.c](../../source/files.c). Pipe creation and direct execution: [source/ircaux.c](../../source/ircaux.c). The separate `/exec` process tracking is in [source/exec.c](../../source/exec.c).
+Registration and argument parsing: `source/functions.c`. File-handle registration and stream operations: `source/files.c`. Pipe creation and direct execution: `source/ircaux.c`. The separate `/exec` process tracking is in `source/exec.c`.

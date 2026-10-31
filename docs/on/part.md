@@ -52,6 +52,6 @@ on ^part "*" (nick, channel, userhost, reason) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_part` assembles the optional reason, invokes the hook and display, and removes membership afterward; `BreakArgs` extracts prefix userhost information.
-- [source/names.c](../../source/names.c): `remove_channel` generates `channel_lost` before deleting your channel record; `remove_from_channel` deletes another member's cached entry.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_part` assembles the optional reason, invokes the hook and display, and removes membership afterward; `BreakArgs` extracts prefix userhost information.
+- `source/names.c`: `remove_channel` generates `channel_lost` before deleting your channel record; `remove_from_channel` deletes another member's cached entry.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

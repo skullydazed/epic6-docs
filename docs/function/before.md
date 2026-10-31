@@ -43,4 +43,4 @@ This function first appeared in “+10” (post-ircII, pre-EPIC). Support for th
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `before` and implements `function_before()`. [source/words.c](../../source/words.c) implements search direction. [source/ircaux.c](../../source/ircaux.c) implements numeric conversion and code-point set matching, using decoding helpers from [source/wcwidth.c](../../source/wcwidth.c).
+`source/functions.c` registers `before` and implements `function_before()`. `source/words.c` implements search direction. `source/ircaux.c` implements numeric conversion and code-point set matching, using decoding helpers from `source/wcwidth.c`.

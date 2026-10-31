@@ -26,4 +26,4 @@ See [bind](../command/bind.md) for binding syntax and [scroll_backward](scroll_b
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): `mousemachine`, `handle_mouse_sequence`, `init_mousemachine`, and `set_mouse_support`.
+- `source/keys.c`: `mousemachine`, `handle_mouse_sequence`, `init_mousemachine`, and `set_mouse_support`.

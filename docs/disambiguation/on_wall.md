@@ -24,6 +24,6 @@ The `kind` is `S` when the sender contains a dot, otherwise `*`. Whether a serve
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records removal of the sunset `wall` event.
-- [source/hook.c](../../source/hook.c): registers `wallop` but no dedicated `wall` event; `find_hook` accepts unambiguous abbreviations.
-- [source/parse.c](../../source/parse.c): protocol dispatch has `wallops` but no `wall` handler; `p_wallops` invokes `operwall` and `wallop`.
+- [KNOWNBUGS](../KNOWNBUGS.md): records removal of the sunset `wall` event.
+- `source/hook.c`: registers `wallop` but no dedicated `wall` event; `find_hook` accepts unambiguous abbreviations.
+- `source/parse.c`: protocol dispatch has `wallops` but no `wall` handler; `p_wallops` invokes `operwall` and `wallop`.

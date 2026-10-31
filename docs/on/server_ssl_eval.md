@@ -40,5 +40,5 @@ on -server_ssl_eval "*" {
 
 ## Source references
 
-- [source/server.c](../../source/server.c): `server_io` computes policy, invokes the event, and enforces acceptance; `serverctl` implements `SSL_ACCEPT_CERT`.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/server.c`: `server_io` computes policy, invokes the event, and enforces acceptance; `serverctl` implements `SSL_ACCEPT_CERT`.
+- `source/hook.c`: event registration and standard hook dispatch.

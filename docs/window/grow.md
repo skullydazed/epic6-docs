@@ -35,4 +35,4 @@ Add three output rows to the current window, or two to window 7, provided anothe
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_grow`, `get_number`, and `resize_window` implement argument parsing, donor selection, and row transfer; `set_window_display_lines`, `recalculate_windows`, `recalculate_window_positions`, and `resize_window_display` handle geometry and display adjustment.
+- `source/window.c`: `windowcmd_grow`, `get_number`, and `resize_window` implement argument parsing, donor selection, and row transfer; `set_window_display_lines`, `recalculate_windows`, `recalculate_window_positions`, and `resize_window_display` handle geometry and display adjustment.

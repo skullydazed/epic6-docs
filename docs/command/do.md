@@ -59,4 +59,4 @@ This displays iterations 1, 2, and 3. At the interactive input prompt, use a lea
 
 ## Source
 
-See [source/if.c](../../source/if.c) for `docmd()`, [source/commands.c](../../source/commands.c) for `evalcmd()` and command/block execution, [source/expr.c](../../source/expr.c) for expansion, and [source/ircaux.c](../../source/ircaux.c) for condition truth testing in `check_val()`.
+See `source/if.c` for `docmd()`, `source/commands.c` for `evalcmd()` and command/block execution, `source/expr.c` for expansion, and `source/ircaux.c` for condition truth testing in `check_val()`.

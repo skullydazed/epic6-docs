@@ -52,4 +52,4 @@ This assigns `foo.format.width` to `1920`, `foo.format.interlace` to `0`, and `f
 
 ## Source
 
-Registered and implemented by `function_json_explode` and `explode_json_object` in [source/functions.c](../../source/functions.c). Parsing is in [source/cJSON.c](../../source/cJSON.c), assignment rules are in [source/alias.c](../../source/alias.c), and number formatting is in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented by `function_json_explode` and `explode_json_object` in `source/functions.c`. Parsing is in `source/cJSON.c`, assignment rules are in `source/alias.c`, and number formatting is in `source/ircaux.c`.

@@ -38,4 +38,4 @@ Use ASCII input when portable results matter. The implementation processes plain
 
 ## Source
 
-Registration, quoted-word parsing, default length, hash calculation, and final masks: [source/functions.c](../../source/functions.c). Word parsing and integer conversion: [include/words.h](../../include/words.h) and [source/ircaux.c](../../source/ircaux.c). Integer-string return formatting: [include/functions.h](../../include/functions.h).
+Registration, quoted-word parsing, default length, hash calculation, and final masks: `source/functions.c`. Word parsing and integer conversion: `include/words.h` and `source/ircaux.c`. Integer-string return formatting: `include/functions.h`.

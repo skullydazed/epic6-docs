@@ -23,7 +23,7 @@ Use an actual channel prefix accepted by the server, commonly `#`, `&`, `!`, or 
 
 ## Script alias differences
 
-Scripts can override `join`. The alias in [script/2.8script](../../script/2.8script), when loaded, supplies the familiar convenience behavior: no arguments joins the last invited channel, bare names receive a `#` prefix, and comma-separated requests are split recursively. These are script features rather than built-in behavior. Use `//join` to bypass a script alias and invoke the C built-in.
+Scripts can override `join`. The alias in [`script/2.8script`](../scripts/2.8script.md), when loaded, supplies the familiar convenience behavior: no arguments joins the last invited channel, bare names receive a `#` prefix, and comma-separated requests are split recursively. These are script features rather than built-in behavior. Use `//join` to bypass a script alias and invoke the C built-in.
 
 The script's comma splitting is not equivalent to forwarding a channel list with a matching key list. Use the built-in or join keyed channels separately when keys matter.
 
@@ -53,4 +53,4 @@ Join the last invited channel, list local channel state, or request departure fr
 
 ## Source
 
-Both built-in names are registered to `e_channel` in [source/commands.c](../../source/commands.c), with no command-name distinction. Parsing, keys, special forms, and destination windows are handled in [source/window.c](../../source/window.c). Channel listing and moves are in [source/names.c](../../source/names.c), and channel-prefix recognition is in [source/parse.c](../../source/parse.c).
+Both built-in names are registered to `e_channel` in `source/commands.c`, with no command-name distinction. Parsing, keys, special forms, and destination windows are handled in `source/window.c`. Channel listing and moves are in `source/names.c`, and channel-prefix recognition is in `source/parse.c`.

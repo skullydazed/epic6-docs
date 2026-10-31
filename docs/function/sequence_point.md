@@ -26,4 +26,4 @@ Reading the function does not require [/xdebug sequence_points](../command/xdebu
 
 `$sequence_point()` returns the current value. `$sequence_point(ignored)` returns the same value if no event-loop entry occurs between the calls.
 
-Registration and `function_sequence_point()`: [source/functions.c](../../source/functions.c). Counter initialization and increments in `io()`: [source/irc.c](../../source/irc.c). Debug flag: [source/debug.c](../../source/debug.c). Status display: [source/status.c](../../source/status.c).
+Registration and `function_sequence_point()`: `source/functions.c`. Counter initialization and increments in `io()`: `source/irc.c`. Debug flag: `source/debug.c`. Status display: `source/status.c`.

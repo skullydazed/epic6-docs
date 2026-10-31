@@ -49,4 +49,4 @@ Use this function to report the client's version or diagnose how it was built. T
 
 ## Source
 
-Registration and selector handling: [source/functions.c](../../source/functions.c). Option letters: [include/options.h](../../include/options.h). Version, source identifier, and release name: [source/irc.c](../../source/irc.c). Generated compilation metadata and script checksum: [source/info.c.sh](../../source/info.c.sh).
+Registration and selector handling: `source/functions.c`. Option letters: `include/options.h`. Version, source identifier, and release name: `source/irc.c`. Generated compilation metadata and script checksum: `source/info.c.sh`.

@@ -28,8 +28,8 @@ This setting does not configure server-side flood protection or the separate out
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of the `flood` hook.
-- [source/vars.c](../../source/vars.c): current registration omits this setting and handles unknown-variable errors.
-- [source/hook.c](../../source/hook.c): current event registration omits `flood`.
-- [source/parse.c](../../source/parse.c): incoming message paths use current message hooks without the former sender-grouping detector.
-- [source/ctcp.c](../../source/ctcp.c): outgoing reply throttling is separate from incoming sender grouping.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of the `flood` hook.
+- `source/vars.c`: current registration omits this setting and handles unknown-variable errors.
+- `source/hook.c`: current event registration omits `flood`.
+- `source/parse.c`: incoming message paths use current message hooks without the former sender-grouping detector.
+- `source/ctcp.c`: outgoing reply throttling is separate from incoming sender grouping.

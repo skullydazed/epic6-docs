@@ -73,6 +73,6 @@ The locale and console rule describe your own input/output environment. The [`en
 
 ## Source references
 
-- [source/irc.c](../../source/irc.c): startup locale initialization and the numeric-locale override.
-- [source/recode.c](../../source/recode.c): `init_recodings()`, iconv validation, console/script/IRC rules, and incoming UTF-8 handling.
-- [source/screen.c](../../source/screen.c) and [source/wcwidth.c](../../source/wcwidth.c): Unicode-aware display preparation and column widths.
+- `source/irc.c`: startup locale initialization and the numeric-locale override.
+- `source/recode.c`: `init_recodings()`, iconv validation, console/script/IRC rules, and incoming UTF-8 handling.
+- `source/screen.c` and `source/wcwidth.c`: Unicode-aware display preparation and column widths.

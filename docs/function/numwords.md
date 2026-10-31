@@ -34,4 +34,4 @@ The current counter has a whitespace edge case: a nonempty remainder containing 
 | `$numwords("two words" three)` | `2` with `xdebug dword` enabled; `3` with it disabled |
 | `$numwords("")` | `1` |
 
-Registration and `function_numwords()`: [source/functions.c](../../source/functions.c). Counting, quoted groups, and whitespace movement: [source/words.c](../../source/words.c), `count_words()` and `move_to_next_word()`. `$#` expansion: [source/expr.c](../../source/expr.c).
+Registration and `function_numwords()`: `source/functions.c`. Counting, quoted groups, and whitespace movement: `source/words.c`, `count_words()` and `move_to_next_word()`. `$#` expansion: `source/expr.c`.

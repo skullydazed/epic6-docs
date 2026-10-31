@@ -26,7 +26,7 @@ If the current window has no valid server while another connection exists, the c
 
 ## Related behavior and example
 
-[disconnect](disconnect.md) uses the same close operation but does not request another connection attempt. The bundled [reconnect script](../../script/reconnect) implements separate automatic reconnection and channel-rejoining policy after connection losses; loading or configuring that script is separate from running this built-in.
+[disconnect](disconnect.md) uses the same close operation but does not request another connection attempt. The bundled [reconnect script](../scripts/reconnect.md) implements separate automatic reconnection and channel-rejoining policy after connection losses; loading or configuring that script is separate from running this built-in.
 
 To restart the connection belonging to your current window:
 
@@ -44,4 +44,4 @@ To retry an unfinished connection for server refnum 2 while refusing to reset an
 
 `reconnect` first appeared in `plus-3`, after ircII and before EPIC.
 
-Registration is in [source/commands.c](../../source/commands.c). `reconnectcmd`, the shared `user_reset_connection` parser, closing, cached-address attempts, and DNS bootstrapping are in [source/server.c](../../source/server.c). Window/server association and reconnect-state processing are in [source/window.c](../../source/window.c).
+Registration is in `source/commands.c`. `reconnectcmd`, the shared `user_reset_connection` parser, closing, cached-address attempts, and DNS bootstrapping are in `source/server.c`. Window/server association and reconnect-state processing are in `source/window.c`.

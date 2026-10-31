@@ -28,9 +28,9 @@ The command is available in every build. IRC destinations need a usable connecti
 
 You can customize incoming CTCP handling with scripts and [`ctcpctl`](../function/ctcpctl.md). The `ctcp_request` hook runs before default request handling and can suppress it. The `ctcp` hook controls normal request reporting after processing. Replies are offered to `ctcp_reply`. See [`on`](on.md).
 
-The bundled [ctcp script](../../script/ctcp) provides handlers and descriptions for common CTCP commands. To ask what a client advertises as supported, send it `clientinfo`, for example `/ctcp nickname clientinfo`. The response reflects that client's configuration, not a guarantee that every request will succeed.
+The bundled ctcp script provides handlers and descriptions for common CTCP commands. To ask what a client advertises as supported, send it `clientinfo`, for example `/ctcp nickname clientinfo`. The response reflects that client's configuration, not a guarantee that every request will succeed.
 
-The bundled [builtins script](../../script/builtins) supplies `verbose_ctcp`, defaulting to on, through a `ctcp` hook. Turning it off suppresses normal request notices through that script; it is not a C setting of this command.
+The bundled [builtins script](../scripts/builtins.md) supplies `verbose_ctcp`, defaulting to on, through a `ctcp` hook. Turning it off suppresses normal request notices through that script; it is not a C setting of this command.
 
 ## Limitations
 
@@ -65,4 +65,4 @@ Common command topics include [action](../ctcp/action.md), [clientinfo](../ctcp/
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for `ctcpcmd()` and destination handling in `send_text()`. [source/ctcp.c](../../source/ctcp.c) implements framing, recoding, hooks, and incoming processing. [source/parse.c](../../source/parse.c) manages PRIVMSG/NOTICE context, and [source/vars.c](../../source/vars.c) registers the current C settings.
+See `source/commands.c` for `ctcpcmd()` and destination handling in `send_text()`. `source/ctcp.c` implements framing, recoding, hooks, and incoming processing. `source/parse.c` manages PRIVMSG/NOTICE context, and `source/vars.c` registers the current C settings.

@@ -24,4 +24,4 @@ Assign claimable channels to window 3 when it is on the matching server:
 
 ## Source references
 
-`windowcmd_claim` in [source/window.c](../../source/window.c); `add_channel` and `window_claims_channel` in [source/names.c](../../source/names.c).
+`windowcmd_claim` in `source/window.c`; `add_channel` and `window_claims_channel` in `source/names.c`.

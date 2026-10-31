@@ -48,6 +48,6 @@ on ^odd_server_stuff "*" (sender, command, arguments) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `rfc1459_odd` assembles arguments, substitutes missing tokens, invokes the hook, and prints default output; `parse_server` dispatches unsupported and malformed messages and invokes `raw_irc` first.
-- [source/numbers.c](../../source/numbers.c): numeric validation paths call `rfc1459_odd` for malformed replies.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `rfc1459_odd` assembles arguments, substitutes missing tokens, invokes the hook, and prints default output; `parse_server` dispatches unsupported and malformed messages and invokes `raw_irc` first.
+- `source/numbers.c`: numeric validation paths call `rfc1459_odd` for malformed replies.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

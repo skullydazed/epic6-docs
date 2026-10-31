@@ -38,6 +38,6 @@ See [bind](../command/bind.md) for key sequence syntax and [type_text](type_text
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration, default assignments, `key_exec` passing the final sequence character, and direct insertion in `handle_keypress`.
-- [source/input.c](../../source/input.c): `input_add_character` implements UTF-8 encoding, insert/overwrite behavior, buffer expansion, and cursor movement.
-- [source/term.c](../../source/term.c): control-character display in the input line.
+- `source/keys.c`: action registration, default assignments, `key_exec` passing the final sequence character, and direct insertion in `handle_keypress`.
+- `source/input.c`: `input_add_character` implements UTF-8 encoding, insert/overwrite behavior, buffer expansion, and cursor movement.
+- `source/term.c`: control-character display in the input line.

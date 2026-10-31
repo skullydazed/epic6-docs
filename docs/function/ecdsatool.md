@@ -56,4 +56,4 @@ Successful verification returns `1`. Generating a new file uses `$ecdsatool(keyg
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c) and implemented in [source/ecdsatool.c](../../source/ecdsatool.c). Argument grouping and Base64 transforms are in [source/ircaux.c](../../source/ircaux.c). [OpenSSL's ECDSA API documentation](https://docs.openssl.org/4.0/man3/ECDSA_sign/) describes the digest input and DER signature format.
+Registered in `source/functions.c` and implemented in `source/ecdsatool.c`. Argument grouping and Base64 transforms are in `source/ircaux.c`. [OpenSSL's ECDSA API documentation](https://docs.openssl.org/4.0/man3/ECDSA_sign/) describes the digest input and DER signature format.

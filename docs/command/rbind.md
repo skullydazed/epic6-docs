@@ -32,4 +32,4 @@ The result depends on the current keymap and any script changes to it.
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c). `rbindcmd`, action lookup, recursive enumeration, and binding display are in [source/keys.c](../../source/keys.c), with case-insensitive list lookup in [source/list.c](../../source/list.c).
+Registration is in `source/commands.c`. `rbindcmd`, action lookup, recursive enumeration, and binding display are in `source/keys.c`, with case-insensitive list lookup in `source/list.c`.

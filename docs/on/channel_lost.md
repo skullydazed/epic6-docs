@@ -46,9 +46,9 @@ This event first appeared in EPIC5-0.3.2. The window refnum in `$2` first appear
 
 ## Source references
 
-- [source/names.c](../../source/names.c): `remove_channel` and `destroy_server_channels` invoke the hook before destruction; `window_check_channels` can trigger server-channel cleanup.
-- [source/parse.c](../../source/parse.c): `p_part` and `p_kick` remove your channel membership after processing the corresponding events.
-- [source/server.c](../../source/server.c): `server_close_internal` destroys channels when closing a server connection.
-- [source/numbers.c](../../source/numbers.c): numeric processing can remove channel records in response to server errors.
-- [source/irc.c](../../source/irc.c): final cleanup uses bulk `remove_channel(NULL, 0)` without this hook.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard hook handling.
+- `source/names.c`: `remove_channel` and `destroy_server_channels` invoke the hook before destruction; `window_check_channels` can trigger server-channel cleanup.
+- `source/parse.c`: `p_part` and `p_kick` remove your channel membership after processing the corresponding events.
+- `source/server.c`: `server_close_internal` destroys channels when closing a server connection.
+- `source/numbers.c`: numeric processing can remove channel records in response to server errors.
+- `source/irc.c`: final cleanup uses bulk `remove_channel(NULL, 0)` without this hook.
+- `source/hook.c`: event registration and `do_hook` implement standard hook handling.

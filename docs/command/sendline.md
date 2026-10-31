@@ -52,4 +52,4 @@ This suppressing hook submits the line once through `sendline`, rather than lett
 
 `sendline` first appeared in ircII.
 
-Registration, `sendlinecmd`, and interactive command parsing are in [source/commands.c](../../source/commands.c). The Enter binding and `input` event are in [source/input.c](../../source/input.c); current query/channel selection is in [source/window.c](../../source/window.c).
+Registration, `sendlinecmd`, and interactive command parsing are in `source/commands.c`. The Enter binding and `input` event are in `source/input.c`; current query/channel selection is in `source/window.c`.

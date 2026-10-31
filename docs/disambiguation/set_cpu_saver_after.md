@@ -28,7 +28,7 @@ This applies immediately when the clock is enabled; it does not wait for ten min
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records the sunset of CPU Saver mode.
-- [source/vars.c](../../source/vars.c): current variable registration omits both CPU Saver settings; unknown variables follow the ordinary error-hook path.
-- [source/clock.c](../../source/clock.c): clock system scheduling uses `clock` and `clock_interval`, with no CPU-saver transition.
-- [include/vars.h](../../include/vars.h): retains historical identifiers without an active variable registration.
+- [KNOWNBUGS](../KNOWNBUGS.md): records the sunset of CPU Saver mode.
+- `source/vars.c`: current variable registration omits both CPU Saver settings; unknown variables follow the ordinary error-hook path.
+- `source/clock.c`: clock system scheduling uses `clock` and `clock_interval`, with no CPU-saver transition.
+- `include/vars.h`: retains historical identifiers without an active variable registration.

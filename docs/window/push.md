@@ -34,4 +34,4 @@ Save the current window, save visible window 3, and display the stack belonging 
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_push` allocates a stack entry containing the selected window's internal refnum; `windowcmd_stack` displays entries; `windowcmd_pop` consumes the full stack. `windowcmd_number` changes user refnums without replacing internal window identity.
+- `source/window.c`: `windowcmd_push` allocates a stack entry containing the selected window's internal refnum; `windowcmd_stack` displays entries; `windowcmd_pop` consumes the full stack. `windowcmd_number` changes user refnums without replacing internal window identity.

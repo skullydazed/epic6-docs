@@ -44,4 +44,4 @@ After `$setitem(booya 0 hello)` and `$setitem(booya 1 goodbye)`, the sorted view
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). Implemented by the `I2I` macro, `find_index`, and sorted-index helpers in [source/array.c](../../source/array.c). Numeric conversion is in [source/ircaux.c](../../source/ircaux.c).
+Registered in `source/functions.c`. Implemented by the `I2I` macro, `find_index`, and sorted-index helpers in `source/array.c`. Numeric conversion is in `source/ircaux.c`.

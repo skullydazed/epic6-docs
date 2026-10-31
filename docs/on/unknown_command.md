@@ -49,6 +49,6 @@ This hook first appeared in EPIC5-0.3.2.
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `parse_statement` expands statements, resolves aliases and built-ins, forwards unknown commands when configured, or invokes this hook.
-- [source/hook.c](../../source/hook.c): event registration marks the hook nonrecursive and implements matching and suppression.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): `dispatch_unknown_commands` registration and default.
+- `source/commands.c`: `parse_statement` expands statements, resolves aliases and built-ins, forwards unknown commands when configured, or invokes this hook.
+- `source/hook.c`: event registration marks the hook nonrecursive and implements matching and suppression.
+- `source/vars.c` and `include/config.h`: `dispatch_unknown_commands` registration and default.

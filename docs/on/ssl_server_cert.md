@@ -52,7 +52,7 @@ The hook originated with the EPIC4-SSL project and first appeared in EPIC4-1.1.3
 
 ## Source references
 
-- [source/ssl.c](../../source/ssl.c): `ssl_connected` gathers certificate metadata and invokes the hook; `verify_callback` records verification errors.
-- [source/server.c](../../source/server.c): `server_io` invokes certificate processing before acceptance policy and IRC registration.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): `accept_invalid_ssl_cert` and its default.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching and suppression.
+- `source/ssl.c`: `ssl_connected` gathers certificate metadata and invokes the hook; `verify_callback` records verification errors.
+- `source/server.c`: `server_io` invokes certificate processing before acceptance policy and IRC registration.
+- `source/vars.c` and `include/config.h`: `accept_invalid_ssl_cert` and its default.
+- `source/hook.c`: event registration and standard hook matching and suppression.

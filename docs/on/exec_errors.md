@@ -45,5 +45,5 @@ This replaces ordinary local display for processes without a nonempty `-error` c
 
 ## Source references
 
-- [source/exec.c](../../source/exec.c): `do_exec` routes stderr to `exec_errors` and applies output limits; `handle_filedesc` selects `stderrc`, strips line endings, converts encoding, invokes callbacks or hooks, and controls display; `set_context_for_process` selects output context; option handling records `-error` and redirect metadata.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard matching and suppression.
+- `source/exec.c`: `do_exec` routes stderr to `exec_errors` and applies output limits; `handle_filedesc` selects `stderrc`, strips line endings, converts encoding, invokes callbacks or hooks, and controls display; `set_context_for_process` selects output context; option handling records `-error` and redirect metadata.
+- `source/hook.c`: event registration and `do_hook` implement standard matching and suppression.

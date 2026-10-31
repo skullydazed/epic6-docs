@@ -38,4 +38,4 @@ $uuid4(nodashes) /* A new 32-character identifier, with no hyphens. */
 
 ## Source
 
-Registered and implemented as `function_uuid4` in [source/functions.c](../../source/functions.c). Generation is implemented by `uuid4_generate_internal` in [source/ircaux.c](../../source/ircaux.c). Crypto-library requirements are in [configure.ac](../../configure.ac).
+Registered and implemented as `function_uuid4` in `source/functions.c`. Generation is implemented by `uuid4_generate_internal` in `source/ircaux.c`. Crypto-library requirements are in `configure.ac`.

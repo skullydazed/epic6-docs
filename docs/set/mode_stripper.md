@@ -33,7 +33,7 @@ This reports individual `+o` changes on servers that classify `o` as a membershi
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and off default.
-- [source/parse.c](../../source/parse.c): `p_mode` conditionally calls `strip_modes`, then runs `mode` and updates cached state; stripped hook return values are ignored.
-- [source/names.c](../../source/names.c): `chanmodetype` determines channel-mode argument consumption.
-- [source/hook.c](../../source/hook.c): `mode_stripped` hook registration.
+- `source/vars.c` and `include/config.h`: boolean registration and off default.
+- `source/parse.c`: `p_mode` conditionally calls `strip_modes`, then runs `mode` and updates cached state; stripped hook return values are ignored.
+- `source/names.c`: `chanmodetype` determines channel-mode argument consumption.
+- `source/hook.c`: `mode_stripped` hook registration.

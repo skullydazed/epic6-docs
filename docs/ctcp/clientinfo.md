@@ -14,7 +14,7 @@ Request information about another client's CTCP support. With no command argumen
 
 ## EPIC6 response behavior
 
-The responder is provided by [script/ctcp](../../script/ctcp), rather than a C built-in handler. [script/builtins](../../script/builtins) loads that script; a setup that does not load it needs `/load ctcp` to install these handlers.
+The responder is provided by [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), rather than a C built-in handler. [`script/builtins`](../scripts/builtins.md) loads that script; a setup that does not load it needs `/load ctcp` to install these handlers.
 
 With no argument, the supplied script returns the active CTCP names from `ctcpctl(active)`. With a registered, active command name, it returns that name in uppercase followed by its registered description. Command lookup is case-insensitive. Only the first command argument is used, and an inactive registered command receives no reply. The list describes the local registration state, including script-provided entries; it is not a guarantee that every listed name accepts user-generated requests.
 
@@ -40,7 +40,7 @@ Ask for information about `version` after confirming it is advertised:
 
 ## Source references
 
-- [script/ctcp](../../script/ctcp): `do_clientinfo_request` and registration of its request handler and description.
-- [script/builtins](../../script/builtins): loads the CTCP script.
-- [source/ctcp.c](../../source/ctcp.c): `function_ctcpctl`, `lookup_ctcp`, `do_ctcp`, and `send_ctcp` implement registration lookup, reply display, framing, and reply throttling.
-- [source/commands.c](../../source/commands.c): `ctcpcmd` parses target, request name, and arguments.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages): `do_clientinfo_request` and registration of its request handler and description.
+- [`script/builtins`](../scripts/builtins.md): loads the CTCP script.
+- `source/ctcp.c`: `function_ctcpctl`, `lookup_ctcp`, `do_ctcp`, and `send_ctcp` implement registration lookup, reply display, framing, and reply throttling.
+- `source/commands.c`: `ctcpcmd` parses target, request name, and arguments.

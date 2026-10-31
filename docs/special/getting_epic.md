@@ -1,6 +1,6 @@
 # Getting EPIC
 
-EPIC6 is a programmable IRC client. Older EPIC4 and EPIC5 scripts are not automatically interchangeable with it: EPIC6 has removed or changed interfaces, so use documentation and scripts appropriate for the client generation you intend to run. [KNOWNBUGS](../../KNOWNBUGS) and [UPDATES](../../UPDATES) describe interface changes and retirements.
+EPIC6 is a programmable IRC client. Older EPIC4 and EPIC5 scripts are not automatically interchangeable with it: EPIC6 has removed or changed interfaces, so use documentation and scripts appropriate for the client generation you intend to run. [KNOWNBUGS](../KNOWNBUGS.md) and [UPDATES](../UPDATES.md) describe interface changes and retirements.
 
 The project's documentation entry point is [epicsol.org](https://epicsol.org/).
 

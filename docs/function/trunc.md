@@ -37,4 +37,4 @@ Output uses a fixed 2048-byte buffer and can be cut short for very large precisi
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:4710). Argument parsing: [`include/functions.h`](../../include/functions.h:25). Buffer size: [`include/irc.h`](../../include/irc.h:80).
+Handler: `source/functions.c`. Argument parsing: `include/functions.h`. Buffer size: `include/irc.h`.

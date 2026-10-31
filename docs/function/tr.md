@@ -35,4 +35,4 @@ $tr(/é/e/café)                   Returns cafe for UTF-8 text.
 
 ## Source
 
-Registration and translation: [`source/functions.c`](../../source/functions.c:4469). Unicode decoding and encoding: [`source/wcwidth.c`](../../source/wcwidth.c).
+Registration and translation: `source/functions.c`. Unicode decoding and encoding: `source/wcwidth.c`.

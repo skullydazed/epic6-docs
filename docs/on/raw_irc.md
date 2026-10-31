@@ -53,6 +53,6 @@ The quiet `-` mode preserves default handling. This is a diagnostic display of t
 
 ## Source references
 
-- [source/server.c](../../source/server.c): the server-read path strips line endings, converts input, offers `raw_irc_bytes`, and invokes `parse_server`.
-- [source/parse.c](../../source/parse.c): `parse_server` adjusts the initial prefix for this hook and honors suppression before mangling, tag extraction, tokenization, and dispatch.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/server.c`: the server-read path strips line endings, converts input, offers `raw_irc_bytes`, and invokes `parse_server`.
+- `source/parse.c`: `parse_server` adjusts the initial prefix for this hook and honors suppression before mangling, tag extraction, tokenization, and dispatch.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

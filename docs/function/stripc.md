@@ -31,4 +31,4 @@ For ANSI normalization without color removal, see [`stripansicodes`](stripansico
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:6946). Color parsing and text processing: [`source/screen.c`](../../source/screen.c:1822). The `COLOR` option maps to `STRIP_COLOR` in [`parse_mangle`](../../source/screen.c:4719).
+Handler: `source/functions.c`. Color parsing and text processing: `source/screen.c`. The `COLOR` option maps to `STRIP_COLOR` in `parse_mangle`.

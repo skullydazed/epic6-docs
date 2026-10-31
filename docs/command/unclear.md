@@ -42,4 +42,4 @@ These restore the current window, all windows, hidden windows, or visible window
 
 ## Source
 
-[source/commands.c](../../source/commands.c) implements `e_clear()`, its `clear`/`unclear` distinction, and option parsing. [source/window.c](../../source/window.c) implements `unclear_window()`, selection helpers, clear-boundary resetting, view recalculation, and `window unclear`. [source/screen.c](../../source/screen.c) chooses normal, held, or scrollback positions when redrawing.
+`source/commands.c` implements `e_clear()`, its `clear`/`unclear` distinction, and option parsing. `source/window.c` implements `unclear_window()`, selection helpers, clear-boundary resetting, view recalculation, and `window unclear`. `source/screen.c` chooses normal, held, or scrollback positions when redrawing.

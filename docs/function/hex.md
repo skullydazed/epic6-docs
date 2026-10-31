@@ -36,4 +36,4 @@ Use a positive, modest digit count and a value within the platform's signed `int
 
 ## Source
 
-Registration, positional and JSON argument handling, allocation, and bounded hexadecimal formatting: [source/functions.c](../../source/functions.c). Integer argument conversion: [include/functions.h](../../include/functions.h). Allocation limits: [source/ircaux.c](../../source/ircaux.c).
+Registration, positional and JSON argument handling, allocation, and bounded hexadecimal formatting: `source/functions.c`. Integer argument conversion: `include/functions.h`. Allocation limits: `source/ircaux.c`.

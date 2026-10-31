@@ -52,4 +52,4 @@ Calling `/report one two` displays `Received arguments: one two` through the cur
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for `echocmd()`, `evalcmd()`, and pre-dispatch expansion. [source/output.c](../../source/output.c) implements `put_echo()` and session logging. [source/screen.c](../../source/screen.c) implements output suppression, hooks, routing, rewriting, and window display. [source/input.c](../../source/input.c) processes ordinary interactive input without command expansion; [source/vars.c](../../source/vars.c) registers the current settings.
+See `source/commands.c` for `echocmd()`, `evalcmd()`, and pre-dispatch expansion. `source/output.c` implements `put_echo()` and session logging. `source/screen.c` implements output suppression, hooks, routing, rewriting, and window display. `source/input.c` processes ordinary interactive input without command expansion; `source/vars.c` registers the current settings.

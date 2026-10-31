@@ -29,7 +29,7 @@ IRC targets require a usable connection. The command is always registered, retur
 
 ## Replies and server ping
 
-The C command sends the timestamp but does not itself calculate elapsed time. The bundled [ctcp script](../../script/ctcp), loaded by [builtins](../../script/builtins), supplies a ping request echo handler and a reply handler that formats valid nonnegative elapsed time as `number seconds`. Incoming replies use the `ctcp_reply` hook and its default reporting. Custom scripts can change or remove this behavior.
+The C command sends the timestamp but does not itself calculate elapsed time. The bundled [ctcp script](ctcp.md#receiving-ctcp-messages), loaded by [builtins](../scripts/builtins.md), supplies a ping request echo handler and a reply handler that formats valid nonnegative elapsed time as `number seconds`. Incoming replies use the `ctcp_reply` hook and its default reporting. Custom scripts can change or remove this behavior.
 
 This command is separate from the IRC server's `PING` keepalive command. Incoming server `PING` messages raise the `ping` hook and ordinarily receive a `PONG` response; they do not use this timestamp request mechanism.
 
@@ -49,4 +49,4 @@ Ask clients on a channel to respond:
 
 ## Source
 
-Registration, `pingcmd`, and the shared CTCP command parser are in [source/commands.c](../../source/commands.c). Framing and CTCP reply processing are in [source/ctcp.c](../../source/ctcp.c), timing handlers in [script/ctcp](../../script/ctcp), and server keepalive handling in [source/parse.c](../../source/parse.c).
+Registration, `pingcmd`, and the shared CTCP command parser are in `source/commands.c`. Framing and CTCP reply processing are in `source/ctcp.c`, timing handlers in [`script/ctcp`](ctcp.md#receiving-ctcp-messages), and server keepalive handling in `source/parse.c`.

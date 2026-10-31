@@ -33,4 +33,4 @@ For an array whose stored items are `hello there`, an empty string, and `bob`:
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c) and implemented as `function_listarray` in [source/array.c](../../source/array.c). Separator parsing and nonempty-text concatenation (`malloc_strcat_wordlist`) are in [source/ircaux.c](../../source/ircaux.c).
+Registered in `source/functions.c` and implemented as `function_listarray` in `source/array.c`. Separator parsing and nonempty-text concatenation (`malloc_strcat_wordlist`) are in `source/ircaux.c`.

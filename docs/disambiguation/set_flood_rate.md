@@ -28,8 +28,8 @@ This setting is unrelated to server-enforced flood limits or the separate outgoi
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of the `flood` hook.
-- [source/vars.c](../../source/vars.c): current registration omits `flood_rate` and handles unknown-variable errors.
-- [source/hook.c](../../source/hook.c): current event registration omits `flood`.
-- [source/parse.c](../../source/parse.c): incoming message paths use current hooks without the former detector.
-- [source/ctcp.c](../../source/ctcp.c): outgoing CTCP reply throttling is separate.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of the `flood` hook.
+- `source/vars.c`: current registration omits `flood_rate` and handles unknown-variable errors.
+- `source/hook.c`: current event registration omits `flood`.
+- `source/parse.c`: incoming message paths use current hooks without the former detector.
+- `source/ctcp.c`: outgoing CTCP reply throttling is separate.

@@ -47,4 +47,4 @@ Use this to check number syntax in an indicated base, such as octal or hexadecim
 
 ## Source
 
-Registered and implemented as `function_isnumber` in [source/functions.c](../../source/functions.c). First-position base recognition (`is_number`) and base conversion (`my_atol`) are in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented as `function_isnumber` in `source/functions.c`. First-position base recognition (`is_number`) and base conversion (`my_atol`) are in `source/ircaux.c`.

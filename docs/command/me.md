@@ -44,4 +44,4 @@ IRC destinations need a usable server connection. Server policy determines deliv
 
 ## Source
 
-Registration and `mecmd` are in [source/commands.c](../../source/commands.c). Query-before-channel target selection is in [source/window.c](../../source/window.c). Framing, recoding, outgoing hooks, and incoming action display are in [source/ctcp.c](../../source/ctcp.c), with message delivery through the sending helpers in [source/commands.c](../../source/commands.c) and [source/server.c](../../source/server.c).
+Registration and `mecmd` are in `source/commands.c`. Query-before-channel target selection is in `source/window.c`. Framing, recoding, outgoing hooks, and incoming action display are in `source/ctcp.c`, with message delivery through the sending helpers in `source/commands.c` and `source/server.c`.

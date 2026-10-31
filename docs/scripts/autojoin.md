@@ -55,9 +55,9 @@ This script first appeared in EPIC5-0.3.1.
 
 ## Source references
 
-- [script/autojoin](../../script/autojoin): file loader, aliases, setting, and hooks.
-- [script/reconnect](../../script/reconnect): current reconnection data and channel restoration.
-- [script/builtins](../../script/builtins) and [script/addset](../../script/addset): normally loaded support for script-defined settings.
-- [source/server.c](../../source/server.c): server-state hook dispatch.
-- [source/parse.c](../../source/parse.c): self-join processing and join hook.
-- [source/window.c](../../source/window.c): window creation, channel assignment, swapping, numbering, and pre-deletion hook.
+- `script/autojoin`: file loader, aliases, setting, and hooks.
+- [`script/reconnect`](reconnect.md): current reconnection data and channel restoration.
+- [`script/builtins`](builtins.md) and [`script/addset`](addset.md): normally loaded support for script-defined settings.
+- `source/server.c`: server-state hook dispatch.
+- `source/parse.c`: self-join processing and join hook.
+- `source/window.c`: window creation, channel assignment, swapping, numbering, and pre-deletion hook.

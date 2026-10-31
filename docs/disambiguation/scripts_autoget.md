@@ -32,7 +32,7 @@ The autoget script first appeared in EPIC4-1.1.1 and was substantially enhanced 
 
 ## Source references
 
-- [script/autoget](../../script/autoget): retained aliases, defaults, pattern-variable mismatch, and former transfer handler.
-- [source/commands.c](../../source/commands.c), [source/hook.c](../../source/hook.c), and [source/vars.c](../../source/vars.c): current command, hook, and setting registrations omit the required DCC interfaces.
-- [source/ctcp.c](../../source/ctcp.c): no built-in DCC transfer negotiation handler.
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `$dccctl()`, and associated functionality.
+- `script/autoget`: retained aliases, defaults, pattern-variable mismatch, and former transfer handler.
+- `source/commands.c`, `source/hook.c`, and `source/vars.c`: current command, hook, and setting registrations omit the required DCC interfaces.
+- `source/ctcp.c`: no built-in DCC transfer negotiation handler.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `$dccctl()`, and associated functionality.

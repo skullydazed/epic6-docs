@@ -47,7 +47,7 @@ The `%` wildcard matches the hour field. `$Z` uses your displayed clock format, 
 
 ## Source references
 
-- [source/clock.c](../../source/clock.c): `reset_standard_clock` and `reset_metric_clock` generate hook arguments; system timer handling controls regular updates.
-- [source/vars.c](../../source/vars.c): clock settings and their update callbacks.
-- [include/config.h](../../include/config.h): default clock settings and disabled metric time.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching.
+- `source/clock.c`: `reset_standard_clock` and `reset_metric_clock` generate hook arguments; system timer handling controls regular updates.
+- `source/vars.c`: clock settings and their update callbacks.
+- `include/config.h`: default clock settings and disabled metric time.
+- `source/hook.c`: event registration and standard hook matching.

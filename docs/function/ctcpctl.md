@@ -54,7 +54,7 @@ Request callbacks return a string even if no explicit value is returned: an empt
 
 ## Practical
 
-The C initialization registers `ACTION`. Other handlers can be installed by scripts; for example, [script/ctcp](../../script/ctcp) provides handlers such as `VERSION`, `PING`, and `CLIENTINFO`, and uses descriptions for its `CLIENTINFO` replies. Those replies are script behavior, not an automatic effect of assigning a description.
+The C initialization registers `ACTION`. Other handlers can be installed by scripts; for example, [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages) provides handlers such as `VERSION`, `PING`, and `CLIENTINFO`, and uses descriptions for its `CLIENTINFO` replies. Those replies are script behavior, not an automatic effect of assigning a description.
 
 ## Returns
 
@@ -80,4 +80,4 @@ The last three calls register a handler that replaces the message prefix with `D
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). Control operations, registration, and incoming dispatch are in [source/ctcp.c](../../source/ctcp.c). Callback scope and function returns are implemented in [source/commands.c](../../source/commands.c).
+Registered in `source/functions.c`. Control operations, registration, and incoming dispatch are in `source/ctcp.c`. Callback scope and function returns are implemented in `source/commands.c`.

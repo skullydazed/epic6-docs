@@ -50,4 +50,4 @@ The `admin` command first appeared in ircII.
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for the `admin` registration and `send_comm()` handler; this shared handler has no special `admin` branch. [source/server.c](../../source/server.c) implements `send_to_server()` and connection checks in `vsend_to_aserver_with_payload()`. [source/numbers.c](../../source/numbers.c) implements numeric hooks, default reply display, and the display prefix; [source/vars.c](../../source/vars.c) registers the related settings.
+See `source/commands.c` for the `admin` registration and `send_comm()` handler; this shared handler has no special `admin` branch. `source/server.c` implements `send_to_server()` and connection checks in `vsend_to_aserver_with_payload()`. `source/numbers.c` implements numeric hooks, default reply display, and the display prefix; `source/vars.c` registers the related settings.

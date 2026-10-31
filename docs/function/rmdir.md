@@ -33,4 +33,4 @@ An empty quoted argument is not handled as an independent empty pathname: the wr
 
 `$rmdir()` returns `0` without changing the filesystem.
 
-Registration and `function_rmdir()`: [source/functions.c](../../source/functions.c). Path normalization and tilde expansion: [source/ircaux.c](../../source/ircaux.c). Double-quoted word parsing: [include/words.h](../../include/words.h).
+Registration and `function_rmdir()`: `source/functions.c`. Path normalization and tilde expansion: `source/ircaux.c`. Double-quoted word parsing: `include/words.h`.

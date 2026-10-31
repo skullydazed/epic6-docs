@@ -79,4 +79,4 @@ The created nickname rule applies across servers unless a higher-priority rule o
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). Operations, rule parsing, validation, matching, and conversion handles are in [source/recode.c](../../source/recode.c). Server-selector matching is in [source/server.c](../../source/server.c).
+Registered in `source/functions.c`. Operations, rule parsing, validation, matching, and conversion handles are in `source/recode.c`. Server-selector matching is in `source/server.c`.

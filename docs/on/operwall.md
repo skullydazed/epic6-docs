@@ -41,6 +41,6 @@ on ^operwall "*" (sender, message) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_wallops` recognizes the exact prefix, invokes `operwall` with the stripped body, and conditionally continues to wallops handling; the command table dispatches `wallops` to this handler.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
-- [source/levels.c](../../source/levels.c): registers the separate operwall and wallop output levels.
+- `source/parse.c`: `p_wallops` recognizes the exact prefix, invokes `operwall` with the stripped body, and conditionally continues to wallops handling; the command table dispatches `wallops` to this handler.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.
+- `source/levels.c`: registers the separate operwall and wallop output levels.

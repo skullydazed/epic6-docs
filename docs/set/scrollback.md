@@ -34,6 +34,6 @@ This updates all current windows to a target of 2000 rows, or twice their indivi
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): integer registration and default 256.
-- [source/window.c](../../source/window.c): `set_scrollback_size` updates all windows; new-window initialization copies the default; resize handling enforces the height minimum; `trim_scrollback` deletes oldest rows while respecting scrollback and hold conditions.
-- [source/screen.c](../../source/screen.c): output is wrapped into display rows, added to scrollback, and followed by trimming.
+- `source/vars.c` and `include/config.h`: integer registration and default 256.
+- `source/window.c`: `set_scrollback_size` updates all windows; new-window initialization copies the default; resize handling enforces the height minimum; `trim_scrollback` deletes oldest rows while respecting scrollback and hold conditions.
+- `source/screen.c`: output is wrapped into display rows, added to scrollback, and followed by trimming.

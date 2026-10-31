@@ -29,6 +29,6 @@ See [bind](../command/bind.md) for key sequence syntax, [window query](../window
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default key assignments.
-- [source/window.c](../../source/window.c): `switch_query`, `get_window_equery`, `add_window_target`, and `get_window_target` implement selection counters, status updates, and query precedence.
-- [source/hook.c](../../source/hook.c): registration of the three-argument `switch_query` event.
+- `source/keys.c`: action registration and default key assignments.
+- `source/window.c`: `switch_query`, `get_window_equery`, `add_window_target`, and `get_window_target` implement selection counters, status updates, and query precedence.
+- `source/hook.c`: registration of the three-argument `switch_query` event.

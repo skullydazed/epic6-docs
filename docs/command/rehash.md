@@ -32,4 +32,4 @@ Consult that server's administrative documentation before supplying additional a
 
 ## Source
 
-Registration and the generic `send_comm` handler are in [source/commands.c](../../source/commands.c). Connection selection and transmission are in [source/server.c](../../source/server.c), with ordinary numeric reply handling in [source/numbers.c](../../source/numbers.c).
+Registration and the generic `send_comm` handler are in `source/commands.c`. Connection selection and transmission are in `source/server.c`, with ordinary numeric reply handling in `source/numbers.c`.

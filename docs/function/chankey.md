@@ -35,4 +35,4 @@ The first returns the cached key for `#example` on server 0. The second uses the
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `chankey` and implements `function_chankey()`. [source/names.c](../../source/names.c) implements `get_channel_key()`, channel lookup, and mode-key updates. [source/parse.c](../../source/parse.c) and [source/numbers.c](../../source/numbers.c) supply received mode information. [include/server.h](../../include/server.h) defines the primary-server lookup sentinel, and [include/functions.h](../../include/functions.h) defines argument conversion.
+`source/functions.c` registers `chankey` and implements `function_chankey()`. `source/names.c` implements `get_channel_key()`, channel lookup, and mode-key updates. `source/parse.c` and `source/numbers.c` supply received mode information. `include/server.h` defines the primary-server lookup sentinel, and `include/functions.h` defines argument conversion.

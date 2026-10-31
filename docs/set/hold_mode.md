@@ -7,7 +7,7 @@
 /set hold_mode [on|off|toggle]
 ```
 
-This setting is supplied by [script/hold_mode](../../script/hold_mode), not registered as a C built-in. Loading that script initializes it to `off`. Without a script providing the name, the built-in `set` command treats it as unknown. With the supplied setting loaded, omitting the value queries it and `toggle` reverses its stored boolean value.
+This setting is supplied by [`script/hold_mode`](../scripts/hold_mode.md), not registered as a C built-in. Loading that script initializes it to `off`. Without a script providing the name, the built-in `set` command treats it as unknown. With the supplied setting loaded, omitting the value queries it and `toggle` reverses its stored boolean value.
 
 ## Description
 
@@ -38,8 +38,8 @@ Submit empty lines with Enter to read held output in the input window. To enable
 
 ## Source references
 
-- [script/hold_mode](../../script/hold_mode): boolean setting, initial assignments, all-window callback, and new-window handler.
-- [script/addset](../../script/addset): script-defined setting support.
-- [source/window.c](../../source/window.c): `windowcmd_hold_mode` changes per-window held views and requests redraws.
-- [source/input.c](../../source/input.c): `send_line` acknowledges held output.
-- [source/vars.c](../../source/vars.c): current built-in registration omits `hold_mode`.
+- [`script/hold_mode`](../scripts/hold_mode.md): boolean setting, initial assignments, all-window callback, and new-window handler.
+- [`script/addset`](../scripts/addset.md): script-defined setting support.
+- `source/window.c`: `windowcmd_hold_mode` changes per-window held views and requests redraws.
+- `source/input.c`: `send_line` acknowledges held output.
+- `source/vars.c`: current built-in registration omits `hold_mode`.

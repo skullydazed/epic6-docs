@@ -36,4 +36,4 @@ See [bold](bold.md) and [bind](../command/bind.md).
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): `bind_compressed_string` recognizes `nothing` and clears the selected node's action; `key_exec` and `key_exec_bt` resolve unbound sequences; `handle_keypress` bypasses lookup for non-ASCII or quoted input; `rbindcmd` handles reverse lookup.
+- `source/keys.c`: `bind_compressed_string` recognizes `nothing` and clears the selected node's action; `key_exec` and `key_exec_bt` resolve unbound sequences; `handle_keypress` bypasses lookup for non-ASCII or quoted input; `rbindcmd` handles reverse lookup.

@@ -41,4 +41,4 @@ First appeared in EPIC3pre7.
 
 ## Source
 
-Registration and the read-access test: [source/functions.c](../../source/functions.c). Filename normalization, tilde expansion, and argument parsing: [source/ircaux.c](../../source/ircaux.c); the quoted-word macro is in [include/words.h](../../include/words.h).
+Registration and the read-access test: `source/functions.c`. Filename normalization, tilde expansion, and argument parsing: `source/ircaux.c`; the quoted-word macro is in `include/words.h`.

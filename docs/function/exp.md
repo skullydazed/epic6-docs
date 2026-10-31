@@ -31,4 +31,4 @@ The approximate examples describe numeric values; returned strings may contain m
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `exp` and implements it through the shared math-function and error-return macros. [include/functions.h](../../include/functions.h) defines argument conversion and formatting. [C floating-point special-value guidance](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1629.htm) discusses infinite inputs, and [POSIX mathematical error rules](https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap04.html) describe range-error reporting.
+`source/functions.c` registers `exp` and implements it through the shared math-function and error-return macros. `include/functions.h` defines argument conversion and formatting. [C floating-point special-value guidance](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1629.htm) discusses infinite inputs, and [POSIX mathematical error rules](https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap04.html) describe range-error reporting.

@@ -42,4 +42,4 @@ First appeared in epic4-1.029.
 
 ## Source
 
-Registration, `function_regerror()`, shared error state, and its writers: [source/functions.c](../../source/functions.c). Base85 decoding: [source/ircaux.c](../../source/ircaux.c). Regex engine selection: [include/irc_std.h](../../include/irc_std.h).
+Registration, `function_regerror()`, shared error state, and its writers: `source/functions.c`. Base85 decoding: `source/ircaux.c`. Regex engine selection: `include/irc_std.h`.

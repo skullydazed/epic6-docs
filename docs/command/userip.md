@@ -51,4 +51,4 @@ userip -direct joebob jimbo -cmd {
 
 ## Source
 
-[source/who.c](../../source/who.c) implements `useripcmd()`, the `USERIP` branch of `userhostbase()`, and shared queues and callbacks. [source/numbers.c](../../source/numbers.c) handles numerics 302 and 340, including the 005 capability check. [source/commands.c](../../source/commands.c) registers the command.
+`source/who.c` implements `useripcmd()`, the `USERIP` branch of `userhostbase()`, and shared queues and callbacks. `source/numbers.c` handles numerics 302 and 340, including the 005 capability check. `source/commands.c` registers the command.

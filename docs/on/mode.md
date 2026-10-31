@@ -51,8 +51,8 @@ The final named argument receives the mode string and its arguments together.
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_mode` assembles parameters, optionally invokes `strip_modes`, invokes the combined hook, displays output, and updates caches afterward.
-- [source/names.c](../../source/names.c): `update_channel_mode` and `decifer_mode` update channel mode state using server-specific classifications.
-- [source/server.c](../../source/server.c): `update_server_umode` updates recorded user modes.
-- [include/config.h](../../include/config.h): defines `mode_stripper` off by default.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_mode` assembles parameters, optionally invokes `strip_modes`, invokes the combined hook, displays output, and updates caches afterward.
+- `source/names.c`: `update_channel_mode` and `decifer_mode` update channel mode state using server-specific classifications.
+- `source/server.c`: `update_server_umode` updates recorded user modes.
+- `include/config.h`: defines `mode_stripper` off by default.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

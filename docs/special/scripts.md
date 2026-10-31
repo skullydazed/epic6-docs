@@ -16,4 +16,4 @@ EPIC4 script packs target an older client generation. Check their dependencies a
 
 ## Current EPIC6 source references
 
-The client registers [alias](../command/alias.md), [on](../command/on.md), and [load](../command/load.md) in [source/commands.c](../../source/commands.c). These support script-defined commands, event handlers, and script loading. The bundled [script directory](../../script/) contains individual scripts; [script/global](../../script/global) illustrates combining them into a setup. A bundled script collection and an external script pack can have different installation instructions and requirements.
+The client registers [alias](../command/alias.md), [on](../command/on.md), and [load](../command/load.md) in `source/commands.c`. These support script-defined commands, event handlers, and script loading. The [bundled script index](help_root.md#scripts) describes individual scripts; [global](../scripts/global.md) illustrates combining them into a setup. A bundled script collection and an external script pack can have different installation instructions and requirements.

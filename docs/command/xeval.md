@@ -62,4 +62,4 @@ By contrast, `xeval -window MsgWin xecho -banner Message from $*` in that handle
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `xeval`, implements `xevalcmd()`, and executes the body through `runcmds()`/`parse_block()`. [source/window.c](../../source/window.c) implements window lookup, selection, and output-context stacking. [source/server.c](../../source/server.c) implements server-description lookup; [source/expr.c](../../source/expr.c) handles statement expansion and brace protection.
+`source/commands.c` registers `xeval`, implements `xevalcmd()`, and executes the body through `runcmds()`/`parse_block()`. `source/window.c` implements window lookup, selection, and output-context stacking. `source/server.c` implements server-description lookup; `source/expr.c` handles statement expansion and brace protection.

@@ -39,4 +39,4 @@ The function first appeared in EPIC4-1.1.8. Support for more than two variable a
 
 ## Source
 
-Registered and implemented as `function_joinstr` in [source/functions.c](../../source/functions.c). Variable lookup is in [source/alias.c](../../source/alias.c), function-word parsing is defined in [include/words.h](../../include/words.h), and output-word quoting is in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented as `function_joinstr` in `source/functions.c`. Variable lookup is in `source/alias.c`, function-word parsing is defined in `include/words.h`, and output-word quoting is in `source/ircaux.c`.

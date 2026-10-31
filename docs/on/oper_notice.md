@@ -48,6 +48,6 @@ The bell remains subject to the beep setting and terminal support.
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_notice` selects the connected-server path; `p_snotice` recognizes the prefix, offers kill reports first, invokes this event, and controls the later notice chain.
-- [source/commands.c](../../source/commands.c): `ctcpcmd` rejects invocation from a notice context.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_notice` selects the connected-server path; `p_snotice` recognizes the prefix, offers kill reports first, invokes this event, and controls the later notice chain.
+- `source/commands.c`: `ctcpcmd` rejects invocation from a notice context.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

@@ -65,8 +65,8 @@ Local variables first appeared in EPIC4pre0.009.
 
 ## Source references
 
-- [source/alias.c](../../source/alias.c): `make_local_stack`, `destroy_local_stack`, `find_local_alias`, explicit local/global assignment selection, locking, and `bless_local_stack`.
-- [source/commands.c](../../source/commands.c): `parse_line_alias_special`, alias/lambda invocation, pf loading, deferred commands, and waits.
-- [source/irc.c](../../source/irc.c): creates the `TOP` local frame.
-- [source/hook.c](../../source/hook.c), [source/exec.c](../../source/exec.c), [source/keys.c](../../source/keys.c), [source/queue.c](../../source/queue.c), and [source/timer.c](../../source/timer.c): named callback execution paths.
-- [source/vars.c](../../source/vars.c), [source/who.c](../../source/who.c), and [source/server.c](../../source/server.c): setting, query, and passive-wait callbacks.
+- `source/alias.c`: `make_local_stack`, `destroy_local_stack`, `find_local_alias`, explicit local/global assignment selection, locking, and `bless_local_stack`.
+- `source/commands.c`: `parse_line_alias_special`, alias/lambda invocation, pf loading, deferred commands, and waits.
+- `source/irc.c`: creates the `TOP` local frame.
+- `source/hook.c`, `source/exec.c`, `source/keys.c`, `source/queue.c`, and `source/timer.c`: named callback execution paths.
+- `source/vars.c`, `source/who.c`, and `source/server.c`: setting, query, and passive-wait callbacks.

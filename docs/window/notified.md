@@ -42,6 +42,6 @@ Mark window 3 notified, report its flag, clear it with a report, or clear it sil
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_notified`, `get_boolean`, and `new_window` implement manual changes, reports, and defaults; `add_to_window_list`, `swap_window`, and `clear_window` clear the flag.
-- [source/status.c](../../source/status.c): `status_notify_windows` implements `%F` and `%{1}F` listing and status visibility.
-- [source/screen.c](../../source/screen.c): `add_to_window` implements automatic flag setting, `window_notified`, and activity messages.
+- `source/window.c`: `windowcmd_notified`, `get_boolean`, and `new_window` implement manual changes, reports, and defaults; `add_to_window_list`, `swap_window`, and `clear_window` clear the flag.
+- `source/status.c`: `status_notify_windows` implements `%F` and `%{1}F` listing and status visibility.
+- `source/screen.c`: `add_to_window` implements automatic flag setting, `window_notified`, and activity messages.

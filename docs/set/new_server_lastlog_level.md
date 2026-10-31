@@ -49,8 +49,8 @@ To control which messages count as visible lastlog entries instead, use [set las
 
 ## Source references
 
-- [source/lastlog.c](../../source/lastlog.c): `set_new_server_lastlog_mask` constructs the mask or disables the feature when unset.
-- [source/server.c](../../source/server.c): `server_is_registered` applies it to the server's current window.
-- [source/window.c](../../source/window.c): `renormalize_window_levels` adds unclaimed levels to the window routing mask, then normalizes window-level ownership.
-- [source/levels.c](../../source/levels.c): level names, mask parsing, and diagnostics.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration and default all.
+- `source/lastlog.c`: `set_new_server_lastlog_mask` constructs the mask or disables the feature when unset.
+- `source/server.c`: `server_is_registered` applies it to the server's current window.
+- `source/window.c`: `renormalize_window_levels` adds unclaimed levels to the window routing mask, then normalizes window-level ownership.
+- `source/levels.c`: level names, mask parsing, and diagnostics.
+- `source/vars.c` and `include/config.h`: registration and default all.

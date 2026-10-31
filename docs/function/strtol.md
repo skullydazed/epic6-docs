@@ -39,4 +39,4 @@ First appeared in EPIC5-0.0.2.
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:8072). Argument conversion and return formatting: [`include/functions.h`](../../include/functions.h:25).
+Handler: `source/functions.c`. Argument conversion and return formatting: `include/functions.h`.

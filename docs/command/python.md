@@ -63,4 +63,4 @@ A braced body can group a short Python program:
 
 ## Source
 
-Conditional registration is in [source/commands.c](../../source/commands.c). `pythoncmd`, interpreter initialization, statement/expression execution, exception reporting, and the `_epic` bridge are in [source/python.c](../../source/python.c). Configure detection and build options are in [configure.ac](../../configure.ac).
+Conditional registration is in `source/commands.c`. `pythoncmd`, interpreter initialization, statement/expression execution, exception reporting, and the `_epic` bridge are in `source/python.c`. Configure detection and build options are in `configure.ac`.

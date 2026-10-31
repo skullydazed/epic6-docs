@@ -46,4 +46,4 @@ A zero-based word number, `-1` for empty text at position zero, or empty for mis
 
 ## Source
 
-Registration, position validation, text-prefix counting, and end handling: [source/functions.c](../../source/functions.c). Word counting and quote mode: [source/words.c](../../source/words.c). Code-point length and decoding: [source/wcwidth.c](../../source/wcwidth.c). Integer conversion: [include/functions.h](../../include/functions.h).
+Registration, position validation, text-prefix counting, and end handling: `source/functions.c`. Word counting and quote mode: `source/words.c`. Code-point length and decoding: `source/wcwidth.c`. Integer conversion: `include/functions.h`.

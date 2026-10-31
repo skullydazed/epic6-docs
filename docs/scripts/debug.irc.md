@@ -71,8 +71,8 @@ The function example prints the measured command's own output, then the elapsed-
 
 ## Source references
 
-- [script/debug.irc](../../script/debug.irc): all five helper aliases and their saved state.
-- [source/log.c](../../source/log.c): append-mode logging, path handling, and open failures.
-- [source/functions.c](../../source/functions.c): `utime`, `trunc`, `tdiff`, and function diagnostics.
-- [source/commands.c](../../source/commands.c), [source/alias.c](../../source/alias.c), [source/hook.c](../../source/hook.c), and [source/vars.c](../../source/vars.c): statement tracing, saved settings, and hook-list stacks.
-- [source/debug.c](../../source/debug.c): named `xdebug` categories and lookup.
+- `script/debug.irc`: all five helper aliases and their saved state.
+- `source/log.c`: append-mode logging, path handling, and open failures.
+- `source/functions.c`: `utime`, `trunc`, `tdiff`, and function diagnostics.
+- `source/commands.c`, `source/alias.c`, `source/hook.c`, and `source/vars.c`: statement tracing, saved settings, and hook-list stacks.
+- `source/debug.c`: named `xdebug` categories and lookup.

@@ -40,4 +40,4 @@ For a matching prefixed line, `$0` is the sender prefix and `$2` the recipient. 
 
 ## Source
 
-Registration and `pretend_cmd` are in [source/commands.c](../../source/commands.c). `parse_server`, tokenization, and protocol handlers are in [source/parse.c](../../source/parse.c). Normal network preprocessing and connection checks are in [source/server.c](../../source/server.c), hook recursion policy in [source/hook.c](../../source/hook.c), and the input-buffer size in [include/newio.h](../../include/newio.h).
+Registration and `pretend_cmd` are in `source/commands.c`. `parse_server`, tokenization, and protocol handlers are in `source/parse.c`. Normal network preprocessing and connection checks are in `source/server.c`, hook recursion policy in `source/hook.c`, and the input-buffer size in `include/newio.h`.

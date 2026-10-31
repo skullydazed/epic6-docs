@@ -50,6 +50,6 @@ on ^server_notice "*" {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_notice` selects the server path; `p_snotice` runs the preceding hook chain, adjusts the supplied header, invokes this event, and formats output.
-- [source/commands.c](../../source/commands.c): `ctcpcmd` rejects invocation from notices.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_notice` selects the server path; `p_snotice` runs the preceding hook chain, adjusts the supplied header, invokes this event, and formats output.
+- `source/commands.c`: `ctcpcmd` rejects invocation from notices.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

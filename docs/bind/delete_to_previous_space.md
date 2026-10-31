@@ -32,7 +32,7 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default key assignments.
-- [source/input.c](../../source/input.c): `input_delete_to_previous_space`, `input_move_cursor`, and `cut_input` select the region, save it, and redraw the input line.
-- [source/ircaux.c](../../source/ircaux.c): `strext2` extracts the cut text and closes the gap.
-- [source/irc.c](../../source/irc.c): locale initialization.
+- `source/keys.c`: action registration and default key assignments.
+- `source/input.c`: `input_delete_to_previous_space`, `input_move_cursor`, and `cut_input` select the region, save it, and redraw the input line.
+- `source/ircaux.c`: `strext2` extracts the cut text and closes the gap.
+- `source/irc.c`: locale initialization.

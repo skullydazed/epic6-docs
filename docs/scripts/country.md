@@ -59,7 +59,7 @@ Country information was compiled by Daniel Cedras. The software was written and 
 
 ## Source references
 
-- [script/country](../../script/country): aliases, callback, direct wildcard search, output, and static table.
-- [source/who.c](../../source/who.c): `userhostbase` connection requirements, cache use, and `userhost_cmd_returned` callback fields.
-- [source/commands.c](../../source/commands.c) and [source/server.c](../../source/server.c): `wait` and server round-trip waiting.
-- [source/functions.c](../../source/functions.c) and [source/reg.c](../../source/reg.c): `match` and wildcard matching.
+- `script/country`: aliases, callback, direct wildcard search, output, and static table.
+- `source/who.c`: `userhostbase` connection requirements, cache use, and `userhost_cmd_returned` callback fields.
+- `source/commands.c` and `source/server.c`: `wait` and server round-trip waiting.
+- `source/functions.c` and `source/reg.c`: `match` and wildcard matching.

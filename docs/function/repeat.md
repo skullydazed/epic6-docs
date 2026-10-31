@@ -31,4 +31,4 @@ The decimal parser returns an unsigned long which is assigned to a C `int`. Supp
 
 ## Source
 
-Registration and `function_repeat()`: [source/functions.c](../../source/functions.c). Allocation and string helpers: [source/ircaux.c](../../source/ircaux.c).
+Registration and `function_repeat()`: `source/functions.c`. Allocation and string helpers: `source/ircaux.c`.

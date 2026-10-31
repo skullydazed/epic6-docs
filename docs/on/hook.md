@@ -45,5 +45,5 @@ Other scripts can register handlers using their own serial numbers and patterns.
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `hookcmd` rejects empty text and invokes the hook without a default action.
-- [source/hook.c](../../source/hook.c): the `hook` registration has no nonrecursion flag; `do_hook_internal` performs standard matching and synchronous handler execution.
+- `source/commands.c`: `hookcmd` rejects empty text and invokes the hook without a default action.
+- `source/hook.c`: the `hook` registration has no nonrecursion flag; `do_hook_internal` performs standard matching and synchronous handler execution.

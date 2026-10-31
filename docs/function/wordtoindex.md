@@ -40,4 +40,4 @@ $wordtoindex(1 é x)           /* 2, counting the é as one code point. */
 
 ## Source
 
-Registered and implemented as `function_wordtoindex` in [source/functions.c](../../source/functions.c). Word traversal uses `real_move_to_abs_word` and `move_to_next_word` in [source/words.c](../../source/words.c). Offsets use `quick_code_point_index` in [source/wcwidth.c](../../source/wcwidth.c).
+Registered and implemented as `function_wordtoindex` in `source/functions.c`. Word traversal uses `real_move_to_abs_word` and `move_to_next_word` in `source/words.c`. Offsets use `quick_code_point_index` in `source/wcwidth.c`.

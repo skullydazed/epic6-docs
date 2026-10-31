@@ -38,4 +38,4 @@ if (handle > 0) {
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). Handle lookup and removal are in [source/files.c](../../source/files.c); underlying stream and archive closing is in [source/elf.c](../../source/elf.c).
+Registered and implemented in `source/functions.c`. Handle lookup and removal are in `source/files.c`; underlying stream and archive closing is in `source/elf.c`.

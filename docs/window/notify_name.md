@@ -47,6 +47,6 @@ This operation first appeared in EPIC5-0.0.3.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_notify_name`, `new_window`, and `get_window_notify_name` implement assignment, clearing, reports, and the unset default.
-- [source/status.c](../../source/status.c): `status_notify_windows` and the two `F` mappings implement refnum versus notify-name fallback behavior.
-- [include/words.h](../../include/words.h) and [source/ircaux.c](../../source/ircaux.c): `new_next_arg` and `universal_next_arg_count` parse quoted labels.
+- `source/window.c`: `windowcmd_notify_name`, `new_window`, and `get_window_notify_name` implement assignment, clearing, reports, and the unset default.
+- `source/status.c`: `status_notify_windows` and the two `F` mappings implement refnum versus notify-name fallback behavior.
+- `include/words.h` and `source/ircaux.c`: `new_next_arg` and `universal_next_arg_count` parse quoted labels.

@@ -38,6 +38,6 @@ This operation first appeared in EPIC4-1.1.8.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_move_to`, `get_number`, and `move_window_to` implement parsing, insertion, bottom handling, and selection; `recalculate_window_positions` updates geometry and redraw requests.
-- [source/screen.c](../../source/screen.c): `screen_window_place` maintains separate screen-order data and enforces `MAX_WINDOWS_ON_SCREEN` (1000).
-- [source/ircaux.c](../../source/ircaux.c): `is_number` and `my_atol` validate and convert the position.
+- `source/window.c`: `windowcmd_move_to`, `get_number`, and `move_window_to` implement parsing, insertion, bottom handling, and selection; `recalculate_window_positions` updates geometry and redraw requests.
+- `source/screen.c`: `screen_window_place` maintains separate screen-order data and enforces `MAX_WINDOWS_ON_SCREEN` (1000).
+- `source/ircaux.c`: `is_number` and `my_atol` validate and convert the position.

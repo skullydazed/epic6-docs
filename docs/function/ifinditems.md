@@ -45,4 +45,4 @@ The sorted values are `blah`, `blah`, `foobar`.
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). The `FINDI` wrapper, `find_items` prefix comparison, binary search, sorting, and insertion-position encoding: [source/array.c](../../source/array.c). Ordinary-word parsing: [include/words.h](../../include/words.h).
+Registered in `source/functions.c`. The `FINDI` wrapper, `find_items` prefix comparison, binary search, sorting, and insertion-position encoding: `source/array.c`. Ordinary-word parsing: `include/words.h`.

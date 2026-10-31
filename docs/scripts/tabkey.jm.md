@@ -82,10 +82,10 @@ This script was written by nsx (jm) and first appeared in EPIC4-1.1.13. Its numb
 
 ## Source references
 
-- [script/tabkey.jm](../../script/tabkey.jm): key actions, contexts, pseudo-settings, history, quoting, and compatibility limits.
-- [script/builtins](../../script/builtins): helper dependencies.
-- [script/notify](../../script/notify): empty notify function branch.
-- [source/functions.c](../../source/functions.c): glob, stat, command/setting enumeration, and common-prefix helpers.
-- [source/input.c](../../source/input.c) and [source/keys.c](../../source/keys.c): cursor editing, reset-line behavior, and bindings.
-- [source/commands.c](../../source/commands.c): `send_text` handles `-server/target` selectors.
-- [source/parse.c](../../source/parse.c): `general_notice` supplies sender, destination, and text.
+- `script/tabkey.jm`: key actions, contexts, pseudo-settings, history, quoting, and compatibility limits.
+- [`script/builtins`](builtins.md): helper dependencies.
+- [`script/notify`](notify.md): empty notify function branch.
+- `source/functions.c`: glob, stat, command/setting enumeration, and common-prefix helpers.
+- `source/input.c` and `source/keys.c`: cursor editing, reset-line behavior, and bindings.
+- `source/commands.c`: `send_text` handles `-server/target` selectors.
+- `source/parse.c`: `general_notice` supplies sender, destination, and text.

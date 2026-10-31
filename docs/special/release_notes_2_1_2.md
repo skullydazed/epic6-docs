@@ -159,6 +159,6 @@ The target window must be valid; the command does not create it.
 ## Source references
 
 - Tag `epic5-2.1.2`, `source/irc.c` and `UPDATES`: release identity and historical announcements.
-- [source/exec.c](../../source/exec.c): current operation order, fields, defaults, EXEC flags, callbacks, output limits, and incomplete forwarding.
-- [source/functions.c](../../source/functions.c) and [source/hook.c](../../source/hook.c): EXECCTL/UUID4 registration and SEND_EXEC type.
-- [script/shortener.py](../../script/shortener.py), [script/python](../../script/python), and [script/epic.py](../../script/epic.py): URL collection, loopback service, loading, and listener integration.
+- `source/exec.c`: current operation order, fields, defaults, EXEC flags, callbacks, output limits, and incomplete forwarding.
+- `source/functions.c` and `source/hook.c`: EXECCTL/UUID4 registration and SEND_EXEC type.
+- `script/shortener.py`, [`script/python`](using_python.md#getting-started), and [`epic.py`](using_python.md): URL collection, loopback service, loading, and listener integration.

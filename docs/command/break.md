@@ -50,4 +50,4 @@ These are script examples; at the interactive prompt, use the leading `/` for co
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for the `break` registration, `breakcmd()` error handling, and `parse_block()` propagation. [source/if.c](../../source/if.c) implements the loop and switch handlers that enable and consume breaks.
+See `source/commands.c` for the `break` registration, `breakcmd()` error handling, and `parse_block()` propagation. `source/if.c` implements the loop and switch handlers that enable and consume breaks.

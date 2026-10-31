@@ -44,4 +44,4 @@ For text supplied through a variable, an unmatched outer opener such as `{echo h
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `check_code` and implements `function_check_code()`. [source/if.c](../../source/if.c) implements `next_expr_failok()` and block extraction; [source/ircaux.c](../../source/ircaux.c) implements `MatchingBracket()`.
+`source/functions.c` registers `check_code` and implements `function_check_code()`. `source/if.c` implements `next_expr_failok()` and block extraction; `source/ircaux.c` implements `MatchingBracket()`.

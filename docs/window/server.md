@@ -51,6 +51,6 @@ Select or create a server description using port 6665, supply a preferred nickna
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_server`, `window_change_server`, `renormalize_window_levels`, and `window_check_servers` implement reassociation, notifications, level handling, asynchronous startup, and autoclose.
-- [source/server.c](../../source/server.c): `serverinfo_load`, `load_cjson`, `serverdesc_lookup`, `serverdesc_upsert`, `serverinfo_matches_servref`, and `disconnectcmd` implement description parsing, matching, insertion, and reconnect requests.
-- [source/names.c](../../source/names.c): `reassign_window_channels` attempts reassignment on the old server.
+- `source/window.c`: `windowcmd_server`, `window_change_server`, `renormalize_window_levels`, and `window_check_servers` implement reassociation, notifications, level handling, asynchronous startup, and autoclose.
+- `source/server.c`: `serverinfo_load`, `load_cjson`, `serverdesc_lookup`, `serverdesc_upsert`, `serverinfo_matches_servref`, and `disconnectcmd` implement description parsing, matching, insertion, and reconnect requests.
+- `source/names.c`: `reassign_window_channels` attempts reassignment on the old server.

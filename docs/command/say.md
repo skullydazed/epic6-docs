@@ -46,4 +46,4 @@ EPIC's default channel echo includes the actual target, for example:
 
 ## Source
 
-Registration, `send_to_channel_first`, `send_to_query_first`, and shared `send_text` behavior are in [source/commands.c](../../source/commands.c). Current-channel/query selection is in [source/window.c](../../source/window.c), with recoding in [source/recode.c](../../source/recode.c) and transmission in [source/server.c](../../source/server.c).
+Registration, `send_to_channel_first`, `send_to_query_first`, and shared `send_text` behavior are in `source/commands.c`. Current-channel/query selection is in `source/window.c`, with recoding in `source/recode.c` and transmission in `source/server.c`.

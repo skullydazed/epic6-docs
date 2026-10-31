@@ -38,4 +38,4 @@ First appeared in plus-2, after ircII and before EPIC.
 
 ## Source
 
-Registration and `wrapper_pattern()` with exclusion mode: [source/functions.c](../../source/functions.c). Function word parsing: [include/words.h](../../include/words.h). Result quoting: [source/ircaux.c](../../source/ircaux.c). Wildcard matching: [source/reg.c](../../source/reg.c).
+Registration and `wrapper_pattern()` with exclusion mode: `source/functions.c`. Function word parsing: `include/words.h`. Result quoting: `source/ircaux.c`. Wildcard matching: `source/reg.c`.

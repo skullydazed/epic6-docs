@@ -49,4 +49,4 @@ This displays `one "two three"`. The two-word payload has become one quoted item
 
 ## Source
 
-Registration and `push_cmd` are in [source/commands.c](../../source/commands.c). `function_push` is in [source/functions.c](../../source/functions.c), variable lookup/writeback in [source/alias.c](../../source/alias.c), and name parsing and append/quoting helpers in [source/ircaux.c](../../source/ircaux.c). Word-mode definitions are in [include/words.h](../../include/words.h).
+Registration and `push_cmd` are in `source/commands.c`. `function_push` is in `source/functions.c`, variable lookup/writeback in `source/alias.c`, and name parsing and append/quoting helpers in `source/ircaux.c`. Word-mode definitions are in `include/words.h`.

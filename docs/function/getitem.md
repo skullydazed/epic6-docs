@@ -42,4 +42,4 @@ Given this array:
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). The `GETITEM` wrapper, array lookup, and item retrieval: [source/array.c](../../source/array.c). Numeric conversion and unquoted result concatenation: [source/ircaux.c](../../source/ircaux.c). Ordinary-word parsing: [include/words.h](../../include/words.h).
+Registered in `source/functions.c`. The `GETITEM` wrapper, array lookup, and item retrieval: `source/array.c`. Numeric conversion and unquoted result concatenation: `source/ircaux.c`. Ordinary-word parsing: `include/words.h`.

@@ -75,8 +75,8 @@ Written by CrazyEddy; first included in EPIC4-1.1.3.
 
 ## Source references
 
-- [script/commandqueues](../../script/commandqueues): aliases, command storage, history, duplicate tests, and timer scheduling.
-- [source/functions.c](../../source/functions.c): `push`, `unshift`, `shift`, `serverwin`, and function dispatch.
-- [source/alias.c](../../source/alias.c) and [source/if.c](../../source/if.c): variable matching and ordered structure traversal used to select queues.
-- [source/timer.c](../../source/timer.c): duplicate timer references, updates, delay, and saved execution context.
-- [source/commands.c](../../source/commands.c): `xeval` context selection and restoration.
+- `script/commandqueues`: aliases, command storage, history, duplicate tests, and timer scheduling.
+- `source/functions.c`: `push`, `unshift`, `shift`, `serverwin`, and function dispatch.
+- `source/alias.c` and `source/if.c`: variable matching and ordered structure traversal used to select queues.
+- `source/timer.c`: duplicate timer references, updates, delay, and saved execution context.
+- `source/commands.c`: `xeval` context selection and restoration.

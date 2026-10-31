@@ -39,8 +39,8 @@ This script was written by whitefang and first appeared in EPIC4pre0.027. The re
 
 ## Source references
 
-- [script/scan](../../script/scan): channel fallback, heading, placeholder stripping, and six-column layout.
-- [source/functions.c](../../source/functions.c): `function_channel` calls `scan_channel`; `function_ischannel` checks channel syntax.
-- [source/names.c](../../source/names.c): `scan_channel` enumerates cached members with operator, half-operator, and voice markers.
-- [source/parse.c](../../source/parse.c): `is_channel` uses the server's channel-prefix advertisement or standard defaults.
-- [source/expr.c](../../source/expr.c): field-width expansion pads and truncates displayed entries.
+- `script/scan`: channel fallback, heading, placeholder stripping, and six-column layout.
+- `source/functions.c`: `function_channel` calls `scan_channel`; `function_ischannel` checks channel syntax.
+- `source/names.c`: `scan_channel` enumerates cached members with operator, half-operator, and voice markers.
+- `source/parse.c`: `is_channel` uses the server's channel-prefix advertisement or standard defaults.
+- `source/expr.c`: field-width expansion pads and truncates displayed entries.

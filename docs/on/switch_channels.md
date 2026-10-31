@@ -42,6 +42,6 @@ on -switch_channels "*" (win, oldchan, newchan) {
 
 ## Source references
 
-- [source/names.c](../../source/names.c): `set_channel_window` updates channel associations and invokes the hook; `destroy_channel` invokes it after selecting a replacement; `add_channel` selects a newly joined channel.
-- [source/window.c](../../source/window.c): window channel and query target lookup.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching.
+- `source/names.c`: `set_channel_window` updates channel associations and invokes the hook; `destroy_channel` invokes it after selecting a replacement; `add_channel` selects a newly joined channel.
+- `source/window.c`: window channel and query target lookup.
+- `source/hook.c`: event registration and standard hook matching.

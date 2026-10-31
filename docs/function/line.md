@@ -36,4 +36,4 @@ These retrieve the newest entry from the current window, that entry with metadat
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c) and implemented as `function_line` in [source/lastlog.c](../../source/lastlog.c), beside entry creation and size accounting. Window lookup is in [source/window.c](../../source/window.c), and level naming is in [source/levels.c](../../source/levels.c).
+Registered in `source/functions.c` and implemented as `function_line` in `source/lastlog.c`, beside entry creation and size accounting. Window lookup is in `source/window.c`, and level naming is in `source/levels.c`.

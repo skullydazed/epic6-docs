@@ -59,12 +59,12 @@ The paste script first appeared in EPIC4-1.1.13. The retained source is marked a
 
 ## Source references
 
-- [script/paste](../../script/paste): settings, Control-P binding, hook and Tab stacks, literal send, and automatic shutdown.
-- [script/addset](../../script/addset): creates settings and callback bodies.
-- [source/commands.c](../../source/commands.c): `send_to_query_first` sends text to the window target; command parsing distinguishes built-ins from aliases.
-- [source/window.c](../../source/window.c): `get_window_target` selects query then channel.
-- [source/hook.c](../../source/hook.c): `do_stack_on` saves, removes, and restores hook lists.
-- [source/input.c](../../source/input.c): submitted-line handling and active input prompts.
-- [source/keys.c](../../source/keys.c): key bindings and binding stacks.
-- [source/timer.c](../../source/timer.c): scheduling and removal of the shutdown timer.
-- [source/vars.c](../../source/vars.c): Boolean assignments invoke script callbacks even when assigning the same value.
+- `script/paste`: settings, Control-P binding, hook and Tab stacks, literal send, and automatic shutdown.
+- [`script/addset`](addset.md): creates settings and callback bodies.
+- `source/commands.c`: `send_to_query_first` sends text to the window target; command parsing distinguishes built-ins from aliases.
+- `source/window.c`: `get_window_target` selects query then channel.
+- `source/hook.c`: `do_stack_on` saves, removes, and restores hook lists.
+- `source/input.c`: submitted-line handling and active input prompts.
+- `source/keys.c`: key bindings and binding stacks.
+- `source/timer.c`: scheduling and removal of the shutdown timer.
+- `source/vars.c`: Boolean assignments invoke script callbacks even when assigning the same value.

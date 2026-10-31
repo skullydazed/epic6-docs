@@ -45,4 +45,4 @@ The timer and handler create this repetition; `hook` itself does not repeat or s
 
 ## Source
 
-The registration and `hookcmd` implementation are in [source/commands.c](../../source/commands.c). The event declaration, matching, callback argument context, noise controls, and implied-hook behavior are in [source/hook.c](../../source/hook.c).
+The registration and `hookcmd` implementation are in `source/commands.c`. The event declaration, matching, callback argument context, noise controls, and implied-hook behavior are in `source/hook.c`.

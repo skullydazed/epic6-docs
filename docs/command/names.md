@@ -44,4 +44,4 @@ The first example requests one channel. The second uses the server's no-argument
 
 ## Source
 
-Registration and the shared `send_comm` handler are in [source/commands.c](../../source/commands.c). Server selection and transmission are in [source/server.c](../../source/server.c). Numeric handling, hooks, synchronization checks, and formatting are in [source/numbers.c](../../source/numbers.c); member and prefix processing are in [source/names.c](../../source/names.c). Display settings are registered in [source/vars.c](../../source/vars.c), with defaults in [include/config.h](../../include/config.h).
+Registration and the shared `send_comm` handler are in `source/commands.c`. Server selection and transmission are in `source/server.c`. Numeric handling, hooks, synchronization checks, and formatting are in `source/numbers.c`; member and prefix processing are in `source/names.c`. Display settings are registered in `source/vars.c`, with defaults in `include/config.h`.

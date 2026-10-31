@@ -46,4 +46,4 @@ Use `local -dump` only when you intend to clear all local values in the current 
 
 `local` first appeared in EPIC4pre0.009.
 
-Registration is in [source/commands.c](../../source/commands.c). `localcmd`, variable validation, lookup boundaries, implicit structures, listing, and clearing are in [source/alias.c](../../source/alias.c). Bracket normalization is in [source/ircaux.c](../../source/ircaux.c).
+Registration is in `source/commands.c`. `localcmd`, variable validation, lookup boundaries, implicit structures, listing, and clearing are in `source/alias.c`. Bracket normalization is in `source/ircaux.c`.

@@ -29,4 +29,4 @@ Infinite input causes a library domain error, ordinarily producing NaN; EPIC ret
 
 Approximate examples describe numeric values; returned strings may contain more digits. There are no options or IRC connection requirements.
 
-Registration, `MATH_FUNCTION(function_sin, sin)`, and error mapping: [source/functions.c](../../source/functions.c). Argument conversion and return formatting: [include/functions.h](../../include/functions.h).
+Registration, `MATH_FUNCTION(function_sin, sin)`, and error mapping: `source/functions.c`. Argument conversion and return formatting: `include/functions.h`.

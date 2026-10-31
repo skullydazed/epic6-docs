@@ -22,6 +22,6 @@ That helper is not used for every numeric: reply-specific handlers and scripts c
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): current registration omits this name and handles unknown-variable errors.
-- [source/numbers.c](../../source/numbers.c): `display_msg` compares the sender and appends remote attribution without consulting a setting; numeric hooks precede applicable default displays.
-- [include/config.h](../../include/config.h): retains the unused historical default macro.
+- `source/vars.c`: current registration omits this name and handles unknown-variable errors.
+- `source/numbers.c`: `display_msg` compares the sender and appends remote attribution without consulting a setting; numeric hooks precede applicable default displays.
+- `include/config.h`: retains the unused historical default macro.

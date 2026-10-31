@@ -30,4 +30,4 @@ The condition is true with this built-in implementation.
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c), which also implements `$J` and `$V`. The underlying version identifiers are defined in [source/irc.c](../../source/irc.c).
+Registered and implemented in `source/functions.c`, which also implements `$J` and `$V`. The underlying version identifiers are defined in `source/irc.c`.

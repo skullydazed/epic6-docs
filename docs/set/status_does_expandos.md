@@ -37,5 +37,5 @@ The stored `$N` is evaluated when that user field appears in a regenerated statu
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): boolean registration, off default, and absence of an update callback.
-- [source/status.c](../../source/status.c): `make_status` performs percent-field assembly, contextual `expand_alias`, and normalization; `PRESS` escapes inserted arguments when expansion is enabled.
+- `source/vars.c`: boolean registration, off default, and absence of an update callback.
+- `source/status.c`: `make_status` performs percent-field assembly, contextual `expand_alias`, and normalization; `PRESS` escapes inserted arguments when expansion is enabled.

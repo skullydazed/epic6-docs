@@ -49,6 +49,6 @@ on ^notice "*" (sender, message) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_notice` processes CTCP replies, classifies the destination, invokes `general_notice`, and conditionally invokes this hook and its default display; `p_snotice` handles connected-server notices separately.
-- [source/commands.c](../../source/commands.c): `ctcpcmd` rejects invocation from notices; `send_text` handles ordinary outgoing messages without a blanket notice-context rejection.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_notice` processes CTCP replies, classifies the destination, invokes `general_notice`, and conditionally invokes this hook and its default display; `p_snotice` handles connected-server notices separately.
+- `source/commands.c`: `ctcpcmd` rejects invocation from notices; `send_text` handles ordinary outgoing messages without a blanket notice-context rejection.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

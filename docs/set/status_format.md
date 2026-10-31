@@ -124,6 +124,6 @@ Fields can be empty because their conditions are unmet; these commands do not en
 
 ## Source references
 
-- [source/status.c](../../source/status.c): expando table, `build_status_format`, wrapper conversion, per-window inheritance, field implementations, contextual expansion, and width/fill layout.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, rebuild callback, and compiled formats.
-- [source/window.c](../../source/window.c): per-window formats, status-row count, and window state.
+- `source/status.c`: expando table, `build_status_format`, wrapper conversion, per-window inheritance, field implementations, contextual expansion, and width/fill layout.
+- `source/vars.c` and `include/config.h`: registration, rebuild callback, and compiled formats.
+- `source/window.c`: per-window formats, status-row count, and window state.

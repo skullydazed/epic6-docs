@@ -26,4 +26,4 @@ This sends a bare request; it does not guarantee that the server will display se
 
 ## Source
 
-The always-registered command and generic `send_comm` handler are in [source/commands.c](../../source/commands.c). Connection selection, encoding, line limits, and transmission are in [source/server.c](../../source/server.c).
+The always-registered command and generic `send_comm` handler are in `source/commands.c`. Connection selection, encoding, line limits, and transmission are in `source/server.c`.

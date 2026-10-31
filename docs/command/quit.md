@@ -42,4 +42,4 @@ Quit using configured messages:
 
 ## Source
 
-Registration and `e_quit` are in [source/commands.c](../../source/commands.c). `irc_exit`, its hook, terminal cleanup, and shutdown callbacks are in [source/irc.c](../../source/irc.c). Per-server messages, formatting, and connection closing are in [source/server.c](../../source/server.c), with subprocess cleanup in [source/exec.c](../../source/exec.c).
+Registration and `e_quit` are in `source/commands.c`. `irc_exit`, its hook, terminal cleanup, and shutdown callbacks are in `source/irc.c`. Per-server messages, formatting, and connection closing are in `source/server.c`, with subprocess cleanup in `source/exec.c`.

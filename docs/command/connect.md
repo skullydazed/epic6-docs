@@ -49,4 +49,4 @@ The command is available in every build and needs an active client connection to
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for the `connect` registration and `send_comm()`; the shared handler has no special `connect` branch. [source/server.c](../../source/server.c) implements server selection and connection checks in `send_to_server()` and `vsend_to_aserver_with_payload()`. [source/numbers.c](../../source/numbers.c) implements numeric hooks and default reply display. The conventional protocol parameters are described in [RFC 2812, section 3.4.7](https://www.rfc-editor.org/rfc/rfc2812#section-3.4.7); individual servers can differ.
+See `source/commands.c` for the `connect` registration and `send_comm()`; the shared handler has no special `connect` branch. `source/server.c` implements server selection and connection checks in `send_to_server()` and `vsend_to_aserver_with_payload()`. `source/numbers.c` implements numeric hooks and default reply display. The conventional protocol parameters are described in [RFC 2812, section 3.4.7](https://www.rfc-editor.org/rfc/rfc2812#section-3.4.7); individual servers can differ.

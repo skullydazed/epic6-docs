@@ -53,6 +53,6 @@ A script pack is optional. EPIC's own scripting language and supplied scripts ca
 
 ## Source references
 
-- [configure.ac](../../configure.ac) and [configure](../../configure): platform/library checks, options, executable naming, helper configuration, install type, and default prefix.
-- [Makefile.in](../../Makefile.in): top-level build and installation targets, scripts, executable/link behavior, helper, and manual page.
-- [source/Makefile.in](../../source/Makefile.in): EPIC6 and helper build targets.
+- `configure.ac` and `configure`: platform/library checks, options, executable naming, helper configuration, install type, and default prefix.
+- `Makefile.in`: top-level build and installation targets, scripts, executable/link behavior, helper, and manual page.
+- `source/Makefile.in`: EPIC6 and helper build targets.

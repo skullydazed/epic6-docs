@@ -36,4 +36,4 @@ First appeared in +7, after ircII and before EPIC.
 
 ## Source
 
-Registration and `function_push()`: [source/functions.c](../../source/functions.c). Name parsing and `malloc_strcat_word()`: [source/ircaux.c](../../source/ircaux.c). Variable lookup and assignment: [source/alias.c](../../source/alias.c).
+Registration and `function_push()`: `source/functions.c`. Name parsing and `malloc_strcat_word()`: `source/ircaux.c`. Variable lookup and assignment: `source/alias.c`.

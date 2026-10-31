@@ -57,5 +57,5 @@ Use `/set -status_user` to hide the field without changing the outer status form
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): user-field registration, rebuild callbacks, and defaults.
-- [source/status.c](../../source/status.c): field table, `status_user` map lookup and visibility, direct insertion, and optional contextual dollar expansion.
+- `source/vars.c` and `include/config.h`: user-field registration, rebuild callbacks, and defaults.
+- `source/status.c`: field table, `status_user` map lookup and visibility, direct insertion, and optional contextual dollar expansion.

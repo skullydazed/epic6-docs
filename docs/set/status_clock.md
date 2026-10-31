@@ -37,6 +37,6 @@ Use `/set status_clock %T` for just the clock text without the default leading s
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and default text.
-- [source/status.c](../../source/status.c): `%T` mapping, `convert_sub_format`, `status_clock` visibility tests, and optional final expansion.
-- [source/clock.c](../../source/clock.c): cached clock formatting, timer updates, and the nonempty-wrapper condition for status refreshes.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and default text.
+- `source/status.c`: `%T` mapping, `convert_sub_format`, `status_clock` visibility tests, and optional final expansion.
+- `source/clock.c`: cached clock formatting, timer updates, and the nonempty-wrapper condition for status refreshes.

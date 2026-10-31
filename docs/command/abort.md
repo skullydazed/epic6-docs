@@ -32,4 +32,4 @@ The `abort` command first appeared in “plus-9” (post-ircII, pre-EPIC).
 
 ## Source
 
-See [source/commands.c](../../source/commands.c), where `irc_command` registers `abort` and `abortcmd()` calls `abort()` directly. For comparison, `e_quit()` calls `irc_exit()` in [source/irc.c](../../source/irc.c), which implements normal exit hooks and cleanup.
+See `source/commands.c`, where `irc_command` registers `abort` and `abortcmd()` calls `abort()` directly. For comparison, `e_quit()` calls `irc_exit()` in `source/irc.c`, which implements normal exit hooks and cleanup.

@@ -52,6 +52,6 @@ This hook first appeared in EPIC5-0.3.1.
 
 ## Source references
 
-- [source/numbers.c](../../source/numbers.c): `numbered_command` removes the recipient field, performs numeric-specific handling, offers numbered hooks, invokes `numeric`, and conditionally executes display branches.
-- [source/parse.c](../../source/parse.c): `parse_server` invokes `raw_irc` before dispatching numeric replies.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/numbers.c`: `numbered_command` removes the recipient field, performs numeric-specific handling, offers numbered hooks, invokes `numeric`, and conditionally executes display branches.
+- `source/parse.c`: `parse_server` invokes `raw_irc` before dispatching numeric replies.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

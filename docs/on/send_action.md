@@ -49,6 +49,6 @@ This replaces the commands' local echo without sending the action again.
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `mecmd` and `describe` select targets, call `send_ctcp`, invoke this hook, and provide their different local echoes.
-- [source/ctcp.c](../../source/ctcp.c): `send_ctcp` frames and limits outgoing payloads and invokes the generic CTCP send hook.
-- [source/hook.c](../../source/hook.c): the event registration sets the nonrecursion flag; dispatch implements matching and suppression.
+- `source/commands.c`: `mecmd` and `describe` select targets, call `send_ctcp`, invoke this hook, and provide their different local echoes.
+- `source/ctcp.c`: `send_ctcp` frames and limits outgoing payloads and invokes the generic CTCP send hook.
+- `source/hook.c`: the event registration sets the nonrecursion flag; dispatch implements matching and suppression.

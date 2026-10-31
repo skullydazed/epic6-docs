@@ -100,4 +100,4 @@ To inspect that binding, remove it, or restore defaults:
 
 ## Source
 
-See [source/keys.c](../../source/keys.c): `bindcmd()`, sequence compression, binding validation, key dispatch and backtracking, key timeouts, and default initialization. [source/input.c](../../source/input.c) implements `parse_text()` for `parse_command`; [source/term.c](../../source/term.c) resolves symbolic capabilities. [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h) define `key_interval` and its default.
+See `source/keys.c`: `bindcmd()`, sequence compression, binding validation, key dispatch and backtracking, key timeouts, and default initialization. `source/input.c` implements `parse_text()` for `parse_command`; `source/term.c` resolves symbolic capabilities. `source/vars.c` and `include/config.h` define `key_interval` and its default.

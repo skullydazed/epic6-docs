@@ -32,4 +32,4 @@ An authorized operator can request shutdown of the current server with:
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for the `die` registration and `send_comm()`; the shared handler has no special `die` branch. [source/server.c](../../source/server.c) implements server selection and connection checks. [RFC 2812, section 4.3](https://www.rfc-editor.org/rfc/rfc2812#section-4.3) describes the conventional server-side request; individual servers can differ.
+See `source/commands.c` for the `die` registration and `send_comm()`; the shared handler has no special `die` branch. `source/server.c` implements server selection and connection checks. [RFC 2812, section 4.3](https://www.rfc-editor.org/rfc/rfc2812#section-4.3) describes the conventional server-side request; individual servers can differ.

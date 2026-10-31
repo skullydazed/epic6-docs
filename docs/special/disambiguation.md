@@ -15,7 +15,7 @@ For example, `/echo $log(1)` displays `0`; it does not start logging. `/log` dis
 
 ## Source references
 
-- [source/logfiles.c](../../source/logfiles.c): `logcmd` manages independent logfiles.
-- [source/functions.c](../../source/functions.c): registers `log` as a mathematical wrapper around the C library's natural logarithm.
-- [source/vars.c](../../source/vars.c): session logging setting.
-- [source/window.c](../../source/window.c): per-window logging control.
+- `source/logfiles.c`: `logcmd` manages independent logfiles.
+- `source/functions.c`: registers `log` as a mathematical wrapper around the C library's natural logarithm.
+- `source/vars.c`: session logging setting.
+- `source/window.c`: per-window logging control.

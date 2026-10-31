@@ -32,4 +32,4 @@ This is an IRC query, separate from script facilities that map or transform list
 
 ## Source
 
-Registration and the shared `send_comm` handler are in [source/commands.c](../../source/commands.c), with no special `map` branch. Server selection and transmission are in [source/server.c](../../source/server.c); numeric hooks and ordinary reply display are in [source/numbers.c](../../source/numbers.c).
+Registration and the shared `send_comm` handler are in `source/commands.c`, with no special `map` branch. Server selection and transmission are in `source/server.c`; numeric hooks and ordinary reply display are in `source/numbers.c`.

@@ -37,6 +37,6 @@ An outer `%B` field then supplies, for example, `(Held: 20)` when the rounded ba
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and `%B` default.
-- [source/status.c](../../source/status.c): `%B` mapping, wrapper compilation, and `status_hold_lines` distance selection, rounding, and empty-field conditions.
-- [source/window.c](../../source/window.c): per-window holding, scrollback, display-height, and hold-interval values.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and `%B` default.
+- `source/status.c`: `%B` mapping, wrapper compilation, and `status_hold_lines` distance selection, rounding, and empty-field conditions.
+- `source/window.c`: per-window holding, scrollback, display-height, and hold-interval values.

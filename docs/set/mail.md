@@ -7,7 +7,7 @@
 /set mail [on|off|toggle]
 ```
 
-This setting is supplied by the bundled Python mail script, not by a C built-in. [Script/mail](../../script/mail) loads [script/mail.py](../../script/mail.py) through `pyload`, requiring a build with Python support and the script's runtime dependencies. Its script-defined boolean setting initializes to `on` when the module loads; the old numeric modes `0`, `1`, `2`, and `3` are not its supported interface.
+This setting is supplied by the bundled Python mail script, not by a C built-in. [`script/mail`](../scripts/mail.md) loads [`mail.py`](../scripts/mail.md) through `pyload`, requiring a build with Python support and the script's runtime dependencies. Its script-defined boolean setting initializes to `on` when the module loads; the old numeric modes `0`, `1`, `2`, and `3` are not its supported interface.
 
 ## Description
 
@@ -46,7 +46,7 @@ Loading already enables checking; the latter commands demonstrate disabling and 
 
 ## Source references
 
-- [script/mail](../../script/mail): loads the Python implementation.
-- [script/mail.py](../../script/mail.py): settings, discovery, readers, comparison, timer, output, and status formatting.
-- [source/python.c](../../source/python.c): Python integration and `pyload` support.
-- [source/vars.c](../../source/vars.c) and [source/status.c](../../source/status.c): built-in `status_mail` and its `%M` field; no built-in `mail` checker setting.
+- [`script/mail`](../scripts/mail.md): loads the Python implementation.
+- [`mail.py`](../scripts/mail.md): settings, discovery, readers, comparison, timer, output, and status formatting.
+- `source/python.c`: Python integration and `pyload` support.
+- `source/vars.c` and `source/status.c`: built-in `status_mail` and its `%M` field; no built-in `mail` checker setting.

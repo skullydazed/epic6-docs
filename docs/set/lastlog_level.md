@@ -43,7 +43,7 @@ This does not erase previously recorded notice entries. To exclude all levels fr
 
 ## Source references
 
-- [source/lastlog.c](../../source/lastlog.c): `set_lastlog_mask` normalizes the setting and updates the current window; `add_to_lastlog` assigns visibility and counted size.
-- [source/levels.c](../../source/levels.c): built-in level names, aliases, mask syntax, prefix matching, and warnings.
-- [source/window.c](../../source/window.c): new windows copy the global mask; per-window mask assignment does not retag old entries.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration and default all.
+- `source/lastlog.c`: `set_lastlog_mask` normalizes the setting and updates the current window; `add_to_lastlog` assigns visibility and counted size.
+- `source/levels.c`: built-in level names, aliases, mask syntax, prefix matching, and warnings.
+- `source/window.c`: new windows copy the global mask; per-window mask assignment does not retag old entries.
+- `source/vars.c` and `include/config.h`: string registration and default all.

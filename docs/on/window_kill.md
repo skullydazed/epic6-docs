@@ -51,6 +51,6 @@ This hook already existed in ircII2.1.5g. Its current two-parameter form appeare
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `unlink_window` runs pre-kill handling; `delete_window_contents` saves identifying values, frees the window, and invokes this hook only outside shutdown; `delete_all_windows` handles shutdown cleanup.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching.
-- [source/irc.c](../../source/irc.c): normal exit invokes window cleanup.
+- `source/window.c`: `unlink_window` runs pre-kill handling; `delete_window_contents` saves identifying values, frees the window, and invokes this hook only outside shutdown; `delete_all_windows` handles shutdown cleanup.
+- `source/hook.c`: event registration and standard hook matching.
+- `source/irc.c`: normal exit invokes window cleanup.

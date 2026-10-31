@@ -37,7 +37,7 @@ Restore the default refresh interval with `/set clock_interval 60`. Disable regu
 
 ## Source references
 
-- [source/clock.c](../../source/clock.c): `set_clock_interval`, `update_system_timer`, and `system_timer` replace, disable, and schedule the clock timer, then call clock refresh.
-- [source/ircaux.c](../../source/ircaux.c): `time_to_next_interval` computes boundary-based delays.
-- [source/vars.c](../../source/vars.c): integer validation and setting callback.
-- [include/config.h](../../include/config.h): default interval is 60 seconds and clock defaults to on.
+- `source/clock.c`: `set_clock_interval`, `update_system_timer`, and `system_timer` replace, disable, and schedule the clock timer, then call clock refresh.
+- `source/ircaux.c`: `time_to_next_interval` computes boundary-based delays.
+- `source/vars.c`: integer validation and setting callback.
+- `include/config.h`: default interval is 60 seconds and clock defaults to on.

@@ -46,8 +46,8 @@ With [metric_time](../set/metric_time.md) enabled, a different clock branch emit
 
 ## Source references
 
-- [source/clock.c](../../source/clock.c): `reset_standard_clock` and `reset_metric_clock` calculate arguments and invoke the hook; system timer handling uses `clock` and `clock_interval`.
-- [source/screen.c](../../source/screen.c): screen input handling resets `idle_time` before processing input.
-- [source/irc.c](../../source/irc.c): initializes the shared idle timestamp at startup.
-- [include/config.h](../../include/config.h): defines the default enabled clock, 60-second interval, and disabled metric time.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/clock.c`: `reset_standard_clock` and `reset_metric_clock` calculate arguments and invoke the hook; system timer handling uses `clock` and `clock_interval`.
+- `source/screen.c`: screen input handling resets `idle_time` before processing input.
+- `source/irc.c`: initializes the shared idle timestamp at startup.
+- `include/config.h`: defines the default enabled clock, 60-second interval, and disabled metric time.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

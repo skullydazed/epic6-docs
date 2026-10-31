@@ -35,4 +35,4 @@ The first requests information from your connected server. The second requests a
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `trace` with `send_comm()`, which forwards the command and arguments. [source/server.c](../../source/server.c) implements server selection and sending. [source/numbers.c](../../source/numbers.c) handles numeric hooks and the generic reply display.
+`source/commands.c` registers `trace` with `send_comm()`, which forwards the command and arguments. `source/server.c` implements server selection and sending. `source/numbers.c` handles numeric hooks and the generic reply display.

@@ -40,5 +40,5 @@ Both the legacy conversation-encryption facility and [DCC SEND](ctcp_send.md) ar
 
 - Tag `epic5-2.1.6`, `source/crypto.c`: `encrypt_sed`, `decrypt_sed`, the byte recurrence, password handling, and historical security comments.
 - The same tag's `source/ctcp.c`: SED handler registration and recursive CTCP processing after decryption; its `source/ircaux.c` registered the former SED transform.
-- Current [KNOWNBUGS](../../KNOWNBUGS): retirement records for SED, conversation encryption, and DCC.
-- Current [source/commands.c](../../source/commands.c), [source/functions.c](../../source/functions.c), [source/ctcp.c](../../source/ctcp.c), and [source/ircaux.c](../../source/ircaux.c): current command/function, CTCP, and transform registries without those SED facilities.
+- Current [KNOWNBUGS](../KNOWNBUGS.md): retirement records for SED, conversation encryption, and DCC.
+- Current `source/commands.c`, `source/functions.c`, `source/ctcp.c`, and `source/ircaux.c`: current command/function, CTCP, and transform registries without those SED facilities.

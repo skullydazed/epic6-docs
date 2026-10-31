@@ -28,4 +28,4 @@ After `assign foo blah booya`, `$shift(foo)` returns `blah` and leaves `foo` con
 
 With `/xdebug dword` enabled, a value of `"one two" three` yields `one two` and leaves `three`.
 
-Registration and `function_shift()`: [source/functions.c](../../source/functions.c). First-word parsing: [include/words.h](../../include/words.h) and [source/ircaux.c](../../source/ircaux.c). Variable lookup and writeback: [source/alias.c](../../source/alias.c).
+Registration and `function_shift()`: `source/functions.c`. First-word parsing: `include/words.h` and `source/ircaux.c`. Variable lookup and writeback: `source/alias.c`.

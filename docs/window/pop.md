@@ -38,4 +38,4 @@ Assuming windows 2 and 3 remain visible, swappable, and on the same screen, `pop
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_push` stores internal window references; `windowcmd_pop` drains the stack and retains the final lookup result; `show_window` checks swappability and selects visible entries. `set_screens_current_window` returns immediately for a negative screen number, explaining the hidden-entry behavior.
+- `source/window.c`: `windowcmd_push` stores internal window references; `windowcmd_pop` drains the stack and retains the final lookup result; `show_window` checks swappability and selects visible entries. `set_screens_current_window` returns immediately for a negative screen number, explaining the hidden-entry behavior.

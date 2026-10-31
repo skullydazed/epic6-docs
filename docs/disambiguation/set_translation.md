@@ -32,5 +32,5 @@ The console rule describes the bytes typed and displayed by your terminal. Remot
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): current setting registration omits `translation` and handles unknown-variable errors.
-- [source/recode.c](../../source/recode.c): `encoding`, console/script/network rules, UTF-8 conversions, and validation against the local iconv implementation.
+- `source/vars.c`: current setting registration omits `translation` and handles unknown-variable errors.
+- `source/recode.c`: `encoding`, console/script/network rules, UTF-8 conversions, and validation against the local iconv implementation.

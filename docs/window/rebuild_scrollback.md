@@ -44,6 +44,6 @@ This operation first appeared in EPIC5-0.0.7.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_rebuild_scrollback`, `update_all_windows`, `window_check_columns`, `rebuild_scrollback`, `save_window_positions`, and `restore_window_positions` implement scheduling, automatic rebuilds, and position restoration.
-- [source/lastlog.c](../../source/lastlog.c): `reconstitute_scrollback` selects retained entries marked as needed.
-- [source/screen.c](../../source/screen.c): `add_to_window_scrollback` normalizes and wraps entries without routing them through ordinary output/logging.
+- `source/window.c`: `windowcmd_rebuild_scrollback`, `update_all_windows`, `window_check_columns`, `rebuild_scrollback`, `save_window_positions`, and `restore_window_positions` implement scheduling, automatic rebuilds, and position restoration.
+- `source/lastlog.c`: `reconstitute_scrollback` selects retained entries marked as needed.
+- `source/screen.c`: `add_to_window_scrollback` normalizes and wraps entries without routing them through ordinary output/logging.

@@ -35,4 +35,4 @@ In the normal incoming-message contexts, the first handler reports `MSGS hop`, a
 
 This function first appeared in EPIC4 1.1.12.
 
-Registration and `function_outputinfo()`: [source/functions.c](../../source/functions.c). Context fields and getters: [source/window.c](../../source/window.c). Routing priorities: [source/screen.c](../../source/screen.c). Incoming-message contexts: [source/parse.c](../../source/parse.c). Canonical level names: [source/levels.c](../../source/levels.c).
+Registration and `function_outputinfo()`: `source/functions.c`. Context fields and getters: `source/window.c`. Routing priorities: `source/screen.c`. Incoming-message contexts: `source/parse.c`. Canonical level names: `source/levels.c`.

@@ -46,4 +46,4 @@ Other notices pass through `general_notice`, followed by `public_notice` when ad
 
 ## History and source
 
-`notice` originated in ircII. Registration, `e_privmsg`, shared destinations, splitting, and outgoing hooks are in [source/commands.c](../../source/commands.c). Incoming ordinary and server-notice handling is in [source/parse.c](../../source/parse.c), CTCP replies in [source/ctcp.c](../../source/ctcp.c), and server transmission in [source/server.c](../../source/server.c).
+`notice` originated in ircII. Registration, `e_privmsg`, shared destinations, splitting, and outgoing hooks are in `source/commands.c`. Incoming ordinary and server-notice handling is in `source/parse.c`, CTCP replies in `source/ctcp.c`, and server transmission in `source/server.c`.

@@ -39,4 +39,4 @@ First appeared in +6, after ircII and before EPIC.
 
 ## Source
 
-Registration and `function_reverse()`: [source/functions.c](../../source/functions.c). Backward code-point traversal through `previous_code_point2()`: [source/wcwidth.c](../../source/wcwidth.c).
+Registration and `function_reverse()`: `source/functions.c`. Backward code-point traversal through `previous_code_point2()`: `source/wcwidth.c`.

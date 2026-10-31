@@ -62,8 +62,8 @@ The default configuration has evolved through contributions from many authors; i
 
 ## Source references
 
-- [script/global](../../script/global): actual load order and conditional `local` load.
-- [source/irc.c](../../source/irc.c) and [include/irc.h](../../include/irc.h): startup selection, environment variables, command-line overrides, and startup timing.
-- [source/functions.c](../../source/functions.c): `which` defaults to `load_path`.
-- [script/builtins](../../script/builtins), [script/mail](../../script/mail), and [script/python](../../script/python): supporting load order and `pyload` definition.
-- [script/help.irc](../../script/help.irc): legacy help transport references.
+- `script/global`: actual load order and conditional `local` load.
+- `source/irc.c` and `include/irc.h`: startup selection, environment variables, command-line overrides, and startup timing.
+- `source/functions.c`: `which` defaults to `load_path`.
+- [`script/builtins`](builtins.md), [`script/mail`](mail.md), and [`script/python`](../special/using_python.md#getting-started): supporting load order and `pyload` definition.
+- [`script/help.irc`](../disambiguation/scripts_help.md): legacy help transport references.

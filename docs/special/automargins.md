@@ -62,8 +62,8 @@ These settings affect EPIC's display layout. Successful copying across wrapped d
 
 ## Source references
 
-- [source/term.c](../../source/term.c): `term_init()` loads `TERM`; `term_establish_last_column()` chooses last-column handling; `get_term_capability()` implements capability lookup.
-- [source/functions.c](../../source/functions.c): `getcap()` argument handling and `chr()` character generation.
-- [source/vars.c](../../source/vars.c): string-setting parsing and `set_indent()` update behavior.
-- [source/screen.c](../../source/screen.c): `prepare_display()` applies prefixes, indentation, word breaks, and width-based wrapping.
-- [source/window.c](../../source/window.c): `REBUILD_SCROLLBACK` registration and reconstruction from lastlog.
+- `source/term.c`: `term_init()` loads `TERM`; `term_establish_last_column()` chooses last-column handling; `get_term_capability()` implements capability lookup.
+- `source/functions.c`: `getcap()` argument handling and `chr()` character generation.
+- `source/vars.c`: string-setting parsing and `set_indent()` update behavior.
+- `source/screen.c`: `prepare_display()` applies prefixes, indentation, word breaks, and width-based wrapping.
+- `source/window.c`: `REBUILD_SCROLLBACK` registration and reconstruction from lastlog.

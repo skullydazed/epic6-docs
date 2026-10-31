@@ -48,4 +48,4 @@ alias choose {
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c). `switchcmd()` and delimiter parsing are in [source/if.c](../../source/if.c). Expansion and variable lookup are in [source/alias.c](../../source/alias.c), wildcard matching in [source/reg.c](../../source/reg.c), and command-block execution and control-flow exceptions in [source/commands.c](../../source/commands.c).
+Registration is in `source/commands.c`. `switchcmd()` and delimiter parsing are in `source/if.c`. Expansion and variable lookup are in `source/alias.c`, wildcard matching in `source/reg.c`, and command-block execution and control-flow exceptions in `source/commands.c`.

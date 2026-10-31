@@ -46,4 +46,4 @@ First appeared in epic4-1.029.
 
 ## Source
 
-Registration, `function_regcomp_cs()`, error state, and related consumers: [source/functions.c](../../source/functions.c). Base85 encoding: [source/ircaux.c](../../source/ircaux.c). Engine selection: [include/irc_std.h](../../include/irc_std.h) and [configure.ac](../../configure.ac).
+Registration, `function_regcomp_cs()`, error state, and related consumers: `source/functions.c`. Base85 encoding: `source/ircaux.c`. Engine selection: `include/irc_std.h` and `configure.ac`.

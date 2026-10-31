@@ -60,4 +60,4 @@ The first two commands display settings; the next two disable and then toggle th
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c). Parsing, type validation, output, callbacks, and built-in setting registration are in [source/vars.c](../../source/vars.c). Registry prefix matching and script-created settings are in [source/alias.c](../../source/alias.c). Numeric conversion and Unicode helpers are in [source/ircaux.c](../../source/ircaux.c); initial defaults are also defined in [include/config.h](../../include/config.h).
+Registration is in `source/commands.c`. Parsing, type validation, output, callbacks, and built-in setting registration are in `source/vars.c`. Registry prefix matching and script-created settings are in `source/alias.c`. Numeric conversion and Unicode helpers are in `source/ircaux.c`; initial defaults are also defined in `include/config.h`.

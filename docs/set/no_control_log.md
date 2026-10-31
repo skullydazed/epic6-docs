@@ -45,7 +45,7 @@ This policy applies to logs using the global fallback regardless of `no_control_
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and off default.
-- [source/log.c](../../source/log.c): `add_to_log` adds `unprintable` only in the nonzero caller-mask branch, before rewriting.
-- [source/output.c](../../source/output.c), [source/screen.c](../../source/screen.c), and [source/logfiles.c](../../source/logfiles.c): global, window, and selective-log callers supply their masks.
-- [source/screen.c](../../source/screen.c): `new_normalize_string` implements control-character, color, escape, and tab handling.
+- `source/vars.c` and `include/config.h`: boolean registration and off default.
+- `source/log.c`: `add_to_log` adds `unprintable` only in the nonzero caller-mask branch, before rewriting.
+- `source/output.c`, `source/screen.c`, and `source/logfiles.c`: global, window, and selective-log callers supply their masks.
+- `source/screen.c`: `new_normalize_string` implements control-character, color, escape, and tab handling.

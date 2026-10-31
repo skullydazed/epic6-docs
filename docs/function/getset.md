@@ -44,4 +44,4 @@ First appeared in EPIC4pre2.400.
 
 ## Source
 
-Registration and the direct setting query: [source/functions.c](../../source/functions.c). Name normalization and value formatting: [source/vars.c](../../source/vars.c). Exact symbol lookup, setting components, and stub loading: [source/alias.c](../../source/alias.c).
+Registration and the direct setting query: `source/functions.c`. Name normalization and value formatting: `source/vars.c`. Exact symbol lookup, setting components, and stub loading: `source/alias.c`.

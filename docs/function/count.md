@@ -36,4 +36,4 @@ Counts involving multibyte UTF-8 are unreliable in the current implementation. T
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). Substring searching and case comparison are in [source/ircaux.c](../../source/ircaux.c); double-quoted argument parsing is in [source/words.c](../../source/words.c) and [include/words.h](../../include/words.h).
+Registered and implemented in `source/functions.c`. Substring searching and case comparison are in `source/ircaux.c`; double-quoted argument parsing is in `source/words.c` and `include/words.h`.

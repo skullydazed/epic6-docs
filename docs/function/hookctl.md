@@ -120,4 +120,4 @@ Use `$hookctl(list hooks msg)` to inspect message-hook identifiers or `$hookctl(
 
 ## Source
 
-Registration and wrapper: [source/functions.c](../../source/functions.c). All operations, hook storage, noise definitions, matching, implied formatting, and event frames: [source/hook.c](../../source/hook.c). Argument-list parsing: [source/alias.c](../../source/alias.c). Prefix matching: [source/ircaux.c](../../source/ircaux.c).
+Registration and wrapper: `source/functions.c`. All operations, hook storage, noise definitions, matching, implied formatting, and event frames: `source/hook.c`. Argument-list parsing: `source/alias.c`. Prefix matching: `source/ircaux.c`.

@@ -33,5 +33,5 @@ on -authenticate "*" {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_authenticate` validates and joins arguments before dispatch.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/parse.c`: `p_authenticate` validates and joins arguments before dispatch.
+- `source/hook.c`: event registration and standard hook dispatch.

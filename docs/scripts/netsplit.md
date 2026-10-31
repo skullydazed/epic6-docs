@@ -59,10 +59,10 @@ This script first appeared in ircII. The retained source identifies itself as ve
 
 ## Source references
 
-- [script/netsplit](../../script/netsplit): detection, tracking, output, aliases, and cleanup.
-- [source/parse.c](../../source/parse.c): `p_quit` and `p_join` supply hook arguments and implement default output suppression.
-- [script/builtins](../../script/builtins): `encode` and `decode` wrappers used for tracking keys.
-- [source/functions.c](../../source/functions.c): `userhost` supplies the current message's prefix userhost for replacement join output.
-- [source/clock.c](../../source/clock.c): clock updates dispatch timer hooks.
-- [source/hook.c](../../source/hook.c): hook matching, serial numbers, and suppression.
-- [source/levels.c](../../source/levels.c): `opnotes` output level.
+- `script/netsplit`: detection, tracking, output, aliases, and cleanup.
+- `source/parse.c`: `p_quit` and `p_join` supply hook arguments and implement default output suppression.
+- [`script/builtins`](builtins.md): `encode` and `decode` wrappers used for tracking keys.
+- `source/functions.c`: `userhost` supplies the current message's prefix userhost for replacement join output.
+- `source/clock.c`: clock updates dispatch timer hooks.
+- `source/hook.c`: hook matching, serial numbers, and suppression.
+- `source/levels.c`: `opnotes` output level.

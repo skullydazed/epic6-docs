@@ -64,7 +64,7 @@ The release reserved all other argument forms for future changes. Current source
 ## Source references
 
 - Tag `epic5-2.1.5`, `source/irc.c`, `UPDATES`, and `configure`: release identity and historical feature/generator records.
-- [source/window.c](../../source/window.c): UUID generation/getter and CLAIM registration.
-- [source/names.c](../../source/names.c): channel setup, proposed window, claim interval, and server checks.
-- [source/hook.c](../../source/hook.c) and [source/functions.c](../../source/functions.c): CHANNEL_CLAIM, WINDOWCTL, and UUID4 registrations.
-- [configure.ac](../../configure.ac) and [configure](../../configure): current build requirements and generated-script identity.
+- `source/window.c`: UUID generation/getter and CLAIM registration.
+- `source/names.c`: channel setup, proposed window, claim interval, and server checks.
+- `source/hook.c` and `source/functions.c`: CHANNEL_CLAIM, WINDOWCTL, and UUID4 registrations.
+- `configure.ac` and `configure`: current build requirements and generated-script identity.

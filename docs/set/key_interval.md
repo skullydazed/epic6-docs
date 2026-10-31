@@ -39,6 +39,6 @@ This setting first appeared in EPIC4-1.1.7.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): key dispatch schedules checks for nodes with both a binding and child map; `timeout_keypress` resolves a pending bound node after the interval; `set_key_interval` enforces the 10ms minimum.
-- [source/vars.c](../../source/vars.c): integer registration and generic validation.
-- [include/config.h](../../include/config.h): default 1000ms.
+- `source/keys.c`: key dispatch schedules checks for nodes with both a binding and child map; `timeout_keypress` resolves a pending bound node after the interval; `set_key_interval` enforces the 10ms minimum.
+- `source/vars.c`: integer registration and generic validation.
+- `include/config.h`: default 1000ms.

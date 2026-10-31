@@ -50,7 +50,7 @@ Written for EPIC4 by hop in 1997, based on the [less](less.md) script.
 
 ## Source references
 
-- [script/less-pipe](../../script/less-pipe): actual alias name, named-process hooks, shared buffer, and pager.
-- [source/exec.c](../../source/exec.c): stdout/stderr events, output limits, process context, and exit dispatch.
-- [source/commands.c](../../source/commands.c) and [source/screen.c](../../source/screen.c): exec command registration, ordinary output, and character-input callbacks.
-- [script/builtins](../../script/builtins): `winsize` compatibility function.
+- `script/less-pipe`: actual alias name, named-process hooks, shared buffer, and pager.
+- `source/exec.c`: stdout/stderr events, output limits, process context, and exit dispatch.
+- `source/commands.c` and `source/screen.c`: exec command registration, ordinary output, and character-input callbacks.
+- [`script/builtins`](builtins.md): `winsize` compatibility function.

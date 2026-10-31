@@ -33,4 +33,4 @@ The conversion discards fractions smaller than one millisecond before calculatin
 
 This function first appeared in EPIC4 1.1.13.
 
-Registration and `function_metric_time()`: [source/functions.c](../../source/functions.c). `get_metric_time()`, `timespec_to_metric()`, and the `CLOCK_REALTIME` clock helper: [source/ircaux.c](../../source/ircaux.c).
+Registration and `function_metric_time()`: `source/functions.c`. `get_metric_time()`, `timespec_to_metric()`, and the `CLOCK_REALTIME` clock helper: `source/ircaux.c`.

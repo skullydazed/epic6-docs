@@ -35,5 +35,5 @@ on -ping "*" {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_ping` joins arguments and conditions its PONG send on the hook result.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/parse.c`: `p_ping` joins arguments and conditions its PONG send on the hook result.
+- `source/hook.c`: event registration and standard hook dispatch.

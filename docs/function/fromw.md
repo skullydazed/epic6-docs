@@ -40,4 +40,4 @@ First appeared in plus-2, after ircII and before EPIC. Before EPIC4-1.1.10, the 
 
 ## Source
 
-Registration and `function_fromw()` using `function_findw()`: [source/functions.c](../../source/functions.c). Word-mode selection and extraction: [include/words.h](../../include/words.h) and [source/words.c](../../source/words.c). Case comparison: [source/ircaux.c](../../source/ircaux.c). Uppercase mappings: [source/recode.c](../../source/recode.c).
+Registration and `function_fromw()` using `function_findw()`: `source/functions.c`. Word-mode selection and extraction: `include/words.h` and `source/words.c`. Case comparison: `source/ircaux.c`. Uppercase mappings: `source/recode.c`.

@@ -1,6 +1,6 @@
 # Copyright information about EPIC
 
-EPIC6's repository-wide copyright and redistribution terms are recorded in [COPYRIGHT](../../COPYRIGHT). The text below reproduces those notices and terms with Markdown formatting. Retain any additional notices supplied with individual files or dependencies; this page is not an inventory of every component's license.
+EPIC6's repository-wide copyright and redistribution terms are recorded in [COPYRIGHT](../COPYRIGHT.md). The text below reproduces those notices and terms with Markdown formatting. Retain any additional notices supplied with individual files or dependencies; this page is not an inventory of every component's license.
 
 ## Copyright notices
 
@@ -36,5 +36,5 @@ It works locally without a server connection and takes no required arguments. It
 
 ## Source references
 
-- [COPYRIGHT](../../COPYRIGHT): notices and terms reproduced above.
-- [source/commands.c](../../source/commands.c): `license` registration and embedded display text.
+- [COPYRIGHT](../COPYRIGHT.md): notices and terms reproduced above.
+- `source/commands.c`: `license` registration and embedded display text.

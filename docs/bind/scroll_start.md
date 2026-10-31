@@ -36,6 +36,6 @@ See [bind](../command/bind.md) for key sequence syntax and [scroll_backward](scr
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration, default bindings, and terminal Home binding.
-- [source/window.c](../../source/window.c): `scrollback_start`, `window_scrollback_start`, `window_scrollback_backwards`, and the line-count tester implement movement and view selection; `trim_scrollback` governs retention.
-- [source/screen.c](../../source/screen.c): window redraw selects the appropriate normal, held, or scrollback view.
+- `source/keys.c`: action registration, default bindings, and terminal Home binding.
+- `source/window.c`: `scrollback_start`, `window_scrollback_start`, `window_scrollback_backwards`, and the line-count tester implement movement and view selection; `trim_scrollback` governs retention.
+- `source/screen.c`: window redraw selects the appropriate normal, held, or scrollback view.

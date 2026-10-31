@@ -46,7 +46,7 @@ on ^disconnect * (message) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_kill` distinguishes your kill, server rejection, and other nicknames' kills.
-- [source/server.c](../../source/server.c): `vsend_to_aserver_with_payload` emits the closed-socket notification; `disconnectcmd` emits the user-request notification; socket-read failure takes a separate lifecycle path.
-- [source/window.c](../../source/window.c): `window_check_servers` maintains the connected-server count.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard matching and suppression.
+- `source/parse.c`: `p_kill` distinguishes your kill, server rejection, and other nicknames' kills.
+- `source/server.c`: `vsend_to_aserver_with_payload` emits the closed-socket notification; `disconnectcmd` emits the user-request notification; socket-read failure takes a separate lifecycle path.
+- `source/window.c`: `window_check_servers` maintains the connected-server count.
+- `source/hook.c`: event registration and `do_hook` implement standard matching and suppression.

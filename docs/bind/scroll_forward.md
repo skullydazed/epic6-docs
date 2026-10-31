@@ -32,6 +32,6 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration, default bindings, and terminal Page Down binding.
-- [source/window.c](../../source/window.c): `scrollback_forwards`, `window_scrollback_forward`, `window_scrollback_forwards`, and the line-count tester implement movement and held-view selection; `recalculate_window_cursor_and_display_ip` cancels caught-up scrollback.
-- [include/config.h](../../include/config.h): default scrollback ratio.
+- `source/keys.c`: action registration, default bindings, and terminal Page Down binding.
+- `source/window.c`: `scrollback_forwards`, `window_scrollback_forward`, `window_scrollback_forwards`, and the line-count tester implement movement and held-view selection; `recalculate_window_cursor_and_display_ip` cancels caught-up scrollback.
+- `include/config.h`: default scrollback ratio.

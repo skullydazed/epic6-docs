@@ -36,4 +36,4 @@ alias dns {
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). Lookup ordering, address handling, c-ares callbacks, and event-loop waits are in [source/network.c](../../source/network.c).
+Registered and implemented in `source/functions.c`. Lookup ordering, address handling, c-ares callbacks, and event-loop waits are in `source/network.c`.

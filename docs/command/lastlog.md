@@ -85,4 +85,4 @@ The final example requires an existing `lastlog.out` file and appends lines cont
 
 `lastlog` first appeared in ircII. `-rewrite` first appeared in EPIC5-0.3.5. The built-in is always registered.
 
-Registration is in [source/commands.c](../../source/commands.c). Retention, option parsing, selection, context, and rewriting are in [source/lastlog.c](../../source/lastlog.c). Settings are registered in [source/vars.c](../../source/vars.c), level names are handled in [source/levels.c](../../source/levels.c), path normalization is in [source/ircaux.c](../../source/ircaux.c), and file-versus-window output is in [source/output.c](../../source/output.c).
+Registration is in `source/commands.c`. Retention, option parsing, selection, context, and rewriting are in `source/lastlog.c`. Settings are registered in `source/vars.c`, level names are handled in `source/levels.c`, path normalization is in `source/ircaux.c`, and file-versus-window output is in `source/output.c`.

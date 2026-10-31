@@ -12,7 +12,7 @@
 
 The server determines how many records it retains and for how long. Records may already have expired or be unavailable, and a nickname can have been used by several different people. Historical data is not proof of a user's current identity or presence.
 
-A second argument conventionally requests a count, and a third selects a remote server where supported. EPIC forwards these arguments without validating or inserting a count; with only a nickname, the server chooses its default count. The C built-in does not consult `num_of_whowas`. The bundled [`builtins`](../../script/builtins) script defines that setting for compatibility, but this handler does not use it.
+A second argument conventionally requests a count, and a third selects a remote server where supported. EPIC forwards these arguments without validating or inserting a count; with only a nickname, the server chooses its default count. The C built-in does not consult `num_of_whowas`. The bundled [`builtins`](../scripts/builtins.md) script defines that setting for compatibility, but this handler does not use it.
 
 The first word is parsed as the nickname and joined to the remaining argument text. Quotes are not removed, additional arguments are forwarded, and there are no client-side options. With no arguments, EPIC uses your current server nickname. The outgoing line uses the server's encoding. You can supply a remote server directly to this command; using [`quote`](quote.md) is unnecessary.
 
@@ -38,4 +38,4 @@ Ask a particular server for the same information where remote queries are suppor
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `whowas` and implements its command-name branch in `whois()`. [source/server.c](../../source/server.c) sends the request. [source/numbers.c](../../source/numbers.c) implements numeric hooks and 314/312/369 formatting.
+`source/commands.c` registers `whowas` and implements its command-name branch in `whois()`. `source/server.c` sends the request. `source/numbers.c` implements numeric hooks and 314/312/369 formatting.

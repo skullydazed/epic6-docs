@@ -28,8 +28,8 @@ The separate outgoing CTCP reply throttle is not this incoming-message filter. L
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of the `flood` hook.
-- [source/vars.c](../../source/vars.c): current registration omits `flood_ignore` and handles unknown-variable errors.
-- [source/hook.c](../../source/hook.c): current registration omits the former `flood` event.
-- [source/parse.c](../../source/parse.c): current incoming message handlers use message events without the former flood detector.
-- [source/ctcp.c](../../source/ctcp.c): outgoing automatic-reply throttling is separate.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of the `flood` hook.
+- `source/vars.c`: current registration omits `flood_ignore` and handles unknown-variable errors.
+- `source/hook.c`: current registration omits the former `flood` event.
+- `source/parse.c`: current incoming message handlers use message events without the former flood detector.
+- `source/ctcp.c`: outgoing automatic-reply throttling is separate.

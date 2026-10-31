@@ -39,4 +39,4 @@ Whether knocking while already joined is meaningful or allowed is a server decis
 
 ## Source
 
-Registration and the shared `send_channel_com` handler are in [source/commands.c](../../source/commands.c). The handler has no special `knock` branch. Server selection, connection checks, encoding, and request transmission are in [source/server.c](../../source/server.c).
+Registration and the shared `send_channel_com` handler are in `source/commands.c`. The handler has no special `knock` branch. Server selection, connection checks, encoding, and request transmission are in `source/server.c`.

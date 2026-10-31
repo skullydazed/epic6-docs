@@ -249,9 +249,9 @@ The proposed server-description field `ssl-strict` was removed. This entry recor
 ## Source references
 
 - Tag `epic5-2.1.6`, its `UPDATES` and `source/irc.c`, and release commit `1df4c951`: dated announcements and release identity; the tag also contains `script/reconnect.orig`.
-- [source/server.c](../../source/server.c): PADDR, reconnection failure paths, SSL hook ordering, certificate-policy decisions, and SERVERCTL SSL getters/setter.
-- [source/ssl.c](../../source/ssl.c), [source/vars.c](../../source/vars.c), and [include/config.h](../../include/config.h): verification categories, certificate-hook arguments/hash, SSL cipher configuration, setting registrations, and compiled acceptance default.
-- [source/window.c](../../source/window.c), [source/lastlog.c](../../source/lastlog.c), and [source/levels.c](../../source/levels.c): CLEARREGEX/CLEARLEVEL registration, matching, history removal, and level names.
-- [source/commands.c](../../source/commands.c), [source/alias.c](../../source/alias.c), and [source/names.c](../../source/names.c): argument-list statements, variable scope, and CHANNEL_LOST arguments.
-- [source/functions.c](../../source/functions.c) and [source/hook.c](../../source/hook.c): JSON function implementations/registrations and event registrations.
-- [script/reconnect](../../script/reconnect) and [script/reconnect.old](../../script/reconnect.old): current reconnect implementations and filenames.
+- `source/server.c`: PADDR, reconnection failure paths, SSL hook ordering, certificate-policy decisions, and SERVERCTL SSL getters/setter.
+- `source/ssl.c`, `source/vars.c`, and `include/config.h`: verification categories, certificate-hook arguments/hash, SSL cipher configuration, setting registrations, and compiled acceptance default.
+- `source/window.c`, `source/lastlog.c`, and `source/levels.c`: CLEARREGEX/CLEARLEVEL registration, matching, history removal, and level names.
+- `source/commands.c`, `source/alias.c`, and `source/names.c`: argument-list statements, variable scope, and CHANNEL_LOST arguments.
+- `source/functions.c` and `source/hook.c`: JSON function implementations/registrations and event registrations.
+- [`script/reconnect`](../scripts/reconnect.md) and `script/reconnect.old`: current reconnect implementations and filenames.

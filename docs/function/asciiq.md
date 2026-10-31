@@ -46,4 +46,4 @@ The `asciiq()` function first appeared in EPIC4-1.1.8.
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `asciiq` and implements `function_asciiq()` and `function_chrq()`. [source/ircaux.c](../../source/ircaux.c) implements `transform_string_dyn()` and the CTCP encoder/decoder.
+`source/functions.c` registers `asciiq` and implements `function_asciiq()` and `function_chrq()`. `source/ircaux.c` implements `transform_string_dyn()` and the CTCP encoder/decoder.

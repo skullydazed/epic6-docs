@@ -24,4 +24,4 @@ No argument reports the stored value or `<default>` and stops the operation chai
 
 ## Source references
 
-`windowcmd_scroll_lines`, `new_window`, and `add_to_scrollback` in [source/window.c](../../source/window.c); scrolling in [source/screen.c](../../source/screen.c).
+`windowcmd_scroll_lines`, `new_window`, and `add_to_scrollback` in `source/window.c`; scrolling in `source/screen.c`.

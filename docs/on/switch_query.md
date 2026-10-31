@@ -36,5 +36,5 @@ on -switch_query "*" {
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `switch_query` selects and promotes the target before invoking the hook.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/window.c`: `switch_query` selects and promotes the target before invoking the hook.
+- `source/hook.c`: event registration and standard hook dispatch.

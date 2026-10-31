@@ -46,6 +46,6 @@ This operation first appeared in EPIC5-0.0.3.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): the command table maps both names to `windowcmd_kill_all_invisible`; `unlink_window`, `delete_window_contents`, and `make_window_current_by_refnum` implement deletion and current-window repair; `window_check_servers` handles autoclose.
-- [source/names.c](../../source/names.c): `reassign_window_channels` searches for replacement windows on the same server.
-- [source/server.c](../../source/server.c): initializes server autoclose to on.
+- `source/window.c`: the command table maps both names to `windowcmd_kill_all_invisible`; `unlink_window`, `delete_window_contents`, and `make_window_current_by_refnum` implement deletion and current-window repair; `window_check_servers` handles autoclose.
+- `source/names.c`: `reassign_window_channels` searches for replacement windows on the same server.
+- `source/server.c`: initializes server autoclose to on.

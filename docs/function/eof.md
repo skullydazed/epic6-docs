@@ -39,4 +39,4 @@ With a valid ordinary input handle, test `at_end > 0` for EOF. `at_end == 0` mea
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). Handle lookup and reading are in [source/files.c](../../source/files.c); ordinary and archive EOF handling is in [source/elf.c](../../source/elf.c).
+Registered and implemented in `source/functions.c`. Handle lookup and reading are in `source/files.c`; ordinary and archive EOF handling is in `source/elf.c`.

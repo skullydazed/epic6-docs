@@ -38,4 +38,4 @@ This function first appeared in ircII-2.2pre3. Its former passive TCP listener i
 
 ## Source
 
-Registered and implemented as `function_listen` in [source/functions.c](../../source/functions.c). The former implementation is inside `#if 0`; the active branch returns the empty string unconditionally.
+Registered and implemented as `function_listen` in `source/functions.c`. The former implementation is inside `#if 0`; the active branch returns the empty string unconditionally.

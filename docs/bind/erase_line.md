@@ -32,6 +32,6 @@ See [bind](../command/bind.md) for key sequence syntax and [reset_line](reset_li
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and the default Control-U binding.
-- [source/input.c](../../source/input.c): `input_clear_line` calls `cut_input(0, 999)` for nonempty input, then clears the whole buffer and resets the cursor; `input_yank_cut_buffer` restores saved text.
-- [source/ircaux.c](../../source/ircaux.c): `strext2` copies the selected text into the cut buffer.
+- `source/keys.c`: action registration and the default Control-U binding.
+- `source/input.c`: `input_clear_line` calls `cut_input(0, 999)` for nonempty input, then clears the whole buffer and resets the cursor; `input_yank_cut_buffer` restores saved text.
+- `source/ircaux.c`: `strext2` copies the selected text into the cut buffer.

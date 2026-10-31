@@ -47,4 +47,4 @@ A result such as `@+Alice ..Bob %+Carol` means Alice is cached as an operator wi
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `channel` and implements `function_channel()`. [source/names.c](../../source/names.c) implements `scan_channel()`, channel lookup, member status tracking, and the sorted nickname table. [include/words.h](../../include/words.h) defines argument parsing.
+`source/functions.c` registers `channel` and implements `function_channel()`. `source/names.c` implements `scan_channel()`, channel lookup, member status tracking, and the sorted nickname table. `include/words.h` defines argument parsing.

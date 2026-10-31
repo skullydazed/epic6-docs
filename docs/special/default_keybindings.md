@@ -108,7 +108,7 @@ This makes Tab insert a literal tab if it reaches EPIC. Individual action pages 
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): `init_binds`, `init_keys`, `init_termkeys`, key-sequence parsing, and `bind -defaults` reset path.
-- [source/term.c](../../source/term.c): terminal capabilities, interrupt-key setup, and flow-control handling.
-- [source/input.c](../../source/input.c): character insertion, cursor editing, and submission.
-- [script/history](../../script/history): startup-script history bindings beyond the core defaults.
+- `source/keys.c`: `init_binds`, `init_keys`, `init_termkeys`, key-sequence parsing, and `bind -defaults` reset path.
+- `source/term.c`: terminal capabilities, interrupt-key setup, and flow-control handling.
+- `source/input.c`: character insertion, cursor editing, and submission.
+- [`script/history`](../scripts/history.md): startup-script history bindings beyond the core defaults.

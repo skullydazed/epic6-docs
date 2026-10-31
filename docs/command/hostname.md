@@ -41,4 +41,4 @@ The numeric addresses above illustrate syntax; replace them with addresses actua
 
 Use the address or slash-separated pair as the whole argument; there are no command options. Address availability can change after successful validation, and cached entries are reused rather than resolved and bind-tested again. The command is always registered.
 
-Registration and `e_hostname` are in [source/commands.c](../../source/commands.c). Family-specific validation, caching, default selection, and summaries are in [source/network.c](../../source/network.c). New server connections use these defaults in [source/server.c](../../source/server.c), and startup default-hostname configuration is in [source/irc.c](../../source/irc.c).
+Registration and `e_hostname` are in `source/commands.c`. Family-specific validation, caching, default selection, and summaries are in `source/network.c`. New server connections use these defaults in `source/server.c`, and startup default-hostname configuration is in `source/irc.c`.

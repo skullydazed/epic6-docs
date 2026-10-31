@@ -28,7 +28,7 @@ See [bind](../command/bind.md) for key sequence syntax. Use `/unclear -noforce` 
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default key assignments.
-- [source/input.c](../../source/input.c): `input_unclear_screen` calls `unclear_window_by_refnum(0, 1)`.
-- [source/window.c](../../source/window.c): `unclear_window_by_refnum`, `reset_window_clear_point`, `unclear_window`, and display-position recalculation implement restoration.
-- [source/commands.c](../../source/commands.c): `e_clear` uses the same helper for `/unclear` with default force behavior.
+- `source/keys.c`: action registration and default key assignments.
+- `source/input.c`: `input_unclear_screen` calls `unclear_window_by_refnum(0, 1)`.
+- `source/window.c`: `unclear_window_by_refnum`, `reset_window_clear_point`, `unclear_window`, and display-position recalculation implement restoration.
+- `source/commands.c`: `e_clear` uses the same helper for `/unclear` with default force behavior.

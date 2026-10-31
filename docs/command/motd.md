@@ -22,7 +22,7 @@ There are no client-side options or argument validation, and the built-in is alw
 
 Sending requires a usable connection. A closed connection normally produces a diagnostic subject to the `disconnect` hook; with no server record, no request is sent.
 
-The bundled [script/motd](../../script/motd) reads a local distribution message file and records a timestamp. It is separate from this IRC server query.
+The bundled [`script/motd`](../scripts/motd.md) reads a local distribution message file and records a timestamp. It is separate from this IRC server query.
 
 ## Examples
 
@@ -35,4 +35,4 @@ Read any server rules or announcements returned before using that server.
 
 ## Source
 
-Registration and the shared `send_comm` handler are in [source/commands.c](../../source/commands.c), with no special `motd` branch. Server selection and transmission are in [source/server.c](../../source/server.c); numeric hooks and ordinary reply display are in [source/numbers.c](../../source/numbers.c).
+Registration and the shared `send_comm` handler are in `source/commands.c`, with no special `motd` branch. Server selection and transmission are in `source/server.c`; numeric hooks and ordinary reply display are in `source/numbers.c`.

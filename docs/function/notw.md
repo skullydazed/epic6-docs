@@ -43,4 +43,4 @@ With `xdebug dword` enabled, `$notw(1 one "two words" three)` returns `one three
 
 This function first appeared in “plus-2” (post-ircII, pre-EPIC).
 
-Registration and `function_notw()`: [source/functions.c](../../source/functions.c). `extractfw` and the end marker: [include/words.h](../../include/words.h). Word extraction: [source/words.c](../../source/words.c). Integer conversion and joining: [include/functions.h](../../include/functions.h) and [source/ircaux.c](../../source/ircaux.c).
+Registration and `function_notw()`: `source/functions.c`. `extractfw` and the end marker: `include/words.h`. Word extraction: `source/words.c`. Integer conversion and joining: `include/functions.h` and `source/ircaux.c`.

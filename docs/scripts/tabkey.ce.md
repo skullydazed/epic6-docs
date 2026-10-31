@@ -1,6 +1,6 @@
 # tabkey.ce script
 
-[tabkey.ce](../../script/tabkey.ce) provides command, nickname, and other input completion, including cycling through saved matches.
+tabkey.ce provides command, nickname, and other input completion, including cycling through saved matches.
 
 ## Synopsis
 
@@ -54,7 +54,7 @@ The script defines many `tabkey.*` aliases, creates settings and key actions, an
 
 The script header identifies version **1.3.1**, based on CrazyEddy's EPIC4 script and extended by Brian Weiss.
 
-- [script/tabkey.ce](../../script/tabkey.ce): bindings, setting defaults, completion dispatch, history, and retained compatibility branches.
-- [source/functions.c](../../source/functions.c): BINDCTL, SYMBOLCTL, GETCOMMANDS, GETSETS, CHANUSERS, and MYCHANNELS registrations.
-- [source/hook.c](../../source/hook.c): current MSG/SEND_MSG/SEND_CTCP hooks and absence of the former DCC hook registrations.
-- [script/builtins](../../script/builtins) and [script/notify](../../script/notify): helper definitions and unfinished notify-function branch.
+- `script/tabkey.ce`: bindings, setting defaults, completion dispatch, history, and retained compatibility branches.
+- `source/functions.c`: BINDCTL, SYMBOLCTL, GETCOMMANDS, GETSETS, CHANUSERS, and MYCHANNELS registrations.
+- `source/hook.c`: current MSG/SEND_MSG/SEND_CTCP hooks and absence of the former DCC hook registrations.
+- [`script/builtins`](builtins.md) and [`script/notify`](notify.md): helper definitions and unfinished notify-function branch.

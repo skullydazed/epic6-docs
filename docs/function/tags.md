@@ -39,4 +39,4 @@ For an incoming message with `@account=alice;label=abc`, the saved value is `acc
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:9457). Tag extraction: [`BreakArgs`](../../source/parse.c:214). Callback ordering and lifetime: [`parse_server`](../../source/parse.c:1437).
+Handler: `source/functions.c`. Tag extraction: `BreakArgs`. Callback ordering and lifetime: `parse_server`.

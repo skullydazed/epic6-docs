@@ -33,4 +33,4 @@ The first returns positions of entries containing `connection lost` in the curre
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c) and implemented as `function_lastlog` in [source/lastlog.c](../../source/lastlog.c). Window selection is in [source/window.c](../../source/window.c); level-mask parsing and warnings are in [source/levels.c](../../source/levels.c).
+Registered in `source/functions.c` and implemented as `function_lastlog` in `source/lastlog.c`. Window selection is in `source/window.c`; level-mask parsing and warnings are in `source/levels.c`.

@@ -30,8 +30,8 @@ Scripts integrating a server's note or service facility must handle the replies 
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records removal of the previously sunset `note` hook.
-- [source/hook.c](../../source/hook.c): the named-hook table omits `note`; `find_hook` rejects unknown event names.
-- [include/hook.h](../../include/hook.h): current event identifiers contain no note hook.
-- [source/parse.c](../../source/parse.c): current incoming-command dispatch has no dedicated note handler.
-- [source/commands.c](../../source/commands.c): the `note` command maps to `send_comm`, which forwards the command and arguments without generating a note event.
+- [KNOWNBUGS](../KNOWNBUGS.md): records removal of the previously sunset `note` hook.
+- `source/hook.c`: the named-hook table omits `note`; `find_hook` rejects unknown event names.
+- `include/hook.h`: current event identifiers contain no note hook.
+- `source/parse.c`: current incoming-command dispatch has no dedicated note handler.
+- `source/commands.c`: the `note` command maps to `send_comm`, which forwards the command and arguments without generating a note event.

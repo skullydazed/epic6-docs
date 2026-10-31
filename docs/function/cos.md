@@ -31,4 +31,4 @@ The approximate examples describe numeric values; the returned strings may conta
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `cos` and implements it through the shared math-function and error-return macros. [include/functions.h](../../include/functions.h) defines argument conversion and formatting. The [C/POSIX cosine specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/cos.html) defines radians, special inputs, and library error reporting.
+`source/functions.c` registers `cos` and implements it through the shared math-function and error-return macros. `include/functions.h` defines argument conversion and formatting. The [C/POSIX cosine specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/cos.html) defines radians, special inputs, and library error reporting.

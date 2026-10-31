@@ -43,7 +43,7 @@ on -switch_windows "*" (oldscreen, oldwin, newscreen, newwin) {
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `make_window_current_by_refnum` changes the global selection and invokes the hook; `make_window_current_informally` changes it without this event; window commands call these selection routines.
-- [source/screen.c](../../source/screen.c): screen input selects its current window.
-- [source/status.c](../../source/status.c): status expando evaluation temporarily selects windows informally.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching.
+- `source/window.c`: `make_window_current_by_refnum` changes the global selection and invokes the hook; `make_window_current_informally` changes it without this event; window commands call these selection routines.
+- `source/screen.c`: screen input selects its current window.
+- `source/status.c`: status expando evaluation temporarily selects windows informally.
+- `source/hook.c`: event registration and standard hook matching.

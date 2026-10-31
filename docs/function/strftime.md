@@ -43,4 +43,4 @@ These examples depend on the actual date, timezone, and locale. `$strftime(0 %Y/
 
 First appeared in ircII-2.8.1 and was first included in EPIC3pre8.
 
-Registration and `function_strftime()`: [source/functions.c](../../source/functions.c). Timestamp validation: [source/ircaux.c](../../source/ircaux.c), `is_valid_time_t()`. Integer argument parsing: [include/functions.h](../../include/functions.h).
+Registration and `function_strftime()`: `source/functions.c`. Timestamp validation: `source/ircaux.c`, `is_valid_time_t()`. Integer argument parsing: `include/functions.h`.

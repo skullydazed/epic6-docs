@@ -59,7 +59,7 @@ Written for EPIC5 by blackjac to supersede the temporary `set -create` feature.
 
 ## Source references
 
-- [script/addset](../../script/addset): aliases delegate creation, typing, callback storage, and deletion to `symbolctl`.
-- [source/alias.c](../../source/alias.c): `symbolctl` built-in-variable attributes, initial allocation, resets, callback storage, and deletion protection.
-- [source/vars.c](../../source/vars.c): type validation, accepted-assignment callbacks, value arguments, output suppression, and pending guard.
-- [script/builtins](../../script/builtins): loads and uses `addset`.
+- `script/addset`: aliases delegate creation, typing, callback storage, and deletion to `symbolctl`.
+- `source/alias.c`: `symbolctl` built-in-variable attributes, initial allocation, resets, callback storage, and deletion protection.
+- `source/vars.c`: type validation, accepted-assignment callbacks, value arguments, output suppression, and pending guard.
+- [`script/builtins`](builtins.md): loads and uses `addset`.

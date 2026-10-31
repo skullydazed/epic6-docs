@@ -30,4 +30,4 @@ This explicitly selects the `motd` script beneath the chosen library directory i
 
 ## Source
 
-Registration and direct return: [source/functions.c](../../source/functions.c). Startup `IRCLIB` and `IRCPATH` handling: [source/irc.c](../../source/irc.c). Default search-path template: [include/config.h](../../include/config.h). Compiled directory definition: [source/Makefile.in](../../source/Makefile.in).
+Registration and direct return: `source/functions.c`. Startup `IRCLIB` and `IRCPATH` handling: `source/irc.c`. Default search-path template: `include/config.h`. Compiled directory definition: `source/Makefile.in`.

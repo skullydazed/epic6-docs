@@ -30,4 +30,4 @@ No arguments returns `0`, because no paths are attempted. A zero return should n
 | `$mkdir(~/myscript)` | Attempts one path; reliable creation cannot be assumed |
 | `$mkdir("my script" another)` | Attempts two paths; the quoted path is one argument |
 
-Implementation and registration: [source/functions.c](../../source/functions.c), `function_mkdir()`. Filename normalization and tilde expansion: [source/ircaux.c](../../source/ircaux.c), `normalize_filename()` and `expand_twiddle()`.
+Implementation and registration: `source/functions.c`, `function_mkdir()`. Filename normalization and tilde expansion: `source/ircaux.c`, `normalize_filename()` and `expand_twiddle()`.

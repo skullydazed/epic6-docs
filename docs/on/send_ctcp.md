@@ -47,6 +47,6 @@ This adds a local message without sending a duplicate request. For action-specif
 
 ## Source references
 
-- [source/ctcp.c](../../source/ctcp.c): `send_ctcp` chooses the protocol, performs early checks and argument recoding, invokes this hook without checking its return value, frames and truncates the payload, and calls `send_text`.
-- [source/commands.c](../../source/commands.c): `ctcpcmd`, `mecmd`, and `describe` use the CTCP sender; `send_text` sends the framed payload.
-- [source/hook.c](../../source/hook.c): the event registration sets the nonrecursion flag; dispatch implements matching.
+- `source/ctcp.c`: `send_ctcp` chooses the protocol, performs early checks and argument recoding, invokes this hook without checking its return value, frames and truncates the payload, and calls `send_text`.
+- `source/commands.c`: `ctcpcmd`, `mecmd`, and `describe` use the CTCP sender; `send_text` sends the framed payload.
+- `source/hook.c`: the event registration sets the nonrecursion flag; dispatch implements matching.

@@ -37,4 +37,4 @@ This checks the same server context that the message uses. `$isconnected(1)` che
 
 ## Source
 
-Registered and implemented as `function_isconnected` in [source/functions.c](../../source/functions.c). Server reference lookup, `is_server_registered`, registration state transitions, and `serverctl`'s `connected` property are in [source/server.c](../../source/server.c). Integer argument conversion is in [include/functions.h](../../include/functions.h).
+Registered and implemented as `function_isconnected` in `source/functions.c`. Server reference lookup, `is_server_registered`, registration state transitions, and `serverctl`'s `connected` property are in `source/server.c`. Integer argument conversion is in `include/functions.h`.

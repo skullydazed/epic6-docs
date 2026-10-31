@@ -20,4 +20,4 @@ This is a diagnostic operation; it does not repair counts or change history. It 
 
 ## Source references
 
-`windowcmd_check` in [source/window.c](../../source/window.c), with `recount_window_lastlog` in [source/lastlog.c](../../source/lastlog.c).
+`windowcmd_check` in `source/window.c`, with `recount_window_lastlog` in `source/lastlog.c`.

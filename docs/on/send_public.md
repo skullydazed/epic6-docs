@@ -49,7 +49,7 @@ on ^send_public "*" (channel, message) {
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `send_text` selects the channel hook, controls echo, sends encoded chunks afterward, records the target, and handles recursion.
-- [source/parse.c](../../source/parse.c): `is_channel` checks `chantypes` and fallback channel prefixes without checking membership.
-- [source/ctcp.c](../../source/ctcp.c): `send_ctcp` disables ordinary send hooks for framed payloads.
-- [source/hook.c](../../source/hook.c): event registration sets the nonrecursion flag; dispatch implements matching and echo suppression.
+- `source/commands.c`: `send_text` selects the channel hook, controls echo, sends encoded chunks afterward, records the target, and handles recursion.
+- `source/parse.c`: `is_channel` checks `chantypes` and fallback channel prefixes without checking membership.
+- `source/ctcp.c`: `send_ctcp` disables ordinary send hooks for framed payloads.
+- `source/hook.c`: event registration sets the nonrecursion flag; dispatch implements matching and echo suppression.

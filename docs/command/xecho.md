@@ -66,4 +66,4 @@ eval xecho -r $chr(27)]2\;Your titlebar has been changed.$chr(7)
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `xecho` and implements `xechocmd()`, options, and restoration. [source/window.c](../../source/window.c) manages output contexts and selected lines; [source/screen.c](../../source/screen.c) routes, rewrites, and displays window output. [source/output.c](../../source/output.c) implements `put_echo()`, [source/log.c](../../source/log.c) checks logging inhibition, and [source/lastlog.c](../../source/lastlog.c) manages expiry. [source/levels.c](../../source/levels.c) parses single levels.
+`source/commands.c` registers `xecho` and implements `xechocmd()`, options, and restoration. `source/window.c` manages output contexts and selected lines; `source/screen.c` routes, rewrites, and displays window output. `source/output.c` implements `put_echo()`, `source/log.c` checks logging inhibition, and `source/lastlog.c` manages expiry. `source/levels.c` parses single levels.

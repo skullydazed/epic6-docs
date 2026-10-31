@@ -35,5 +35,5 @@ on -window_notified "*" {
 
 ## Source references
 
-- [source/screen.c](../../source/screen.c): `add_to_window` applies hidden-window notification conditions, sets the flag, and invokes the hook.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/screen.c`: `add_to_window` applies hidden-window notification conditions, sets the flag, and invokes the hook.
+- `source/hook.c`: event registration and standard hook dispatch.

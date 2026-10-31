@@ -38,7 +38,7 @@ Select overwrite mode, then return to insertion. Use `/set insert_mode on` to se
 
 ## Source references
 
-- [source/input.c](../../source/input.c): `input_add_character` inserts, appends, or replaces the current input code point; `toggle_insert_mode` changes the global setting.
-- [source/keys.c](../../source/keys.c): action registration and default Tab and terminal Insert bindings.
-- [source/status.c](../../source/status.c): insertion and overwrite status fields read the setting.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration, status-update callback, and default on.
+- `source/input.c`: `input_add_character` inserts, appends, or replaces the current input code point; `toggle_insert_mode` changes the global setting.
+- `source/keys.c`: action registration and default Tab and terminal Insert bindings.
+- `source/status.c`: insertion and overwrite status fields read the setting.
+- `source/vars.c` and `include/config.h`: boolean registration, status-update callback, and default on.

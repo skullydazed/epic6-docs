@@ -57,8 +57,8 @@ These functions were written by Xavier and first appeared in EPIC5-0.3.2. The re
 
 ## Source references
 
-- [script/snip](../../script/snip): trimming loop, argument list, wrappers, and examples.
-- [source/alias.c](../../source/alias.c): quoted-word alias argument parsing.
-- [source/expr.c](../../source/expr.c): `@` expands to byte length.
-- [source/expr2.c](../../source/expr2.c): ordinary string equality uses case-insensitive comparison.
-- [source/functions.c](../../source/functions.c): `left`, `right`, `rest`, and `chop` implement the selected-end operations.
+- `script/snip`: trimming loop, argument list, wrappers, and examples.
+- `source/alias.c`: quoted-word alias argument parsing.
+- `source/expr.c`: `@` expands to byte length.
+- `source/expr2.c`: ordinary string equality uses case-insensitive comparison.
+- `source/functions.c`: `left`, `right`, `rest`, and `chop` implement the selected-end operations.

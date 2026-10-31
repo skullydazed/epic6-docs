@@ -26,4 +26,4 @@ See [bind](../command/bind.md) for supported binding operations.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): `init_binds` lists available built-in actions and `init_keys` defines default key assignments; neither includes `stop_irc`. `bind_compressed_string` rejects unknown action names before changing the binding.
+- `source/keys.c`: `init_binds` lists available built-in actions and `init_keys` defines default key assignments; neither includes `stop_irc`. `bind_compressed_string` rejects unknown action names before changing the binding.

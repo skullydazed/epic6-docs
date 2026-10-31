@@ -93,8 +93,8 @@ The history script first appeared in EPIC5-0.0.5.
 
 ## Source references
 
-- [script/history](../../script/history): settings, capture/recall hooks, bindings, persistence, and `historyctl` operations.
-- [source/input.c](../../source/input.c): interactive submission and prompt callback paths.
-- [source/commands.c](../../source/commands.c): built-in `sendline` and input-editing command dispatch.
-- [source/array.c](../../source/array.c): stored indices, matching, and array mutations.
-- [source/functions.c](../../source/functions.c) and [source/files.c](../../source/files.c): append-mode `open`, line reads, and writes.
+- `script/history`: settings, capture/recall hooks, bindings, persistence, and `historyctl` operations.
+- `source/input.c`: interactive submission and prompt callback paths.
+- `source/commands.c`: built-in `sendline` and input-editing command dispatch.
+- `source/array.c`: stored indices, matching, and array mutations.
+- `source/functions.c` and `source/files.c`: append-mode `open`, line reads, and writes.

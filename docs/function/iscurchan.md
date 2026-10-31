@@ -36,4 +36,4 @@ Here `$0` is the outgoing channel from the `send_public` hook. The hook suppress
 
 ## Source
 
-Registered and implemented as `function_iscurchan` in [source/functions.c](../../source/functions.c). Window traversal and current-channel access are in [source/window.c](../../source/window.c), channel selection is in [source/names.c](../../source/names.c), and string comparison is in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented as `function_iscurchan` in `source/functions.c`. Window traversal and current-channel access are in `source/window.c`, channel selection is in `source/names.c`, and string comparison is in `source/ircaux.c`.

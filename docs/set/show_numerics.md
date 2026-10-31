@@ -33,6 +33,6 @@ Applicable WHOIS reply displays use their numeric prefixes, subject to normal ho
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and off default.
-- [source/numbers.c](../../source/numbers.c): `banner` selects the numeric or configured banner; numeric processing sets and restores the current numeric and handles reply-specific displays.
-- [source/commands.c](../../source/commands.c): `xecho -b` uses the banner helper.
+- `source/vars.c` and `include/config.h`: boolean registration and off default.
+- `source/numbers.c`: `banner` selects the numeric or configured banner; numeric processing sets and restores the current numeric and handles reply-specific displays.
+- `source/commands.c`: `xecho -b` uses the banner helper.

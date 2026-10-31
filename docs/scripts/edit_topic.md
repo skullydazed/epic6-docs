@@ -52,8 +52,8 @@ This script first appeared in EPIC4-1.0.
 
 ## Source references
 
-- [script/edit_topic](../../script/edit_topic): temporary numeric handlers, topic query, wait, and draft insertion.
-- [source/commands.c](../../source/commands.c): `e_topic`, `waitcmd`, and literal `xtype` insertion.
-- [source/numbers.c](../../source/numbers.c): topic numeric handling and numbered hook arguments.
-- [source/input.c](../../source/input.c): `erase_line` clears input and updates the cut buffer.
-- [source/hook.c](../../source/hook.c) and [source/server.c](../../source/server.c): hook stacks and server round-trip waiting.
+- `script/edit_topic`: temporary numeric handlers, topic query, wait, and draft insertion.
+- `source/commands.c`: `e_topic`, `waitcmd`, and literal `xtype` insertion.
+- `source/numbers.c`: topic numeric handling and numbered hook arguments.
+- `source/input.c`: `erase_line` clears input and updates the cut buffer.
+- `source/hook.c` and `source/server.c`: hook stacks and server round-trip waiting.

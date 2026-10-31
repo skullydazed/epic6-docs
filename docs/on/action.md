@@ -56,7 +56,7 @@ This event already existed in ircII.
 
 ## Source references
 
-- [source/ctcp.c](../../source/ctcp.c): `init_ctcp`, `do_ctcp`, and `do_atmosphere` register the handler, apply parser limits, invoke the event, and format default output.
-- [source/parse.c](../../source/parse.c): `p_privmsg` and `p_notice` pass incoming messages through CTCP processing.
-- [source/hook.c](../../source/hook.c): the `action` hook registration and `do_hook` implement matching, argument handling, and default-display suppression.
-- [source/window.c](../../source/window.c): `real_set_context` selects the output context.
+- `source/ctcp.c`: `init_ctcp`, `do_ctcp`, and `do_atmosphere` register the handler, apply parser limits, invoke the event, and format default output.
+- `source/parse.c`: `p_privmsg` and `p_notice` pass incoming messages through CTCP processing.
+- `source/hook.c`: the `action` hook registration and `do_hook` implement matching, argument handling, and default-display suppression.
+- `source/window.c`: `real_set_context` selects the output context.

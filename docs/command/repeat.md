@@ -46,4 +46,4 @@ This displays `1`, `2`, and `3`.
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c). `repeatcmd` is in [source/if.c](../../source/if.c), count conversion in [source/ircaux.c](../../source/ircaux.c), and repeated block execution and exception propagation in [source/commands.c](../../source/commands.c).
+Registration is in `source/commands.c`. `repeatcmd` is in `source/if.c`, count conversion in `source/ircaux.c`, and repeated block execution and exception propagation in `source/commands.c`.

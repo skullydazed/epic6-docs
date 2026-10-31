@@ -32,7 +32,7 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration, default Control-Q binding, and the quote override in `handle_keypress`.
-- [source/input.c](../../source/input.c): `quote_char` sets the screen flag; `input_add_character` performs insertion.
-- [source/screen.c](../../source/screen.c): `user_input_codepoint` handles keypress prompts and clears the quote flag after normal input processing.
-- [source/term.c](../../source/term.c): reverse control-character display in the input line.
+- `source/keys.c`: action registration, default Control-Q binding, and the quote override in `handle_keypress`.
+- `source/input.c`: `quote_char` sets the screen flag; `input_add_character` performs insertion.
+- `source/screen.c`: `user_input_codepoint` handles keypress prompts and clears the quote flag after normal input processing.
+- `source/term.c`: reverse control-character display in the input line.

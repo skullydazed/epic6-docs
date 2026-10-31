@@ -60,11 +60,11 @@ The automatic-new-nickname feature first appeared in EPIC2pre3. This script was 
 
 ## Source references
 
-- [script/newnick](../../script/newnick): selection, mangling, input prompt, and setting defaults.
-- [script/addset](../../script/addset): creation of script-provided settings.
-- [script/global](../../script/global): default startup load.
-- [source/server.c](../../source/server.c): `nickname_change_rejected`, `reset_nickname`, and `change_server_nickname` distinguish registration and submit replacements.
-- [source/numbers.c](../../source/numbers.c): server rejection numerics invoke nickname recovery.
-- [source/functions.c](../../source/functions.c): `findw` finds the first case-insensitive list match; `right` and `mid` construct mangled names.
-- [source/vars.c](../../source/vars.c): character and nonnegative-integer setting validation.
-- [source/commands.c](../../source/commands.c) and [source/screen.c](../../source/screen.c): input prompt creation and deferred callback execution.
+- `script/newnick`: selection, mangling, input prompt, and setting defaults.
+- [`script/addset`](addset.md): creation of script-provided settings.
+- [`script/global`](global.md): default startup load.
+- `source/server.c`: `nickname_change_rejected`, `reset_nickname`, and `change_server_nickname` distinguish registration and submit replacements.
+- `source/numbers.c`: server rejection numerics invoke nickname recovery.
+- `source/functions.c`: `findw` finds the first case-insensitive list match; `right` and `mid` construct mangled names.
+- `source/vars.c`: character and nonnegative-integer setting validation.
+- `source/commands.c` and `source/screen.c`: input prompt creation and deferred callback execution.

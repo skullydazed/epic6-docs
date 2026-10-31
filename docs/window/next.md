@@ -38,4 +38,4 @@ Window 5 replaces window 2, and window 2 becomes hidden. Repeat to select window
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_next` selects eligible hidden windows by user refnum and handles failure; `swap_window` implements geometry, visibility, selection, and notification changes. `swap_next_window` delegates the binding to this handler.
+- `source/window.c`: `windowcmd_next` selects eligible hidden windows by user refnum and handles failure; `swap_window` implements geometry, visibility, selection, and notification changes. `swap_next_window` delegates the binding to this handler.

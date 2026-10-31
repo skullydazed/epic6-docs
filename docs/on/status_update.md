@@ -44,6 +44,6 @@ on -status_update "*" (win, line, text) {
 
 ## Source references
 
-- [source/status.c](../../source/status.c): `make_status` generates and caches status text before invoking the hook; `redraw_status` separately draws it; `function_status_oneoff` uses a temporary status object.
-- [source/window.c](../../source/window.c): `update_all_windows` separates status recalculation from forced redraws.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching.
+- `source/status.c`: `make_status` generates and caches status text before invoking the hook; `redraw_status` separately draws it; `function_status_oneoff` uses a temporary status object.
+- `source/window.c`: `update_all_windows` separates status recalculation from forced redraws.
+- `source/hook.c`: event registration and standard hook matching.

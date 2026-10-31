@@ -52,6 +52,6 @@ This hook first appeared in ircII.
 
 ## Source references
 
-- [source/exec.c](../../source/exec.c): `get_child_exit` records child status; `cleanup_dead_processes` waits for completed I/O, removes the record, runs callbacks and hooks, and controls notification; `kill_process` handles unlaunched records; `set_context_for_process` selects output context.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): register `notify_on_termination` and its default.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard matching and suppression.
+- `source/exec.c`: `get_child_exit` records child status; `cleanup_dead_processes` waits for completed I/O, removes the record, runs callbacks and hooks, and controls notification; `kill_process` handles unlaunched records; `set_context_for_process` selects output context.
+- `source/vars.c` and `include/config.h`: register `notify_on_termination` and its default.
+- `source/hook.c`: event registration and `do_hook` implement standard matching and suppression.

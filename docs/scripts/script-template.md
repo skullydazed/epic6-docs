@@ -10,7 +10,7 @@
 /<command> <name>
 ```
 
-Replace the angle-bracketed placeholders with the script name, commands, and arguments being documented. These example signatures do not identify actual commands or a bundled script named `script`. See [load](../command/load.md) for loading syntax; its built-in registration and implementation are in [source/commands.c](../../source/commands.c).
+Replace the angle-bracketed placeholders with the script name, commands, and arguments being documented. These example signatures do not identify actual commands or a bundled script named `script`. See [load](../command/load.md) for loading syntax; its built-in registration and implementation are in `source/commands.c`.
 
 ## Description
 

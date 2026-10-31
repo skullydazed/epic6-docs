@@ -43,7 +43,7 @@ An explicit nickname target association can still take precedence. Disable this 
 
 ## Source references
 
-- [source/screen.c](../../source/screen.c): `add_to_screen` applies destination precedence, this mask, and ordinary window levels in that order.
-- [source/lastlog.c](../../source/lastlog.c): `set_current_window_mask` parses and normalizes the setting.
-- [source/levels.c](../../source/levels.c): mask syntax, name matching, and unsupported-level warnings.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration and unset default.
+- `source/screen.c`: `add_to_screen` applies destination precedence, this mask, and ordinary window levels in that order.
+- `source/lastlog.c`: `set_current_window_mask` parses and normalizes the setting.
+- `source/levels.c`: mask syntax, name matching, and unsupported-level warnings.
+- `source/vars.c` and `include/config.h`: registration and unset default.

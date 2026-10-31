@@ -54,6 +54,6 @@ Calling `two_lines` prints `one` followed by `two`. The alias invocation creates
 
 ## Source references
 
-- [source/expr.c](../../source/expr.c): `next_statement` scans semicolons, nested parentheses/braces, and backslash escapes; expansion handles escaped characters.
-- [source/commands.c](../../source/commands.c): `parse_block` runs statements and stops on applicable control flow; `parse_statement` distinguishes block, expression, command, and interactive input paths.
-- [source/alias.c](../../source/alias.c): local-frame creation and destruction are independent of ordinary braces.
+- `source/expr.c`: `next_statement` scans semicolons, nested parentheses/braces, and backslash escapes; expansion handles escaped characters.
+- `source/commands.c`: `parse_block` runs statements and stops on applicable control flow; `parse_statement` distinguishes block, expression, command, and interactive input paths.
+- `source/alias.c`: local-frame creation and destruction are independent of ordinary braces.

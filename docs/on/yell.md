@@ -43,6 +43,6 @@ Choose a pattern from the actual diagnostic text you want to filter. This only v
 
 ## Source references
 
-- [source/output.c](../../source/output.c): `yell`, `debug`, and `vsyserr` honor suppression; `my_error` invokes the event but ignores its result; `privileged_yell` bypasses it.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching and suppression.
-- [source/screen.c](../../source/screen.c): later window-output handling.
+- `source/output.c`: `yell`, `debug`, and `vsyserr` honor suppression; `my_error` invokes the event but ignores its result; `privileged_yell` bypasses it.
+- `source/hook.c`: event registration and standard hook matching and suppression.
+- `source/screen.c`: later window-output handling.

@@ -35,4 +35,4 @@ First appeared in +6, after ircII and before EPIC.
 
 ## Source
 
-Registration and `function_revw()`: [source/functions.c](../../source/functions.c). `last_arg()`, dequoting, and `malloc_strcat_word()`: [source/ircaux.c](../../source/ircaux.c). Backward word movement: [source/words.c](../../source/words.c).
+Registration and `function_revw()`: `source/functions.c`. `last_arg()`, dequoting, and `malloc_strcat_word()`: `source/ircaux.c`. Backward word movement: `source/words.c`.

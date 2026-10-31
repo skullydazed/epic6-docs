@@ -69,6 +69,6 @@ See [encodings and locales](encodings_and_locales.md) for more background, inclu
 
 ## Source references
 
-- [source/irc.c](../../source/irc.c): startup locale initialization.
-- [source/recode.c](../../source/recode.c): console codeset selection, fallback, encoding validation, and rule changes.
-- [source/screen.c](../../source/screen.c): `translate_user_input()` conversion and the two console-encoding diagnostics.
+- `source/irc.c`: startup locale initialization.
+- `source/recode.c`: console codeset selection, fallback, encoding validation, and rule changes.
+- `source/screen.c`: `translate_user_input()` conversion and the two console-encoding diagnostics.

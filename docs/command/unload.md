@@ -42,4 +42,4 @@ After loading, remove the tagged variable and alias with:
 
 ## Source
 
-[source/alias.c](../../source/alias.c) implements `unloadcmd()` and global alias/assignment removal. [source/hook.c](../../source/hook.c) removes package hooks; [source/keys.c](../../source/keys.c) removes binding actions and key sequences; [source/timer.c](../../source/timer.c) removes matching pending timers. Registration is in [source/commands.c](../../source/commands.c).
+`source/alias.c` implements `unloadcmd()` and global alias/assignment removal. `source/hook.c` removes package hooks; `source/keys.c` removes binding actions and key sequences; `source/timer.c` removes matching pending timers. Registration is in `source/commands.c`.

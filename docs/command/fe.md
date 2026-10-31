@@ -59,4 +59,4 @@ At least one loop variable and a brace-delimited body are required; an empty bod
 
 `fe` and `fec` have used local loop variables since January 22, 1997.
 
-Registration is in [source/commands.c](../../source/commands.c), and the command-name branches, iteration, mapping, and control flow are in [source/if.c](../../source/if.c). Word parsing is defined in [include/words.h](../../include/words.h), [source/words.c](../../source/words.c), and [source/ircaux.c](../../source/ircaux.c); variable assignment is in [source/alias.c](../../source/alias.c).
+Registration is in `source/commands.c`, and the command-name branches, iteration, mapping, and control flow are in `source/if.c`. Word parsing is defined in `include/words.h`, `source/words.c`, and `source/ircaux.c`; variable assignment is in `source/alias.c`.

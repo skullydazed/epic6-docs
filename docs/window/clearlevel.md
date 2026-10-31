@@ -22,4 +22,4 @@ Omitting the argument or using `/window -clearlevel` does nothing. This removes 
 
 ## Source references
 
-`windowcmd_clearlevel` in [source/window.c](../../source/window.c), `str_to_mask` in [source/levels.c](../../source/levels.c), and `clear_level_from_lastlog` in [source/lastlog.c](../../source/lastlog.c).
+`windowcmd_clearlevel` in `source/window.c`, `str_to_mask` in `source/levels.c`, and `clear_level_from_lastlog` in `source/lastlog.c`.

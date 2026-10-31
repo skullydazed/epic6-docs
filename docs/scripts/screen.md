@@ -50,7 +50,7 @@ The script was written by Matthew Green (phone), inspired by Darren Reed (Avalon
 
 ## Source references
 
-- [script/screen](../../script/screen): alias and exact installed bindings.
-- [source/keys.c](../../source/keys.c): key-sequence parsing and binding replacement.
-- [source/window.c](../../source/window.c): `windowcmd_new`, `windowcmd_hide`, `windowcmd_swap`, `windowcmd_killswap`, hidden-window selection, and clear-all behavior.
-- [source/commands.c](../../source/commands.c): `e_clear` interprets `clear all` without restricting it to visible windows.
+- `script/screen`: alias and exact installed bindings.
+- `source/keys.c`: key-sequence parsing and binding replacement.
+- `source/window.c`: `windowcmd_new`, `windowcmd_hide`, `windowcmd_swap`, `windowcmd_killswap`, hidden-window selection, and clear-all behavior.
+- `source/commands.c`: `e_clear` interprets `clear all` without restricting it to visible windows.

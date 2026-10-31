@@ -35,5 +35,5 @@ This operation first appeared during EPIC4.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_refresh`, `update_all_status`, and `update_all_windows` implement global update requests and processing. `windowcmd` disables status updates during compound operations and restores them afterward.
-- [source/status.c](../../source/status.c): `make_status`, `redraw_status`, and `permit_status_update` enforce and release deferred status updates.
+- `source/window.c`: `windowcmd_refresh`, `update_all_status`, and `update_all_windows` implement global update requests and processing. `windowcmd` disables status updates during compound operations and restores them afterward.
+- `source/status.c`: `make_status`, `redraw_status`, and `permit_status_update` enforce and release deferred status updates.

@@ -39,4 +39,4 @@ First appeared in plus-2, after ircII and before EPIC.
 
 ## Source
 
-Registration and `function_rightw()`: [source/functions.c](../../source/functions.c). `real_extract2()` and backward word movement: [source/words.c](../../source/words.c). Parsing modes and reserved markers: [include/words.h](../../include/words.h). Integer parsing: [include/functions.h](../../include/functions.h).
+Registration and `function_rightw()`: `source/functions.c`. `real_extract2()` and backward word movement: `source/words.c`. Parsing modes and reserved markers: `include/words.h`. Integer parsing: `include/functions.h`.

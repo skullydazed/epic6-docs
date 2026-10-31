@@ -29,4 +29,4 @@ $stripansi(plain text)         Returns plain text.
 
 ## Source
 
-Registration and implementation: [`source/functions.c`](../../source/functions.c:4831). IRC formatting control definitions: [`include/irc.h`](../../include/irc.h:47).
+Registration and implementation: `source/functions.c`. IRC formatting control definitions: `include/irc.h`.

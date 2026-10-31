@@ -41,4 +41,4 @@ Here `^X` denotes the actual control byte, not two literal characters.
 
 ## Source
 
-Registration, `function_rgb()`, and JSON parsing: [source/functions.c](../../source/functions.c). Extended-color normalization and rendering: [source/screen.c](../../source/screen.c).
+Registration, `function_rgb()`, and JSON parsing: `source/functions.c`. Extended-color normalization and rendering: `source/screen.c`.

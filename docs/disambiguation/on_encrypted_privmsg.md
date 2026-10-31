@@ -32,8 +32,8 @@ Scripts implementing their own encryption must provide their own processing and 
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records removal of `on encrypted_(privmsg|notice)`, SED and related encryption types, and the end-to-end encryption implementation.
-- [source/hook.c](../../source/hook.c): the hook table omits `encrypted_privmsg`; `find_hook` rejects unknown named events.
-- [include/hook.h](../../include/hook.h): current hook identifiers contain no encrypted-message event.
-- [source/parse.c](../../source/parse.c): `p_privmsg` processes CTCP requests and then ordinary message hooks without the former encrypted-message stage.
-- [source/ctcp.c](../../source/ctcp.c): current initialization registers only the action handler, not the former SED handler.
+- [KNOWNBUGS](../KNOWNBUGS.md): records removal of `on encrypted_(privmsg|notice)`, SED and related encryption types, and the end-to-end encryption implementation.
+- `source/hook.c`: the hook table omits `encrypted_privmsg`; `find_hook` rejects unknown named events.
+- `include/hook.h`: current hook identifiers contain no encrypted-message event.
+- `source/parse.c`: `p_privmsg` processes CTCP requests and then ordinary message hooks without the former encrypted-message stage.
+- `source/ctcp.c`: current initialization registers only the action handler, not the former SED handler.

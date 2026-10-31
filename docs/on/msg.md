@@ -47,7 +47,7 @@ on ^msg "*" (sender, message) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_privmsg` classifies personal messages, records the last sender, invokes `general_privmsg` and then `msg`, and formats default output.
-- [source/server.c](../../source/server.c): `get_server_away_message(NOSERV)` checks stored away messages across registered servers.
-- [source/commands.c](../../source/commands.c): `send_text` chooses outgoing message type from the requested command; `ctcpcmd` selects CTCP reply framing.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_privmsg` classifies personal messages, records the last sender, invokes `general_privmsg` and then `msg`, and formats default output.
+- `source/server.c`: `get_server_away_message(NOSERV)` checks stored away messages across registered servers.
+- `source/commands.c`: `send_text` chooses outgoing message type from the requested command; `ctcpcmd` selects CTCP reply framing.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

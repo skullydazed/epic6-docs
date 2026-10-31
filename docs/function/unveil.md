@@ -50,4 +50,4 @@ The following calls change the process's filesystem access and finally lock its 
 
 ## Source
 
-Registered and implemented as `function_unveil` in [source/functions.c](../../source/functions.c), using `parse_kwargs` for JSON arguments. Configure-time detection is in [configure.ac](../../configure.ac); JSON type checks are in [source/cJSON.c](../../source/cJSON.c).
+Registered and implemented as `function_unveil` in `source/functions.c`, using `parse_kwargs` for JSON arguments. Configure-time detection is in `configure.ac`; JSON type checks are in `source/cJSON.c`.

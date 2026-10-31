@@ -35,7 +35,7 @@ For a window whose current channel is `#example`, this normally supplies `Chan: 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and default text.
-- [source/status.c](../../source/status.c): `%C` mapping, `convert_sub_format`, channel selection, privacy substitution, width truncation, and optional final expando pass.
-- [source/window.c](../../source/window.c): `get_window_echannel` supplies the window's current channel.
-- [source/names.c](../../source/names.c): private-channel state and `check_channel_type` presentation.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and default text.
+- `source/status.c`: `%C` mapping, `convert_sub_format`, channel selection, privacy substitution, width truncation, and optional final expando pass.
+- `source/window.c`: `get_window_echannel` supplies the window's current channel.
+- `source/names.c`: private-channel state and `check_channel_type` presentation.

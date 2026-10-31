@@ -46,6 +46,6 @@ This does not replace `public_other` or `public_msg` display. Use `general_privm
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_privmsg` processes CTCP payloads, classifies channel messages, stores the public sender, invokes the general and specific hooks, and formats output; `is_target_channel_wall` checks status prefixes.
-- [source/names.c](../../source/names.c): `is_current_channel` tests the owning window's current channel; `is_channel_nomsgs` checks cached `+n`; `is_on_channel` checks membership.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_privmsg` processes CTCP payloads, classifies channel messages, stores the public sender, invokes the general and specific hooks, and formats output; `is_target_channel_wall` checks status prefixes.
+- `source/names.c`: `is_current_channel` tests the owning window's current channel; `is_channel_nomsgs` checks cached `+n`; `is_on_channel` checks membership.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

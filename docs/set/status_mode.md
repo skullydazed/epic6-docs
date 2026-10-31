@@ -44,6 +44,6 @@ With a cached mode value of `nt`, an outer `%+` supplies `Mode +nt`. To omit arg
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, rebuild callback, and default wrapper.
-- [source/status.c](../../source/status.c): mapped `%+` entries, wrapper compilation, branch-specific empty handling, argument omission, and `PRESS` escaping.
-- [source/names.c](../../source/names.c): cached channel mode construction and `get_channel_mode`.
+- `source/vars.c` and `include/config.h`: string registration, rebuild callback, and default wrapper.
+- `source/status.c`: mapped `%+` entries, wrapper compilation, branch-specific empty handling, argument omission, and `PRESS` escaping.
+- `source/names.c`: cached channel mode construction and `get_channel_mode`.

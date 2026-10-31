@@ -36,5 +36,5 @@ Set the current output area to ten rows, remove window 3's output area while ret
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_size`, `resize_window`, `recalculate_windows`, and `resize_window_display` implement queries, absolute resizing, row transfer, errors, and view adjustment.
-- [source/ircaux.c](../../source/ircaux.c): `parse_number` uses decimal `strtol` and leaves unconsumed text for subsequent operations.
+- `source/window.c`: `windowcmd_size`, `resize_window`, `recalculate_windows`, and `resize_window_display` implement queries, absolute resizing, row transfer, errors, and view adjustment.
+- `source/ircaux.c`: `parse_number` uses decimal `strtol` and leaves unconsumed text for subsequent operations.

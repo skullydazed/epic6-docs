@@ -46,6 +46,6 @@ on ^msg_group "*" (sender, group, message) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_privmsg` classifies destinations, selects the `wall` context, invokes `general_privmsg` before this event, and formats default output; `is_target_channel_wall` checks status prefixes.
-- [source/commands.c](../../source/commands.c): `send_text` selects outgoing message type from the requested command without automatic conversion for this hook.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_privmsg` classifies destinations, selects the `wall` context, invokes `general_privmsg` before this event, and formats default output; `is_target_channel_wall` checks status prefixes.
+- `source/commands.c`: `send_text` selects outgoing message type from the requested command without automatic conversion for this hook.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

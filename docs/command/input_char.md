@@ -48,4 +48,4 @@ Interactive completion requires fullscreen input handling. A missing prompt prin
 
 `input_char` first appeared in EPIC3.003.
 
-Registration, options, and callback execution are in [source/commands.c](../../source/commands.c). Console decoding, interception before keybindings, and prompt stacking are in [source/screen.c](../../source/screen.c). The synchronous prompt expando is in [source/expr.c](../../source/expr.c).
+Registration, options, and callback execution are in `source/commands.c`. Console decoding, interception before keybindings, and prompt stacking are in `source/screen.c`. The synchronous prompt expando is in `source/expr.c`.

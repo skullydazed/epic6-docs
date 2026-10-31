@@ -32,7 +32,7 @@ The current supplied MONITOR alias is marked as hop's 2025 implementation.
 
 ## Source references
 
-- [source/functions.c](../../source/functions.c): no current built-in `notify` registration.
-- [script/notify](../../script/notify): `functioncall()` branch returns without a value or request.
-- [script/builtins](../../script/builtins): loads the supplied notify alias.
-- [source/commands.c](../../source/commands.c): user-function invocation initializes an empty local return value before executing the alias.
+- `source/functions.c`: no current built-in `notify` registration.
+- [`script/notify`](../scripts/notify.md): `functioncall()` branch returns without a value or request.
+- [`script/builtins`](../scripts/builtins.md): loads the supplied notify alias.
+- `source/commands.c`: user-function invocation initializes an empty local return value before executing the alias.

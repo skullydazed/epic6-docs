@@ -40,6 +40,6 @@ A window with its own positive override continues to use that value. `/window sc
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): integer registration and default one.
-- [source/window.c](../../source/window.c): `set_scroll_lines` checks the assignment; new windows default to `-1`; `add_to_scrollback` uses the selected count for logical display advancement.
-- [source/screen.c](../../source/screen.c): physical scrolling selects the per-window value or global fallback and caps it to display height.
+- `source/vars.c` and `include/config.h`: integer registration and default one.
+- `source/window.c`: `set_scroll_lines` checks the assignment; new windows default to `-1`; `add_to_scrollback` uses the selected count for logical display advancement.
+- `source/screen.c`: physical scrolling selects the per-window value or global fallback and caps it to display height.

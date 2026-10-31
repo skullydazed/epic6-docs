@@ -39,4 +39,4 @@ First appeared in EPIC5-0.3.6.
 
 ## Source
 
-Registration and handler: [`source/functions.c`](../../source/functions.c:8435). Quoted argument parsing: [`include/functions.h`](../../include/functions.h:45).
+Registration and handler: `source/functions.c`. Quoted argument parsing: `include/functions.h`.

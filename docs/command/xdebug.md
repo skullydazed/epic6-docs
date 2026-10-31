@@ -64,4 +64,4 @@ The block displays `one "two three"`; the previous flag mask is restored afterwa
 
 The command is always registered and requires no IRC connection to change flags. It has no function return value or normal success confirmation. Diagnostics can include full server traffic and script values, so consider the actual text before sharing a trace.
 
-[source/debug.c](../../source/debug.c) defines the option table and `xdebugcmd()`. [include/debug.h](../../include/debug.h) defines flag bits. [source/output.c](../../source/output.c) implements diagnostic output, and the flag consumers are in the corresponding network, parser, event, and history source files. [source/commands.c](../../source/commands.c) registers the command.
+`source/debug.c` defines the option table and `xdebugcmd()`. `include/debug.h` defines flag bits. `source/output.c` implements diagnostic output, and the flag consumers are in the corresponding network, parser, event, and history source files. `source/commands.c` registers the command.

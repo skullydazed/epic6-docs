@@ -35,4 +35,4 @@ The comparator subtracts converted integers and returns the difference as a C `i
 
 For a case-insensitive text sort, see [$sort()](sort.md); [$sortby()](sortby.md) supplies a custom comparison.
 
-Registration, `function_numsort()`, and `num_sort_it()`: [source/functions.c](../../source/functions.c). Numeric-start detection: [include/ircaux.h](../../include/ircaux.h). Word-list splitting and rebuilding: [source/ircaux.c](../../source/ircaux.c).
+Registration, `function_numsort()`, and `num_sort_it()`: `source/functions.c`. Numeric-start detection: `include/ircaux.h`. Word-list splitting and rebuilding: `source/ircaux.c`.

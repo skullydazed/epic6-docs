@@ -44,4 +44,4 @@ This operation first appeared during EPIC4.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_new_hide` calls `new_window(-1)` and retains the original target; `new_window` initializes settings, allocates refnums, and invokes `window_create`; `add_to_invisible_list` places the new window at the front of the hidden list.
+- `source/window.c`: `windowcmd_new_hide` calls `new_window(-1)` and retains the original target; `new_window` initializes settings, allocates refnums, and invokes `window_create`; `add_to_invisible_list` places the new window at the front of the hidden list.

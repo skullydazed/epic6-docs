@@ -22,7 +22,7 @@ It reports `No such variable "DO_NOTIFY_IMMEDIATELY"`. Remove such assignments f
 
 ## Current notify behavior
 
-The supplied [script/notify](../../script/notify) defines a `notify` alias around server `monitor` requests. It does not read this setting or implement a minute-based polling alternative. With a server advertising MONITOR support, the alias requests status, additions, removals, or clearing through that protocol; response timing and limits depend on the server. It reports an unsupported-server message when MONITOR is unavailable.
+The supplied [`script/notify`](../scripts/notify.md) defines a `notify` alias around server `monitor` requests. It does not read this setting or implement a minute-based polling alternative. With a server advertising MONITOR support, the alias requests status, additions, removals, or clearing through that protocol; response timing and limits depend on the server. It reports an unsupported-server message when MONITOR is unavailable.
 
 For example, with that script loaded and a supporting server:
 
@@ -34,7 +34,7 @@ This asks the script to add Alice through MONITOR; `do_notify_immediately` does 
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of built-in notify functionality.
-- [source/vars.c](../../source/vars.c): current variable registration omits the setting and handles unknown-variable errors.
-- [include/vars.h](../../include/vars.h): retains the historical identifier without registration.
-- [script/notify](../../script/notify): script-provided MONITOR wrapper and status displays.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of built-in notify functionality.
+- `source/vars.c`: current variable registration omits the setting and handles unknown-variable errors.
+- `include/vars.h`: retains the historical identifier without registration.
+- [`script/notify`](../scripts/notify.md): script-provided MONITOR wrapper and status displays.

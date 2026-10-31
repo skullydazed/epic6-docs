@@ -40,4 +40,4 @@ With the default `^E` binding, this moves to the end of the existing input befor
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `type` and implements `typecmd()` and `xtypecmd()`. [source/screen.c](../../source/screen.c) decodes console bytes and dispatches input and prompts. [source/keys.c](../../source/keys.c) implements binding dispatch and default bindings; [source/input.c](../../source/input.c) implements character insertion and cursor editing.
+`source/commands.c` registers `type` and implements `typecmd()` and `xtypecmd()`. `source/screen.c` decodes console bytes and dispatches input and prompts. `source/keys.c` implements binding dispatch and default bindings; `source/input.c` implements character insertion and cursor editing.

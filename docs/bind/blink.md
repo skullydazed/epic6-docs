@@ -32,8 +32,8 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default Control-F binding.
-- [include/irc.h](../../include/irc.h): `BLINK_TOG` definition.
-- [source/input.c](../../source/input.c): `insert_blink` and `input_add_character`.
-- [source/screen.c](../../source/screen.c): blink toggle processing, stripping, and terminal attribute output.
-- [source/term.c](../../source/term.c): reverse control-character display and `term_sgr`.
+- `source/keys.c`: action registration and default Control-F binding.
+- `include/irc.h`: `BLINK_TOG` definition.
+- `source/input.c`: `insert_blink` and `input_add_character`.
+- `source/screen.c`: blink toggle processing, stripping, and terminal attribute output.
+- `source/term.c`: reverse control-character display and `term_sgr`.

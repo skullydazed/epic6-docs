@@ -43,4 +43,4 @@ This operation first appeared in EPIC4pre2.001.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_refnum_or_swap`, `get_window_from_args`, and `get_window_by_desc` implement lookup, branch selection, and subsequent targeting. `swap_window` enforces visibility/swappability and transfers geometry and selection; `make_window_current_by_refnum` and `set_screens_current_window` select visible destinations.
+- `source/window.c`: `windowcmd_refnum_or_swap`, `get_window_from_args`, and `get_window_by_desc` implement lookup, branch selection, and subsequent targeting. `swap_window` enforces visibility/swappability and transfers geometry and selection; `make_window_current_by_refnum` and `set_screens_current_window` select visible destinations.

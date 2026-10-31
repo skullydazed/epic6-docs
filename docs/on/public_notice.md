@@ -56,6 +56,6 @@ Do not automatically answer notices with messages, which can cause reply loops. 
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_notice` processes CTCP replies, checks connected-server notices, classifies joined-channel destinations without a sender-membership test, and invokes the general and specific hooks.
-- [source/commands.c](../../source/commands.c): `ctcpcmd` rejects invocation from notices; `send_text` handles ordinary outgoing messages without a blanket notice-context rejection.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_notice` processes CTCP replies, checks connected-server notices, classifies joined-channel destinations without a sender-membership test, and invokes the general and specific hooks.
+- `source/commands.c`: `ctcpcmd` rejects invocation from notices; `send_text` handles ordinary outgoing messages without a blanket notice-context rejection.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

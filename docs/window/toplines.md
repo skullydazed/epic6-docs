@@ -45,6 +45,6 @@ This operation first appeared in EPIC5-0.0.3.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_toplines`, `new_window`, `recalculate_windows`, and `recalculate_window_positions` implement counts, defaults, geometry, and redraws; `resize_window_display` adjusts the normal output view.
-- [source/ircaux.c](../../source/ircaux.c): `parse_number` implements decimal-prefix parsing.
-- [source/screen.c](../../source/screen.c): `repaint_window_body` displays reserved topline slots above the scrolling area.
+- `source/window.c`: `windowcmd_toplines`, `new_window`, `recalculate_windows`, and `recalculate_window_positions` implement counts, defaults, geometry, and redraws; `resize_window_display` adjusts the normal output view.
+- `source/ircaux.c`: `parse_number` implements decimal-prefix parsing.
+- `source/screen.c`: `repaint_window_body` displays reserved topline slots above the scrolling area.

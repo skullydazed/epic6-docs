@@ -38,4 +38,4 @@ $substr("" abc)                Returns -1.
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:5581). Search and comparison: [`stristr`](../../source/ircaux.c:1250), [`utf8_strnicmp`](../../source/ircaux.c:1601). Position counting: [`quick_code_point_index`](../../source/wcwidth.c:623).
+Handler: `source/functions.c`. Search and comparison: `stristr`, `utf8_strnicmp`. Position counting: `quick_code_point_index`.

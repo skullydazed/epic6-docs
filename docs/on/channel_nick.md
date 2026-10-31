@@ -52,7 +52,7 @@ This event already existed in ircII.
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_nick` updates your server nickname, invokes per-channel hooks, conditionally invokes `nickname`, and then renames channel nicknames.
-- [source/names.c](../../source/names.c): `walk_channels` finds channels containing the old nickname; `rename_nick` updates their nickname lists.
-- [source/server.c](../../source/server.c): `accept_server_nickname` records your accepted nickname.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard matching and suppression.
+- `source/parse.c`: `p_nick` updates your server nickname, invokes per-channel hooks, conditionally invokes `nickname`, and then renames channel nicknames.
+- `source/names.c`: `walk_channels` finds channels containing the old nickname; `rename_nick` updates their nickname lists.
+- `source/server.c`: `accept_server_nickname` records your accepted nickname.
+- `source/hook.c`: event registration and `do_hook` implement standard matching and suppression.

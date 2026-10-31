@@ -24,4 +24,4 @@ This stores the current process's real group ID in `real_group_id`. See [$getuid
 
 ## Source
 
-Registration and the direct `getgid()` call: [source/functions.c](../../source/functions.c). Integer-string return formatting: [include/functions.h](../../include/functions.h).
+Registration and the direct `getgid()` call: `source/functions.c`. Integer-string return formatting: `include/functions.h`.

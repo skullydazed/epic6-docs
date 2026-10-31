@@ -32,7 +32,7 @@ For formatting with an explicit fill character instead of changing this global d
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): character registration, first-code-point decoding, one-column validation, and unset behavior.
-- [include/config.h](../../include/config.h): space default.
-- [source/expr.c](../../source/expr.c): `TruncateAndEscape` selects alignment and reads `pad_char` for nonzero expansion widths.
-- [source/ircaux.c](../../source/ircaux.c): `fix_string_width` normalizes text, measures columns, truncates, and adds the fill character.
+- `source/vars.c`: character registration, first-code-point decoding, one-column validation, and unset behavior.
+- `include/config.h`: space default.
+- `source/expr.c`: `TruncateAndEscape` selects alignment and reads `pad_char` for nonzero expansion widths.
+- `source/ircaux.c`: `fix_string_width` normalizes text, measures columns, truncates, and adds the fill character.

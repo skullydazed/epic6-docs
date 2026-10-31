@@ -79,4 +79,4 @@ for xx in (one two three) {
 
 See [fe](fe.md), [foreach](foreach.md), [while](while.md), and [do](do.md).
 
-Registration is in [source/commands.c](../../source/commands.c). `forcmd`, the range and list helpers, and argument validation are in [source/if.c](../../source/if.c). Expression evaluation is in [source/expr.c](../../source/expr.c) and [source/expr2.c](../../source/expr2.c); truth testing and argument splitting are in [source/ircaux.c](../../source/ircaux.c). Local assignment is in [source/alias.c](../../source/alias.c), and word parsing is defined in [include/words.h](../../include/words.h) and [source/words.c](../../source/words.c).
+Registration is in `source/commands.c`. `forcmd`, the range and list helpers, and argument validation are in `source/if.c`. Expression evaluation is in `source/expr.c` and `source/expr2.c`; truth testing and argument splitting are in `source/ircaux.c`. Local assignment is in `source/alias.c`, and word parsing is defined in `include/words.h` and `source/words.c`.

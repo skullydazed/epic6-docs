@@ -35,6 +35,6 @@ Use `/set -status_halfop` to remove this marker text. An operator marker can sti
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and `%` default.
-- [source/status.c](../../source/status.c): `%@` maps to `status_chanop`, which checks operator text before the half-operator fallback.
-- [source/names.c](../../source/names.c): `get_channel_halfop` returns cached half-operator state.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and `%` default.
+- `source/status.c`: `%@` maps to `status_chanop`, which checks operator text before the half-operator fallback.
+- `source/names.c`: `get_channel_halfop` returns cached half-operator state.

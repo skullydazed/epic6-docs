@@ -26,4 +26,4 @@ This stores the returned login name, or the empty string if the system cannot pr
 
 ## Source
 
-Registration, fixed-buffer `getlogin_r()` lookup, and failure handling: [source/functions.c](../../source/functions.c). Return-string copying: [include/functions.h](../../include/functions.h).
+Registration, fixed-buffer `getlogin_r()` lookup, and failure handling: `source/functions.c`. Return-string copying: `include/functions.h`.

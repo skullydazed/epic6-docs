@@ -14,7 +14,7 @@ make install
 
 The intended target is a modern POSIX environment with a C99-or-newer compiler, terminfo, and the libraries checked by configuration. It does not support every Unix system or compiler. See [compile options](compile_opts.md), `configure.ac`, and the installation targets in `Makefile.in`. Choose an installation prefix appropriate for your permissions and system.
 
-Binary packages, their names, and their versions depend on the distribution. Check that a package actually supplies EPIC6. For changes and ongoing development, consult [UPDATES](../../UPDATES) and [KNOWNBUGS](../../KNOWNBUGS); archived EPIC4 or EPIC5 releases describe different client generations.
+Binary packages, their names, and their versions depend on the distribution. Check that a package actually supplies EPIC6. For changes and ongoing development, consult [UPDATES](../UPDATES.md) and [KNOWNBUGS](../KNOWNBUGS.md); archived EPIC4 or EPIC5 releases describe different client generations.
 
 ## Script packs
 

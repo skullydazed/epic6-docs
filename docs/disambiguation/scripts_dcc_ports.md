@@ -26,8 +26,8 @@ This script first appeared in EPIC5-0.3.4.
 
 ## Source references
 
-- [script/dcc_ports](../../script/dcc_ports): retained settings, reset callbacks, numeric picker, and obsolete `dccctl` registration.
-- [script/addset](../../script/addset): script-defined integer settings.
-- [source/functions.c](../../source/functions.c): current function table omits `dccctl`; `jot` generates inclusive numeric sequences and `shift` removes their first element.
-- [source/commands.c](../../source/commands.c): current built-in command table omits `dcc`.
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `$dccctl()`, and associated functionality.
+- `script/dcc_ports`: retained settings, reset callbacks, numeric picker, and obsolete `dccctl` registration.
+- [`script/addset`](../scripts/addset.md): script-defined integer settings.
+- `source/functions.c`: current function table omits `dccctl`; `jot` generates inclusive numeric sequences and `shift` removes their first element.
+- `source/commands.c`: current built-in command table omits `dcc`.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `$dccctl()`, and associated functionality.

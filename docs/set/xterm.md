@@ -40,5 +40,5 @@ This uses the configured name only if no `XTERM` environment override is present
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration and `xterm` default.
-- [source/screen.c](../../source/screen.c): `create_additional_screen` selects the backend and program, constructs geometry and helper arguments, executes with `execvp`, and waits for helper connections.
+- `source/vars.c` and `include/config.h`: string registration and `xterm` default.
+- `source/screen.c`: `create_additional_screen` selects the backend and program, constructs geometry and helper arguments, executes with `execvp`, and waits for helper connections.

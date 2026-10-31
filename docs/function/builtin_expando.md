@@ -33,4 +33,4 @@ The value supplied by the selected inline expando, even when a user variable sha
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `builtin_expando`, lists the standard inline expandos, and implements `function_builtin()`, `alias_nick()`, and `alias_channel()`. [source/alias.c](../../source/alias.c) implements `get_var_alias()` and global symbol/stub lookup.
+`source/functions.c` registers `builtin_expando`, lists the standard inline expandos, and implements `function_builtin()`, `alias_nick()`, and `alias_channel()`. `source/alias.c` implements `get_var_alias()` and global symbol/stub lookup.

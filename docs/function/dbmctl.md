@@ -75,4 +75,4 @@ The function first appeared in EPIC5-0.0.8.
 
 ## Source
 
-Registered and wrapped in [source/functions.c](../../source/functions.c). Dispatch and database handles are in [source/files.c](../../source/files.c); the storage format, size limits, and error handling are in [source/sdbm.c](../../source/sdbm.c) and [include/sdbm.h](../../include/sdbm.h).
+Registered and wrapped in `source/functions.c`. Dispatch and database handles are in `source/files.c`; the storage format, size limits, and error handling are in `source/sdbm.c` and `include/sdbm.h`.

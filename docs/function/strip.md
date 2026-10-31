@@ -37,4 +37,4 @@ Text with all members of the character set removed. Missing input, missing/empty
 
 First appeared in ircII-2.1.5.
 
-Registration and `function_strip()`: [source/functions.c](../../source/functions.c). Double-quoted argument parsing: [include/functions.h](../../include/functions.h). UTF-8 decoding and encoding: [source/wcwidth.c](../../source/wcwidth.c).
+Registration and `function_strip()`: `source/functions.c`. Double-quoted argument parsing: `include/functions.h`. UTF-8 decoding and encoding: `source/wcwidth.c`.

@@ -47,4 +47,4 @@ Display your current nickname and any pending change:
 
 ## Source
 
-The always-registered `nick` command and `e_nick` argument handling are in [source/commands.c](../../source/commands.c). Pending names, registration defaults, confirmation, rejection recovery, `serverctl`, and advertised case mapping are in [source/server.c](../../source/server.c). Incoming nickname changes and hooks are in [source/parse.c](../../source/parse.c); nickname error numerics are handled in [source/numbers.c](../../source/numbers.c).
+The always-registered `nick` command and `e_nick` argument handling are in `source/commands.c`. Pending names, registration defaults, confirmation, rejection recovery, `serverctl`, and advertised case mapping are in `source/server.c`. Incoming nickname changes and hooks are in `source/parse.c`; nickname error numerics are handled in `source/numbers.c`.

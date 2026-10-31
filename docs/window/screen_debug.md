@@ -20,4 +20,4 @@ There are no operation arguments. This does not alter screen state. The handler 
 
 ## Source references
 
-`windowcmd_screen_debug` in [source/window.c](../../source/window.c) and `screen_window_dump` in [source/screen.c](../../source/screen.c).
+`windowcmd_screen_debug` in `source/window.c` and `screen_window_dump` in `source/screen.c`.

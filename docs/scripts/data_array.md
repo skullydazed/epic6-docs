@@ -17,4 +17,4 @@ The supplied script adds convenience aliases and functions for EPIC's named arra
 
 The plural setters iterate over words, whereas singular setters can store the remaining text as one value. Helpers returning several values join them as text, so do not assume preservation of arbitrary value boundaries. File-writing operations open destinations for writing; inspect the script's arguments and selected arrays before using them. File reads append to existing arrays rather than clearing them first.
 
-The source DokuWiki page was empty. This description was derived from [script/data_array](../../script/data_array), with primitive availability and behavior checked in [source/functions.c](../../source/functions.c) and [source/array.c](../../source/array.c).
+The source DokuWiki page was empty. This description was derived from `script/data_array`, with primitive availability and behavior checked in `source/functions.c` and `source/array.c`.

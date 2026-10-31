@@ -67,9 +67,9 @@ This script first appeared in EPIC5-0.3.1. The retained source credits BlackJac 
 
 ## Source references
 
-- [script/nickcomp](../../script/nickcomp): settings, completion function, and input hook.
-- [script/addset](../../script/addset): script-provided setting creation.
-- [source/functions.c](../../source/functions.c): `onchannel`, `pattern`, `before`, and `unsplit` implement lookup and text construction.
-- [source/names.c](../../source/names.c): `create_nick_list` and `is_on_channel` use cached channel membership.
-- [source/input.c](../../source/input.c): submitted input dispatch and suppression.
-- [source/commands.c](../../source/commands.c): `sendlinecmd` processes the rewritten line.
+- `script/nickcomp`: settings, completion function, and input hook.
+- [`script/addset`](addset.md): script-provided setting creation.
+- `source/functions.c`: `onchannel`, `pattern`, `before`, and `unsplit` implement lookup and text construction.
+- `source/names.c`: `create_nick_list` and `is_on_channel` use cached channel membership.
+- `source/input.c`: submitted input dispatch and suppression.
+- `source/commands.c`: `sendlinecmd` processes the rewritten line.

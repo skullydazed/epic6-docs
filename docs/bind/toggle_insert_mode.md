@@ -28,7 +28,7 @@ See [bind](../command/bind.md) for key sequence syntax and [self_insert](self_in
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration, default Control-I binding, and terminal Insert binding.
-- [source/input.c](../../source/input.c): `toggle_insert_mode` calls `set_var_value` with `toggle`; `input_add_character` reads the setting when inserting characters.
-- [source/vars.c](../../source/vars.c): boolean toggling, setting-value output, and the status-update callback.
-- [include/config.h](../../include/config.h): default insert mode is on.
+- `source/keys.c`: action registration, default Control-I binding, and terminal Insert binding.
+- `source/input.c`: `toggle_insert_mode` calls `set_var_value` with `toggle`; `input_add_character` reads the setting when inserting characters.
+- `source/vars.c`: boolean toggling, setting-value output, and the status-update callback.
+- `include/config.h`: default insert mode is on.

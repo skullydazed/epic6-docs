@@ -37,7 +37,7 @@ To change only the current window, use `/window indent on` instead. Restore the 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): `set_indent` copies the setting to every existing window.
-- [source/window.c](../../source/window.c): `new_window` copies the default; `windowcmd_indent` provides the individual override.
-- [source/screen.c](../../source/screen.c): `prepare_display` finds indentation, caps it, and fits the continuation prefix.
-- [include/config.h](../../include/config.h): default off.
+- `source/vars.c`: `set_indent` copies the setting to every existing window.
+- `source/window.c`: `new_window` copies the default; `windowcmd_indent` provides the individual override.
+- `source/screen.c`: `prepare_display` finds indentation, caps it, and fits the continuation prefix.
+- `include/config.h`: default off.

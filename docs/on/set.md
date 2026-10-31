@@ -57,5 +57,5 @@ on ^set "set-error *" {
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): `setcmd` parses names and unset requests, resolves abbreviations, makes normal and diagnostic hook offers, manages pending guards, and then queries or calls `set_variable`.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression; `set` itself has no global nonrecursion flag.
+- `source/vars.c`: `setcmd` parses names and unset requests, resolves abbreviations, makes normal and diagnostic hook offers, manages pending guards, and then queries or calls `set_variable`.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression; `set` itself has no global nonrecursion flag.

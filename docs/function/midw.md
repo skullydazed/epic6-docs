@@ -43,4 +43,4 @@ With `xdebug dword` enabled, `$midw(1 1 one "two words" three)` returns `"two wo
 
 This function first appeared in “plus-2” (post-ircII, pre-EPIC).
 
-Registration and `function_midw()`: [source/functions.c](../../source/functions.c). `extractfw` and the end marker: [include/words.h](../../include/words.h). The `real_extract()` helper: [source/words.c](../../source/words.c). Integer argument conversion: [include/functions.h](../../include/functions.h).
+Registration and `function_midw()`: `source/functions.c`. `extractfw` and the end marker: `include/words.h`. The `real_extract()` helper: `source/words.c`. Integer argument conversion: `include/functions.h`.

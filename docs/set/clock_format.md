@@ -51,7 +51,7 @@ This setting first appeared in EPIC4pre1.019.
 
 ## Source references
 
-- [source/clock.c](../../source/clock.c): `reset_standard_clock` applies `strftime`; `set_clock_format` refreshes immediately; the clock system timer controls periodic updates.
-- [source/status.c](../../source/status.c) and [source/functions.c](../../source/functions.c): the status clock and `$Z` use cached clock text.
-- [source/vars.c](../../source/vars.c): string registration, unset handling, and refresh callback.
-- [include/config.h](../../include/config.h): unset format and 60-second interval defaults.
+- `source/clock.c`: `reset_standard_clock` applies `strftime`; `set_clock_format` refreshes immediately; the clock system timer controls periodic updates.
+- `source/status.c` and `source/functions.c`: the status clock and `$Z` use cached clock text.
+- `source/vars.c`: string registration, unset handling, and refresh callback.
+- `include/config.h`: unset format and 60-second interval defaults.

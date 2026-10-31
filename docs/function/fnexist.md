@@ -38,4 +38,4 @@ The lookup can resolve a [/stub](../command/stub.md) attached to the same global
 
 ## Source
 
-Registration, `function_fnexist()`, and `func_exist()`: [source/functions.c](../../source/functions.c). Built-in component lookup and stub resolution: [source/alias.c](../../source/alias.c). Argument parsing: [include/functions.h](../../include/functions.h) and [include/words.h](../../include/words.h).
+Registration, `function_fnexist()`, and `func_exist()`: `source/functions.c`. Built-in component lookup and stub resolution: `source/alias.c`. Argument parsing: `include/functions.h` and `include/words.h`.

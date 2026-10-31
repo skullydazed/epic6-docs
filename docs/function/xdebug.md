@@ -40,4 +40,4 @@ This function first appeared in EPIC4-1.1.6.
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). `function_xdebug`, its option table, and `xdebugcmd` are in [source/debug.c](../../source/debug.c); flag definitions are in [include/debug.h](../../include/debug.h). Wildcard matching is implemented in [source/reg.c](../../source/reg.c).
+Registered in `source/functions.c`. `function_xdebug`, its option table, and `xdebugcmd` are in `source/debug.c`; flag definitions are in `include/debug.h`. Wildcard matching is implemented in `source/reg.c`.

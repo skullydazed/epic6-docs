@@ -32,4 +32,4 @@ Return to the previous window. If it was hidden after a swap, bring it back into
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_back`, `set_screens_current_window`, `make_window_current_by_refnum`, and `swap_window` implement history lookup, focus, swapping, diagnostics, and hook invocation; `windowcmd_last` handles the related visible-window operation.
+- `source/window.c`: `windowcmd_back`, `set_screens_current_window`, `make_window_current_by_refnum`, and `swap_window` implement history lookup, focus, swapping, diagnostics, and hook invocation; `windowcmd_last` handles the related visible-window operation.

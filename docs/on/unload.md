@@ -44,7 +44,7 @@ Running `/unload superscript` invokes the handler before removing the package's 
 
 ## Source references
 
-- [source/alias.c](../../source/alias.c): `unloadcmd` invokes the hook before removal; `unload_cmd_alias` and `unload_var_alias` match package ownership.
-- [source/commands.c](../../source/commands.c): `packagecmd` records package text in the current load context.
-- [source/hook.c](../../source/hook.c): event registration, matching, and `unload_on_hooks`.
-- [source/keys.c](../../source/keys.c) and [source/timer.c](../../source/timer.c): package key binding and timer removal.
+- `source/alias.c`: `unloadcmd` invokes the hook before removal; `unload_cmd_alias` and `unload_var_alias` match package ownership.
+- `source/commands.c`: `packagecmd` records package text in the current load context.
+- `source/hook.c`: event registration, matching, and `unload_on_hooks`.
+- `source/keys.c` and `source/timer.c`: package key binding and timer removal.

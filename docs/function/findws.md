@@ -40,4 +40,4 @@ This prints `hmm` twice, at positions `1` and `4`. With `xdebug dword` enabled, 
 
 ## Source
 
-Registration and `function_findws()`: [source/functions.c](../../source/functions.c). Function word parsing: [include/words.h](../../include/words.h). UTF-8 comparison: [source/ircaux.c](../../source/ircaux.c). Locale-based uppercase mapping: [source/recode.c](../../source/recode.c).
+Registration and `function_findws()`: `source/functions.c`. Function word parsing: `include/words.h`. UTF-8 comparison: `source/ircaux.c`. Locale-based uppercase mapping: `source/recode.c`.

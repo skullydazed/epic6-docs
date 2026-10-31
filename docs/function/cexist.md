@@ -39,4 +39,4 @@ $cexist()         returns an empty string
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `cexist` and implements `function_cexist()`. [source/commands.c](../../source/commands.c) implements `command_exist()`, and [source/alias.c](../../source/alias.c) implements command-component and stub lookup. [include/functions.h](../../include/functions.h) and [include/words.h](../../include/words.h) define argument parsing.
+`source/functions.c` registers `cexist` and implements `function_cexist()`. `source/commands.c` implements `command_exist()`, and `source/alias.c` implements command-component and stub lookup. `include/functions.h` and `include/words.h` define argument parsing.

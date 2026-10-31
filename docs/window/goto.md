@@ -38,4 +38,4 @@ Select the top window, the second window, or the top window on the screen contai
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_goto`, `get_number`, and `my_goto_window` implement position parsing and screen selection; `set_screens_current_window`, `make_window_current_by_refnum`, and `windowcmd` handle input selection, window history, hooks, and subsequent command context.
+- `source/window.c`: `windowcmd_goto`, `get_number`, and `my_goto_window` implement position parsing and screen selection; `set_screens_current_window`, `make_window_current_by_refnum`, and `windowcmd` handle input selection, window history, hooks, and subsequent command context.

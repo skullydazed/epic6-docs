@@ -55,4 +55,4 @@ The `defer` command first appeared in EPIC4-0.9.16.
 
 ## Source
 
-See [source/commands.c](../../source/commands.c): `defercmd()`, `do_defered_commands()`, and the lambda-command execution helpers. [source/irc.c](../../source/irc.c) dispatches queued work only at the outermost `io()` level. [source/expr.c](../../source/expr.c) implements command expansion and brace protection; [source/alias.c](../../source/alias.c) implements local scopes.
+See `source/commands.c`: `defercmd()`, `do_defered_commands()`, and the lambda-command execution helpers. `source/irc.c` dispatches queued work only at the outermost `io()` level. `source/expr.c` implements command expansion and brace protection; `source/alias.c` implements local scopes.

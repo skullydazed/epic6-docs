@@ -33,6 +33,6 @@ In a twenty-row window, the default backward action requests fifteen rows. Use `
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): integer registration and default 50.
-- [source/window.c](../../source/window.c): `window_scrollback_backward` and `window_scrollback_forward` clamp the percentage and calculate rows; window commands distinguish default and explicit counts; line movement stops at history boundaries.
-- [source/keys.c](../../source/keys.c): registers the forward and backward scroll bindings.
+- `source/vars.c` and `include/config.h`: integer registration and default 50.
+- `source/window.c`: `window_scrollback_backward` and `window_scrollback_forward` clamp the percentage and calculate rows; window commands distinguish default and explicit counts; line movement stops at history boundaries.
+- `source/keys.c`: registers the forward and backward scroll bindings.

@@ -36,7 +36,7 @@ See [bind](../command/bind.md) for key sequence syntax and [reset_line](reset_li
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and stored text handling in `bindcmd` and `bind_compressed_string`.
-- [source/input.c](../../source/input.c): `type_text`, `ADD_TO_INPUT`, `input_move_cursor`, and `retokenize_input` implement direct insertion, fixed-capacity copying, and cursor movement.
-- [source/wcwidth.c](../../source/wcwidth.c): `input_column_count` counts display columns.
-- [source/commands.c](../../source/commands.c): `xtypecmd` implements the separate literal typing command.
+- `source/keys.c`: action registration and stored text handling in `bindcmd` and `bind_compressed_string`.
+- `source/input.c`: `type_text`, `ADD_TO_INPUT`, `input_move_cursor`, and `retokenize_input` implement direct insertion, fixed-capacity copying, and cursor movement.
+- `source/wcwidth.c`: `input_column_count` counts display columns.
+- `source/commands.c`: `xtypecmd` implements the separate literal typing command.

@@ -36,4 +36,4 @@ $unlink()                                   Return 0 without attempting removal.
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:4653). Path normalization: [`normalize_filename`](../../source/ircaux.c:1786). Tilde expansion: [`expand_twiddle`](../../source/ircaux.c:1819).
+Handler: `source/functions.c`. Path normalization: `normalize_filename`. Tilde expansion: `expand_twiddle`.

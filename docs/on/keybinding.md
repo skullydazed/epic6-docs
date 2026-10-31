@@ -46,5 +46,5 @@ The quiet `-` noise mode preserves default action execution. For `/parsekey begi
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): `key_exec` invokes the hook before aliases or functions; sequence resolution and `key_exec_bt` handle incomplete sequences; `parsekeycmd` dispatches a synthetic node with value zero.
-- [source/hook.c](../../source/hook.c): the `keybinding` registration permits recursion; `do_hook` implements matching and default suppression.
+- `source/keys.c`: `key_exec` invokes the hook before aliases or functions; sequence resolution and `key_exec_bt` handle incomplete sequences; `parsekeycmd` dispatches a synthetic node with value zero.
+- `source/hook.c`: the `keybinding` registration permits recursion; `do_hook` implements matching and default suppression.

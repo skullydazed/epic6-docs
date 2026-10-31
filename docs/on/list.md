@@ -46,6 +46,6 @@ The separate end-of-list numeric can still display; it is not covered by this ho
 
 ## Source references
 
-- [source/numbers.c](../../source/numbers.c): numeric `321` creates header arguments; numeric `322` validates row fields, sets routing, and invokes the hook; subsequent numeric hooks and display implement formatting.
-- [include/config.h](../../include/config.h): defines the default `channel_name_width` as zero.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/numbers.c`: numeric `321` creates header arguments; numeric `322` validates row fields, sets routing, and invokes the hook; subsequent numeric hooks and display implement formatting.
+- `include/config.h`: defines the default `channel_name_width` as zero.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

@@ -43,6 +43,6 @@ on -server_established "*" (host, port) {
 
 ## Source references
 
-- [source/server.c](../../source/server.c): `server_io` completes plain or TLS connection setup before invoking `server_register`; `server_register` changes state, selects the server context, invokes the hook, and then sends registration commands; `get_server_name` returns the configured host.
-- [source/numbers.c](../../source/numbers.c): numeric `001` invokes the later accepted-registration path.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching.
+- `source/server.c`: `server_io` completes plain or TLS connection setup before invoking `server_register`; `server_register` changes state, selects the server context, invokes the hook, and then sends registration commands; `get_server_name` returns the configured host.
+- `source/numbers.c`: numeric `001` invokes the later accepted-registration path.
+- `source/hook.c`: event registration and `do_hook` implement matching.

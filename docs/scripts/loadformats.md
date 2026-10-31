@@ -74,7 +74,7 @@ Written by fudd (Brian Weiss); first included in EPIC5-0.0.5.
 
 ## Source references
 
-- [script/loadformats](../../script/loadformats): five aliases, dynamic settings, import/export, and broad deletion scope.
-- [source/hook.c](../../source/hook.c): implied-hook installation, expansion through `cparse`, dispatch precedence, and default suppression.
-- [source/alias.c](../../source/alias.c): script-setting creation and deletion through `symbolctl`.
-- [source/functions.c](../../source/functions.c) and [source/files.c](../../source/files.c): append-mode `open`, text file reads/writes, and `cparse`.
+- `script/loadformats`: five aliases, dynamic settings, import/export, and broad deletion scope.
+- `source/hook.c`: implied-hook installation, expansion through `cparse`, dispatch precedence, and default suppression.
+- `source/alias.c`: script-setting creation and deletion through `symbolctl`.
+- `source/functions.c` and `source/files.c`: append-mode `open`, text file reads/writes, and `cparse`.

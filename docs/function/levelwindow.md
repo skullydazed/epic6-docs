@@ -37,4 +37,4 @@ This function first appeared in EPIC4-1.1.12.
 
 ## Source
 
-Registered and implemented as `function_levelwindow` in [source/functions.c](../../source/functions.c). Window masks, server assignments, user reference numbers, and traversal are in [source/window.c](../../source/window.c); level parsing is in [source/levels.c](../../source/levels.c).
+Registered and implemented as `function_levelwindow` in `source/functions.c`. Window masks, server assignments, user reference numbers, and traversal are in `source/window.c`; level parsing is in `source/levels.c`.

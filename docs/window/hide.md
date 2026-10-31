@@ -43,4 +43,4 @@ This operation existed in ircII.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_hide`, `hide_window`, and `count_fixed_windows` implement selection and restrictions; `remove_window_from_screen`, `add_to_invisible_list`, `set_screens_current_window`, `make_window_current_by_refnum`, and `recalculate_windows` implement visibility, replacement selection, and geometry changes.
+- `source/window.c`: `windowcmd_hide`, `hide_window`, and `count_fixed_windows` implement selection and restrictions; `remove_window_from_screen`, `add_to_invisible_list`, `set_screens_current_window`, `make_window_current_by_refnum`, and `recalculate_windows` implement visibility, replacement selection, and geometry changes.

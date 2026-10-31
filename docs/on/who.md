@@ -53,6 +53,6 @@ Use this for ordinary display queries, not queries whose `-line` block already c
 
 ## Source references
 
-- [source/who.c](../../source/who.c): `whoreply` validates, filters, reorders, hooks, and displays standard rows; `xwhoreply` handles extended replies; `whobase` parses query options.
-- [source/numbers.c](../../source/numbers.c): routes `352` and `354` into WHO handling before general numeric display.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching and suppression.
+- `source/who.c`: `whoreply` validates, filters, reorders, hooks, and displays standard rows; `xwhoreply` handles extended replies; `whobase` parses query options.
+- `source/numbers.c`: routes `352` and `354` into WHO handling before general numeric display.
+- `source/hook.c`: event registration and standard hook matching and suppression.

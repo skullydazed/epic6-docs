@@ -55,4 +55,4 @@ The first file should define alias `foo`; the second should define assignments `
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c). `stubcmd()`, stub storage, `lookup_symbol()`, `unstub_variable()`, and `unstub_command()` are in [source/alias.c](../../source/alias.c). Loading and package contexts are in [source/commands.c](../../source/commands.c), and name canonicalization is in [source/ircaux.c](../../source/ircaux.c).
+Registration is in `source/commands.c`. `stubcmd()`, stub storage, `lookup_symbol()`, `unstub_variable()`, and `unstub_command()` are in `source/alias.c`. Loading and package contexts are in `source/commands.c`, and name canonicalization is in `source/ircaux.c`.

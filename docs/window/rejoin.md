@@ -43,6 +43,6 @@ Join or locally move channels to window 3, request a keyed join, join the last i
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_rejoin` parses separate lists, chooses owners, handles special entries, and sends `JOIN`; `add_waiting_channel` removes competing pending claims; `windowcmd` supplies the selected server context.
-- [source/names.c](../../source/names.c): `move_channel_to_window` changes existing channel ownership without sending a join.
-- [source/commands.c](../../source/commands.c): `e_channel` delegates to `windowcmd_rejoin`.
+- `source/window.c`: `windowcmd_rejoin` parses separate lists, chooses owners, handles special entries, and sends `JOIN`; `add_waiting_channel` removes competing pending claims; `windowcmd` supplies the selected server context.
+- `source/names.c`: `move_channel_to_window` changes existing channel ownership without sending a join.
+- `source/commands.c`: `e_channel` delegates to `windowcmd_rejoin`.

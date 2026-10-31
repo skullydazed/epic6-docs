@@ -37,4 +37,4 @@ First appeared in EPIC4-1.1.3.
 
 ## Source
 
-Registration and `GET_UNIFIED_ARRAY_FUNCTION`: [source/functions.c](../../source/functions.c). Built-in component enumeration: [source/alias.c](../../source/alias.c). Sorted symbol storage: [source/alist.c](../../source/alist.c). Wildcard matching: [source/reg.c](../../source/reg.c).
+Registration and `GET_UNIFIED_ARRAY_FUNCTION`: `source/functions.c`. Built-in component enumeration: `source/alias.c`. Sorted symbol storage: `source/alist.c`. Wildcard matching: `source/reg.c`.

@@ -1,6 +1,6 @@
 # tabkey.sjh script
 
-[tabkey.sjh](../../script/tabkey.sjh) lets you cycle through remembered private-message correspondents and compose messages to a selected target.
+tabkey.sjh lets you cycle through remembered private-message correspondents and compose messages to a selected target.
 
 ## Synopsis
 
@@ -48,8 +48,8 @@ Package labeling does not save or restore the previous key bindings, setting val
 
 ## Source references
 
-- [script/tabkey.sjh](../../script/tabkey.sjh): key bindings, history limit, target encoding, nickname-change limitation, and TKM dispatch.
-- [script/builtins](../../script/builtins) and [script/addset](../../script/addset): helper and setting creation support.
-- [source/hook.c](../../source/hook.c): current MSG, SEND_MSG, ACTION, SEND_ACTION, and CHANNEL_NICK registrations, without the former DCC hooks.
-- [source/commands.c](../../source/commands.c): BIND, PACKAGE, MSG, DESCRIBE, and XEVAL registration/dispatch.
-- [KNOWNBUGS](../../KNOWNBUGS): retirement of DCC.
+- `script/tabkey.sjh`: key bindings, history limit, target encoding, nickname-change limitation, and TKM dispatch.
+- [`script/builtins`](builtins.md) and [`script/addset`](addset.md): helper and setting creation support.
+- `source/hook.c`: current MSG, SEND_MSG, ACTION, SEND_ACTION, and CHANNEL_NICK registrations, without the former DCC hooks.
+- `source/commands.c`: BIND, PACKAGE, MSG, DESCRIBE, and XEVAL registration/dispatch.
+- [KNOWNBUGS](../KNOWNBUGS.md): retirement of DCC.

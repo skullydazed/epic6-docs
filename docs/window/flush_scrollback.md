@@ -39,5 +39,5 @@ Clear all stored display output from the current window or window 3, respectivel
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_flush_scrollback`, `flush_scrollback`, `get_window_hold_mode`, and `recalculate_window_cursor_and_display_ip` implement buffer replacement, view reset, and redraws.
-- [source/lastlog.c](../../source/lastlog.c): `dont_need_lastlog_item` marks the old output as unnecessary for scrollback rebuilding.
+- `source/window.c`: `windowcmd_flush_scrollback`, `flush_scrollback`, `get_window_hold_mode`, and `recalculate_window_cursor_and_display_ip` implement buffer replacement, view reset, and redraws.
+- `source/lastlog.c`: `dont_need_lastlog_item` marks the old output as unnecessary for scrollback rebuilding.

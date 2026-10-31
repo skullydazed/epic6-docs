@@ -55,4 +55,4 @@ Supply at least one valid variable name and a brace-delimited body, with whitesp
 
 `fe` and `fec` have used local loop variables since January 22, 1997.
 
-Registration is in [source/commands.c](../../source/commands.c). The shared handler's character branch, parenthesis parsing, mapping, and control flow are in [source/if.c](../../source/if.c). UTF-8 decoding is in [source/wcwidth.c](../../source/wcwidth.c), encoding and result concatenation are in [source/ircaux.c](../../source/ircaux.c), and local and source-variable assignment are in [source/alias.c](../../source/alias.c).
+Registration is in `source/commands.c`. The shared handler's character branch, parenthesis parsing, mapping, and control flow are in `source/if.c`. UTF-8 decoding is in `source/wcwidth.c`, encoding and result concatenation are in `source/ircaux.c`, and local and source-variable assignment are in `source/alias.c`.

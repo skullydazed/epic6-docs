@@ -49,6 +49,6 @@ This setting first appeared in EPIC5-0.3.6.
 
 ## Source references
 
-- [source/lastlog.c](../../source/lastlog.c): `lastlog` reads the default, handles explicit `-rewrite`, constructs record arguments, and expands the template before screen or file output.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, standard unset handling, and unset default.
-- [source/expr.c](../../source/expr.c): `$$` preserves a dollar sign for later expansion.
+- `source/lastlog.c`: `lastlog` reads the default, handles explicit `-rewrite`, constructs record arguments, and expands the template before screen or file output.
+- `source/vars.c` and `include/config.h`: string registration, standard unset handling, and unset default.
+- `source/expr.c`: `$$` preserves a dollar sign for later expansion.

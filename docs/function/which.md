@@ -37,4 +37,4 @@ $which("my script" ~/scripts) /* A filename containing a space. */
 
 ## Source
 
-Registered and implemented as `function_which` in [source/functions.c](../../source/functions.c). Search, canonicalization, and existence checking use `path_search`, `normalize_filename`, and `file_exists` in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented as `function_which` in `source/functions.c`. Search, canonicalization, and existence checking use `path_search`, `normalize_filename`, and `file_exists` in `source/ircaux.c`.

@@ -65,6 +65,6 @@ This hook first appeared in EPIC5-0.0.2.
 
 ## Source references
 
-- [source/server.c](../../source/server.c): `set_server_state` assigns state and invokes `server_state` then `server_status`; `server_states` supplies names; initialization, registration, unregistration, and closure establish transition behavior.
-- [include/server.h](../../include/server.h): defines current state identifiers.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching without a nonrecursion flag for this event.
+- `source/server.c`: `set_server_state` assigns state and invokes `server_state` then `server_status`; `server_states` supplies names; initialization, registration, unregistration, and closure establish transition behavior.
+- `include/server.h`: defines current state identifiers.
+- `source/hook.c`: event registration and `do_hook` implement matching without a nonrecursion flag for this event.

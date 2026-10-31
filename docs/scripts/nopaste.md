@@ -53,9 +53,9 @@ Re-enabling it initializes a fresh counter and timestamp.
 
 ## Source references
 
-- [script/nopaste](../../script/nopaste): setting, counter calculation, command exemption, and hook removal.
-- [script/utime](../../script/utime): `utime_sub` subtracts seconds/microseconds timestamp pairs.
-- [script/addset](../../script/addset): creates the Boolean setting and its callback.
-- [source/functions.c](../../source/functions.c): `utime` returns the current timestamp; `strlen` counts code points.
-- [source/hook.c](../../source/hook.c): a nonzero conditional-hook result suppresses default processing.
-- [source/input.c](../../source/input.c): input submission clears the buffer and conditionally parses the submitted line; `input_clear_line` implements `erase_line`.
+- `script/nopaste`: setting, counter calculation, command exemption, and hook removal.
+- [`script/utime`](utime.md): `utime_sub` subtracts seconds/microseconds timestamp pairs.
+- [`script/addset`](addset.md): creates the Boolean setting and its callback.
+- `source/functions.c`: `utime` returns the current timestamp; `strlen` counts code points.
+- `source/hook.c`: a nonzero conditional-hook result suppresses default processing.
+- `source/input.c`: input submission clears the buffer and conditionally parses the submitted line; `input_clear_line` implements `erase_line`.

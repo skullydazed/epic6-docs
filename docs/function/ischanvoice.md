@@ -42,4 +42,4 @@ The first checks Alice on `#example`; the second checks your nickname on the cur
 
 ## Source
 
-Registered and implemented as `function_ischanvoice` in [source/functions.c](../../source/functions.c). Channel lookup, cached voice flags, prefix handling, and mode updates are in [source/names.c](../../source/names.c).
+Registered and implemented as `function_ischanvoice` in `source/functions.c`. Channel lookup, cached voice flags, prefix handling, and mode updates are in `source/names.c`.

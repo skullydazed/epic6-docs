@@ -11,7 +11,7 @@ Execute EPIC script commands from one or more files.
 
 ## Description
 
-`load` reads and executes script files in order. EPIC also uses this mechanism for its startup script, normally `~/.epicrc` when available, unless startup loading is disabled with `-q` or another startup file is selected. The bundled [script directory](../../script/) contains examples and reusable scripts.
+`load` reads and executes script files in order. EPIC also uses this mechanism for its startup script, normally `~/.epicrc` when available, unless startup loading is disabled with `-q` or another startup file is selected. The [bundled script index](../special/help_root.md#scripts) lists examples and reusable scripts.
 
 Names are searched using the colon-separated `/set load_path`. Absolute paths, tilde paths, and relative paths containing directories are accepted. A name containing `/` is first tried relative to the current directory or as its explicit path; if that fails, the load path is searched. A bare name is searched through the load path. Even an explicit path requires `load_path` to be set; otherwise EPIC reports that it is unset.
 
@@ -68,4 +68,4 @@ The files in the commands must exist, and their syntax must match the selected l
 
 ## Source
 
-Registration, options, loader implementations, nesting, and package context are in [source/commands.c](../../source/commands.c). File search, tilde expansion, decompression, and file reading are in [source/ircaux.c](../../source/ircaux.c). Startup loading is in [source/irc.c](../../source/irc.c), encoding selection is in [source/recode.c](../../source/recode.c), and definition package metadata is in [source/alias.c](../../source/alias.c).
+Registration, options, loader implementations, nesting, and package context are in `source/commands.c`. File search, tilde expansion, decompression, and file reading are in `source/ircaux.c`. Startup loading is in `source/irc.c`, encoding selection is in `source/recode.c`, and definition package metadata is in `source/alias.c`.

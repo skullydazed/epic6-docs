@@ -23,4 +23,4 @@ No argument clears the window override, allowing [set status_prefix_when_current
 
 ## Source references
 
-`windowcmd_status_prefix_when_current` in [source/window.c](../../source/window.c); `status_window_prefix`, its expando registration, and `IS_CURRENT_WINDOW` in [source/status.c](../../source/status.c).
+`windowcmd_status_prefix_when_current` in `source/window.c`; `status_window_prefix`, its expando registration, and `IS_CURRENT_WINDOW` in `source/status.c`.

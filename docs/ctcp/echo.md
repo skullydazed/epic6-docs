@@ -16,7 +16,7 @@ In ordinary use, the request is sent in an IRC `privmsg`, and a supporting clien
 
 ## EPIC6 behavior
 
-The automatic responder is provided by [script/ctcp](../../script/ctcp), loaded by [script/builtins](../../script/builtins). A setup that does not load it needs `/load ctcp` to install this handler. The script sends the received argument text back to the sender under the same CTCP name; an empty request produces a reply without argument text. It does not install a special `echo` reply handler or timing calculation.
+The automatic responder is provided by [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), loaded by [`script/builtins`](../scripts/builtins.md). A setup that does not load it needs `/load ctcp` to install this handler. The script sends the received argument text back to the sender under the same CTCP name; an empty request produces a reply without argument text. It does not install a special `echo` reply handler or timing calculation.
 
 Replies normally pass through [on ctcp_reply](../on/ctcp_reply.md) and display as `CTCP ECHO reply from sender: text`, unless scripts suppress or customize display. Request hooks or deactivating the registered CTCP can prevent automatic responses.
 
@@ -32,7 +32,7 @@ If John's client supports and permits the request, it replies with `hello there`
 
 ## Source references
 
-- [script/ctcp](../../script/ctcp): registration of the `echo` request handler and description.
-- [script/builtins](../../script/builtins): loads the CTCP script.
-- [source/commands.c](../../source/commands.c): `ctcpcmd` parses the request and chooses request/reply framing.
-- [source/ctcp.c](../../source/ctcp.c): `do_ctcp` processes hooks and displays replies; `send_ctcp` handles encoding, message limits, and reply throttling.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages): registration of the `echo` request handler and description.
+- [`script/builtins`](../scripts/builtins.md): loads the CTCP script.
+- `source/commands.c`: `ctcpcmd` parses the request and chooses request/reply framing.
+- `source/ctcp.c`: `do_ctcp` processes hooks and displays replies; `send_ctcp` handles encoding, message limits, and reply throttling.

@@ -50,4 +50,4 @@ This function first appeared in “plus 2” (post-ircII, pre-EPIC). It formerly
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `afterw` and implements `function_afterw()` using `function_findw()`. [include/words.h](../../include/words.h), [source/words.c](../../source/words.c), and [source/ircaux.c](../../source/ircaux.c) implement argument parsing, extraction, and case-insensitive comparison. [source/recode.c](../../source/recode.c) supplies the locale-based uppercase mapping.
+`source/functions.c` registers `afterw` and implements `function_afterw()` using `function_findw()`. `include/words.h`, `source/words.c`, and `source/ircaux.c` implement argument parsing, extraction, and case-insensitive comparison. `source/recode.c` supplies the locale-based uppercase mapping.

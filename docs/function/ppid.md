@@ -26,4 +26,4 @@ First appeared in ircII-2.2pre7.myc6.phone.
 
 ## Source
 
-Registration and `function_ppid()`: [source/functions.c](../../source/functions.c). Integer return conversion: [include/functions.h](../../include/functions.h).
+Registration and `function_ppid()`: `source/functions.c`. Integer return conversion: `include/functions.h`.

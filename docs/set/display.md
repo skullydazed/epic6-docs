@@ -38,6 +38,6 @@ Suppress ordinary output while retaining explicit script messages:
 
 ## Source references
 
-- [source/output.c](../../source/output.c): display-permission state, ordinary `put_it`/`say` checks, and diagnostic paths that bypass them.
-- [source/commands.c](../../source/commands.c): `parse_statement` preserves or adopts display permission; `load` temporarily suppresses output; `echo` and `xecho` explicitly enable output.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and default on.
+- `source/output.c`: display-permission state, ordinary `put_it`/`say` checks, and diagnostic paths that bypass them.
+- `source/commands.c`: `parse_statement` preserves or adopts display permission; `load` temporarily suppresses output; `echo` and `xecho` explicitly enable output.
+- `source/vars.c` and `include/config.h`: boolean registration and default on.

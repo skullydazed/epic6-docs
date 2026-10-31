@@ -61,4 +61,4 @@ The built-in is registered unconditionally. Iconv support is required by the cur
 
 ## Source
 
-Registration and all control operations: [source/functions.c](../../source/functions.c). Converter opening, descriptor storage, xform conversion, and CTCP transforms: [source/ircaux.c](../../source/ircaux.c). Build requirements: [configure.ac](../../configure.ac).
+Registration and all control operations: `source/functions.c`. Converter opening, descriptor storage, xform conversion, and CTCP transforms: `source/ircaux.c`. Build requirements: `configure.ac`.

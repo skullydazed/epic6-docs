@@ -1,6 +1,6 @@
 # EPIC release notes archive
 
-Release and development notes are shipped with the source. See [UPDATES](../../UPDATES) for development changes and [KNOWNBUGS](../../KNOWNBUGS) for retirement and outstanding-work records. This archive covers EPIC5 releases through August 2024.
+Release and development notes are shipped with the source. See [UPDATES](../UPDATES.md) for development changes and [KNOWNBUGS](../KNOWNBUGS.md) for retirement and outstanding-work records. This archive covers EPIC5 releases through August 2024.
 
 The **Archived ID** and **Archived date** columns list the historical release records. **Tagged source metadata** identifies the Git tag and any differing version string, internal commit ID, or `internal_version` date from its `source/irc.c`. A source constant or Git commit date is not necessarily a public announcement date; differing records are shown together.
 
@@ -80,6 +80,6 @@ The **Archived ID** and **Archived date** columns list the historical release re
 
 ## Source references
 
-- [source/irc.c](../../source/irc.c): current EPIC6 identity and the meanings of `irc_version`, `internal_version`, and `commit_id`.
+- `source/irc.c`: current EPIC6 identity and the meanings of `irc_version`, `internal_version`, and `commit_id`.
 - Historical Git tags named in each row: release metadata in `source/irc.c` and Git commit records.
 - Repository commits `c4bc7cd5` and `15341b23`: 2.1.3/2.1.4 release/date correction; `6fa28184`: mismatched 2.1.8 tag/source version.

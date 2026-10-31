@@ -37,4 +37,4 @@ The output buffer allows at most 255 bytes, more than enough for a numeric IPv4 
 | `$nametoip(::1)` | Empty with a diagnostic; this function requests IPv4 |
 | `$iptoname(127.0.0.1)` | A reverse hostname or the numeric fallback; see `$iptoname()` |
 
-Registration, whole-input handling, and output buffer: [source/functions.c](../../source/functions.c), `function_nametoip()`. IPv4 selection, resolver flags, callback waiting, and numeric formatting: [source/network.c](../../source/network.c), `hostname_to_paddr()`, `hostname_to_ssu()`, and `ssu_to_paddr()`.
+Registration, whole-input handling, and output buffer: `source/functions.c`, `function_nametoip()`. IPv4 selection, resolver flags, callback waiting, and numeric formatting: `source/network.c`, `hostname_to_paddr()`, `hostname_to_ssu()`, and `ssu_to_paddr()`.

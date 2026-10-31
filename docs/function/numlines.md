@@ -37,4 +37,4 @@ $numlines(0 text)                         empty string
 $numlines(80)                             1 with an empty first_line
 ```
 
-Registration and `function_numlines()`: [source/functions.c](../../source/functions.c). Normalization, display-column measurement, settings, and wrapping: [source/screen.c](../../source/screen.c), `new_normalize_string()` and `prepare_display()`. Integer conversion: [include/functions.h](../../include/functions.h).
+Registration and `function_numlines()`: `source/functions.c`. Normalization, display-column measurement, settings, and wrapping: `source/screen.c`, `new_normalize_string()` and `prepare_display()`. Integer conversion: `include/functions.h`.

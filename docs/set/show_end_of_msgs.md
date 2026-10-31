@@ -40,6 +40,6 @@ Restore normal handling with `/set show_end_of_msgs on`.
 
 ## Source references
 
-- [script/builtins](../../script/builtins): defines the boolean, initializes it to on, and installs conditional numeric hooks for the listed replies.
-- [source/numbers.c](../../source/numbers.c): numeric processing and default displays, including end-of-NAMES conditions.
-- [source/hook.c](../../source/hook.c): hook matching and conditional default suppression.
+- [`script/builtins`](../scripts/builtins.md): defines the boolean, initializes it to on, and installs conditional numeric hooks for the listed replies.
+- `source/numbers.c`: numeric processing and default displays, including end-of-NAMES conditions.
+- `source/hook.c`: hook matching and conditional default suppression.

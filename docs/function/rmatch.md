@@ -39,4 +39,4 @@ First appeared in ircII.
 
 ## Source
 
-Registration and `function_rmatch()`: [source/functions.c](../../source/functions.c). Parsing: [include/words.h](../../include/words.h). Wildcard scores and comparisons: [source/reg.c](../../source/reg.c).
+Registration and `function_rmatch()`: `source/functions.c`. Parsing: `include/words.h`. Wildcard scores and comparisons: `source/reg.c`.

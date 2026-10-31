@@ -43,6 +43,6 @@ To stop regular clock updates and hide the standard status-clock field:
 
 ## Source references
 
-- [source/clock.c](../../source/clock.c): `my_set_clock` updates the clock system timer and statuses; `update_system_timer` requires both enabled clock and nonzero interval; clock reset routines update cached text and invoke hooks.
-- [source/status.c](../../source/status.c): `status_clock` returns an empty field when the setting is off.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and enabled default, with a 60-second default interval.
+- `source/clock.c`: `my_set_clock` updates the clock system timer and statuses; `update_system_timer` requires both enabled clock and nonzero interval; clock reset routines update cached text and invoke hooks.
+- `source/status.c`: `status_clock` returns an empty field when the setting is off.
+- `source/vars.c` and `include/config.h`: boolean registration and enabled default, with a 60-second default interval.

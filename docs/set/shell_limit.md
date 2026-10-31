@@ -42,5 +42,5 @@ Restore unlimited global output with `/set shell_limit 0`.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): integer registration and zero default.
-- [source/exec.c](../../source/exec.c): `handle_filedesc` counts received lines; `do_exec` selects the effective limit and checks it after handling output; `ignore_process` closes pipes without signalling the child; exec option parsing assigns process-specific limits.
+- `source/vars.c` and `include/config.h`: integer registration and zero default.
+- `source/exec.c`: `handle_filedesc` counts received lines; `do_exec` selects the effective limit and checks it after handling output; `ignore_process` closes pipes without signalling the child; exec option parsing assigns process-specific limits.

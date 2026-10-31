@@ -35,6 +35,6 @@ Use `/set -status_oper` to hide it without changing operator status or privilege
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and `*` default.
-- [source/status.c](../../source/status.c): `%*` mapping and `status_oper` server, operator, and visibility tests.
-- [source/server.c](../../source/server.c): `get_server_operator` derives operator state from the recorded user modes.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and `*` default.
+- `source/status.c`: `%*` mapping and `status_oper` server, operator, and visibility tests.
+- `source/server.c`: `get_server_operator` derives operator state from the recorded user modes.

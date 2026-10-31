@@ -32,5 +32,5 @@ See [bind](../command/bind.md) for key sequence syntax, [scroll_backward](scroll
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration, default bindings, and terminal End binding.
-- [source/window.c](../../source/window.c): `scrollback_end`, `window_scrollback_end`, `window_scrollback_forwards`, and the line-count tester implement movement and hold-view selection; `recalculate_window_cursor_and_display_ip` cancels caught-up scrollback; `trim_scrollback` governs retention.
+- `source/keys.c`: action registration, default bindings, and terminal End binding.
+- `source/window.c`: `scrollback_end`, `window_scrollback_end`, `window_scrollback_forwards`, and the line-count tester implement movement and hold-view selection; `recalculate_window_cursor_and_display_ip` cancels caught-up scrollback; `trim_scrollback` governs retention.

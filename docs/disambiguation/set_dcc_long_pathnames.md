@@ -26,7 +26,7 @@ This was a DCC transfer display option, not a general pathname-formatting rule f
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `$dccctl()`, and associated functionality.
-- [source/vars.c](../../source/vars.c): current registration omits the setting and handles unknown-variable errors.
-- [source/commands.c](../../source/commands.c): current built-in command table has no `dcc` handler.
-- [source/ctcp.c](../../source/ctcp.c): current CTCP implementation has no built-in DCC transfer negotiation handler.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `$dccctl()`, and associated functionality.
+- `source/vars.c`: current registration omits the setting and handles unknown-variable errors.
+- `source/commands.c`: current built-in command table has no `dcc` handler.
+- `source/ctcp.c`: current CTCP implementation has no built-in DCC transfer negotiation handler.

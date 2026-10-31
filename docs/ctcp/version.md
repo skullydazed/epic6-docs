@@ -14,7 +14,7 @@ Ask another client which IRC client and version it is using. The returned inform
 
 ## EPIC6 response behavior
 
-The responder is supplied by [script/ctcp](../../script/ctcp), loaded by [script/builtins](../../script/builtins), rather than by a C built-in handler. A setup that does not load it needs `/load ctcp` to install the handler.
+The responder is supplied by [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), loaded by [`script/builtins`](../scripts/builtins.md), rather than by a C built-in handler. A setup that does not load it needs `/load ctcp` to install the handler.
 
 The supplied script ignores additional request arguments and constructs this reply:
 
@@ -40,8 +40,8 @@ Request John's client identification. Customize the final part of your own suppl
 
 ## Source references
 
-- [script/ctcp](../../script/ctcp): registration and reply construction for `version`.
-- [script/builtins](../../script/builtins): loads the CTCP script.
-- [source/functions.c](../../source/functions.c) and [source/irc.c](../../source/irc.c): `$J` returns the compiled `irc_version` string.
-- [source/vars.c](../../source/vars.c): `client_information` registration and build-provided default.
-- [source/commands.c](../../source/commands.c) and [source/ctcp.c](../../source/ctcp.c): request sending, reply hooks/display, encoding, and reply throttling.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages): registration and reply construction for `version`.
+- [`script/builtins`](../scripts/builtins.md): loads the CTCP script.
+- `source/functions.c` and `source/irc.c`: `$J` returns the compiled `irc_version` string.
+- `source/vars.c`: `client_information` registration and build-provided default.
+- `source/commands.c` and `source/ctcp.c`: request sending, reply hooks/display, encoding, and reply throttling.

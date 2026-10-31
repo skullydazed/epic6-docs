@@ -32,5 +32,5 @@ This describes terminal input and output; it does not configure script searches 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): current registration omits this setting and handles unknown-variable errors.
-- [source/recode.c](../../source/recode.c): current encoding rules and iconv-based conversion validation, without a translation-table search path.
+- `source/vars.c`: current registration omits this setting and handles unknown-variable errors.
+- `source/recode.c`: current encoding rules and iconv-based conversion validation, without a translation-table search path.

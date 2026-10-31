@@ -40,5 +40,5 @@ This operation first appeared in EPIC4pre2.001.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_status_format` stores the override or clears it, calls `compile_status`, and requests redraw; `windowcmd_double` selects one or two status rows.
-- [source/status.c](../../source/status.c): `compile_status` chooses per-window overrides or global defaults; `make_status` selects slot 0 for single-row status and slots 1/2 for double status. `DISPLAY_ON_WINDOW` enforces current-window expando rules.
+- `source/window.c`: `windowcmd_status_format` stores the override or clears it, calls `compile_status`, and requests redraw; `windowcmd_double` selects one or two status rows.
+- `source/status.c`: `compile_status` chooses per-window overrides or global defaults; `make_status` selects slot 0 for single-row status and slots 1/2 for double status. `DISPLAY_ON_WINDOW` enforces current-window expando rules.

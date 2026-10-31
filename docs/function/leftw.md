@@ -37,4 +37,4 @@ This function first appeared in “plus-2” (post-ircII, pre-EPIC).
 
 ## Source
 
-Registered and implemented as `function_leftw` in [source/functions.c](../../source/functions.c). `extractfw` is defined in [include/words.h](../../include/words.h), and its `real_extract` helper is in [source/words.c](../../source/words.c). Integer argument conversion is in [include/functions.h](../../include/functions.h).
+Registered and implemented as `function_leftw` in `source/functions.c`. `extractfw` is defined in `include/words.h`, and its `real_extract` helper is in `source/words.c`. Integer argument conversion is in `include/functions.h`.

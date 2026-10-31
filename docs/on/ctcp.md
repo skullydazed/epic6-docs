@@ -54,6 +54,6 @@ on ^ctcp * (sender, recvr, ctcp, args) {
 
 ## Source references
 
-- [source/ctcp.c](../../source/ctcp.c): `do_ctcp` orders request handling and generic display, applies parser limits, and invokes the hook; `init_ctcp` registers the built-in action handler.
-- [source/parse.c](../../source/parse.c): `p_privmsg` passes requests to `do_ctcp`; `p_notice` passes replies.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard matching and suppression.
+- `source/ctcp.c`: `do_ctcp` orders request handling and generic display, applies parser limits, and invokes the hook; `init_ctcp` registers the built-in action handler.
+- `source/parse.c`: `p_privmsg` passes requests to `do_ctcp`; `p_notice` passes replies.
+- `source/hook.c`: event registration and `do_hook` implement standard matching and suppression.

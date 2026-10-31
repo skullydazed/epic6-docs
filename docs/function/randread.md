@@ -34,4 +34,4 @@ The initial seek result is unchecked. A zero random remainder produces an offset
 
 ## Source
 
-Registration and `function_randread()`: [source/functions.c](../../source/functions.c). Filename normalization, file size, randomness, and `chomp()`: [source/ircaux.c](../../source/ircaux.c). Buffer sizes: [include/irc.h](../../include/irc.h).
+Registration and `function_randread()`: `source/functions.c`. Filename normalization, file size, randomness, and `chomp()`: `source/ircaux.c`. Buffer sizes: `include/irc.h`.

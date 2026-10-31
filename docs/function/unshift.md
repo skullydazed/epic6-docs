@@ -36,4 +36,4 @@ After `assign foo old`, `$unshift(foo hello there)` returns `"hello there" old` 
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:3656). Assignment-name parsing and word quoting: [`source/ircaux.c`](../../source/ircaux.c). Variable lookup and writeback: [`source/alias.c`](../../source/alias.c:1059).
+Handler: `source/functions.c`. Assignment-name parsing and word quoting: `source/ircaux.c`. Variable lookup and writeback: `source/alias.c`.

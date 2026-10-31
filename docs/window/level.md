@@ -49,8 +49,8 @@ Claim public and miscellaneous output in the current window, add private-message
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_level`, `revamp_window_masks`, `new_window`, `renormalize_window_levels`, and `windowcmd_server` implement parsing, exclusive claims, initial masks, and server changes.
-- [source/levels.c](../../source/levels.c): `str_to_mask` and `standard_level_warning` implement list parsing and unsupported-level reports.
-- [source/screen.c](../../source/screen.c): `add_to_screen` implements routing precedence and fallbacks.
-- [source/server.c](../../source/server.c): applies new-server reclaimable levels during synchronization.
-- [include/config.h](../../include/config.h): defines the new-server and old-server defaults.
+- `source/window.c`: `windowcmd_level`, `revamp_window_masks`, `new_window`, `renormalize_window_levels`, and `windowcmd_server` implement parsing, exclusive claims, initial masks, and server changes.
+- `source/levels.c`: `str_to_mask` and `standard_level_warning` implement list parsing and unsupported-level reports.
+- `source/screen.c`: `add_to_screen` implements routing precedence and fallbacks.
+- `source/server.c`: applies new-server reclaimable levels during synchronization.
+- `include/config.h`: defines the new-server and old-server defaults.

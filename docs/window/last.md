@@ -40,5 +40,5 @@ Select the previous input window on the screen containing window 7, provided win
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_last` selects the screen; `set_screens_current_window` validates history, chooses the fallback, and updates input selection; `make_window_current_by_refnum` changes global selection and invokes the switch hook. `remove_window_from_screen` updates history when removing windows.
-- [source/screen.c](../../source/screen.c): initializes each screen's last-window reference to no window.
+- `source/window.c`: `windowcmd_last` selects the screen; `set_screens_current_window` validates history, chooses the fallback, and updates input selection; `make_window_current_by_refnum` changes global selection and invokes the switch hook. `remove_window_from_screen` updates history when removing windows.
+- `source/screen.c`: initializes each screen's last-window reference to no window.

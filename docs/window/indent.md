@@ -37,7 +37,7 @@ Enable indentation in the current window, disable it in window 3, report window 
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_indent`, `get_boolean`, `set_window_indent`, and `windowcmd_rebuild_scrollback` implement defaults, changes, reporting, and explicit rebuilding.
-- [source/screen.c](../../source/screen.c): `prepare_display` implements word wrapping, indentation width, and continuation-prefix formatting.
-- [source/vars.c](../../source/vars.c): `set_indent` propagates `/set indent` to every window.
-- [include/config.h](../../include/config.h): defines the compiled indentation default.
+- `source/window.c`: `new_window`, `windowcmd_indent`, `get_boolean`, `set_window_indent`, and `windowcmd_rebuild_scrollback` implement defaults, changes, reporting, and explicit rebuilding.
+- `source/screen.c`: `prepare_display` implements word wrapping, indentation width, and continuation-prefix formatting.
+- `source/vars.c`: `set_indent` propagates `/set indent` to every window.
+- `include/config.h`: defines the compiled indentation default.

@@ -32,4 +32,4 @@ $strlen()                Returns 0.
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:4849). Counting: [`quick_code_point_count`](../../source/wcwidth.c:555). The `$@` byte count is implemented in [`source/expr.c`](../../source/expr.c:518).
+Handler: `source/functions.c`. Counting: `quick_code_point_count`. The `$@` byte count is implemented in `source/expr.c`.

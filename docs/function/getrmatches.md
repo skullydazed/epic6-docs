@@ -47,4 +47,4 @@ This prints only the stored patterns that match `apple pie`.
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). The reversed `GET_MATCHES` arguments, array lookup, and storage-order traversal: [source/array.c](../../source/array.c). Ordinary-word parsing: [include/words.h](../../include/words.h). Wildcard matching: [source/reg.c](../../source/reg.c).
+Registered in `source/functions.c`. The reversed `GET_MATCHES` arguments, array lookup, and storage-order traversal: `source/array.c`. Ordinary-word parsing: `include/words.h`. Wildcard matching: `source/reg.c`.

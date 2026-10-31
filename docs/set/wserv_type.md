@@ -49,6 +49,6 @@ The backend-selection setting was introduced in EPIC4-1.1.14.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): registration and `set_wserv_type` validation, including clearing unsupported values.
-- [include/config.h](../../include/config.h): `screen` default.
-- [source/screen.c](../../source/screen.c): `create_additional_screen` implements ordered environment tests and backend-specific launches.
+- `source/vars.c`: registration and `set_wserv_type` validation, including clearing unsupported values.
+- `include/config.h`: `screen` default.
+- `source/screen.c`: `create_additional_screen` implements ordered environment tests and backend-specific launches.

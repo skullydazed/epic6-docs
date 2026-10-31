@@ -34,4 +34,4 @@ The function is evaluated before `xecho` changes any output state.
 
 ## Source
 
-Registered and implemented as `function_isdisplaying` in [source/functions.c](../../source/functions.c). The display flag is in [source/output.c](../../source/output.c), command overrides and outgoing hooks are in [source/commands.c](../../source/commands.c), and hook noise handling is in [source/hook.c](../../source/hook.c).
+Registered and implemented as `function_isdisplaying` in `source/functions.c`. The display flag is in `source/output.c`, command overrides and outgoing hooks are in `source/commands.c`, and hook noise handling is in `source/hook.c`.

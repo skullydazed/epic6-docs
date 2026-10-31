@@ -49,4 +49,4 @@ usrip -direct joebob -cmd {
 
 ## Source
 
-[source/who.c](../../source/who.c) implements `usripcmd()` and the `USRIP` branch of `userhostbase()`, with shared queues, caching, and callbacks. [source/numbers.c](../../source/numbers.c) implements numeric 302/340 routing. [source/commands.c](../../source/commands.c) registers the command.
+`source/who.c` implements `usripcmd()` and the `USRIP` branch of `userhostbase()`, with shared queues, caching, and callbacks. `source/numbers.c` implements numeric 302/340 routing. `source/commands.c` registers the command.

@@ -42,4 +42,4 @@ These examples invoke the actions without changing any key bindings.
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c). `parsekeycmd`, action lookup, built-in action registration, alias-backed dispatch, and the `keybinding` hook are in [source/keys.c](../../source/keys.c). `type_text` and `parse_command` implementations are in [source/input.c](../../source/input.c).
+Registration is in `source/commands.c`. `parsekeycmd`, action lookup, built-in action registration, alias-backed dispatch, and the `keybinding` hook are in `source/keys.c`. `type_text` and `parse_command` implementations are in `source/input.c`.

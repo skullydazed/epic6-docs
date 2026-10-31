@@ -57,7 +57,7 @@ Disable outbound mangling:
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): unset default, registration, and callback.
-- [source/server.c](../../source/server.c): `vsend_to_aserver_with_payload` applies mangling, encoding conversion, length limiting, and the send hook; `send_to_aserver_raw` writes directly.
-- [source/commands.c](../../source/commands.c): callers supply separately encoded payloads for messages and other requests.
-- [source/screen.c](../../source/screen.c): `parse_mangle` and `new_normalize_string` implement rule selection and transformations.
+- `source/vars.c`: unset default, registration, and callback.
+- `source/server.c`: `vsend_to_aserver_with_payload` applies mangling, encoding conversion, length limiting, and the send hook; `send_to_aserver_raw` writes directly.
+- `source/commands.c`: callers supply separately encoded payloads for messages and other requests.
+- `source/screen.c`: `parse_mangle` and `new_normalize_string` implement rule selection and transformations.

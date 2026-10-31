@@ -34,5 +34,5 @@ on -reconnect_required "*" {
 
 ## Source references
 
-- [source/server.c](../../source/server.c): `server_io` and `send_to_aserver_raw` invoke the hook before closure.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/server.c`: `server_io` and `send_to_aserver_raw` invoke the hook before closure.
+- `source/hook.c`: event registration and standard hook dispatch.

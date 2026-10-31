@@ -38,4 +38,4 @@ Print the complete window table. `/window 3 list` prints the same set of windows
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_list` calculates column widths and prints the header; `list_a_window` and `WIN_FORM` define row fields, truncation, and the hidden marker. `traverse_all_windows2` and `traverse_all_windows` enumerate the client-wide window set; `get_window_echannel` supplies the current channel.
+- `source/window.c`: `windowcmd_list` calculates column widths and prints the header; `list_a_window` and `WIN_FORM` define row fields, truncation, and the hidden marker. `traverse_all_windows2` and `traverse_all_windows` enumerate the client-wide window set; `get_window_echannel` supplies the current channel.

@@ -46,4 +46,4 @@ Wait for input, allowing that input to have its usual effect:
 
 `pause` first appeared in EPIC3.003; subsecond intervals were introduced in EPIC4-1.1.2.
 
-Registration, `e_pause`, and its completion callbacks are in [source/commands.c](../../source/commands.c). Timer scheduling and dispatch are in [source/timer.c](../../source/timer.c), recursive event-loop processing in [source/irc.c](../../source/irc.c), and pass-through key prompts and input restoration in [source/screen.c](../../source/screen.c).
+Registration, `e_pause`, and its completion callbacks are in `source/commands.c`. Timer scheduling and dispatch are in `source/timer.c`, recursive event-loop processing in `source/irc.c`, and pass-through key prompts and input restoration in `source/screen.c`.

@@ -42,4 +42,4 @@ $writeb(w-1 this is a test) /* Write to the global logfile. */
 
 ## Source
 
-Registered and implemented as `function_writeb` in [source/functions.c](../../source/functions.c). Writing and logfile selection are in [source/files.c](../../source/files.c); `transform_string_dyn` and the CTCP decoder are in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented as `function_writeb` in `source/functions.c`. Writing and logfile selection are in `source/files.c`; `transform_string_dyn` and the CTCP decoder are in `source/ircaux.c`.

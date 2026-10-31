@@ -23,5 +23,5 @@ A left-button press selects the visible window at the reported screen row. Wheel
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): setting behavior.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, callback, and default.
+- `source/keys.c`: setting behavior.
+- `source/vars.c` and `include/config.h`: registration, callback, and default.

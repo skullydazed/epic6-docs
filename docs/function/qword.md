@@ -36,4 +36,4 @@ First appeared in EPIC5-0.3.2.
 
 ## Source
 
-Registration and `function_qword()`: [source/functions.c](../../source/functions.c). Function word parsing: [include/words.h](../../include/words.h). `malloc_strcat_word()` and result quoting: [source/ircaux.c](../../source/ircaux.c).
+Registration and `function_qword()`: `source/functions.c`. Function word parsing: `include/words.h`. `malloc_strcat_word()` and result quoting: `source/ircaux.c`.

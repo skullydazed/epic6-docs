@@ -37,6 +37,6 @@ Discard queued output in the current window or window 3, respectively. To discar
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_flush`, `flush_scrollback_after`, `recalculate_window_cursor_and_display_ip`, and `windowcmd_hold_mode` implement queue removal, view bookkeeping, and independent hold-mode control.
-- [source/lastlog.c](../../source/lastlog.c): `dont_need_lastlog_item` marks discarded output as unnecessary for scrollback rebuilding.
-- [source/input.c](../../source/input.c): `send_line` handles hold advancement when submitting an input line.
+- `source/window.c`: `windowcmd_flush`, `flush_scrollback_after`, `recalculate_window_cursor_and_display_ip`, and `windowcmd_hold_mode` implement queue removal, view bookkeeping, and independent hold-mode control.
+- `source/lastlog.c`: `dont_need_lastlog_item` marks discarded output as unnecessary for scrollback rebuilding.
+- `source/input.c`: `send_line` handles hold advancement when submitting an input line.

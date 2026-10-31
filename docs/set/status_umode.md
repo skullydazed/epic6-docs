@@ -35,6 +35,6 @@ For recorded modes `iw`, this supplies `UserMode: +iw` where the outer format co
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, status rebuild callback, and default wrapper.
-- [source/status.c](../../source/status.c): `%#` mapping, wrapper compilation, and `status_umode` visibility, empty-value, and buffer handling.
-- [source/server.c](../../source/server.c): `get_server_umode` returns recorded per-server modes.
+- `source/vars.c` and `include/config.h`: registration, status rebuild callback, and default wrapper.
+- `source/status.c`: `%#` mapping, wrapper compilation, and `status_umode` visibility, empty-value, and buffer handling.
+- `source/server.c`: `get_server_umode` returns recorded per-server modes.

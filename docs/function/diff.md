@@ -34,4 +34,4 @@ Returns a space-separated list, or an empty string if no words remain or the sep
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). Word splitting, result quoting, and case-insensitive comparison are in [source/ircaux.c](../../source/ircaux.c), with word parsing in [source/words.c](../../source/words.c).
+Registered and implemented in `source/functions.c`. Word splitting, result quoting, and case-insensitive comparison are in `source/ircaux.c`, with word parsing in `source/words.c`.

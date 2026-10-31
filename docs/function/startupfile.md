@@ -41,4 +41,4 @@ With `-q`, `$startupfile()` returns empty. If no readable selected startup pathn
 
 First appeared in EPIC5-0.0.2.
 
-Registration and `function_startupfile()`: [source/functions.c](../../source/functions.c). Startup options, environment selection, and `load_ircrc()`: [source/irc.c](../../source/irc.c). Default names: [include/irc.h](../../include/irc.h).
+Registration and `function_startupfile()`: `source/functions.c`. Startup options, environment selection, and `load_ircrc()`: `source/irc.c`. Default names: `include/irc.h`.

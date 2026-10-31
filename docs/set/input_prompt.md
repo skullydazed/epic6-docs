@@ -41,7 +41,7 @@ Disable the ordinary prompt with:
 
 ## Source references
 
-- [source/input.c](../../source/input.c): `set_input_prompt` stores the global default and requests redraws; input display processing selects a raw per-input-line prompt first, expands and normalizes it, and measures its width.
-- [source/vars.c](../../source/vars.c): string registration and prompt callback.
-- [include/config.h](../../include/config.h): default `> `.
-- [source/expr.c](../../source/expr.c): `$$` preserves a literal dollar sign for later expansion.
+- `source/input.c`: `set_input_prompt` stores the global default and requests redraws; input display processing selects a raw per-input-line prompt first, expands and normalizes it, and measures its width.
+- `source/vars.c`: string registration and prompt callback.
+- `include/config.h`: default `> `.
+- `source/expr.c`: `$$` preserves a literal dollar sign for later expansion.

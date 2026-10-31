@@ -32,4 +32,4 @@ Available in every supported build. The current configure process requires OpenS
 
 ## Source
 
-Registration and `function_pbkdf2()`: [source/functions.c](../../source/functions.c). Required crypto library configuration: [configure.ac](../../configure.ac).
+Registration and `function_pbkdf2()`: `source/functions.c`. Required crypto library configuration: `configure.ac`.

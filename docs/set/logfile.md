@@ -44,6 +44,6 @@ Change `logfile` while logging is open to switch files. To stop and remove the c
 
 ## Source references
 
-- [source/log.c](../../source/log.c): `set_logfile` closes/reopens an active destination; `logger` handles explicit logging activation; `open_log` and `close_log` implement append mode, path normalization, permissions, and markers.
-- [source/output.c](../../source/output.c): `put_echo` writes the global log before routing to windows.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, callback, unset handling, and default `irc.log`.
+- `source/log.c`: `set_logfile` closes/reopens an active destination; `logger` handles explicit logging activation; `open_log` and `close_log` implement append mode, path normalization, permissions, and markers.
+- `source/output.c`: `put_echo` writes the global log before routing to windows.
+- `source/vars.c` and `include/config.h`: string registration, callback, unset handling, and default `irc.log`.

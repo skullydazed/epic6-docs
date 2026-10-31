@@ -22,8 +22,8 @@ For process-output handling, use [on exec](../on/exec.md), [on exec_errors](../o
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records removal of the previously sunset redirect hook.
-- [source/hook.c](../../source/hook.c): the named-hook table omits `redirect`; `find_hook` rejects unknown event names.
-- [include/hook.h](../../include/hook.h): current hook identifiers contain no redirect event.
-- [source/commands.c](../../source/commands.c): the built-in command table contains no `redirect` command.
-- [source/exec.c](../../source/exec.c): exec records retain redirect metadata, but `handle_filedesc` uses it only to gate default local display and does not invoke a redirect hook.
+- [KNOWNBUGS](../KNOWNBUGS.md): records removal of the previously sunset redirect hook.
+- `source/hook.c`: the named-hook table omits `redirect`; `find_hook` rejects unknown event names.
+- `include/hook.h`: current hook identifiers contain no redirect event.
+- `source/commands.c`: the built-in command table contains no `redirect` command.
+- `source/exec.c`: exec records retain redirect metadata, but `handle_filedesc` uses it only to gate default local display and does not invoke a redirect hook.

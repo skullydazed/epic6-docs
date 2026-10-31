@@ -51,7 +51,7 @@ on ^nickname "*" (oldnick, newnick) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_nick` accepts your new nickname, dispatches per-channel events, conditionally invokes `nickname`, and updates channel lists afterward.
-- [source/names.c](../../source/names.c): `walk_channels`, `what_channel`, and `rename_nick` provide shared-channel lookup and cache updates.
-- [source/server.c](../../source/server.c): `accept_server_nickname` records accepted nickname state.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_nick` accepts your new nickname, dispatches per-channel events, conditionally invokes `nickname`, and updates channel lists afterward.
+- `source/names.c`: `walk_channels`, `what_channel`, and `rename_nick` provide shared-channel lookup and cache updates.
+- `source/server.c`: `accept_server_nickname` records accepted nickname state.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

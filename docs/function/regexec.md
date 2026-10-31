@@ -36,4 +36,4 @@ First appeared in epic4-1.029.
 
 ## Source
 
-Registration, `function_regexec()`, and shared error state: [source/functions.c](../../source/functions.c). Base85 decoding: [source/ircaux.c](../../source/ircaux.c). Engine selection: [include/irc_std.h](../../include/irc_std.h) and [configure.ac](../../configure.ac).
+Registration, `function_regexec()`, and shared error state: `source/functions.c`. Base85 decoding: `source/ircaux.c`. Engine selection: `include/irc_std.h` and `configure.ac`.

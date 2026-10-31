@@ -34,4 +34,4 @@ The sorted list, or empty for an empty list. Empty quoted words are omitted when
 
 With `/xdebug dword` enabled, `$sort("two words" apple)` returns `apple "two words"`.
 
-Registration, `function_sort()`, and `sort_it()`: [source/functions.c](../../source/functions.c). Word splitting, result reconstruction, and Unicode comparison: [source/ircaux.c](../../source/ircaux.c).
+Registration, `function_sort()`, and `sort_it()`: `source/functions.c`. Word splitting, result reconstruction, and Unicode comparison: `source/ircaux.c`.

@@ -45,4 +45,4 @@ This function first appeared in ircII.
 
 ## Source
 
-Registered and implemented as `function_left` in [source/functions.c](../../source/functions.c), including JSON keyword parsing. Integer argument parsing is in [include/functions.h](../../include/functions.h), quick counting is in [source/ircaux.c](../../source/ircaux.c), and code-point traversal is in [source/wcwidth.c](../../source/wcwidth.c).
+Registered and implemented as `function_left` in `source/functions.c`, including JSON keyword parsing. Integer argument parsing is in `include/functions.h`, quick counting is in `source/ircaux.c`, and code-point traversal is in `source/wcwidth.c`.

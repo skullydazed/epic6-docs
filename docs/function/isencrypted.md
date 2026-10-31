@@ -38,4 +38,4 @@ This function was part of EPIC-SSL and first appeared in EPIC4-1.1.3. The curren
 
 ## Source
 
-Registered and implemented as `function_isencrypted` in [source/functions.c](../../source/functions.c). Server/socket lookup is in [source/server.c](../../source/server.c), TLS metadata creation and `is_fd_ssl_enabled` are in [source/ssl.c](../../source/ssl.c), and the OpenSSL requirement is in [configure.ac](../../configure.ac).
+Registered and implemented as `function_isencrypted` in `source/functions.c`. Server/socket lookup is in `source/server.c`, TLS metadata creation and `is_fd_ssl_enabled` are in `source/ssl.c`, and the OpenSSL requirement is in `configure.ac`.

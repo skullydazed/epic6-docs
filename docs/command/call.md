@@ -39,4 +39,4 @@ The `call` command first appeared in EPIC3.001.
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for the registration, `e_call()`, and statement recording in `parse_statement()`. [source/alias.c](../../source/alias.c) implements scope management, `dump_call_stack()`, and `panic_dump_call_stack()`. [source/output.c](../../source/output.c) implements `yell()`; [source/ircaux.c](../../source/ircaux.c) and [source/irc.c](../../source/irc.c) contain internal error paths that print panic traces.
+See `source/commands.c` for the registration, `e_call()`, and statement recording in `parse_statement()`. `source/alias.c` implements scope management, `dump_call_stack()`, and `panic_dump_call_stack()`. `source/output.c` implements `yell()`; `source/ircaux.c` and `source/irc.c` contain internal error paths that print panic traces.

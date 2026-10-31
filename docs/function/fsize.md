@@ -38,4 +38,4 @@ First appeared in EPIC3pre7.
 
 ## Source
 
-Registration and filename parsing: [source/functions.c](../../source/functions.c). Tilde expansion, path normalization, and `file_size()`: [source/ircaux.c](../../source/ircaux.c). Its `epic_stat()` wrapper is in [source/elf.c](../../source/elf.c). Extended-word parsing: [include/words.h](../../include/words.h).
+Registration and filename parsing: `source/functions.c`. Tilde expansion, path normalization, and `file_size()`: `source/ircaux.c`. Its `epic_stat()` wrapper is in `source/elf.c`. Extended-word parsing: `include/words.h`.

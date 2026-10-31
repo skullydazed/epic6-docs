@@ -41,5 +41,5 @@ Restore the default shell invocation and run a command:
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration and `-c` default.
-- [source/exec.c](../../source/exec.c): `start_process` passes the flags as one `execl` argument, substitutes an empty string when unset, and bypasses this path for direct execution.
+- `source/vars.c` and `include/config.h`: string registration and `-c` default.
+- `source/exec.c`: `start_process` passes the flags as one `execl` argument, substitutes an empty string when unset, and bypasses this path for direct execution.

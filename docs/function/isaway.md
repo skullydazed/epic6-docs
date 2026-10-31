@@ -36,4 +36,4 @@ Each returns `0` or `1` according to current client state.
 
 ## Source
 
-Registration, refnum parsing, and stored-message test: [source/functions.c](../../source/functions.c). Message storage, aggregate selection, and special refnums: [source/server.c](../../source/server.c) and [include/server.h](../../include/server.h). Separate confirmation flags: [source/numbers.c](../../source/numbers.c).
+Registration, refnum parsing, and stored-message test: `source/functions.c`. Message storage, aggregate selection, and special refnums: `source/server.c` and `include/server.h`. Separate confirmation flags: `source/numbers.c`.

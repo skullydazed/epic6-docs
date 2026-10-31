@@ -39,6 +39,6 @@ See [window swap](swap.md) for its selection and swappability requirements.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_delete`, `windowcmd_delete_kill`, and `add_to_invisible_list` implement screen selection and window preservation.
-- [source/screen.c](../../source/screen.c): `kill_screen` performs connection teardown, input-line destruction, focus changes, and diagnostics.
-- [source/wserv.c](../../source/wserv.c): the helper exits on closure of its data connection.
+- `source/window.c`: `windowcmd_delete`, `windowcmd_delete_kill`, and `add_to_invisible_list` implement screen selection and window preservation.
+- `source/screen.c`: `kill_screen` performs connection teardown, input-line destruction, focus changes, and diagnostics.
+- `source/wserv.c`: the helper exits on closure of its data connection.

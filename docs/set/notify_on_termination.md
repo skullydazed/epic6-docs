@@ -38,5 +38,5 @@ This setting first appeared in ircII.
 
 ## Source references
 
-- [source/exec.c](../../source/exec.c): `cleanup_dead_processes` checks cleanup readiness, runs wait commands and exit handlers, and conditionally displays termination information; `set_context_for_process` selects its output context.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and on default.
+- `source/exec.c`: `cleanup_dead_processes` checks cleanup readiness, runs wait commands and exit handlers, and conditionally displays termination information; `set_context_for_process` selects its output context.
+- `source/vars.c` and `include/config.h`: boolean registration and on default.

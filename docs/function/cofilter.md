@@ -38,4 +38,4 @@ Returns a space-separated list of words from `<var2>` in their original order. R
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c) and implemented there through `COPATFUNC`. Word parsing is defined in [include/words.h](../../include/words.h) and [source/words.c](../../source/words.c); result quoting is in [source/ircaux.c](../../source/ircaux.c), and wildcard matching is in [source/reg.c](../../source/reg.c).
+Registered in `source/functions.c` and implemented there through `COPATFUNC`. Word parsing is defined in `include/words.h` and `source/words.c`; result quoting is in `source/ircaux.c`, and wildcard matching is in `source/reg.c`.

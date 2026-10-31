@@ -43,5 +43,5 @@ The first two describe the current window; the third describes window 3 without 
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_describe` emits the report; `windowcmd` invokes it by default when no window operations are supplied.
-- [source/term.c](../../source/term.c): `get_term_geometry` returns the line and column values used in the diagnostic geometry line.
+- `source/window.c`: `windowcmd_describe` emits the report; `windowcmd` invokes it by default when no window operations are supplied.
+- `source/term.c`: `get_term_geometry` returns the line and column values used in the diagnostic geometry line.

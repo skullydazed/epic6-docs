@@ -45,8 +45,8 @@ Limit the ordinary status channel text and request a 16-byte channel column wher
 
 ## Source references
 
-- [source/status.c](../../source/status.c): `status_channel` truncates the channel text before applying its status format.
-- [source/numbers.c](../../source/numbers.c): list and names output use distinct formatting branches.
-- [source/who.c](../../source/who.c): `whoreply` formats the channel column in standard WHO rows.
-- [source/window.c](../../source/window.c): window-list formatting substitutes width 12 when the setting is zero.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): integer validation, status-update callback, and default zero.
+- `source/status.c`: `status_channel` truncates the channel text before applying its status format.
+- `source/numbers.c`: list and names output use distinct formatting branches.
+- `source/who.c`: `whoreply` formats the channel column in standard WHO rows.
+- `source/window.c`: window-list formatting substitutes width 12 when the setting is zero.
+- `source/vars.c` and `include/config.h`: integer validation, status-update callback, and default zero.

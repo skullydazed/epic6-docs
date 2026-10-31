@@ -34,4 +34,4 @@ Target strings are interpreted as stored query names. The historical `=nickname`
 
 ## Source
 
-Registration and `function_querywin()`: [source/functions.c](../../source/functions.c). Window traversal, `get_window_equery()`, and user refnums: [source/window.c](../../source/window.c). Case-insensitive comparison: [source/ircaux.c](../../source/ircaux.c).
+Registration and `function_querywin()`: `source/functions.c`. Window traversal, `get_window_equery()`, and user refnums: `source/window.c`. Case-insensitive comparison: `source/ircaux.c`.

@@ -14,7 +14,7 @@ Ask another client for its user-supplied information text. An EPIC6 responder re
 
 ## EPIC6 response behavior
 
-The responder is supplied by [script/ctcp](../../script/ctcp), loaded by [script/builtins](../../script/builtins), rather than by a C built-in handler. A setup that does not load it needs `/load ctcp` to install the handler.
+The responder is supplied by [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), loaded by [`script/builtins`](../scripts/builtins.md), rather than by a C built-in handler. A setup that does not load it needs `/load ctcp` to install the handler.
 
 The script ignores additional request arguments and replies with the current `user_information` value. The default is `EPIC6 -- Did we get lost again?`. An unset or empty value produces a reply with no argument text; it does not disable the responder.
 
@@ -36,7 +36,7 @@ Set the text your own supplied responder returns:
 
 ## Source references
 
-- [script/ctcp](../../script/ctcp): registration of the `userinfo` request handler and description.
-- [script/builtins](../../script/builtins): loads the CTCP script.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): `user_information` registration and default.
-- [source/commands.c](../../source/commands.c) and [source/ctcp.c](../../source/ctcp.c): request sending, reply hooks/display, encoding, and reply throttling.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages): registration of the `userinfo` request handler and description.
+- [`script/builtins`](../scripts/builtins.md): loads the CTCP script.
+- `source/vars.c` and `include/config.h`: `user_information` registration and default.
+- `source/commands.c` and `source/ctcp.c`: request sending, reply hooks/display, encoding, and reply throttling.

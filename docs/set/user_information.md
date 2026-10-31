@@ -13,7 +13,7 @@ Default: `EPIC6 -- Did we get lost again?`. With no text, [set](../command/set.m
 
 Contains the text returned to a remote client requesting CTCP USERINFO when the supplied CTCP responder script is active. The text can be anything, or absent.
 
-The setting itself is a C-registered string. The responder is script-provided: [script/ctcp](../../script/ctcp), loaded by `builtins`, registers a USERINFO request handler that reads `$USER_INFORMATION` and passes it to the CTCP reply command. Changing the value affects later requests handled by that script, without reloading it. A replaced or disabled handler can behave differently.
+The setting itself is a C-registered string. The responder is script-provided: [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), loaded by `builtins`, registers a USERINFO request handler that reads `$USER_INFORMATION` and passes it to the CTCP reply command. Changing the value affects later requests handled by that script, without reloading it. A replaced or disabled handler can behave differently.
 
 Unsetting the text does not disable the handler. It can still send an argumentless USERINFO reply. To stop replies, change the CTCP handler policy rather than relying on an absent string.
 
@@ -33,7 +33,7 @@ A later USERINFO request handled by the supplied script replies with that text, 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration and default text.
-- [script/ctcp](../../script/ctcp) and [script/builtins](../../script/builtins): USERINFO request handler and script loading.
-- [source/ctcp.c](../../source/ctcp.c): request dispatch and CTCP reply formatting.
-- [source/commands.c](../../source/commands.c): `ctcpcmd` sends a reply when called in incoming PRIVMSG context and permits an argumentless reply.
+- `source/vars.c` and `include/config.h`: string registration and default text.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages) and [`script/builtins`](../scripts/builtins.md): USERINFO request handler and script loading.
+- `source/ctcp.c`: request dispatch and CTCP reply formatting.
+- `source/commands.c`: `ctcpcmd` sends a reply when called in incoming PRIVMSG context and permits an argumentless reply.

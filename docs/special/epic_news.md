@@ -1,6 +1,6 @@
 # EPIC news archive
 
-This page covers EPIC6 development news and historical EPIC4/EPIC5 announcements. The dated EPIC6 entries summarize [UPDATES](../../UPDATES) and upstream commit history; links to individual references explain current behavior and requirements.
+This page covers EPIC6 development news and historical EPIC4/EPIC5 announcements. The dated EPIC6 entries summarize [UPDATES](../UPDATES.md) and upstream commit history; links to individual references explain current behavior and requirements.
 
 ## EPIC6
 
@@ -129,8 +129,8 @@ EPIC4 2.10.4, internal commit ID 778, was released February 11, 2014. Its change
 
 ## Source references
 
-- Upstream commit `70a655b6` and [KNOWNBUGS](../../KNOWNBUGS): October 30, 2026 changes, including authentication, regex consumers, command parsing, message splitting, and topline limits.
-- [UPDATES](../../UPDATES): dated EPIC6 development announcements from August 2024 through August 2026.
+- Upstream commit `70a655b6` and [KNOWNBUGS](../KNOWNBUGS.md): October 30, 2026 changes, including authentication, regex consumers, command parsing, message splitting, and topline limits.
+- [UPDATES](../UPDATES.md): dated EPIC6 development announcements from August 2024 through August 2026.
 - Repository tag `epic5-2.0`, `source/irc.c`: version name, internal release date, and commit ID; tag commit `075087c1` records the release.
 - Repository commit `8390b7ef`, `source/irc.c` and `UPDATES`: EPIC5 1.1.10 release identity and contemporary encoding/function changes.
 - Repository commit `d0ac3ed1`, `source/irc.c`: EPIC5 1.1.8, release date `20140404`, and commit ID 1775.

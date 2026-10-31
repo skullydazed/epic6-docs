@@ -53,4 +53,4 @@ This function first appeared in EPIC5-0.0.8.
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c) and implemented by `levelctl` and registry/mask helpers in [source/levels.c](../../source/levels.c). Limits are defined in [include/levels.h](../../include/levels.h).
+Registered in `source/functions.c` and implemented by `levelctl` and registry/mask helpers in `source/levels.c`. Limits are defined in `include/levels.h`.

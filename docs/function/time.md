@@ -32,4 +32,4 @@ First appeared in ircII.
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:1551). Integer return formatting: [`include/functions.h`](../../include/functions.h:56).
+Handler: `source/functions.c`. Integer return formatting: `include/functions.h`.

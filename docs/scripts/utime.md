@@ -51,6 +51,6 @@ This script first appeared in EPIC4pre0.042. The retained source credits hop in 
 
 ## Source references
 
-- [script/utime](../../script/utime): arithmetic, one-step carry/borrow, and six-character formatting.
-- [source/functions.c](../../source/functions.c): `function_utime` returns seconds and microseconds; `right` implements the result-field truncation.
-- [source/ircaux.c](../../source/ircaux.c): `get_time` reads the real-time clock.
+- `script/utime`: arithmetic, one-step carry/borrow, and six-character formatting.
+- `source/functions.c`: `function_utime` returns seconds and microseconds; `right` implements the result-field truncation.
+- `source/ircaux.c`: `get_time` reads the real-time clock.

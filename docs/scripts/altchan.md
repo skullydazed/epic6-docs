@@ -55,6 +55,6 @@ From another numbered window, this selects window 5 if it exists. From window 5,
 
 ## Source references
 
-- [script/altchan](../../script/altchan): bindings, numeric aliases, prompt, and ordered toggle branches.
-- [script/builtins](../../script/builtins): `winnum` compatibility function.
-- [source/window.c](../../source/window.c): refnum selection, swaps, and previous/next hidden-window operations.
+- `script/altchan`: bindings, numeric aliases, prompt, and ordered toggle branches.
+- [`script/builtins`](builtins.md): `winnum` compatibility function.
+- `source/window.c`: refnum selection, swaps, and previous/next hidden-window operations.

@@ -36,4 +36,4 @@ First appeared in EPIC2.
 
 ## Source
 
-Registration and `function_rename()`: [source/functions.c](../../source/functions.c). `normalize_filename()` and tilde expansion: [source/ircaux.c](../../source/ircaux.c). Double-quoted argument parsing: [include/functions.h](../../include/functions.h).
+Registration and `function_rename()`: `source/functions.c`. `normalize_filename()` and tilde expansion: `source/ircaux.c`. Double-quoted argument parsing: `include/functions.h`.

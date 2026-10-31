@@ -55,4 +55,4 @@ End every query in this window:
 
 ## Source
 
-Registration and the `query` wrapper are in [source/commands.c](../../source/commands.c). `windowcmd_query`, target ownership, current-query selection, special-target substitution, and rotation are in [source/window.c](../../source/window.c). Ordinary input uses the shared sending path in [source/commands.c](../../source/commands.c).
+Registration and the `query` wrapper are in `source/commands.c`. `windowcmd_query`, target ownership, current-query selection, special-target substitution, and rotation are in `source/window.c`. Ordinary input uses the shared sending path in `source/commands.c`.

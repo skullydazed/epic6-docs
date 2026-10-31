@@ -46,6 +46,6 @@ This replaces ordinary interactive parsing with [eval](../command/eval.md), allo
 
 ## Source references
 
-- [source/input.c](../../source/input.c): `send_line` clears input, selects prompt versus hook handling, conditionally parses the line, and applies hold/scrollback effects.
-- [source/commands.c](../../source/commands.c): `sendlinecmd` invokes interactive parsing without this hook; `evalcmd` evaluates script commands; `parse_statement` implements statement parsing.
-- [source/hook.c](../../source/hook.c): the `input` registration sets the nonrecursion flag; hook dispatch implements matching and default suppression.
+- `source/input.c`: `send_line` clears input, selects prompt versus hook handling, conditionally parses the line, and applies hold/scrollback effects.
+- `source/commands.c`: `sendlinecmd` invokes interactive parsing without this hook; `evalcmd` evaluates script commands; `parse_statement` implements statement parsing.
+- `source/hook.c`: the `input` registration sets the nonrecursion flag; hook dispatch implements matching and default suppression.

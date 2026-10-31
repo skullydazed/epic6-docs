@@ -60,7 +60,7 @@ This hook first appeared in EPIC4-1.1.3.
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_notice` performs CTCP processing, target normalization, and ordinary notice dispatch; `p_snotice` implements the operator and server-notice chains.
-- [source/ctcp.c](../../source/ctcp.c): `do_ctcp` processes reply payloads before ordinary notice text.
-- [source/commands.c](../../source/commands.c): `ctcpcmd` rejects invocation from a notice context.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_notice` performs CTCP processing, target normalization, and ordinary notice dispatch; `p_snotice` implements the operator and server-notice chains.
+- `source/ctcp.c`: `do_ctcp` processes reply payloads before ordinary notice text.
+- `source/commands.c`: `ctcpcmd` rejects invocation from a notice context.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

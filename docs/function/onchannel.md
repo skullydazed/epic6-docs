@@ -51,4 +51,4 @@ A member list might be `Alice Bob Carol`. The membership form returns `1` or `0`
 
 The member-list action first appeared in the “+3” client (post-ircII, pre-EPIC). The equivalent ircII `chanusers()` appeared around ircII 2.6 and was added to EPIC1. The nickname/channel action appeared around ircII 2.3.24 and was added around EPIC1.
 
-Registration and `function_onchannel()`: [source/functions.c](../../source/functions.c). Member-list creation, channel defaults, membership lookup, and nickname ordering: [source/names.c](../../source/names.c). Function word parsing: [include/words.h](../../include/words.h).
+Registration and `function_onchannel()`: `source/functions.c`. Member-list creation, channel defaults, membership lookup, and nickname ordering: `source/names.c`. Function word parsing: `include/words.h`.

@@ -45,4 +45,4 @@ fe ($myservers(*)) server_ref {
 
 The no-argument form first appeared in ircII 2.2.2. The argument form first appeared in EPIC4pre1.028 and was suggested by Colten Edwards.
 
-Registration and `function_servers()`: [source/functions.c](../../source/functions.c). Open-connection enumeration, server-name fallback, and registered-state filtering: [source/server.c](../../source/server.c), `server_list_to_string()`, `get_server_itsname()`, and `is_server_registered()`.
+Registration and `function_servers()`: `source/functions.c`. Open-connection enumeration, server-name fallback, and registered-state filtering: `source/server.c`, `server_list_to_string()`, `get_server_itsname()`, and `is_server_registered()`.

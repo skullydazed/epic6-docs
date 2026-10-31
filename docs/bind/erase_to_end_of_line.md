@@ -32,6 +32,6 @@ See [bind](../command/bind.md) for key sequence syntax, [erase_to_beg_of_line](e
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and the default Control-K binding.
-- [source/input.c](../../source/input.c): `input_clear_to_eol` calls `cut_input(LOGICAL_CURSOR, 9999)`; `cut_input` and `retokenize_input` determine the ending byte offset and update the input line.
-- [source/ircaux.c](../../source/ircaux.c): `strext2` saves the selected region in the cut buffer and removes it.
+- `source/keys.c`: action registration and the default Control-K binding.
+- `source/input.c`: `input_clear_to_eol` calls `cut_input(LOGICAL_CURSOR, 9999)`; `cut_input` and `retokenize_input` determine the ending byte offset and update the input line.
+- `source/ircaux.c`: `strext2` saves the selected region in the cut buffer and removes it.

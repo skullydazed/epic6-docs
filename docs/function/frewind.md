@@ -40,4 +40,4 @@ The second read repeats the first line only if the seek actually succeeds; `rewi
 
 ## Source
 
-Registration and argument parsing: [source/functions.c](../../source/functions.c). Handle lookup and unchecked seek: [source/files.c](../../source/files.c). Ordinary and archive-backed stream construction: [source/elf.c](../../source/elf.c). The [POSIX seek specification](https://pubs.opengroup.org/onlinepubs/7908799/xsh/fseek.html) describes successful repositioning and EOF clearing.
+Registration and argument parsing: `source/functions.c`. Handle lookup and unchecked seek: `source/files.c`. Ordinary and archive-backed stream construction: `source/elf.c`. The [POSIX seek specification](https://pubs.opengroup.org/onlinepubs/7908799/xsh/fseek.html) describes successful repositioning and EOF clearing.

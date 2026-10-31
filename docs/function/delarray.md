@@ -34,4 +34,4 @@ The deletion returns `0`. A subsequent `$delarray(temporary_names)` returns `-1`
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). Parsing, array-name lookup, and removal are implemented in [source/array.c](../../source/array.c).
+Registered in `source/functions.c`. Parsing, array-name lookup, and removal are implemented in `source/array.c`.

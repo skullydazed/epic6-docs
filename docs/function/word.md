@@ -40,4 +40,4 @@ This function already existed in ircII.
 
 ## Source
 
-Registered and implemented as `function_word` in [source/functions.c](../../source/functions.c). `next_func_arg` is defined in [include/words.h](../../include/words.h), using the word parser in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented as `function_word` in `source/functions.c`. `next_func_arg` is defined in `include/words.h`, using the word parser in `source/ircaux.c`.

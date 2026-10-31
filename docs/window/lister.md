@@ -22,4 +22,4 @@ The optional window selector does not restrict the list. This operation does not
 
 ## Source references
 
-`windowcmd_lister` and `list_a_window` in [source/window.c](../../source/window.c).
+`windowcmd_lister` and `list_a_window` in `source/window.c`.

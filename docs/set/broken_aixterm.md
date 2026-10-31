@@ -20,5 +20,5 @@ This setting is registered and can be queried or changed, but the current implem
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): setting behavior.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, callback, and default.
+- `source/vars.c`: setting behavior.
+- `source/vars.c` and `include/config.h`: registration, callback, and default.

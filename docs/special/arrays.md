@@ -85,6 +85,6 @@ Appending, deleting, and rebuilding the sorted index have allocation and process
 
 ## Source references
 
-- [source/array.c](../../source/array.c): `set_item`, `get_array`, item deletion, sorted indices, wildcard searches, exact searches, and count/read behavior.
-- [include/array.h](../../include/array.h): array function interfaces.
-- [source/functions.c](../../source/functions.c): registration of the built-in array functions.
+- `source/array.c`: `set_item`, `get_array`, item deletion, sorted indices, wildcard searches, exact searches, and count/read behavior.
+- `include/array.h`: array function interfaces.
+- `source/functions.c`: registration of the built-in array functions.

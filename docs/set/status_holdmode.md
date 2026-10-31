@@ -23,5 +23,5 @@ This is separate from [status_hold](status_hold.md), which marks output beyond t
 
 ## Source references
 
-- [source/status.c](../../source/status.c): setting behavior.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, callback, and default.
+- `source/status.c`: setting behavior.
+- `source/vars.c` and `include/config.h`: registration, callback, and default.

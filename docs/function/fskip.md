@@ -40,4 +40,4 @@ The next `$read($handle)` starts after the discarded input. Do not assume that `
 
 ## Source
 
-Registration and count parsing: [source/functions.c](../../source/functions.c). The skip loop, EOF test, and line-reading helper: [source/files.c](../../source/files.c). Ordinary and archive-backed reads: [source/elf.c](../../source/elf.c).
+Registration and count parsing: `source/functions.c`. The skip loop, EOF test, and line-reading helper: `source/files.c`. Ordinary and archive-backed reads: `source/elf.c`.

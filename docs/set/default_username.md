@@ -39,6 +39,6 @@ This setting first appeared in EPIC5-0.3.5.
 
 ## Source references
 
-- [source/irc.c](../../source/irc.c): startup username discovery, `-z` override, and initial nickname and realname fallbacks.
-- [source/server.c](../../source/server.c): `server_register` sends the global setting in `user`; `get_my_fallback_userhost` uses it for a local fallback address.
-- [source/vars.c](../../source/vars.c): string registration, initially null default, standard unset behavior, and no update callback.
+- `source/irc.c`: startup username discovery, `-z` override, and initial nickname and realname fallbacks.
+- `source/server.c`: `server_register` sends the global setting in `user`; `get_my_fallback_userhost` uses it for a local fallback address.
+- `source/vars.c`: string registration, initially null default, standard unset behavior, and no update callback.

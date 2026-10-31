@@ -28,7 +28,7 @@ See the removed [cpu_saver binding](bind_cpu_saver.md) for obsolete manual activ
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records the sunset of CPU Saver mode.
-- [source/vars.c](../../source/vars.c): current registration omits the CPU Saver settings and handles unknown-variable errors.
-- [source/clock.c](../../source/clock.c): system clock scheduling reads `clock_interval` without a CPU-saver interval.
-- [include/vars.h](../../include/vars.h): retains historical identifiers without active registration.
+- [KNOWNBUGS](../KNOWNBUGS.md): records the sunset of CPU Saver mode.
+- `source/vars.c`: current registration omits the CPU Saver settings and handles unknown-variable errors.
+- `source/clock.c`: system clock scheduling reads `clock_interval` without a CPU-saver interval.
+- `include/vars.h`: retains historical identifiers without active registration.

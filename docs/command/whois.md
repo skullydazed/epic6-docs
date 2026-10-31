@@ -39,4 +39,4 @@ Do not assume WHOIS is private: servers can log requests or notify targeted user
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `whois` and implements its branch of the shared `whois()` handler. [source/server.c](../../source/server.c) sends requests and selects registration realnames. [source/numbers.c](../../source/numbers.c) implements reply hooks and formatting; [source/irc.c](../../source/irc.c) initializes realname defaults.
+`source/commands.c` registers `whois` and implements its branch of the shared `whois()` handler. `source/server.c` sends requests and selects registration realnames. `source/numbers.c` implements reply hooks and formatting; `source/irc.c` initializes realname defaults.

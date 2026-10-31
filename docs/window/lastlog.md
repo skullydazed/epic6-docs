@@ -38,7 +38,7 @@ Request a limit of 50 entries in the current window, set window 3's limit to 500
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_lastlog`, and `rebuild_scrollback` implement defaults, trim-before-minimum ordering, reporting, and rebuilding.
-- [source/lastlog.c](../../source/lastlog.c): `add_to_lastlog`, `trim_lastlog`, `set_lastlog_size`, and `reconstitute_scrollback` implement counted entries, trimming, global changes, and display reconstruction.
-- [source/ircaux.c](../../source/ircaux.c): `is_number` and `my_atol` validate and convert the argument.
-- [include/config.h](../../include/config.h): defines the compiled lastlog default.
+- `source/window.c`: `new_window`, `windowcmd_lastlog`, and `rebuild_scrollback` implement defaults, trim-before-minimum ordering, reporting, and rebuilding.
+- `source/lastlog.c`: `add_to_lastlog`, `trim_lastlog`, `set_lastlog_size`, and `reconstitute_scrollback` implement counted entries, trimming, global changes, and display reconstruction.
+- `source/ircaux.c`: `is_number` and `my_atol` validate and convert the argument.
+- `include/config.h`: defines the compiled lastlog default.

@@ -37,4 +37,4 @@ Remove three output rows from the current window or two from window 7, giving th
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_shrink` negates the parsed amount; `get_number` and `resize_window` implement validation, recipient selection, row transfer, and errors. `recalculate_windows`, `recalculate_window_positions`, and `resize_window_display` update geometry and views.
+- `source/window.c`: `windowcmd_shrink` negates the parsed amount; `get_number` and `resize_window` implement validation, recipient selection, row transfer, and errors. `recalculate_windows`, `recalculate_window_positions`, and `resize_window_display` update geometry and views.

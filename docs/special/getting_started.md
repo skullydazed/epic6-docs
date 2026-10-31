@@ -14,6 +14,6 @@ The project’s historical community contact is `#epic` on EFNet. Documentation 
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): current scripting and Python command registration, without Perl, Ruby, or Tcl commands.
-- [configure.ac](../../configure.ac) and [source/python.c](../../source/python.c): optional Python integration.
-- [UPDATES](../../UPDATES): EPIC6's feature-retirement list includes Perl and Ruby.
+- `source/commands.c`: current scripting and Python command registration, without Perl, Ruby, or Tcl commands.
+- `configure.ac` and `source/python.c`: optional Python integration.
+- [UPDATES](../UPDATES.md): EPIC6's feature-retirement list includes Perl and Ruby.

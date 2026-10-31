@@ -22,4 +22,4 @@ Use this as a client-capability query. It says nothing about whether a particula
 
 First appeared before EPIC4-1.0, when it returned `0`. It began returning `1` in EPIC4-1.1.3.
 
-Registration and `function_ssl()`: [source/functions.c](../../source/functions.c). `client_ssl_enabled()`: [source/ssl.c](../../source/ssl.c). OpenSSL detection and requirements: [configure.ac](../../configure.ac).
+Registration and `function_ssl()`: `source/functions.c`. `client_ssl_enabled()`: `source/ssl.c`. OpenSSL detection and requirements: `configure.ac`.

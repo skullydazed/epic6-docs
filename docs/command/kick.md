@@ -43,4 +43,4 @@ Remove `foobar` from the current channel:
 
 ## Source
 
-Registration and `send_kick` are in [source/commands.c](../../source/commands.c). Reason recoding is in [source/recode.c](../../source/recode.c), and request formatting, connection checks, hooks, and line limits are in [source/server.c](../../source/server.c). Incoming kick handling is in [source/parse.c](../../source/parse.c).
+Registration and `send_kick` are in `source/commands.c`. Reason recoding is in `source/recode.c`, and request formatting, connection checks, hooks, and line limits are in `source/server.c`. Incoming kick handling is in `source/parse.c`.

@@ -29,7 +29,7 @@ See [dcc close](ctcp_close.md) for the removed connection-closing operation.
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `$dccctl()`, and related functionality.
-- [source/commands.c](../../source/commands.c): the command table has no `dcc` handler and the current sending path has no DCC raw transport.
-- [source/functions.c](../../source/functions.c): `function_connect` and `function_listen` retain disabled DCC code and return an empty string in the active branches.
-- [source/hook.c](../../source/hook.c): event registration omits former DCC events.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `$dccctl()`, and related functionality.
+- `source/commands.c`: the command table has no `dcc` handler and the current sending path has no DCC raw transport.
+- `source/functions.c`: `function_connect` and `function_listen` retain disabled DCC code and return an empty string in the active branches.
+- `source/hook.c`: event registration omits former DCC events.

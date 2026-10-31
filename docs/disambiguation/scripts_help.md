@@ -41,8 +41,8 @@ The older file-browser script was written by howl and first appeared in EPIC4-1.
 
 ## Source references
 
-- [script/help.irc](../../script/help.irc): retained alias, default page, connection-failure branch, and obsolete receive/paging code.
-- [source/functions.c](../../source/functions.c): `function_connect` is a compatibility placeholder returning empty.
-- [source/hook.c](../../source/hook.c), [source/vars.c](../../source/vars.c), and [source/commands.c](../../source/commands.c): current event, setting, and command registrations.
-- [script/global](../../script/global): default startup load of the help script.
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of pre-web help-file support and DCC functionality.
+- `script/help.irc`: retained alias, default page, connection-failure branch, and obsolete receive/paging code.
+- `source/functions.c`: `function_connect` is a compatibility placeholder returning empty.
+- `source/hook.c`, `source/vars.c`, and `source/commands.c`: current event, setting, and command registrations.
+- [`script/global`](../scripts/global.md): default startup load of the help script.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of pre-web help-file support and DCC functionality.

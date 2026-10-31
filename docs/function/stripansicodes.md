@@ -34,4 +34,4 @@ Unlike [`stripansi`](stripansi.md), this function interprets recognized escape s
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:6763). Normalization and escape parsing: [`source/screen.c`](../../source/screen.c:1822), [`read_esc_seq`](../../source/screen.c:1369). The `ANSI` flag maps to `NORMALIZE` in [`parse_mangle`](../../source/screen.c:4707).
+Handler: `source/functions.c`. Normalization and escape parsing: `source/screen.c`, `read_esc_seq`. The `ANSI` flag maps to `NORMALIZE` in `parse_mangle`.

@@ -50,9 +50,9 @@ The original script was written by Matthew Green and placed in the public domain
 
 ## Source references
 
-- [script/newaway](../../script/newaway): cache comparison, numeric hooks, WHOIS formatting, and package declaration.
-- [script/builtins](../../script/builtins): `encode` and `lastserver` wrappers.
-- [source/numbers.c](../../source/numbers.c): numeric `301` supplies nickname and away text; hook suppression controls its built-in display.
-- [source/server.c](../../source/server.c): `serverctl(last_server)` identifies the last server processed.
-- [source/hook.c](../../source/hook.c): hook matching, serial numbers, and suppression.
-- [source/alias.c](../../source/alias.c): package tagging and unload behavior.
+- `script/newaway`: cache comparison, numeric hooks, WHOIS formatting, and package declaration.
+- [`script/builtins`](builtins.md): `encode` and `lastserver` wrappers.
+- `source/numbers.c`: numeric `301` supplies nickname and away text; hook suppression controls its built-in display.
+- `source/server.c`: `serverctl(last_server)` identifies the last server processed.
+- `source/hook.c`: hook matching, serial numbers, and suppression.
+- `source/alias.c`: package tagging and unload behavior.

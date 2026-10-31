@@ -37,6 +37,6 @@ This setting originated in the EPIC4-SSL project and first appeared in EPIC4-1.1
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and default text.
-- [source/status.c](../../source/status.c): `%|` mapping and `status_ssl` TLS/on-text test followed by off-text fallback.
-- [source/server.c](../../source/server.c): `get_server_ssl_enabled` checks the server socket's TLS state.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and default text.
+- `source/status.c`: `%|` mapping and `status_ssl` TLS/on-text test followed by off-text fallback.
+- `source/server.c`: `get_server_ssl_enabled` checks the server socket's TLS state.

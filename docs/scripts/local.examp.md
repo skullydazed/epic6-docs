@@ -41,8 +41,8 @@ The example comments intend `local` to hold custom changes separately from distr
 
 ## Source references
 
-- [script/local.examp](../../script/local.examp): sample output, support load, settings, and server aliases.
-- [script/global](../../script/global): conditional final `local` load.
-- [source/irc.c](../../source/irc.c): personal startup selection, fallback, and quick startup.
-- [source/functions.c](../../source/functions.c): `which` searches `load_path` by default.
-- [Makefile.in](../../Makefile.in): `installscript` copies source script files by basename.
+- `script/local.examp`: sample output, support load, settings, and server aliases.
+- [`script/global`](global.md): conditional final `local` load.
+- `source/irc.c`: personal startup selection, fallback, and quick startup.
+- `source/functions.c`: `which` searches `load_path` by default.
+- `Makefile.in`: `installscript` copies source script files by basename.

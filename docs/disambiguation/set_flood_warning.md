@@ -28,8 +28,8 @@ This was a local incoming-detector display option, not a control for server-gene
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of the `flood` hook.
-- [source/vars.c](../../source/vars.c): current registration omits this setting and handles unknown-variable errors.
-- [source/hook.c](../../source/hook.c): current registration omits the former `flood` event.
-- [source/parse.c](../../source/parse.c): incoming message paths use current hooks without the former flood detector or its warning path.
-- [source/ctcp.c](../../source/ctcp.c): outgoing reply throttling is separate.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of the `flood` hook.
+- `source/vars.c`: current registration omits this setting and handles unknown-variable errors.
+- `source/hook.c`: current registration omits the former `flood` event.
+- `source/parse.c`: incoming message paths use current hooks without the former flood detector or its warning path.
+- `source/ctcp.c`: outgoing reply throttling is separate.

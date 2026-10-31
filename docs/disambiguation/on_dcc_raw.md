@@ -38,9 +38,9 @@ Scripts that used this event for socket applications must provide a new transpor
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `dccctl`, and related functionality.
-- [source/hook.c](../../source/hook.c): the hook table omits `dcc_raw`; `find_hook` rejects unknown named events.
-- [include/hook.h](../../include/hook.h): current event identifiers contain no DCC raw event.
-- [source/functions.c](../../source/functions.c): `function_connect` and `function_listen` retain disabled DCC code and return empty strings in their active branches.
-- [source/commands.c](../../source/commands.c): the command table has no built-in `dcc` command.
-- [script/help.irc](../../script/help.irc): retains raw-socket hook references that depend on the removed interface.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `dccctl`, and related functionality.
+- `source/hook.c`: the hook table omits `dcc_raw`; `find_hook` rejects unknown named events.
+- `include/hook.h`: current event identifiers contain no DCC raw event.
+- `source/functions.c`: `function_connect` and `function_listen` retain disabled DCC code and return empty strings in their active branches.
+- `source/commands.c`: the command table has no built-in `dcc` command.
+- [`script/help.irc`](scripts_help.md): retains raw-socket hook references that depend on the removed interface.

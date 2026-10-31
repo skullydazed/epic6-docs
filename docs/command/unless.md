@@ -43,4 +43,4 @@ The `unless` command first appeared in EPIC3.
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `unless`. [source/if.c](../../source/if.c) implements `ifcmd()`, the persistent inversion flag, and branch parsing. [source/expr.c](../../source/expr.c) and [source/expr2.c](../../source/expr2.c) implement expression evaluation; [source/ircaux.c](../../source/ircaux.c) implements the final `check_val()` truth test.
+`source/commands.c` registers `unless`. `source/if.c` implements `ifcmd()`, the persistent inversion flag, and branch parsing. `source/expr.c` and `source/expr2.c` implement expression evaluation; `source/ircaux.c` implements the final `check_val()` truth test.

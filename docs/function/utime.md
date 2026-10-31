@@ -33,4 +33,4 @@ $utime() /* Might return 850381369 56367, representing 850381369.056367. */
 
 ## Source
 
-Registered and implemented as `function_utime` in [source/functions.c](../../source/functions.c). `get_time` reads `CLOCK_REALTIME` in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented as `function_utime` in `source/functions.c`. `get_time` reads `CLOCK_REALTIME` in `source/ircaux.c`.

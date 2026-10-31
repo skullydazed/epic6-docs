@@ -37,6 +37,6 @@ Detach the current window, or window 3, from its server. To inspect the resultin
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_discon`, `destroy_window_waiting_channels`, `window_change_server`, and `window_check_servers` implement detachment, the hook, pending-list cleanup, and possible server autoclose.
-- [source/names.c](../../source/names.c): `reassign_window_channels` attempts to move channel associations to other windows.
-- [source/screen.c](../../source/screen.c): output routing uses server and channel/target associations.
+- `source/window.c`: `windowcmd_discon`, `destroy_window_waiting_channels`, `window_change_server`, and `window_check_servers` implement detachment, the hook, pending-list cleanup, and possible server autoclose.
+- `source/names.c`: `reassign_window_channels` attempts to move channel associations to other windows.
+- `source/screen.c`: output routing uses server and channel/target associations.

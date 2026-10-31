@@ -30,6 +30,6 @@ See [bind](../command/bind.md) for key sequence syntax and [forward_word](bind_f
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and the default Escape-b binding.
-- [source/input.c](../../source/input.c): `input_backward_word`, `WHITESPACE`, `input_move_cursor`, and `redraw_input` implement word boundaries, movement, and horizontal scrolling.
-- [include/config.h](../../include/config.h) and [source/vars.c](../../source/vars.c): `word_break` default and setting registration.
+- `source/keys.c`: action registration and the default Escape-b binding.
+- `source/input.c`: `input_backward_word`, `WHITESPACE`, `input_move_cursor`, and `redraw_input` implement word boundaries, movement, and horizontal scrolling.
+- `include/config.h` and `source/vars.c`: `word_break` default and setting registration.

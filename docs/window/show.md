@@ -40,4 +40,4 @@ Show and select window 3 or the window named `chat`. The last example names wind
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_show`, `get_window_from_args`, `get_window_by_desc`, and `show_window` implement lookup, placement, selection, and failure targeting; `add_to_window_list` implements splitting and notification reset; `set_screens_current_window` updates input history.
+- `source/window.c`: `windowcmd_show`, `get_window_from_args`, `get_window_by_desc`, and `show_window` implement lookup, placement, selection, and failure targeting; `add_to_window_list` implements splitting and notification reset; `set_screens_current_window` updates input history.

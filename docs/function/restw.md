@@ -37,4 +37,4 @@ First appeared in +2, after ircII and before EPIC.
 
 ## Source
 
-Registration and `function_restw()`: [source/functions.c](../../source/functions.c). `real_extract()` and word movement: [source/words.c](../../source/words.c). Parsing modes and the end marker: [include/words.h](../../include/words.h). Integer parsing: [include/functions.h](../../include/functions.h).
+Registration and `function_restw()`: `source/functions.c`. `real_extract()` and word movement: `source/words.c`. Parsing modes and the end marker: `include/words.h`. Integer parsing: `include/functions.h`.

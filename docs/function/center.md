@@ -41,4 +41,4 @@ Negative widths are converted to an unsigned size and are not supported safely. 
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `center` and implements `function_center()`. [include/functions.h](../../include/functions.h) defines width parsing. [source/screen.c](../../source/screen.c) implements normalization and display-column counting; [source/wcwidth.c](../../source/wcwidth.c) supplies Unicode width handling. [source/expr.c](../../source/expr.c) implements expansion width qualifiers.
+`source/functions.c` registers `center` and implements `function_center()`. `include/functions.h` defines width parsing. `source/screen.c` implements normalization and display-column counting; `source/wcwidth.c` supplies Unicode width handling. `source/expr.c` implements expansion width qualifiers.

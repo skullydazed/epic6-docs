@@ -69,4 +69,4 @@ echo process no longer registered
 
 ## Source
 
-[source/commands.c](../../source/commands.c) implements `waitcmd()` and mode parsing. [source/server.c](../../source/server.c) implements server markers, callbacks, counters, and close handling. [source/numbers.c](../../source/numbers.c) intercepts marker replies. [source/exec.c](../../source/exec.c) manages process waits and cleanup callbacks; [source/alias.c](../../source/alias.c) manages callback scopes and stack locking.
+`source/commands.c` implements `waitcmd()` and mode parsing. `source/server.c` implements server markers, callbacks, counters, and close handling. `source/numbers.c` intercepts marker replies. `source/exec.c` manages process waits and cleanup callbacks; `source/alias.c` manages callback scopes and stack locking.

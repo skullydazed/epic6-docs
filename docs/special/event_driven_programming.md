@@ -72,8 +72,8 @@ This is usually sequential execution, not a separate thread for every callback. 
 
 ## Source references
 
-- [source/irc.c](../../source/irc.c): `io()` computes timeouts, waits, dispatches descriptors/timers, and performs housekeeping.
-- [source/parse.c](../../source/parse.c): `p_privmsg()` classifies messages, invokes `GENERAL_PRIVMSG` and `MSG`, and applies default display.
-- [source/hook.c](../../source/hook.c): handler selection, serial processing, noise modes, and callback invocation.
-- [source/commands.c](../../source/commands.c): named callback scopes and argument binding.
-- [source/server.c](../../source/server.c): `server_hard_wait()` demonstrates event-loop re-entry during a waiting operation.
+- `source/irc.c`: `io()` computes timeouts, waits, dispatches descriptors/timers, and performs housekeeping.
+- `source/parse.c`: `p_privmsg()` classifies messages, invokes `GENERAL_PRIVMSG` and `MSG`, and applies default display.
+- `source/hook.c`: handler selection, serial processing, noise modes, and callback invocation.
+- `source/commands.c`: named callback scopes and argument binding.
+- `source/server.c`: `server_hard_wait()` demonstrates event-loop re-entry during a waiting operation.

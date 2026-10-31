@@ -32,4 +32,4 @@ This displays the test string and stores the unprefixed return value in `sample`
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). The CP437 mapping and conversion helper are in [source/ircaux.c](../../source/ircaux.c); normal banner output and suppression are handled in [source/output.c](../../source/output.c).
+Registered and implemented in `source/functions.c`. The CP437 mapping and conversion helper are in `source/ircaux.c`; normal banner output and suppression are handled in `source/output.c`.

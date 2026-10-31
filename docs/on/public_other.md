@@ -48,6 +48,6 @@ This does not replace `public` or `public_msg` display. Use `general_privmsg` wh
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_privmsg` performs CTCP handling, classification, sender-state updates, hook dispatch, and default formatting; `is_target_channel_wall` recognizes status prefixes.
-- [source/names.c](../../source/names.c): `is_current_channel` checks the owning window, `is_channel_nomsgs` checks cached `+n`, and `is_on_channel` checks cached membership.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_privmsg` performs CTCP handling, classification, sender-state updates, hook dispatch, and default formatting; `is_target_channel_wall` recognizes status prefixes.
+- `source/names.c`: `is_current_channel` checks the owning window, `is_channel_nomsgs` checks cached `+n`, and `is_on_channel` checks cached membership.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

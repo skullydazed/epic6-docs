@@ -26,4 +26,4 @@ Always the empty string. There are no options, diagnostics, state changes, or IR
 
 First appeared in ircII as a random-generator seeding interface. The current built-in is a no-op.
 
-Registration and `function_srand()`: [source/functions.c](../../source/functions.c). Current `random_number()` implementation: [source/ircaux.c](../../source/ircaux.c).
+Registration and `function_srand()`: `source/functions.c`. Current `random_number()` implementation: `source/ircaux.c`.

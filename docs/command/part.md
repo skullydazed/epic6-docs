@@ -48,4 +48,4 @@ See [join](join.md) to enter a channel again.
 
 ## Source
 
-Registration and `send_2comm` target/reason handling are in [source/commands.c](../../source/commands.c). Incoming departure hooks and state updates are in [source/parse.c](../../source/parse.c), channel removal in [source/names.c](../../source/names.c), current-channel lookup in [source/window.c](../../source/window.c), and transmission in [source/server.c](../../source/server.c).
+Registration and `send_2comm` target/reason handling are in `source/commands.c`. Incoming departure hooks and state updates are in `source/parse.c`, channel removal in `source/names.c`, current-channel lookup in `source/window.c`, and transmission in `source/server.c`.

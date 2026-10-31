@@ -45,4 +45,4 @@ This function first appeared in ircII-2.2pre1.
 
 ## Source
 
-Registered and implemented as `function_ischanop` in [source/functions.c](../../source/functions.c). Cache lookup, nickname comparison, and operator updates are in [source/names.c](../../source/names.c); required argument handling is in [include/functions.h](../../include/functions.h).
+Registered and implemented as `function_ischanop` in `source/functions.c`. Cache lookup, nickname comparison, and operator updates are in `source/names.c`; required argument handling is in `include/functions.h`.

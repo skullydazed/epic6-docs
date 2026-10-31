@@ -53,8 +53,8 @@ Neither command immediately changes existing window levels.
 
 ## Source references
 
-- [source/lastlog.c](../../source/lastlog.c): `set_old_server_lastlog_mask` parses the selection or disables the policy when unset.
-- [source/window.c](../../source/window.c): `windowcmd_server`, `window_change_server`, `renormalize_window_levels`, and `revamp_window_masks` implement switching and routing ownership.
-- [include/server.h](../../include/server.h): server-state ordering used by the switch condition.
-- [source/levels.c](../../source/levels.c): mask parsing and diagnostics.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration and default none.
+- `source/lastlog.c`: `set_old_server_lastlog_mask` parses the selection or disables the policy when unset.
+- `source/window.c`: `windowcmd_server`, `window_change_server`, `renormalize_window_levels`, and `revamp_window_masks` implement switching and routing ownership.
+- `include/server.h`: server-state ordering used by the switch condition.
+- `source/levels.c`: mask parsing and diagnostics.
+- `source/vars.c` and `include/config.h`: registration and default none.

@@ -45,5 +45,5 @@ This operation first appeared in EPIC4-1.2.2.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_swappable`, and `get_boolean` implement defaults and reports; `hide_window`, `show_window`, and `swap_window` enforce ordinary visibility checks. `unlink_window` uses the internal replacement fallback; `recalculate_windows` can hide windows for space; `windowcmd_killswap` attempts post-swap deletion.
-- [source/screen.c](../../source/screen.c): `kill_screen` detaches windows when destroying a secondary screen.
+- `source/window.c`: `new_window`, `windowcmd_swappable`, and `get_boolean` implement defaults and reports; `hide_window`, `show_window`, and `swap_window` enforce ordinary visibility checks. `unlink_window` uses the internal replacement fallback; `recalculate_windows` can hide windows for space; `windowcmd_killswap` attempts post-swap deletion.
+- `source/screen.c`: `kill_screen` detaches windows when destroying a secondary screen.

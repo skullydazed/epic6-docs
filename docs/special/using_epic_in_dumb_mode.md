@@ -80,8 +80,8 @@ The `-` asks for an unused negative serial. The first clause compares the destin
 
 ## Source references
 
-- [source/irc.c](../../source/irc.c) and [Makefile.in](../../Makefile.in): `-d`, startup-file selection/options, and current executable naming.
-- [source/screen.c](../../source/screen.c), [source/input.c](../../source/input.c), and [source/term.c](../../source/term.c): complete-line input, output, EOF handling, and full-screen-only input/terminal paths.
-- [source/server.c](../../source/server.c) and [source/parse.c](../../source/parse.c): CONNECT timing/arguments and GENERAL_PRIVMSG dispatch/arguments after CTCP processing.
-- [source/hook.c](../../source/hook.c): hook registrations, free positive/negative serial selection, order, and serial-zero suppression.
-- [script/global](../../script/global) and [source/commands.c](../../source/commands.c): default script setup, LOAD, and EXEC command support.
+- `source/irc.c` and `Makefile.in`: `-d`, startup-file selection/options, and current executable naming.
+- `source/screen.c`, `source/input.c`, and `source/term.c`: complete-line input, output, EOF handling, and full-screen-only input/terminal paths.
+- `source/server.c` and `source/parse.c`: CONNECT timing/arguments and GENERAL_PRIVMSG dispatch/arguments after CTCP processing.
+- `source/hook.c`: hook registrations, free positive/negative serial selection, order, and serial-zero suppression.
+- [`script/global`](../scripts/global.md) and `source/commands.c`: default script setup, LOAD, and EXEC command support.

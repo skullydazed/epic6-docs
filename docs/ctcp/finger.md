@@ -14,7 +14,7 @@ Ask another client for more detailed information about its user. The information
 
 ## EPIC6 response behavior
 
-The responder is provided by [script/ctcp](../../script/ctcp), loaded by [script/builtins](../../script/builtins), rather than by a C built-in handler. A setup that does not load that script needs `/load ctcp` to install it. The supplied responder ignores additional request arguments and constructs this reply:
+The responder is provided by [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), loaded by [`script/builtins`](../scripts/builtins.md), rather than by a C built-in handler. A setup that does not load that script needs `/load ctcp` to install it. The supplied responder ignores additional request arguments and constructs this reply:
 
 ```text
 name (user@host) Idle seconds second(s)
@@ -39,8 +39,8 @@ If John's client supports and permits this request, it returns its configured us
 
 ## Source references
 
-- [script/ctcp](../../script/ctcp): `do_ctcp_finger_request` and request-handler registration.
-- [script/builtins](../../script/builtins): loads the CTCP script.
-- [source/functions.c](../../source/functions.c): `$X` reads the server userhost; `$E` calculates client input idle time.
-- [source/screen.c](../../source/screen.c): input processing updates the idle timestamp.
-- [source/commands.c](../../source/commands.c) and [source/ctcp.c](../../source/ctcp.c): CTCP sending, reply hooks/display, encoding, and reply throttling.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages): `do_ctcp_finger_request` and request-handler registration.
+- [`script/builtins`](../scripts/builtins.md): loads the CTCP script.
+- `source/functions.c`: `$X` reads the server userhost; `$E` calculates client input idle time.
+- `source/screen.c`: input processing updates the idle timestamp.
+- `source/commands.c` and `source/ctcp.c`: CTCP sending, reply hooks/display, encoding, and reply throttling.

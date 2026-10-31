@@ -43,4 +43,4 @@ First appeared in EPIC5-0.0.2.
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:8098). Integer argument parsing: [`include/functions.h`](../../include/functions.h:25).
+Handler: `source/functions.c`. Integer argument parsing: `include/functions.h`.

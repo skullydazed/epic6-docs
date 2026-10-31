@@ -34,6 +34,6 @@ Restore the default write-error handling with `/set no_fail_disconnect off`.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and off default.
-- [source/server.c](../../source/server.c): `send_to_aserver_raw` tests the write result and this setting; `is_server_registered` defines the eligible states; server read-error handling is separate.
-- [source/ssl.c](../../source/ssl.c): TLS write wrapper used by the raw send routine.
+- `source/vars.c` and `include/config.h`: boolean registration and off default.
+- `source/server.c`: `send_to_aserver_raw` tests the write result and this setting; `is_server_registered` defines the eligible states; server read-error handling is separate.
+- `source/ssl.c`: TLS write wrapper used by the raw send routine.

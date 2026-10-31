@@ -33,4 +33,4 @@ The shared math wrapper checks `errno` after the operation: a reported domain er
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `ceil` and implements `function_ceil` through the shared math-function and error-return macros. [include/functions.h](../../include/functions.h) defines argument conversion and formatting. The [C/POSIX ceiling specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/ceil.html) defines rounding and floating-point results.
+`source/functions.c` registers `ceil` and implements `function_ceil` through the shared math-function and error-return macros. `include/functions.h` defines argument conversion and formatting. The [C/POSIX ceiling specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/ceil.html) defines rounding and floating-point results.

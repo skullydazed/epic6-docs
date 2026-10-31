@@ -88,4 +88,4 @@ who -line {echo $1 is $3@$4} -end {echo WHO finished for $1} #blah
 
 The built-in is always registered but silently does nothing unless the current server is registered. It has no function return value. Use hooks or callbacks for completion rather than assuming [`wait`](wait.md) drains every queued request. Flushing can cause late replies to be associated with a later query, so use it only when recovering a confused queue. Host disclosure and enhanced visibility remain subject to server policy.
 
-[source/commands.c](../../source/commands.c) registers `who`. [source/who.c](../../source/who.c) implements `whocmd()`, `whobase()`, options, queue matching, filters, callbacks, and 352/354/end processing. [source/numbers.c](../../source/numbers.c) routes replies and relevant errors; [source/alias.c](../../source/alias.c) implements callback scopes.
+`source/commands.c` registers `who`. `source/who.c` implements `whocmd()`, `whobase()`, options, queue matching, filters, callbacks, and 352/354/end processing. `source/numbers.c` routes replies and relevant errors; `source/alias.c` implements callback scopes.

@@ -53,9 +53,9 @@ Written by larne; first included in EPIC5-0.2.1.
 
 ## Source references
 
-- [script/chanmonitor](../../script/chanmonitor): hook filters, output formats, and window setup.
-- [source/parse.c](../../source/parse.c) and [source/names.c](../../source/names.c): public-message classification and channel currentness.
-- [source/ctcp.c](../../source/ctcp.c): channel and private action dispatch.
-- [source/functions.c](../../source/functions.c): `iscurchan` and `winchan` server/window lookup behavior.
-- [source/commands.c](../../source/commands.c): `xecho -w` silently returns when its destination is missing.
-- [source/window.c](../../source/window.c) and [script/builtins](../../script/builtins): window operations and compatibility wrappers.
+- `script/chanmonitor`: hook filters, output formats, and window setup.
+- `source/parse.c` and `source/names.c`: public-message classification and channel currentness.
+- `source/ctcp.c`: channel and private action dispatch.
+- `source/functions.c`: `iscurchan` and `winchan` server/window lookup behavior.
+- `source/commands.c`: `xecho -w` silently returns when its destination is missing.
+- `source/window.c` and [`script/builtins`](builtins.md): window operations and compatibility wrappers.

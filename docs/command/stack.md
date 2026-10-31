@@ -81,4 +81,4 @@ This displays `original`, provided a local `example` does not shadow that global
 
 ## Source
 
-Registration, operation parsing, and type dispatch are in [source/commands.c](../../source/commands.c). Alias, assignment, and setting stacks are in [source/alias.c](../../source/alias.c); setting cloning and callback restoration are in [source/vars.c](../../source/vars.c). Hook-list ownership and restoration are in [source/hook.c](../../source/hook.c), and saved bindings and keymap restoration are in [source/keys.c](../../source/keys.c).
+Registration, operation parsing, and type dispatch are in `source/commands.c`. Alias, assignment, and setting stacks are in `source/alias.c`; setting cloning and callback restoration are in `source/vars.c`. Hook-list ownership and restoration are in `source/hook.c`, and saved bindings and keymap restoration are in `source/keys.c`.

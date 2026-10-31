@@ -52,9 +52,9 @@ The retained source is marked as 1997 work by hop.
 
 ## Source references
 
-- [script/pipe](../../script/pipe): process naming, capture hook, waiting, and returned value.
-- [source/exec.c](../../source/exec.c): process creation, shell execution, line-buffered output, output limits, callbacks, and termination handling.
-- [source/commands.c](../../source/commands.c): `waitcmd` waits through event-loop processing and locks the current stack frame; `push_cmd` appends collected output.
-- [source/alias.c](../../source/alias.c): `bless_local_stack` exposes the locked caller frame to the output hook.
-- [source/hook.c](../../source/hook.c): temporary hook matching, replacement, suppression, and removal.
-- [source/functions.c](../../source/functions.c) and [source/ircaux.c](../../source/ircaux.c): `function_push` and `malloc_strcat_word` determine joining and optional quoted-word behavior.
+- `script/pipe`: process naming, capture hook, waiting, and returned value.
+- `source/exec.c`: process creation, shell execution, line-buffered output, output limits, callbacks, and termination handling.
+- `source/commands.c`: `waitcmd` waits through event-loop processing and locks the current stack frame; `push_cmd` appends collected output.
+- `source/alias.c`: `bless_local_stack` exposes the locked caller frame to the output hook.
+- `source/hook.c`: temporary hook matching, replacement, suppression, and removal.
+- `source/functions.c` and `source/ircaux.c`: `function_push` and `malloc_strcat_word` determine joining and optional quoted-word behavior.

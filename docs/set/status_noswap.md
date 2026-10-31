@@ -37,6 +37,6 @@ A nonswappable window with `%{1}W` in its status format displays `[noswap]`. Use
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and default marker.
-- [source/status.c](../../source/status.c): `%{1}W` maps to `status_swappable`, which returns the text only when the flag is off.
-- [source/window.c](../../source/window.c): `get_window_swappable` and `windowcmd_swappable` manage the separate window policy.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and default marker.
+- `source/status.c`: `%{1}W` maps to `status_swappable`, which returns the text only when the flag is off.
+- `source/window.c`: `get_window_swappable` and `windowcmd_swappable` manage the separate window policy.

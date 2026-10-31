@@ -28,5 +28,5 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default key assignments.
-- [source/window.c](../../source/window.c): `unstop_all_windows` iterates all windows and invokes `windowcmd_hold_mode`; that handler removes held views, while `get_boolean` produces the setting report.
+- `source/keys.c`: action registration and default key assignments.
+- `source/window.c`: `unstop_all_windows` iterates all windows and invokes `windowcmd_hold_mode`; that handler removes held views, while `get_boolean` produces the setting report.

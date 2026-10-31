@@ -28,6 +28,6 @@ These commands identify obsolete configurations and are no longer supported:
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `$dccctl()`, and related functionality.
-- [source/commands.c](../../source/commands.c): the command table has no `dcc` handler.
-- [source/ctcp.c](../../source/ctcp.c): current CTCP initialization has no DCC offer or chat handler.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `$dccctl()`, and related functionality.
+- `source/commands.c`: the command table has no `dcc` handler.
+- `source/ctcp.c`: current CTCP initialization has no DCC offer or chat handler.

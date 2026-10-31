@@ -46,6 +46,6 @@ This filters local output based on sender text. It is not flood protection and d
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_pong` validates two arguments, checks internal waits, invokes the hook, and uses the first argument's dot test for default display.
-- [source/server.c](../../source/server.c): `server_check_wait` recognizes outstanding wait tokens, unlocks hard waits, or executes soft-wait callbacks.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_pong` validates two arguments, checks internal waits, invokes the hook, and uses the first argument's dot test for default display.
+- `source/server.c`: `server_check_wait` recognizes outstanding wait tokens, unlocks hard waits, or executes soft-wait callbacks.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

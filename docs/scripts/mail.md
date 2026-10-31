@@ -69,9 +69,9 @@ The older mbox-list script was written by wd and first appeared in EPIC4-1.1.6. 
 
 ## Source references
 
-- [script/mail](../../script/mail) and [script/mail.py](../../script/mail.py): import wrapper, mailbox readers, comparison state, settings, timer, and output.
-- [script/python](../../script/python) and [script/epic.py](../../script/epic.py): Python setup, import helpers, and registered aliases.
-- [script/builtins](../../script/builtins) and [script/global](../../script/global): supporting load order.
-- [source/timer.c](../../source/timer.c): repeating timers, snap timing, and zero-interval rejection.
-- [source/status.c](../../source/status.c): `%M` inserts `status_mail` text.
-- [configure.ac](../../configure.ac): optional embedded Python build support.
+- `script/mail` and `script/mail.py`: import wrapper, mailbox readers, comparison state, settings, timer, and output.
+- [`script/python`](../special/using_python.md#getting-started) and [`epic.py`](../special/using_python.md): Python setup, import helpers, and registered aliases.
+- [`script/builtins`](builtins.md) and [`script/global`](global.md): supporting load order.
+- `source/timer.c`: repeating timers, snap timing, and zero-interval rejection.
+- `source/status.c`: `%M` inserts `status_mail` text.
+- `configure.ac`: optional embedded Python build support.

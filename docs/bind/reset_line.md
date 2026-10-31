@@ -41,6 +41,6 @@ See [bind](../command/bind.md) for key sequence syntax and [erase_line](erase_li
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration, stored binding text, and `parsekeycmd` invocation.
-- [source/input.c](../../source/input.c): `input_reset_line`, `set_input`, and `input_expand` implement replacement, cursor placement, and input-buffer capacity.
-- [source/commands.c](../../source/commands.c): `xtypecmd` implements literal character insertion for comparison.
+- `source/keys.c`: action registration, stored binding text, and `parsekeycmd` invocation.
+- `source/input.c`: `input_reset_line`, `set_input`, and `input_expand` implement replacement, cursor placement, and input-buffer capacity.
+- `source/commands.c`: `xtypecmd` implements literal character insertion for comparison.

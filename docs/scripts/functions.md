@@ -77,8 +77,8 @@ The original collection was authored by Ian Frechette (Daemon); later additions 
 
 ## Source references
 
-- [script/functions](../../script/functions): helper definitions and generated aliases.
-- [source/functions.c](../../source/functions.c): underlying list operations, byte conversion, numeric sorting, randomness, padding, regular expressions, and channel-mode queries.
-- [source/expr.c](../../source/expr.c): byte-count expansion and field-width formatting.
-- [source/if.c](../../source/if.c): `fe` mapping and list reconstruction.
-- [source/names.c](../../source/names.c): cached channel users and status flags.
+- `script/functions`: helper definitions and generated aliases.
+- `source/functions.c`: underlying list operations, byte conversion, numeric sorting, randomness, padding, regular expressions, and channel-mode queries.
+- `source/expr.c`: byte-count expansion and field-width formatting.
+- `source/if.c`: `fe` mapping and list reconstruction.
+- `source/names.c`: cached channel users and status flags.

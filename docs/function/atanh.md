@@ -33,4 +33,4 @@ The approximate examples describe the numeric value; the returned string may con
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `atanh` and implements `function_atanh` through the shared math-function and error-return macros. [include/functions.h](../../include/functions.h) defines argument conversion and formatting. The [C/POSIX inverse hyperbolic tangent specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/atanh.html) defines the domain, poles, and library error reporting.
+`source/functions.c` registers `atanh` and implements `function_atanh` through the shared math-function and error-return macros. `include/functions.h` defines argument conversion and formatting. The [C/POSIX inverse hyperbolic tangent specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/atanh.html) defines the domain, poles, and library error reporting.

@@ -47,8 +47,8 @@ The script first appeared in EPIC4pre1.026. The retained source is marked as 199
 
 ## Source references
 
-- [script/setmail](../../script/setmail): retained pseudo-settings, default strings, and numeric-mail interception.
-- [source/hook.c](../../source/hook.c): system-mode hooks suppress default handling.
-- [source/vars.c](../../source/vars.c): set hooks run before ordinary validation and assignment.
-- [source/status.c](../../source/status.c): `status_mail` returns the stored string without the former count substitution.
-- [script/mail](../../script/mail) and [script/mail.py](../../script/mail.py): current Boolean mail interface and Python-style count formatting.
+- `script/setmail`: retained pseudo-settings, default strings, and numeric-mail interception.
+- `source/hook.c`: system-mode hooks suppress default handling.
+- `source/vars.c`: set hooks run before ordinary validation and assignment.
+- `source/status.c`: `status_mail` returns the stored string without the former count substitution.
+- [`script/mail`](../scripts/mail.md) and [`mail.py`](../scripts/mail.md): current Boolean mail interface and Python-style count formatting.

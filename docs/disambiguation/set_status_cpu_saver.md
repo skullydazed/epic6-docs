@@ -22,8 +22,8 @@ A script could supply its own status text, but accepting the former setting name
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of CPU Saver mode.
-- [source/vars.c](../../source/vars.c): current registration omits this setting and handles unknown-variable errors.
-- [include/vars.h](../../include/vars.h): retains its historical identifier without registration.
-- [source/status.c](../../source/status.c): current expando table omits `%L`; status compilation supplies no replacement for unknown fields.
-- [source/clock.c](../../source/clock.c): current clock timer uses `clock_interval` without CPU Saver scheduling.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of CPU Saver mode.
+- `source/vars.c`: current registration omits this setting and handles unknown-variable errors.
+- `include/vars.h`: retains its historical identifier without registration.
+- `source/status.c`: current expando table omits `%L`; status compilation supplies no replacement for unknown fields.
+- `source/clock.c`: current clock timer uses `clock_interval` without CPU Saver scheduling.

@@ -46,5 +46,5 @@ on ^kill "*" {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_snotice` recognizes the report prefix and controls the notice chain; `p_killmsg` extracts fields and invokes this event; `p_kill` separately handles actual IRC kill commands.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_snotice` recognizes the report prefix and controls the notice chain; `p_killmsg` extracts fields and invokes this event; `p_kill` separately handles actual IRC kill commands.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

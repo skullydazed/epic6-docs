@@ -45,4 +45,4 @@ Starting with no array named `foo`, in this order:
 | `$setitem(foo 0 ha ha)` | `0`; overwrite item zero |
 | `$setitem(foo 0)` | `0`; item zero now contains empty text |
 
-Registration: [source/functions.c](../../source/functions.c). `FUNCTION_SETITEM`, `set_item()`, and array/index maintenance: [source/array.c](../../source/array.c). Ordinary word parsing: [include/words.h](../../include/words.h). Numeric conversion: [source/ircaux.c](../../source/ircaux.c).
+Registration: `source/functions.c`. `FUNCTION_SETITEM`, `set_item()`, and array/index maintenance: `source/array.c`. Ordinary word parsing: `include/words.h`. Numeric conversion: `source/ircaux.c`.

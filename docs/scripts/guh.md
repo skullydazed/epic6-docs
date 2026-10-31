@@ -64,8 +64,8 @@ Written by Jeremy Nelson (hop).
 
 ## Source references
 
-- [script/guh](../../script/guh): query wrappers, temporary hooks, waits, and increment alias.
-- [source/who.c](../../source/who.c): ISON request queues, `303` dispatch, USERHOST cache use, and callback fields.
-- [source/numbers.c](../../source/numbers.c): generic numbered-hook fields and WHOIS `319` handling.
-- [source/commands.c](../../source/commands.c) and [source/server.c](../../source/server.c): `wait for`, server round-trip waiting, and `maxison` control.
-- [source/alias.c](../../source/alias.c) and [source/hook.c](../../source/hook.c): function-return scope and hook-list save/restore behavior.
+- `script/guh`: query wrappers, temporary hooks, waits, and increment alias.
+- `source/who.c`: ISON request queues, `303` dispatch, USERHOST cache use, and callback fields.
+- `source/numbers.c`: generic numbered-hook fields and WHOIS `319` handling.
+- `source/commands.c` and `source/server.c`: `wait for`, server round-trip waiting, and `maxison` control.
+- `source/alias.c` and `source/hook.c`: function-return scope and hook-list save/restore behavior.

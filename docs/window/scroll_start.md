@@ -39,5 +39,5 @@ This operation first appeared in EPIC4-1.1.11.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_scroll_start`, `window_scrollback_start`, `window_scrollback_backwards_lines`, and `window_scrollback_backwards` implement the fixed step, starting views, and oldest-row limit; `trim_scrollback` suspends normal trimming while browsing.
-- [source/term.c](../../source/term.c): `term_beep` applies beep settings to the oldest-row bell request.
+- `source/window.c`: `windowcmd_scroll_start`, `window_scrollback_start`, `window_scrollback_backwards_lines`, and `window_scrollback_backwards` implement the fixed step, starting views, and oldest-row limit; `trim_scrollback` suspends normal trimming while browsing.
+- `source/term.c`: `term_beep` applies beep settings to the oldest-row bell request.

@@ -24,7 +24,7 @@ See [bind](../command/bind.md) for sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): registration in `init_binds`.
-- [include/irc.h](../../include/irc.h): `ITALIC_TOG`.
-- [source/input.c](../../source/input.c): `insert_italic` and `input_add_character`.
-- [source/screen.c](../../source/screen.c): italic toggle processing and display attributes.
+- `source/keys.c`: registration in `init_binds`.
+- `include/irc.h`: `ITALIC_TOG`.
+- `source/input.c`: `insert_italic` and `input_add_character`.
+- `source/screen.c`: italic toggle processing and display attributes.

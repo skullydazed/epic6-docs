@@ -56,4 +56,4 @@ $open(output.txt wb)             create or truncate an ordinary output file
 
 Actual return values depend on filesystem state, permissions, mode, and optional archive/decompression support.
 
-Registration and `function_open()`: [source/functions.c](../../source/functions.c). File-handle allocation and read/write opening: [source/files.c](../../source/files.c). Search, tilde expansion, normalization, and decompression: [source/ircaux.c](../../source/ircaux.c). Ordinary and archive streams: [source/elf.c](../../source/elf.c).
+Registration and `function_open()`: `source/functions.c`. File-handle allocation and read/write opening: `source/files.c`. Search, tilde expansion, normalization, and decompression: `source/ircaux.c`. Ordinary and archive streams: `source/elf.c`.

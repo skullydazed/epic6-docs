@@ -8,7 +8,7 @@ Use the documentation pages directly and [`on`](../command/on.md) for currently 
 
 ## Source references
 
-- [source/hook.c](../../source/hook.c): `hook_function_templates` has no HELP entry.
-- [source/commands.c](../../source/commands.c): current command registration omits the old built-in help browser.
-- [KNOWNBUGS](../../KNOWNBUGS) and [UPDATES](../../UPDATES): retirement of HELP and pre-wiki help-file support.
-- [script/help.irc](../../script/help.irc) and [source/functions.c](../../source/functions.c): retained script and disabled connection dependency.
+- `source/hook.c`: `hook_function_templates` has no HELP entry.
+- `source/commands.c`: current command registration omits the old built-in help browser.
+- [KNOWNBUGS](../KNOWNBUGS.md) and [UPDATES](../UPDATES.md): retirement of HELP and pre-wiki help-file support.
+- [`script/help.irc`](scripts_help.md) and `source/functions.c`: retained script and disabled connection dependency.

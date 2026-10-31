@@ -36,4 +36,4 @@ After loading that file, `/unload greetings` removes the tagged global variable 
 
 [subpackage](subpackage.md) constructs a name relative to the parent loading package. `unload` removes tagged aliases, variables, hooks, bindings, and timers.
 
-Registration, `packagecmd`, `current_package`, and nested-load inheritance are in [source/commands.c](../../source/commands.c). Global variable, alias, and stub tagging and `unloadcmd` are in [source/alias.c](../../source/alias.c). Hook tagging is in [source/hook.c](../../source/hook.c), binding tagging in [source/keys.c](../../source/keys.c), and timer tagging in [source/timer.c](../../source/timer.c).
+Registration, `packagecmd`, `current_package`, and nested-load inheritance are in `source/commands.c`. Global variable, alias, and stub tagging and `unloadcmd` are in `source/alias.c`. Hook tagging is in `source/hook.c`, binding tagging in `source/keys.c`, and timer tagging in `source/timer.c`.

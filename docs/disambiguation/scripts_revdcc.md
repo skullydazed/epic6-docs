@@ -34,9 +34,9 @@ This script was written by archon and first appeared in EPIC3.001. Its source is
 
 ## Source references
 
-- [script/revdcc](../../script/revdcc): retained aliases, CTCP exchange, raw DCC operations, and uuencoding/decoding commands.
-- [source/functions.c](../../source/functions.c): `function_connect` and `function_listen` return empty; the former DCC socket code is disabled.
-- [source/commands.c](../../source/commands.c): no built-in `dcc` command is registered.
-- [source/hook.c](../../source/hook.c): current event table omits `dcc_raw` and `dcc_lost`.
-- [source/ctcp.c](../../source/ctcp.c): current generic CTCP reply argument layout.
-- [KNOWNBUGS](../../KNOWNBUGS): DCC retirement and removal work.
+- `script/revdcc`: retained aliases, CTCP exchange, raw DCC operations, and uuencoding/decoding commands.
+- `source/functions.c`: `function_connect` and `function_listen` return empty; the former DCC socket code is disabled.
+- `source/commands.c`: no built-in `dcc` command is registered.
+- `source/hook.c`: current event table omits `dcc_raw` and `dcc_lost`.
+- `source/ctcp.c`: current generic CTCP reply argument layout.
+- [KNOWNBUGS](../KNOWNBUGS.md): DCC retirement and removal work.

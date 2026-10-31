@@ -48,8 +48,8 @@ This hook first appeared in EPIC5-0.3.2.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `window_change_server` assigns the new value before the hook; `change_window_server` performs bulk reassociation; the constructor and `set_window_server` assign directly.
-- [source/server.c](../../source/server.c): server switching calls bulk window reassociation.
-- [source/irc.c](../../source/irc.c): startup uses the direct setter for the default server.
-- [include/server.h](../../include/server.h): defines the no-server sentinel as `-2`.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching.
+- `source/window.c`: `window_change_server` assigns the new value before the hook; `change_window_server` performs bulk reassociation; the constructor and `set_window_server` assign directly.
+- `source/server.c`: server switching calls bulk window reassociation.
+- `source/irc.c`: startup uses the direct setter for the default server.
+- `include/server.h`: defines the no-server sentinel as `-2`.
+- `source/hook.c`: event registration and standard hook matching.

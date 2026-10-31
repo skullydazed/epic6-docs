@@ -39,4 +39,4 @@ After `/python answer = 42`, `$python(answer + 1)` returns `43` using the shared
 
 ## Source
 
-Conditional registration and `function_python()`: [source/functions.c](../../source/functions.c). `python_eval_expression()`, initialization, statement evaluation, `_epic`, and exception reporting: [source/python.c](../../source/python.c). Build configuration: [configure.ac](../../configure.ac).
+Conditional registration and `function_python()`: `source/functions.c`. `python_eval_expression()`, initialization, statement evaluation, `_epic`, and exception reporting: `source/python.c`. Build configuration: `configure.ac`.

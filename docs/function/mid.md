@@ -44,4 +44,4 @@ A copy of the selected portion of text, or the empty string under the conditions
 
 This function first appeared in ircII.
 
-Registration, `function_mid()`, and JSON keyword parsing: [source/functions.c](../../source/functions.c). Integer argument parsing: [include/functions.h](../../include/functions.h). Quick counting and code-point traversal: [source/wcwidth.c](../../source/wcwidth.c).
+Registration, `function_mid()`, and JSON keyword parsing: `source/functions.c`. Integer argument parsing: `include/functions.h`. Quick counting and code-point traversal: `source/wcwidth.c`.

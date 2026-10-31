@@ -117,6 +117,6 @@ It was intended to distinguish current and non-current status bars with colors. 
 ## Source references
 
 - Tag `epic5-2.1.1`, `source/irc.c` and `UPDATES`: release identity and all dated announcements above.
-- [source/ctcp.c](../../source/ctcp.c): callback arguments, flags, substitution, registration, and getters.
-- [script/ctcp](../../script/ctcp), [script/builtins](../../script/builtins), and [script/global](../../script/global): supplied handlers and loading chain.
-- [source/status.c](../../source/status.c), [source/vars.c](../../source/vars.c), and [source/window.c](../../source/window.c): `%{1}P`, prefix precedence, and registered settings/operations.
+- `source/ctcp.c`: callback arguments, flags, substitution, registration, and getters.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), [`script/builtins`](../scripts/builtins.md), and [`script/global`](../scripts/global.md): supplied handlers and loading chain.
+- `source/status.c`, `source/vars.c`, and `source/window.c`: `%{1}P`, prefix precedence, and registered settings/operations.

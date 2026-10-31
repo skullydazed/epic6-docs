@@ -24,6 +24,6 @@ Set a simple normal input prompt. The removed operation has no supported argumen
 
 ## Source references
 
-- [source/window.c](../../source/window.c): the window operation table contains no `prompt` handler; `windowcmd` rejects unknown operation/window names. The `windowctl` `PROMPT` setter branch returns without implementing a replacement.
-- [source/input.c](../../source/input.c): `set_input_prompt` updates the normal prompt and redraws input; the redraw path expands it. The old `get_window_prompt` process-input branch is disabled with `#if 0`.
-- [source/functions.c](../../source/functions.c): `alias_target` implements `$T` using `get_window_target(0)`.
+- `source/window.c`: the window operation table contains no `prompt` handler; `windowcmd` rejects unknown operation/window names. The `windowctl` `PROMPT` setter branch returns without implementing a replacement.
+- `source/input.c`: `set_input_prompt` updates the normal prompt and redraws input; the redraw path expands it. The old `get_window_prompt` process-input branch is disabled with `#if 0`.
+- `source/functions.c`: `alias_target` implements `$T` using `get_window_target(0)`.

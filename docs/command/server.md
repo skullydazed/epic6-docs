@@ -97,4 +97,4 @@ The numeric examples require those entries to exist; updating and deleting requi
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c). Command parsing, description lookup and merging, server-list handling, connection setup, and TLS policy are in [source/server.c](../../source/server.c). Description field parsing is in [source/ircaux.c](../../source/ircaux.c), startup list and port selection in [source/irc.c](../../source/irc.c), and window migration and automatic connection handling in [source/window.c](../../source/window.c). TLS support is in [source/ssl.c](../../source/ssl.c) and its build requirements in [configure.ac](../../configure.ac).
+Registration is in `source/commands.c`. Command parsing, description lookup and merging, server-list handling, connection setup, and TLS policy are in `source/server.c`. Description field parsing is in `source/ircaux.c`, startup list and port selection in `source/irc.c`, and window migration and automatic connection handling in `source/window.c`. TLS support is in `source/ssl.c` and its build requirements in `configure.ac`.

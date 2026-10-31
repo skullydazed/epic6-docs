@@ -22,4 +22,4 @@ This changes existing history, not future output filtering. See also [clearlevel
 
 ## Source references
 
-`windowcmd_clearregex` in [source/window.c](../../source/window.c) and `clear_regex_from_lastlog` in [source/lastlog.c](../../source/lastlog.c).
+`windowcmd_clearregex` in `source/window.c` and `clear_regex_from_lastlog` in `source/lastlog.c`.

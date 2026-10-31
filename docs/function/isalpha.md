@@ -31,4 +31,4 @@ Use this to test whether text begins with an ASCII letter. Like [$isdigit()](isd
 
 ## Source
 
-Registration and direct first-byte ASCII-range comparisons: [source/functions.c](../../source/functions.c). Integer-string return formatting: [include/functions.h](../../include/functions.h).
+Registration and direct first-byte ASCII-range comparisons: `source/functions.c`. Integer-string return formatting: `include/functions.h`.

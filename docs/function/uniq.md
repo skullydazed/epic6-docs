@@ -39,4 +39,4 @@ First appeared in EPIC3.001.
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:5368). Comparison: [`sort_it`](../../source/functions.c:5162). List reconstruction: [`unsplitw`](../../source/ircaux.c:3209).
+Handler: `source/functions.c`. Comparison: `sort_it`. List reconstruction: `unsplitw`.

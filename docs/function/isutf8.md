@@ -41,4 +41,4 @@ For raw bytes, `c3 41` returns `-1`, a lone `c3` returns `0`, and a lone continu
 
 ## Source
 
-Registered and implemented as `function_isutf8` in [source/functions.c](../../source/functions.c). Its structural counter is `num_code_points` in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented as `function_isutf8` in `source/functions.c`. Its structural counter is `num_code_points` in `source/ircaux.c`.

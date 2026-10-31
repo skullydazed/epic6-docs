@@ -43,4 +43,4 @@ The current implementation retrieves only string-valued capabilities. Boolean an
 
 ## Source
 
-Registration, defaults, and argument handling: [source/functions.c](../../source/functions.c). Capability name mapping, terminal initialization, string-only lookup, and control-byte mangling: [source/term.c](../../source/term.c). Symbolic key binding: [source/keys.c](../../source/keys.c).
+Registration, defaults, and argument handling: `source/functions.c`. Capability name mapping, terminal initialization, string-only lookup, and control-byte mangling: `source/term.c`. Symbolic key binding: `source/keys.c`.

@@ -36,5 +36,5 @@ The first sends an action to the current window's target. The second sends one t
 
 ## Source references
 
-- [source/ctcp.c](../../source/ctcp.c): `init_ctcp`, `do_atmosphere`, `do_ctcp`, and `send_ctcp` implement registration, receiving, parser limits, encoding, framing, and sending.
-- [source/commands.c](../../source/commands.c): `ctcpcmd`, `describe`, and `mecmd` implement destination selection and distinguish generic CTCP sending from action-specific hooks and echoes.
+- `source/ctcp.c`: `init_ctcp`, `do_atmosphere`, `do_ctcp`, and `send_ctcp` implement registration, receiving, parser limits, encoding, framing, and sending.
+- `source/commands.c`: `ctcpcmd`, `describe`, and `mecmd` implement destination selection and distinguish generic CTCP sending from action-specific hooks and echoes.

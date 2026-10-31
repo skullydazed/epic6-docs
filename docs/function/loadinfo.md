@@ -42,4 +42,4 @@ The current line counter, filename, loader name, and package text. There is no s
 
 ## Source
 
-Registered and implemented as `function_loadinfo` in [source/functions.c](../../source/functions.c). Load contexts, field accessors, nested-load handling, and `std`/`pf` loaders are in [source/commands.c](../../source/commands.c).
+Registered and implemented as `function_loadinfo` in `source/functions.c`. Load contexts, field accessors, nested-load handling, and `std`/`pf` loaders are in `source/commands.c`.

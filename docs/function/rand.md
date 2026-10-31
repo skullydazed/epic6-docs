@@ -38,4 +38,4 @@ First appeared in ircII.
 
 ## Source
 
-Registration, `function_rand()`, JSON parsing, and `function_srand()`: [source/functions.c](../../source/functions.c). `random_number()` and `intmaxtoa()`: [source/ircaux.c](../../source/ircaux.c). Signed return conversion: [include/functions.h](../../include/functions.h). Crypto dependency: [configure.ac](../../configure.ac).
+Registration, `function_rand()`, JSON parsing, and `function_srand()`: `source/functions.c`. `random_number()` and `intmaxtoa()`: `source/ircaux.c`. Signed return conversion: `include/functions.h`. Crypto dependency: `configure.ac`.

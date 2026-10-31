@@ -34,6 +34,6 @@ on -raw_irc_bytes "*" {
 
 ## Source references
 
-- [source/server.c](../../source/server.c): `server_io` strips line endings, converts input, and gates parsing on this hook.
-- [source/parse.c](../../source/parse.c): `rfc1459_any_to_utf8` may rewrite the buffer or allocate another; `parse_server` invokes `raw_irc`.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/server.c`: `server_io` strips line endings, converts input, and gates parsing on this hook.
+- `source/parse.c`: `rfc1459_any_to_utf8` may rewrite the buffer or allocate another; `parse_server` invokes `raw_irc`.
+- `source/hook.c`: event registration and standard hook dispatch.

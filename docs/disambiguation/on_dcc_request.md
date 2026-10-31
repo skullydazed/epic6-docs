@@ -34,8 +34,8 @@ An incoming CTCP payload whose command is DCC can still reach the generic [on ct
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `dccctl`, and related functionality.
-- [source/hook.c](../../source/hook.c): the hook table omits `dcc_request`; `find_hook` rejects unknown named events.
-- [include/hook.h](../../include/hook.h): current event identifiers contain no DCC request event.
-- [source/ctcp.c](../../source/ctcp.c): `init_ctcp` registers no DCC handler; `do_ctcp` retains generic request handling.
-- [script/autoget](../../script/autoget) and [script/builtins](../../script/builtins): retain hook references that depend on removed DCC functionality.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `dccctl`, and related functionality.
+- `source/hook.c`: the hook table omits `dcc_request`; `find_hook` rejects unknown named events.
+- `include/hook.h`: current event identifiers contain no DCC request event.
+- `source/ctcp.c`: `init_ctcp` registers no DCC handler; `do_ctcp` retains generic request handling.
+- [`script/autoget`](scripts_autoget.md) and [`script/builtins`](../scripts/builtins.md): retain hook references that depend on removed DCC functionality.

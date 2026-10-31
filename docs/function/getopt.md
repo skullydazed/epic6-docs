@@ -63,4 +63,4 @@ alias myalias {
 
 ## Source
 
-Registration and the complete stateful parser: [source/functions.c](../../source/functions.c). Variable assignment and scope: [source/alias.c](../../source/alias.c). Ordinary and quoted-word parsing: [include/words.h](../../include/words.h) and [source/ircaux.c](../../source/ircaux.c).
+Registration and the complete stateful parser: `source/functions.c`. Variable assignment and scope: `source/alias.c`. Ordinary and quoted-word parsing: `include/words.h` and `source/ircaux.c`.

@@ -46,4 +46,4 @@ The alias is labeled `suite::tools`. After loading, `/unload suite::tools` remov
 
 `subpackage` first appeared in EPIC5-0.0.4 and is always registered.
 
-Registration, `subpackagecmd()`, and load-frame package inheritance are in [source/commands.c](../../source/commands.c). Package ownership and unloading are implemented in [source/alias.c](../../source/alias.c), [source/hook.c](../../source/hook.c), [source/keys.c](../../source/keys.c), and [source/timer.c](../../source/timer.c).
+Registration, `subpackagecmd()`, and load-frame package inheritance are in `source/commands.c`. Package ownership and unloading are implemented in `source/alias.c`, `source/hook.c`, `source/keys.c`, and `source/timer.c`.

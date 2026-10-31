@@ -43,6 +43,6 @@ Name window 3 `chat`, change only its capitalization, report its name, and clear
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_name` handles queries, assignment, clearing, and errors; `is_window_name_unique` and `get_window_by_desc` compare names globally; `windowcmd` checks operation names before window descriptors.
-- [source/status.c](../../source/status.c): `status_refnum` implements `%R`'s name-or-number display.
-- [include/words.h](../../include/words.h) and [source/ircaux.c](../../source/ircaux.c): `new_next_arg` and `universal_next_arg_count` parse the quoted name argument.
+- `source/window.c`: `windowcmd_name` handles queries, assignment, clearing, and errors; `is_window_name_unique` and `get_window_by_desc` compare names globally; `windowcmd` checks operation names before window descriptors.
+- `source/status.c`: `status_refnum` implements `%R`'s name-or-number display.
+- `include/words.h` and `source/ircaux.c`: `new_next_arg` and `universal_next_arg_count` parse the quoted name argument.

@@ -52,6 +52,6 @@ This compares the original destination with the current channel; a status-prefix
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_privmsg` performs CTCP handling, outsider classification, sender-state updates, hook dispatch, and default formatting; `is_target_channel_wall` recognizes server status prefixes.
-- [source/names.c](../../source/names.c): `is_channel_nomsgs` tests cached `+n`, and `is_on_channel` checks cached membership.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_privmsg` performs CTCP handling, outsider classification, sender-state updates, hook dispatch, and default formatting; `is_target_channel_wall` recognizes server status prefixes.
+- `source/names.c`: `is_channel_nomsgs` tests cached `+n`, and `is_on_channel` checks cached membership.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

@@ -39,4 +39,4 @@ First appeared in “plus 2” (post-ircII, pre-EPIC).
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:3285). Word search: [`function_findw`](../../source/functions.c:5492). Extraction and parsing: [`include/words.h`](../../include/words.h:99), [`source/words.c`](../../source/words.c). Case mapping: [`source/recode.c`](../../source/recode.c:1173).
+Handler: `source/functions.c`. Word search: `function_findw`. Extraction and parsing: `include/words.h`, `source/words.c`. Case mapping: `source/recode.c`.

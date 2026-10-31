@@ -79,4 +79,4 @@ Later changes to `context` do not change the captured callback data.
 
 The built-in is always registered but silently does nothing unless the current server is registered. It has no function return value. Use this command rather than sending raw `USERHOST` with [`quote`](quote.md), because unsolicited 302 replies can interfere with its queue. Server limits, missing replies, or malformed responses can prevent normal completion.
 
-[source/who.c](../../source/who.c) implements `userhostcmd()`, `userhostbase()`, queues, reply parsing, and callbacks. [source/numbers.c](../../source/numbers.c) routes numeric 302 to that queue. [source/server.c](../../source/server.c) initializes the outstanding-request limit; [source/commands.c](../../source/commands.c) registers the command.
+`source/who.c` implements `userhostcmd()`, `userhostbase()`, queues, reply parsing, and callbacks. `source/numbers.c` routes numeric 302 to that queue. `source/server.c` initializes the outstanding-request limit; `source/commands.c` registers the command.

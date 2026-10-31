@@ -35,6 +35,6 @@ Changing the value affects future alias invocations, not replies already request
 
 ## Source references
 
-- [script/builtins](../../script/builtins): defines the integer setting with default one, supplies the `whowas` alias, and invokes it from the `auto_whowas` handler.
-- [source/commands.c](../../source/commands.c): the C `whois` handler's `whowas` branch forwards the supplied arguments to the server.
-- [source/vars.c](../../source/vars.c): integer setting validation rejects negative and nonnumeric values.
+- [`script/builtins`](../scripts/builtins.md): defines the integer setting with default one, supplies the `whowas` alias, and invokes it from the `auto_whowas` handler.
+- `source/commands.c`: the C `whois` handler's `whowas` branch forwards the supplied arguments to the server.
+- `source/vars.c`: integer setting validation rejects negative and nonnumeric values.

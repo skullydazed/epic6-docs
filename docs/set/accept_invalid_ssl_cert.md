@@ -22,5 +22,5 @@ This is evaluated during connection setup; changing it does not recheck existing
 
 ## Source references
 
-- [source/server.c](../../source/server.c): setting behavior.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, callback, and default.
+- `source/server.c`: setting behavior.
+- `source/vars.c` and `include/config.h`: registration, callback, and default.

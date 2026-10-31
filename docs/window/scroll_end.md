@@ -45,5 +45,5 @@ This operation first appeared in EPIC4-1.1.11.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_scroll_end`, `window_scrollback_end`, `window_scrollback_forwards_lines`, and `window_scrollback_forwards` implement the fixed step and view selection; `recalculate_window_cursor_and_display_ip` cancels scrollback when caught up; `trim_scrollback` controls later retention.
-- [source/term.c](../../source/term.c): `term_beep` applies beep settings to the no-movement bell request.
+- `source/window.c`: `windowcmd_scroll_end`, `window_scrollback_end`, `window_scrollback_forwards_lines`, and `window_scrollback_forwards` implement the fixed step and view selection; `recalculate_window_cursor_and_display_ip` cancels scrollback when caught up; `trim_scrollback` controls later retention.
+- `source/term.c`: `term_beep` applies beep settings to the no-movement bell request.

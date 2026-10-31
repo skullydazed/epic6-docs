@@ -35,5 +35,5 @@ It appears where `%I` is included in the status format while insert mode and the
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and empty default.
-- [source/status.c](../../source/status.c): `%I` maps to `status_insert_mode`, which checks the global mode and current-window policy before returning the text.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and empty default.
+- `source/status.c`: `%I` maps to `status_insert_mode`, which checks the global mode and current-window policy before returning the text.

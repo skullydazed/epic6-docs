@@ -31,4 +31,4 @@ The `beep` command first appeared in ircII.
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for the `beep` registration and `beepcmd()`, [source/term.c](../../source/term.c) for `term_beep()`, `term_emit()`, and the bell-capability fallback, and [source/screen.c](../../source/screen.c) for redraw suppression in `repaint_window_body()`. [source/vars.c](../../source/vars.c) registers the `beep` setting, and [include/config.h](../../include/config.h) defines its default.
+See `source/commands.c` for the `beep` registration and `beepcmd()`, `source/term.c` for `term_beep()`, `term_emit()`, and the bell-capability fallback, and `source/screen.c` for redraw suppression in `repaint_window_body()`. `source/vars.c` registers the `beep` setting, and `include/config.h` defines its default.

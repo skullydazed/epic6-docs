@@ -36,4 +36,4 @@ If the cache contains Alice, Bob, and your own nickname, the count is `3`; it is
 
 This function first appeared in “plus 9” (post-ircII, pre-EPIC).
 
-Registration and `function_numonchannel()`: [source/functions.c](../../source/functions.c). `number_on_channel()`, channel defaults, server fallback, and member records: [source/names.c](../../source/names.c). Argument parsing: [include/words.h](../../include/words.h).
+Registration and `function_numonchannel()`: `source/functions.c`. `number_on_channel()`, channel defaults, server fallback, and member records: `source/names.c`. Argument parsing: `include/words.h`.

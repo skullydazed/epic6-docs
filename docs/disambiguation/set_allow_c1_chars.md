@@ -24,7 +24,7 @@ The setting first appeared in EPIC4-1.1.2 and was subsequently sunset before EPI
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records the sunset of `allow_c1_chars`.
-- [source/vars.c](../../source/vars.c): the current variable table omits the setting; unknown variables follow the `unknown_set` and `set` error-hook path.
-- [source/screen.c](../../source/screen.c): `new_normalize_string` discards C1 code points; `output_with_count` also excludes them during output.
-- [include/config.h](../../include/config.h): retains an unused historical default macro, which does not register a setting or enable display behavior.
+- [KNOWNBUGS](../KNOWNBUGS.md): records the sunset of `allow_c1_chars`.
+- `source/vars.c`: the current variable table omits the setting; unknown variables follow the `unknown_set` and `set` error-hook path.
+- `source/screen.c`: `new_normalize_string` discards C1 code points; `output_with_count` also excludes them during output.
+- `include/config.h`: retains an unused historical default macro, which does not register a setting or enable display behavior.

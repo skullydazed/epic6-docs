@@ -44,6 +44,6 @@ This changes only the local display.
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_invite` validates parameters, stores invitation and sender state, invokes the hook, and displays the default message; `BreakArgs` extracts prefix userhost information.
-- [source/server.c](../../source/server.c): stores per-server invitation and received-nickname state.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_invite` validates parameters, stores invitation and sender state, invokes the hook, and displays the default message; `BreakArgs` extracts prefix userhost information.
+- `source/server.c`: stores per-server invitation and received-nickname state.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

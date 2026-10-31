@@ -41,6 +41,6 @@ This operation first appeared in EPIC4pre1.038.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_unclear`, `unclear_window`, `clear_window`, and `recalculate_window_cursor_and_display_ip` implement the operation, clear boundary, and view recalculation; `unclear_window_by_refnum` implements forced restoration for `/unclear`.
-- [source/commands.c](../../source/commands.c): `e_clear` handles `/unclear`, including its default forced restoration and `-noforce` option.
-- [source/screen.c](../../source/screen.c): `repaint_window_body` selects the normal, held, or scrollback view to display.
+- `source/window.c`: `windowcmd_unclear`, `unclear_window`, `clear_window`, and `recalculate_window_cursor_and_display_ip` implement the operation, clear boundary, and view recalculation; `unclear_window_by_refnum` implements forced restoration for `/unclear`.
+- `source/commands.c`: `e_clear` handles `/unclear`, including its default forced restoration and `-noforce` option.
+- `source/screen.c`: `repaint_window_body` selects the normal, held, or scrollback view to display.

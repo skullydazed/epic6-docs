@@ -11,7 +11,7 @@ Default in this source tree: `What next?`, from the build's `IRCII_COMMENT`. Wit
 
 ## Description
 
-The contents of this variable are appended to the client's supplied CTCP [version](../ctcp/version.md) reply. In EPIC6 the setting is a C-registered string, but the responder that reads it is supplied by [script/ctcp](../../script/ctcp), loaded by [script/builtins](../../script/builtins). A setup that does not load that responder will not acquire one merely by changing this setting.
+The contents of this variable are appended to the client's supplied CTCP [version](../ctcp/version.md) reply. In EPIC6 the setting is a C-registered string, but the responder that reads it is supplied by [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), loaded by [`script/builtins`](../scripts/builtins.md). A setup that does not load that responder will not acquire one merely by changing this setting.
 
 The supplied responder builds this text:
 
@@ -35,8 +35,8 @@ With the supplied responder active, subsequent version replies end with `- Runni
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): registers the string and derives its default from `IRCII_COMMENT`; standard string query and unset handling.
-- [include/irc.h](../../include/irc.h): defines the current build comment.
-- [script/ctcp](../../script/ctcp): version request handler reads `$CLIENT_INFORMATION` and constructs the reply.
-- [script/builtins](../../script/builtins): loads the CTCP responder script.
-- [source/ctcp.c](../../source/ctcp.c): request dispatch, active handlers, reply throttling, and transmission.
+- `source/vars.c`: registers the string and derives its default from `IRCII_COMMENT`; standard string query and unset handling.
+- `include/irc.h`: defines the current build comment.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages): version request handler reads `$CLIENT_INFORMATION` and constructs the reply.
+- [`script/builtins`](../scripts/builtins.md): loads the CTCP responder script.
+- `source/ctcp.c`: request dispatch, active handlers, reply throttling, and transmission.

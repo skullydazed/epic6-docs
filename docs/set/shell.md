@@ -43,5 +43,5 @@ To bypass the shell for one invocation, use `/exec -direct echo hello` instead.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration and `/bin/sh` default.
-- [source/exec.c](../../source/exec.c): `start_process` selects shell or direct execution, sets up pipes and `TERM`, and reports launch failures; exec option parsing handles `-direct`.
+- `source/vars.c` and `include/config.h`: string registration and `/bin/sh` default.
+- `source/exec.c`: `start_process` selects shell or direct execution, sets up pipes and `TERM`, and reports launch failures; exec option parsing handles `-direct`.

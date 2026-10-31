@@ -65,7 +65,7 @@ Written by Jeremy Nelson as examples of EPIC's file functions. They favor illust
 
 ## Source references
 
-- [script/files](../../script/files): helper definitions and unchecked replacement sequence.
-- [source/functions.c](../../source/functions.c): `open` maps `W` to append; `match`, `glob`, `regcomp`, and `regexec` supply matching behavior.
-- [source/files.c](../../source/files.c): line reading, newline removal, text recoding, EOF, seeking, and writes.
-- [source/if.c](../../source/if.c): `fe` mapping joins the selected `randomread` results.
+- `script/files`: helper definitions and unchecked replacement sequence.
+- `source/functions.c`: `open` maps `W` to append; `match`, `glob`, `regcomp`, and `regexec` supply matching behavior.
+- `source/files.c`: line reading, newline removal, text recoding, EOF, seeking, and writes.
+- `source/if.c`: `fe` mapping joins the selected `randomread` results.

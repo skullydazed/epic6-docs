@@ -32,4 +32,4 @@ The result reflects the bytes actually supplied to the function, so a different 
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `ascii` and implements `function_ascii()`, the byte reconstruction in `function_chr()`, and the distinct code-point conversion in `function_unicode()`.
+`source/functions.c` registers `ascii` and implements `function_ascii()`, the byte reconstruction in `function_chr()`, and the distinct code-point conversion in `function_unicode()`.

@@ -32,8 +32,8 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default Control-underscore binding.
-- [include/irc.h](../../include/irc.h): `UND_TOG` definition.
-- [source/input.c](../../source/input.c): `insert_underline` and `input_add_character`.
-- [source/screen.c](../../source/screen.c): underline toggle processing, stripping, and terminal attribute output.
-- [source/term.c](../../source/term.c): reverse control-character display and `term_sgr`.
+- `source/keys.c`: action registration and default Control-underscore binding.
+- `include/irc.h`: `UND_TOG` definition.
+- `source/input.c`: `insert_underline` and `input_add_character`.
+- `source/screen.c`: underline toggle processing, stripping, and terminal attribute output.
+- `source/term.c`: reverse control-character display and `term_sgr`.

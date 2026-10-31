@@ -24,4 +24,4 @@ After successfully storing items zero and one in `sample`, `$numitems(sample)` r
 
 `$numitems()` returns `0`. `$numitems(missing)` returns `0` when no array named `missing` exists.
 
-Registration: [source/functions.c](../../source/functions.c). `function_numitems()`, array lookup, storage sizing, and item creation/deletion: [source/array.c](../../source/array.c). Ordinary-word parsing: [include/words.h](../../include/words.h).
+Registration: `source/functions.c`. `function_numitems()`, array lookup, storage sizing, and item creation/deletion: `source/array.c`. Ordinary-word parsing: `include/words.h`.

@@ -58,7 +58,7 @@ on ^general_privmsg * (sender, target, message) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_privmsg` processes CTCP payloads, classifies the message, updates sender state, invokes this hook, and conditionally dispatches the specific event; `is_target_channel_wall` checks `statusmsg`.
-- [source/names.c](../../source/names.c): `is_channel_nomsgs`, `is_on_channel`, and `is_current_channel` provide cached classification checks.
-- [source/commands.c](../../source/commands.c): `send_text` selects outgoing message type from the requested command; `ctcpcmd` handles CTCP reply framing.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_privmsg` processes CTCP payloads, classifies the message, updates sender state, invokes this hook, and conditionally dispatches the specific event; `is_target_channel_wall` checks `statusmsg`.
+- `source/names.c`: `is_channel_nomsgs`, `is_on_channel`, and `is_current_channel` provide cached classification checks.
+- `source/commands.c`: `send_text` selects outgoing message type from the requested command; `ctcpcmd` handles CTCP reply framing.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

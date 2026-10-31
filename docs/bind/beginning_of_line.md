@@ -26,5 +26,5 @@ See [bind](../command/bind.md) for key sequence syntax and [end_of_line](bind_en
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and the default Control-A binding.
-- [source/input.c](../../source/input.c): `input_beginning_of_line` resets the logical cursor and displayed start position, then calls `redraw_input`.
+- `source/keys.c`: action registration and the default Control-A binding.
+- `source/input.c`: `input_beginning_of_line` resets the logical cursor and displayed start position, then calls `redraw_input`.

@@ -36,7 +36,7 @@ Use `/set clock_24hour off` for the ordinary 12-hour clock. Leave `clock` on for
 
 ## Source references
 
-- [source/clock.c](../../source/clock.c): `reset_standard_clock` selects custom format, `%R`, or `%I:%M%p` in that order; `reset_clock` chooses ordinary or metric mode and requests status updates.
-- [source/status.c](../../source/status.c): `status_clock` uses the cached clock for the status field.
-- [source/functions.c](../../source/functions.c): `$Z` returns `get_clock()`.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration, reset callback, and default off.
+- `source/clock.c`: `reset_standard_clock` selects custom format, `%R`, or `%I:%M%p` in that order; `reset_clock` chooses ordinary or metric mode and requests status updates.
+- `source/status.c`: `status_clock` uses the cached clock for the status field.
+- `source/functions.c`: `$Z` returns `get_clock()`.
+- `source/vars.c` and `include/config.h`: boolean registration, reset callback, and default off.

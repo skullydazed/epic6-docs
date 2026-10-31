@@ -41,4 +41,4 @@ This prints `name1 is Alice` and `flag is 1`, subject to ordinary output handlin
 
 ## Source
 
-Registered and implemented by `function_jsontest` and `parse_kwargs` in [source/functions.c](../../source/functions.c). JSON parsing is in [source/cJSON.c](../../source/cJSON.c), and `say` output handling is in [source/output.c](../../source/output.c).
+Registered and implemented by `function_jsontest` and `parse_kwargs` in `source/functions.c`. JSON parsing is in `source/cJSON.c`, and `say` output handling is in `source/output.c`.

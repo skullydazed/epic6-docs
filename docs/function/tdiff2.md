@@ -39,4 +39,4 @@ First appeared in ircII+CS.
 
 ## Source
 
-Handler and formatting: [`source/functions.c`](../../source/functions.c:4764). Integer parsing: [`include/functions.h`](../../include/functions.h:25).
+Handler and formatting: `source/functions.c`. Integer parsing: `include/functions.h`.

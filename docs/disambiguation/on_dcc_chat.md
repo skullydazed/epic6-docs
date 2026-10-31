@@ -29,8 +29,8 @@ For ordinary private IRC messages, see [on msg](../on/msg.md). Those messages tr
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `dccctl`, and related functionality.
-- [source/hook.c](../../source/hook.c): the hook table omits `dcc_chat`; `find_hook` rejects unknown named events.
-- [include/hook.h](../../include/hook.h): current event identifiers contain no DCC Chat receive event.
-- [source/commands.c](../../source/commands.c): current message sending has no former DCC Chat transport.
-- [script/xmsglog](../../script/xmsglog): retains references to the removed receive and send events without implementing DCC Chat.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `dccctl`, and related functionality.
+- `source/hook.c`: the hook table omits `dcc_chat`; `find_hook` rejects unknown named events.
+- `include/hook.h`: current event identifiers contain no DCC Chat receive event.
+- `source/commands.c`: current message sending has no former DCC Chat transport.
+- `script/xmsglog`: retains references to the removed receive and send events without implementing DCC Chat.

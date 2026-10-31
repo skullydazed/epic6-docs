@@ -26,4 +26,4 @@ This stores EPIC's current process group ID in `process_group`. For its real use
 
 ## Source
 
-Registration and the direct `getpgrp()` call: [source/functions.c](../../source/functions.c). Integer-string return formatting: [include/functions.h](../../include/functions.h). EPIC's separate foreground process group comparison: [source/term.c](../../source/term.c).
+Registration and the direct `getpgrp()` call: `source/functions.c`. Integer-string return formatting: `include/functions.h`. EPIC's separate foreground process group comparison: `source/term.c`.

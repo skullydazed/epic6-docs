@@ -87,4 +87,4 @@ Missing required arguments, unknown operations/properties, and failed lookups ge
 
 ## Source
 
-Wrapper: [`source/functions.c`](../../source/functions.c:8215). Dispatch and global records: [`source/alias.c`](../../source/alias.c:3427). Garbage collection: [`GC_symbol`](../../source/alias.c:1013). Setting validation and callbacks: [`source/vars.c`](../../source/vars.c:695).
+Wrapper: `source/functions.c`. Dispatch and global records: `source/alias.c`. Garbage collection: `GC_symbol`. Setting validation and callbacks: `source/vars.c`.

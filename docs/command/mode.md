@@ -85,4 +85,4 @@ The final example assumes those mode meanings and parameter rules are supported 
 
 ## Source
 
-Registration and `send_channel_com` are in [source/commands.c](../../source/commands.c), with no special `mode` branch. Incoming changes and hooks are in [source/parse.c](../../source/parse.c), replies in [source/numbers.c](../../source/numbers.c), and advertised channel-mode interpretation in [source/names.c](../../source/names.c). Transmission is in [source/server.c](../../source/server.c). `mode_stripper` is registered in [source/vars.c](../../source/vars.c), with its default in [include/config.h](../../include/config.h).
+Registration and `send_channel_com` are in `source/commands.c`, with no special `mode` branch. Incoming changes and hooks are in `source/parse.c`, replies in `source/numbers.c`, and advertised channel-mode interpretation in `source/names.c`. Transmission is in `source/server.c`. `mode_stripper` is registered in `source/vars.c`, with its default in `include/config.h`.

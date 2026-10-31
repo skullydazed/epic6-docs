@@ -32,4 +32,4 @@ Returns the input with the supported prefix removed, or unchanged if both requir
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). The implementation checks for both punctuation characters, then removes only the two literal prefixes described above.
+Registered and implemented in `source/functions.c`. The implementation checks for both punctuation characters, then removes only the two literal prefixes described above.

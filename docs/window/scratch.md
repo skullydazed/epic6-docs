@@ -22,4 +22,4 @@ A valid value reports `Window SCRATCH is ON` or `Window SCRATCH is OFF`. `toggle
 
 ## Source references
 
-`windowcmd_scratch` and `get_boolean` in [source/window.c](../../source/window.c).
+`windowcmd_scratch` and `get_boolean` in `source/window.c`.

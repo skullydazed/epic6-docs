@@ -44,6 +44,6 @@ An empty message in this notification should not be interpreted as proof that no
 
 ## Source references
 
-- [source/server.c](../../source/server.c): `server_close_internal` controls cleanup, message selection, hook timing, and descriptor closure; `server_is_unregistered` changes state to `eof`; `set_server_state` invokes state and status events.
-- [source/names.c](../../source/names.c): `destroy_server_channels` invokes channel-loss hooks before deleting records.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching.
+- `source/server.c`: `server_close_internal` controls cleanup, message selection, hook timing, and descriptor closure; `server_is_unregistered` changes state to `eof`; `set_server_state` invokes state and status events.
+- `source/names.c`: `destroy_server_channels` invokes channel-loss hooks before deleting records.
+- `source/hook.c`: event registration and `do_hook` implement matching.

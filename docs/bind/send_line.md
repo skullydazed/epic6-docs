@@ -36,8 +36,8 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default bindings.
-- [source/input.c](../../source/input.c): `send_line` implements buffer clearing, server context, prompt/hook dispatch, and hold/scrollback effects.
-- [source/commands.c](../../source/commands.c): `parse_statement` implements interactive text/command dispatch; `sendlinecmd` uses the same parser.
-- [source/screen.c](../../source/screen.c): `fire_normal_prompt` restores saved input and invokes a prompt callback.
-- [source/window.c](../../source/window.c): `window_is_holding`, `window_is_scrolled_back`, and `unhold_a_window` determine and advance held output.
+- `source/keys.c`: action registration and default bindings.
+- `source/input.c`: `send_line` implements buffer clearing, server context, prompt/hook dispatch, and hold/scrollback effects.
+- `source/commands.c`: `parse_statement` implements interactive text/command dispatch; `sendlinecmd` uses the same parser.
+- `source/screen.c`: `fire_normal_prompt` restores saved input and invokes a prompt callback.
+- `source/window.c`: `window_is_holding`, `window_is_scrolled_back`, and `unhold_a_window` determine and advance held output.

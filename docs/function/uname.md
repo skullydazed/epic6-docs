@@ -40,4 +40,4 @@ The first expression could return `This machine (paradigm) is a i686 running Lin
 
 ## Source
 
-Handler and selectors: [`source/functions.c`](../../source/functions.c:6324). Buffer size: [`include/irc.h`](../../include/irc.h:80).
+Handler and selectors: `source/functions.c`. Buffer size: `include/irc.h`.

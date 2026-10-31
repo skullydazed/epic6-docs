@@ -30,4 +30,4 @@ First appeared in EPIC4pre2.004-19990528.
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:7459). Separate screen input descriptors: [`source/screen.c`](../../source/screen.c:3652).
+Handler: `source/functions.c`. Separate screen input descriptors: `source/screen.c`.

@@ -36,4 +36,4 @@ The approximate examples describe the numeric value; the returned string may con
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `atan` and implements both forms in `function_atan()`, using the shared error-return macro. [include/functions.h](../../include/functions.h) defines argument conversion and formatting. The C/POSIX specifications for [atan](https://pubs.opengroup.org/onlinepubs/9799919799/functions/atan.html) and [atan2](https://pubs.opengroup.org/onlinepubs/9799919799/functions/atan2.html) define library ranges and error reporting.
+`source/functions.c` registers `atan` and implements both forms in `function_atan()`, using the shared error-return macro. `include/functions.h` defines argument conversion and formatting. The C/POSIX specifications for [atan](https://pubs.opengroup.org/onlinepubs/9799919799/functions/atan.html) and [atan2](https://pubs.opengroup.org/onlinepubs/9799919799/functions/atan2.html) define library ranges and error reporting.

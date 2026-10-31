@@ -44,4 +44,4 @@ This displays `one`; `items` now contains `two three`.
 
 ## Source
 
-Registration and `shift_cmd()` are in [source/commands.c](../../source/commands.c). `function_shift()` is in [source/functions.c](../../source/functions.c). Lookup and writeback are in [source/alias.c](../../source/alias.c). Function argument and word parsing are defined in [include/functions.h](../../include/functions.h) and [include/words.h](../../include/words.h), with implementations in [source/ircaux.c](../../source/ircaux.c) and [source/words.c](../../source/words.c).
+Registration and `shift_cmd()` are in `source/commands.c`. `function_shift()` is in `source/functions.c`. Lookup and writeback are in `source/alias.c`. Function argument and word parsing are defined in `include/functions.h` and `include/words.h`, with implementations in `source/ircaux.c` and `source/words.c`.

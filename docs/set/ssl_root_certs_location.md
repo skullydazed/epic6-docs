@@ -26,5 +26,5 @@ The callback loads the selected locations into the shared SSL context if it alre
 
 ## Source references
 
-- [source/ssl.c](../../source/ssl.c): setting behavior.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, callback, and default.
+- `source/ssl.c`: setting behavior.
+- `source/vars.c` and `include/config.h`: registration, callback, and default.

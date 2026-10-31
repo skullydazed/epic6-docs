@@ -37,6 +37,6 @@ The supplied script initializes and enables its [mail](../set/mail.md) boolean s
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): current registration omits `mail_type` and handles unknown-variable errors.
-- [script/mail](../../script/mail): loads the Python checker through `pyload`.
-- [script/mail.py](../../script/mail.py): installs both reader factories and discovers their environment-selected maildrops without consulting a type setting.
+- `source/vars.c`: current registration omits `mail_type` and handles unknown-variable errors.
+- [`script/mail`](../scripts/mail.md): loads the Python checker through `pyload`.
+- [`mail.py`](../scripts/mail.md): installs both reader factories and discovers their environment-selected maildrops without consulting a type setting.

@@ -7,7 +7,7 @@
 /set mail_interval [<seconds>]
 ```
 
-This integer setting is supplied by the bundled Python [mail](mail.md) implementation, not a C built-in. Loading [script/mail](../../script/mail) uses `pyload` to install [script/mail.py](../../script/mail.py), requiring Python integration and its runtime dependencies. The script initializes the interval to `60` seconds and enables checking. With the setting installed, omitting the value queries it.
+This integer setting is supplied by the bundled Python [mail](mail.md) implementation, not a C built-in. Loading [`script/mail`](../scripts/mail.md) uses `pyload` to install [`mail.py`](../scripts/mail.md), requiring Python integration and its runtime dependencies. The script initializes the interval to `60` seconds and enables checking. With the setting installed, omitting the value queries it.
 
 ## Description
 
@@ -40,8 +40,8 @@ Loading and changing the interval both enable checking. Stop it with:
 
 ## Source references
 
-- [script/mail](../../script/mail): loads the Python implementation.
-- [script/mail.py](../../script/mail.py): defines the interval callback, repeats the `check_mail` timer, checks immediately on enable, and updates cached status text.
-- [source/timer.c](../../source/timer.c): repeating-timer validation and snap scheduling.
-- [source/ircaux.c](../../source/ircaux.c): interval-boundary calculation used for snap timers.
-- [source/vars.c](../../source/vars.c): current built-in variable table does not register `mail_interval`.
+- [`script/mail`](../scripts/mail.md): loads the Python implementation.
+- [`mail.py`](../scripts/mail.md): defines the interval callback, repeats the `check_mail` timer, checks immediately on enable, and updates cached status text.
+- `source/timer.c`: repeating-timer validation and snap scheduling.
+- `source/ircaux.c`: interval-boundary calculation used for snap timers.
+- `source/vars.c`: current built-in variable table does not register `mail_interval`.

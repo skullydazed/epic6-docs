@@ -50,7 +50,7 @@ A person sharing multiple channels can produce multiple replacement lines. Use `
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_quit` invokes per-channel hooks, conditionally invokes `signoff`, and then removes the nickname.
-- [source/names.c](../../source/names.c): `walk_channels` finds shared channels; `remove_from_channel` removes the nickname from all channels on the server.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard hook matching and suppression.
-- [source/irc.c](../../source/irc.c): client exit invokes the separate `exit` hook.
+- `source/parse.c`: `p_quit` invokes per-channel hooks, conditionally invokes `signoff`, and then removes the nickname.
+- `source/names.c`: `walk_channels` finds shared channels; `remove_from_channel` removes the nickname from all channels on the server.
+- `source/hook.c`: event registration and `do_hook` implement standard hook matching and suppression.
+- `source/irc.c`: client exit invokes the separate `exit` hook.

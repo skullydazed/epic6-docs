@@ -44,5 +44,5 @@ The second command uses Screen only when the backend-selection conditions choose
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration and unset default.
-- [source/screen.c](../../source/screen.c): `create_additional_screen` selects the backend, parses options, constructs the direct invocation, and waits for helper connections.
+- `source/vars.c` and `include/config.h`: string registration and unset default.
+- `source/screen.c`: `create_additional_screen` selects the backend, parses options, constructs the direct invocation, and waits for helper connections.

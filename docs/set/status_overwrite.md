@@ -35,5 +35,5 @@ This omits the default leading space; include a separator in the outer format if
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and default text.
-- [source/status.c](../../source/status.c): `%O` maps to `status_overwrite_mode`, which checks that insert mode is off and the window meets the visibility policy.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and default text.
+- `source/status.c`: `%O` maps to `status_overwrite_mode`, which checks that insert mode is off and the window meets the visibility policy.

@@ -44,4 +44,4 @@ Size and block fields are not explicitly truncated to 32 bits. Several identific
 
 `$stat()` returns `-1`. If `/tmp/missing-example` does not exist, `$stat(/tmp/missing-example)` also returns `-1`.
 
-Registration and `function_stat()`: [source/functions.c](../../source/functions.c). Path normalization and quoted parsing: [source/ircaux.c](../../source/ircaux.c). Platform `Stat` type: [include/irc_std.h](../../include/irc_std.h).
+Registration and `function_stat()`: `source/functions.c`. Path normalization and quoted parsing: `source/ircaux.c`. Platform `Stat` type: `include/irc_std.h`.

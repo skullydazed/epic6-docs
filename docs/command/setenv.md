@@ -36,4 +36,4 @@ These set a value, replace it with text containing spaces, replace it with an em
 
 ## Source
 
-Registration and `setenvcmd()` are in [source/commands.c](../../source/commands.c). Argument splitting is defined in [include/words.h](../../include/words.h) and implemented in [source/ircaux.c](../../source/ircaux.c) and [source/words.c](../../source/words.c). Child creation and program execution are in [source/exec.c](../../source/exec.c). The implementation calls the platform's `setenv()` and `unsetenv()` directly.
+Registration and `setenvcmd()` are in `source/commands.c`. Argument splitting is defined in `include/words.h` and implemented in `source/ircaux.c` and `source/words.c`. Child creation and program execution are in `source/exec.c`. The implementation calls the platform's `setenv()` and `unsetenv()` directly.

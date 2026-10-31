@@ -41,7 +41,7 @@ To return to the ordinary literal prefix:
 
 ## Source references
 
-- [source/output.c](../../source/output.c): `vsay` and `vsyserr` conditionally expand the banner with an empty argument string.
-- [source/numbers.c](../../source/numbers.c): `banner` conditionally expands the configured prefix unless a numeric prefix takes precedence.
-- [source/expr.c](../../source/expr.c): expando handling treats `$$` as a literal dollar sign.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and default off.
+- `source/output.c`: `vsay` and `vsyserr` conditionally expand the banner with an empty argument string.
+- `source/numbers.c`: `banner` conditionally expands the configured prefix unless a numeric prefix takes precedence.
+- `source/expr.c`: expando handling treats `$$` as a literal dollar sign.
+- `source/vars.c` and `include/config.h`: boolean registration and default off.

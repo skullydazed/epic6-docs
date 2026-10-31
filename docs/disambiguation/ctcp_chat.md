@@ -32,6 +32,6 @@ To send Bob an ordinary IRC message instead:
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `$dccctl()`, and related functionality.
-- [source/commands.c](../../source/commands.c): the command table has no `dcc` handler, and the current sending implementation has no DCC Chat transport.
-- [source/ctcp.c](../../source/ctcp.c): current CTCP initialization does not register a DCC negotiation handler.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `$dccctl()`, and related functionality.
+- `source/commands.c`: the command table has no `dcc` handler, and the current sending implementation has no DCC Chat transport.
+- `source/ctcp.c`: current CTCP initialization does not register a DCC negotiation handler.

@@ -40,4 +40,4 @@ setenv -EPIC_DEMO
 
 ## Source
 
-Registration and the direct C `getenv()` lookup: [source/functions.c](../../source/functions.c). Environment modification: [source/commands.c](../../source/commands.c). Argument parsing and return copying: [include/functions.h](../../include/functions.h) and [include/words.h](../../include/words.h).
+Registration and the direct C `getenv()` lookup: `source/functions.c`. Environment modification: `source/commands.c`. Argument parsing and return copying: `include/functions.h` and `include/words.h`.

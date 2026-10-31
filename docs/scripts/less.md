@@ -49,8 +49,8 @@ Written for EPIC3 by hop in 1996, inspired by archon's [more](more.md) script. L
 
 ## Source references
 
-- [script/less](../../script/less): page loop, saved destination, prompt callback, and cleanup.
-- [source/functions.c](../../source/functions.c): `fexist`, geometry, `numlines`, and file-function arguments.
-- [source/files.c](../../source/files.c): line reading, EOF handling, recoding, and descriptor close.
-- [source/commands.c](../../source/commands.c) and [source/screen.c](../../source/screen.c): character-input callbacks and `xecho` window selection.
-- [source/vars.c](../../source/vars.c): current `indent` and `continued_line` setting names.
+- `script/less`: page loop, saved destination, prompt callback, and cleanup.
+- `source/functions.c`: `fexist`, geometry, `numlines`, and file-function arguments.
+- `source/files.c`: line reading, EOF handling, recoding, and descriptor close.
+- `source/commands.c` and `source/screen.c`: character-input callbacks and `xecho` window selection.
+- `source/vars.c`: current `indent` and `continued_line` setting names.

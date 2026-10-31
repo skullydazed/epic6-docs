@@ -49,4 +49,4 @@ With no arguments, `maybe_echo` returns before displaying anything.
 
 `return` first appeared in EPIC4pre1.031.
 
-Registration, `returncmd`, block propagation, function/command callbacks, and loader return handling are in [source/commands.c](../../source/commands.c). Special `function_return` scope lookup is in [source/alias.c](../../source/alias.c), conditional hook results in [source/hook.c](../../source/hook.c), and expression-block execution in [source/expr2.c](../../source/expr2.c).
+Registration, `returncmd`, block propagation, function/command callbacks, and loader return handling are in `source/commands.c`. Special `function_return` scope lookup is in `source/alias.c`, conditional hook results in `source/hook.c`, and expression-block execution in `source/expr2.c`.

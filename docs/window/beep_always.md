@@ -33,7 +33,7 @@ Enable bell notifications for window 3, then inspect the setting. It takes effec
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_beep_always`, `get_boolean`, and window initialization implement the setting and its reports.
-- [source/screen.c](../../source/screen.c): output handling checks invisible-window bell characters, notification suppression, and activity notifications.
-- [source/term.c](../../source/term.c): `term_beep` checks the global beep setting and suppression flag before emitting the terminal bell capability.
-- [source/commands.c](../../source/commands.c): `xecho -f` suppresses window notifications.
+- `source/window.c`: `windowcmd_beep_always`, `get_boolean`, and window initialization implement the setting and its reports.
+- `source/screen.c`: output handling checks invisible-window bell characters, notification suppression, and activity notifications.
+- `source/term.c`: `term_beep` checks the global beep setting and suppression flag before emitting the terminal bell capability.
+- `source/commands.c`: `xecho -f` suppresses window notifications.

@@ -57,4 +57,4 @@ First appeared in EPIC5-0.0.3.
 
 ## Source
 
-Registration and parse/serialize wrapper: [source/functions.c](../../source/functions.c). Argument-list parsing, serialization, and binding during alias calls: [source/alias.c](../../source/alias.c). Fixed argument-list storage: [include/alias.h](../../include/alias.h). Comma and quoted-word parsing: [source/ircaux.c](../../source/ircaux.c).
+Registration and parse/serialize wrapper: `source/functions.c`. Argument-list parsing, serialization, and binding during alias calls: `source/alias.c`. Fixed argument-list storage: `include/alias.h`. Comma and quoted-word parsing: `source/ircaux.c`.

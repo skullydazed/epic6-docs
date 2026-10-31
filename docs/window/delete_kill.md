@@ -24,4 +24,4 @@ There are no operation arguments. `/window -delete_kill` does nothing.
 
 ## Source references
 
-`windowcmd_delete_kill`, `unlink_window`, and `delete_window_contents` in [source/window.c](../../source/window.c); `kill_screen` in [source/screen.c](../../source/screen.c).
+`windowcmd_delete_kill`, `unlink_window`, and `delete_window_contents` in `source/window.c`; `kill_screen` in `source/screen.c`.

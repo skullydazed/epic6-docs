@@ -28,7 +28,7 @@ This obsolete binding produces the diagnostic described above:
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): `init_binds` lists built-in actions; `bind_compressed_string` rejects unknown action names before modifying a binding.
-- [source/vars.c](../../source/vars.c): setting registration includes the clock settings and excludes the retired CPU saver settings.
-- [source/clock.c](../../source/clock.c): the system clock timer uses `clock_interval` directly.
-- [UPDATES](../../UPDATES): the March 8, 2025 EPIC6 feature retirement note records the removal of CPU saver.
+- `source/keys.c`: `init_binds` lists built-in actions; `bind_compressed_string` rejects unknown action names before modifying a binding.
+- `source/vars.c`: setting registration includes the clock settings and excludes the retired CPU saver settings.
+- `source/clock.c`: the system clock timer uses `clock_interval` directly.
+- [UPDATES](../UPDATES.md): the March 8, 2025 EPIC6 feature retirement note records the removal of CPU saver.

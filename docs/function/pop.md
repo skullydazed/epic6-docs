@@ -41,4 +41,4 @@ First appeared in +7, after ircII and before EPIC.
 
 ## Source
 
-Registration and `function_pop()`: [source/functions.c](../../source/functions.c). `last_arg()`: [source/ircaux.c](../../source/ircaux.c). Word parsing: [include/words.h](../../include/words.h). Variable lookup and writeback: [source/alias.c](../../source/alias.c).
+Registration and `function_pop()`: `source/functions.c`. `last_arg()`: `source/ircaux.c`. Word parsing: `include/words.h`. Variable lookup and writeback: `source/alias.c`.

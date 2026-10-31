@@ -36,4 +36,4 @@ Select window 3, select the window named `chat`, or select window 3 and then nam
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_refnum`, `get_window_from_args`, and `get_window_by_desc` implement destination lookup, errors, and selection; `make_window_current_by_refnum` invokes the switch hook; `set_screens_current_window` updates input selection and history only for visible destinations.
+- `source/window.c`: `windowcmd_refnum`, `get_window_from_args`, and `get_window_by_desc` implement destination lookup, errors, and selection; `make_window_current_by_refnum` invokes the switch hook; `set_screens_current_window` updates input selection and history only for visible destinations.

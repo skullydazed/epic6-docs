@@ -39,4 +39,4 @@ fe ($getarrays()) array_name {
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). Name registration, sorted indexing, and `function_getarrays()`: [source/array.c](../../source/array.c). Wildcard matching: [source/reg.c](../../source/reg.c).
+Registered in `source/functions.c`. Name registration, sorted indexing, and `function_getarrays()`: `source/array.c`. Wildcard matching: `source/reg.c`.

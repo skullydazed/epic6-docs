@@ -42,9 +42,9 @@ For more detail, `$info(z:configure_args)`, `$info(z:compiler_version)`, `$info(
 
 ## Source references
 
-- [include/options.h](../../include/options.h): the authoritative `compile_time_options` string and its three current letters.
-- [source/functions.c](../../source/functions.c): `function_info` returns the option string for selector `o` and exposes build-information selectors.
-- [configure.ac](../../configure.ac) and [include/defs.h.in](../../include/defs.h.in): optional dependency checks and generated feature definitions.
-- [include/irc_std.h](../../include/irc_std.h): PCRE2 header integration.
-- [source/elf.c](../../source/elf.c): libarchive-enabled file loading.
-- [source/hook.c](../../source/hook.c): implied-hook implementation.
+- `include/options.h`: the authoritative `compile_time_options` string and its three current letters.
+- `source/functions.c`: `function_info` returns the option string for selector `o` and exposes build-information selectors.
+- `configure.ac` and `include/defs.h.in`: optional dependency checks and generated feature definitions.
+- `include/irc_std.h`: PCRE2 header integration.
+- `source/elf.c`: libarchive-enabled file loading.
+- `source/hook.c`: implied-hook implementation.

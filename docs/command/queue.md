@@ -78,4 +78,4 @@ queue -delete foo 2
 
 The built-in is always registered. Storing and inspecting queues need no IRC connection; queued commands have their own requirements and side effects. Execution is synchronous and is not automatically scheduled. See [timer](timer.md) and [defer](defer.md) for other delayed-execution mechanisms.
 
-Registration is in [source/commands.c](../../source/commands.c). Parsing, storage, listing, deletion, and execution traversal are in [source/queue.c](../../source/queue.c); command-scope execution and expansion are in [source/commands.c](../../source/commands.c) and [source/alias.c](../../source/alias.c).
+Registration is in `source/commands.c`. Parsing, storage, listing, deletion, and execution traversal are in `source/queue.c`; command-scope execution and expansion are in `source/commands.c` and `source/alias.c`.

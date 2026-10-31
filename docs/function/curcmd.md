@@ -35,4 +35,4 @@ This function first appeared in EPIC5-0.3.2.
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). [source/commands.c](../../source/commands.c) sets and restores the command context around recognized dispatch and performs command expansion beforehand.
+Registered and implemented in `source/functions.c`. `source/commands.c` sets and restores the command context around recognized dispatch and performs command expansion beforehand.

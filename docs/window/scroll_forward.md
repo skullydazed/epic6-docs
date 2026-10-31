@@ -40,6 +40,6 @@ This operation first appeared in EPIC4-1.1.11.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_scroll_forward`, `window_scrollback_forward`, `window_scrollback_forwards_lines`, `window_scroll_lines_tester`, and `window_scrollback_forwards` implement arguments, percentage movement, and view selection; `recalculate_window_cursor_and_display_ip` automatically cancels caught-up scrollback.
-- [include/config.h](../../include/config.h): defines the compiled scrollback ratio.
-- [source/term.c](../../source/term.c): `term_beep` applies beep settings to the no-movement bell request.
+- `source/window.c`: `windowcmd_scroll_forward`, `window_scrollback_forward`, `window_scrollback_forwards_lines`, `window_scroll_lines_tester`, and `window_scrollback_forwards` implement arguments, percentage movement, and view selection; `recalculate_window_cursor_and_display_ip` automatically cancels caught-up scrollback.
+- `include/config.h`: defines the compiled scrollback ratio.
+- `source/term.c`: `term_beep` applies beep settings to the no-movement bell request.

@@ -32,4 +32,4 @@ The decoder checks byte sequence shapes but does not reject overlong encodings, 
 
 ## Source
 
-Handler and formatting: [`source/functions.c`](../../source/functions.c:4182). Decoder: [`next_code_point2`](../../source/wcwidth.c:218). Reconstruction: [`function_chr`](../../source/functions.c:4017).
+Handler and formatting: `source/functions.c`. Decoder: `next_code_point2`. Reconstruction: `function_chr`.

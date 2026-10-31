@@ -30,8 +30,8 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default Escape-period binding.
-- [source/input.c](../../source/input.c): `my_clear_screen` calls `clear_window_by_refnum(0)`.
-- [source/window.c](../../source/window.c): `clear_window`, current-window resolution, notification/activity changes, and display-position recalculation.
-- [source/screen.c](../../source/screen.c): window redraw chooses between normal, held, and scrollback views.
-- [source/commands.c](../../source/commands.c): `e_clear` uses the same clearing helper for `/clear`.
+- `source/keys.c`: action registration and default Escape-period binding.
+- `source/input.c`: `my_clear_screen` calls `clear_window_by_refnum(0)`.
+- `source/window.c`: `clear_window`, current-window resolution, notification/activity changes, and display-position recalculation.
+- `source/screen.c`: window redraw chooses between normal, held, and scrollback views.
+- `source/commands.c`: `e_clear` uses the same clearing helper for `/clear`.

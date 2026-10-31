@@ -62,6 +62,6 @@ Replace the selection with the default:
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): default, registration, and `set_mangle_display` callback.
-- [source/screen.c](../../source/screen.c): `parse_mangle`, `new_normalize_string`, display processing, and scrollback rebuilding.
-- [source/status.c](../../source/status.c) and [source/input.c](../../source/input.c): status and input-prompt normalization use the display rules.
+- `source/vars.c`: default, registration, and `set_mangle_display` callback.
+- `source/screen.c`: `parse_mangle`, `new_normalize_string`, display processing, and scrollback rebuilding.
+- `source/status.c` and `source/input.c`: status and input-prompt normalization use the display rules.

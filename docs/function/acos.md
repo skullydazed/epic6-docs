@@ -31,4 +31,4 @@ The approximate examples describe the numeric value; the returned string may con
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `acos` and implements `function_acos` through the shared math-function and error-return macros. [include/functions.h](../../include/functions.h) defines argument conversion and formatting. The [C/POSIX arc cosine specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/acos.html) defines radians, the valid range, and library error reporting.
+`source/functions.c` registers `acos` and implements `function_acos` through the shared math-function and error-return macros. `include/functions.h` defines argument conversion and formatting. The [C/POSIX arc cosine specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/acos.html) defines radians, the valid range, and library error reporting.

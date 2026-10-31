@@ -34,4 +34,4 @@ This function first appeared in ircII-2.2pre3. It is now a compatibility placeho
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). The former connection code is disabled with `#if 0`; the active branch returns an empty string unconditionally.
+Registered and implemented in `source/functions.c`. The former connection code is disabled with `#if 0`; the active branch returns an empty string unconditionally.

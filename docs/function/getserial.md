@@ -51,4 +51,4 @@ Written by wd; first appeared in EPIC4-1.1.8.
 
 ## Source
 
-Registration, type and direction checks, and argument conversion: [source/functions.c](../../source/functions.c) and [include/functions.h](../../include/functions.h). The inclusive search, bounds, and `/on` serial selection: [source/hook.c](../../source/hook.c).
+Registration, type and direction checks, and argument conversion: `source/functions.c` and `include/functions.h`. The inclusive search, bounds, and `/on` serial selection: `source/hook.c`.

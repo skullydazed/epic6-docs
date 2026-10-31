@@ -69,4 +69,4 @@ Escape-g now calls `greet` under normal key dispatch. To remove the binding and 
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `bindctl` and delegates to [source/keys.c](../../source/keys.c), which implements operations, sequence parsing, maps, action invocation, and package cleanup.
+`source/functions.c` registers `bindctl` and delegates to `source/keys.c`, which implements operations, sequence parsing, maps, action invocation, and package cleanup.

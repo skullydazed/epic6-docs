@@ -49,8 +49,8 @@ Written by wd (White_Dragon, Chip Norkus); first included in EPIC4pre2.510.
 
 ## Source references
 
-- [script/grep](../../script/grep): window `1` default, global scan bound, result collection, and display.
-- [source/lastlog.c](../../source/lastlog.c): `line` lookup, one-based positions, and out-of-range results.
-- [source/functions.c](../../source/functions.c): case-insensitive extended `regcomp`, `regexec`, and the `regfree` length-check mismatch.
-- [script/builtins](../../script/builtins): `winlevel` wrapper.
-- [source/commands.c](../../source/commands.c): `xecho -nolog` output handling.
+- `script/grep`: window `1` default, global scan bound, result collection, and display.
+- `source/lastlog.c`: `line` lookup, one-based positions, and out-of-range results.
+- `source/functions.c`: case-insensitive extended `regcomp`, `regexec`, and the `regfree` length-check mismatch.
+- [`script/builtins`](builtins.md): `winlevel` wrapper.
+- `source/commands.c`: `xecho -nolog` output handling.

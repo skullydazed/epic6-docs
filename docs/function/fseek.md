@@ -49,4 +49,4 @@ if (seek_result == 0) {echo $read($handle)}
 
 ## Source
 
-Registration and argument parsing: [source/functions.c](../../source/functions.c). Handle lookup and anchor dispatch: [source/files.c](../../source/files.c). Stream construction: [source/elf.c](../../source/elf.c). [POSIX seek semantics](https://pubs.opengroup.org/onlinepubs/7908799/xsh/fseek.html) define repositioning and EOF clearing; [append-mode semantics](https://pubs.opengroup.org/onlinepubs/7908799/xsh/fopen.html) define where append writes occur.
+Registration and argument parsing: `source/functions.c`. Handle lookup and anchor dispatch: `source/files.c`. Stream construction: `source/elf.c`. [POSIX seek semantics](https://pubs.opengroup.org/onlinepubs/7908799/xsh/fseek.html) define repositioning and EOF clearing; [append-mode semantics](https://pubs.opengroup.org/onlinepubs/7908799/xsh/fopen.html) define where append writes occur.

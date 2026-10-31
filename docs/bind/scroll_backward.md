@@ -36,7 +36,7 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration, default bindings, and terminal Page Up binding.
-- [source/window.c](../../source/window.c): `scrollback_backwards`, `window_scrollback_backward`, `window_scrollback_backwards`, the line-count tester, and `trim_scrollback` implement movement and retention.
-- [source/status.c](../../source/status.c): `status_scrollback` implements `%K`.
-- [include/config.h](../../include/config.h): default scrollback ratio.
+- `source/keys.c`: action registration, default bindings, and terminal Page Up binding.
+- `source/window.c`: `scrollback_backwards`, `window_scrollback_backward`, `window_scrollback_backwards`, the line-count tester, and `trim_scrollback` implement movement and retention.
+- `source/status.c`: `status_scrollback` implements `%K`.
+- `include/config.h`: default scrollback ratio.

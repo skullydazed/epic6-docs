@@ -38,4 +38,4 @@ A timestamp outside the helper's supported `time_t` range, or one that cannot be
 
 First appeared in ircII.
 
-Registration and `function_stime()`: [source/functions.c](../../source/functions.c). `my_ctime()` conversion and formatting: [source/ircaux.c](../../source/ircaux.c). Ordinary integer parsing: [include/functions.h](../../include/functions.h).
+Registration and `function_stime()`: `source/functions.c`. `my_ctime()` conversion and formatting: `source/ircaux.c`. Ordinary integer parsing: `include/functions.h`.

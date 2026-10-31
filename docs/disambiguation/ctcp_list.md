@@ -26,6 +26,6 @@ This command is no longer supported:
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `$dccctl()`, and related functionality.
-- [source/commands.c](../../source/commands.c): the command table has no `dcc` handler.
-- [source/hook.c](../../source/hook.c) and [source/vars.c](../../source/vars.c): event and setting registration omit the former DCC list event and filename-display setting.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `$dccctl()`, and related functionality.
+- `source/commands.c`: the command table has no `dcc` handler.
+- `source/hook.c` and `source/vars.c`: event and setting registration omit the former DCC list event and filename-display setting.

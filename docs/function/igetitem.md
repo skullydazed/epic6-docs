@@ -43,4 +43,4 @@ First appeared in “plus 3” (post-ircII, pre-EPIC).
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). The `GETITEM` wrapper, sorted-index rebuilding, tie ordering, and array lookup: [source/array.c](../../source/array.c). Numeric conversion and unquoted result concatenation: [source/ircaux.c](../../source/ircaux.c). Ordinary-word parsing: [include/words.h](../../include/words.h).
+Registered in `source/functions.c`. The `GETITEM` wrapper, sorted-index rebuilding, tie ordering, and array lookup: `source/array.c`. Numeric conversion and unquoted result concatenation: `source/ircaux.c`. Ordinary-word parsing: `include/words.h`.

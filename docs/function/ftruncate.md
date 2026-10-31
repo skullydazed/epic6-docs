@@ -35,4 +35,4 @@ if (strlen($resize_error)) {echo $resize_error}
 
 ## Source
 
-Registration, length conversion, direct `truncate()` call, and error-message return: [source/functions.c](../../source/functions.c). Integer argument conversion: [include/functions.h](../../include/functions.h). [POSIX truncation semantics](https://pubs.opengroup.org/onlinepubs/9699919799/functions/ftruncate.html) describe regular-file resizing.
+Registration, length conversion, direct `truncate()` call, and error-message return: `source/functions.c`. Integer argument conversion: `include/functions.h`. [POSIX truncation semantics](https://pubs.opengroup.org/onlinepubs/9699919799/functions/ftruncate.html) describe regular-file resizing.

@@ -43,4 +43,4 @@ The function originally appeared in ircII 2.1.5. Nickname arguments were added i
 
 ## Source
 
-Registered and implemented as `function_userhost` in [source/functions.c](../../source/functions.c). Cache lookup uses `fetch_userhost` in [source/names.c](../../source/names.c). Sender context is established by `BreakArgs` and normally restored after dispatch by `parse_server` in [source/parse.c](../../source/parse.c).
+Registered and implemented as `function_userhost` in `source/functions.c`. Cache lookup uses `fetch_userhost` in `source/names.c`. Sender context is established by `BreakArgs` and normally restored after dispatch by `parse_server` in `source/parse.c`.

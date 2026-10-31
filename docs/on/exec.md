@@ -45,5 +45,5 @@ This replaces the ordinary local line for processes without a `-line` callback.
 
 ## Source references
 
-- [source/exec.c](../../source/exec.c): `do_exec` selects stdout versus stderr and applies output limits; `handle_filedesc` reads lines, strips line endings, converts encoding, chooses callbacks or hooks, and controls default display; `set_context_for_process` selects output context; exec option handling records callback and redirect settings.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard matching and suppression.
+- `source/exec.c`: `do_exec` selects stdout versus stderr and applies output limits; `handle_filedesc` reads lines, strips line endings, converts encoding, chooses callbacks or hooks, and controls default display; `set_context_for_process` selects output context; exec option handling records callback and redirect settings.
+- `source/hook.c`: event registration and `do_hook` implement standard matching and suppression.

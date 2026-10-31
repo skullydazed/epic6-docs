@@ -33,4 +33,4 @@ The installed handler displays `Synthetic message from Me: This message is fake`
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c). `shookcmd()`, event-type lookup, and dispatch through `do_hook()` are in [source/hook.c](../../source/hook.c). Real server-message metadata is established separately in [source/parse.c](../../source/parse.c).
+Registration is in `source/commands.c`. `shookcmd()`, event-type lookup, and dispatch through `do_hook()` are in `source/hook.c`. Real server-message metadata is established separately in `source/parse.c`.

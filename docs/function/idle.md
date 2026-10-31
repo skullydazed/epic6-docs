@@ -36,4 +36,4 @@ First appeared in ircII-2.8.7.
 
 ## Source
 
-Registration, `$E`, and the shared elapsed-seconds calculation: [source/functions.c](../../source/functions.c). Input resets: [source/screen.c](../../source/screen.c). Startup initialization: [source/irc.c](../../source/irc.c). Real-time clock acquisition: [source/ircaux.c](../../source/ircaux.c). Minute-based idle events: [source/clock.c](../../source/clock.c).
+Registration, `$E`, and the shared elapsed-seconds calculation: `source/functions.c`. Input resets: `source/screen.c`. Startup initialization: `source/irc.c`. Real-time clock acquisition: `source/ircaux.c`. Minute-based idle events: `source/clock.c`.

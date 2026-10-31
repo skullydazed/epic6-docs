@@ -34,4 +34,4 @@ This works only if that service exists and accepts this request syntax.
 
 ## Source
 
-Registration and `send_2comm()` are in [source/commands.c](../../source/commands.c); the shared handler has no special `squery` branch. Target-specific recoding is in [source/recode.c](../../source/recode.c), and server selection, payload formatting, and outgoing handling are in [source/server.c](../../source/server.c). The conventional protocol is described in [RFC 2812, section 3.5.2](https://www.rfc-editor.org/rfc/rfc2812#section-3.5.2).
+Registration and `send_2comm()` are in `source/commands.c`; the shared handler has no special `squery` branch. Target-specific recoding is in `source/recode.c`, and server selection, payload formatting, and outgoing handling are in `source/server.c`. The conventional protocol is described in [RFC 2812, section 3.5.2](https://www.rfc-editor.org/rfc/rfc2812#section-3.5.2).

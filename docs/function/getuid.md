@@ -24,4 +24,4 @@ This stores EPIC's current real user ID in `real_user_id`. See [$getgid()](getgi
 
 ## Source
 
-Registration and the direct `getuid()` call: [source/functions.c](../../source/functions.c). Integer-string return formatting: [include/functions.h](../../include/functions.h).
+Registration and the direct `getuid()` call: `source/functions.c`. Integer-string return formatting: `include/functions.h`.

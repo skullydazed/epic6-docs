@@ -38,4 +38,4 @@ First appeared in +2, after ircII and before EPIC.
 
 ## Source
 
-Registration, `function_remw()`, and `function_findw()`: [source/functions.c](../../source/functions.c). Retained-word extraction: [source/words.c](../../source/words.c). Parsing modes: [include/words.h](../../include/words.h). Case-insensitive comparison and joining: [source/ircaux.c](../../source/ircaux.c).
+Registration, `function_remw()`, and `function_findw()`: `source/functions.c`. Retained-word extraction: `source/words.c`. Parsing modes: `include/words.h`. Case-insensitive comparison and joining: `source/ircaux.c`.

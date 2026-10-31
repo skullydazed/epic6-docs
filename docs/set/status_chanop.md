@@ -35,6 +35,6 @@ Use `/set -status_chanop` to remove its text. Your actual channel privileges rem
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and `@` default.
-- [source/status.c](../../source/status.c): `%@` maps to `status_chanop`, which checks the operator branch before the half-operator fallback; optional final expando processing is separate.
-- [source/names.c](../../source/names.c): `get_channel_oper` and `get_channel_halfop` provide cached channel privilege state.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and `@` default.
+- `source/status.c`: `%@` maps to `status_chanop`, which checks the operator branch before the half-operator fallback; optional final expando processing is separate.
+- `source/names.c`: `get_channel_oper` and `get_channel_halfop` provide cached channel privilege state.

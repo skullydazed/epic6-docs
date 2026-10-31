@@ -35,6 +35,6 @@ This stores `(Away)` without the default leading space. Include any desired sepa
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, `build_status` callback, and default text.
-- [source/status.c](../../source/status.c): `%A` maps to `status_away`, which checks server association, stored away message, and window visibility policy; final status expansion is separate.
-- [source/server.c](../../source/server.c): `get_server_away_message` returns the stored per-server message.
+- `source/vars.c` and `include/config.h`: string registration, `build_status` callback, and default text.
+- `source/status.c`: `%A` maps to `status_away`, which checks server association, stored away message, and window visibility policy; final status expansion is separate.
+- `source/server.c`: `get_server_away_message` returns the stored per-server message.

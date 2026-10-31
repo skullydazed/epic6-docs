@@ -33,4 +33,4 @@ In a script, this blocks the client for approximately half a second before the m
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `usleep` and implements `usleepcmd()`. [source/ircaux.c](../../source/ircaux.c) implements `my_atol()` using `strtol()` with base zero. [source/newio.c](../../source/newio.c) implements the blocking `my_sleep()` helper and its `poll()` timeout.
+`source/commands.c` registers `usleep` and implements `usleepcmd()`. `source/ircaux.c` implements `my_atol()` using `strtol()` with base zero. `source/newio.c` implements the blocking `my_sleep()` helper and its `poll()` timeout.

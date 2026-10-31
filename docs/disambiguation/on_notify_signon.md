@@ -31,9 +31,9 @@ For a user's join to a shared channel, see [on join](../on/join.md). Joining a c
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records removal of the previously sunset notify signon and signoff hooks.
-- [source/hook.c](../../source/hook.c): the named-hook table omits `notify_signon`; `find_hook` rejects unknown event names.
-- [include/hook.h](../../include/hook.h): current event identifiers contain no notify-signon hook.
-- [source/vars.c](../../source/vars.c): current built-in settings omit `notify_userhost_automatic`.
-- [script/notify](../../script/notify): defines the monitor wrapper and directly formats numeric `730` without emitting the former event.
-- [script/notify.jm](../../script/notify.jm): retains historical userhost and hook references.
+- [KNOWNBUGS](../KNOWNBUGS.md): records removal of the previously sunset notify signon and signoff hooks.
+- `source/hook.c`: the named-hook table omits `notify_signon`; `find_hook` rejects unknown event names.
+- `include/hook.h`: current event identifiers contain no notify-signon hook.
+- `source/vars.c`: current built-in settings omit `notify_userhost_automatic`.
+- [`script/notify`](../scripts/notify.md): defines the monitor wrapper and directly formats numeric `730` without emitting the former event.
+- `script/notify.jm`: retains historical userhost and hook references.

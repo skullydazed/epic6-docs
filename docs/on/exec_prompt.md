@@ -32,5 +32,5 @@ on -exec_prompt "*" {
 
 ## Source references
 
-- [source/exec.c](../../source/exec.c): `do_exec` passes the event identifier to `handle_filedesc`, whose partial-line dispatch branch is disabled.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/exec.c`: `do_exec` passes the event identifier to `handle_filedesc`, whose partial-line dispatch branch is disabled.
+- `source/hook.c`: event registration and standard hook dispatch.

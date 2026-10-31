@@ -35,6 +35,6 @@ A format containing `%H%B` can place the label before the rounded count. Hiding 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and default label.
-- [source/status.c](../../source/status.c): `%H` mapping, distance tests in `status_hold`, separate `status_hold_lines` rounding, and `%{1}H` hold-mode handling.
-- [source/window.c](../../source/window.c): window display height, holding distance, and scrollback state.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and default label.
+- `source/status.c`: `%H` mapping, distance tests in `status_hold`, separate `status_hold_lines` rounding, and `%{1}H` hold-mode handling.
+- `source/window.c`: window display height, holding distance, and scrollback state.

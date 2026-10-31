@@ -35,7 +35,7 @@ The command is available in every build and requires no server connection.
 
 ## Script interaction
 
-The bundled [dump script](../../script/dump) defines an alias named `dump` with additional categories and different parsing. Those features belong to the script, not this built-in. An alias can override `/dump`; use `//dump` to select the C built-in explicitly. See [`alias`](alias.md).
+The bundled [dump script](../scripts/dump.md) defines an alias named `dump` with additional categories and different parsing. Those features belong to the script, not this built-in. An alias can override `/dump`; use `//dump` to select the C built-in explicitly. See [`alias`](alias.md).
 
 ## Examples
 
@@ -56,4 +56,4 @@ These operations remove the selected definitions immediately.
 
 ## Source
 
-See [source/alias.c](../../source/alias.c) for `dumpcmd()`, `destroy_var_aliases()`, and `destroy_cmd_aliases()`. [source/hook.c](../../source/hook.c) implements `flush_on_hooks()`; [source/commands.c](../../source/commands.c) registers the command and implements alias bypass with two slashes.
+See `source/alias.c` for `dumpcmd()`, `destroy_var_aliases()`, and `destroy_cmd_aliases()`. `source/hook.c` implements `flush_on_hooks()`; `source/commands.c` registers the command and implements alias bypass with two slashes.

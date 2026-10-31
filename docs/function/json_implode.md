@@ -47,4 +47,4 @@ For formatted output, use `$json_implode({"root":"foo","compact":false})`.
 
 ## Source
 
-Registered and implemented by `function_json_implode`, `implode_struct_var`, and keyword parsing in [source/functions.c](../../source/functions.c). Global member enumeration and leaf lookup are in [source/alias.c](../../source/alias.c); JSON generation and escaping are in [source/cJSON.c](../../source/cJSON.c).
+Registered and implemented by `function_json_implode`, `implode_struct_var`, and keyword parsing in `source/functions.c`. Global member enumeration and leaf lookup are in `source/alias.c`; JSON generation and escaping are in `source/cJSON.c`.

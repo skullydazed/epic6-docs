@@ -39,4 +39,4 @@ The first checks `#example` on server 0. The second checks the current window's 
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `chansyncing` and implements `function_channelsyncing()`. [source/names.c](../../source/names.c) implements the synchronization flag, lookup, and completion hook. [source/parse.c](../../source/parse.c) begins synchronization on joins, [source/numbers.c](../../source/numbers.c) handles mode/WHO completion, and [source/server.c](../../source/server.c) resolves server descriptions.
+`source/functions.c` registers `chansyncing` and implements `function_channelsyncing()`. `source/names.c` implements the synchronization flag, lookup, and completion hook. `source/parse.c` begins synchronization on joins, `source/numbers.c` handles mode/WHO completion, and `source/server.c` resolves server descriptions.

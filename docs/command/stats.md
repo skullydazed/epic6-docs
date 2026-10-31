@@ -53,4 +53,4 @@ These conventionally request local uptime, local command-use counts, and uptime 
 
 ## Source
 
-Registration and `send_comm()` are in [source/commands.c](../../source/commands.c); the shared handler has no special `stats` branch. Sending and connection checks are in [source/server.c](../../source/server.c), and numeric hooks and display are in [source/numbers.c](../../source/numbers.c). Conventional parameters and the `l`, `m`, `o`, and `u` queries are described in [RFC 2812, section 3.4.4](https://www.rfc-editor.org/rfc/rfc2812#section-3.4.4).
+Registration and `send_comm()` are in `source/commands.c`; the shared handler has no special `stats` branch. Sending and connection checks are in `source/server.c`, and numeric hooks and display are in `source/numbers.c`. Conventional parameters and the `l`, `m`, `o`, and `u` queries are described in [RFC 2812, section 3.4.4](https://www.rfc-editor.org/rfc/rfc2812#section-3.4.4).

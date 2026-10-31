@@ -50,4 +50,4 @@ These set, query, or clear a topic. Current-channel forms require a current chan
 
 ## Source
 
-Registration and `e_topic()` are in [source/commands.c](../../source/commands.c). Channel recognition and incoming change handling are in [source/parse.c](../../source/parse.c); numeric replies are in [source/numbers.c](../../source/numbers.c). Topic recoding is in [source/recode.c](../../source/recode.c), and connection checks and outgoing formatting are in [source/server.c](../../source/server.c). Conventional query, change, and clearing semantics are described in [RFC 2812, section 3.2.4](https://www.rfc-editor.org/rfc/rfc2812#section-3.2.4).
+Registration and `e_topic()` are in `source/commands.c`. Channel recognition and incoming change handling are in `source/parse.c`; numeric replies are in `source/numbers.c`. Topic recoding is in `source/recode.c`, and connection checks and outgoing formatting are in `source/server.c`. Conventional query, change, and clearing semantics are described in [RFC 2812, section 3.2.4](https://www.rfc-editor.org/rfc/rfc2812#section-3.2.4).

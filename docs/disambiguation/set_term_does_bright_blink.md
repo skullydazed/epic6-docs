@@ -32,6 +32,6 @@ This setting first appeared before EPIC4pre2.003.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): retained boolean registration, off default, and no callback.
-- [source/screen.c](../../source/screen.c): `term_attribute` sends blink and applies the unconditional ANSI background shift; escape parsing handles bright background colors. The remaining mention of this setting is a comment, not a value lookup.
-- [source/term.c](../../source/term.c): `term_sgr` and background-color helpers emit terminal capability sequences.
+- `source/vars.c` and `include/config.h`: retained boolean registration, off default, and no callback.
+- `source/screen.c`: `term_attribute` sends blink and applies the unconditional ANSI background shift; escape parsing handles bright background colors. The remaining mention of this setting is a comment, not a value lookup.
+- `source/term.c`: `term_sgr` and background-color helpers emit terminal capability sequences.

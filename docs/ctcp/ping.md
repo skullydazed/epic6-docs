@@ -16,7 +16,7 @@ A supporting recipient echoes the supplied arguments in a CTCP reply. The reques
 
 ## EPIC6 behavior
 
-The C `/ping` command constructs the timestamp and invokes the generic CTCP sender. Automatic replies and elapsed-time interpretation are supplied by [script/ctcp](../../script/ctcp), loaded by [script/builtins](../../script/builtins). A setup that does not load it needs `/load ctcp` for those handlers.
+The C `/ping` command constructs the timestamp and invokes the generic CTCP sender. Automatic replies and elapsed-time interpretation are supplied by [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), loaded by [`script/builtins`](../scripts/builtins.md). A setup that does not load it needs `/load ctcp` for those handlers.
 
 The supplied request handler echoes the argument text without interpreting it. Its reply handler subtracts the first two returned timestamp fields from the current time, borrowing one second when needed, and substitutes `<elapsed> seconds` for the reply arguments. It temporarily enables floating-point arithmetic for this calculation and restores the prior setting afterward.
 
@@ -40,8 +40,8 @@ For a script that needs the underlying request explicitly:
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `pingcmd` constructs the timestamp and calls `ctcpcmd`.
-- [script/ctcp](../../script/ctcp): request echoing, `do_ping_reply`, response registration, and argument replacement.
-- [script/builtins](../../script/builtins): loads the CTCP script.
-- [source/functions.c](../../source/functions.c): `function_utime` returns seconds and microseconds.
-- [source/ctcp.c](../../source/ctcp.c): sending, reply dispatch, argument replacement, hooks, and throttling.
+- `source/commands.c`: `pingcmd` constructs the timestamp and calls `ctcpcmd`.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages): request echoing, `do_ping_reply`, response registration, and argument replacement.
+- [`script/builtins`](../scripts/builtins.md): loads the CTCP script.
+- `source/functions.c`: `function_utime` returns seconds and microseconds.
+- `source/ctcp.c`: sending, reply dispatch, argument replacement, hooks, and throttling.

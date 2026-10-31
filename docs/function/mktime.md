@@ -42,4 +42,4 @@ If the process timezone is UTC, `$mktime(70 0 1 0 0 0 0)` returns `0`. In anothe
 
 This function first appeared in EPIC5 0.0.3.
 
-Registration and `function_mktime()`: [source/functions.c](../../source/functions.c). Integer argument conversion: [include/functions.h](../../include/functions.h).
+Registration and `function_mktime()`: `source/functions.c`. Integer argument conversion: `include/functions.h`.

@@ -30,4 +30,4 @@ This has the same requested user-mode effect as `/mode your-nickname -o`. See [`
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for the `deop` registration and handler, [source/server.c](../../source/server.c) for nickname lookup and sending, and [source/parse.c](../../source/parse.c) for server MODE processing and user-mode updates.
+See `source/commands.c` for the `deop` registration and handler, `source/server.c` for nickname lookup and sending, and `source/parse.c` for server MODE processing and user-mode updates.

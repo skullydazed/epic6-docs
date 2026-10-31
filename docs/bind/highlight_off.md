@@ -32,8 +32,8 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default Control-O binding.
-- [include/irc.h](../../include/irc.h): `ALL_OFF` definition.
-- [source/input.c](../../source/input.c): `highlight_off` and `input_add_character`.
-- [source/screen.c](../../source/screen.c): `ALL_OFF` processing, `zero_attribute`, ANSI parsing, and `all_off` stripping.
-- [source/term.c](../../source/term.c): reverse control-character display in the input line.
+- `source/keys.c`: action registration and default Control-O binding.
+- `include/irc.h`: `ALL_OFF` definition.
+- `source/input.c`: `highlight_off` and `input_add_character`.
+- `source/screen.c`: `ALL_OFF` processing, `zero_attribute`, ANSI parsing, and `all_off` stripping.
+- `source/term.c`: reverse control-character display in the input line.

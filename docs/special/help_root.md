@@ -937,11 +937,11 @@ Historical entries are collected in [removed in EPIC6](removed_in_epic6.md) and 
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `irc_command` registration.
-- [source/functions.c](../../source/functions.c): `built_in_functions` registration and disabled raw-connection stubs.
-- [source/vars.c](../../source/vars.c): `init_variables_stage1()` registration, rather than retained identifiers alone.
-- [source/hook.c](../../source/hook.c): `hook_function_templates`.
-- [source/keys.c](../../source/keys.c): `init_binds()` and the special NOTHING selector.
-- [source/window.c](../../source/window.c): `windowcmd_options`.
-- [script](../../script): retained files and explicit alias/addset definitions; generated definitions and dependencies require the individual script reference.
-- [KNOWNBUGS](../../KNOWNBUGS) and [UPDATES](../../UPDATES): retired facilities and interface changes.
+- `source/commands.c`: `irc_command` registration.
+- `source/functions.c`: `built_in_functions` registration and disabled raw-connection stubs.
+- `source/vars.c`: `init_variables_stage1()` registration, rather than retained identifiers alone.
+- `source/hook.c`: `hook_function_templates`.
+- `source/keys.c`: `init_binds()` and the special NOTHING selector.
+- `source/window.c`: `windowcmd_options`.
+- `script`: retained files and explicit alias/addset definitions; generated definitions and dependencies require the individual script reference.
+- [KNOWNBUGS](../KNOWNBUGS.md) and [UPDATES](../UPDATES.md): retired facilities and interface changes.

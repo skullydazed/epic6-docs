@@ -35,8 +35,8 @@ Written by Dawid Kuroczko; the source is marked 1997.
 
 ## Source references
 
-- [script/man](../../script/man): section order, filename patterns, and old `help` calls.
-- [script/help.irc](../../script/help.irc): later incompatible help wrapper.
-- [source/vars.c](../../source/vars.c) and [source/commands.c](../../source/commands.c): current registrations omit the old help-path setting and built-in help command.
-- [source/functions.c](../../source/functions.c): file globbing and the empty-returning `connect` placeholder.
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of the old help-file support.
+- `script/man`: section order, filename patterns, and old `help` calls.
+- [`script/help.irc`](scripts_help.md): later incompatible help wrapper.
+- `source/vars.c` and `source/commands.c`: current registrations omit the old help-path setting and built-in help command.
+- `source/functions.c`: file globbing and the empty-returning `connect` placeholder.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of the old help-file support.

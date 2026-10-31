@@ -43,6 +43,6 @@ An applicable outer field can then supply `Server: example`. To show it even wit
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, status rebuild callback, and default wrapper.
-- [source/status.c](../../source/status.c): mapped server fields, `status_server` selection and direct fallbacks, separate state/network fields, and wrapper compilation.
-- [source/server.c](../../source/server.c): aliases, configured and reported names, and server-group accessors.
+- `source/vars.c` and `include/config.h`: registration, status rebuild callback, and default wrapper.
+- `source/status.c`: mapped server fields, `status_server` selection and direct fallbacks, separate state/network fields, and wrapper compilation.
+- `source/server.c`: aliases, configured and reported names, and server-group accessors.

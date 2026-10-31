@@ -53,7 +53,7 @@ Disable inbound mangling:
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): unset default and `set_mangle_inbound` callback.
-- [source/parse.c](../../source/parse.c): `parse_server` runs the raw hook, applies inbound mangling, and then parses the line.
-- [source/server.c](../../source/server.c): incoming encoding conversion and parser dispatch.
-- [source/screen.c](../../source/screen.c): `parse_mangle` and `new_normalize_string` implement the rules and control-character handling.
+- `source/vars.c`: unset default and `set_mangle_inbound` callback.
+- `source/parse.c`: `parse_server` runs the raw hook, applies inbound mangling, and then parses the line.
+- `source/server.c`: incoming encoding conversion and parser dispatch.
+- `source/screen.c`: `parse_mangle` and `new_normalize_string` implement the rules and control-character handling.

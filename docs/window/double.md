@@ -34,5 +34,5 @@ Enable two status lines in the current window, toggle window 3's setting, then i
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_double`, `get_boolean`, window initialization, and position recalculation implement the setting, reports, and output-height adjustment.
-- [source/status.c](../../source/status.c): `compile_status` selects default formats, while `make_status` chooses the single or double format slots.
+- `source/window.c`: `windowcmd_double`, `get_boolean`, window initialization, and position recalculation implement the setting, reports, and output-height adjustment.
+- `source/status.c`: `compile_status` selects default formats, while `make_status` chooses the single or double format slots.

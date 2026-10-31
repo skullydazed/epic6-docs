@@ -35,6 +35,6 @@ For target `alice`, this supplies `Querying alice` where the outer format includ
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and default wrapper.
-- [source/status.c](../../source/status.c): `%Q` mapping, wrapper compilation, `status_query_nick`, and shared escaping.
-- [source/window.c](../../source/window.c): `get_window_equery` returns the window's selected query target.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and default wrapper.
+- `source/status.c`: `%Q` mapping, wrapper compilation, `status_query_nick`, and shared escaping.
+- `source/window.c`: `get_window_equery` returns the window's selected query target.

@@ -28,6 +28,6 @@ See [bind](../command/bind.md) for key sequence syntax and [backspace](backspace
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration, default Control-D binding, and terminal `key_dc` binding.
-- [source/input.c](../../source/input.c): `input_delete_character`, `retokenize_input`, and the cursor-position macros define deletion boundaries and redraw the input line.
-- [source/ircaux.c](../../source/ircaux.c): `ov_strcpy2` shifts the remaining bytes left.
+- `source/keys.c`: action registration, default Control-D binding, and terminal `key_dc` binding.
+- `source/input.c`: `input_delete_character`, `retokenize_input`, and the cursor-position macros define deletion boundaries and redraw the input line.
+- `source/ircaux.c`: `ov_strcpy2` shifts the remaining bytes left.

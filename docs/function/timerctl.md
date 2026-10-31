@@ -68,4 +68,4 @@ First appeared in EPIC4-1.1.8.
 
 ## Source
 
-Wrapper: [`source/functions.c`](../../source/functions.c:7975). Interface: [`source/timer.c`](../../source/timer.c:1182). Queue lookup and execution: [`get_timer`](../../source/timer.c:632), [`ExecuteTimers`](../../source/timer.c:1075).
+Wrapper: `source/functions.c`. Interface: `source/timer.c`. Queue lookup and execution: `get_timer`, `ExecuteTimers`.

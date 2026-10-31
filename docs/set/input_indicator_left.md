@@ -23,5 +23,5 @@ On input refresh, EPIC expands dollar expressions in this string with empty argu
 
 ## Source references
 
-- [source/input.c](../../source/input.c): setting behavior.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, callback, and default.
+- `source/input.c`: setting behavior.
+- `source/vars.c` and `include/config.h`: registration, callback, and default.

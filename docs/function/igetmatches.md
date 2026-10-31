@@ -43,4 +43,4 @@ fe ($igetmatches(sample apple*)) sorted_index {
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). The `GET_MATCHES` wrapper, sorting, and array lookup: [source/array.c](../../source/array.c). Ordinary-word parsing: [include/words.h](../../include/words.h). Wildcard matching: [source/reg.c](../../source/reg.c).
+Registered in `source/functions.c`. The `GET_MATCHES` wrapper, sorting, and array lookup: `source/array.c`. Ordinary-word parsing: `include/words.h`. Wildcard matching: `source/reg.c`.

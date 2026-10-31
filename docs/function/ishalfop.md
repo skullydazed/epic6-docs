@@ -40,4 +40,4 @@ The first checks Alice on `#example`; the second checks your nickname on the cur
 
 ## Source
 
-Registered and implemented as `function_ishalfop` in [source/functions.c](../../source/functions.c). Channel lookup, `is_halfop`, membership-prefix handling, and mode updates are in [source/names.c](../../source/names.c).
+Registered and implemented as `function_ishalfop` in `source/functions.c`. Channel lookup, `is_halfop`, membership-prefix handling, and mode updates are in `source/names.c`.

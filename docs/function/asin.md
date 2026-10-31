@@ -31,4 +31,4 @@ The approximate examples describe the numeric value; the returned string may con
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `asin` and implements `function_asin` through the shared math-function and error-return macros. [include/functions.h](../../include/functions.h) defines argument conversion and formatting. The [C/POSIX arc sine specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/asin.html) defines radians, the domain, and library error reporting.
+`source/functions.c` registers `asin` and implements `function_asin` through the shared math-function and error-return macros. `include/functions.h` defines argument conversion and formatting. The [C/POSIX arc sine specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/asin.html) defines radians, the domain, and library error reporting.

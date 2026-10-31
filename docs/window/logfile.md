@@ -43,6 +43,6 @@ Log window 3 to `chat.log`, switch its active log to `archive.log`, or close it 
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_logfile` implements assignment, query reopen behavior, and the early-return unset branch; `new_window` and `windowcmd_log` define defaults, generated names, and logging-state reconciliation.
-- [source/log.c](../../source/log.c): `open_log`, `close_log`, and `do_log` implement append mode, markers, permissions, and open errors.
-- [source/ircaux.c](../../source/ircaux.c): `normalize_filename` implements pathname normalization.
+- `source/window.c`: `windowcmd_logfile` implements assignment, query reopen behavior, and the early-return unset branch; `new_window` and `windowcmd_log` define defaults, generated names, and logging-state reconciliation.
+- `source/log.c`: `open_log`, `close_log`, and `do_log` implement append mode, markers, permissions, and open errors.
+- `source/ircaux.c`: `normalize_filename` implements pathname normalization.

@@ -45,7 +45,7 @@ This operation first appeared in EPIC4-1.1.13.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_hold_slider`, `windowcmd_hold_mode`, and `unhold_a_window` implement the default, range, and percentage calculations; `window_scrollback_forwards` handles independent forward scrolling.
-- [source/input.c](../../source/input.c): `send_line` performs Enter's hold advancement.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): register `hold_slider` without a change callback and define its compiled default.
-- [source/ircaux.c](../../source/ircaux.c): `my_atol` implements numeric conversion.
+- `source/window.c`: `new_window`, `windowcmd_hold_slider`, `windowcmd_hold_mode`, and `unhold_a_window` implement the default, range, and percentage calculations; `window_scrollback_forwards` handles independent forward scrolling.
+- `source/input.c`: `send_line` performs Enter's hold advancement.
+- `source/vars.c` and `include/config.h`: register `hold_slider` without a change callback and define its compiled default.
+- `source/ircaux.c`: `my_atol` implements numeric conversion.

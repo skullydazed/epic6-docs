@@ -43,8 +43,8 @@ Other existing windows keep their current masks. To prevent future qualifying ac
 
 ## Source references
 
-- [source/lastlog.c](../../source/lastlog.c): `set_notify_mask` parses the default and updates the current window.
-- [source/window.c](../../source/window.c): new windows copy the default; per-window masks and notification flags are managed separately.
-- [source/screen.c](../../source/screen.c): hidden-window level matching, notification transition, hook, and activity message.
-- [source/levels.c](../../source/levels.c): mask syntax and diagnostics.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration and default all.
+- `source/lastlog.c`: `set_notify_mask` parses the default and updates the current window.
+- `source/window.c`: new windows copy the default; per-window masks and notification flags are managed separately.
+- `source/screen.c`: hidden-window level matching, notification transition, hook, and activity message.
+- `source/levels.c`: mask syntax and diagnostics.
+- `source/vars.c` and `include/config.h`: registration and default all.

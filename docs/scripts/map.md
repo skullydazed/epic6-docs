@@ -51,8 +51,8 @@ The earlier `imap` script by daemon provided client-side topology mapping and ar
 
 ## Source references
 
-- [script/map](../../script/map): advertised-MAP branch, LINKS handlers, center selection, rendering, and cleanup.
-- [source/numbers.c](../../source/numbers.c): LINKS `364`/`365` processing and numeric-hook fields.
-- [source/commands.c](../../source/commands.c): LINKS and quoted protocol requests.
-- [source/hook.c](../../source/hook.c): numeric matching, suppression, and handler replacement.
-- [script/builtins](../../script/builtins): encoding and server-context wrappers.
+- `script/map`: advertised-MAP branch, LINKS handlers, center selection, rendering, and cleanup.
+- `source/numbers.c`: LINKS `364`/`365` processing and numeric-hook fields.
+- `source/commands.c`: LINKS and quoted protocol requests.
+- `source/hook.c`: numeric matching, suppression, and handler replacement.
+- [`script/builtins`](builtins.md): encoding and server-context wrappers.

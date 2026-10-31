@@ -110,4 +110,4 @@ The `alias` command first appeared in ircII.
 
 ## Source
 
-See [source/alias.c](../../source/alias.c): `aliascmd()`, `add_cmd_alias()`, `delete_cmd_alias()`, `list_cmd_alias()`, `parse_arglist()`, `prepare_alias_call()`, and the command/function lookup helpers. [source/commands.c](../../source/commands.c) implements command dispatch, alias scopes, function return initialization, and `return`; [source/functions.c](../../source/functions.c) implements function dispatch and colon prefixes. [source/ircaux.c](../../source/ircaux.c) implements name canonicalization in `remove_brackets()`.
+See `source/alias.c`: `aliascmd()`, `add_cmd_alias()`, `delete_cmd_alias()`, `list_cmd_alias()`, `parse_arglist()`, `prepare_alias_call()`, and the command/function lookup helpers. `source/commands.c` implements command dispatch, alias scopes, function return initialization, and `return`; `source/functions.c` implements function dispatch and colon prefixes. `source/ircaux.c` implements name canonicalization in `remove_brackets()`.

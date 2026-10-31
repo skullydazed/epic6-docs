@@ -36,6 +36,6 @@ Give the current window refnum 5, exchange window 3 with window 7 if 7 is occupi
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_number` exchanges user refnums and updates their lookup slots; `INTERNAL_REFNUM_CUTOVER` defines the exclusive upper boundary. `windowcmd_next` and `windowcmd_previous` use user refnums for hidden-window ordering.
-- [source/ircaux.c](../../source/ircaux.c): `my_atol` performs base-aware numeric-prefix conversion.
-- [source/status.c](../../source/status.c): `status_refnum` and `status_refnum_real` implement `%R` and `%{1}R`.
+- `source/window.c`: `windowcmd_number` exchanges user refnums and updates their lookup slots; `INTERNAL_REFNUM_CUTOVER` defines the exclusive upper boundary. `windowcmd_next` and `windowcmd_previous` use user refnums for hidden-window ordering.
+- `source/ircaux.c`: `my_atol` performs base-aware numeric-prefix conversion.
+- `source/status.c`: `status_refnum` and `status_refnum_real` implement `%R` and `%{1}R`.

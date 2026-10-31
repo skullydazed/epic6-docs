@@ -53,4 +53,4 @@ With `xdebug dword` enabled, `$match("*two words*" one "two words" three)` retur
 
 This function first appeared in ircII 2.1.5.
 
-Registration and `function_match()`: [source/functions.c](../../source/functions.c). Wildcard matching and scoring: [source/reg.c](../../source/reg.c). Function word parsing: [include/words.h](../../include/words.h) and [source/ircaux.c](../../source/ircaux.c). The `=~` operator: [source/expr2.c](../../source/expr2.c).
+Registration and `function_match()`: `source/functions.c`. Wildcard matching and scoring: `source/reg.c`. Function word parsing: `include/words.h` and `source/ircaux.c`. The `=~` operator: `source/expr2.c`.

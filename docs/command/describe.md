@@ -55,4 +55,4 @@ Recipients may see something like:
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for `describe()`, `mecmd()`, and `send_text()`. [source/ctcp.c](../../source/ctcp.c) implements framing and outgoing hooks in `send_ctcp()`, and default incoming action display in `do_atmosphere()`.
+See `source/commands.c` for `describe()`, `mecmd()`, and `send_text()`. `source/ctcp.c` implements framing and outgoing hooks in `send_ctcp()`, and default incoming action display in `do_atmosphere()`.

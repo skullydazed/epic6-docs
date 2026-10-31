@@ -30,4 +30,4 @@ Resolution follows `/home` to `/usr/home`, then `..` to `/usr`, then `local` to 
 
 ## Source
 
-Registration and `function_realpath()`: [source/functions.c](../../source/functions.c). `normalize_filename()` and `expand_twiddle()`: [source/ircaux.c](../../source/ircaux.c).
+Registration and `function_realpath()`: `source/functions.c`. `normalize_filename()` and `expand_twiddle()`: `source/ircaux.c`.

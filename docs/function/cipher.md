@@ -33,4 +33,4 @@ The `$cipher()` function first appeared in EPIC4-1.1.3.
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). Server connection lookup is in [source/server.c](../../source/server.c), and the OpenSSL query is in [source/ssl.c](../../source/ssl.c). The OpenSSL build requirement is in [configure.ac](../../configure.ac).
+Registered and implemented in `source/functions.c`. Server connection lookup is in `source/server.c`, and the OpenSSL query is in `source/ssl.c`. The OpenSSL build requirement is in `configure.ac`.

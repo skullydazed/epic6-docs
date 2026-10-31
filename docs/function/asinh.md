@@ -33,4 +33,4 @@ The approximate examples describe the numeric value; the returned string may con
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `asinh` and implements `function_asinh` through the shared math-function and error-return macros. [include/functions.h](../../include/functions.h) defines argument conversion and formatting. The [C/POSIX inverse hyperbolic sine specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/asinh.html) defines library results and error reporting.
+`source/functions.c` registers `asinh` and implements `function_asinh` through the shared math-function and error-return macros. `include/functions.h` defines argument conversion and formatting. The [C/POSIX inverse hyperbolic sine specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/asinh.html) defines library results and error reporting.

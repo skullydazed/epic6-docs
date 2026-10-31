@@ -30,5 +30,5 @@ See [bind](../command/bind.md) for key sequence syntax, [swap_next_window](swap_
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default key assignments.
-- [source/window.c](../../source/window.c): `swap_last_window`, `add_to_invisible_list`, and `swap_window` implement selection, swappability checks, screen placement, focus transfer, and redraws.
+- `source/keys.c`: action registration and default key assignments.
+- `source/window.c`: `swap_last_window`, `add_to_invisible_list`, and `swap_window` implement selection, swappability checks, screen placement, focus transfer, and redraws.

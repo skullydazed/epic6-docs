@@ -69,4 +69,4 @@ The first returns the user `join` body, if any. The second replaces it with `//c
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `aliasctl` and delegates to `aliasctl()` in [source/alias.c](../../source/alias.c), which implements scope lookup, setters, stubs, and match operations. [include/words.h](../../include/words.h) defines function argument parsing, and [source/reg.c](../../source/reg.c) implements wildcard matching.
+`source/functions.c` registers `aliasctl` and delegates to `aliasctl()` in `source/alias.c`, which implements scope lookup, setters, stubs, and match operations. `include/words.h` defines function argument parsing, and `source/reg.c` implements wildcard matching.

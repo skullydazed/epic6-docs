@@ -37,4 +37,4 @@ These request all visible services, then only those whose names match `*help*`, 
 
 ## Source
 
-Registration and the shared `send_comm()` implementation are in [source/commands.c](../../source/commands.c). Server selection and outgoing handling are in [source/server.c](../../source/server.c). Generic reply display and hooks are in [source/numbers.c](../../source/numbers.c). The conventional service-query parameters and replies are described in [RFC 2812, section 3.5.1](https://www.rfc-editor.org/rfc/rfc2812#section-3.5.1); actual server behavior can differ.
+Registration and the shared `send_comm()` implementation are in `source/commands.c`. Server selection and outgoing handling are in `source/server.c`. Generic reply display and hooks are in `source/numbers.c`. The conventional service-query parameters and replies are described in [RFC 2812, section 3.5.1](https://www.rfc-editor.org/rfc/rfc2812#section-3.5.1); actual server behavior can differ.

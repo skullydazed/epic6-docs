@@ -34,4 +34,4 @@ $twiddle(blah)             Returns blah.
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:5343). Expansion: [`expand_twiddle`](../../source/ircaux.c:1819). Stored home initialization: [`source/irc.c`](../../source/irc.c:632). Path buffer: [`include/irc_std.h`](../../include/irc_std.h:206).
+Handler: `source/functions.c`. Expansion: `expand_twiddle`. Stored home initialization: `source/irc.c`. Path buffer: `include/irc_std.h`.

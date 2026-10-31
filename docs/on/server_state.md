@@ -36,5 +36,5 @@ on -server_state "*" {
 
 ## Source references
 
-- [source/server.c](../../source/server.c): `set_server_state` assigns state and invokes both hooks; `server_states` defines names.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/server.c`: `set_server_state` assigns state and invokes both hooks; `server_states` defines names.
+- `source/hook.c`: event registration and standard hook dispatch.

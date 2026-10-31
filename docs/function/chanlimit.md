@@ -41,4 +41,4 @@ If EPIC has cached limits of 25 for `#example` and zero for `#other`, the second
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `chanlimit` and implements its channel loop in `function_channellimit()`. [source/names.c](../../source/names.c) implements `get_channel_limit()`, default channel/server lookup, and mode-limit cache updates. [include/words.h](../../include/words.h) defines argument word parsing.
+`source/functions.c` registers `chanlimit` and implements its channel loop in `function_channellimit()`. `source/names.c` implements `get_channel_limit()`, default channel/server lookup, and mode-limit cache updates. `include/words.h` defines argument word parsing.

@@ -45,4 +45,4 @@ This operation first appeared in EPIC4-1.2.5.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_scrolladj`, and `get_boolean` implement defaults and reports; `resize_window_display` applies growth adjustment and mandatory view fitting; `restore_window_positions` and `unclear_window` implement rebuild fitting and the clear boundary.
+- `source/window.c`: `new_window`, `windowcmd_scrolladj`, and `get_boolean` implement defaults and reports; `resize_window_display` applies growth adjustment and mandatory view fitting; `restore_window_positions` and `unclear_window` implement rebuild fitting and the clear boundary.

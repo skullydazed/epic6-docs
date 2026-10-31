@@ -45,4 +45,4 @@ Given this array:
 | `$rmatchitem(masks apple)` | `-2` |
 | `$rmatchitem()` | `-1` |
 
-Registration: [source/functions.c](../../source/functions.c). The active `MATCHITEM` wrapper and array lookup: [source/array.c](../../source/array.c). Wildcard matching and scores: [source/reg.c](../../source/reg.c). Ordinary-word parsing: [include/words.h](../../include/words.h).
+Registration: `source/functions.c`. The active `MATCHITEM` wrapper and array lookup: `source/array.c`. Wildcard matching and scores: `source/reg.c`. Ordinary-word parsing: `include/words.h`.

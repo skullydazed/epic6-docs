@@ -48,6 +48,6 @@ Use [window](../command/window.md) for window selection syntax and [window add](
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_channel` parses lists and invitation shortcuts, records waiting channels, and sends join requests; `get_window_target` gives queries precedence.
-- [source/names.c](../../source/names.c): `move_channel_to_window`, `set_channel_window`, and channel creation implement association, current-channel selection, hooks, and pending-window claims.
-- [source/screen.c](../../source/screen.c): channel output routing uses the channel's associated window.
+- `source/window.c`: `windowcmd_channel` parses lists and invitation shortcuts, records waiting channels, and sends join requests; `get_window_target` gives queries precedence.
+- `source/names.c`: `move_channel_to_window`, `set_channel_window`, and channel creation implement association, current-channel selection, hooks, and pending-window claims.
+- `source/screen.c`: channel output routing uses the channel's associated window.

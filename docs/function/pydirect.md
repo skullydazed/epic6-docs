@@ -40,4 +40,4 @@ After initializing the interpreter with `/python pass`:
 
 ## Source
 
-Conditional registration and `function_pydirect()`: [source/functions.c](../../source/functions.c). `call_python_directly()`, initialization, and exception reporting: [source/python.c](../../source/python.c). Build configuration: [configure.ac](../../configure.ac).
+Conditional registration and `function_pydirect()`: `source/functions.c`. `call_python_directly()`, initialization, and exception reporting: `source/python.c`. Build configuration: `configure.ac`.

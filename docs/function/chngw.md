@@ -41,4 +41,4 @@ This function first appeared in “plus-2” (post-ircII, pre-EPIC).
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `chngw` and implements `function_chngw()`. [include/functions.h](../../include/functions.h) defines index and argument parsing; [include/words.h](../../include/words.h) and [source/words.c](../../source/words.c) implement word extraction. [source/ircaux.c](../../source/ircaux.c) implements optional replacement quoting and list concatenation.
+`source/functions.c` registers `chngw` and implements `function_chngw()`. `include/functions.h` defines index and argument parsing; `include/words.h` and `source/words.c` implement word extraction. `source/ircaux.c` implements optional replacement quoting and list concatenation.

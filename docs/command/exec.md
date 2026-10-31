@@ -86,4 +86,4 @@ The `reader` example starts a program that copies input to output, sends it one 
 
 See [wait](wait.md), [on](on.md), [query](query.md), and [window](window.md).
 
-The registration is in [source/commands.c](../../source/commands.c); parsing, subprocess management, callbacks, and output handling are in [source/exec.c](../../source/exec.c). Settings are registered in [source/vars.c](../../source/vars.c), with defaults in [include/config.h](../../include/config.h). Allocation initialization and direct-command argument parsing are in [source/ircaux.c](../../source/ircaux.c).
+The registration is in `source/commands.c`; parsing, subprocess management, callbacks, and output handling are in `source/exec.c`. Settings are registered in `source/vars.c`, with defaults in `include/config.h`. Allocation initialization and direct-command argument parsing are in `source/ircaux.c`.

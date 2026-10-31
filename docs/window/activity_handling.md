@@ -87,8 +87,8 @@ The comparison preserves the **highest selected numeric level**, rather than rep
 
 Per-window activity levels first appeared in **EPIC5-0.0.6**. Repository commit `c45703a3` introduced them on August 7, 2005, during the preceding development tree.
 
-- [source/window.c](../../source/window.c): 11-slot storage, defaults, fallback getters, WINDOWCTL GET/SET range checks, update requests, and activity resets.
-- [source/status.c](../../source/status.c): `%E` registration and per-window rendering, result-buffer size, and independent `%F` collection.
-- [source/screen.c](../../source/screen.c): hidden-output notification flags and separate activity messages.
-- [source/functions.c](../../source/functions.c), [source/hook.c](../../source/hook.c), and [source/parse.c](../../source/parse.c): WINCHAN registration/lookup and the referenced event arguments/dispatch.
-- [script/activity](../../script/activity): explicit aggregate list and separate `%E` configuration.
+- `source/window.c`: 11-slot storage, defaults, fallback getters, WINDOWCTL GET/SET range checks, update requests, and activity resets.
+- `source/status.c`: `%E` registration and per-window rendering, result-buffer size, and independent `%F` collection.
+- `source/screen.c`: hidden-output notification flags and separate activity messages.
+- `source/functions.c`, `source/hook.c`, and `source/parse.c`: WINCHAN registration/lookup and the referenced event arguments/dispatch.
+- [`script/activity`](../scripts/activity.md): explicit aggregate list and separate `%E` configuration.

@@ -47,4 +47,4 @@ Consult your server's supported `LIST` syntax before supplying filters or wildca
 
 ## Source
 
-Registration and the shared `send_comm` handler are in [source/commands.c](../../source/commands.c); there is no special `list` branch. Server selection and transmission are in [source/server.c](../../source/server.c). Reply hooks and formatting are in [source/numbers.c](../../source/numbers.c), with `channel_name_width` registered in [source/vars.c](../../source/vars.c) and its default in [include/config.h](../../include/config.h).
+Registration and the shared `send_comm` handler are in `source/commands.c`; there is no special `list` branch. Server selection and transmission are in `source/server.c`. Reply hooks and formatting are in `source/numbers.c`, with `channel_name_width` registered in `source/vars.c` and its default in `include/config.h`.

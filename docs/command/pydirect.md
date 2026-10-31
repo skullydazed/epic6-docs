@@ -41,4 +41,4 @@ The callable receives `Hello from Python` as one string. The `_epic.echo` implem
 
 ## Source
 
-Conditional registration is in [source/commands.c](../../source/commands.c). `pydirect_cmd`, `call_python_directly`, interpreter initialization, exception reporting, and `_epic.echo` are in [source/python.c](../../source/python.c). Python detection and build options are in [configure.ac](../../configure.ac).
+Conditional registration is in `source/commands.c`. `pydirect_cmd`, `call_python_directly`, interpreter initialization, exception reporting, and `_epic.echo` are in `source/python.c`. Python detection and build options are in `configure.ac`.

@@ -37,7 +37,7 @@ An outer `%F` can then supply `Active: 2,4`. Use `%{1}F` in the outer format to 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, status rebuild callback, and default wrapper.
-- [source/status.c](../../source/status.c): `status_notify_windows` gathers flagged windows, chooses names or refnums, and applies wrapper and visibility rules.
-- [source/screen.c](../../source/screen.c): hidden-window activity marks notification state.
-- [source/window.c](../../source/window.c): notified flags, explicit controls, and clearing during window operations.
+- `source/vars.c` and `include/config.h`: registration, status rebuild callback, and default wrapper.
+- `source/status.c`: `status_notify_windows` gathers flagged windows, chooses names or refnums, and applies wrapper and visibility rules.
+- `source/screen.c`: hidden-window activity marks notification state.
+- `source/window.c`: notified flags, explicit controls, and clearing during window operations.

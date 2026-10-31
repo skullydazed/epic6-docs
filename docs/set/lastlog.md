@@ -40,7 +40,7 @@ This updates existing windows as well as the default for later ones. Query the r
 
 ## Source references
 
-- [source/lastlog.c](../../source/lastlog.c): `set_lastlog_size` applies, trims, and then enforces minimums; `add_to_lastlog` marks counted records; `trim_lastlog` removes oldest records until counted size fits.
-- [source/window.c](../../source/window.c): `new_window` copies the global limit; per-window accessors maintain limits and sizes.
-- [source/vars.c](../../source/vars.c): integer registration and validation.
-- [include/config.h](../../include/config.h): compiled default 256.
+- `source/lastlog.c`: `set_lastlog_size` applies, trims, and then enforces minimums; `add_to_lastlog` marks counted records; `trim_lastlog` removes oldest records until counted size fits.
+- `source/window.c`: `new_window` copies the global limit; per-window accessors maintain limits and sizes.
+- `source/vars.c`: integer registration and validation.
+- `include/config.h`: compiled default 256.

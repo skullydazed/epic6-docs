@@ -38,4 +38,4 @@ This function was added in EPIC4-1.1.6.
 
 ## Source
 
-Registered and implemented as `function_killpid` in [source/functions.c](../../source/functions.c). Signal-name tables, numeric classification, and conversion are in [source/ircaux.c](../../source/ircaux.c); `MY_SIG_MAX` is defined in [include/irc_std.h](../../include/irc_std.h).
+Registered and implemented as `function_killpid` in `source/functions.c`. Signal-name tables, numeric classification, and conversion are in `source/ircaux.c`; `MY_SIG_MAX` is defined in `include/irc_std.h`.

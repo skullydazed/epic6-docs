@@ -110,4 +110,4 @@ Most setters return `1`. Setters for `ssl`, `tls`, `unique_id`, `userhost`, `ver
 | `$serverctl(set 1 ssl IRC-SSL)` | Configure TLS for server 1's next connection; returns empty |
 | `$serverctl(get -1 005 CHANTYPES)` | Current execution server's cached channel prefixes |
 
-Implementation, dispatch, lookup, setters, and state table: [source/server.c](../../source/server.c). Registration and wrapper: [source/functions.c](../../source/functions.c). TLS metadata: [source/ssl.c](../../source/ssl.c). Queue handling: [source/who.c](../../source/who.c). CAP negotiation: [source/parse.c](../../source/parse.c).
+Implementation, dispatch, lookup, setters, and state table: `source/server.c`. Registration and wrapper: `source/functions.c`. TLS metadata: `source/ssl.c`. Queue handling: `source/who.c`. CAP negotiation: `source/parse.c`.

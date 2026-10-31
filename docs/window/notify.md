@@ -38,7 +38,7 @@ Enable activity messages for window 3, limit qualifying output to private messag
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_notify`, and `get_boolean` implement the default, arguments, and reports; `add_to_window_list` and `swap_window` reset the notified flag when showing a window.
-- [source/screen.c](../../source/screen.c): `add_to_window` implements hidden-output matching, flag transitions, hooks, and activity/beep messages.
-- [source/status.c](../../source/status.c): `status_notify_windows` tests the notified flag independently of this setting.
-- [source/commands.c](../../source/commands.c): `xechocmd` implements `xecho -f` notification suppression.
+- `source/window.c`: `new_window`, `windowcmd_notify`, and `get_boolean` implement the default, arguments, and reports; `add_to_window_list` and `swap_window` reset the notified flag when showing a window.
+- `source/screen.c`: `add_to_window` implements hidden-output matching, flag transitions, hooks, and activity/beep messages.
+- `source/status.c`: `status_notify_windows` tests the notified flag independently of this setting.
+- `source/commands.c`: `xechocmd` implements `xecho -f` notification suppression.

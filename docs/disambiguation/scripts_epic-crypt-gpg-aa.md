@@ -24,6 +24,6 @@ This helper first appeared in EPIC4-1.1.3. External encryption was retired durin
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of external encryption, `$crypt()`, `$encryptparm()`, and `/crypt` support.
-- [source/commands.c](../../source/commands.c) and [source/functions.c](../../source/functions.c): current command and function registrations omit the former encryption interfaces.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of external encryption, `$crypt()`, `$encryptparm()`, and `/crypt` support.
+- `source/commands.c` and `source/functions.c`: current command and function registrations omit the former encryption interfaces.
 - Repository history: `script/epic-crypt-gpg-aa` in the parent of commit `32f485a5` contains the removed Bash helper, armor conversion, and input protocol; the file is absent from the current tree.

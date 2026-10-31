@@ -77,4 +77,4 @@ This function first appeared in EPIC4-1.1.8. `activity` and `refnums` first appe
 
 ## Source
 
-Registered and forwarded by `function_logctl` in [source/functions.c](../../source/functions.c). Operations, setters, targets, and matching are in [source/logfiles.c](../../source/logfiles.c); file opening, rewriting, and `current_log_refnum` are in [source/log.c](../../source/log.c).
+Registered and forwarded by `function_logctl` in `source/functions.c`. Operations, setters, targets, and matching are in `source/logfiles.c`; file opening, rewriting, and `current_log_refnum` are in `source/log.c`.

@@ -82,4 +82,4 @@ The `assign` command first appeared in ircII.
 
 ## Source
 
-See [source/alias.c](../../source/alias.c): `assigncmd()`, `add_var_alias()`, `add_local_alias()`, `find_local_alias()`, `list_var_alias()`, and `delete_var_alias()`. [source/ircaux.c](../../source/ircaux.c) implements name canonicalization and validation in `remove_brackets()` and `after_expando()`. [source/commands.c](../../source/commands.c) implements expansion before command dispatch.
+See `source/alias.c`: `assigncmd()`, `add_var_alias()`, `add_local_alias()`, `find_local_alias()`, `list_var_alias()`, and `delete_var_alias()`. `source/ircaux.c` implements name canonicalization and validation in `remove_brackets()` and `after_expando()`. `source/commands.c` implements expansion before command dispatch.

@@ -65,7 +65,7 @@ In EPIC5 2.1.4, the operation targeted only the current/selected window, leaving
 ## Source references
 
 - Tag `epic5-2.1.4`, `source/irc.c` and `UPDATES`: release identity and dated announcements; Git commit `15341b23` records the date correction.
-- [source/timer.c](../../source/timer.c), [source/commands.c](../../source/commands.c), and [source/alias.c](../../source/alias.c): load package context, timer metadata, and unload integration.
-- [source/input.c](../../source/input.c) and [source/functions.c](../../source/functions.c): CUTBUFFER operations and `$U`.
-- [source/hook.c](../../source/hook.c) and [source/server.c](../../source/server.c): both state hooks and STATUS/STATE property compatibility.
-- [source/window.c](../../source/window.c): UNCLEAR registration and DELETE_KILL's direct deletion path.
+- `source/timer.c`, `source/commands.c`, and `source/alias.c`: load package context, timer metadata, and unload integration.
+- `source/input.c` and `source/functions.c`: CUTBUFFER operations and `$U`.
+- `source/hook.c` and `source/server.c`: both state hooks and STATUS/STATE property compatibility.
+- `source/window.c`: UNCLEAR registration and DELETE_KILL's direct deletion path.

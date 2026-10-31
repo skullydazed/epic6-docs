@@ -44,6 +44,6 @@ on ^connect * (ourname, port, itsname) {
 
 ## Source references
 
-- [source/numbers.c](../../source/numbers.c): numeric `001` invokes `server_is_registered` before the numeric's normal display processing.
-- [source/server.c](../../source/server.c): `server_is_registered` updates connection state and invokes `connect`; `server_register` invokes the earlier `server_established` hook; `get_server_name` and `get_server_port` provide configured connection values.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard hook matching and suppression.
+- `source/numbers.c`: numeric `001` invokes `server_is_registered` before the numeric's normal display processing.
+- `source/server.c`: `server_is_registered` updates connection state and invokes `connect`; `server_register` invokes the earlier `server_established` hook; `get_server_name` and `get_server_port` provide configured connection values.
+- `source/hook.c`: event registration and `do_hook` implement standard hook matching and suppression.

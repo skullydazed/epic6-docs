@@ -66,9 +66,9 @@ EPIC6 stores channel associations and query target lists separately and applies 
 
 ## Source references
 
-- [source/window.c](../../source/window.c): target ownership, query counters, current/effective target getters, QUERY/ADD/REMOVE registration and behavior, QUERY_NICK, window descriptions, and log filename construction.
-- [source/screen.c](../../source/screen.c): explicit-destination priority, channel routing, per-server nickname claims, and level-based fallbacks.
-- [source/functions.c](../../source/functions.c): QUERYWIN/WINDOWCTL registration, current-query lookup, and `$Q`/`$T` expando implementation.
-- [source/status.c](../../source/status.c): `%Q` registration and STATUS_QUERY formatting.
-- [source/commands.c](../../source/commands.c): SEND/SAY/ME registration, default-target selection, and ordinary interactive input.
-- [source/exec.c](../../source/exec.c): EXEC -OUT stores the selected target for process redirection.
+- `source/window.c`: target ownership, query counters, current/effective target getters, QUERY/ADD/REMOVE registration and behavior, QUERY_NICK, window descriptions, and log filename construction.
+- `source/screen.c`: explicit-destination priority, channel routing, per-server nickname claims, and level-based fallbacks.
+- `source/functions.c`: QUERYWIN/WINDOWCTL registration, current-query lookup, and `$Q`/`$T` expando implementation.
+- `source/status.c`: `%Q` registration and STATUS_QUERY formatting.
+- `source/commands.c`: SEND/SAY/ME registration, default-target selection, and ordinary interactive input.
+- `source/exec.c`: EXEC -OUT stores the selected target for process redirection.

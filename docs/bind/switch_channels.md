@@ -34,7 +34,7 @@ See [bind](../command/bind.md) for key sequence syntax and [switch_query](switch
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default Control-X binding.
-- [source/names.c](../../source/names.c): `switch_channels` selects candidates by `curr_count`; `set_channel_window` changes association, records selection order, and invokes the switch hook.
-- [source/window.c](../../source/window.c): `get_window_target` chooses a query before a channel.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): setting registration and default for `switch_channels_between_windows`.
+- `source/keys.c`: action registration and default Control-X binding.
+- `source/names.c`: `switch_channels` selects candidates by `curr_count`; `set_channel_window` changes association, records selection order, and invokes the switch hook.
+- `source/window.c`: `get_window_target` chooses a query before a channel.
+- `source/vars.c` and `include/config.h`: setting registration and default for `switch_channels_between_windows`.

@@ -36,4 +36,4 @@ Reads are synchronous and can block while waiting for a pipe or other stream. No
 
 ## Source
 
-Registration and `function_read()`: [source/functions.c](../../source/functions.c). `file_read()`, `file_readb()`, handle lookup, and recoding: [source/files.c](../../source/files.c). Ordinary and archive stream wrappers: [source/elf.c](../../source/elf.c).
+Registration and `function_read()`: `source/functions.c`. `file_read()`, `file_readb()`, handle lookup, and recoding: `source/files.c`. Ordinary and archive stream wrappers: `source/elf.c`.

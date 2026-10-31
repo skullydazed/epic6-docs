@@ -41,4 +41,4 @@ Use valid UTF-8 text. The preliminary quick code-point count and forward/backwar
 
 ## Source
 
-Registration and `function_rest()`: [source/functions.c](../../source/functions.c). Position detection: [source/ircaux.c](../../source/ircaux.c). Integer parsing: [include/functions.h](../../include/functions.h). Unicode counting and traversal: [source/wcwidth.c](../../source/wcwidth.c).
+Registration and `function_rest()`: `source/functions.c`. Position detection: `source/ircaux.c`. Integer parsing: `include/functions.h`. Unicode counting and traversal: `source/wcwidth.c`.

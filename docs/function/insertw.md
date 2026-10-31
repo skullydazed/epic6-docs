@@ -41,4 +41,4 @@ First appeared in “plus-2” (post-ircII, pre-EPIC).
 
 ## Source
 
-Registration, front-insertion shortcut, extraction, and concatenation: [source/functions.c](../../source/functions.c). Word-range extraction: [source/words.c](../../source/words.c). Quote-aware output and integer conversion: [source/ircaux.c](../../source/ircaux.c). Function word-mode macros: [include/words.h](../../include/words.h).
+Registration, front-insertion shortcut, extraction, and concatenation: `source/functions.c`. Word-range extraction: `source/words.c`. Quote-aware output and integer conversion: `source/ircaux.c`. Function word-mode macros: `include/words.h`.

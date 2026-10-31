@@ -28,6 +28,6 @@ See [bind](../command/bind.md) for key sequence syntax, [window hold_slider](../
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default key assignments.
-- [source/window.c](../../source/window.c): `toggle_stop_screen`, `windowcmd_hold_mode`, and `get_boolean` implement toggling and its output; view recalculation and `trim_scrollback` govern held display and retention.
-- [source/screen.c](../../source/screen.c): window display selects between normal, held, and scrollback views.
+- `source/keys.c`: action registration and default key assignments.
+- `source/window.c`: `toggle_stop_screen`, `windowcmd_hold_mode`, and `get_boolean` implement toggling and its output; view recalculation and `trim_scrollback` govern held display and retention.
+- `source/screen.c`: window display selects between normal, held, and scrollback views.

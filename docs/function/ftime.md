@@ -35,4 +35,4 @@ This checks filesystem paths, without searching EPIC's script load path. Archive
 
 ## Source
 
-Registration, argument parsing, and direct `stat()` lookup: [source/functions.c](../../source/functions.c). Tilde expansion and path normalization: [source/ircaux.c](../../source/ircaux.c). Extended-word parsing: [include/words.h](../../include/words.h).
+Registration, argument parsing, and direct `stat()` lookup: `source/functions.c`. Tilde expansion and path normalization: `source/ircaux.c`. Extended-word parsing: `include/words.h`.

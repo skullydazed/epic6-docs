@@ -57,7 +57,7 @@ Disable global logfile mangling with `/set -mangle_logfiles`; nonempty log-speci
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): unset default, registration, and callback.
-- [source/log.c](../../source/log.c): `add_to_log` chooses rules, applies mangling before rewriting, and writes records; start/end markers bypass this routine.
-- [source/logfiles.c](../../source/logfiles.c) and [source/window.c](../../source/window.c): log-specific mangling selections.
-- [source/output.c](../../source/output.c) and [source/screen.c](../../source/screen.c): global and window logging callers; `parse_mangle` and `new_normalize_string` implement the rules.
+- `source/vars.c`: unset default, registration, and callback.
+- `source/log.c`: `add_to_log` chooses rules, applies mangling before rewriting, and writes records; start/end markers bypass this routine.
+- `source/logfiles.c` and `source/window.c`: log-specific mangling selections.
+- `source/output.c` and `source/screen.c`: global and window logging callers; `parse_mangle` and `new_normalize_string` implement the rules.

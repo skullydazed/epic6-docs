@@ -38,5 +38,5 @@ on -context "*" {
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `real_set_context` stores the context, builds sender/target strings, and invokes the hook; `pop_context` removes it.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/window.c`: `real_set_context` stores the context, builds sender/target strings, and invokes the hook; `pop_context` removes it.
+- `source/hook.c`: event registration and standard hook dispatch.

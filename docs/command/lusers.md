@@ -35,4 +35,4 @@ The second example requests a masked summary only if your server supports that f
 
 ## Source
 
-Registration and the shared `send_comm` handler are in [source/commands.c](../../source/commands.c), with no special `lusers` branch. Server selection and transmission are in [source/server.c](../../source/server.c). Numeric hooks, default reply display, and prefixes are in [source/numbers.c](../../source/numbers.c); related settings are registered in [source/vars.c](../../source/vars.c).
+Registration and the shared `send_comm` handler are in `source/commands.c`, with no special `lusers` branch. Server selection and transmission are in `source/server.c`. Numeric hooks, default reply display, and prefixes are in `source/numbers.c`; related settings are registered in `source/vars.c`.

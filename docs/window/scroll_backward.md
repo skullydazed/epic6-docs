@@ -40,6 +40,6 @@ This operation first appeared in EPIC4-1.1.11.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_scroll_backward`, `window_scrollback_backward`, `window_scrollback_backwards_lines`, `window_scroll_lines_tester`, and `window_scrollback_backwards` implement argument handling, percentage movement, starting views, and limits. `trim_scrollback` suspends normal trimming while browsing.
-- [include/config.h](../../include/config.h): defines the compiled scrollback ratio.
-- [source/term.c](../../source/term.c): `term_beep` handles the oldest-row bell request.
+- `source/window.c`: `windowcmd_scroll_backward`, `window_scrollback_backward`, `window_scrollback_backwards_lines`, `window_scroll_lines_tester`, and `window_scrollback_backwards` implement argument handling, percentage movement, starting views, and limits. `trim_scrollback` suspends normal trimming while browsing.
+- `include/config.h`: defines the compiled scrollback ratio.
+- `source/term.c`: `term_beep` handles the oldest-row bell request.

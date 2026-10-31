@@ -80,4 +80,4 @@ The command is always registered and does not require a server connection merely
 
 `log` first appeared in EPIC4-1.1.8.
 
-Registration is in [source/commands.c](../../source/commands.c). Operations, defaults, and matching are in [source/logfiles.c](../../source/logfiles.c). Opening, permissions, timestamps, mangling, and rewriting are in [source/log.c](../../source/log.c), with display integration in [source/screen.c](../../source/screen.c). Level parsing is in [source/levels.c](../../source/levels.c), and filename normalization is in [source/ircaux.c](../../source/ircaux.c).
+Registration is in `source/commands.c`. Operations, defaults, and matching are in `source/logfiles.c`. Opening, permissions, timestamps, mangling, and rewriting are in `source/log.c`, with display integration in `source/screen.c`. Level parsing is in `source/levels.c`, and filename normalization is in `source/ircaux.c`.

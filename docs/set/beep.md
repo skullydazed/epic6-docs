@@ -39,7 +39,7 @@ The second command does not emit a bell through that routine. Re-enable it with 
 
 ## Source references
 
-- [source/term.c](../../source/term.c): `term_beep` checks `beep` and internal bell permission before emitting `bel`.
-- [source/screen.c](../../source/screen.c): normalizes BEL, handles display bell requests and hidden-window notifications, suppresses bells during repainting, and has a direct-output dumb-mode path.
-- [source/commands.c](../../source/commands.c): `beepcmd` calls `term_beep`.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and default on.
+- `source/term.c`: `term_beep` checks `beep` and internal bell permission before emitting `bel`.
+- `source/screen.c`: normalizes BEL, handles display bell requests and hidden-window notifications, suppresses bells during repainting, and has a direct-output dumb-mode path.
+- `source/commands.c`: `beepcmd` calls `term_beep`.
+- `source/vars.c` and `include/config.h`: boolean registration and default on.

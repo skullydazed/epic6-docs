@@ -50,6 +50,6 @@ This hook first appeared in EPIC4-1.2.0.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd` resolves subcommands, invokes each handler, reports its returned operative window, and performs final housekeeping.
-- [source/commands.c](../../source/commands.c): built-in command registration and deferred-command processing.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching.
+- `source/window.c`: `windowcmd` resolves subcommands, invokes each handler, reports its returned operative window, and performs final housekeeping.
+- `source/commands.c`: built-in command registration and deferred-command processing.
+- `source/hook.c`: event registration and standard hook matching.

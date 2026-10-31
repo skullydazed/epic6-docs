@@ -41,5 +41,5 @@ This does not change which window owns the joined channel `#blah`.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_remove` parses the literal list; `remove_window_target` removes entries and reports them; `recheck_queries`, `get_window_equery`, and `get_window_target` update query choice and effective-target fallback.
-- [source/screen.c](../../source/screen.c): `add_to_screen` checks channel associations separately from nickname target lists and level routing.
+- `source/window.c`: `windowcmd_remove` parses the literal list; `remove_window_target` removes entries and reports them; `recheck_queries`, `get_window_equery`, and `get_window_target` update query choice and effective-target fallback.
+- `source/screen.c`: `add_to_screen` checks channel associations separately from nickname target lists and level routing.

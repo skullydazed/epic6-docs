@@ -30,4 +30,4 @@ For an existing closed server configured to use port `6697`, `$servports(<refnum
 
 `$servports()` and `$servports(-1)` query the current execution server.
 
-Registration and `function_servports()`: [source/functions.c](../../source/functions.c). Slot bound, port lookup, and socket-state checks: [source/server.c](../../source/server.c). Integer parsing: [include/functions.h](../../include/functions.h).
+Registration and `function_servports()`: `source/functions.c`. Slot bound, port lookup, and socket-state checks: `source/server.c`. Integer parsing: `include/functions.h`.

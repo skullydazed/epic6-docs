@@ -37,4 +37,4 @@ This function first appeared in EPIC4-1.1.6.
 
 ## Source
 
-Registered and implemented as `function_isfilevalid` in [source/functions.c](../../source/functions.c). Handle allocation, `file_valid`, lookup, and removal are in [source/files.c](../../source/files.c); numeric conversion is in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented as `function_isfilevalid` in `source/functions.c`. Handle allocation, `file_valid`, lookup, and removal are in `source/files.c`; numeric conversion is in `source/ircaux.c`.

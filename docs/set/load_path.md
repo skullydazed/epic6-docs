@@ -47,9 +47,9 @@ Use the actual installation directory for your setup. Entries earlier in the lis
 
 ## Source references
 
-- [source/irc.c](../../source/irc.c): startup chooses `IRCPATH`, `IRCLIB`, and the compiled search-list template.
-- [include/config.h](../../include/config.h): `DEFAULT_IRCPATH` template.
-- [source/commands.c](../../source/commands.c): loader reads the setting and passes it to `uzfopen`.
-- [source/ircaux.c](../../source/ircaux.c): `path_search` implements direct slash-containing filename checks and ordered component searches; `uzfopen` uses it.
-- [source/functions.c](../../source/functions.c): `function_which` uses the configured script path.
-- [source/vars.c](../../source/vars.c): string registration and unset handling.
+- `source/irc.c`: startup chooses `IRCPATH`, `IRCLIB`, and the compiled search-list template.
+- `include/config.h`: `DEFAULT_IRCPATH` template.
+- `source/commands.c`: loader reads the setting and passes it to `uzfopen`.
+- `source/ircaux.c`: `path_search` implements direct slash-containing filename checks and ordered component searches; `uzfopen` uses it.
+- `source/functions.c`: `function_which` uses the configured script path.
+- `source/vars.c`: string registration and unset handling.

@@ -34,4 +34,4 @@ $usermode($winserv(3))    /* Modes for the server attached to window 3. */
 
 ## Source
 
-Registered and implemented as `function_umode` in [source/functions.c](../../source/functions.c). Server lookup and mode storage use `get_server`, `get_server_umode`, and `update_server_umode` in [source/server.c](../../source/server.c). Status formatting uses `status_umode` in [source/status.c](../../source/status.c).
+Registered and implemented as `function_umode` in `source/functions.c`. Server lookup and mode storage use `get_server`, `get_server_umode`, and `update_server_umode` in `source/server.c`. Status formatting uses `status_umode` in `source/status.c`.

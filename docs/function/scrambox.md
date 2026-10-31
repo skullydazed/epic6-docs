@@ -10,7 +10,7 @@
 
 ## Technical
 
-Maintains client-side SCRAM-SHA-512 authentication state for the current execution server. It generates authentication messages and verifies a server signature; it does not send IRC commands or establish authentication by itself. The bundled [SASL script](../../script/sasl) handles message transport and server success/failure replies.
+Maintains client-side SCRAM-SHA-512 authentication state for the current execution server. It generates authentication messages and verifies a server signature; it does not send IRC commands or establish authentication by itself. The bundled SASL script handles message transport and server success/failure replies.
 
 Operation names are case-insensitive. `begin` takes two double-quoted words, so double quotes group credentials containing spaces regardless of `/xdebug dword`; additional arguments are ignored. `response` takes the entire remaining text as an already-decoded SCRAM message. Do not pass the outer SASL Base64 encoding or quote the message merely to group it.
 
@@ -45,4 +45,4 @@ This built-in is always registered and uses the build's OpenSSL and libsodium de
 
 After reset, `$scrambox(begin example example-password)` returns a message beginning `n=example,r=` followed by a randomly generated nonce. Its exact value varies. It does not send that message to a server.
 
-Registration: [source/functions.c](../../source/functions.c). Operations, state storage, message generation, and verification: [source/scrambox.c](../../source/scrambox.c). Build dependencies: [configure.ac](../../configure.ac). Protocol orchestration: [script/sasl](../../script/sasl).
+Registration: `source/functions.c`. Operations, state storage, message generation, and verification: `source/scrambox.c`. Build dependencies: `configure.ac`. Protocol orchestration: `script/sasl`.

@@ -41,5 +41,5 @@ Exclude window 3 from cycling, report or reverse its flag, or explicitly select 
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_skip`, and `get_boolean` implement defaults and reports; `get_next_window`, `get_previous_window`, `windowcmd_next`, and `windowcmd_previous` apply navigation filters; `count_fixed_windows`, `hide_window`, and `unlink_window` use the fixed-and-skipped category.
-- [source/names.c](../../source/names.c): `reassign_window_channels` deprioritizes windows with both flags.
+- `source/window.c`: `new_window`, `windowcmd_skip`, and `get_boolean` implement defaults and reports; `get_next_window`, `get_previous_window`, `windowcmd_next`, and `windowcmd_previous` apply navigation filters; `count_fixed_windows`, `hide_window`, and `unlink_window` use the fixed-and-skipped category.
+- `source/names.c`: `reassign_window_channels` deprioritizes windows with both flags.

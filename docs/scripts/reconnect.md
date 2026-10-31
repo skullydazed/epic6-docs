@@ -80,10 +80,10 @@ Automatic reconnect and channel rejoin were built into EPIC4 and moved to script
 
 ## Source references
 
-- [script/reconnect](../../script/reconnect): settings, retry handler, group tags, channel preservation, cleanup, and commands.
-- [script/addset](../../script/addset) and [script/builtins](../../script/builtins): setting creation and helper dependencies.
-- [source/server.c](../../source/server.c): reconnect-event dispatch, open-state queries, and next-server-in-group selection.
-- [source/names.c](../../source/names.c): channel-loss events before removing cached membership.
-- [source/timer.c](../../source/timer.c): timers are removed from the pending list before their handler executes and can schedule their successors.
-- [source/window.c](../../source/window.c): window queries and channel claims.
-- [source/functions.c](../../source/functions.c): `push` omits empty additions; list functions manage saved entries.
+- `script/reconnect`: settings, retry handler, group tags, channel preservation, cleanup, and commands.
+- [`script/addset`](addset.md) and [`script/builtins`](builtins.md): setting creation and helper dependencies.
+- `source/server.c`: reconnect-event dispatch, open-state queries, and next-server-in-group selection.
+- `source/names.c`: channel-loss events before removing cached membership.
+- `source/timer.c`: timers are removed from the pending list before their handler executes and can schedule their successors.
+- `source/window.c`: window queries and channel claims.
+- `source/functions.c`: `push` omits empty additions; list functions manage saved entries.

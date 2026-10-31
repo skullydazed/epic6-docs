@@ -107,4 +107,4 @@ The `encoding` command first appeared in EPIC5-1.1.8.
 
 ## Source
 
-See [source/recode.c](../../source/recode.c) for `encoding()`, rule parsing, matching priorities, validation, initialization, and inbound/outbound conversion. [source/server.c](../../source/server.c) implements `serverinfo_matches_servref()`. [source/commands.c](../../source/commands.c) registers the command and uses the scripts encoding when loading files; [configure.ac](../../configure.ac) checks iconv support.
+See `source/recode.c` for `encoding()`, rule parsing, matching priorities, validation, initialization, and inbound/outbound conversion. `source/server.c` implements `serverinfo_matches_servref()`. `source/commands.c` registers the command and uses the scripts encoding when loading files; `configure.ac` checks iconv support.

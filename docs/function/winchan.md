@@ -45,4 +45,4 @@ $winchan(0)       /* Current window's current channel. */
 
 ## Source
 
-Registered and implemented as `function_winchan` in [source/functions.c](../../source/functions.c). Channel ownership and primary-server fallback are in [source/names.c](../../source/names.c); window descriptions are resolved in [source/window.c](../../source/window.c), server descriptions in [source/server.c](../../source/server.c), and channel prefixes in [source/parse.c](../../source/parse.c).
+Registered and implemented as `function_winchan` in `source/functions.c`. Channel ownership and primary-server fallback are in `source/names.c`; window descriptions are resolved in `source/window.c`, server descriptions in `source/server.c`, and channel prefixes in `source/parse.c`.

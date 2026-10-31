@@ -1,6 +1,6 @@
 # Using Python in EPIC
 
-The high-level [epic module](../../script/epic.py) exposes decorators, output helpers, expression evaluation, and socket integration for Python code running inside the IRC client. It wraps the embedded `_epic` module implemented in [source/python.c](../../source/python.c).
+The high-level `epic` module exposes decorators, output helpers, expression evaluation, and socket integration for Python code running inside the IRC client. It wraps the embedded `_epic` module implemented in `source/python.c`.
 
 ## Getting started
 
@@ -78,7 +78,7 @@ The module also replaces Python's `sys.stdout` and `sys.stderr` with `Console` o
 
 ### SocketServerMixin
 
-Place the mixin before a compatible **server class**, not before `socketserver.BaseRequestHandler`. For example, the bundled [shortener example](../../script/shortener.py) combines it with `http.server.HTTPServer`:
+Place the mixin before a compatible **server class**, not before `socketserver.BaseRequestHandler`. For example, the bundled [shortener example](release_notes_2_1_2.md#april-26-2020-python-shortener-script) combines it with `http.server.HTTPServer`:
 
 ```python
 from http.server import HTTPServer
@@ -224,8 +224,8 @@ Credits: hop developed EPIC5 and its low-level Python integration; skullY wrote 
 
 ## Source references
 
-- [script/epic.py](../../script/epic.py): high-level exports, decorators, output/logger setup, mixin, and listener registry.
-- [script/python](../../script/python) and [script/global](../../script/global): initialization, import paths, development aliases, and default startup loading.
-- [source/python.c](../../source/python.c): embedded module methods, dispatch return values, expression representation, persistent namespace, and descriptor callbacks/cancellation.
-- [source/commands.c](../../source/commands.c), [source/functions.c](../../source/functions.c), and [source/hook.c](../../source/hook.c): conditional Python registration, referenced expression functions, and current event names/serial rules.
-- [configure.ac](../../configure.ac): optional Python detection and embedding requirements.
+- `script/epic.py`: high-level exports, decorators, output/logger setup, mixin, and listener registry.
+- `script/python` and [`script/global`](../scripts/global.md): initialization, import paths, development aliases, and default startup loading.
+- `source/python.c`: embedded module methods, dispatch return values, expression representation, persistent namespace, and descriptor callbacks/cancellation.
+- `source/commands.c`, `source/functions.c`, and `source/hook.c`: conditional Python registration, referenced expression functions, and current event names/serial rules.
+- `configure.ac`: optional Python detection and embedding requirements.

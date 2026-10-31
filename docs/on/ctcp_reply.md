@@ -53,7 +53,7 @@ Do not automatically answer replies with [msg](../command/msg.md), [ctcp](../com
 
 ## Source references
 
-- [source/ctcp.c](../../source/ctcp.c): `do_ctcp` runs reply handlers, applies limits, and invokes generic reply display; `init_ctcp` registers the special action handler.
-- [source/parse.c](../../source/parse.c): `p_notice` sets notice-processing state and calls `do_ctcp` in reply mode.
-- [source/commands.c](../../source/commands.c): `ctcpcmd` rejects CTCP commands invoked from a notice.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard matching and suppression.
+- `source/ctcp.c`: `do_ctcp` runs reply handlers, applies limits, and invokes generic reply display; `init_ctcp` registers the special action handler.
+- `source/parse.c`: `p_notice` sets notice-processing state and calls `do_ctcp` in reply mode.
+- `source/commands.c`: `ctcpcmd` rejects CTCP commands invoked from a notice.
+- `source/hook.c`: event registration and `do_hook` implement standard matching and suppression.

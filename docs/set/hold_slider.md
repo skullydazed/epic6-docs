@@ -43,7 +43,7 @@ This setting first appeared in EPIC4-1.1.13.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window` copies the global value; `unhold_a_window` and `windowcmd_hold_mode` calculate advancement; `windowcmd_hold_slider` validates per-window percentages.
-- [source/input.c](../../source/input.c): `send_line` advances holding in the input window.
-- [source/vars.c](../../source/vars.c): global integer registration has no callback and uses generic non-negative integer validation.
-- [include/config.h](../../include/config.h): default 100.
+- `source/window.c`: `new_window` copies the global value; `unhold_a_window` and `windowcmd_hold_mode` calculate advancement; `windowcmd_hold_slider` validates per-window percentages.
+- `source/input.c`: `send_line` advances holding in the input window.
+- `source/vars.c`: global integer registration has no callback and uses generic non-negative integer validation.
+- `include/config.h`: default 100.

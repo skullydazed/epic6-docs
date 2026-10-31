@@ -22,4 +22,4 @@ A valid value reports `Window SCROLL is ON` or `Window SCROLL is OFF`. `toggle` 
 
 ## Source references
 
-`windowcmd_scroll` and `get_boolean` in [source/window.c](../../source/window.c).
+`windowcmd_scroll` and `get_boolean` in `source/window.c`.

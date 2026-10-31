@@ -51,7 +51,7 @@ on ^ctcp_request "% % VERSION*" (sender, recvr, type, args) {
 
 ## Source references
 
-- [source/ctcp.c](../../source/ctcp.c): `do_ctcp` extracts and recodes payloads, invokes this hook before handlers, and implements suppression and parser limits; `init_ctcp` registers the action handler.
-- [source/parse.c](../../source/parse.c): `p_privmsg` sets private-message processing state and passes requests to `do_ctcp`.
-- [source/commands.c](../../source/commands.c): `ctcpcmd` chooses reply framing in a private-message context; `send_text` selects `privmsg` or `notice` from the requested command.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard matching and suppression.
+- `source/ctcp.c`: `do_ctcp` extracts and recodes payloads, invokes this hook before handlers, and implements suppression and parser limits; `init_ctcp` registers the action handler.
+- `source/parse.c`: `p_privmsg` sets private-message processing state and passes requests to `do_ctcp`.
+- `source/commands.c`: `ctcpcmd` chooses reply framing in a private-message context; `send_text` selects `privmsg` or `notice` from the requested command.
+- `source/hook.c`: event registration and `do_hook` implement standard matching and suppression.

@@ -52,7 +52,7 @@ This hook first appeared in EPIC5-0.0.3.
 
 ## Source references
 
-- [source/server.c](../../source/server.c): `nickname_change_rejected` distinguishes registered servers; `reset_nickname` invokes the hook and checks whether the pending choice changed; `change_server_nickname` records and sends replacements.
-- [source/numbers.c](../../source/numbers.c): nickname-rejection numeric branches invoke the rejection path, including the informational `439` exception.
-- [source/commands.c](../../source/commands.c): the nickname command calls `change_server_nickname`.
-- [source/hook.c](../../source/hook.c): the event registration sets the nonrecursion flag; dispatch implements standard matching.
+- `source/server.c`: `nickname_change_rejected` distinguishes registered servers; `reset_nickname` invokes the hook and checks whether the pending choice changed; `change_server_nickname` records and sends replacements.
+- `source/numbers.c`: nickname-rejection numeric branches invoke the rejection path, including the informational `439` exception.
+- `source/commands.c`: the nickname command calls `change_server_nickname`.
+- `source/hook.c`: the event registration sets the nonrecursion flag; dispatch implements standard matching.

@@ -31,4 +31,4 @@ The approximate example describes the numeric value; the returned string may con
 
 ## Source
 
-Registration, `MATH_FUNCTION2`, and `MATH_RETVAL` are in [source/functions.c](../../source/functions.c). Argument conversion and floating-point return formatting are in [include/functions.h](../../include/functions.h).
+Registration, `MATH_FUNCTION2`, and `MATH_RETVAL` are in `source/functions.c`. Argument conversion and floating-point return formatting are in `include/functions.h`.

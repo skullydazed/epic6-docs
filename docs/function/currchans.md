@@ -29,4 +29,4 @@ A window joined to several channels contributes only its elected current channel
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). Window traversal and current-channel access are in [source/window.c](../../source/window.c); channel election is in [source/names.c](../../source/names.c).
+Registered and implemented in `source/functions.c`. Window traversal and current-channel access are in `source/window.c`; channel election is in `source/names.c`.

@@ -30,7 +30,7 @@ See [bind](../command/bind.md) for key sequence syntax and [forward_word](forwar
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default Escape-d binding.
-- [source/input.c](../../source/input.c): `input_delete_next_word`, `input_forward_word`, `WHITESPACE`, and `cut_input` select the region, save it, and redraw the input line.
-- [source/ircaux.c](../../source/ircaux.c): `strext2` extracts the cut text and closes the gap.
-- [include/config.h](../../include/config.h) and [source/vars.c](../../source/vars.c): `word_break` default and setting registration.
+- `source/keys.c`: action registration and default Escape-d binding.
+- `source/input.c`: `input_delete_next_word`, `input_forward_word`, `WHITESPACE`, and `cut_input` select the region, save it, and redraw the input line.
+- `source/ircaux.c`: `strext2` extracts the cut text and closes the gap.
+- `include/config.h` and `source/vars.c`: `word_break` default and setting registration.

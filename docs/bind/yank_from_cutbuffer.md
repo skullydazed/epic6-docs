@@ -32,7 +32,7 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default Control-Y binding.
-- [source/input.c](../../source/input.c): `input_yank_cut_buffer`, `ADD_TO_INPUT`, `cut_input`, and `input_move_cursor` implement insertion, saving, and cursor movement.
-- [source/ircaux.c](../../source/ircaux.c): `strext2` stores cut text.
-- [source/wcwidth.c](../../source/wcwidth.c): `input_column_count` counts display columns.
+- `source/keys.c`: action registration and default Control-Y binding.
+- `source/input.c`: `input_yank_cut_buffer`, `ADD_TO_INPUT`, `cut_input`, and `input_move_cursor` implement insertion, saving, and cursor movement.
+- `source/ircaux.c`: `strext2` stores cut text.
+- `source/wcwidth.c`: `input_column_count` counts display columns.

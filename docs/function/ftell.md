@@ -38,4 +38,4 @@ If `seek_result` is `0`, the next read resumes from the saved position.
 
 ## Source
 
-Registration and argument parsing: [source/functions.c](../../source/functions.c). Handle lookup and direct `ftell()` call: [source/files.c](../../source/files.c). Ordinary and archive-backed stream construction: [source/elf.c](../../source/elf.c).
+Registration and argument parsing: `source/functions.c`. Handle lookup and direct `ftell()` call: `source/files.c`. Ordinary and archive-backed stream construction: `source/elf.c`.

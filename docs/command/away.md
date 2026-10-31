@@ -38,9 +38,9 @@ The command is available in every build. It refreshes the status display after c
 
 ## Script-provided behavior
 
-The bundled [builtins script](../../script/builtins) supplies the `auto_unmark_away` setting, defaulting to off. When enabled, its input hooks clear away status for ordinary typed text and for typed `/me`, `/msg`, `/notice`, and `/say` commands. This is script behavior, not automatic behavior of the C `away` command or every outgoing message.
+The bundled [builtins script](../scripts/builtins.md) supplies the `auto_unmark_away` setting, defaulting to off. When enabled, its input hooks clear away status for ordinary typed text and for typed `/me`, `/msg`, `/notice`, and `/say` commands. This is script behavior, not automatic behavior of the C `away` command or every outgoing message.
 
-To reduce repeated reports of other people's away messages, you can load the bundled [newaway script](../../script/newaway):
+To reduce repeated reports of other people's away messages, you can load the bundled [newaway script](../scripts/newaway.md):
 
 ```text
 /load newaway
@@ -75,4 +75,4 @@ The `away` command first appeared in ircII.
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for `awaycmd()` and its flag parsing. [source/server.c](../../source/server.c) implements stored messages, confirmed status, server-record validity, and reconnect restoration. [source/numbers.c](../../source/numbers.c) handles replies 301, 305, and 306. [source/status.c](../../source/status.c) implements `%A`; [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h) define `status_away` and its default.
+See `source/commands.c` for `awaycmd()` and its flag parsing. `source/server.c` implements stored messages, confirmed status, server-record validity, and reconnect restoration. `source/numbers.c` handles replies 301, 305, and 306. `source/status.c` implements `%A`; `source/vars.c` and `include/config.h` define `status_away` and its default.

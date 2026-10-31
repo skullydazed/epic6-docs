@@ -52,7 +52,7 @@ For a server that classifies `o` as a prefix membership mode, an incoming `+oo a
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_mode` calls `strip_modes` before the combined event; `strip_modes` separates signs, letters, and arguments while ignoring hook return values.
-- [source/names.c](../../source/names.c): `chanmodetype` uses server mode classifications and fallback defaults.
-- [include/config.h](../../include/config.h): defines `mode_stripper` off by default.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching.
+- `source/parse.c`: `p_mode` calls `strip_modes` before the combined event; `strip_modes` separates signs, letters, and arguments while ignoring hook return values.
+- `source/names.c`: `chanmodetype` uses server mode classifications and fallback defaults.
+- `include/config.h`: defines `mode_stripper` off by default.
+- `source/hook.c`: event registration and `do_hook` implement matching.

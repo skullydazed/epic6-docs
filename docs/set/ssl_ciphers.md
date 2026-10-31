@@ -23,5 +23,5 @@ Set this before the first SSL connection. Although a cipher-update function exis
 
 ## Source references
 
-- [source/ssl.c](../../source/ssl.c): setting behavior.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, callback, and default.
+- `source/ssl.c`: setting behavior.
+- `source/vars.c` and `include/config.h`: registration, callback, and default.

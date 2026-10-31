@@ -14,7 +14,7 @@ Send an `ERRMSG` CTCP request with optional text. EPIC6's supplied handler retur
 
 ## EPIC6 behavior
 
-The responder is registered by [script/ctcp](../../script/ctcp), which [script/builtins](../../script/builtins) loads. If your setup does not load it, `/load ctcp` installs the handler.
+The responder is registered by [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), which [`script/builtins`](../scripts/builtins.md) loads. If your setup does not load it, `/load ctcp` installs the handler.
 
 For an incoming request, the handler sends the argument text back to the sender under the same CTCP name. An empty request produces an empty reply. Ordinary outgoing requests use IRC `PRIVMSG`; the automatic response uses `NOTICE`. Request hooks, handler deactivation, and reply throttling can prevent a response. Text encoding conversion and IRC message-space limits can alter or truncate the payload.
 
@@ -30,6 +30,6 @@ If John's client uses the supplied EPIC6 handler and permits the response, it re
 
 ## Source references
 
-- [script/ctcp](../../script/ctcp): `ERRMSG` request handler and description.
-- [source/commands.c](../../source/commands.c): `ctcpcmd()` argument parsing and request/reply selection.
-- [source/ctcp.c](../../source/ctcp.c): `do_ctcp()` dispatch and reply display; `send_ctcp()` framing, encoding, and reply throttling.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages): `ERRMSG` request handler and description.
+- `source/commands.c`: `ctcpcmd()` argument parsing and request/reply selection.
+- `source/ctcp.c`: `do_ctcp()` dispatch and reply display; `send_ctcp()` framing, encoding, and reply throttling.

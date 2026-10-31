@@ -37,6 +37,6 @@ on -cap "% LS *" {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_cap` handles tokens, CAP hold, and `CAP END`.
-- [source/server.c](../../source/server.c): `serverctl` implements `CAP_HOLD`.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/parse.c`: `p_cap` handles tokens, CAP hold, and `CAP END`.
+- `source/server.c`: `serverctl` implements `CAP_HOLD`.
+- `source/hook.c`: event registration and standard hook dispatch.

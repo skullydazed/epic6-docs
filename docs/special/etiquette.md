@@ -44,8 +44,8 @@ Original authors: Lea Viljanen (LadyBug) and Ari Husa (luru). Later contributors
 
 ## Client references
 
-- [source/commands.c](../../source/commands.c): topic requests, message sending, target selection, and outbound recoding.
-- [source/parse.c](../../source/parse.c) and [source/hook.c](../../source/hook.c): join events and programmable handlers.
-- [source/recode.c](../../source/recode.c): UTF-8 and character-encoding conversion.
+- `source/commands.c`: topic requests, message sending, target selection, and outbound recoding.
+- `source/parse.c` and `source/hook.c`: join events and programmable handlers.
+- `source/recode.c`: UTF-8 and character-encoding conversion.
 
 These references describe client mechanisms, not enforcement of the social guidance above. Etiquette itself is not a command, setting, or feature with a return value.

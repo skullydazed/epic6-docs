@@ -45,4 +45,4 @@ This displays `"one two" three`. Word mode is a client-wide debug setting and al
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `unshift` and implements `unshift_cmd()`. [source/functions.c](../../source/functions.c) implements `function_unshift()`. [source/alias.c](../../source/alias.c) handles variable lookup and writeback; [source/ircaux.c](../../source/ircaux.c) implements name parsing and quoting/concatenation helpers. [include/words.h](../../include/words.h) defines word modes.
+`source/commands.c` registers `unshift` and implements `unshift_cmd()`. `source/functions.c` implements `function_unshift()`. `source/alias.c` handles variable lookup and writeback; `source/ircaux.c` implements name parsing and quoting/concatenation helpers. `include/words.h` defines word modes.

@@ -53,4 +53,4 @@ Use [fe](fe.md) or [for](for.md) for iteration through a word list.
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c), and iteration and control flow are in [source/if.c](../../source/if.c). Child-name selection and local assignment are in [source/alias.c](../../source/alias.c), with symbol lookup in [source/alist.c](../../source/alist.c). Bracket normalization is in [source/ircaux.c](../../source/ircaux.c), and deferred and escaped-brace expansion is in [source/expr.c](../../source/expr.c).
+Registration is in `source/commands.c`, and iteration and control flow are in `source/if.c`. Child-name selection and local assignment are in `source/alias.c`, with symbol lookup in `source/alist.c`. Bracket normalization is in `source/ircaux.c`, and deferred and escaped-brace expansion is in `source/expr.c`.

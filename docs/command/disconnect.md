@@ -50,4 +50,4 @@ The `disconnect` command first appeared in “plus 3” (post-ircII, pre-EPIC).
 
 ## Source
 
-See [source/server.c](../../source/server.c) for `disconnectcmd()`, the shared `user_reset_connection()` helper, argument parsing, `server_close()`, and `server_close_internal()`. [source/commands.c](../../source/commands.c) registers the command; [source/window.c](../../source/window.c) supplies the current window's server and pending-channel cleanup.
+See `source/server.c` for `disconnectcmd()`, the shared `user_reset_connection()` helper, argument parsing, `server_close()`, and `server_close_internal()`. `source/commands.c` registers the command; `source/window.c` supplies the current window's server and pending-channel cleanup.

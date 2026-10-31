@@ -130,4 +130,4 @@ Delete those serial-500 message hooks:
 
 The built-in is always registered. Event availability and data are determined by the code that raises each event. Some event types prevent recursive invocation; `$hookctl()` can also alter hook state and processing. Keep automated replies from creating message loops.
 
-Registration is in [source/commands.c](../../source/commands.c). `oncmd`, hook identity, serial ordering, noise modes, matching, dispatch, implied hooks, and listing/removal are in [source/hook.c](../../source/hook.c). Wildcard matching is in [source/reg.c](../../source/reg.c); argument lists and command/function scopes are in [source/alias.c](../../source/alias.c).
+Registration is in `source/commands.c`. `oncmd`, hook identity, serial ordering, noise modes, matching, dispatch, implied hooks, and listing/removal are in `source/hook.c`. Wildcard matching is in `source/reg.c`; argument lists and command/function scopes are in `source/alias.c`.

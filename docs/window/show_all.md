@@ -39,4 +39,4 @@ This operation first appeared during EPIC4.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_show_all` restarts hidden-list traversal and enforces the attempt guard; `traverse_all_windows_on_screen2` selects the global hidden list; `show_window` handles swappability, insertion, failure, and selection; `add_to_window_list` implements splitting and notification reset.
+- `source/window.c`: `windowcmd_show_all` restarts hidden-list traversal and enforces the attempt guard; `traverse_all_windows_on_screen2` selects the global hidden list; `show_window` handles swappability, insertion, failure, and selection; `add_to_window_list` implements splitting and notification reset.

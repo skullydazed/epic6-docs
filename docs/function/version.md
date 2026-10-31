@@ -41,4 +41,4 @@ The function first appeared in EPIC2pre3 and was deprecated in EPIC5-0.0.2.
 
 ## Source
 
-Registered and implemented as `function_server_version` in [source/functions.c](../../source/functions.c). Cached server properties are exposed by `serverctl` in [source/server.c](../../source/server.c), and the `004` version cache is updated in [source/numbers.c](../../source/numbers.c).
+Registered and implemented as `function_server_version` in `source/functions.c`. Cached server properties are exposed by `serverctl` in `source/server.c`, and the `004` version cache is updated in `source/numbers.c`.

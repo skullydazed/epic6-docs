@@ -42,7 +42,7 @@ Make future private messages and notices eligible for lastlog retrieval in the c
 
 ## Source references
 
-- [source/window.c](../../source/window.c): the command table maps `lastlog_level` to `windowcmd_lastlog_mask`; that handler, `new_window`, and `set_window_lastlog_mask` implement arguments, defaults, and assignment.
-- [source/levels.c](../../source/levels.c): `str_to_mask` builds replacement masks and `standard_level_warning` reports unsupported names.
-- [source/lastlog.c](../../source/lastlog.c): `add_to_lastlog` records per-entry eligibility; lastlog filtering skips ineligible entries; `reconstitute_scrollback` can retain them for display. `set_lastlog_mask` updates the default and current window.
-- [include/config.h](../../include/config.h): defines the compiled lastlog-level default.
+- `source/window.c`: the command table maps `lastlog_level` to `windowcmd_lastlog_mask`; that handler, `new_window`, and `set_window_lastlog_mask` implement arguments, defaults, and assignment.
+- `source/levels.c`: `str_to_mask` builds replacement masks and `standard_level_warning` reports unsupported names.
+- `source/lastlog.c`: `add_to_lastlog` records per-entry eligibility; lastlog filtering skips ineligible entries; `reconstitute_scrollback` can retain them for display. `set_lastlog_mask` updates the default and current window.
+- `include/config.h`: defines the compiled lastlog-level default.

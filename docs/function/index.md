@@ -40,4 +40,4 @@ Originally appeared in ircII.
 
 ## Source
 
-Registration and wrapper: [source/functions.c](../../source/functions.c). Character-set inversion and matching: [source/ircaux.c](../../source/ircaux.c). Word boundaries and separator handling: [source/words.c](../../source/words.c). UTF-8 decoding and code-point position counting: [source/wcwidth.c](../../source/wcwidth.c).
+Registration and wrapper: `source/functions.c`. Character-set inversion and matching: `source/ircaux.c`. Word boundaries and separator handling: `source/words.c`. UTF-8 decoding and code-point position counting: `source/wcwidth.c`.

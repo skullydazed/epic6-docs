@@ -38,5 +38,5 @@ The [standard loader](../special/standard_loader.md) also recognizes C-style `/*
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): command registration maps `COMMENT`, `:`, and `#` to `commentcmd()`; `parse_statement()` performs normal command expansion and dispatch; `loader_std()` and `loader_pf()` implement loader-specific comments.
-- [source/vars.c](../../source/vars.c): `COMMENT_HACK` registration.
+- `source/commands.c`: command registration maps `COMMENT`, `:`, and `#` to `commentcmd()`; `parse_statement()` performs normal command expansion and dispatch; `loader_std()` and `loader_pf()` implement loader-specific comments.
+- `source/vars.c`: `COMMENT_HACK` registration.

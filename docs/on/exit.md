@@ -46,7 +46,7 @@ To save script state, place the script's own synchronous persistence command in 
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `e_quit` passes explicit text or no message to `irc_exit`.
-- [source/irc.c](../../source/irc.c): `irc_exit` supplies `Default`, invokes the hook, ignores its return value, and performs shutdown; its recursive and crash paths can bypass the hook.
-- [source/server.c](../../source/server.c): `servers_close_all` and `server_close_internal` close connections and select or format final quit messages.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard matching.
+- `source/commands.c`: `e_quit` passes explicit text or no message to `irc_exit`.
+- `source/irc.c`: `irc_exit` supplies `Default`, invokes the hook, ignores its return value, and performs shutdown; its recursive and crash paths can bypass the hook.
+- `source/server.c`: `servers_close_all` and `server_close_internal` close connections and select or format final quit messages.
+- `source/hook.c`: event registration and `do_hook` implement standard matching.

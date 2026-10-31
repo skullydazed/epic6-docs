@@ -26,5 +26,5 @@ See [bind](../command/bind.md) for key sequence syntax and [beginning_of_line](b
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and the default Control-E binding.
-- [source/input.c](../../source/input.c): `input_end_of_line` repeatedly calls `input_move_cursor` until it reaches the end, then calls `redraw_input` to update the display and horizontal scrolling.
+- `source/keys.c`: action registration and the default Control-E binding.
+- `source/input.c`: `input_end_of_line` repeatedly calls `input_move_cursor` until it reaches the end, then calls `redraw_input` to update the display and horizontal scrolling.

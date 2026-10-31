@@ -33,4 +33,4 @@ The input text with selected characters replaced. Missing input or empty text re
 | `$split(é café)` | `caf ` |
 | `$split("" a:b)` | `a:b` |
 
-Registration and `function_split()`: [source/functions.c](../../source/functions.c). Double-quoted argument parsing: [include/words.h](../../include/words.h). UTF-8 decoding and encoding: [source/wcwidth.c](../../source/wcwidth.c).
+Registration and `function_split()`: `source/functions.c`. Double-quoted argument parsing: `include/words.h`. UTF-8 decoding and encoding: `source/wcwidth.c`.

@@ -39,6 +39,6 @@ on ^error * (sender, message) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_error` assembles the text, substitutes `*` for a missing or unusable sender, invokes the hook, and prints default output; `parse_server` runs `raw_irc` before command dispatch.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard matching and suppression.
-- [source/server.c](../../source/server.c): socket closure and reconnect handling occur separately from the IRC error-message handler.
+- `source/parse.c`: `p_error` assembles the text, substitutes `*` for a missing or unusable sender, invokes the hook, and prints default output; `parse_server` runs `raw_irc` before command dispatch.
+- `source/hook.c`: event registration and `do_hook` implement standard matching and suppression.
+- `source/server.c`: socket closure and reconnect handling occur separately from the IRC error-message handler.

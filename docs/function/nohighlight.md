@@ -38,4 +38,4 @@ If the input contains actual bold and underline control bytes around the words i
 
 `$nohighlight(plain text)` returns `plain text`. Literal characters `^B` remain literal characters `^B`; only the actual control byte triggers conversion.
 
-Registration and `function_nohighlight()`: [source/functions.c](../../source/functions.c). Control byte definitions: [include/irc.h](../../include/irc.h).
+Registration and `function_nohighlight()`: `source/functions.c`. Control byte definitions: `include/irc.h`.

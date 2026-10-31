@@ -35,6 +35,6 @@ Hide it with `/set -status_voice` without changing channel privileges. A format 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and `+` default.
-- [source/status.c](../../source/status.c): `%=` maps to `status_voice`, which checks voice and excludes operators; `%@` is handled separately.
-- [source/names.c](../../source/names.c): `get_channel_voice` and `get_channel_oper` return cached per-channel privilege state.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and `+` default.
+- `source/status.c`: `%=` maps to `status_voice`, which checks voice and excludes operators; `%@` is handled separately.
+- `source/names.c`: `get_channel_voice` and `get_channel_oper` return cached per-channel privilege state.

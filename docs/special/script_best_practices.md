@@ -54,6 +54,6 @@ Serial zero is shared: leave the theme's display hook in place when adding proce
 
 Use the theme support supplied by the user's scripting environment for event presentation. Keep colors, layout, and message formatting in that display layer so the user's theme controls how events look. Processing scripts should prepare data and let the display layer render it, rather than installing competing display hooks or embedding their own copies of event formatting.
 
-Follow the theme's supported extension and formatting interfaces when adding output. The bundled [colors script](../../script/colors) provides a theme implementation; [loadformats](../scripts/loadformats.md) provides configurable event formats through implied hooks. Their display timing differs: implied formats run after ordinary handlers, so they do not provide the serial-zero display boundary described above.
+Follow the theme's supported extension and formatting interfaces when adding output. The bundled colors script provides a theme implementation; [loadformats](../scripts/loadformats.md) provides configurable event formats through implied hooks. Their display timing differs: implied formats run after ordinary handlers, so they do not provide the serial-zero display boundary described above.
 
 When a script requires a particular theme or formatting helper, document that dependency and how to load it.

@@ -34,4 +34,4 @@ The `abs()` function first appeared in EPIC4-1.1.2.
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `abs` and implements `function_abs` through the shared math-function macros. [include/functions.h](../../include/functions.h) defines floating-point argument conversion and result formatting.
+`source/functions.c` registers `abs` and implements `function_abs` through the shared math-function macros. `include/functions.h` defines floating-point argument conversion and result formatting.

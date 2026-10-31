@@ -47,4 +47,4 @@ These examples edit the input line without submitting it.
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `xtype` and implements `xtypecmd()` and its unflagged delegation to `typecmd()`. [source/input.c](../../source/input.c) implements direct character insertion and cursor movement. [source/wcwidth.c](../../source/wcwidth.c) implements UTF-8 decoding.
+`source/commands.c` registers `xtype` and implements `xtypecmd()` and its unflagged delegation to `typecmd()`. `source/input.c` implements direct character insertion and cursor movement. `source/wcwidth.c` implements UTF-8 decoding.

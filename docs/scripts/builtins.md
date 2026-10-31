@@ -110,9 +110,9 @@ This script was first included in EPIC5 to provide compatibility with EPIC4.
 
 ## Source references
 
-- [script/builtins](../../script/builtins): command/function aliases, initialized settings, hooks, and supporting loads.
-- [script/global](../../script/global) and [source/irc.c](../../source/irc.c): default versus personal startup selection.
-- [source/functions.c](../../source/functions.c): function dispatch and `xform` string handling.
-- [source/ircaux.c](../../source/ircaux.c): Base64, letter-pair, URL, and OpenSSL SHA-256 transforms, including decoder edge cases.
-- [source/commands.c](../../source/commands.c), [source/server.c](../../source/server.c), and [source/window.c](../../source/window.c): underlying commands and control interfaces.
-- [configure.ac](../../configure.ac): required OpenSSL support.
+- `script/builtins`: command/function aliases, initialized settings, hooks, and supporting loads.
+- [`script/global`](global.md) and `source/irc.c`: default versus personal startup selection.
+- `source/functions.c`: function dispatch and `xform` string handling.
+- `source/ircaux.c`: Base64, letter-pair, URL, and OpenSSL SHA-256 transforms, including decoder edge cases.
+- `source/commands.c`, `source/server.c`, and `source/window.c`: underlying commands and control interfaces.
+- `configure.ac`: required OpenSSL support.

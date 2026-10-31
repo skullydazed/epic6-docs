@@ -45,6 +45,6 @@ Use [window delete](delete.md) to close an additional screen while preserving it
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_create`, `windowcmd_delete`, and `windowcmd_delete_kill`.
-- [source/screen.c](../../source/screen.c): `create_additional_screen`, launcher selection, helper connection setup, and compatibility checks.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): launcher settings, validation, and defaults.
+- `source/window.c`: `windowcmd_create`, `windowcmd_delete`, and `windowcmd_delete_kill`.
+- `source/screen.c`: `create_additional_screen`, launcher selection, helper connection setup, and compatibility checks.
+- `source/vars.c` and `include/config.h`: launcher settings, validation, and defaults.

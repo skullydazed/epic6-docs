@@ -24,7 +24,7 @@ The bundled `autoget` script also contains obsolete advice to turn this setting 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): current registration omits the name; `get_int_var` accesses variables by numeric index rather than looking up a setting name.
-- [include/vars.h](../../include/vars.h): retains the old variable identifier.
-- [source/ctcp.c](../../source/ctcp.c): `send_ctcp` retains the global timestamp and outbound-reply throttle branch.
-- [script/autoget](../../script/autoget): obsolete setting check and advice.
+- `source/vars.c`: current registration omits the name; `get_int_var` accesses variables by numeric index rather than looking up a setting name.
+- `include/vars.h`: retains the old variable identifier.
+- `source/ctcp.c`: `send_ctcp` retains the global timestamp and outbound-reply throttle branch.
+- [`script/autoget`](scripts_autoget.md): obsolete setting check and advice.

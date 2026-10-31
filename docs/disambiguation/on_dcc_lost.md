@@ -37,8 +37,8 @@ For loss of an IRC server connection, see [on disconnect](../on/disconnect.md). 
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `dccctl`, and related functionality.
-- [source/hook.c](../../source/hook.c): the hook table omits `dcc_lost`; `find_hook` rejects unknown named events.
-- [include/hook.h](../../include/hook.h): current event identifiers contain no DCC loss event.
-- [source/commands.c](../../source/commands.c): the command table has no built-in `dcc` command.
-- [script/builtins](../../script/builtins): retains a hook registration and old DCC timeout logic that depend on removed primitives.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `dccctl`, and related functionality.
+- `source/hook.c`: the hook table omits `dcc_lost`; `find_hook` rejects unknown named events.
+- `include/hook.h`: current event identifiers contain no DCC loss event.
+- `source/commands.c`: the command table has no built-in `dcc` command.
+- [`script/builtins`](../scripts/builtins.md): retains a hook registration and old DCC timeout logic that depend on removed primitives.

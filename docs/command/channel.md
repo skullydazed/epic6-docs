@@ -75,4 +75,4 @@ The C built-ins `channel` and [`join`](join.md) use the same handler, with no co
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for the registrations and `e_channel()`. [source/window.c](../../source/window.c) implements `windowcmd_rejoin()` and pending window assignments. [source/names.c](../../source/names.c) implements local listing, channel moves, join placement, and current-channel selection; [source/parse.c](../../source/parse.c) implements `is_channel()` and server-advertised prefix handling.
+See `source/commands.c` for the registrations and `e_channel()`. `source/window.c` implements `windowcmd_rejoin()` and pending window assignments. `source/names.c` implements local listing, channel moves, join placement, and current-channel selection; `source/parse.c` implements `is_channel()` and server-advertised prefix handling.

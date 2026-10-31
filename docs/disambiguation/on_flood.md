@@ -32,8 +32,8 @@ The CTCP sending code retains a separate outbound reply-throttling branch. It do
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records removal of the previously sunset `flood` hook.
-- [source/hook.c](../../source/hook.c): the named-hook table omits `flood`; `find_hook` rejects unknown event names.
-- [include/hook.h](../../include/hook.h): current hook identifiers contain no flood event.
-- [source/parse.c](../../source/parse.c): incoming messages use ordinary message and notice hooks without a flood-event stage.
-- [source/ctcp.c](../../source/ctcp.c): `send_ctcp` contains separate outbound reply-throttling code without a flood-hook invocation.
+- [KNOWNBUGS](../KNOWNBUGS.md): records removal of the previously sunset `flood` hook.
+- `source/hook.c`: the named-hook table omits `flood`; `find_hook` rejects unknown event names.
+- `include/hook.h`: current hook identifiers contain no flood event.
+- `source/parse.c`: incoming messages use ordinary message and notice hooks without a flood-event stage.
+- `source/ctcp.c`: `send_ctcp` contains separate outbound reply-throttling code without a flood-hook invocation.

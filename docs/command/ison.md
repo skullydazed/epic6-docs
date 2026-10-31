@@ -67,4 +67,4 @@ Inspect the current server's queue:
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c). `isoncmd`, option parsing, batching, queues, and callbacks are in [source/who.c](../../source/who.c). Defaults and server connection state are in [source/server.c](../../source/server.c). Numeric `303` dispatch is in [source/numbers.c](../../source/numbers.c), and raw-message interception is in [source/parse.c](../../source/parse.c).
+Registration is in `source/commands.c`. `isoncmd`, option parsing, batching, queues, and callbacks are in `source/who.c`. Defaults and server connection state are in `source/server.c`. Numeric `303` dispatch is in `source/numbers.c`, and raw-message interception is in `source/parse.c`.

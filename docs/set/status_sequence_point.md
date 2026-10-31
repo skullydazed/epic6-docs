@@ -23,5 +23,5 @@ Inside this string, the first `%P` is replaced with the decimal counter. This di
 
 ## Source references
 
-- [source/status.c](../../source/status.c): setting behavior.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, callback, and default.
+- `source/status.c`: setting behavior.
+- `source/vars.c` and `include/config.h`: registration, callback, and default.

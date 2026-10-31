@@ -36,4 +36,4 @@ The text `blah`, followed by an IRC color control with parameters `4,2`, followe
 
 ## Source
 
-Registration and `function_printlen()`: [source/functions.c](../../source/functions.c). `new_normalize_string()` and the non-output mode of `output_with_count()`: [source/screen.c](../../source/screen.c). Unicode width tables: [source/wcwidth.c](../../source/wcwidth.c).
+Registration and `function_printlen()`: `source/functions.c`. `new_normalize_string()` and the non-output mode of `output_with_count()`: `source/screen.c`. Unicode width tables: `source/wcwidth.c`.

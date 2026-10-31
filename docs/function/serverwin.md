@@ -30,4 +30,4 @@ A positive window refnum, or `-1` when no window has the requested server assign
 
 `$serverwin(-2)` searches windows assigned to no server; `$serverwin(-1)` normally returns `-1`.
 
-Registration and `function_serverwin()`: [source/functions.c](../../source/functions.c). Window traversal, priorities, and `get_server_current_window()`: [source/window.c](../../source/window.c). Integer parsing: [include/functions.h](../../include/functions.h).
+Registration and `function_serverwin()`: `source/functions.c`. Window traversal, priorities, and `get_server_current_window()`: `source/window.c`. Integer parsing: `include/functions.h`.

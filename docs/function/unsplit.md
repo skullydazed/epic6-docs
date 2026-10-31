@@ -34,4 +34,4 @@ $unsplit("" a b c)               /* abc */
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c) as `function_unsplit`. Quoted-word parsing and joining are implemented by `universal_next_arg_count`, `malloc_strcat_word`, and `malloc_strcat_wordlist` in [source/ircaux.c](../../source/ircaux.c), with the `new_next_arg` macro in [include/words.h](../../include/words.h).
+Registered and implemented in `source/functions.c` as `function_unsplit`. Quoted-word parsing and joining are implemented by `universal_next_arg_count`, `malloc_strcat_word`, and `malloc_strcat_wordlist` in `source/ircaux.c`, with the `new_next_arg` macro in `include/words.h`.

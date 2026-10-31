@@ -36,4 +36,4 @@ Format compilation uses fixed-size buffers and accepts at most 40 recognized sta
 
 `$status_oneoff(2 Left%>Right)` generates left/right-justified text for window 2, if that window exists.
 
-Registration: [source/functions.c](../../source/functions.c). `function_status_oneoff()`, format compilation, generation, and hooks: [source/status.c](../../source/status.c). Window descriptions: [source/window.c](../../source/window.c). Display conversion: [source/screen.c](../../source/screen.c).
+Registration: `source/functions.c`. `function_status_oneoff()`, format compilation, generation, and hooks: `source/status.c`. Window descriptions: `source/window.c`. Display conversion: `source/screen.c`.

@@ -24,7 +24,7 @@ Additional words are processed as subsequent window operations. `/window -hold_i
 
 ## Script-provided default
 
-[set hold_interval](../set/hold_interval.md) is supplied by the bundled [script/hold_mode](../../script/hold_mode) script, rather than by a built-in `/set` variable. When loaded, that script applies its setting to existing windows and uses it for newly created windows. A direct `window hold_interval` changes only the selected window; a later script-provided `/set hold_interval` applies to all windows again.
+[set hold_interval](../set/hold_interval.md) is supplied by the bundled [`script/hold_mode`](../scripts/hold_mode.md) script, rather than by a built-in `/set` variable. When loaded, that script applies its setting to existing windows and uses it for newly created windows. A direct `window hold_interval` changes only the selected window; a later script-provided `/set hold_interval` applies to all windows again.
 
 ## Examples
 
@@ -38,7 +38,7 @@ Show exact held-line counts in the current window, use increments of ten in wind
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_hold_interval`, and `get_window_hold_interval` define the default, parsing, storage, and reporting; `add_to_scrollback` requests status updates as queued output grows.
-- [source/status.c](../../source/status.c): the `%B` mapping and `status_hold_lines` implement rounded held-line counts.
-- [source/ircaux.c](../../source/ircaux.c): `my_atol` performs numeric conversion.
-- [script/hold_mode](../../script/hold_mode): defines and applies the optional `/set hold_interval` setting.
+- `source/window.c`: `new_window`, `windowcmd_hold_interval`, and `get_window_hold_interval` define the default, parsing, storage, and reporting; `add_to_scrollback` requests status updates as queued output grows.
+- `source/status.c`: the `%B` mapping and `status_hold_lines` implement rounded held-line counts.
+- `source/ircaux.c`: `my_atol` performs numeric conversion.
+- [`script/hold_mode`](../scripts/hold_mode.md): defines and applies the optional `/set hold_interval` setting.

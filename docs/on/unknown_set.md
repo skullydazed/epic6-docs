@@ -35,5 +35,5 @@ on ^unknown_set "MY_SETTING *" {
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): `setcmd` normalizes names, performs matching, and dispatches unknown-name errors.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/vars.c`: `setcmd` normalizes names, performs matching, and dispatches unknown-name errors.
+- `source/hook.c`: event registration and standard hook dispatch.

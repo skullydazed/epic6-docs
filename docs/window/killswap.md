@@ -40,5 +40,5 @@ This operation first appeared before EPIC3.004.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_killswap` performs the protection check and unconditional post-swap deletion attempt; `swap_window`, `unlink_window`, and `delete_window_contents` implement replacement, deletion restrictions, and cleanup; `window_check_servers` handles autoclose.
-- [source/names.c](../../source/names.c): `reassign_window_channels` finds replacement channel windows.
+- `source/window.c`: `windowcmd_killswap` performs the protection check and unconditional post-swap deletion attempt; `swap_window`, `unlink_window`, and `delete_window_contents` implement replacement, deletion restrictions, and cleanup; `window_check_servers` handles autoclose.
+- `source/names.c`: `reassign_window_channels` finds replacement channel windows.

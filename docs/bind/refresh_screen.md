@@ -28,7 +28,7 @@ See [bind](../command/bind.md) for key sequence syntax and [refresh_inputline](r
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default Control-L binding.
-- [source/output.c](../../source/output.c): `refresh_screen` sets `need_redraw`; `redraw_all_screens` clears active screens and requests the component redraws.
-- [source/irc.c](../../source/irc.c): the event loop processes `need_redraw`.
-- [source/window.c](../../source/window.c) and [source/input.c](../../source/input.c): window/status redraw and input-line redraw.
+- `source/keys.c`: action registration and default Control-L binding.
+- `source/output.c`: `refresh_screen` sets `need_redraw`; `redraw_all_screens` clears active screens and requests the component redraws.
+- `source/irc.c`: the event loop processes `need_redraw`.
+- `source/window.c` and `source/input.c`: window/status redraw and input-line redraw.

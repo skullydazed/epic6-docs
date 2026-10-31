@@ -34,6 +34,6 @@ Restore permission for the normal notices with `/set verbose_ctcp on`. Other hoo
 
 ## Source references
 
-- [script/builtins](../../script/builtins): defines the boolean, initializes it to on, and installs a conditional `ctcp` hook returning the default-suppression decision.
-- [source/ctcp.c](../../source/ctcp.c): request hooks and registered handlers precede the ordinary `ctcp` display hook; replies use a separate hook.
-- [source/hook.c](../../source/hook.c): conditional hook return values control default handling.
+- [`script/builtins`](../scripts/builtins.md): defines the boolean, initializes it to on, and installs a conditional `ctcp` hook returning the default-suppression decision.
+- `source/ctcp.c`: request hooks and registered handlers precede the ordinary `ctcp` display hook; replies use a separate hook.
+- `source/hook.c`: conditional hook return values control default handling.

@@ -40,4 +40,4 @@ This function first appeared in “+4” (post-ircII, pre-EPIC). The default arg
 
 ## Source
 
-Registered and implemented as `function_key` in [source/functions.c](../../source/functions.c). Channel selection and `get_channel_key` are in [source/names.c](../../source/names.c), function-word parsing is defined in [include/words.h](../../include/words.h), and return-word quoting is in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented as `function_key` in `source/functions.c`. Channel selection and `get_channel_key` are in `source/names.c`, function-word parsing is defined in `include/words.h`, and return-word quoting is in `source/ircaux.c`.

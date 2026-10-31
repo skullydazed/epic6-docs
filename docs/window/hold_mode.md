@@ -30,7 +30,7 @@ This operation works on invisible windows without making them visible. Changes r
 
 ## Script-provided default
 
-[set hold_mode](../set/hold_mode.md) is provided by the bundled [script/hold_mode](../../script/hold_mode) script, rather than a built-in `/set` variable. When loaded, the script initializes holding to off, applies changes to all windows, and applies its setting to newly created windows. A direct `window hold_mode` changes only the selected window.
+[set hold_mode](../set/hold_mode.md) is provided by the bundled [`script/hold_mode`](../scripts/hold_mode.md) script, rather than a built-in `/set` variable. When loaded, the script initializes holding to off, applies changes to all windows, and applies its setting to newly created windows. A direct `window hold_mode` changes only the selected window.
 
 ## Examples
 
@@ -47,7 +47,7 @@ This operation already existed in ircII2.1.5g.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_hold_mode`, `get_boolean`, `unhold_a_window`, `window_scrollback_forwards`, and `trim_scrollback` implement defaults, state changes, advancement, and retention while holding.
-- [source/input.c](../../source/input.c): `send_line` handles Enter's hold advancement and scrollback interaction.
-- [source/screen.c](../../source/screen.c): `ok_to_output` and the window redraw logic choose between normal, held, and scrollback views.
-- [script/hold_mode](../../script/hold_mode): supplies the optional `/set hold_mode` setting.
+- `source/window.c`: `new_window`, `windowcmd_hold_mode`, `get_boolean`, `unhold_a_window`, `window_scrollback_forwards`, and `trim_scrollback` implement defaults, state changes, advancement, and retention while holding.
+- `source/input.c`: `send_line` handles Enter's hold advancement and scrollback interaction.
+- `source/screen.c`: `ok_to_output` and the window redraw logic choose between normal, held, and scrollback views.
+- [`script/hold_mode`](../scripts/hold_mode.md): supplies the optional `/set hold_mode` setting.

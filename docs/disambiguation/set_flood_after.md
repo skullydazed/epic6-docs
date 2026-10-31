@@ -28,8 +28,8 @@ The separate CTCP reply-throttling code concerns outgoing automatic replies, not
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of the `flood` hook.
-- [source/vars.c](../../source/vars.c): current variable registration omits `flood_after` and handles unknown-variable errors.
-- [source/hook.c](../../source/hook.c): current event registration omits the former `flood` event.
-- [source/parse.c](../../source/parse.c): incoming message paths invoke current message events without the former flood detector.
-- [source/ctcp.c](../../source/ctcp.c): outgoing CTCP reply throttling is a separate path.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of the `flood` hook.
+- `source/vars.c`: current variable registration omits `flood_after` and handles unknown-variable errors.
+- `source/hook.c`: current event registration omits the former `flood` event.
+- `source/parse.c`: incoming message paths invoke current message events without the former flood detector.
+- `source/ctcp.c`: outgoing CTCP reply throttling is a separate path.

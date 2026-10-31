@@ -31,4 +31,4 @@ alias greeting {
 
 ## Source
 
-Registration and current-frame comparison: [source/functions.c](../../source/functions.c). Named alias and lambda call setup, return-value scope, and restoration: [source/commands.c](../../source/commands.c). Local stack state: [source/alias.c](../../source/alias.c). Initial top-level scope: [source/irc.c](../../source/irc.c).
+Registration and current-frame comparison: `source/functions.c`. Named alias and lambda call setup, return-value scope, and restoration: `source/commands.c`. Local stack state: `source/alias.c`. Initial top-level scope: `source/irc.c`.

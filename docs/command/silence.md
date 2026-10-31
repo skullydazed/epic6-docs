@@ -11,7 +11,7 @@
 
 ## Description
 
-`silence` requests server-side message filtering on an IRC server that supports the `SILENCE` extension. Its purpose complements client-side [ignore rules](../../script/ignore): the server can stop selected messages before they reach EPIC, rather than the client receiving and hiding them.
+`silence` requests server-side message filtering on an IRC server that supports the `SILENCE` extension. Its purpose complements client-side [ignore rules](../scripts/ignore.md): the server can stop selected messages before they reach EPIC, rather than the client receiving and hiding them.
 
 The exact messages filtered, mask syntax, visibility of lists, limits, and availability depend on the server. Do not assume channel messages or every kind of event will be blocked. For example, [UnrealIRCd's command documentation](https://www.unrealircd.org/docs/User_%26_Oper_commands) describes filtering private messages while leaving channel messages visible.
 
@@ -51,4 +51,4 @@ These query your list, add and remove the same mask, and request `foobar`'s list
 
 ## Source
 
-Registration and the shared `send_comm()` handler are in [source/commands.c](../../source/commands.c). Server selection and sending are in [source/server.c](../../source/server.c). Incoming `SILENCE` acknowledgments are handled by `p_silence()` in [source/parse.c](../../source/parse.c), numeric list output is in [source/numbers.c](../../source/numbers.c), and hook definitions are in [source/hook.c](../../source/hook.c).
+Registration and the shared `send_comm()` handler are in `source/commands.c`. Server selection and sending are in `source/server.c`. Incoming `SILENCE` acknowledgments are handled by `p_silence()` in `source/parse.c`, numeric list output is in `source/numbers.c`, and hook definitions are in `source/hook.c`.

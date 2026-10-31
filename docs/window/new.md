@@ -25,7 +25,7 @@ The built-in initialization includes:
 - Hold mode off, hold interval 10, one status row, and no toplines.
 - `killable`, `swappable`, and `scrolladj` on; `fixed`, `skip`, invisible notification, and window logging off.
 
-EPIC invokes `window_create` with the new user-visible refnum after setting up its display. Scripts can change these defaults. In particular, [script/hold_mode](../../script/hold_mode) supplies `/set hold_mode` and applies it through that hook; it is not a built-in constructor setting.
+EPIC invokes `window_create` with the new user-visible refnum after setting up its display. Scripts can change these defaults. In particular, [`script/hold_mode`](../scripts/hold_mode.md) supplies `/set hold_mode` and applies it through that hook; it is not a built-in constructor setting.
 
 ## Limits and arguments
 
@@ -50,6 +50,6 @@ This operation already existed in ircII2.1.5g.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_new`, `new_window`, and `add_to_window_list` implement creation, defaults, refnums, splitting, hidden fallback, and the create hook; `recalculate_windows` fits the screen; `windowcmd_number` permits renumbering.
-- [include/config.h](../../include/config.h): defines the default `always_split_biggest` value.
-- [script/hold_mode](../../script/hold_mode): supplies script-based hold defaults through `window_create`.
+- `source/window.c`: `windowcmd_new`, `new_window`, and `add_to_window_list` implement creation, defaults, refnums, splitting, hidden fallback, and the create hook; `recalculate_windows` fits the screen; `windowcmd_number` permits renumbering.
+- `include/config.h`: defines the default `always_split_biggest` value.
+- [`script/hold_mode`](../scripts/hold_mode.md): supplies script-based hold defaults through `window_create`.

@@ -31,4 +31,4 @@ Approximate examples describe values; returned strings can contain more digits. 
 
 ## Source
 
-Registration and math wrapper: [`source/functions.c`](../../source/functions.c:7722). Argument conversion and return formatting: [`include/functions.h`](../../include/functions.h:33).
+Registration and math wrapper: `source/functions.c`. Argument conversion and return formatting: `include/functions.h`.

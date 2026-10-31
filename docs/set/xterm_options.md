@@ -42,5 +42,5 @@ The second command uses these arguments only if the Xterm backend is selected.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration and unset default.
-- [source/screen.c](../../source/screen.c): `create_additional_screen` selects the backend and executable, splits options, appends helper arguments, launches directly, and waits for connections.
+- `source/vars.c` and `include/config.h`: string registration and unset default.
+- `source/screen.c`: `create_additional_screen` selects the backend and executable, splits options, appends helper arguments, launches directly, and waits for connections.

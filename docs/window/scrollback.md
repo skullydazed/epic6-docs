@@ -42,6 +42,6 @@ This operation first appeared in EPIC4pre1.028.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_scrollback`, `new_window`, `set_scrollback_size`, `resize_window_display`, and `trim_scrollback` implement defaults, minimums, global changes, and trimming conditions.
-- [source/screen.c](../../source/screen.c): `add_to_window` wraps output and invokes trimming after adding its rows.
-- [include/config.h](../../include/config.h): defines the compiled scrollback default.
+- `source/window.c`: `windowcmd_scrollback`, `new_window`, `set_scrollback_size`, `resize_window_display`, and `trim_scrollback` implement defaults, minimums, global changes, and trimming conditions.
+- `source/screen.c`: `add_to_window` wraps output and invokes trimming after adding its rows.
+- `include/config.h`: defines the compiled scrollback default.

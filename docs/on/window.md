@@ -47,7 +47,7 @@ The nested `xecho` bypasses this hook while the handler is active. Use this dest
 
 ## Source references
 
-- [source/screen.c](../../source/screen.c): `add_to_screen` routes output and handles dumb mode; `add_to_window` invokes the hook before rewriting, logging, scrollback, and display.
-- [source/output.c](../../source/output.c): `put_echo` writes the global session log before routing output to the screen.
-- [source/hook.c](../../source/hook.c): registers `window` as nonrecursive and implements matching and suppression.
-- [source/commands.c](../../source/commands.c): `xechocmd` implements explicit window selection with `-w`.
+- `source/screen.c`: `add_to_screen` routes output and handles dumb mode; `add_to_window` invokes the hook before rewriting, logging, scrollback, and display.
+- `source/output.c`: `put_echo` writes the global session log before routing output to the screen.
+- `source/hook.c`: registers `window` as nonrecursive and implements matching and suppression.
+- `source/commands.c`: `xechocmd` implements explicit window selection with `-w`.

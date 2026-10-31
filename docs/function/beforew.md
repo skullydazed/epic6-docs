@@ -43,4 +43,4 @@ This function first appeared in “plus 2” (post-ircII, pre-EPIC). The current
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `beforew` and implements `function_beforew()` through `function_findw()`. [include/words.h](../../include/words.h), [source/words.c](../../source/words.c), and [source/ircaux.c](../../source/ircaux.c) implement argument parsing, extraction, and comparison. [source/recode.c](../../source/recode.c) supplies uppercase mappings.
+`source/functions.c` registers `beforew` and implements `function_beforew()` through `function_findw()`. `include/words.h`, `source/words.c`, and `source/ircaux.c` implement argument parsing, extraction, and comparison. `source/recode.c` supplies uppercase mappings.

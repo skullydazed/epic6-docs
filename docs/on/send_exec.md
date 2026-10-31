@@ -36,5 +36,5 @@ on ^send_exec "*" {
 
 ## Source references
 
-- [source/exec.c](../../source/exec.c): `text_to_process` validates the process, writes recoded text, and gates local echo on this hook.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/exec.c`: `text_to_process` validates the process, writes recoded text, and gates local echo on this hook.
+- `source/hook.c`: event registration and standard hook dispatch.

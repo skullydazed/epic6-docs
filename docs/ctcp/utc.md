@@ -14,7 +14,7 @@ This CTCP is intended to transform received message text locally, rather than as
 
 ## EPIC6 behavior
 
-The conversion is supplied by [script/ctcp](../../script/ctcp), loaded by [script/builtins](../../script/builtins), rather than a C built-in `utc` handler. A setup that does not load it needs `/load ctcp`. Both the request and response handlers return `$stime(<arguments>)`; neither sends an automatic reply.
+The conversion is supplied by [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), loaded by [`script/builtins`](../scripts/builtins.md), rather than a C built-in `utc` handler. A setup that does not load it needs `/load ctcp`. Both the request and response handlers return `$stime(<arguments>)`; neither sends an automatic reply.
 
 The timestamp is formatted using the receiving host's local timezone and the active locale's `%c` date/time representation. The supplied script registers a whole-message replacement, not an argument replacement. In the current C parser, a nonempty result replaces the text before and including that CTCP; text after the CTCP is appended again. A preceding label such as `Away since ` can therefore be lost. Use the CTCP as the whole message when you need predictable output.
 
@@ -34,8 +34,8 @@ Send the current timestamp to John. With the supplied handler loaded, John's EPI
 
 ## Source references
 
-- [script/ctcp](../../script/ctcp): request and response handlers return the formatted timestamp.
-- [script/builtins](../../script/builtins): loads the CTCP script.
-- [source/ctcp.c](../../source/ctcp.c): `split_CTCP` and `do_ctcp` implement whole-message replacement and generic hook/display processing.
-- [source/functions.c](../../source/functions.c): `function_stime` parses the time argument and handles missing values and `-1`.
-- [source/ircaux.c](../../source/ircaux.c): `my_ctime` checks the platform range, converts local time, and formats `%c`.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages): request and response handlers return the formatted timestamp.
+- [`script/builtins`](../scripts/builtins.md): loads the CTCP script.
+- `source/ctcp.c`: `split_CTCP` and `do_ctcp` implement whole-message replacement and generic hook/display processing.
+- `source/functions.c`: `function_stime` parses the time argument and handles missing values and `-1`.
+- `source/ircaux.c`: `my_ctime` checks the platform range, converts local time, and formats `%c`.

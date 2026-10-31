@@ -51,6 +51,6 @@ This changes local display without sending an additional IRC request.
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_join` validates the channel, updates state, handles historical status markers, requests modes for your join, and invokes the hook; `BreakArgs` extracts prefix userhost information.
-- [source/names.c](../../source/names.c): `add_channel`, `add_to_channel`, and `add_userhost_to_channel` update channel state and start synchronization.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_join` validates the channel, updates state, handles historical status markers, requests modes for your join, and invokes the hook; `BreakArgs` extracts prefix userhost information.
+- `source/names.c`: `add_channel`, `add_to_channel`, and `add_userhost_to_channel` update channel state and start synchronization.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

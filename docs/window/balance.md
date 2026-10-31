@@ -35,4 +35,4 @@ Use [window grow](grow.md), [window shrink](shrink.md), or [window size](size.md
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_balance`, `rebalance_windows`, `set_window_display_lines`, and `recalculate_window_positions` implement screen selection, row distribution, fixed-window exclusion, and redraw requests.
+- `source/window.c`: `windowcmd_balance`, `rebalance_windows`, `set_window_display_lines`, and `recalculate_window_positions` implement screen selection, row distribution, fixed-window exclusion, and redraw requests.

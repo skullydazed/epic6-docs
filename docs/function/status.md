@@ -40,4 +40,4 @@ For window 2 in double-status mode, `$status(2 1)` reads the upper status and `$
 
 `$status()` returns empty because both arguments are required.
 
-Registration and `function_status()`: [source/functions.c](../../source/functions.c). `get_window_status_line()` and window lookup: [source/window.c](../../source/window.c). Cache generation and slot mapping: [source/status.c](../../source/status.c). `denormalize_string()`: [source/screen.c](../../source/screen.c).
+Registration and `function_status()`: `source/functions.c`. `get_window_status_line()` and window lookup: `source/window.c`. Cache generation and slot mapping: `source/status.c`. `denormalize_string()`: `source/screen.c`.

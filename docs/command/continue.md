@@ -45,4 +45,4 @@ The `continue` command first appeared in EPIC4pre1.031.
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for the registration, `continuecmd()` error handling, and `parse_block()` propagation. [source/if.c](../../source/if.c) implements loop-specific handling in `docmd()`, `whilecmd()`, `foreach()`, `fe()`, `for_next_cmd()`, `for_fe_cmd()`, and `loopcmd()`.
+See `source/commands.c` for the registration, `continuecmd()` error handling, and `parse_block()` propagation. `source/if.c` implements loop-specific handling in `docmd()`, `whilecmd()`, `foreach()`, `fe()`, `for_next_cmd()`, `for_fe_cmd()`, and `loopcmd()`.

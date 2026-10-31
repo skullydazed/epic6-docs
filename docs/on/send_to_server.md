@@ -50,5 +50,5 @@ This prints connection metadata rather than replaying or changing the encoded li
 
 ## Source references
 
-- [source/server.c](../../source/server.c): `vsend_to_aserver_with_payload` builds, encodes, mangles, truncates, and terminates the line, selects the server context, and invokes this hook; `send_to_aserver_raw` performs the actual socket or TLS write and handles write errors.
-- [source/hook.c](../../source/hook.c): event registration sets the nonrecursion flag; dispatch implements matching and suppression.
+- `source/server.c`: `vsend_to_aserver_with_payload` builds, encodes, mangles, truncates, and terminates the line, selects the server context, and invokes this hook; `send_to_aserver_raw` performs the actual socket or TLS write and handles write errors.
+- `source/hook.c`: event registration sets the nonrecursion flag; dispatch implements matching and suppression.

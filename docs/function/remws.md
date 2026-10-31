@@ -33,4 +33,4 @@ The right-hand list with every word found in the removal list omitted. An empty 
 
 ## Source
 
-Registration, `function_remws()`, and the case-insensitive `sort_it()` comparator: [source/functions.c](../../source/functions.c). Word-list splitting, Unicode comparison, and result quoting: [source/ircaux.c](../../source/ircaux.c).
+Registration, `function_remws()`, and the case-insensitive `sort_it()` comparator: `source/functions.c`. Word-list splitting, Unicode comparison, and result quoting: `source/ircaux.c`.

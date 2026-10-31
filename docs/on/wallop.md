@@ -42,7 +42,7 @@ on ^wallop "*" (sender, kind, text) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_wallops` classifies the sender, conditionally invokes `operwall`, invokes `wallop`, and displays the default line.
-- [source/commands.c](../../source/commands.c): `e_wallop` sends the `wallops` request.
-- [source/hook.c](../../source/hook.c): singular event registration and standard hook matching and suppression.
-- [source/levels.c](../../source/levels.c): separate `wallop` and `operwall` output levels.
+- `source/parse.c`: `p_wallops` classifies the sender, conditionally invokes `operwall`, invokes `wallop`, and displays the default line.
+- `source/commands.c`: `e_wallop` sends the `wallops` request.
+- `source/hook.c`: singular event registration and standard hook matching and suppression.
+- `source/levels.c`: separate `wallop` and `operwall` output levels.

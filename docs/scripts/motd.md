@@ -48,8 +48,8 @@ This script first appeared in EPIC4pre1.002. The retained source is marked as 19
 
 ## Source references
 
-- [script/motd](../../script/motd): timestamp comparison, pager load, and marker command.
-- [script/less](../../script/less): local file display and paging behavior.
-- [source/functions.c](../../source/functions.c): `ftime` returns modification time or empty on failure; `irclib` returns the library directory.
-- [source/irc.c](../../source/irc.c): library-directory initialization and `IRCLIB` override.
-- [source/exec.c](../../source/exec.c): external command execution.
+- `script/motd`: timestamp comparison, pager load, and marker command.
+- [`script/less`](less.md): local file display and paging behavior.
+- `source/functions.c`: `ftime` returns modification time or empty on failure; `irclib` returns the library directory.
+- `source/irc.c`: library-directory initialization and `IRCLIB` override.
+- `source/exec.c`: external command execution.

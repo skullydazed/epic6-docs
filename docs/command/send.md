@@ -42,4 +42,4 @@ If both a query and channel exist, the query receives it. To send to the channel
 
 ## Source
 
-Registration, `send_to_query_first`, ordinary input dispatch, and shared `send_text` behavior are in [source/commands.c](../../source/commands.c). Query/channel target selection is in [source/window.c](../../source/window.c), recoding in [source/recode.c](../../source/recode.c), and server transmission in [source/server.c](../../source/server.c).
+Registration, `send_to_query_first`, ordinary input dispatch, and shared `send_text` behavior are in `source/commands.c`. Query/channel target selection is in `source/window.c`, recoding in `source/recode.c`, and server transmission in `source/server.c`.

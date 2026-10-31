@@ -39,4 +39,4 @@ For a delimiter containing spaces, pass those spaces as the remaining argument r
 
 ## Source
 
-Handler and writeback: [`source/functions.c`](../../source/functions.c:9546). Search: [`stristr`](../../source/ircaux.c:1250). Variable lookup and assignment: [`source/alias.c`](../../source/alias.c:1059).
+Handler and writeback: `source/functions.c`. Search: `stristr`. Variable lookup and assignment: `source/alias.c`.

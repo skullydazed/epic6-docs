@@ -40,7 +40,7 @@ This setting first appeared in EPIC4-1.1.12.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and on default.
-- [source/names.c](../../source/names.c): `switch_channels` filters by server, window ownership, and current-channel status, then calls `set_channel_window` for the oldest eligible selection.
-- [source/keys.c](../../source/keys.c): binding registration and default key.
-- [source/window.c](../../source/window.c): query-before-channel target selection.
+- `source/vars.c` and `include/config.h`: boolean registration and on default.
+- `source/names.c`: `switch_channels` filters by server, window ownership, and current-channel status, then calls `set_channel_window` for the oldest eligible selection.
+- `source/keys.c`: binding registration and default key.
+- `source/window.c`: query-before-channel target selection.

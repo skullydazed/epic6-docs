@@ -63,6 +63,6 @@ Written by Ben Winslow (|Rain|); first included in EPIC4-1.2.5. Arbitrary sequen
 
 ## Source references
 
-- [script/meta-compat](../../script/meta-compat): replacement alias, remembered prefixes/suffixes, defaults, and recursion guard.
-- [source/keys.c](../../source/keys.c): direct sequence parsing, action validation, `nothing`, and default reset.
-- [script/builtins](../../script/builtins): encoding/decoding wrappers used for metadata keys.
+- `script/meta-compat`: replacement alias, remembered prefixes/suffixes, defaults, and recursion guard.
+- `source/keys.c`: direct sequence parsing, action validation, `nothing`, and default reset.
+- [`script/builtins`](builtins.md): encoding/decoding wrappers used for metadata keys.

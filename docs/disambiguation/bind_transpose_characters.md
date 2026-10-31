@@ -26,6 +26,6 @@ See [bind](../command/bind.md) for supported binding operations.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): `init_binds` lists available actions; `bind_compressed_string` rejects unknown action names before changing the binding.
-- [source/input.c](../../source/input.c): current input editing implementation has no transpose handler.
-- [include/input.h](../../include/input.h): a leftover declaration for `input_transpose_characters` does not provide an implementation or register a binding action.
+- `source/keys.c`: `init_binds` lists available actions; `bind_compressed_string` rejects unknown action names before changing the binding.
+- `source/input.c`: current input editing implementation has no transpose handler.
+- `include/input.h`: a leftover declaration for `input_transpose_characters` does not provide an implementation or register a binding action.

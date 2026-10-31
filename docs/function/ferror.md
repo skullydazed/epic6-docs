@@ -40,4 +40,4 @@ Check that the handle opened successfully before reading. A `0` error indicator 
 
 ## Source
 
-Registration and argument parsing: [source/functions.c](../../source/functions.c). Stream lookup, error querying, and indicator clearing before reads: [source/files.c](../../source/files.c). Ordinary and archive-backed stream construction: [source/elf.c](../../source/elf.c).
+Registration and argument parsing: `source/functions.c`. Stream lookup, error querying, and indicator clearing before reads: `source/files.c`. Ordinary and archive-backed stream construction: `source/elf.c`.

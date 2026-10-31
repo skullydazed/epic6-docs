@@ -63,9 +63,9 @@ This queues a lookup on the current server and displays the reported names when 
 
 ## Source references
 
-- [script/ison](../../script/ison): parser, controls, request splitting, generated callbacks, and serial hooks.
-- [source/who.c](../../source/who.c): C ISON queue and `303` processing before numbered-hook dispatch.
-- [source/numbers.c](../../source/numbers.c): incoming `303` routing.
-- [source/hook.c](../../source/hook.c): serial groups and serial-zero suppression.
-- [source/commands.c](../../source/commands.c) and [source/server.c](../../source/server.c): quoted protocol sends and selected server context.
-- [script/notify](../../script/notify): current MONITOR-based notification wrapper.
+- `script/ison`: parser, controls, request splitting, generated callbacks, and serial hooks.
+- `source/who.c`: C ISON queue and `303` processing before numbered-hook dispatch.
+- `source/numbers.c`: incoming `303` routing.
+- `source/hook.c`: serial groups and serial-zero suppression.
+- `source/commands.c` and `source/server.c`: quoted protocol sends and selected server context.
+- [`script/notify`](notify.md): current MONITOR-based notification wrapper.

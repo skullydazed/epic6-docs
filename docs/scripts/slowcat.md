@@ -48,9 +48,9 @@ Slowcat first appeared in EPIC5-0.0.3. The source records hop's implementation f
 
 ## Source references
 
-- [script/slowcat](../../script/slowcat): shared descriptor, half-second timer, EOF cleanup, and built-in sends.
-- [source/files.c](../../source/files.c): `file_read` removes newlines and recodes invalid text; `file_eof` reports stream state.
-- [source/functions.c](../../source/functions.c): `open`, `read`, `eof`, and `close` wrappers.
-- [source/timer.c](../../source/timer.c): default window/server association, duplicate timer rejection, repeat scheduling, and fallback context.
-- [source/commands.c](../../source/commands.c): `send_to_query_first` sends the supplied text without interactive command interpretation.
-- [source/window.c](../../source/window.c): `get_window_target` selects query before channel.
+- `script/slowcat`: shared descriptor, half-second timer, EOF cleanup, and built-in sends.
+- `source/files.c`: `file_read` removes newlines and recodes invalid text; `file_eof` reports stream state.
+- `source/functions.c`: `open`, `read`, `eof`, and `close` wrappers.
+- `source/timer.c`: default window/server association, duplicate timer rejection, repeat scheduling, and fallback context.
+- `source/commands.c`: `send_to_query_first` sends the supplied text without interactive command interpretation.
+- `source/window.c`: `get_window_target` selects query before channel.

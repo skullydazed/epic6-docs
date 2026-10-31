@@ -40,4 +40,4 @@ These are channel-operator messages, not a private message to a single nickname.
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `wallchops` with `send_2comm()`, which selects the default target and constructs the request without a command-specific branch. [source/recode.c](../../source/recode.c) implements outbound recoding, and [source/server.c](../../source/server.c) sends the command and trailing payload.
+`source/commands.c` registers `wallchops` with `send_2comm()`, which selects the default target and constructs the request without a command-specific branch. `source/recode.c` implements outbound recoding, and `source/server.c` sends the command and trailing payload.

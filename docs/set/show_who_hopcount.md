@@ -35,6 +35,6 @@ Other hooks can still replace or suppress that output. `/set show_who_hopcount o
 
 ## Source references
 
-- [script/builtins](../../script/builtins): defines the boolean, initializes it to on, and installs the conditional `who` hook using `$7-` rather than `$6-`.
-- [source/who.c](../../source/who.c): `whoreply` constructs hook arguments, supports callback bypasses, and displays the hop-count/realname field when normal handling is permitted.
-- [source/expr.c](../../source/expr.c): width-qualified expansion formatting used by the replacement row.
+- [`script/builtins`](../scripts/builtins.md): defines the boolean, initializes it to on, and installs the conditional `who` hook using `$7-` rather than `$6-`.
+- `source/who.c`: `whoreply` constructs hook arguments, supports callback bypasses, and displays the hop-count/realname field when normal handling is permitted.
+- `source/expr.c`: width-qualified expansion formatting used by the replacement row.

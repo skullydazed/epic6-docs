@@ -34,4 +34,4 @@ For configuration reloads that may avoid a full restart, see [rehash](rehash.md)
 
 ## Source
 
-Registration and the generic `send_comm` handler are in [source/commands.c](../../source/commands.c). Connection selection, transmission, and connection-loss handling are in [source/server.c](../../source/server.c), with ordinary protocol and numeric replies in [source/parse.c](../../source/parse.c) and [source/numbers.c](../../source/numbers.c).
+Registration and the generic `send_comm` handler are in `source/commands.c`. Connection selection, transmission, and connection-loss handling are in `source/server.c`, with ordinary protocol and numeric replies in `source/parse.c` and `source/numbers.c`.

@@ -32,5 +32,5 @@ Restore normal character fill with `/set status_no_repeat off`. To retain space 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration, status rebuild callback, and off default.
-- [source/status.c](../../source/status.c): `make_status` tracks the last printable left-section character, substitutes space when this setting is on, and fills the unused width before appending any right section.
+- `source/vars.c` and `include/config.h`: boolean registration, status rebuild callback, and off default.
+- `source/status.c`: `make_status` tracks the last printable left-section character, substitutes space when this setting is on, and fills the unused width before appending any right section.

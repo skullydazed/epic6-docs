@@ -33,4 +33,4 @@ Both require privileges accepted by your server. The second additionally require
 
 ## Source
 
-Registration and `squitcmd()` are in [source/commands.c](../../source/commands.c). Quoted argument parsing is in [source/ircaux.c](../../source/ircaux.c), and server selection and outgoing handling are in [source/server.c](../../source/server.c). The conventional server-link request is described in [RFC 2812, section 3.1.8](https://www.rfc-editor.org/rfc/rfc2812#section-3.1.8).
+Registration and `squitcmd()` are in `source/commands.c`. Quoted argument parsing is in `source/ircaux.c`, and server selection and outgoing handling are in `source/server.c`. The conventional server-link request is described in [RFC 2812, section 3.1.8](https://www.rfc-editor.org/rfc/rfc2812#section-3.1.8).

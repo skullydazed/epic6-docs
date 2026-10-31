@@ -39,4 +39,4 @@ Given this array:
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). The active `MATCHITEM` wrapper, text return, array lookup, and tie handling: [source/array.c](../../source/array.c). Ordinary-word parsing: [include/words.h](../../include/words.h). Wildcard matching and scores: [source/reg.c](../../source/reg.c).
+Registered in `source/functions.c`. The active `MATCHITEM` wrapper, text return, array lookup, and tie handling: `source/array.c`. Ordinary-word parsing: `include/words.h`. Wildcard matching and scores: `source/reg.c`.

@@ -34,4 +34,4 @@ The invalid JSON stores a parse error, and the second assignment saves its messa
 
 ## Source
 
-Registered and implemented as `function_json_error` in [source/functions.c](../../source/functions.c), beside `json_last_error` and `function_json_explode`. Parser offsets are maintained by `cJSON_Parse` in [source/cJSON.c](../../source/cJSON.c). Return-string copying is defined in [include/functions.h](../../include/functions.h).
+Registered and implemented as `function_json_error` in `source/functions.c`, beside `json_last_error` and `function_json_explode`. Parser offsets are maintained by `cJSON_Parse` in `source/cJSON.c`. Return-string copying is defined in `include/functions.h`.

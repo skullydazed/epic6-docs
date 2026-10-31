@@ -35,4 +35,4 @@ First appeared in EPIC4pre1.046.
 
 ## Source
 
-Registration and `GET_UNIFIED_ARRAY_FUNCTION`: [source/functions.c](../../source/functions.c). Setting component enumeration and script registration: [source/alias.c](../../source/alias.c). Built-in settings: [source/vars.c](../../source/vars.c). Sorted symbol storage: [source/alist.c](../../source/alist.c). Wildcard matching: [source/reg.c](../../source/reg.c).
+Registration and `GET_UNIFIED_ARRAY_FUNCTION`: `source/functions.c`. Setting component enumeration and script registration: `source/alias.c`. Built-in settings: `source/vars.c`. Sorted symbol storage: `source/alist.c`. Wildcard matching: `source/reg.c`.

@@ -29,9 +29,9 @@ Attempting to register `/on mail ...` is rejected with `No such ON function: MAI
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records removal of built-in mail checking and the later script-based replacement.
-- [source/hook.c](../../source/hook.c): the hook table omits `mail`; `find_hook` rejects unknown event names.
-- [include/hook.h](../../include/hook.h): current hook identifiers contain no mail event.
-- [script/mail](../../script/mail): loads the Python checker.
-- [script/mail.py](../../script/mail.py): `MAIL_factory.check` directly announces new mail and updates status text; initialization creates the script's settings without defining or emitting a mail hook.
-- [source/status.c](../../source/status.c): `status_mail` displays the configured status text.
+- [KNOWNBUGS](../KNOWNBUGS.md): records removal of built-in mail checking and the later script-based replacement.
+- `source/hook.c`: the hook table omits `mail`; `find_hook` rejects unknown event names.
+- `include/hook.h`: current hook identifiers contain no mail event.
+- [`script/mail`](../scripts/mail.md): loads the Python checker.
+- [`mail.py`](../scripts/mail.md): `MAIL_factory.check` directly announces new mail and updates status text; initialization creates the script's settings without defining or emitting a mail hook.
+- `source/status.c`: `status_mail` displays the configured status text.

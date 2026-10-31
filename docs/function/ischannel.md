@@ -42,4 +42,4 @@ First appeared in ircII-2.2pre1.
 
 ## Source
 
-Registration and first-word parsing: [source/functions.c](../../source/functions.c). `is_channel()` prefix test and fallback: [source/parse.c](../../source/parse.c). Cached `005` settings: [source/server.c](../../source/server.c).
+Registration and first-word parsing: `source/functions.c`. `is_channel()` prefix test and fallback: `source/parse.c`. Cached `005` settings: `source/server.c`.

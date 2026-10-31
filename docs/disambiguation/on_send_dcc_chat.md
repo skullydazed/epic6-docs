@@ -22,8 +22,8 @@ Scripts implementing their own direct chat transport must provide their own outg
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `dccctl`, and related functionality.
-- [source/hook.c](../../source/hook.c): the named-hook table omits `send_dcc_chat`; `find_hook` rejects unknown event names.
-- [include/hook.h](../../include/hook.h): current event identifiers contain no DCC Chat send event.
-- [source/commands.c](../../source/commands.c): the current message-sending path has no former DCC Chat transport.
-- [script/xmsglog](../../script/xmsglog): retains a reference to the removed send event without implementing the transport.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `dccctl`, and related functionality.
+- `source/hook.c`: the named-hook table omits `send_dcc_chat`; `find_hook` rejects unknown event names.
+- `include/hook.h`: current event identifiers contain no DCC Chat send event.
+- `source/commands.c`: the current message-sending path has no former DCC Chat transport.
+- `script/xmsglog`: retains a reference to the removed send event without implementing the transport.

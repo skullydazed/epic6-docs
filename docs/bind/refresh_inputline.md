@@ -28,6 +28,6 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default key assignments.
-- [source/input.c](../../source/input.c): `refresh_inputline` calls `redraw_input(-1, UPDATE_ALL)`; `redraw_input` iterates active screens, expands prompts and indicators, checks display geometry, and redraws input.
-- [source/output.c](../../source/output.c): the separate `refresh_screen` binding requests a full display redraw.
+- `source/keys.c`: action registration and default key assignments.
+- `source/input.c`: `refresh_inputline` calls `redraw_input(-1, UPDATE_ALL)`; `redraw_input` iterates active screens, expands prompts and indicators, checks display geometry, and redraws input.
+- `source/output.c`: the separate `refresh_screen` binding requests a full display redraw.

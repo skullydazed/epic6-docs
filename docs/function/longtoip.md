@@ -35,4 +35,4 @@ The dotted-quad IPv4 address, or the empty string for missing input or a formatt
 
 ## Source
 
-Registered and implemented as `function_longtoip` in [source/functions.c](../../source/functions.c). Numeric address formatting (`ssu_to_paddr`) is in [source/network.c](../../source/network.c).
+Registered and implemented as `function_longtoip` in `source/functions.c`. Numeric address formatting (`ssu_to_paddr`) is in `source/network.c`.

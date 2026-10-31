@@ -52,6 +52,6 @@ If template expansion itself produces output, nested rewrites are allowed only w
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): string registration and unset default.
-- [source/screen.c](../../source/screen.c): `add_to_window` runs the hook and bounded rewrite before window logs, lastlog, normalization, and wrapping; `add_to_screen` has a separate non-fullscreen path.
-- [source/output.c](../../source/output.c): `put_echo` performs global session logging before window routing; privileged diagnostic output bypasses rewriting.
+- `source/vars.c`: string registration and unset default.
+- `source/screen.c`: `add_to_window` runs the hook and bounded rewrite before window logs, lastlog, normalization, and wrapping; `add_to_screen` has a separate non-fullscreen path.
+- `source/output.c`: `put_echo` performs global session logging before window routing; privileged diagnostic output bypasses rewriting.

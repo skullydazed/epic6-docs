@@ -67,4 +67,4 @@ For binary file output, prepare CTCP-quoted data and pass it to [writeb](writeb.
 
 ## Source
 
-Registered and implemented as `function_xform` in [source/functions.c](../../source/functions.c). The registry, codecs, `lookup_transform`, `transform_string`, and iconv helpers are in [source/ircaux.c](../../source/ircaux.c).
+Registered and implemented as `function_xform` in `source/functions.c`. The registry, codecs, `lookup_transform`, `transform_string`, and iconv helpers are in `source/ircaux.c`.

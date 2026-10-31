@@ -70,10 +70,10 @@ These inspect windows, enable a registered setting, and print locally. To reques
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): built-in command table, alias precedence, double-prefix handling, interactive parsing, and unknown-command dispatch.
-- [source/alias.c](../../source/alias.c): aliases, variables, stubs, packages, and definition removal.
-- [source/if.c](../../source/if.c): conditionals and iteration.
-- [source/hook.c](../../source/hook.c) and [source/keys.c](../../source/keys.c): event and key-binding interfaces.
-- [source/server.c](../../source/server.c), [source/window.c](../../source/window.c), and [source/who.c](../../source/who.c): connections, local windows, and server-query callbacks.
-- [source/python.c](../../source/python.c): optional Python integration.
-- [script/builtins](../../script/builtins) and [script/global](../../script/global): supplied aliases and startup dependencies.
+- `source/commands.c`: built-in command table, alias precedence, double-prefix handling, interactive parsing, and unknown-command dispatch.
+- `source/alias.c`: aliases, variables, stubs, packages, and definition removal.
+- `source/if.c`: conditionals and iteration.
+- `source/hook.c` and `source/keys.c`: event and key-binding interfaces.
+- `source/server.c`, `source/window.c`, and `source/who.c`: connections, local windows, and server-query callbacks.
+- `source/python.c`: optional Python integration.
+- [`script/builtins`](../scripts/builtins.md) and [`script/global`](../scripts/global.md): supplied aliases and startup dependencies.

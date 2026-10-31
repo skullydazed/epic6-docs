@@ -97,8 +97,8 @@ This is built-in language syntax, with no external program, server request, or o
 
 ## Source references
 
-- [source/alias.c](../../source/alias.c): `parse_arglist`, `prepare_alias_call`, and `print_arglist` implement descriptors, defaults, terminal markers, and normalization.
-- [include/alias.h](../../include/alias.h): fixed argument-list storage.
-- [source/ircaux.c](../../source/ircaux.c) and [source/words.c](../../source/words.c): word extraction and dequoting.
-- [source/commands.c](../../source/commands.c): handler invocation prepares arguments before executing the body.
-- [source/functions.c](../../source/functions.c): `function_fix_arglist` parses and prints descriptor text.
+- `source/alias.c`: `parse_arglist`, `prepare_alias_call`, and `print_arglist` implement descriptors, defaults, terminal markers, and normalization.
+- `include/alias.h`: fixed argument-list storage.
+- `source/ircaux.c` and `source/words.c`: word extraction and dequoting.
+- `source/commands.c`: handler invocation prepares arguments before executing the body.
+- `source/functions.c`: `function_fix_arglist` parses and prints descriptor text.

@@ -52,6 +52,6 @@ This operation already existed in ircII2.1.5g.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_kill`, `unlink_window`, `count_fixed_windows`, `swap_window`, and `delete_window_contents` implement checks, hooks, replacement, and deletion; `window_check_servers` enforces server autoclose.
-- [source/names.c](../../source/names.c): `reassign_window_channels` searches for replacement channel windows without sending `part`.
-- [source/server.c](../../source/server.c): initializes the server `autoclose` property to on.
+- `source/window.c`: `windowcmd_kill`, `unlink_window`, `count_fixed_windows`, `swap_window`, and `delete_window_contents` implement checks, hooks, replacement, and deletion; `window_check_servers` enforces server autoclose.
+- `source/names.c`: `reassign_window_channels` searches for replacement channel windows without sending `part`.
+- `source/server.c`: initializes the server `autoclose` property to on.

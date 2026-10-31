@@ -37,4 +37,4 @@ Use valid UTF-8. The delimiter parser skips invalid leading bytes, and the split
 | `$splitw(é aébé)` | `a b` |
 | `$splitw("" one two)` | `"one two"` |
 
-Registration and `function_splitw()`: [source/functions.c](../../source/functions.c). `new_split_string()`, `unsplitw()`, and output quoting: [source/ircaux.c](../../source/ircaux.c). UTF-8 decoding: [source/wcwidth.c](../../source/wcwidth.c).
+Registration and `function_splitw()`: `source/functions.c`. `new_split_string()`, `unsplitw()`, and output quoting: `source/ircaux.c`. UTF-8 decoding: `source/wcwidth.c`.

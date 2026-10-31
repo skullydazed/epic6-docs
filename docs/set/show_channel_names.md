@@ -38,6 +38,6 @@ Restore the automatic display with `/set show_channel_names on`.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and on default.
-- [source/numbers.c](../../source/numbers.c): numeric `353` updates channel names, runs numeric and names hooks, and checks this setting only in the synchronization display branch.
-- [source/names.c](../../source/names.c): `channel_is_syncing` identifies the channel synchronization state.
+- `source/vars.c` and `include/config.h`: boolean registration and on default.
+- `source/numbers.c`: numeric `353` updates channel names, runs numeric and names hooks, and checks this setting only in the synchronization display branch.
+- `source/names.c`: `channel_is_syncing` identifies the channel synchronization state.

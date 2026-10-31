@@ -34,4 +34,4 @@ The non-ASCII examples assume the text is encoded as UTF-8.
 
 ## Source
 
-Registration, literal input scan, high-bit test, and return values: [source/functions.c](../../source/functions.c). Integer-string and empty-result macros: [include/functions.h](../../include/functions.h).
+Registration, literal input scan, high-bit test, and return values: `source/functions.c`. Integer-string and empty-result macros: `include/functions.h`.

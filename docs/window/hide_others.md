@@ -41,4 +41,4 @@ Keep the current window, or window 3, while hiding eligible other windows on its
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_hide_others` selects candidates and preserves the retained target; `hide_window` and `count_fixed_windows` enforce restrictions; `remove_window_from_screen`, `set_screens_current_window`, and `recalculate_windows` handle replacement input selection and resizing.
+- `source/window.c`: `windowcmd_hide_others` selects candidates and preserves the retained target; `hide_window` and `count_fixed_windows` enforce restrictions; `remove_window_from_screen`, `set_screens_current_window`, and `recalculate_windows` handle replacement input selection and resizing.

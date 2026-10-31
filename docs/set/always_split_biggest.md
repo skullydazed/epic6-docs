@@ -42,6 +42,6 @@ To restore selection of the largest eligible window:
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `add_to_window_list` finds candidates, applies the current-window preference, inserts the added window, and recalculates geometry.
-- [source/vars.c](../../source/vars.c): boolean setting registration and standard value handling; no immediate layout callback is registered.
-- [include/config.h](../../include/config.h): default value is on.
+- `source/window.c`: `add_to_window_list` finds candidates, applies the current-window preference, inserts the added window, and recalculates geometry.
+- `source/vars.c`: boolean setting registration and standard value handling; no immediate layout callback is registered.
+- `include/config.h`: default value is on.

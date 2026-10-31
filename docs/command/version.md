@@ -39,4 +39,4 @@ The first displays local client information and queries the connected server. Th
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `version` and implements `versioncmd()`. [source/irc.c](../../source/irc.c) defines the compiled identifiers. [source/server.c](../../source/server.c) selects the server and sends the request; [source/numbers.c](../../source/numbers.c) implements numeric hooks and 351 formatting.
+`source/commands.c` registers `version` and implements `versioncmd()`. `source/irc.c` defines the compiled identifiers. `source/server.c` selects the server and sends the request; `source/numbers.c` implements numeric hooks and 351 formatting.

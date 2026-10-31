@@ -28,8 +28,8 @@ Server-side flood protection and outgoing CTCP automatic-reply throttling are se
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of the `flood` hook.
-- [source/vars.c](../../source/vars.c): current registration omits this setting and handles unknown-variable errors.
-- [source/hook.c](../../source/hook.c): current event registration omits `flood`.
-- [source/parse.c](../../source/parse.c): incoming messages use current hooks without the former flood detector.
-- [source/ctcp.c](../../source/ctcp.c): outgoing reply throttling is separate.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of the `flood` hook.
+- `source/vars.c`: current registration omits this setting and handles unknown-variable errors.
+- `source/hook.c`: current event registration omits `flood`.
+- `source/parse.c`: incoming messages use current hooks without the former flood detector.
+- `source/ctcp.c`: outgoing reply throttling is separate.

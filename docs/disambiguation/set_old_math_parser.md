@@ -20,7 +20,7 @@ EPIC6 evaluates expressions through the remaining parser in `source/expr2.c`. Sc
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): explicitly records retirement of the old math parser and its `xdebug` selector.
-- [source/vars.c](../../source/vars.c): current registration omits this setting and handles unknown-variable errors.
-- [source/expr2.c](../../source/expr2.c): remaining expression evaluator.
-- [source/debug.c](../../source/debug.c): current debug option table has no old-parser selector.
+- [KNOWNBUGS](../KNOWNBUGS.md): explicitly records retirement of the old math parser and its `xdebug` selector.
+- `source/vars.c`: current registration omits this setting and handles unknown-variable errors.
+- `source/expr2.c`: remaining expression evaluator.
+- `source/debug.c`: current debug option table has no old-parser selector.

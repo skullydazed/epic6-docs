@@ -43,4 +43,4 @@ $chanwin(0)             returns the current window's current channel
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers both names and implements `function_winchan()`. [source/names.c](../../source/names.c) implements channel ownership lookup, [source/window.c](../../source/window.c) resolves window descriptions, [source/server.c](../../source/server.c) resolves server descriptions, and [source/parse.c](../../source/parse.c) recognizes channel prefixes.
+`source/functions.c` registers both names and implements `function_winchan()`. `source/names.c` implements channel ownership lookup, `source/window.c` resolves window descriptions, `source/server.c` resolves server descriptions, and `source/parse.c` recognizes channel prefixes.

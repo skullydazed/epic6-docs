@@ -44,4 +44,4 @@ alias compare_words (left dword, right dword) {
 
 `$sortby(stricmp pear apple banana)` uses the built-in [$stricmp()](stricmp.md) directly and returns the same list for these simple values.
 
-Registration, `function_sortby()`, and callback dispatch: [source/functions.c](../../source/functions.c). Inline function execution: [source/commands.c](../../source/commands.c). List parsing and reconstruction: [source/ircaux.c](../../source/ircaux.c). A working custom-comparator use: [script/nicklist](../../script/nicklist).
+Registration, `function_sortby()`, and callback dispatch: `source/functions.c`. Inline function execution: `source/commands.c`. List parsing and reconstruction: `source/ircaux.c`. A working custom-comparator use: `script/nicklist`.

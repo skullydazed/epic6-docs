@@ -43,7 +43,7 @@ The retained script is marked as hop's 1997 work.
 
 ## Source references
 
-- [script/pipe](../../script/pipe): process naming, stdout hook, wait, cleanup, and return value.
-- [source/functions.c](../../source/functions.c): no C `PIPE` registration; `function_push()` controls joining.
-- [source/exec.c](../../source/exec.c): stdout/stderr separation, line handling, shell execution, and output limits.
-- [source/commands.c](../../source/commands.c) and [source/alias.c](../../source/alias.c): process waiting and locked-scope access.
+- [`script/pipe`](../scripts/pipe.md): process naming, stdout hook, wait, cleanup, and return value.
+- `source/functions.c`: no C `PIPE` registration; `function_push()` controls joining.
+- `source/exec.c`: stdout/stderr separation, line handling, shell execution, and output limits.
+- `source/commands.c` and `source/alias.c`: process waiting and locked-scope access.

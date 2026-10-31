@@ -33,5 +33,5 @@ Protect the current window, report or reverse window 3's protection, or allow wi
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_killable`, and `get_boolean` define the default, arguments, and reports; `windowcmd_kill`, `windowcmd_killswap`, `windowcmd_kill_all_invisible`, and `windowcmd_kill_others` check protection. `windowcmd_delete_kill` and `delete_all_windows` bypass it; `windowcmd_merge` transfers data before calling `windowcmd_kill`.
-- [source/irc.c](../../source/irc.c): client shutdown calls `delete_all_windows`.
+- `source/window.c`: `new_window`, `windowcmd_killable`, and `get_boolean` define the default, arguments, and reports; `windowcmd_kill`, `windowcmd_killswap`, `windowcmd_kill_all_invisible`, and `windowcmd_kill_others` check protection. `windowcmd_delete_kill` and `delete_all_windows` bypass it; `windowcmd_merge` transfers data before calling `windowcmd_kill`.
+- `source/irc.c`: client shutdown calls `delete_all_windows`.

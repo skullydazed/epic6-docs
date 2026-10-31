@@ -83,4 +83,4 @@ These schedule a reminder, a general timer, and three executions spaced ten seco
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c). `timercmd()`, scheduling, cloning, deletion, package tagging, and execution are in [source/timer.c](../../source/timer.c). Callback scope and execution are in [source/commands.c](../../source/commands.c), while interval conversion and snap calculations are in [source/ircaux.c](../../source/ircaux.c). Server and window validity and selection are in [source/server.c](../../source/server.c) and [source/window.c](../../source/window.c).
+Registration is in `source/commands.c`. `timercmd()`, scheduling, cloning, deletion, package tagging, and execution are in `source/timer.c`. Callback scope and execution are in `source/commands.c`, while interval conversion and snap calculations are in `source/ircaux.c`. Server and window validity and selection are in `source/server.c` and `source/window.c`.

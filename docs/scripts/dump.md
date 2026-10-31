@@ -58,9 +58,9 @@ These respectively remove installed hooks, delete named arrays and script timers
 
 ## Source references
 
-- [script/dump](../../script/dump): dispatcher, option order, helpers, deferred alias cleanup, and final window configuration.
-- [script/builtins](../../script/builtins): on-demand `dump` stub.
-- [source/functions.c](../../source/functions.c) and [source/alias.c](../../source/alias.c): filtering, symbol enumeration, and alias/assignment deletion.
-- [source/hook.c](../../source/hook.c): installed-hook enumeration and removal.
-- [source/timer.c](../../source/timer.c): protected internal callback timers.
-- [source/keys.c](../../source/keys.c), [source/commands.c](../../source/commands.c), and [source/window.c](../../source/window.c): binding defaults, joins, selection, and window deletion.
+- `script/dump`: dispatcher, option order, helpers, deferred alias cleanup, and final window configuration.
+- [`script/builtins`](builtins.md): on-demand `dump` stub.
+- `source/functions.c` and `source/alias.c`: filtering, symbol enumeration, and alias/assignment deletion.
+- `source/hook.c`: installed-hook enumeration and removal.
+- `source/timer.c`: protected internal callback timers.
+- `source/keys.c`, `source/commands.c`, and `source/window.c`: binding defaults, joins, selection, and window deletion.

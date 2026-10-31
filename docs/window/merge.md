@@ -26,4 +26,4 @@ For distinct windows 3 and 4 on the same server, with at least one query/nick ta
 
 ## Source references
 
-`windowcmd_merge` in [source/window.c](../../source/window.c); `move_all_lastlog` in [source/lastlog.c](../../source/lastlog.c); `channels_merge_windows` in [source/names.c](../../source/names.c); `timers_merge_windows` in [source/timer.c](../../source/timer.c); `logfiles_merge_windows` in [source/logfiles.c](../../source/logfiles.c).
+`windowcmd_merge` in `source/window.c`; `move_all_lastlog` in `source/lastlog.c`; `channels_merge_windows` in `source/names.c`; `timers_merge_windows` in `source/timer.c`; `logfiles_merge_windows` in `source/logfiles.c`.

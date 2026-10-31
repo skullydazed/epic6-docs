@@ -40,4 +40,4 @@ There is no output-count limit or event-loop yielding inside the generation loop
 
 ## Source
 
-Registered and implemented as `function_jot` in [source/functions.c](../../source/functions.c). Argument conversion is in [include/functions.h](../../include/functions.h), and numeric text cleanup (`canon_number`) is in [source/expr.c](../../source/expr.c).
+Registered and implemented as `function_jot` in `source/functions.c`. Argument conversion is in `include/functions.h`, and numeric text cleanup (`canon_number`) is in `source/expr.c`.

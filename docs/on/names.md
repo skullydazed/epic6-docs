@@ -49,7 +49,7 @@ This works for initial join replies too, provided earlier numeric hooks allow th
 
 ## Source references
 
-- [source/numbers.c](../../source/numbers.c): the first numeric `353` branch caches syncing names; numeric hooks run before the later display branch, which invokes `names` and handles both formatting paths; numeric `366` handles end-of-names separately.
-- [source/names.c](../../source/names.c): `add_to_channel` caches initial nickname and status information.
-- [include/config.h](../../include/config.h): defines `show_channel_names` on and `channel_name_width` zero by default.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/numbers.c`: the first numeric `353` branch caches syncing names; numeric hooks run before the later display branch, which invokes `names` and handles both formatting paths; numeric `366` handles end-of-names separately.
+- `source/names.c`: `add_to_channel` caches initial nickname and status information.
+- `include/config.h`: defines `show_channel_names` on and `channel_name_width` zero by default.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

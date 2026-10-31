@@ -10,7 +10,7 @@
 
 `shh` suppresses ordinary display output associated with the **current output context**. It sets that context's suppression flag and produces no output or script return value. It accepts no options; supplied arguments are ignored. In particular, `shh {commands}` does not execute a command block.
 
-An output context identifies the server, window, sender, target, and output level for an operation. EPIC offers newly created contexts to [on](on.md) `context` handlers, which can call `shh` to suppress their output. The bundled [ignore script](../../script/ignore) uses this mechanism.
+An output context identifies the server, window, sender, target, and output level for an operation. EPIC offers newly created contexts to [on](on.md) `context` handlers, which can call `shh` to suppress their output. The bundled [ignore script](../scripts/ignore.md) uses this mechanism.
 
 The flag stays set for that context's lifetime. A nested output context begins unsuppressed, and popping it restores the enclosing context, including its existing suppression state. Returning from a script handler does not itself undo `shh`; suppression ends when EPIC releases that output context. There is no argument to toggle the flag back off.
 
@@ -34,4 +34,4 @@ This installs a serial-numbered context handler matching a target of `#quiet`, r
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c). `shhcmd()`, context creation, and context removal are in [source/window.c](../../source/window.c). Suppression during screen and window output is in [source/screen.c](../../source/screen.c). Global logging before screen routing is in [source/output.c](../../source/output.c).
+Registration is in `source/commands.c`. `shhcmd()`, context creation, and context removal are in `source/window.c`. Suppression during screen and window output is in `source/screen.c`. Global logging before screen routing is in `source/output.c`.

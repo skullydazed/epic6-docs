@@ -37,4 +37,4 @@ Missing either argument returns the empty string instead of a comparison integer
 | `$stricmp("" "")` | `0` |
 | `$stricmp(hello)` | Empty string |
 
-Registration and `function_stricmp()`: [source/functions.c](../../source/functions.c). `my_stricmp()` and UTF-8 comparison: [source/ircaux.c](../../source/ircaux.c). Locale creation and uppercase mapping: [source/recode.c](../../source/recode.c). Double-quoted parsing: [include/functions.h](../../include/functions.h).
+Registration and `function_stricmp()`: `source/functions.c`. `my_stricmp()` and UTF-8 comparison: `source/ircaux.c`. Locale creation and uppercase mapping: `source/recode.c`. Double-quoted parsing: `include/functions.h`.

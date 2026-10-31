@@ -44,4 +44,4 @@ An unknown `~user` makes tilde expansion fail, but this wrapper ignores that fai
 
 ## Source
 
-Registration, pattern parsing, `GLOB_MARK`, return quoting, and error handling: [source/functions.c](../../source/functions.c). Tilde expansion and CTCP decoding: [source/ircaux.c](../../source/ircaux.c). Double-quote-aware parsing: [include/functions.h](../../include/functions.h) and [include/words.h](../../include/words.h). System glob declaration: [include/irc_std.h](../../include/irc_std.h).
+Registration, pattern parsing, `GLOB_MARK`, return quoting, and error handling: `source/functions.c`. Tilde expansion and CTCP decoding: `source/ircaux.c`. Double-quote-aware parsing: `include/functions.h` and `include/words.h`. System glob declaration: `include/irc_std.h`.

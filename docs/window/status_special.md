@@ -34,5 +34,5 @@ Include `%.` in window 3's single-row status, set its special text, then clear t
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_status_special` stores or clears the value and requests redraw; `new_window` initializes it unset.
-- [source/status.c](../../source/status.c): the `.` mapping and `status_windowspec` insert the stored text; `make_status` optionally performs alias expansion on the completed status line.
+- `source/window.c`: `windowcmd_status_special` stores or clears the value and requests redraw; `new_window` initializes it unset.
+- `source/status.c`: the `.` mapping and `status_windowspec` insert the stored text; `make_status` optionally performs alias expansion on the completed status line.

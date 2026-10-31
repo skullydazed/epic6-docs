@@ -41,5 +41,5 @@ This operation first appeared in EPIC4-1.1.8.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_search_back`, `new_search_term`, `last_regex`, `window_scrollback_to_string`, `window_scroll_regex_tester`, and `window_scrollback_backwards` implement parsing, shared pattern lifetime, plain-row matching, view selection, and boundary behavior.
-- [source/term.c](../../source/term.c): `term_beep` applies beep settings to unsuccessful searches.
+- `source/window.c`: `windowcmd_search_back`, `new_search_term`, `last_regex`, `window_scrollback_to_string`, `window_scroll_regex_tester`, and `window_scrollback_backwards` implement parsing, shared pattern lifetime, plain-row matching, view selection, and boundary behavior.
+- `source/term.c`: `term_beep` applies beep settings to unsuccessful searches.

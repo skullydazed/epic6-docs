@@ -46,4 +46,4 @@ The `pop` command first appeared in `+7`, after ircII and before EPIC. It is alw
 
 ## Source
 
-Registration and `pop_cmd` are in [source/commands.c](../../source/commands.c). `function_pop` is in [source/functions.c](../../source/functions.c), variable lookup/writeback in [source/alias.c](../../source/alias.c), and final-word extraction in [source/ircaux.c](../../source/ircaux.c), using word-mode definitions in [include/words.h](../../include/words.h).
+Registration and `pop_cmd` are in `source/commands.c`. `function_pop` is in `source/functions.c`, variable lookup/writeback in `source/alias.c`, and final-word extraction in `source/ircaux.c`, using word-mode definitions in `include/words.h`.

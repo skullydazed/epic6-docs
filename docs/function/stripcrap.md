@@ -59,4 +59,4 @@ $stripcrap(NONE plain text)    Returns plain text.
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:6954). Options: [`parse_mangle`](../../source/screen.c:4677). Processing and escape parsing: [`source/screen.c`](../../source/screen.c:1822), [`read_esc_seq`](../../source/screen.c:1369). Flag and IRC control definitions: [`include/ircaux.h`](../../include/ircaux.h:202), [`include/irc.h`](../../include/irc.h:47).
+Handler: `source/functions.c`. Options: `parse_mangle`. Processing and escape parsing: `source/screen.c`, `read_esc_seq`. Flag and IRC control definitions: `include/ircaux.h`, `include/irc.h`.

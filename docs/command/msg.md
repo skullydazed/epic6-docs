@@ -73,4 +73,4 @@ The process example requires an existing launched process named `mail`. Server z
 
 ## Source
 
-Registration, `e_privmsg`, destination branches, hooks, splitting, and saved-target updates are in [source/commands.c](../../source/commands.c). Process input is in [source/exec.c](../../source/exec.c), file destinations in [source/files.c](../../source/files.c), recoding in [source/recode.c](../../source/recode.c), and server lookup and wire limits in [source/server.c](../../source/server.c).
+Registration, `e_privmsg`, destination branches, hooks, splitting, and saved-target updates are in `source/commands.c`. Process input is in `source/exec.c`, file destinations in `source/files.c`, recoding in `source/recode.c`, and server lookup and wire limits in `source/server.c`.

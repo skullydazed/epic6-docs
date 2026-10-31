@@ -36,4 +36,4 @@ Restrictions affect the process beyond the current script or function call and c
 
 ## Source
 
-Registration, `function_pledge()`, and `parse_kwargs()`: [source/functions.c](../../source/functions.c). Platform detection: [configure.ac](../../configure.ac).
+Registration, `function_pledge()`, and `parse_kwargs()`: `source/functions.c`. Platform detection: `configure.ac`.

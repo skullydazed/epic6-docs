@@ -34,4 +34,4 @@ Use IPv4 only. The helper accepts numeric addresses with an unspecified family, 
 
 ## Source
 
-Registration, address argument parsing, IPv4-layout access, `ntohl()`, and unsigned formatting: [source/functions.c](../../source/functions.c). Numeric-only address parsing and diagnostics: [source/network.c](../../source/network.c).
+Registration, address argument parsing, IPv4-layout access, `ntohl()`, and unsigned formatting: `source/functions.c`. Numeric-only address parsing and diagnostics: `source/network.c`.

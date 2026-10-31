@@ -34,4 +34,4 @@ Successive calls to `$shiftbrace(qwer)` return `asdf zxcv`, then `zxcv asdf qwer
 
 A value of `{outer {inner}} tail` returns `outer {inner}` and leaves `tail`. A value beginning with a space before `{` is not extracted.
 
-Registration and `function_shiftbrace()`: [source/functions.c](../../source/functions.c). `next_expr()` extraction: [source/if.c](../../source/if.c). Brace balancing and whitespace handling: [source/ircaux.c](../../source/ircaux.c). Variable lookup and assignment: [source/alias.c](../../source/alias.c).
+Registration and `function_shiftbrace()`: `source/functions.c`. `next_expr()` extraction: `source/if.c`. Brace balancing and whitespace handling: `source/ircaux.c`. Variable lookup and assignment: `source/alias.c`.

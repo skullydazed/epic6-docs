@@ -32,4 +32,4 @@ The approximate example describes the numeric value; the returned string may con
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `acosh` and implements `function_acosh` through the shared math-function and error-return macros. [include/functions.h](../../include/functions.h) defines argument conversion and formatting. The [C/POSIX inverse hyperbolic cosine specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/acosh.html) defines the domain and library error reporting.
+`source/functions.c` registers `acosh` and implements `function_acosh` through the shared math-function and error-return macros. `include/functions.h` defines argument conversion and formatting. The [C/POSIX inverse hyperbolic cosine specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/acosh.html) defines the domain and library error reporting.

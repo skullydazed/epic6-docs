@@ -34,4 +34,4 @@ This requires the privileges accepted by your server.
 
 ## Source
 
-Registration and the shared `send_2comm` handler are in [source/commands.c](../../source/commands.c), with no special `kill` branch. Target-specific comment recoding is in [source/recode.c](../../source/recode.c); connection checks, formatting, and line limits are in [source/server.c](../../source/server.c). Incoming kill messages are handled separately in [source/parse.c](../../source/parse.c).
+Registration and the shared `send_2comm` handler are in `source/commands.c`, with no special `kill` branch. Target-specific comment recoding is in `source/recode.c`; connection checks, formatting, and line limits are in `source/server.c`. Incoming kill messages are handled separately in `source/parse.c`.

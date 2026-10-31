@@ -120,7 +120,7 @@ After `SERVER_SSL_EVAL` returns, EPIC rejects the connection when `SSL_ACCEPT_CE
 
 ## SASL PLAIN authentication
 
-The supplied [sasl script](../../script/sasl) checks certificate verification separately before sending a PLAIN password. Accepting a TLS connection through `accept_invalid_ssl_cert` or a certificate hook does not by itself authorize PLAIN authentication. The script requires TLS and either `SSL_VERIFY_ERROR` equal to `0` or a matching optional certificate hash in the rule:
+The supplied sasl script checks certificate verification separately before sending a PLAIN password. Accepting a TLS connection through `accept_invalid_ssl_cert` or a certificate hook does not by itself authorize PLAIN authentication. The script requires TLS and either `SSL_VERIFY_ERROR` equal to `0` or a matching optional certificate hash in the rule:
 
 ```irc
 /sasl <server-pattern> PLAIN <username> <password> [<certificate-hash>]
@@ -132,7 +132,7 @@ The script checks before requesting the SASL capability and again before sending
 
 ## Source references
 
-- [source/server.c](../../source/server.c): `server_io()` handles the handshake result, certificate policy, both hooks, rejection, and IRC registration; `serverctl()` implements the metadata interface.
-- [source/ssl.c](../../source/ssl.c): `ssl_startup()`, `ssl_connect()`, `verify_callback()`, and `ssl_connected()` implement negotiation, verification collection, metadata, and `SSL_SERVER_CERT` arguments.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration and compiled default of `ACCEPT_INVALID_SSL_CERT`.
-- [script/sasl](../../script/sasl): PLAIN rules, `sasl_auth.plain_ok`, certificate-hash exceptions, and refusal handling.
+- `source/server.c`: `server_io()` handles the handshake result, certificate policy, both hooks, rejection, and IRC registration; `serverctl()` implements the metadata interface.
+- `source/ssl.c`: `ssl_startup()`, `ssl_connect()`, `verify_callback()`, and `ssl_connected()` implement negotiation, verification collection, metadata, and `SSL_SERVER_CERT` arguments.
+- `source/vars.c` and `include/config.h`: registration and compiled default of `ACCEPT_INVALID_SSL_CERT`.
+- `script/sasl`: PLAIN rules, `sasl_auth.plain_ok`, certificate-hash exceptions, and refusal handling.

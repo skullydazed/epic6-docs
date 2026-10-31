@@ -47,6 +47,6 @@ on ^send_notice "*" (target, message) {
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `send_text` classifies channel and non-channel notices into the same hook, invokes it before chunked sending, controls local echo, records the destination, and enforces recursion handling.
-- [source/ctcp.c](../../source/ctcp.c): `send_ctcp` sends framed notices with ordinary send hooks disabled.
-- [source/hook.c](../../source/hook.c): the event registration sets the nonrecursion flag; dispatch implements matching and default-echo suppression.
+- `source/commands.c`: `send_text` classifies channel and non-channel notices into the same hook, invokes it before chunked sending, controls local echo, records the destination, and enforces recursion handling.
+- `source/ctcp.c`: `send_ctcp` sends framed notices with ordinary send hooks disabled.
+- `source/hook.c`: the event registration sets the nonrecursion flag; dispatch implements matching and default-echo suppression.

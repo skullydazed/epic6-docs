@@ -30,5 +30,5 @@ See [bind](../command/bind.md) for key sequence syntax, [swap_next_window](swap_
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default key assignments.
-- [source/window.c](../../source/window.c): `swap_previous_window` invokes `windowcmd_previous`; that handler selects invisible candidates and calls `swap_window`, which checks eligibility, transfers screen placement and focus, and requests redraws.
+- `source/keys.c`: action registration and default key assignments.
+- `source/window.c`: `swap_previous_window` invokes `windowcmd_previous`; that handler selects invisible candidates and calls `swap_window`, which checks eligibility, transfers screen placement and focus, and requests redraws.

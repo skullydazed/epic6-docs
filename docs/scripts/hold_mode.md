@@ -52,8 +52,8 @@ This script first appeared in EPIC4-1.1.13.
 
 ## Source references
 
-- [script/hold_mode](../../script/hold_mode): global callbacks, initialization, and new-window hook.
-- [script/builtins](../../script/builtins) and [script/addset](../../script/addset): `winrefs` and script-defined setting support.
-- [source/window.c](../../source/window.c): hold mode, interval and slider operations, and `window_create` dispatch.
-- [source/vars.c](../../source/vars.c): generic setting validation and global slider default.
-- [source/input.c](../../source/input.c): Enter's hold advancement behavior.
+- `script/hold_mode`: global callbacks, initialization, and new-window hook.
+- [`script/builtins`](builtins.md) and [`script/addset`](addset.md): `winrefs` and script-defined setting support.
+- `source/window.c`: hold mode, interval and slider operations, and `window_create` dispatch.
+- `source/vars.c`: generic setting validation and global slider default.
+- `source/input.c`: Enter's hold advancement behavior.

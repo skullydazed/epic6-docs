@@ -43,4 +43,4 @@ For ordinary text and display settings that retain it:
 
 This function first appeared in EPIC4pre1.046.
 
-Registration and `function_pad()`: [source/functions.c](../../source/functions.c). Display-width padding and normalization: [source/ircaux.c](../../source/ircaux.c), `fix_string_width()`, with display helpers in [source/screen.c](../../source/screen.c). Code-point decoding and column widths: [source/wcwidth.c](../../source/wcwidth.c).
+Registration and `function_pad()`: `source/functions.c`. Display-width padding and normalization: `source/ircaux.c`, `fix_string_width()`, with display helpers in `source/screen.c`. Code-point decoding and column widths: `source/wcwidth.c`.

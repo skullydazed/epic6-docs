@@ -28,8 +28,8 @@ The former performance-tuning advice does not apply to a nonexistent EPIC6 detec
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of the `flood` hook.
-- [source/vars.c](../../source/vars.c): current registration omits `flood_users` and handles unknown-variable errors.
-- [source/hook.c](../../source/hook.c): current event registration omits `flood`.
-- [source/parse.c](../../source/parse.c): incoming messages use current hooks without the former tracking detector.
-- [source/ctcp.c](../../source/ctcp.c): outgoing automatic-reply throttling is separate.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of the `flood` hook.
+- `source/vars.c`: current registration omits `flood_users` and handles unknown-variable errors.
+- `source/hook.c`: current event registration omits `flood`.
+- `source/parse.c`: incoming messages use current hooks without the former tracking detector.
+- `source/ctcp.c`: outgoing automatic-reply throttling is separate.

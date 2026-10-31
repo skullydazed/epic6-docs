@@ -68,10 +68,10 @@ The script was written by BlackJac for EPIC5 to replace the built-in save comman
 
 ## Source references
 
-- [script/save](../../script/save): argument order, category writers, unlink/open sequence, and completion message.
-- [script/notify](../../script/notify): `$notify()` is an empty placeholder.
-- [source/alias.c](../../source/alias.c): `symbolctl` exposes alias bodies and argument lists separately.
-- [source/keys.c](../../source/keys.c): `bindctl(map)` enumerates the current keymap and `sequence get` returns action plus arguments.
-- [source/hook.c](../../source/hook.c): hook serialization through `hookctl`.
-- [source/server.c](../../source/server.c): server fields read by `save.server`.
-- [source/functions.c](../../source/functions.c) and [source/files.c](../../source/files.c): unlink, append-mode `open(... W)`, and newline-terminated writes.
+- `script/save`: argument order, category writers, unlink/open sequence, and completion message.
+- [`script/notify`](notify.md): `$notify()` is an empty placeholder.
+- `source/alias.c`: `symbolctl` exposes alias bodies and argument lists separately.
+- `source/keys.c`: `bindctl(map)` enumerates the current keymap and `sequence get` returns action plus arguments.
+- `source/hook.c`: hook serialization through `hookctl`.
+- `source/server.c`: server fields read by `save.server`.
+- `source/functions.c` and `source/files.c`: unlink, append-mode `open(... W)`, and newline-terminated writes.

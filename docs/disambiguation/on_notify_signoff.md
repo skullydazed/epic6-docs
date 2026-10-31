@@ -24,8 +24,8 @@ For quit messages you actually receive through shared channels, see [on signoff]
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records removal of the previously sunset notify signon and signoff hooks.
-- [source/hook.c](../../source/hook.c): the named-hook table omits `notify_signoff`; `find_hook` rejects unknown event names.
-- [include/hook.h](../../include/hook.h): current event identifiers contain no notify-signoff hook.
-- [script/notify](../../script/notify): defines the monitor wrapper and directly formats numeric `731` without emitting the former event.
-- [script/notify.jm](../../script/notify.jm): retains references to the removed event.
+- [KNOWNBUGS](../KNOWNBUGS.md): records removal of the previously sunset notify signon and signoff hooks.
+- `source/hook.c`: the named-hook table omits `notify_signoff`; `find_hook` rejects unknown event names.
+- `include/hook.h`: current event identifiers contain no notify-signoff hook.
+- [`script/notify`](../scripts/notify.md): defines the monitor wrapper and directly formats numeric `731` without emitting the former event.
+- `script/notify.jm`: retains references to the removed event.

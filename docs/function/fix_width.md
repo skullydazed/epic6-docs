@@ -47,4 +47,4 @@ Truncation at a two-column character boundary is unreliable in the current imple
 
 ## Source
 
-Registration and argument handling: [source/functions.c](../../source/functions.c). Padding and alignment: [source/ircaux.c](../../source/ircaux.c), `fix_string_width()`. Normalization, column counting, and truncation: [source/screen.c](../../source/screen.c). Unicode column widths: [source/wcwidth.c](../../source/wcwidth.c).
+Registration and argument handling: `source/functions.c`. Padding and alignment: `source/ircaux.c`, `fix_string_width()`. Normalization, column counting, and truncation: `source/screen.c`. Unicode column widths: `source/wcwidth.c`.

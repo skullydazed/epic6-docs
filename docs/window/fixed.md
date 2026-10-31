@@ -35,4 +35,4 @@ The first command marks window 3 fixed; the second balances the other non-fixed 
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_fixed`, and `get_boolean` define the default, arguments, and reports; `rebalance_windows`, `recalculate_windows`, `add_to_window_list`, `resize_window`, and `move_window_to` implement the size and position interactions.
+- `source/window.c`: `new_window`, `windowcmd_fixed`, and `get_boolean` define the default, arguments, and reports; `rebalance_windows`, `recalculate_windows`, `add_to_window_list`, `resize_window`, and `move_window_to` implement the size and position interactions.

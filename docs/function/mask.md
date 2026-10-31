@@ -58,4 +58,4 @@ $mask(1 nick!abcdefgh@example.com)             returns *!*bcdefgh@example.com
 
 The username adjustment is byte based and can cut a multibyte character. The address is not otherwise normalized or checked for valid IRC mask syntax. Choose the mask type according to the scope you intend to match.
 
-Implementation: [function_mask()](../../source/functions.c), with argument and integer helpers in [ircaux.c](../../source/ircaux.c) and [functions.h](../../include/functions.h).
+Implementation: function_mask(), with argument and integer helpers in ircaux.c and functions.h.

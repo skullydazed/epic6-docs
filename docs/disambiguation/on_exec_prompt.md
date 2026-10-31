@@ -28,6 +28,6 @@ Because `exec_prompt` remains registered, a script can explicitly synthesize it 
 
 ## Source references
 
-- [source/exec.c](../../source/exec.c): `do_exec` passes the historical prompt event identifier to `handle_filedesc`; the active reader uses `dgets` with line buffering and returns for incomplete lines, while the partial-line hook and callback branch is disabled.
-- [source/hook.c](../../source/hook.c): the hook table retains `exec_prompt`; `shookcmd` can explicitly invoke a registered event.
-- [include/hook.h](../../include/hook.h): retains the event identifier despite the unavailable automatic dispatch.
+- `source/exec.c`: `do_exec` passes the historical prompt event identifier to `handle_filedesc`; the active reader uses `dgets` with line buffering and returns for incomplete lines, while the partial-line hook and callback branch is disabled.
+- `source/hook.c`: the hook table retains `exec_prompt`; `shookcmd` can explicitly invoke a registered event.
+- `include/hook.h`: retains the event identifier despite the unavailable automatic dispatch.

@@ -36,4 +36,4 @@ First appeared in EPIC3pre7. Support for the window argument first appeared in E
 
 ## Source
 
-Registration and `function_geom()`: [source/functions.c](../../source/functions.c). Window lookup and `get_window_geometry()`: [source/window.c](../../source/window.c). Recorded screen dimensions: [source/screen.c](../../source/screen.c).
+Registration and `function_geom()`: `source/functions.c`. Window lookup and `get_window_geometry()`: `source/window.c`. Recorded screen dimensions: `source/screen.c`.

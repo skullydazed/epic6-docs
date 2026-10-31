@@ -43,4 +43,4 @@ Inspect `debug.log` in the directory where logging was enabled. Subsequent sessi
 
 ## Source
 
-See [source/debuglog.c](../../source/debuglog.c) for `debuglogcmd()`, file handling, and timestamped `debuglog()` output. It is included by [source/commands.c](../../source/commands.c), which registers the command. [source/window.c](../../source/window.c), [source/screen.c](../../source/screen.c), and [source/term.c](../../source/term.c) contain display-related logging calls.
+See `source/debuglog.c` for `debuglogcmd()`, file handling, and timestamped `debuglog()` output. It is included by `source/commands.c`, which registers the command. `source/window.c`, `source/screen.c`, and `source/term.c` contain display-related logging calls.

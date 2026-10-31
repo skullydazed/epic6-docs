@@ -36,4 +36,4 @@ Save the current window, display its screen's stack, or display the stack of the
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_stack` lists entries without deleting them; `windowcmd_push` records internal window references; `list_a_window` and `WIN_FORM` define row output and missing-window diagnostics; `windowcmd_pop` consumes the stack.
+- `source/window.c`: `windowcmd_stack` lists entries without deleting them; `windowcmd_push` records internal window references; `list_a_window` and `WIN_FORM` define row output and missing-window diagnostics; `windowcmd_pop` consumes the stack.

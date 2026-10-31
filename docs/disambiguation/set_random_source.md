@@ -41,7 +41,7 @@ There is no preceding source-selection assignment. See the function documentatio
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): current registration omits this setting and handles unknown-variable errors.
-- [source/ircaux.c](../../source/ircaux.c): `random_number` uses `RAND_bytes` without selecting among former sources.
-- [source/functions.c](../../source/functions.c): `rand`, `randread`, and the no-op `srand` implementation.
-- [configure.ac](../../configure.ac): required OpenSSL-compatible library support.
+- `source/vars.c`: current registration omits this setting and handles unknown-variable errors.
+- `source/ircaux.c`: `random_number` uses `RAND_bytes` without selecting among former sources.
+- `source/functions.c`: `rand`, `randread`, and the no-op `srand` implementation.
+- `configure.ac`: required OpenSSL-compatible library support.

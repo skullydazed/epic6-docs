@@ -37,6 +37,6 @@ See [bind](../command/bind.md) for key sequence syntax and [echo](../command/ech
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration, `bindcmd` command-text storage, and `key_exec` invocation.
-- [source/input.c](../../source/input.c): `parse_text` passes stored commands to `runcmds` with an empty argument string and preserves the previous system-exception state.
-- [source/commands.c](../../source/commands.c): `runcmds`, `parse_block`, and `parse_statement` process command blocks, semicolons, script syntax, and expansion.
+- `source/keys.c`: action registration, `bindcmd` command-text storage, and `key_exec` invocation.
+- `source/input.c`: `parse_text` passes stored commands to `runcmds` with an empty argument string and preserves the previous system-exception state.
+- `source/commands.c`: `runcmds`, `parse_block`, and `parse_statement` process command blocks, semicolons, script syntax, and expansion.

@@ -55,9 +55,9 @@ This enables the queueing hook and timer. To discard pending lines later, use `/
 
 ## Source references
 
-- [script/floodprot](../../script/floodprot): setting callback, counters, queue arrays, timer, disconnect cleanup, and `qflush`.
-- [script/builtins](../../script/builtins): `myservers` and `addset` support.
-- [source/server.c](../../source/server.c): prepared-line formatting and `send_to_server` hook dispatch.
-- [source/commands.c](../../source/commands.c): `xquote` sends through the formatted sender.
-- [source/timer.c](../../source/timer.c): general repeating timers and named updates.
-- [source/vars.c](../../source/vars.c): setting callbacks and prevention of recursive callback invocation.
+- `script/floodprot`: setting callback, counters, queue arrays, timer, disconnect cleanup, and `qflush`.
+- [`script/builtins`](builtins.md): `myservers` and `addset` support.
+- `source/server.c`: prepared-line formatting and `send_to_server` hook dispatch.
+- `source/commands.c`: `xquote` sends through the formatted sender.
+- `source/timer.c`: general repeating timers and named updates.
+- `source/vars.c`: setting callbacks and prevention of recursive callback invocation.

@@ -45,4 +45,4 @@ First appeared in ircII-2.2pre5.
 
 ## Source
 
-Handler and formatting: [`source/functions.c`](../../source/functions.c:1652). JSON argument conversion: [`parse_kwargs`](../../source/functions.c:874). Range checks: [`source/ircaux.c`](../../source/ircaux.c:7282).
+Handler and formatting: `source/functions.c`. JSON argument conversion: `parse_kwargs`. Range checks: `source/ircaux.c`.

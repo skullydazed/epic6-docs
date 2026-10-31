@@ -7,7 +7,7 @@
 /set hold_interval [<lines>]
 ```
 
-This `/set` variable is supplied by [script/hold_mode](../../script/hold_mode), not registered as a C built-in. Loading that script defines the setting and initializes it to `10`; without a script providing it, the built-in `set` command treats the name as unknown. With the supplied setting loaded, omitting the value queries it.
+This `/set` variable is supplied by [`script/hold_mode`](../scripts/hold_mode.md), not registered as a C built-in. Loading that script defines the setting and initializes it to `10`; without a script providing it, the built-in `set` command treats the name as unknown. With the supplied setting loaded, omitting the value queries it.
 
 ## Description
 
@@ -36,8 +36,8 @@ Show exact held-line counts through the supplied global compatibility setting. F
 
 ## Source references
 
-- [script/hold_mode](../../script/hold_mode): defines the integer setting, initializes it, applies it to existing windows, and installs the new-window handler.
-- [script/addset](../../script/addset): supplies script-defined settings.
-- [source/window.c](../../source/window.c): new windows start with interval 10; `windowcmd_hold_interval` validates and stores per-window values.
-- [source/status.c](../../source/status.c): `status_hold_lines` rounds the displayed count.
-- [source/vars.c](../../source/vars.c): current built-in registration omits `hold_interval`.
+- [`script/hold_mode`](../scripts/hold_mode.md): defines the integer setting, initializes it, applies it to existing windows, and installs the new-window handler.
+- [`script/addset`](../scripts/addset.md): supplies script-defined settings.
+- `source/window.c`: new windows start with interval 10; `windowcmd_hold_interval` validates and stores per-window values.
+- `source/status.c`: `status_hold_lines` rounds the displayed count.
+- `source/vars.c`: current built-in registration omits `hold_interval`.

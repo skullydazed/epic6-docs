@@ -32,4 +32,4 @@ For a plain short string, `$leftpc(10 abc)` returns printable `abc` without padd
 
 ## Source
 
-Registered and implemented as `function_leftpc` in [source/functions.c](../../source/functions.c). Normalization, display-column counting, line preparation, and denormalization are in [source/screen.c](../../source/screen.c). Unicode decoding and width calculation are in [source/wcwidth.c](../../source/wcwidth.c).
+Registered and implemented as `function_leftpc` in `source/functions.c`. Normalization, display-column counting, line preparation, and denormalization are in `source/screen.c`. Unicode decoding and width calculation are in `source/wcwidth.c`.

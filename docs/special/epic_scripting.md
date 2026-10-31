@@ -218,9 +218,9 @@ Startup is not the only opportunity to run code. You can load a script later wit
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `parse_block()`, `parse_statement()`, alias/callback execution, command expansion, and both loaders.
-- [source/alias.c](../../source/alias.c): alias definitions, argument binding, variable lookup, and local scopes.
-- [source/hook.c](../../source/hook.c): event registration, wildcard selection per serial group, and noise/default-action behavior.
-- [source/parse.c](../../source/parse.c): JOIN arguments, state updates, and default display.
-- [source/if.c](../../source/if.c) and [source/ircaux.c](../../source/ircaux.c): flow-control commands, `fe` limits, and `check_val()` truth conversion.
-- [source/irc.c](../../source/irc.c) and [include/irc.h](../../include/irc.h): startup-file selection and loading.
+- `source/commands.c`: `parse_block()`, `parse_statement()`, alias/callback execution, command expansion, and both loaders.
+- `source/alias.c`: alias definitions, argument binding, variable lookup, and local scopes.
+- `source/hook.c`: event registration, wildcard selection per serial group, and noise/default-action behavior.
+- `source/parse.c`: JOIN arguments, state updates, and default display.
+- `source/if.c` and `source/ircaux.c`: flow-control commands, `fe` limits, and `check_val()` truth conversion.
+- `source/irc.c` and `include/irc.h`: startup-file selection and loading.

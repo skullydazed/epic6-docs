@@ -34,5 +34,5 @@ Visible noncurrent windows can now show applicable current-only fields from thei
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration, status-update callback, and off default.
-- [source/status.c](../../source/status.c): `IS_CURRENT_WINDOW` and `DISPLAY_ON_WINDOW` define the policy; individual status functions apply their own additional conditions. `status_nickname`, current-window markers, and prefixes use separate behavior.
+- `source/vars.c` and `include/config.h`: boolean registration, status-update callback, and off default.
+- `source/status.c`: `IS_CURRENT_WINDOW` and `DISPLAY_ON_WINDOW` define the policy; individual status functions apply their own additional conditions. `status_nickname`, current-window markers, and prefixes use separate behavior.

@@ -61,4 +61,4 @@ The `bless` command first appeared in EPIC4pre0.009.
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for `blesscmd()`, `waitcmd()`, and alias/callback scope creation. [source/alias.c](../../source/alias.c) implements `bless_local_stack()`, oldest-frame selection, locking, and local-variable lookup. [source/server.c](../../source/server.c) implements stack locking during `server_hard_wait()`; [source/who.c](../../source/who.c) creates the `userhost` callback scope and its positional arguments.
+See `source/commands.c` for `blesscmd()`, `waitcmd()`, and alias/callback scope creation. `source/alias.c` implements `bless_local_stack()`, oldest-frame selection, locking, and local-variable lookup. `source/server.c` implements stack locking during `server_hard_wait()`; `source/who.c` creates the `userhost` callback scope and its positional arguments.

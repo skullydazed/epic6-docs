@@ -49,4 +49,4 @@ The loop runs synchronously without an automatic delay or event-loop wait. Make 
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `while` and implements `runcmds()`. [source/if.c](../../source/if.c) implements `whilecmd()`, its distinction from `until`, expression/body parsing, and control-flow handling. [source/ircaux.c](../../source/ircaux.c) implements `check_val()`; [source/expr.c](../../source/expr.c) and [source/expr2.c](../../source/expr2.c) implement expressions.
+`source/commands.c` registers `while` and implements `runcmds()`. `source/if.c` implements `whilecmd()`, its distinction from `until`, expression/body parsing, and control-flow handling. `source/ircaux.c` implements `check_val()`; `source/expr.c` and `source/expr2.c` implement expressions.

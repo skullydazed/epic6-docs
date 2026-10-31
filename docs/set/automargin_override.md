@@ -22,5 +22,5 @@ Changing the setting in fullscreen mode recalculates this terminal behavior and 
 
 ## Source references
 
-- [source/term.c](../../source/term.c): setting behavior.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, callback, and default.
+- `source/term.c`: setting behavior.
+- `source/vars.c` and `include/config.h`: registration, callback, and default.

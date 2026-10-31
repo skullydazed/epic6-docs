@@ -56,4 +56,4 @@ That last example uses [join](join.md), not an `invite` option. Received invitat
 
 ## Source
 
-Registration and `send_invite` are in [source/commands.c](../../source/commands.c). Channel recognition and incoming invitations are in [source/parse.c](../../source/parse.c); connection checks and the saved invitation channel are in [source/server.c](../../source/server.c). The `join -invite` behavior is in [source/window.c](../../source/window.c).
+Registration and `send_invite` are in `source/commands.c`. Channel recognition and incoming invitations are in `source/parse.c`; connection checks and the saved invitation channel are in `source/server.c`. The `join -invite` behavior is in `source/window.c`.

@@ -46,4 +46,4 @@ These set the complete permission mode rather than adding permissions to the exi
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `chmod` and implements `function_chmod()`. [source/ircaux.c](../../source/ircaux.c) normalizes paths, and [source/files.c](../../source/files.c) defines EPIC file IDs and validity lookup. The [POSIX chmod specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/chmod.html) describes operating-system permissions and errors.
+`source/functions.c` registers `chmod` and implements `function_chmod()`. `source/ircaux.c` normalizes paths, and `source/files.c` defines EPIC file IDs and validity lookup. The [POSIX chmod specification](https://pubs.opengroup.org/onlinepubs/9799919799/functions/chmod.html) describes operating-system permissions and errors.

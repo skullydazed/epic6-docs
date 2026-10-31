@@ -42,6 +42,6 @@ This operation already existed in ircII2.1.5g.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_move`, `get_number`, `move_window`, and `move_window_to` implement parsing, modulo wraparound, insertion, and selection; `recalculate_window_positions` updates geometry and redraw requests.
-- [source/screen.c](../../source/screen.c): `screen_window_place` updates the screen's ordering data.
-- [source/ircaux.c](../../source/ircaux.c): `is_number` and `my_atol` validate and convert the offset.
+- `source/window.c`: `windowcmd_move`, `get_number`, `move_window`, and `move_window_to` implement parsing, modulo wraparound, insertion, and selection; `recalculate_window_positions` updates geometry and redraw requests.
+- `source/screen.c`: `screen_window_place` updates the screen's ordering data.
+- `source/ircaux.c`: `is_number` and `my_atol` validate and convert the offset.

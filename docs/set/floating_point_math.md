@@ -40,7 +40,7 @@ The expression results are displayed as `2.5` and `2`, respectively. Re-enable t
 
 ## Source references
 
-- [source/expr.c](../../source/expr.c): `canon_number` trims fractional zeros or removes the fractional part according to the setting.
-- [source/expr2.c](../../source/expr2.c): numeric tokens retain typed values internally; conversion to raw strings uses `%Lf` and `canon_number`; arithmetic includes both floating and integer operators.
-- [source/ircaux.c](../../source/ircaux.c): `ftoa` uses significant-digit precision when enabled and truncates otherwise.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration, default off, and default precision 16.
+- `source/expr.c`: `canon_number` trims fractional zeros or removes the fractional part according to the setting.
+- `source/expr2.c`: numeric tokens retain typed values internally; conversion to raw strings uses `%Lf` and `canon_number`; arithmetic includes both floating and integer operators.
+- `source/ircaux.c`: `ftoa` uses significant-digit precision when enabled and truncates otherwise.
+- `source/vars.c` and `include/config.h`: boolean registration, default off, and default precision 16.

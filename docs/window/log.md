@@ -48,7 +48,7 @@ Start logging the current window using its generated filename, log window 3 to `
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window`, `windowcmd_log`, `get_boolean`, and `windowcmd_logfile` implement defaults, filename choice, state changes, and explicit file changes.
-- [source/log.c](../../source/log.c): `open_log`, `close_log`, `do_log`, and `add_to_log` implement append mode, permissions, markers, transformations, and writes.
-- [source/screen.c](../../source/screen.c): `add_to_screen` and `add_to_window` define output suppression, rewriting, logging, and wrapping order.
-- [include/config.h](../../include/config.h): defines the compiled global logfile name.
+- `source/window.c`: `new_window`, `windowcmd_log`, `get_boolean`, and `windowcmd_logfile` implement defaults, filename choice, state changes, and explicit file changes.
+- `source/log.c`: `open_log`, `close_log`, `do_log`, and `add_to_log` implement append mode, permissions, markers, transformations, and writes.
+- `source/screen.c`: `add_to_screen` and `add_to_window` define output suppression, rewriting, logging, and wrapping order.
+- `include/config.h`: defines the compiled global logfile name.

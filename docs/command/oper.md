@@ -34,4 +34,4 @@ Replace both placeholders with the credentials supplied by the server administra
 
 ## Source
 
-Registration and the `oper` parser are in [source/commands.c](../../source/commands.c). Sending and operator-status lookup are in [source/server.c](../../source/server.c), incoming user-mode updates in [source/parse.c](../../source/parse.c), and numeric reply handling in [source/numbers.c](../../source/numbers.c).
+Registration and the `oper` parser are in `source/commands.c`. Sending and operator-status lookup are in `source/server.c`, incoming user-mode updates in `source/parse.c`, and numeric reply handling in `source/numbers.c`.

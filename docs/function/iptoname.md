@@ -36,4 +36,4 @@ The built-in is registered unconditionally and uses the client's c-ares resolver
 
 ## Source
 
-Registration, whole-input handling, fixed output buffer, and ignored lookup status: [source/functions.c](../../source/functions.c). Numeric parsing, reverse lookup, numeric fallback, diagnostics, and event-loop waiting: [source/network.c](../../source/network.c).
+Registration, whole-input handling, fixed output buffer, and ignored lookup status: `source/functions.c`. Numeric parsing, reverse lookup, numeric fallback, diagnostics, and event-loop waiting: `source/network.c`.

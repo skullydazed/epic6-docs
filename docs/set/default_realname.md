@@ -48,8 +48,8 @@ This setting first appeared under this name in EPIC5-0.3.5. It was previously na
 
 ## Source references
 
-- [source/irc.c](../../source/irc.c): startup selects environment, GECOS, and username defaults and stores the result.
-- [source/server.c](../../source/server.c): `server_register` selects the per-server override or global default and sends `user`; `serverctl` exposes per-server defaults.
-- [source/vars.c](../../source/vars.c): string registration with an initially null value and no update callback.
-- [source/commands.c](../../source/commands.c): current built-in command table omits `realname`.
-- [script/ctcp](../../script/ctcp): script-provided finger fallback uses the setting.
+- `source/irc.c`: startup selects environment, GECOS, and username defaults and stores the result.
+- `source/server.c`: `server_register` selects the per-server override or global default and sends `user`; `serverctl` exposes per-server defaults.
+- `source/vars.c`: string registration with an initially null value and no update callback.
+- `source/commands.c`: current built-in command table omits `realname`.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages): script-provided finger fallback uses the setting.

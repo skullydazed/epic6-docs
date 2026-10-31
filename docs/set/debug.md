@@ -47,9 +47,9 @@ Trace all three defined classes, then disable them:
 
 ## Source references
 
-- [include/vars.h](../../include/vars.h): defines the three mask bits.
-- [source/commands.c](../../source/commands.c): `parse_statement` emits statement and nesting diagnostics.
-- [source/expr.c](../../source/expr.c) and [source/if.c](../../source/if.c): expansion and control-flow diagnostics.
-- [source/functions.c](../../source/functions.c): function dispatch captures the mask and reports arguments and results.
-- [source/output.c](../../source/output.c): `privileged_yell` bypasses ordinary hook-based suppression.
-- [source/vars.c](../../source/vars.c): integer registration, validation, and default zero.
+- `include/vars.h`: defines the three mask bits.
+- `source/commands.c`: `parse_statement` emits statement and nesting diagnostics.
+- `source/expr.c` and `source/if.c`: expansion and control-flow diagnostics.
+- `source/functions.c`: function dispatch captures the mask and reports arguments and results.
+- `source/output.c`: `privileged_yell` bypasses ordinary hook-based suppression.
+- `source/vars.c`: integer registration, validation, and default zero.

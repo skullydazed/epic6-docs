@@ -35,6 +35,6 @@ It appears wherever `%K` is present while that window is browsing scrollback. `/
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and default marker.
-- [source/status.c](../../source/status.c): `%K` uses `status_scrollback`; `%{1}K` uses the independent `status_scroll_info` formatter.
-- [source/window.c](../../source/window.c): scrollback view state and deferred trimming in `trim_scrollback`.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and default marker.
+- `source/status.c`: `%K` uses `status_scrollback`; `%{1}K` uses the independent `status_scroll_info` formatter.
+- `source/window.c`: scrollback view state and deferred trimming in `trim_scrollback`.

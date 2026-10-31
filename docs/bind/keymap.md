@@ -24,4 +24,4 @@ Press Escape followed by lowercase `k` to select the normal input map, provided 
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): `switch_keymap`, `switch_keymap_kb`, `init_keys`, `init_mousemachine`, and `set_mouse_support`.
+- `source/keys.c`: `switch_keymap`, `switch_keymap_kb`, `init_keys`, `init_mousemachine`, and `set_mouse_support`.

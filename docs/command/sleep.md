@@ -37,4 +37,4 @@ In a script, this blocks the client for approximately half a second before execu
 
 The command existed in ircII 2.1.5g. Subsecond support first appeared in EPIC4-1.1.2.
 
-Registration and `sleepcmd()` are in [source/commands.c](../../source/commands.c). The blocking `my_sleep()` helper and its `poll()` call are in [source/newio.c](../../source/newio.c).
+Registration and `sleepcmd()` are in `source/commands.c`. The blocking `my_sleep()` helper and its `poll()` call are in `source/newio.c`.

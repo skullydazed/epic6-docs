@@ -48,4 +48,4 @@ Case-sensitive searches compare bytes. Case-insensitive searches compare Unicode
 
 After `assign sample banana`, `$msar(gr/a/o/sample)` returns `bonono` and changes `sample` to `bonono`.
 
-Implementation and registration: [source/functions.c](../../source/functions.c), `function_msar()`. Delimiter splitting, case comparison, and replacement: [source/ircaux.c](../../source/ircaux.c), `next_in_div_list()`, `my_strnicmp()`, and `substitute_string()`. Variable lookup and assignment: [source/alias.c](../../source/alias.c).
+Implementation and registration: `source/functions.c`, `function_msar()`. Delimiter splitting, case comparison, and replacement: `source/ircaux.c`, `next_in_div_list()`, `my_strnicmp()`, and `substitute_string()`. Variable lookup and assignment: `source/alias.c`.

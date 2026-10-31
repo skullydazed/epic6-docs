@@ -38,6 +38,6 @@ Choose the encoding that matches the terminal. This is distinct from interpretin
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): current registration omits `high_bit_escape` and handles unknown-variable errors.
-- [source/screen.c](../../source/screen.c): console byte handling uses `find_recoding("console", ...)` and `iconv`, then passes decoded code points to `user_input_codepoint`.
-- [source/keys.c](../../source/keys.c): current key-binding dispatch handles input sequences without the removed setting.
+- `source/vars.c`: current registration omits `high_bit_escape` and handles unknown-variable errors.
+- `source/screen.c`: console byte handling uses `find_recoding("console", ...)` and `iconv`, then passes decoded code points to `user_input_codepoint`.
+- `source/keys.c`: current key-binding dispatch handles input sequences without the removed setting.

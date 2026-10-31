@@ -43,4 +43,4 @@ $write(w-1 this is a test) /* Write to the global logfile. */
 
 ## Source
 
-Registered and implemented as `function_write` in [source/functions.c](../../source/functions.c). Handle selection and writing use `target_file_write`, `file_write`, and `lookup_window_logfile` in [source/files.c](../../source/files.c).
+Registered and implemented as `function_write` in `source/functions.c`. Handle selection and writing use `target_file_write`, `file_write`, and `lookup_window_logfile` in `source/files.c`.

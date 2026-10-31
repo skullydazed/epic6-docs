@@ -77,4 +77,4 @@ To configure an unlaunched description, store the result of `new`, then set prop
 
 ## Source
 
-Registration and wrapper: [source/functions.c](../../source/functions.c). Operation dispatch, process creation, launching, callbacks, and cleanup: [source/exec.c](../../source/exec.c).
+Registration and wrapper: `source/functions.c`. Operation dispatch, process creation, launching, callbacks, and cleanup: `source/exec.c`.

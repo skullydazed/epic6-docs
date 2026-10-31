@@ -41,5 +41,5 @@ This operation first appeared in EPIC5-0.0.3.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_topline`, `windowcmd_toplines`, and `new_window` implement text slots, range checks, independent row reservation, and defaults.
-- [source/screen.c](../../source/screen.c): `repaint_window_body` renders stored topline text using `prepare_display_fixed_size` before the scrolling output rows.
+- `source/window.c`: `windowcmd_topline`, `windowcmd_toplines`, and `new_window` implement text slots, range checks, independent row reservation, and defaults.
+- `source/screen.c`: `repaint_window_body` renders stored topline text using `prepare_display_fixed_size` before the scrolling output rows.

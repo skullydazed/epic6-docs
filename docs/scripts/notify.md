@@ -61,8 +61,8 @@ The retained implementation is marked as 2025 work by hop. It is a different imp
 
 ## Source references
 
-- [script/notify](../../script/notify): aliases, support check, argument bucketing, placeholder function branch, and numeric hooks.
-- [script/builtins](../../script/builtins): automatically loads `notify`.
-- [source/server.c](../../source/server.c): `serverctl(get -1 005 monitor)` reads the current server's advertised support; `get_server` resolves `-1` to the current context.
-- [source/commands.c](../../source/commands.c): `quotecmd` forwards the request.
-- [source/numbers.c](../../source/numbers.c): generic numeric hooks receive server name followed by reply arguments, with default display when not suppressed.
+- `script/notify`: aliases, support check, argument bucketing, placeholder function branch, and numeric hooks.
+- [`script/builtins`](builtins.md): automatically loads `notify`.
+- `source/server.c`: `serverctl(get -1 005 monitor)` reads the current server's advertised support; `get_server` resolves `-1` to the current context.
+- `source/commands.c`: `quotecmd` forwards the request.
+- `source/numbers.c`: generic numeric hooks receive server name followed by reply arguments, with default display when not suppressed.

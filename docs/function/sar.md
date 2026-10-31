@@ -49,4 +49,4 @@ Case-sensitive searches compare bytes. Case-insensitive searches compare Unicode
 
 After `assign foo foobarblah`, `$sar(r/oo/ee/foo)` returns `feebarblah` and changes `foo` to `feebarblah`.
 
-Registration and `function_sar()`: [source/functions.c](../../source/functions.c). Delimiter parsing, comparisons, and replacement: [source/ircaux.c](../../source/ircaux.c), `next_in_div_list()`, `my_strnicmp()`, and `substitute_string()`. Variable lookup and assignment: [source/alias.c](../../source/alias.c).
+Registration and `function_sar()`: `source/functions.c`. Delimiter parsing, comparisons, and replacement: `source/ircaux.c`, `next_in_div_list()`, `my_strnicmp()`, and `substitute_string()`. Variable lookup and assignment: `source/alias.c`.

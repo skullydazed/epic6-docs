@@ -46,8 +46,8 @@ This script first appeared in EPIC5-0.3.1.
 
 ## Source references
 
-- [script/autoquery](../../script/autoquery): hook, helper, generated names, setting initialization, and both creation paths.
-- [source/parse.c](../../source/parse.c): private-message classification and hook order.
-- [source/functions.c](../../source/functions.c): `querywin` checks effective queries, with the supplied server restriction.
-- [source/window.c](../../source/window.c): query assignment, window creation restrictions, and `window swap last` behavior.
-- [script/builtins](../../script/builtins) and [script/addset](../../script/addset): script-defined setting support.
+- `script/autoquery`: hook, helper, generated names, setting initialization, and both creation paths.
+- `source/parse.c`: private-message classification and hook order.
+- `source/functions.c`: `querywin` checks effective queries, with the supplied server restriction.
+- `source/window.c`: query assignment, window creation restrictions, and `window swap last` behavior.
+- [`script/builtins`](builtins.md) and [`script/addset`](addset.md): script-defined setting support.

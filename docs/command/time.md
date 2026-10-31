@@ -32,4 +32,4 @@ These request the receiving server's time, a named server's time, and the time o
 
 ## Source
 
-Registration and `send_comm()` are in [source/commands.c](../../source/commands.c); the shared handler has no special `time` branch. Sending is in [source/server.c](../../source/server.c), and numeric hooks and display are in [source/numbers.c](../../source/numbers.c). The separate local function is in [source/functions.c](../../source/functions.c). Conventional server-query behavior is described in [RFC 2812, section 3.4.6](https://www.rfc-editor.org/rfc/rfc2812#section-3.4.6).
+Registration and `send_comm()` are in `source/commands.c`; the shared handler has no special `time` branch. Sending is in `source/server.c`, and numeric hooks and display are in `source/numbers.c`. The separate local function is in `source/functions.c`. Conventional server-query behavior is described in [RFC 2812, section 3.4.6](https://www.rfc-editor.org/rfc/rfc2812#section-3.4.6).

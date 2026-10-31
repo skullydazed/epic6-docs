@@ -54,7 +54,7 @@ on ^kick "*" (victim, kicker, channel, comment) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_kick` validates parameters, selects the self-kick or other-victim branch, invokes the hook, and removes membership afterward.
-- [source/names.c](../../source/names.c): `remove_channel` generates `channel_lost` before deleting your channel record; `remove_from_channel` deletes another victim's membership.
-- [source/window.c](../../source/window.c): `make_window_current_informally` changes the global current window without selecting input focus.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching and suppression.
+- `source/parse.c`: `p_kick` validates parameters, selects the self-kick or other-victim branch, invokes the hook, and removes membership afterward.
+- `source/names.c`: `remove_channel` generates `channel_lost` before deleting your channel record; `remove_from_channel` deletes another victim's membership.
+- `source/window.c`: `make_window_current_informally` changes the global current window without selecting input focus.
+- `source/hook.c`: event registration and `do_hook` implement matching and suppression.

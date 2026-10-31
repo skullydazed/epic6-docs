@@ -35,7 +35,7 @@ Return to the standard clock with `/set metric_time off`.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration, clock-reset callback, and off default.
-- [source/clock.c](../../source/clock.c): `reset_metric_clock`, clock-format selection, hook arguments, and second-based system timer.
-- [source/ircaux.c](../../source/ircaux.c): `timespec_to_metric` and `get_metric_time` compute millidays within the UTC day.
-- [source/status.c](../../source/status.c): status clock uses the cached clock text.
+- `source/vars.c` and `include/config.h`: boolean registration, clock-reset callback, and off default.
+- `source/clock.c`: `reset_metric_clock`, clock-format selection, hook arguments, and second-based system timer.
+- `source/ircaux.c`: `timespec_to_metric` and `get_metric_time` compute millidays within the UTC day.
+- `source/status.c`: status clock uses the cached clock text.

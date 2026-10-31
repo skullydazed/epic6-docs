@@ -50,9 +50,9 @@ The retained source is marked as 2003 work by hop, restoring a former client set
 
 ## Source references
 
-- [script/suppressmotd](../../script/suppressmotd): setting default, first-sequence flags, numeric display, and server-lost cleanup.
-- [script/addset](../../script/addset) and [script/builtins](../../script/builtins): setting creation and `lastserver` helper.
-- [source/functions.c](../../source/functions.c): `getserial` obtains unused hook serials.
-- [source/hook.c](../../source/hook.c): serial ordering, free-serial selection, and serial-zero suppression.
-- [source/numbers.c](../../source/numbers.c): generic numeric arguments and default-display path.
-- [source/server.c](../../source/server.c): last-server state and server-lost dispatch.
+- `script/suppressmotd`: setting default, first-sequence flags, numeric display, and server-lost cleanup.
+- [`script/addset`](addset.md) and [`script/builtins`](builtins.md): setting creation and `lastserver` helper.
+- `source/functions.c`: `getserial` obtains unused hook serials.
+- `source/hook.c`: serial ordering, free-serial selection, and serial-zero suppression.
+- `source/numbers.c`: generic numeric arguments and default-display path.
+- `source/server.c`: last-server state and server-lost dispatch.

@@ -60,9 +60,9 @@ This script was written by nsx and first appeared in EPIC4-1.2.2. Its source ide
 
 ## Source references
 
-- [script/sping](../../script/sping): request queues, timing arithmetic, timeout handling, reply hooks, and output-window search.
-- [script/addset](../../script/addset) and [script/builtins](../../script/builtins): setting creation and server/window helpers.
-- [source/parse.c](../../source/parse.c): `p_pong` validates replies and handles internal wait tokens before the PONG hook.
-- [source/numbers.c](../../source/numbers.c): numeric reply hook arguments and default handling.
-- [source/timer.c](../../source/timer.c): scheduling, timer IDs, and callback context.
-- [source/server.c](../../source/server.c): server lookup and server-lost hook dispatch.
+- `script/sping`: request queues, timing arithmetic, timeout handling, reply hooks, and output-window search.
+- [`script/addset`](addset.md) and [`script/builtins`](builtins.md): setting creation and server/window helpers.
+- `source/parse.c`: `p_pong` validates replies and handles internal wait tokens before the PONG hook.
+- `source/numbers.c`: numeric reply hook arguments and default handling.
+- `source/timer.c`: scheduling, timer IDs, and callback context.
+- `source/server.c`: server lookup and server-lost hook dispatch.

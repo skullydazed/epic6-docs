@@ -31,4 +31,4 @@ Sending requires a usable server connection. A closed connection normally produc
 
 ## Source
 
-Registration and the shared `send_comm` handler are in [source/commands.c](../../source/commands.c); there is no special `links` branch. Server selection and transmission are in [source/server.c](../../source/server.c). Numeric hooks and `364`/`365` formatting are in [source/numbers.c](../../source/numbers.c).
+Registration and the shared `send_comm` handler are in `source/commands.c`; there is no special `links` branch. Server selection and transmission are in `source/server.c`. Numeric hooks and `364`/`365` formatting are in `source/numbers.c`.

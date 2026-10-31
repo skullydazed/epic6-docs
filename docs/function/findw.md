@@ -42,4 +42,4 @@ This prints `hmm`, because its position is `1`.
 
 ## Source
 
-Registration and `function_findw()`: [source/functions.c](../../source/functions.c). Function word parsing: [include/words.h](../../include/words.h). Case-insensitive UTF-8 comparison: [source/ircaux.c](../../source/ircaux.c). Locale-based uppercase mapping: [source/recode.c](../../source/recode.c).
+Registration and `function_findw()`: `source/functions.c`. Function word parsing: `include/words.h`. Case-insensitive UTF-8 comparison: `source/ircaux.c`. Locale-based uppercase mapping: `source/recode.c`.

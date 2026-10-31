@@ -41,5 +41,5 @@ A plain `%W` shows this marker only for the input window in a split screen. To s
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and default marker.
-- [source/status.c](../../source/status.c): `status_window` implements the distinct map branches; `IS_CURRENT_WINDOW` checks the input window of the window's screen.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and default marker.
+- `source/status.c`: `status_window` implements the distinct map branches; `IS_CURRENT_WINDOW` checks the input window of the window's screen.

@@ -44,4 +44,4 @@ The first lists cached entries. The second requests resolver JSON for the loopba
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `vhosts`. [source/network.c](../../source/network.c) implements `vhostscmd()`, interface caching, local-host lookup, `hostname_to_json()`, and resolver JSON output. [source/irc.c](../../source/irc.c) initializes the cache and applies startup host defaults.
+`source/commands.c` registers `vhosts`. `source/network.c` implements `vhostscmd()`, interface caching, local-host lookup, `hostname_to_json()`, and resolver JSON output. `source/irc.c` initializes the cache and applies startup host defaults.

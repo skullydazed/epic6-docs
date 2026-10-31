@@ -59,4 +59,4 @@ Interactive prompt input requires EPIC's fullscreen input handling; do not use i
 
 ## Source
 
-Registration, option parsing, the `input`/`input_char` distinction, and callback dispatch are in [source/commands.c](../../source/commands.c). Prompt stacking and completion are in [source/screen.c](../../source/screen.c), and line submission and echo configuration are in [source/input.c](../../source/input.c).
+Registration, option parsing, the `input`/`input_char` distinction, and callback dispatch are in `source/commands.c`. Prompt stacking and completion are in `source/screen.c`, and line submission and echo configuration are in `source/input.c`.

@@ -42,7 +42,7 @@ Use the actual path from your installation. The second command launches only whe
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): string registration and build-supplied `WSERV_PATH` default.
-- [Makefile.in](../../Makefile.in) and [source/Makefile.in](../../source/Makefile.in): helper installation and compiled pathname.
-- [source/screen.c](../../source/screen.c): `create_additional_screen` launches backend-specific helper commands; control handling enforces the expected version.
-- [source/wserv.c](../../source/wserv.c): helper host/port arguments and protocol handshake.
+- `source/vars.c`: string registration and build-supplied `WSERV_PATH` default.
+- `Makefile.in` and `source/Makefile.in`: helper installation and compiled pathname.
+- `source/screen.c`: `create_additional_screen` launches backend-specific helper commands; control handling enforces the expected version.
+- `source/wserv.c`: helper host/port arguments and protocol handshake.

@@ -44,4 +44,4 @@ $usetitem(sample 0 pear) /* 0: replace storage item zero. */
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). Implemented by `FUNCTION_SETITEM(function_usetitem, 1)`, `set_item`, and the sorted-index helpers in [source/array.c](../../source/array.c).
+Registered in `source/functions.c`. Implemented by `FUNCTION_SETITEM(function_usetitem, 1)`, `set_item`, and the sorted-index helpers in `source/array.c`.

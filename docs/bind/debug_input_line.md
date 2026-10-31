@@ -24,5 +24,5 @@ See [bind](../command/bind.md) for sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): registration in `init_binds`.
-- [source/input.c](../../source/input.c): `debug_input_line`.
+- `source/keys.c`: registration in `init_binds`.
+- `source/input.c`: `debug_input_line`.

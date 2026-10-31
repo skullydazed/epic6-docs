@@ -36,4 +36,4 @@ Use this to check whether text begins with a digit or a minus sign followed by a
 
 ## Source
 
-Registration and direct prefix comparisons are in [source/functions.c](../../source/functions.c). Integer-string return formatting is in [include/functions.h](../../include/functions.h).
+Registration and direct prefix comparisons are in `source/functions.c`. Integer-string return formatting is in `include/functions.h`.

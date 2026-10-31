@@ -14,7 +14,7 @@ Ask another client for its local date and time. This differs from the [time](../
 
 ## EPIC6 response behavior
 
-The responder is supplied by [script/ctcp](../../script/ctcp), loaded by [script/builtins](../../script/builtins), rather than by a C built-in handler. A setup that does not load it needs `/load ctcp` to install the handler.
+The responder is supplied by [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages), loaded by [`script/builtins`](../scripts/builtins.md), rather than by a C built-in handler. A setup that does not load it needs `/load ctcp` to install the handler.
 
 The supplied script ignores request arguments and returns `$stime($time())`: the current client-host time formatted as a local date/time string. It uses the host's local timezone and does not provide an independently verified clock or a separate timezone field. The formatting uses the active locale's `%c` date/time representation, normally resembling `Thu Oct 15 13:00:00 2026`.
 
@@ -30,8 +30,8 @@ Request the date and time from John's client.
 
 ## Source references
 
-- [script/ctcp](../../script/ctcp): registration of the `time` request handler and description.
-- [script/builtins](../../script/builtins): loads the CTCP script.
-- [source/functions.c](../../source/functions.c): `function_time` and `function_stime` obtain and format the timestamp.
-- [source/ircaux.c](../../source/ircaux.c): `my_ctime` formats local time.
-- [source/commands.c](../../source/commands.c) and [source/ctcp.c](../../source/ctcp.c): request sending, reply hooks/display, and reply throttling.
+- [`script/ctcp`](../command/ctcp.md#receiving-ctcp-messages): registration of the `time` request handler and description.
+- [`script/builtins`](../scripts/builtins.md): loads the CTCP script.
+- `source/functions.c`: `function_time` and `function_stime` obtain and format the timestamp.
+- `source/ircaux.c`: `my_ctime` formats local time.
+- `source/commands.c` and `source/ctcp.c`: request sending, reply hooks/display, and reply throttling.

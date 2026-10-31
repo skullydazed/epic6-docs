@@ -43,7 +43,7 @@ Append subsequent session output to that file. Stop with `/set log off`.
 
 ## Source references
 
-- [source/log.c](../../source/log.c): `logger`, `open_log`, `close_log`, `set_logfile`, and `add_to_log` implement state, append mode, permissions, markers, rewriting, and write flushing.
-- [source/output.c](../../source/output.c): `put_echo` writes the global session log before calling `add_to_screen`.
-- [source/screen.c](../../source/screen.c): window routing and window-level filtering happen later.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and default off, with default filename `irc.log`.
+- `source/log.c`: `logger`, `open_log`, `close_log`, `set_logfile`, and `add_to_log` implement state, append mode, permissions, markers, rewriting, and write flushing.
+- `source/output.c`: `put_echo` writes the global session log before calling `add_to_screen`.
+- `source/screen.c`: window routing and window-level filtering happen later.
+- `source/vars.c` and `include/config.h`: boolean registration and default off, with default filename `irc.log`.

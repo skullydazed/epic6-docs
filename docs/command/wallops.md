@@ -32,4 +32,4 @@ The server controls delivery; sending successfully does not guarantee that every
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `wallops` and implements `e_wallop()` without a command-name branch. [source/server.c](../../source/server.c) implements server encoding and sending. [source/parse.c](../../source/parse.c) implements incoming `p_wallops()` hooks and display.
+`source/commands.c` registers `wallops` and implements `e_wallop()` without a command-name branch. `source/server.c` implements server encoding and sending. `source/parse.c` implements incoming `p_wallops()` hooks and display.

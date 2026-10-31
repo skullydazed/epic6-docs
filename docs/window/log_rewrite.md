@@ -26,4 +26,4 @@ Define and run an alias that installs the deferred expression, then remove the o
 
 ## Source references
 
-`windowcmd_log_rewrite` in [source/window.c](../../source/window.c), `add_to_window` in [source/screen.c](../../source/screen.c), and `add_to_log` in [source/log.c](../../source/log.c).
+`windowcmd_log_rewrite` in `source/window.c`, `add_to_window` in `source/screen.c`, and `add_to_log` in `source/log.c`.

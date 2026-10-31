@@ -40,8 +40,8 @@ Restore the fallback behavior with `/set -quit_message`.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration and default text.
-- [source/commands.c](../../source/commands.c): `e_quit` distinguishes explicit arguments from a default exit.
-- [source/irc.c](../../source/irc.c): `irc_exit` passes an explicit reason, or no reason, to server cleanup.
-- [source/server.c](../../source/server.c): `servers_close_all`, `server_close`, server-specific fallback, and `serverctl` attributes.
-- [source/status.c](../../source/status.c): `convert_sub_format` prepares the first `%s` substitution.
+- `source/vars.c` and `include/config.h`: string registration and default text.
+- `source/commands.c`: `e_quit` distinguishes explicit arguments from a default exit.
+- `source/irc.c`: `irc_exit` passes an explicit reason, or no reason, to server cleanup.
+- `source/server.c`: `servers_close_all`, `server_close`, server-specific fallback, and `serverctl` attributes.
+- `source/status.c`: `convert_sub_format` prepares the first `%s` substitution.

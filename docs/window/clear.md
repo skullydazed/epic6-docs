@@ -39,6 +39,6 @@ Clear the current window, or window 3, respectively. To bring recent output back
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_clear`, `clear_window`, `windowcmd_unclear`, and `unclear_window` implement clearing and boundary-aware restoration.
-- [source/commands.c](../../source/commands.c): `e_clear` implements multi-window selection and forced `/unclear` restoration.
-- [source/screen.c](../../source/screen.c): window redraw chooses normal, held, or scrollback display positions.
+- `source/window.c`: `windowcmd_clear`, `clear_window`, `windowcmd_unclear`, and `unclear_window` implement clearing and boundary-aware restoration.
+- `source/commands.c`: `e_clear` implements multi-window selection and forced `/unclear` restoration.
+- `source/screen.c`: window redraw chooses normal, held, or scrollback display positions.

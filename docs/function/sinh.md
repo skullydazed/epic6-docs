@@ -29,4 +29,4 @@ NaN input ordinarily produces NaN, and positive or negative infinity input produ
 
 Approximate examples describe numeric values; returned strings may contain more digits. There are no options or IRC connection requirements.
 
-Registration, `MATH_FUNCTION(function_sinh, sinh)`, and error mapping: [source/functions.c](../../source/functions.c). Argument conversion and return formatting: [include/functions.h](../../include/functions.h).
+Registration, `MATH_FUNCTION(function_sinh, sinh)`, and error mapping: `source/functions.c`. Argument conversion and return formatting: `include/functions.h`.

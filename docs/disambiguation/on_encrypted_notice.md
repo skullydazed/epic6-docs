@@ -32,9 +32,9 @@ The former automatic-reply restriction attached to this removed hook is not a cu
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records removal of `on encrypted_(privmsg|notice)`, SED and related encryption types, and the end-to-end encryption implementation.
-- [source/hook.c](../../source/hook.c): the hook table omits `encrypted_notice`; `find_hook` rejects unknown named events.
-- [include/hook.h](../../include/hook.h): current hook identifiers contain no encrypted-notice event.
-- [source/parse.c](../../source/parse.c): `p_notice` processes CTCP replies and then ordinary notice hooks without the former encrypted-notice stage.
-- [source/ctcp.c](../../source/ctcp.c): current initialization registers only the action handler, not the former SED handler.
-- [source/commands.c](../../source/commands.c): `ctcpcmd` rejects CTCP commands invoked from a notice.
+- [KNOWNBUGS](../KNOWNBUGS.md): records removal of `on encrypted_(privmsg|notice)`, SED and related encryption types, and the end-to-end encryption implementation.
+- `source/hook.c`: the hook table omits `encrypted_notice`; `find_hook` rejects unknown named events.
+- `include/hook.h`: current hook identifiers contain no encrypted-notice event.
+- `source/parse.c`: `p_notice` processes CTCP replies and then ordinary notice hooks without the former encrypted-notice stage.
+- `source/ctcp.c`: current initialization registers only the action handler, not the former SED handler.
+- `source/commands.c`: `ctcpcmd` rejects CTCP commands invoked from a notice.

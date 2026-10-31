@@ -42,5 +42,5 @@ Add two nickname targets to window 3:
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_add`, `get_target_special`, `add_window_target`, `check_window_target`, and query counter lookup implement parsing, ownership transfer, and query interactions.
-- [source/screen.c](../../source/screen.c): output routing checks channel or nickname associations before level-based windows.
+- `source/window.c`: `windowcmd_add`, `get_target_special`, `add_window_target`, `check_window_target`, and query counter lookup implement parsing, ownership transfer, and query interactions.
+- `source/screen.c`: output routing checks channel or nickname associations before level-based windows.

@@ -46,5 +46,5 @@ Add two conversations in window 3, select Alice again while retaining Bob, remov
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_query`, `get_target_special`, `add_window_target`, `remove_window_target`, `recheck_queries`, `get_window_equery`, and `get_window_target` implement list changes, shorthand resolution, recency, and target precedence.
-- [source/screen.c](../../source/screen.c): `add_to_screen` routes nickname-associated output through window target lists before level-based routing.
+- `source/window.c`: `windowcmd_query`, `get_target_special`, `add_window_target`, `remove_window_target`, `recheck_queries`, `get_window_equery`, and `get_window_target` implement list changes, shorthand resolution, recency, and target precedence.
+- `source/screen.c`: `add_to_screen` routes nickname-associated output through window target lists before level-based routing.

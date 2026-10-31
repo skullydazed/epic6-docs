@@ -35,6 +35,6 @@ For nickname `alice`, this supplies `[You Are alice]` where `%N` appears in the 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, prefix lookup, and `%N` default.
-- [source/status.c](../../source/status.c): `%N` mapping, wrapper compilation, `status_nickname`, and shared insertion escaping.
-- [source/server.c](../../source/server.c): `get_server_nickname` supplies the per-server nickname or fallback text.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, prefix lookup, and `%N` default.
+- `source/status.c`: `%N` mapping, wrapper compilation, `status_nickname`, and shared insertion escaping.
+- `source/server.c`: `get_server_nickname` supplies the per-server nickname or fallback text.

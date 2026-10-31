@@ -26,5 +26,5 @@ See [bind](../command/bind.md) for key sequence syntax, [backward_character](bac
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default Right arrow bindings.
-- [source/input.c](../../source/input.c): `forward_character`, `input_move_cursor`, `retokenize_input`, and `redraw_input` implement movement, logical character boundaries, and horizontal scrolling.
+- `source/keys.c`: action registration and default Right arrow bindings.
+- `source/input.c`: `forward_character`, `input_move_cursor`, `retokenize_input`, and `redraw_input` implement movement, logical character boundaries, and horizontal scrolling.

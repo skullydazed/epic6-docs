@@ -56,8 +56,8 @@ The supplied MONITOR wrapper is marked as hop's 2025 implementation.
 
 ## Source references
 
-- [script/notify](../../script/notify): command forms, support check, argument grouping, direct MONITOR alias, and numeric hooks.
-- [script/builtins](../../script/builtins): notify script loading.
-- [source/commands.c](../../source/commands.c) and [source/functions.c](../../source/functions.c): current registries omit the former built-in notify interfaces.
-- [source/server.c](../../source/server.c): current-server reference resolution and `serverctl()` access to `005 MONITOR`.
-- [source/numbers.c](../../source/numbers.c): numeric processing and hook arguments.
+- [`script/notify`](../scripts/notify.md): command forms, support check, argument grouping, direct MONITOR alias, and numeric hooks.
+- [`script/builtins`](../scripts/builtins.md): notify script loading.
+- `source/commands.c` and `source/functions.c`: current registries omit the former built-in notify interfaces.
+- `source/server.c`: current-server reference resolution and `serverctl()` access to `005 MONITOR`.
+- `source/numbers.c`: numeric processing and hook arguments.

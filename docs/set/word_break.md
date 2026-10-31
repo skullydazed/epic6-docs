@@ -35,5 +35,5 @@ The value is a literal hyphen; spaces still break through their independent hand
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, no update callback, and space/tab default.
-- [source/screen.c](../../source/screen.c): `prepare_display` decodes the character collection, handles spaces and forced newlines separately, chooses break positions, and applies continuation formatting.
+- `source/vars.c` and `include/config.h`: string registration, no update callback, and space/tab default.
+- `source/screen.c`: `prepare_display` decodes the character collection, handles spaces and forced newlines separately, chooses break positions, and applies continuation formatting.

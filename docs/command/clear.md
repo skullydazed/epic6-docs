@@ -46,4 +46,4 @@ To bring recent scrollback back into the current window's normal view:
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for `e_clear()`, its command-name distinction between `clear` and `unclear`, and option parsing. [source/window.c](../../source/window.c) implements `clear_window()`, window selection, notification/activity changes, and `window clear`. [source/screen.c](../../source/screen.c) selects normal, held, or scrollback positions during redraw.
+See `source/commands.c` for `e_clear()`, its command-name distinction between `clear` and `unclear`, and option parsing. `source/window.c` implements `clear_window()`, window selection, notification/activity changes, and `window clear`. `source/screen.c` selects normal, held, or scrollback positions during redraw.

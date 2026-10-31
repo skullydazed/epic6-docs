@@ -51,4 +51,4 @@ The `until` command first appeared in EPIC3.
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `until` and implements `runcmds()`. [source/if.c](../../source/if.c) implements `whilecmd()`, the inverted condition test, body parsing, and control-flow handling. [source/ircaux.c](../../source/ircaux.c) implements `check_val()`; [source/expr.c](../../source/expr.c) and [source/expr2.c](../../source/expr2.c) evaluate expressions.
+`source/commands.c` registers `until` and implements `runcmds()`. `source/if.c` implements `whilecmd()`, the inverted condition test, body parsing, and control-flow handling. `source/ircaux.c` implements `check_val()`; `source/expr.c` and `source/expr2.c` evaluate expressions.

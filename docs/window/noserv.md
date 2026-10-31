@@ -42,6 +42,6 @@ This feature first appeared in EPIC4pre1.028.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): the command table maps `noserv` to `windowcmd_discon`; that handler, `destroy_window_waiting_channels`, and `window_change_server` implement detachment and notifications. `window_check_servers` handles possible autoclose.
-- [source/names.c](../../source/names.c): `reassign_window_channels` attempts channel reassignment.
-- [source/screen.c](../../source/screen.c): `add_to_screen` implements explicit destinations, server-aware routing, and fallbacks.
+- `source/window.c`: the command table maps `noserv` to `windowcmd_discon`; that handler, `destroy_window_waiting_channels`, and `window_change_server` implement detachment and notifications. `window_check_servers` handles possible autoclose.
+- `source/names.c`: `reassign_window_channels` attempts channel reassignment.
+- `source/screen.c`: `add_to_screen` implements explicit destinations, server-aware routing, and fallbacks.

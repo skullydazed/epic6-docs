@@ -41,6 +41,6 @@ That changes text generated on a later successful check. Hide the current field 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): string registration, status rebuild callback, and unset default.
-- [source/status.c](../../source/status.c): `%M` maps to `status_mail`, which returns the stored text directly.
-- [script/mail](../../script/mail) and [script/mail.py](../../script/mail.py): Python loading, mailbox checks, formatting placeholders, status assignments, and clearing behavior.
+- `source/vars.c` and `include/config.h`: string registration, status rebuild callback, and unset default.
+- `source/status.c`: `%M` maps to `status_mail`, which returns the stored text directly.
+- [`script/mail`](../scripts/mail.md) and [`mail.py`](../scripts/mail.md): Python loading, mailbox checks, formatting placeholders, status assignments, and clearing behavior.

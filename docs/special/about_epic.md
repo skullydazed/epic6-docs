@@ -10,7 +10,7 @@ EPIC6 continues that lineage, but it is not a promise of complete compatibility 
 - **Interactive use and automation.** EPIC supports normal terminal sessions and detached bot operation. The `-b` startup option selects bot mode; scripts remain responsible for the automation they implement. Network policy and permissions still govern what an automated client may do.
 - **Protocol access.** High-level commands provide common IRC operations, while [quote](../command/quote.md) allows a script or user to send protocol text. The server controls supported commands, network extensions, permissions, and accepted requests; client flexibility does not override those rules.
 - **Customizable presentation.** Windows, status lines, message routing, hooks, and key bindings provide control over the interface. Completion, history, reconnect behavior, and other conveniences can be implemented or extended by scripts.
-- **Source availability.** The repository contains the client and supplied scripts. The [copyright and license](../../COPYRIGHT) permits redistribution in source and binary form, with or without modification, subject to its stated conditions. Individual files can carry their own notices.
+- **Source availability.** The repository contains the client and supplied scripts. The [copyright and license](../COPYRIGHT.md) permits redistribution in source and binary form, with or without modification, subject to its stated conditions. Individual files can carry their own notices.
 
 ## EPIC6 direction
 
@@ -26,10 +26,10 @@ EPIC's scripting facilities execute local client operations and can invoke exter
 
 ## Repository references
 
-- [COPYRIGHT](../../COPYRIGHT): attribution, redistribution conditions, and warranty terms.
-- [source/irc.c](../../source/irc.c): EPIC6 identification, startup, and detached bot mode.
-- [source/commands.c](../../source/commands.c): command dispatch and protocol-command interfaces.
-- [source/alias.c](../../source/alias.c), [source/hook.c](../../source/hook.c), and [source/keys.c](../../source/keys.c): scripting definitions, event hooks, and key bindings.
-- [script/global](../../script/global) and [script/builtins](../../script/builtins): supplied startup and support environment.
-- [configure.ac](../../configure.ac): supported build environment and dependency checks.
-- [KNOWNBUGS](../../KNOWNBUGS): EPIC6 development goals, outstanding work, and feature transitions.
+- [COPYRIGHT](../COPYRIGHT.md): attribution, redistribution conditions, and warranty terms.
+- `source/irc.c`: EPIC6 identification, startup, and detached bot mode.
+- `source/commands.c`: command dispatch and protocol-command interfaces.
+- `source/alias.c`, `source/hook.c`, and `source/keys.c`: scripting definitions, event hooks, and key bindings.
+- [`script/global`](../scripts/global.md) and [`script/builtins`](../scripts/builtins.md): supplied startup and support environment.
+- `configure.ac`: supported build environment and dependency checks.
+- [KNOWNBUGS](../KNOWNBUGS.md): EPIC6 development goals, outstanding work, and feature transitions.

@@ -51,6 +51,6 @@ Do not send the same text again in this handler unless a duplicate outgoing mess
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `send_text` splits targets, classifies message type, invokes the hook before sending chunks, records the last sent target, and enforces recursion handling.
-- [source/ctcp.c](../../source/ctcp.c): `send_ctcp` calls `send_text` with ordinary send hooks disabled.
-- [source/hook.c](../../source/hook.c): the event registration sets the nonrecursion flag; dispatch implements matching and default-echo suppression.
+- `source/commands.c`: `send_text` splits targets, classifies message type, invokes the hook before sending chunks, records the last sent target, and enforces recursion handling.
+- `source/ctcp.c`: `send_ctcp` calls `send_text` with ordinary send hooks disabled.
+- `source/hook.c`: the event registration sets the nonrecursion flag; dispatch implements matching and default-echo suppression.

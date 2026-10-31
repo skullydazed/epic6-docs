@@ -77,4 +77,4 @@ Conditions require parentheses. Malformed expressions and unbalanced parentheses
 
 ## Source
 
-Registration is in [source/commands.c](../../source/commands.c), and `ifcmd`, branch parsing, and the `unless` distinction are in [source/if.c](../../source/if.c). Expression evaluation and operators are in [source/expr.c](../../source/expr.c) and [source/expr2.c](../../source/expr2.c); final truth testing is in [source/ircaux.c](../../source/ircaux.c).
+Registration is in `source/commands.c`, and `ifcmd`, branch parsing, and the `unless` distinction are in `source/if.c`. Expression evaluation and operators are in `source/expr.c` and `source/expr2.c`; final truth testing is in `source/ircaux.c`.

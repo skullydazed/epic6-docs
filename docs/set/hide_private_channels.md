@@ -36,7 +36,7 @@ The standard status channel field then uses `*private*` for a channel whose cach
 
 ## Source references
 
-- [source/status.c](../../source/status.c): `status_channel` selects the replacement before channel-width truncation and status formatting.
-- [source/names.c](../../source/names.c): `is_channel_private` tests cached base modes for `p` or `s` and returns false for an unknown channel.
-- [source/vars.c](../../source/vars.c): boolean registration and status-update callback.
-- [include/config.h](../../include/config.h): default off.
+- `source/status.c`: `status_channel` selects the replacement before channel-width truncation and status formatting.
+- `source/names.c`: `is_channel_private` tests cached base modes for `p` or `s` and returns false for an unknown channel.
+- `source/vars.c`: boolean registration and status-update callback.
+- `include/config.h`: default off.

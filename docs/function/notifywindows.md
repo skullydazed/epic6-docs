@@ -34,4 +34,4 @@ window notified off
 
 The explicit flag can include a visible window; actual output depends on other flagged windows and intervening events.
 
-Registration and `function_notifywindows()`: [source/functions.c](../../source/functions.c). Notification getters, setters, and window commands: [source/window.c](../../source/window.c). Hidden-output notification processing: [source/screen.c](../../source/screen.c). `%F` formatting: [source/status.c](../../source/status.c).
+Registration and `function_notifywindows()`: `source/functions.c`. Notification getters, setters, and window commands: `source/window.c`. Hidden-output notification processing: `source/screen.c`. `%F` formatting: `source/status.c`.

@@ -41,6 +41,6 @@ This operation already existed in ircII2.1.5g.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_kill_others` chooses the invisible list for a visible target and a screen list for an invisible target; `unlink_window` and `delete_window_contents` perform deletion; `window_check_servers` handles autoclose.
-- [source/screen.c](../../source/screen.c): `get_screen_by_refnum` and `get_screen_window_list` return no screen/list for the hidden-window screen value of -1, so the invisible-target branch does not iterate.
-- [source/names.c](../../source/names.c): `reassign_window_channels` searches for replacement channel windows.
+- `source/window.c`: `windowcmd_kill_others` chooses the invisible list for a visible target and a screen list for an invisible target; `unlink_window` and `delete_window_contents` perform deletion; `window_check_servers` handles autoclose.
+- `source/screen.c`: `get_screen_by_refnum` and `get_screen_window_list` return no screen/list for the hidden-window screen value of -1, so the invisible-target branch does not iterate.
+- `source/names.c`: `reassign_window_channels` searches for replacement channel windows.

@@ -36,4 +36,4 @@ The colon makes the message body a single trailing IRC parameter. This does not 
 
 ## Source
 
-Registration and the `quotecmd` distinction between `quote` and `xquote` are in [source/commands.c](../../source/commands.c). Current-server transmission, connection checks, line processing, encoding, hooks, and wire limits are in [source/server.c](../../source/server.c).
+Registration and the `quotecmd` distinction between `quote` and `xquote` are in `source/commands.c`. Current-server transmission, connection checks, line processing, encoding, hooks, and wire limits are in `source/server.c`.

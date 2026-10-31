@@ -59,8 +59,8 @@ Custom scripts can call `_proc_act_increase <window-refnum> <level>` to use its 
 
 ## Source references
 
-- [script/activity](../../script/activity): settings, aliases, severity classification, list construction, and reset/creation hooks.
-- [script/builtins](../../script/builtins): compatibility window functions used by the script.
-- [source/window.c](../../source/window.c): activity-format/data selection and window priorities.
-- [source/status.c](../../source/status.c): `%2`/`%Y` user-field mapping and `%E` activity-format expansion.
-- [source/functions.c](../../source/functions.c): `outputinfo` supplies the current output level and target.
+- `script/activity`: settings, aliases, severity classification, list construction, and reset/creation hooks.
+- [`script/builtins`](builtins.md): compatibility window functions used by the script.
+- `source/window.c`: activity-format/data selection and window priorities.
+- `source/status.c`: `%2`/`%Y` user-field mapping and `%E` activity-format expansion.
+- `source/functions.c`: `outputinfo` supplies the current output level and target.

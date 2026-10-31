@@ -43,4 +43,4 @@ This function first appeared in EPIC3pre7.
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `chanmode` and implements `function_channelmode()`. [source/names.c](../../source/names.c) implements channel lookup, mode tracking, and serialization. [source/ircaux.c](../../source/ircaux.c) implements sorted mode insertion and optional result-word quoting. [include/words.h](../../include/words.h) defines argument word parsing.
+`source/functions.c` registers `chanmode` and implements `function_channelmode()`. `source/names.c` implements channel lookup, mode tracking, and serialization. `source/ircaux.c` implements sorted mode insertion and optional result-word quoting. `include/words.h` defines argument word parsing.

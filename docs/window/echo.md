@@ -37,6 +37,6 @@ Use [xecho](../command/xecho.md) for output that needs explicit message-level, l
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_echo` parses quoted versus remainder text and sets the explicit output context.
-- [source/output.c](../../source/output.c): `put_echo` enters the logging and display path.
-- [source/screen.c](../../source/screen.c): explicit-window routing and `add_to_window` apply hooks, rewriting, logs, lastlog, scrollback, and visibility rules.
+- `source/window.c`: `windowcmd_echo` parses quoted versus remainder text and sets the explicit output context.
+- `source/output.c`: `put_echo` enters the logging and display path.
+- `source/screen.c`: explicit-window routing and `add_to_window` apply hooks, rewriting, logs, lastlog, scrollback, and visibility rules.

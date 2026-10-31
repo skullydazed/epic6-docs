@@ -68,10 +68,10 @@ The second command unsets that name. Neither command alters the parent shell's e
 
 ## Source references
 
-- [source/irc.c](../../source/irc.c): startup environment selection, fallbacks, command-line overrides, locale setup, and startup loading.
-- [source/server.c](../../source/server.c): server-file import, registration, and one-shot channel/mode handling.
-- [source/term.c](../../source/term.c): terminal environment and setup fallback.
-- [source/alias.c](../../source/alias.c): environment fallback after client-variable lookup.
-- [source/commands.c](../../source/commands.c): `setenvcmd` changes the process environment.
-- [include/config.h](../../include/config.h): default load-path template.
-- [script/mail.py](../../script/mail.py): script-specific mailbox environment discovery.
+- `source/irc.c`: startup environment selection, fallbacks, command-line overrides, locale setup, and startup loading.
+- `source/server.c`: server-file import, registration, and one-shot channel/mode handling.
+- `source/term.c`: terminal environment and setup fallback.
+- `source/alias.c`: environment fallback after client-variable lookup.
+- `source/commands.c`: `setenvcmd` changes the process environment.
+- `include/config.h`: default load-path template.
+- [`mail.py`](../scripts/mail.md): script-specific mailbox environment discovery.

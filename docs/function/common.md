@@ -34,4 +34,4 @@ Returns the common words as a space-separated list. Returns an empty string when
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). Word splitting, result quoting, and case-insensitive comparison are in [source/ircaux.c](../../source/ircaux.c), with word parsing in [source/words.c](../../source/words.c).
+Registered and implemented in `source/functions.c`. Word splitting, result quoting, and case-insensitive comparison are in `source/ircaux.c`, with word parsing in `source/words.c`.

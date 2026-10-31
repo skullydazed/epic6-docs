@@ -65,4 +65,4 @@ To expand the nickname expando:
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for `evalcmd()`, `runcmds()`, `parse_block()`, and `parse_statement()`. [source/expr.c](../../source/expr.c) implements statement boundaries and expansion, including brace protection.
+See `source/commands.c` for `evalcmd()`, `runcmds()`, `parse_block()`, and `parse_statement()`. `source/expr.c` implements statement boundaries and expansion, including brace protection.

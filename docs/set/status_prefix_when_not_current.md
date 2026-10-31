@@ -23,5 +23,5 @@ A window’s own `status_prefix_when_not_current` override takes precedence when
 
 ## Source references
 
-- [source/status.c](../../source/status.c): setting behavior.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, callback, and default.
+- `source/status.c`: setting behavior.
+- `source/vars.c` and `include/config.h`: registration, callback, and default.

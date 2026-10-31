@@ -42,6 +42,6 @@ Return to local hook/error handling with:
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `parse_statement` expands the statement, uppercases the command, resolves aliases and built-ins, and chooses forwarding or `unknown_command` handling.
-- [source/server.c](../../source/server.c): normal server-send handling delivers the forwarded protocol line.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): boolean registration and default off.
+- `source/commands.c`: `parse_statement` expands the statement, uppercases the command, resolves aliases and built-ins, and chooses forwarding or `unknown_command` handling.
+- `source/server.c`: normal server-send handling delivers the forwarded protocol line.
+- `source/vars.c` and `include/config.h`: boolean registration and default off.

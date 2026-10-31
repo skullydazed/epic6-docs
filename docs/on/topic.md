@@ -44,7 +44,7 @@ An empty `$text` in this example indicates that the topic was cleared.
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_topic` validates parameters, sets output context, invokes the hook, and displays the default line.
-- [source/commands.c](../../source/commands.c): `e_topic` sends topic queries and changes.
-- [source/numbers.c](../../source/numbers.c): numeric topic replies use separate numeric handling.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching and suppression.
+- `source/parse.c`: `p_topic` validates parameters, sets output context, invokes the hook, and displays the default line.
+- `source/commands.c`: `e_topic` sends topic queries and changes.
+- `source/numbers.c`: numeric topic replies use separate numeric handling.
+- `source/hook.c`: event registration and standard hook matching and suppression.

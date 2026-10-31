@@ -59,4 +59,4 @@ The extended-color example requests palette color 80 when rendered by EPIC. `%X`
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). Control characters are defined in [include/irc.h](../../include/irc.h); color mapping and rendering are in [source/screen.c](../../source/screen.c). Quoted-template expansion uses [source/alias.c](../../source/alias.c).
+Registered and implemented in `source/functions.c`. Control characters are defined in `include/irc.h`; color mapping and rendering are in `source/screen.c`. Quoted-template expansion uses `source/alias.c`.

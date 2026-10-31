@@ -28,5 +28,5 @@ See [bind](../command/bind.md) for key sequence syntax and [previous_window](pre
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default bindings.
-- [source/window.c](../../source/window.c): `next_window`, `get_next_window`, `make_window_current_by_refnum`, and `set_screens_current_window` implement selection, skip handling, wraparound, focus updates, and the window-switch hook.
+- `source/keys.c`: action registration and default bindings.
+- `source/window.c`: `next_window`, `get_next_window`, `make_window_current_by_refnum`, and `set_screens_current_window` implement selection, skip handling, wraparound, focus updates, and the window-switch hook.

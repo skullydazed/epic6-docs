@@ -24,4 +24,4 @@ If no arrays exist, `$numarrays()` returns `0`. Creating `sample` at item zero m
 
 `$numarrays(ignored)` returns the same count as `$numarrays()`.
 
-Registration: [source/functions.c](../../source/functions.c). `function_numarrays()`, registry creation, and deletion: [source/array.c](../../source/array.c).
+Registration: `source/functions.c`. `function_numarrays()`, registry creation, and deletion: `source/array.c`.

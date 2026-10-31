@@ -39,4 +39,4 @@ Use [`chrq()`](chrq.md) when a CTCP-encoded representation is needed for special
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `chr` and implements `function_chr()`. [source/ircaux.c](../../source/ircaux.c) implements base-detected numeric conversion and `ucs_to_utf8()`. [include/words.h](../../include/words.h) defines function word parsing.
+`source/functions.c` registers `chr` and implements `function_chr()`. `source/ircaux.c` implements base-detected numeric conversion and `ucs_to_utf8()`. `include/words.h` defines function word parsing.

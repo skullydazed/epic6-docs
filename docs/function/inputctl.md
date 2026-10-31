@@ -38,4 +38,4 @@ The first stores a copy of the buffer in a script variable. The next two replace
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). Control operations, input cutting, and yanking: [source/input.c](../../source/input.c). Global buffer initialization: [source/irc.c](../../source/irc.c). Key-action registration and default binding: [source/keys.c](../../source/keys.c).
+Registered in `source/functions.c`. Control operations, input cutting, and yanking: `source/input.c`. Global buffer initialization: `source/irc.c`. Key-action registration and default binding: `source/keys.c`.

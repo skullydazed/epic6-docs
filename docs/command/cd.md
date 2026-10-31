@@ -47,4 +47,4 @@ The `cd` command first appeared in ircII.
 
 ## Source
 
-See [source/commands.c](../../source/commands.c) for the registration and `cd()` handler, [source/ircaux.c](../../source/ircaux.c) for `normalize_filename()` and `expand_twiddle()`, and [include/words.h](../../include/words.h) for the quoted argument parser used by the handler.
+See `source/commands.c` for the registration and `cd()` handler, `source/ircaux.c` for `normalize_filename()` and `expand_twiddle()`, and `include/words.h` for the quoted argument parser used by the handler.

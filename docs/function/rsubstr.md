@@ -39,4 +39,4 @@ First appeared in EPIC4pre1.016.
 
 ## Source
 
-Registration and `function_rsubstr()`: [source/functions.c](../../source/functions.c). `rstristr()` and case-insensitive comparison: [source/ircaux.c](../../source/ircaux.c). Backward decoding and codepoint positions: [source/wcwidth.c](../../source/wcwidth.c). Double-quoted parsing: [include/functions.h](../../include/functions.h).
+Registration and `function_rsubstr()`: `source/functions.c`. `rstristr()` and case-insensitive comparison: `source/ircaux.c`. Backward decoding and codepoint positions: `source/wcwidth.c`. Double-quoted parsing: `include/functions.h`.

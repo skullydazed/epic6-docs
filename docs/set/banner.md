@@ -38,8 +38,8 @@ Outside a numeric context, this prints the line with `[epic]` as its prefix. Res
 
 ## Source references
 
-- [source/output.c](../../source/output.c): `vsay` prefixes informational output; `vsyserr` uses the banner before `INFO --`.
-- [source/numbers.c](../../source/numbers.c): `banner` selects numeric or configured prefixes and performs optional expansion.
-- [source/commands.c](../../source/commands.c): `xechocmd` implements `-b` with the banner helper.
-- [source/vars.c](../../source/vars.c): string setting registration and set/unset behavior.
-- [include/config.h](../../include/config.h): default banner and disabled per-use expansion.
+- `source/output.c`: `vsay` prefixes informational output; `vsyserr` uses the banner before `INFO --`.
+- `source/numbers.c`: `banner` selects numeric or configured prefixes and performs optional expansion.
+- `source/commands.c`: `xechocmd` implements `-b` with the banner helper.
+- `source/vars.c`: string setting registration and set/unset behavior.
+- `include/config.h`: default banner and disabled per-use expansion.

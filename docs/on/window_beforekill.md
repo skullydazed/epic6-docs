@@ -46,7 +46,7 @@ A real cleanup handler should query and copy the information it needs at this po
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `unlink_window` performs preliminary checks and invokes the hook before marking the window deceased; `delete_window_contents` frees history and data, then invokes `window_kill` outside shutdown; `delete_all_windows` uses the same pre-kill path.
-- [source/irc.c](../../source/irc.c): normal exit deletes all windows.
-- [source/commands.c](../../source/commands.c): `defercmd` queues commands for later execution.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching.
+- `source/window.c`: `unlink_window` performs preliminary checks and invokes the hook before marking the window deceased; `delete_window_contents` frees history and data, then invokes `window_kill` outside shutdown; `delete_all_windows` uses the same pre-kill path.
+- `source/irc.c`: normal exit deletes all windows.
+- `source/commands.c`: `defercmd` queues commands for later execution.
+- `source/hook.c`: event registration and standard hook matching.

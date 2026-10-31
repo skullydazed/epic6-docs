@@ -26,7 +26,7 @@ This was a DCC offer-address choice, not a general switch for the client's IRC c
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of DCC and the userhost-discovery feature previously used for DCC.
-- [source/vars.c](../../source/vars.c): current registration omits this setting and handles unknown-variable errors.
-- [source/commands.c](../../source/commands.c): current built-in command table has no `dcc` handler.
-- [source/ctcp.c](../../source/ctcp.c): current CTCP implementation has no built-in DCC offer or negotiation handler.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of DCC and the userhost-discovery feature previously used for DCC.
+- `source/vars.c`: current registration omits this setting and handles unknown-variable errors.
+- `source/commands.c`: current built-in command table has no `dcc` handler.
+- `source/ctcp.c`: current CTCP implementation has no built-in DCC offer or negotiation handler.

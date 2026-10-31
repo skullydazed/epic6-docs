@@ -40,7 +40,7 @@ Long output lines then use `>` at the start of their continuation rows. Restore 
 
 ## Source references
 
-- [source/screen.c](../../source/screen.c): `prepare_display` reads the marker, combines it with indentation, normalizes it, and prefixes continued rows; `add_to_window` records logs before wrapping.
-- [source/window.c](../../source/window.c): `windowcmd_indent` controls per-window indentation; scrollback rebuilds prepare display rows again.
-- [source/vars.c](../../source/vars.c): string registration with no immediate callback and standard unset handling.
-- [include/config.h](../../include/config.h): default marker `+`.
+- `source/screen.c`: `prepare_display` reads the marker, combines it with indentation, normalizes it, and prefixes continued rows; `add_to_window` records logs before wrapping.
+- `source/window.c`: `windowcmd_indent` controls per-window indentation; scrollback rebuilds prepare display rows again.
+- `source/vars.c`: string registration with no immediate callback and standard unset handling.
+- `include/config.h`: default marker `+`.

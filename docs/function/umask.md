@@ -34,4 +34,4 @@ These expressions change the process mask when evaluated; their returned value i
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:5305). Argument and return conversion: [`include/functions.h`](../../include/functions.h:25).
+Handler: `source/functions.c`. Argument and return conversion: `include/functions.h`.

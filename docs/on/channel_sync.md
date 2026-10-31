@@ -46,8 +46,8 @@ on ^channel_sync * (channel, elapsed, server) {
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_join` handles your join and requests channel modes.
-- [source/names.c](../../source/names.c): `add_channel` starts the timer; `channel_not_waiting` clears the syncing flag and invokes the hook.
-- [source/numbers.c](../../source/numbers.c): numeric 353 caches initial names; numeric 324 chooses whether to issue `who`; `add_user_who` caches userhosts and `add_user_end` completes synchronization.
-- [source/server.c](../../source/server.c): server initialization sets the default cache limit; `serverctl` exposes `maxcachesize`.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement standard hook matching.
+- `source/parse.c`: `p_join` handles your join and requests channel modes.
+- `source/names.c`: `add_channel` starts the timer; `channel_not_waiting` clears the syncing flag and invokes the hook.
+- `source/numbers.c`: numeric 353 caches initial names; numeric 324 chooses whether to issue `who`; `add_user_who` caches userhosts and `add_user_end` completes synchronization.
+- `source/server.c`: server initialization sets the default cache limit; `serverctl` exposes `maxcachesize`.
+- `source/hook.c`: event registration and `do_hook` implement standard hook matching.

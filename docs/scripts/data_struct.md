@@ -20,4 +20,4 @@ The script generates `alias.*` counterparts for its matching `assign.*` helpers 
 
 The script explicitly requires the `functions` and `data_array` scripts for `assign.uniq`; it does not load them automatically. Its alias save/pack paths preserve command text rather than separately preserving alias argument-list metadata, so do not treat them as lossless backups of every alias property.
 
-The source DokuWiki page was empty. This description was derived from [script/data_struct](../../script/data_struct), with its symbol interface checked in [source/alias.c](../../source/alias.c) and the supporting scripts [script/functions](../../script/functions) and [script/data_array](../../script/data_array).
+The source DokuWiki page was empty. This description was derived from `script/data_struct`, with its symbol interface checked in `source/alias.c` and the supporting scripts [`script/functions`](functions.md) and [`script/data_array`](data_array.md).

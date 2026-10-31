@@ -45,7 +45,7 @@ This script first appeared in EPIC5-0.3.1. The retained source is marked as 2006
 
 ## Source references
 
-- [script/renumber](../../script/renumber): numeric sorting, renumber loop, setting, and automatic hook.
-- [script/builtins](../../script/builtins): `winrefs` returns `windowctl(refnums)` and `addset` is loaded.
-- [script/addset](../../script/addset): script-provided setting creation.
-- [source/window.c](../../source/window.c): `windowctl(refnums)` enumerates user refnums; `windowcmd_number` updates them; destruction invokes `window_kill` after removing the window, except during shutdown.
+- `script/renumber`: numeric sorting, renumber loop, setting, and automatic hook.
+- [`script/builtins`](builtins.md): `winrefs` returns `windowctl(refnums)` and `addset` is loaded.
+- [`script/addset`](addset.md): script-provided setting creation.
+- `source/window.c`: `windowctl(refnums)` enumerates user refnums; `windowcmd_number` updates them; destruction invokes `window_kill` after removing the window, except during shutdown.

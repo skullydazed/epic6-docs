@@ -25,5 +25,5 @@ Wrapped continuation rows use [continued_line](continued_line.md). The display w
 
 ## Source references
 
-- [source/screen.c](../../source/screen.c): setting behavior.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, callback, and default.
+- `source/screen.c`: setting behavior.
+- `source/vars.c` and `include/config.h`: registration, callback, and default.

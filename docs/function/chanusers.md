@@ -42,4 +42,4 @@ This function first appeared in ircII-2.6. EPIC provides it as a compatibility s
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers both names and implements `function_onchannel()`. [source/names.c](../../source/names.c) implements `create_nick_list()`, membership lookup, default-channel selection, and nickname ordering. [include/words.h](../../include/words.h) defines argument parsing.
+`source/functions.c` registers both names and implements `function_onchannel()`. `source/names.c` implements `create_nick_list()`, membership lookup, default-channel selection, and nickname ordering. `include/words.h` defines argument parsing.

@@ -32,4 +32,4 @@ The quick counter does not validate UTF-8. It counts each byte below `0x80` or a
 
 With `xdebug dword` enabled, `$maxlen(one "two words" three)` returns `9`.
 
-Registration and `function_maxlen()`: [source/functions.c](../../source/functions.c). Quick code point counting: [source/wcwidth.c](../../source/wcwidth.c). Function word parsing: [include/words.h](../../include/words.h) and [source/ircaux.c](../../source/ircaux.c).
+Registration and `function_maxlen()`: `source/functions.c`. Quick code point counting: `source/wcwidth.c`. Function word parsing: `include/words.h` and `source/ircaux.c`.

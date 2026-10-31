@@ -26,6 +26,6 @@ This command is no longer supported:
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `$dccctl()`, and related functionality.
-- [source/commands.c](../../source/commands.c): the command table has no `dcc` handler.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): current settings and configuration omit the former DCC resume switch and flag.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `$dccctl()`, and related functionality.
+- `source/commands.c`: the command table has no `dcc` handler.
+- `source/vars.c` and `include/config.h`: current settings and configuration omit the former DCC resume switch and flag.

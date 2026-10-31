@@ -41,4 +41,4 @@ The `chop()` function first appeared in EPIC4pre1.042.
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `chop` and implements `function_chop()`. [source/ircaux.c](../../source/ircaux.c) implements count detection and the removal helper. [source/wcwidth.c](../../source/wcwidth.c) supplies code-point counting and backward decoding, and [include/functions.h](../../include/functions.h) defines count-word conversion.
+`source/functions.c` registers `chop` and implements `function_chop()`. `source/ircaux.c` implements count detection and the removal helper. `source/wcwidth.c` supplies code-point counting and backward decoding, and `include/functions.h` defines count-word conversion.

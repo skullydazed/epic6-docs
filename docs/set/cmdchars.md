@@ -35,8 +35,8 @@ Use `/help` rather than an alternate prefix to invoke a local command under the 
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): retained string registration and standard query/unset handling.
-- [include/config.h](../../include/config.h): default value `/`.
-- [source/commands.c](../../source/commands.c): `parse_statement` recognizes literal slash and sends unprefixed interactive text to the current target.
-- [source/functions.c](../../source/functions.c): `alias_cmdchar` implements `$K` from the first configured byte, falling back to the default when unset.
-- [script/tabkey.ce](../../script/tabkey.ce): script-provided completion still reads `cmdchars`.
+- `source/vars.c`: retained string registration and standard query/unset handling.
+- `include/config.h`: default value `/`.
+- `source/commands.c`: `parse_statement` recognizes literal slash and sends unprefixed interactive text to the current target.
+- `source/functions.c`: `alias_cmdchar` implements `$K` from the first configured byte, falling back to the default when unset.
+- [`script/tabkey.ce`](../scripts/tabkey.ce.md): script-provided completion still reads `cmdchars`.

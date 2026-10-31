@@ -41,4 +41,4 @@ Given this array:
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). The `FINDI` wrapper, prefix binary search using `strncmp()`, no-match conversion, and sorted-index rebuilding are in [source/array.c](../../source/array.c). Ordinary-word parsing is defined in [include/words.h](../../include/words.h).
+Registered in `source/functions.c`. The `FINDI` wrapper, prefix binary search using `strncmp()`, no-match conversion, and sorted-index rebuilding are in `source/array.c`. Ordinary-word parsing is defined in `include/words.h`.

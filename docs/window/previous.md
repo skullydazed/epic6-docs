@@ -43,4 +43,4 @@ This operation existed in ircII.
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_previous` selects hidden candidates and returns the candidate even after a swap error; `swap_window` implements geometry, visibility, selection, and notification changes. `swap_previous_window` delegates the binding to this handler.
+- `source/window.c`: `windowcmd_previous` selects hidden candidates and returns the candidate even after a swap error; `swap_window` implements geometry, visibility, selection, and notification changes. `swap_previous_window` delegates the binding to this handler.

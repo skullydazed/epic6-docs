@@ -34,4 +34,4 @@ First appeared in ircII.
 
 ## Source
 
-Handler: [`source/functions.c`](../../source/functions.c:2313). In-place mapping and length checks: [`strmap`](../../source/ircaux.c:1142), [`upper`](../../source/ircaux.c:1204). Locale and uppercase mapping: [`source/recode.c`](../../source/recode.c:1166).
+Handler: `source/functions.c`. In-place mapping and length checks: `strmap`, `upper`. Locale and uppercase mapping: `source/recode.c`.

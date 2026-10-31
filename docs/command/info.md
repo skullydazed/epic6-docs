@@ -38,4 +38,4 @@ Request information from a remote server, if the network permits it:
 
 ## Source
 
-Registration and the local-credit versus argument branch are in [source/commands.c](../../source/commands.c). Server selection and connection checks are in [source/server.c](../../source/server.c); numeric hooks and normal reply display are in [source/numbers.c](../../source/numbers.c).
+Registration and the local-credit versus argument branch are in `source/commands.c`. Server selection and connection checks are in `source/server.c`; numeric hooks and normal reply display are in `source/numbers.c`.

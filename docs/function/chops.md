@@ -42,4 +42,4 @@ This function first appeared in “+3” (post-ircII, pre-EPIC). Support for the
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `chops` and implements `function_chops()`. [source/names.c](../../source/names.c) implements `create_chops_list()`, channel defaults, nickname ordering, and operator-flag updates. [include/words.h](../../include/words.h) defines argument parsing.
+`source/functions.c` registers `chops` and implements `function_chops()`. `source/names.c` implements `create_chops_list()`, channel defaults, nickname ordering, and operator-flag updates. `include/words.h` defines argument parsing.

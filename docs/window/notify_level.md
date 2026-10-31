@@ -47,8 +47,8 @@ Limit window 3's qualifying output to private messages and notices, enable activ
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_notify_mask` implements `notify_level`, its query, and reset; `new_window` copies the default.
-- [source/levels.c](../../source/levels.c): `str_to_mask` and `standard_level_warning` implement replacement-list parsing and warnings.
-- [source/lastlog.c](../../source/lastlog.c): `set_notify_mask` updates the global default and current window.
-- [source/screen.c](../../source/screen.c): `add_to_window` implements hidden-output matching and notification transitions.
-- [include/config.h](../../include/config.h): defines the compiled notify-level default.
+- `source/window.c`: `windowcmd_notify_mask` implements `notify_level`, its query, and reset; `new_window` copies the default.
+- `source/levels.c`: `str_to_mask` and `standard_level_warning` implement replacement-list parsing and warnings.
+- `source/lastlog.c`: `set_notify_mask` updates the global default and current window.
+- `source/screen.c`: `add_to_window` implements hidden-output matching and notification transitions.
+- `include/config.h`: defines the compiled notify-level default.

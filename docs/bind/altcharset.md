@@ -26,8 +26,8 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default key assignments.
-- [source/input.c](../../source/input.c): `insert_altcharset` and `input_add_character`.
-- [include/irc.h](../../include/irc.h): `ALT_TOG` character definition.
-- [source/screen.c](../../source/screen.c): alternate character set toggle processing and terminal attributes.
-- [source/term.c](../../source/term.c): reverse control-character display in the input line and terminal attribute output.
+- `source/keys.c`: action registration and default key assignments.
+- `source/input.c`: `insert_altcharset` and `input_add_character`.
+- `include/irc.h`: `ALT_TOG` character definition.
+- `source/screen.c`: alternate character set toggle processing and terminal attributes.
+- `source/term.c`: reverse control-character display in the input line and terminal attribute output.

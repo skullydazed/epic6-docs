@@ -41,4 +41,4 @@ One item number per supplied index, separated by spaces. A nonnegative number is
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). The `I2I` wrapper, array lookup, sorted-index rebuilding, and translation: [source/array.c](../../source/array.c). Numeric conversion: [source/ircaux.c](../../source/ircaux.c). Ordinary-word parsing: [include/words.h](../../include/words.h).
+Registered in `source/functions.c`. The `I2I` wrapper, array lookup, sorted-index rebuilding, and translation: `source/array.c`. Numeric conversion: `source/ircaux.c`. Ordinary-word parsing: `include/words.h`.

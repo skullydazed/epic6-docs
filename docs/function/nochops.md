@@ -38,4 +38,4 @@ If Alice is an operator, Bob is voiced, and Carol is a half-operator without ope
 
 This function first appeared in “+3” (post-ircII, pre-EPIC). Support for the default argument and `*` first appeared in “+4”.
 
-Registration and `function_nochops()`: [source/functions.c](../../source/functions.c). `create_nochops_list()`, channel defaults, nickname ordering, and operator-flag updates: [source/names.c](../../source/names.c). Argument parsing: [include/words.h](../../include/words.h).
+Registration and `function_nochops()`: `source/functions.c`. `create_nochops_list()`, channel defaults, nickname ordering, and operator-flag updates: `source/names.c`. Argument parsing: `include/words.h`.

@@ -43,4 +43,4 @@ Input and the set are decoded with the UTF-8 helper's resynchronization enabled.
 
 This function first appeared in ircII 2.1.5.
 
-Registration and `function_pass()`: [source/functions.c](../../source/functions.c). Always-quoted argument parsing: [include/functions.h](../../include/functions.h). UTF-8 decoding, resynchronization, and encoding: [source/wcwidth.c](../../source/wcwidth.c).
+Registration and `function_pass()`: `source/functions.c`. Always-quoted argument parsing: `include/functions.h`. UTF-8 decoding, resynchronization, and encoding: `source/wcwidth.c`.

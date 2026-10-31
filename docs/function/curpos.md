@@ -37,4 +37,4 @@ This function first appeared in ircII-2.2.2.
 
 ## Source
 
-Registered and implemented in [source/functions.c](../../source/functions.c). Screen selection is in [source/window.c](../../source/window.c); cursor state, tokenization, and `$L`'s input buffer access are in [source/input.c](../../source/input.c). Screen input-line lookup is in [source/screen.c](../../source/screen.c).
+Registered and implemented in `source/functions.c`. Screen selection is in `source/window.c`; cursor state, tokenization, and `$L`'s input buffer access are in `source/input.c`. Screen input-line lookup is in `source/screen.c`.

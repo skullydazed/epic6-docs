@@ -43,6 +43,6 @@ This setting replaced the compile-time `COMMENT_HACK` definition used before EPI
 
 ## Source references
 
-- [source/commands.c](../../source/commands.c): `loader_std` checks the setting against the first non-whitespace position; `loader_pf` has independent line-comment processing.
-- [source/vars.c](../../source/vars.c): boolean registration and standard value handling.
-- [include/config.h](../../include/config.h): default on.
+- `source/commands.c`: `loader_std` checks the setting against the first non-whitespace position; `loader_pf` has independent line-comment processing.
+- `source/vars.c`: boolean registration and standard value handling.
+- `include/config.h`: default on.

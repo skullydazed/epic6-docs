@@ -42,4 +42,4 @@ Consult the server's documentation for any required additional parameters.
 
 ## Source
 
-Registration and generic `send_comm` forwarding are in [source/commands.c](../../source/commands.c). `RPONG` dispatch and `p_rpong` reporting are in [source/parse.c](../../source/parse.c), with connection selection and transmission in [source/server.c](../../source/server.c).
+Registration and generic `send_comm` forwarding are in `source/commands.c`. `RPONG` dispatch and `p_rpong` reporting are in `source/parse.c`, with connection selection and transmission in `source/server.c`.

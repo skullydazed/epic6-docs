@@ -45,6 +45,6 @@ Ensure any `channel_signoff` handlers permit combined handling if this event sho
 
 ## Source references
 
-- [source/parse.c](../../source/parse.c): `p_quit` dispatches channel events, conditionally invokes `signoff`, displays the default line, and removes membership records.
-- [source/names.c](../../source/names.c): `walk_channels`, `what_channel`, and `remove_from_channel` provide membership lookup and removal.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching and suppression.
+- `source/parse.c`: `p_quit` dispatches channel events, conditionally invokes `signoff`, displays the default line, and removes membership records.
+- `source/names.c`: `walk_channels`, `what_channel`, and `remove_from_channel` provide membership lookup and removal.
+- `source/hook.c`: event registration and standard hook matching and suppression.

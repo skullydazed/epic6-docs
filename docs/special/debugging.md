@@ -78,9 +78,9 @@ The built-in tracing and inspection tools do not need an external debugger or op
 
 ## Source references
 
-- [include/vars.h](../../include/vars.h), [source/commands.c](../../source/commands.c), [source/expr.c](../../source/expr.c), and [source/functions.c](../../source/functions.c): debug-mask classes and tracing sites.
-- [source/debug.c](../../source/debug.c) and [source/server.c](../../source/server.c): `xdebug` categories and protocol trace calls.
-- [source/debuglog.c](../../source/debuglog.c): diagnostic-file logging.
-- [source/hook.c](../../source/hook.c): synthetic event dispatch.
-- [source/alias.c](../../source/alias.c): call-stack reporting and definition removal.
-- [script/debug.irc](../../script/debug.irc): contributed tracing and timing helpers.
+- `include/vars.h`, `source/commands.c`, `source/expr.c`, and `source/functions.c`: debug-mask classes and tracing sites.
+- `source/debug.c` and `source/server.c`: `xdebug` categories and protocol trace calls.
+- `source/debuglog.c`: diagnostic-file logging.
+- `source/hook.c`: synthetic event dispatch.
+- `source/alias.c`: call-stack reporting and definition removal.
+- [`script/debug.irc`](../scripts/debug.irc.md): contributed tracing and timing helpers.

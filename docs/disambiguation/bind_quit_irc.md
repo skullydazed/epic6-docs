@@ -26,6 +26,6 @@ See [bind](../command/bind.md) for supported binding operations.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): `init_binds` lists the available built-in actions; `bind_compressed_string` rejects unknown action names before changing the binding.
-- [source/commands.c](../../source/commands.c): `quit` and `exit` are registered to `e_quit`, which invokes the client exit routine.
-- [source/input.c](../../source/input.c): `parse_text` implements the `parse_command` binding action.
+- `source/keys.c`: `init_binds` lists the available built-in actions; `bind_compressed_string` rejects unknown action names before changing the binding.
+- `source/commands.c`: `quit` and `exit` are registered to `e_quit`, which invokes the client exit routine.
+- `source/input.c`: `parse_text` implements the `parse_command` binding action.

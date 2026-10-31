@@ -26,8 +26,8 @@ The former hook first appeared in EPIC4-1.1.14.
 
 ## Source references
 
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `dccctl`, and related functionality.
-- [source/hook.c](../../source/hook.c): the named-hook table omits `dcc_activity`; `find_hook` rejects unknown event names.
-- [include/hook.h](../../include/hook.h): current event identifiers contain no DCC activity hook.
-- [source/status.c](../../source/status.c): the status expando table has no former DCC `%D` callback.
-- [script/builtins](../../script/builtins): retains a reference to the removed event without providing an implementation.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `dccctl`, and related functionality.
+- `source/hook.c`: the named-hook table omits `dcc_activity`; `find_hook` rejects unknown event names.
+- `include/hook.h`: current event identifiers contain no DCC activity hook.
+- `source/status.c`: the status expando table has no former DCC `%D` callback.
+- [`script/builtins`](../scripts/builtins.md): retains a reference to the removed event without providing an implementation.

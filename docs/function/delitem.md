@@ -37,4 +37,4 @@ Invalid negative or out-of-range numbers are skipped. A mixture of valid and inv
 
 ## Source
 
-Registered in [source/functions.c](../../source/functions.c). Deletion, compaction, sorted-index maintenance, and array lookup are in [source/array.c](../../source/array.c); numeric conversion is in [source/ircaux.c](../../source/ircaux.c).
+Registered in `source/functions.c`. Deletion, compaction, sorted-index maintenance, and array lookup are in `source/array.c`; numeric conversion is in `source/ircaux.c`.

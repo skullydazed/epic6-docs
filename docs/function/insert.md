@@ -38,4 +38,4 @@ Use valid UTF-8 for predictable character boundaries. Invalid bytes are skipped 
 
 ## Source
 
-Registration, argument handling, position traversal, and concatenation: [source/functions.c](../../source/functions.c). Integer and quoted-word argument macros: [include/functions.h](../../include/functions.h). UTF-8 decoding: [source/wcwidth.c](../../source/wcwidth.c). String concatenation: [source/ircaux.c](../../source/ircaux.c).
+Registration, argument handling, position traversal, and concatenation: `source/functions.c`. Integer and quoted-word argument macros: `include/functions.h`. UTF-8 decoding: `source/wcwidth.c`. String concatenation: `source/ircaux.c`.

@@ -68,7 +68,7 @@ Use the first form to inspect the client before selecting a server. With `-q`, s
 
 ## Source references
 
-- [source/irc.c](../../source/irc.c): option string and switch branches, environment precedence, nickname heuristic, startup selection, bot mode, and initial connection.
-- [include/irc.h](../../include/irc.h): nickname buffer limit.
-- [source/server.c](../../source/server.c): registration consumes the one-shot default channel and implements server connection behavior.
-- [source/server.c](../../source/server.c): server-description insertion and `IRC_SERVERS_FILE` import.
+- `source/irc.c`: option string and switch branches, environment precedence, nickname heuristic, startup selection, bot mode, and initial connection.
+- `include/irc.h`: nickname buffer limit.
+- `source/server.c`: registration consumes the one-shot default channel and implements server connection behavior.
+- `source/server.c`: server-description insertion and `IRC_SERVERS_FILE` import.

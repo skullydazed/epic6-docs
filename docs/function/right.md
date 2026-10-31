@@ -42,4 +42,4 @@ First appeared in ircII.
 
 ## Source
 
-Registration, `function_right()`, and JSON parsing: [source/functions.c](../../source/functions.c). Unicode counting and decoding: [source/wcwidth.c](../../source/wcwidth.c). Integer parsing: [include/functions.h](../../include/functions.h).
+Registration, `function_right()`, and JSON parsing: `source/functions.c`. Unicode counting and decoding: `source/wcwidth.c`. Integer parsing: `include/functions.h`.

@@ -35,4 +35,4 @@ A space-separated list of names matching the supplied patterns, or the empty str
 
 ## Source
 
-Registration and `GET_UNIFIED_ARRAY_FUNCTION`: [source/functions.c](../../source/functions.c). Built-in component enumeration and wildcard selection: [source/alias.c](../../source/alias.c). Sorted symbol storage: [source/alist.c](../../source/alist.c). Built-in command registration: [source/commands.c](../../source/commands.c). Wildcard matching: [source/reg.c](../../source/reg.c).
+Registration and `GET_UNIFIED_ARRAY_FUNCTION`: `source/functions.c`. Built-in component enumeration and wildcard selection: `source/alias.c`. Sorted symbol storage: `source/alist.c`. Built-in command registration: `source/commands.c`. Wildcard matching: `source/reg.c`.

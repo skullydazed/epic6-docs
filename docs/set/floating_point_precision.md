@@ -41,8 +41,8 @@ This setting first appeared in EPIC4-1.1.9.
 
 ## Source references
 
-- [source/ircaux.c](../../source/ircaux.c): `ftoa` uses `%.*g` with this precision when floating-point math is enabled.
-- [source/functions.c](../../source/functions.c): `explode_json_object` converts JSON numbers through `ftoa`.
-- [source/expr2.c](../../source/expr2.c) and [source/expr.c](../../source/expr.c): separate expression-token formatting and canonicalization.
-- [include/functions.h](../../include/functions.h): `RETURN_FLOAT` has independent formatting.
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): integer registration, validation, and default 16.
+- `source/ircaux.c`: `ftoa` uses `%.*g` with this precision when floating-point math is enabled.
+- `source/functions.c`: `explode_json_object` converts JSON numbers through `ftoa`.
+- `source/expr2.c` and `source/expr.c`: separate expression-token formatting and canonicalization.
+- `include/functions.h`: `RETURN_FLOAT` has independent formatting.
+- `source/vars.c` and `include/config.h`: integer registration, validation, and default 16.

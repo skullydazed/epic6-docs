@@ -14,7 +14,7 @@ EPIC6 retires that built-in polling system and does not register `notify` as a s
 
 ## Current notify behavior
 
-The supplied [script/notify](../../script/notify), loaded by `builtins`, defines the [notify](../scripts/notify.md) command as an alias around the server's MONITOR facility. It does not consult `set notify` or periodically poll according to `notify_interval`. Online and offline numeric replies `730` and `731` are displayed directly by script hooks rather than the removed notify hooks.
+The supplied [`script/notify`](../scripts/notify.md), loaded by `builtins`, defines the [notify](../scripts/notify.md) command as an alias around the server's MONITOR facility. It does not consult `set notify` or periodically poll according to `notify_interval`. Online and offline numeric replies `730` and `731` are displayed directly by script hooks rather than the removed notify hooks.
 
 On a server advertising MONITOR support, add a nickname to the watch list with:
 
@@ -32,7 +32,7 @@ The former setting first appeared in EPIC4-1.1.13.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): current setting registration omits `notify` and handles unknown-variable errors.
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of built-in notify and introduction of the MONITOR script.
-- [script/notify](../../script/notify): server-dependent MONITOR alias and numeric handlers.
-- [script/builtins](../../script/builtins): loads the supplied notify script.
+- `source/vars.c`: current setting registration omits `notify` and handles unknown-variable errors.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of built-in notify and introduction of the MONITOR script.
+- [`script/notify`](../scripts/notify.md): server-dependent MONITOR alias and numeric handlers.
+- [`script/builtins`](../scripts/builtins.md): loads the supplied notify script.

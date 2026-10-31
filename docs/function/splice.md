@@ -42,4 +42,4 @@ Starting with `assign foo one two three four five`, in this order:
 
 Starting with `assign sample one two three`, `$splice(sample -1 3 x)` returns `one two` and leaves `x three`. `$splice(sample 1 0 y)` then returns empty and leaves `x y three`.
 
-Registration and `function_splice()`: [source/functions.c](../../source/functions.c). Word counting and extraction: [source/words.c](../../source/words.c). Joining: [source/ircaux.c](../../source/ircaux.c). Scoped writeback: [source/alias.c](../../source/alias.c).
+Registration and `function_splice()`: `source/functions.c`. Word counting and extraction: `source/words.c`. Joining: `source/ircaux.c`. Scoped writeback: `source/alias.c`.

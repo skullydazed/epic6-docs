@@ -30,4 +30,4 @@ Replace the name with a target accepted by that server. A successful request doe
 
 ## Source
 
-[source/commands.c](../../source/commands.c) registers `uping` with `send_comm()`, which forwards the command and its arguments. [source/server.c](../../source/server.c) selects the current server and sends the IRC line. [source/numbers.c](../../source/numbers.c) and [source/parse.c](../../source/parse.c) handle incoming server responses.
+`source/commands.c` registers `uping` with `send_comm()`, which forwards the command and its arguments. `source/server.c` selects the current server and sends the IRC line. `source/numbers.c` and `source/parse.c` handle incoming server responses.

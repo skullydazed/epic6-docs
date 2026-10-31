@@ -23,4 +23,4 @@ No argument clears the window mask; it does not report it. A zero mask, includin
 
 ## Source references
 
-`windowcmd_log_mangle` in [source/window.c](../../source/window.c), `parse_mangle` and `add_to_window` in [source/screen.c](../../source/screen.c), and `add_to_log` in [source/log.c](../../source/log.c).
+`windowcmd_log_mangle` in `source/window.c`, `parse_mangle` and `add_to_window` in `source/screen.c`, and `add_to_log` in `source/log.c`.

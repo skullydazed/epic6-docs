@@ -52,7 +52,7 @@ The function must already exist. Additional quoting can be needed when embedding
 
 ## Source references
 
-- [source/log.c](../../source/log.c): `add_to_log` applies mangling, selects a specific rewrite or the global fallback, constructs arguments, expands, and writes a newline; recursion is blocked.
-- [source/output.c](../../source/output.c): global session logging occurs before window routing and passes no destination window.
-- [source/screen.c](../../source/screen.c) and [source/logfiles.c](../../source/logfiles.c): window and selective logs supply their own rewrite where configured.
-- [source/vars.c](../../source/vars.c): string registration and unset default.
+- `source/log.c`: `add_to_log` applies mangling, selects a specific rewrite or the global fallback, constructs arguments, expands, and writes a newline; recursion is blocked.
+- `source/output.c`: global session logging occurs before window routing and passes no destination window.
+- `source/screen.c` and `source/logfiles.c`: window and selective logs supply their own rewrite where configured.
+- `source/vars.c`: string registration and unset default.

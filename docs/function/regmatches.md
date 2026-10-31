@@ -34,4 +34,4 @@ First appeared in EPIC4-1.1.3; earlier compilation interfaces did not support su
 
 ## Source
 
-Registration, `function_regmatches()`, and shared error state: [source/functions.c](../../source/functions.c). Code-point offset conversion: [source/wcwidth.c](../../source/wcwidth.c). Base85 decoding: [source/ircaux.c](../../source/ircaux.c).
+Registration, `function_regmatches()`, and shared error state: `source/functions.c`. Code-point offset conversion: `source/wcwidth.c`. Base85 decoding: `source/ircaux.c`.

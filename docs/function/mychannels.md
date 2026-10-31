@@ -47,4 +47,4 @@ A result might be `#example #help`; the actual channels and order depend on loca
 
 This function first appeared in ircII 2.2.2.
 
-Registration and `function_channels()`: [source/functions.c](../../source/functions.c). Channel-list traversal and join tracking: [source/names.c](../../source/names.c) and [source/parse.c](../../source/parse.c). Window descriptions: [source/window.c](../../source/window.c). Registration-state test: [source/server.c](../../source/server.c).
+Registration and `function_channels()`: `source/functions.c`. Channel-list traversal and join tracking: `source/names.c` and `source/parse.c`. Window descriptions: `source/window.c`. Registration-state test: `source/server.c`.

@@ -42,6 +42,6 @@ The explicit refnum selects the operative window for the setting rather than ass
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `new_window` initializes and places the window before invoking the hook; `windowcmd_new` and `windowcmd_new_hide` differ in subsequent selection; `windowcmd_double` changes status-bar count.
-- [source/screen.c](../../source/screen.c) and [source/irc.c](../../source/irc.c): screen setup and startup create windows through the same constructor.
-- [source/hook.c](../../source/hook.c): event registration and standard hook matching.
+- `source/window.c`: `new_window` initializes and places the window before invoking the hook; `windowcmd_new` and `windowcmd_new_hide` differ in subsequent selection; `windowcmd_double` changes status-bar count.
+- `source/screen.c` and `source/irc.c`: screen setup and startup create windows through the same constructor.
+- `source/hook.c`: event registration and standard hook matching.

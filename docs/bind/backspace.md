@@ -29,5 +29,5 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default `^H` and `^?` bindings.
-- [source/input.c](../../source/input.c): `input_backspace`, `backward_character`, `input_move_cursor`, `input_delete_character`, and `retokenize_input` implement cursor movement and deletion.
+- `source/keys.c`: action registration and default `^H` and `^?` bindings.
+- `source/input.c`: `input_backspace`, `backward_character`, `input_move_cursor`, `input_delete_character`, and `retokenize_input` implement cursor movement and deletion.

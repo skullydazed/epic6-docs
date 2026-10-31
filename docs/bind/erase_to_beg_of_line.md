@@ -26,6 +26,6 @@ See [bind](../command/bind.md) for key sequence syntax, [erase_to_end_of_line](e
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default key assignments.
-- [source/input.c](../../source/input.c): `input_clear_to_bol` calls `cut_input(0, LOGICAL_CURSOR - 1)`, then resets the cursor and redraws the input line; `cut_input` uses logical character boundaries.
-- [source/ircaux.c](../../source/ircaux.c): `strext2` saves the erased region in the cut buffer and shifts the remaining text left.
+- `source/keys.c`: action registration and default key assignments.
+- `source/input.c`: `input_clear_to_bol` calls `cut_input(0, LOGICAL_CURSOR - 1)`, then resets the cursor and redraws the input line; `cut_input` uses logical character boundaries.
+- `source/ircaux.c`: `strext2` saves the erased region in the cut buffer and shifts the remaining text left.

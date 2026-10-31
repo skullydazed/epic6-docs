@@ -34,5 +34,5 @@ on -window_rebuilt "*" {
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `rebuild_scrollback` reconstructs scrollback and invokes the hook; `window_check_columns` requests rebuilds after column changes.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/window.c`: `rebuild_scrollback` reconstructs scrollback and invokes the hook; `window_check_columns` requests rebuilds after column changes.
+- `source/hook.c`: event registration and standard hook dispatch.

@@ -27,4 +27,4 @@ Use [disconnect](disconnect.md) when you want to close a server connection while
 
 ## Source
 
-Both command names are registered to `e_quit` in [source/commands.c](../../source/commands.c). Client shutdown and its hook are implemented in [source/irc.c](../../source/irc.c); connection closing and quit-message formatting are in [source/server.c](../../source/server.c), and subprocess cleanup is in [source/exec.c](../../source/exec.c). The command is always registered.
+Both command names are registered to `e_quit` in `source/commands.c`. Client shutdown and its hook are implemented in `source/irc.c`; connection closing and quit-message formatting are in `source/server.c`, and subprocess cleanup is in `source/exec.c`. The command is always registered.

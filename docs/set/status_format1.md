@@ -45,6 +45,6 @@ Double-status support was ported by archon from ircII to EPIC3.003.
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c) and [include/config.h](../../include/config.h): registration, status rebuild callback, and default format.
-- [source/status.c](../../source/status.c): `compile_status` handles global and window-specific formats; `make_status` chooses format 1 for the top row of a double status bar.
-- [source/window.c](../../source/window.c): `windowcmd_double` changes the number of status rows.
+- `source/vars.c` and `include/config.h`: registration, status rebuild callback, and default format.
+- `source/status.c`: `compile_status` handles global and window-specific formats; `make_status` chooses format 1 for the top row of a double status bar.
+- `source/window.c`: `windowcmd_double` changes the number of status rows.

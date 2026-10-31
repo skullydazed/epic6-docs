@@ -47,4 +47,4 @@ Replace the current window with hidden window 3, replace it with the first hidde
 
 ## Source references
 
-- [source/window.c](../../source/window.c): `windowcmd_swap`, `get_invisible_window`, and `get_window_from_args` implement parsing, `last`, diagnostics, and subsequent targeting. `swap_window` implements checks, geometry, visibility, selection, and notification resets; `add_to_invisible_list` maintains the hidden-list front.
+- `source/window.c`: `windowcmd_swap`, `get_invisible_window`, and `get_window_from_args` implement parsing, `last`, diagnostics, and subsequent targeting. `swap_window` implements checks, geometry, visibility, selection, and notification resets; `add_to_invisible_list` maintains the hidden-list front.

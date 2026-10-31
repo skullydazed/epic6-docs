@@ -28,6 +28,6 @@ See [bind](../command/bind.md) for key sequence syntax.
 
 ## Source references
 
-- [source/keys.c](../../source/keys.c): action registration and default key assignments.
-- [source/window.c](../../source/window.c): `update_all_status_kb`, `update_all_status`, and `window_statusbar_needs_update` mark windows for updates; `update_all_windows` distinguishes changed text from forced redraws.
-- [source/status.c](../../source/status.c): `make_status`, `redraw_status`, and `permit_status_update` implement expando evaluation, rendering, and deferred status updates.
+- `source/keys.c`: action registration and default key assignments.
+- `source/window.c`: `update_all_status_kb`, `update_all_status`, and `window_statusbar_needs_update` mark windows for updates; `update_all_windows` distinguishes changed text from forced redraws.
+- `source/status.c`: `make_status`, `redraw_status`, and `permit_status_update` implement expando evaluation, rendering, and deferred status updates.

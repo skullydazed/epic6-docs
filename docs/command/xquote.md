@@ -58,4 +58,4 @@ xquote -url -- VERSION%0D%0A
 
 ## Source
 
-[source/commands.c](../../source/commands.c) implements the `xquote` branch of `quotecmd()`, options, and decoding. [source/server.c](../../source/server.c) implements server lookup, normal sending, and `send_to_aserver_raw()`. [source/ircaux.c](../../source/ircaux.c) implements URL transformation.
+`source/commands.c` implements the `xquote` branch of `quotecmd()`, options, and decoding. `source/server.c` implements server lookup, normal sending, and `send_to_aserver_raw()`. `source/ircaux.c` implements URL transformation.

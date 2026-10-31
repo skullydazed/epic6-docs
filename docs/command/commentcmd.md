@@ -68,4 +68,4 @@ In a command block, this note ends at the semicolon, and `echo` still runs:
 
 ## Source
 
-See [source/commands.c](../../source/commands.c): the `#`, `:`, and `comment` registrations in `irc_command`, the empty `commentcmd()` handler, `parse_statement()` for command expansion and alias dispatch, `parse_block()` for statement separation, and `loader_std()` and `loader_pf()` for file comments.
+See `source/commands.c`: the `#`, `:`, and `comment` registrations in `irc_command`, the empty `commentcmd()` handler, `parse_statement()` for command expansion and alias dispatch, `parse_block()` for statement separation, and `loader_std()` and `loader_pf()` for file comments.

@@ -43,4 +43,4 @@ First appeared in ircII-2.1.3.
 
 ## Source
 
-Registration and `function_rindex()`: [source/functions.c](../../source/functions.c). Inversion, matching, and position conversion in `rcpindex2()`: [source/ircaux.c](../../source/ircaux.c). Backward Unicode decoding and quick indexing: [source/wcwidth.c](../../source/wcwidth.c).
+Registration and `function_rindex()`: `source/functions.c`. Inversion, matching, and position conversion in `rcpindex2()`: `source/ircaux.c`. Backward Unicode decoding and quick indexing: `source/wcwidth.c`.

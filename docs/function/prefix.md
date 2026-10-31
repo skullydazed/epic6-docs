@@ -43,4 +43,4 @@ The mismatch path compares a count of Unicode code points but copies that count 
 
 ## Source
 
-Registration and `function_prefix()`: [source/functions.c](../../source/functions.c). `split_wordlist()`, Unicode case-insensitive comparison, and result quoting: [source/ircaux.c](../../source/ircaux.c).
+Registration and `function_prefix()`: `source/functions.c`. `split_wordlist()`, Unicode case-insensitive comparison, and result quoting: `source/ircaux.c`.

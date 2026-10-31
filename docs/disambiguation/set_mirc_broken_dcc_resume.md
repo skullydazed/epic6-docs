@@ -20,7 +20,7 @@ The bundled `autoget` script still contains a check of this setting and an assig
 
 ## Source references
 
-- [source/vars.c](../../source/vars.c): current setting registration omits this name and handles unknown-variable errors.
-- [source/commands.c](../../source/commands.c) and [source/ctcp.c](../../source/ctcp.c): no built-in DCC transfer command or resume negotiation handler.
-- [script/autoget](../../script/autoget): remaining references to the former setting.
-- [KNOWNBUGS](../../KNOWNBUGS): records retirement of `/dcc`, `$dccctl()`, and related functionality.
+- `source/vars.c`: current setting registration omits this name and handles unknown-variable errors.
+- `source/commands.c` and `source/ctcp.c`: no built-in DCC transfer command or resume negotiation handler.
+- [`script/autoget`](scripts_autoget.md): remaining references to the former setting.
+- [KNOWNBUGS](../KNOWNBUGS.md): records retirement of `/dcc`, `$dccctl()`, and related functionality.

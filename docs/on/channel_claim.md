@@ -36,6 +36,6 @@ on -channel_claim "% #support *" {
 
 ## Source references
 
-- [source/names.c](../../source/names.c): `add_channel` selects the proposed window; `window_claims_channel` records overrides.
-- [source/window.c](../../source/window.c): `windowcmd_claim` implements the claim command.
-- [source/hook.c](../../source/hook.c): event registration and standard hook dispatch.
+- `source/names.c`: `add_channel` selects the proposed window; `window_claims_channel` records overrides.
+- `source/window.c`: `windowcmd_claim` implements the claim command.
+- `source/hook.c`: event registration and standard hook dispatch.

@@ -47,6 +47,6 @@ The built-in screen-refresh handling remains in effect. Signal availability and 
 
 ## Source references
 
-- [source/ircsig.c](../../source/ircsig.c): `my_signal` distinguishes default, ignored, and wrapped signals; `unified_signal_handler` records counts and invokes the C callback immediately.
-- [source/irc.c](../../source/irc.c): `do_signals` emits numeric and symbolic events and decrements counts; startup installs signal-specific callbacks, including exec cleanup for `USR1` and exit handling for `HUP` and `TERM`.
-- [source/hook.c](../../source/hook.c): event registration and `do_hook` implement matching.
+- `source/ircsig.c`: `my_signal` distinguishes default, ignored, and wrapped signals; `unified_signal_handler` records counts and invokes the C callback immediately.
+- `source/irc.c`: `do_signals` emits numeric and symbolic events and decrements counts; startup installs signal-specific callbacks, including exec cleanup for `USR1` and exit handling for `HUP` and `TERM`.
+- `source/hook.c`: event registration and `do_hook` implement matching.

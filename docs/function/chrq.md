@@ -47,4 +47,4 @@ Empty input, or input consisting entirely of skipped `U+` words, returns the emp
 
 ## Source
 
-[source/functions.c](../../source/functions.c) registers `chrq` and implements `function_chrq()`. [source/ircaux.c](../../source/ircaux.c) implements numeric conversion, UTF-8 encoding, `transform_string_dyn()`, and the CTCP encoder. [include/words.h](../../include/words.h) defines word parsing.
+`source/functions.c` registers `chrq` and implements `function_chrq()`. `source/ircaux.c` implements numeric conversion, UTF-8 encoding, `transform_string_dyn()`, and the CTCP encoder. `include/words.h` defines word parsing.
