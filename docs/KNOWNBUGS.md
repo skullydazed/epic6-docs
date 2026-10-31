@@ -1,0 +1,564 @@
+EPIC6 Projects, Bugs, and other Errata:
+
+The philosophy of EPIC6 is to make the UX better.  
+Many things have UX that is obtuse and so people don't use features.
+Although things may disappear in the near term, they will be
+reimagined and brought back in a better form later.
+
+"Make the complicated simple
+ Reduce Clutter
+ Focus on what people actually want to do"
+
+Things to remove
+=================
+*our glob (globi) - Not sure if appropriate
+*pthreads, etc	  - Just use poll
+*our SHA2	  - We can get this from openssl
+our sdbm (dbmctl) - Use a modern key-value store (sqlite)
+*ruby		  - Incomplete/unloved
+*perl		  - Incomplete/unloved
+*All encryption but AES - Obsolete/insecure
+
+Things to remove, but bring back
+================================
+e2e encryption	  - Targeting
+ignore		  - Targeting
+flood control	  - Incomplete/unloved
+*mail checking    - Scriptable (brought back)
+*notify	  	  - Scriptable/unloved (brought back)
+DCC		  - Or at least direct sockets
+
+Things to support
+=================
+*CAP/*SASL
+*Unlimited input line
+*Mouse support
+*PBKDF
+*Auto-ssl for ssl ports
+*tcgetwinsize() instead of ioctl()
+*c-ares
+*Base85
+libsodium
+sqlite
+*Targeting
+ZNC
+Emojis (incl ZWJ)
+Arena allocation
+*PCRE2 (utf8-aware regex)
+Use open_memstream() for malloc_sprintf()?
+Use ad-hoc TLS certs for wserv
+
+Actual bugs
+================
+* It's not possible to blank out fields in server desc (like vhost)
+  -- if you do :vhost=tcp4:   then it screws up the client kind of permanently
+* /SET NEW_SERVER_LASTLOG_LEVEL does not work properly because it doesn't check window servers.
+* Create /load ignore on top of /on context and /shh
+* Add /ON GEOMETRY to show columns and rows
+* Local variable pointers that hold pointers to malloc()ed memory that might be changed
+  by a do_hook() need to be (volatile) -- sigh!
+* [ 5:42PM] <wcarson> but basically when the znc loses connection to the server, then reconnects (but my epic 
+  +client never lost connection to the znc), it fails to channel_claim the channels or whatever, and then they
+  +all show up in one window and don't trigger /ons or something (they're all unstyled text), and i have to 
+  +/disconnect and /reconnect to fix it
+
+THE CHANGELOG SINCE THE LAST RELEASE:
+-------------------------------------
+* Sunset most of docs/ and other ancient files
+* Sunset /queue (and queue.c)
+* Sunset $globi() (and glob.c)
+* Sunset support for pre-wiki help files in script/
+* Sunset I/O disciplines other than select()
+* This means we can sunset ./configure --with-multiplex
+* This means we can sunset pthreads
+* This means we can sunset pthreads-with-openssl locking
+* Reset $info(o), since most flags are mandatory (see UPDATES)
+* Sunset all compat stuff
+* This means we don't care about reapath, tparm, strlc*, etc
+* Use OpenSSL to do SHA256 hashing. (digest, digest_hexstr)
+* Sunset our custom sha2 implementation
+* Sunset our custom alloca implementation
+* Sunset ara, the feature that never was
+* (<- 2141) Add circuit breaker if recalculate_windows gets jammed
+* (<- 2141) Fix two memory leaks; one major, one minor
+* (<- 2142) Fix more memory leaks 
+* Begin a project to review and revise comments all over the code base.
+* Particularly, things that come across as insulting/unkind are rewritten.
+* Sunset IRCII_LIKE_BAN_SUMMARY
+* Sunset our custom glob()
+* Adopt a new IRCII_COMMENT for epic6 (yay!)
+* Sunset FiSH support
+* Sunset SED, SEDSHA, CAST5, BLOWFISH e2e support
+* Sunset "external encryption" e2e support
+* Sunset being able to specify what kind of e2e encryption to use
+* Sunset our quirky random number generators; use OpenSSL always.
+* Sunset $crypt() and $encryptparm().
+* Consolidate "hidden" and "invisible" to just "invisible"
+* Add /window kill_all_invisible
+* Add $pbkdf2(), Improve your passwords
+* Check for, link to sqlite at build time (stay tuned!)
+* (-> 2145) Support backrefs with extended regex for BSD, Mac OS (sigh)
+* Various reformattings in header files
+* Sunset all spurious #define's in config.h
+* Sweep config.h and remove all #define's that don't exist
+* Sunset option flag b (bots) and t (i don't trust)
+* Sunset CPU Saver mode because it's not 1994 any more
+* Sunset the "old math parser" and /xdebug old_math_parser
+* GC old code that converted wildcard patterns to regexes
+* (<- 2146, 2147) script fixes from zlonix, skered
+* (<- 2144) fix openssl evp padding
+* (<- 2148) GLOB_QUOTE is not a thing that exists.
+* (<- 2149) Change notion of "away" to "away_message" 
+* (<- 2149) Add notion of "away status" and $serverctl(GET x AWAY_STATUS)
+* (<- 2150) Add /exec -exit {} (rb fusion)
+* (<- 2151,2152) UX improvements to ssl server connections
+* Sunset /on encrypted_(privmsg|notice)
+* Rename 'sed_type' to 'cipher_type'
+* GC any remaining code pertaining to sunset encryption types
+* Implement $token() for fusion
+* Sunset mail checking, /set mail* and everything else,
+* Sunset /notify, $D, and everything else,  
+* Sunset #include <sys/ioctl.h>, we don't use ioctl!
+* Sunset e2e encryption (/crypt) for now.  
+* Sunset openssl evp encryption ($xform(AES256)) for now.
+* Sunset /ignore, $ignorectl() and everything else, 
+* Sunset /dcc, $dccctl() and everything else  
+* Don't use GLOB_BRACE, it's nonstadnard (rb Kitambi)
+* Sunset ruby support,  RIP - 2006-2025
+* Sunset perl support.  RIP - 2001-2025
+* Clean up configure.ac -- remove things we don't support any more
+* Also, remove things we don't tolerate being absent any more
+* Refactor expand_twiddle() to use getpwnam_r()
+* Sunset the commented out SHIFT-JIS stuff
+* At this point, terminfo support is mandatory. Come on -- it's 2025.
+* Permit ^X RGB codes (ONLY (for now)!) to be surrounded by {}s
+  - eg, ^X{#aabbcc,ddeeff}
+* Change $rgb() to use the new syntax.
+* Sunset ability to run epic as a shell script (ie, #!/usr/local/bin/epic -S)
+* Sunset some /set's that setted sunsetted features.
+* Sunset default values for /sets that are removed
+* Send every message one at a time (no bunching)
+* Chonk messages sent to irc approximately every 480 bytes
+* Input line is now unlimited (it auto-expands as you type)
+* Apparently linux doesn't have tcgetwinsize() [Sigh] (rb fusion)
+* More fixes for linux not having tcgetwinsize() (rb fusion)
+* Sunset the QUIT_IRC keybinding
+* Implement multiple keymap sets
+* Add /bind <X> KEYMAP <keymap>  -- for now, only HEAD and MOUSE work.
+* Add /set mouse, turn on mouse click to focus and scrollwheel.
+* Create an "on exit" internal api to shadow /on exit
+* Register an "on exit" callback to turn off mouse mode
+* (<- 2156) Fix/rewrite $uname() [rb sob]
+* Check for/use libsodium in configure.
+* Add the overlooked $serverctl(GET|SET <ref> SERVER_STATUS) (rb fusion)
+* Remove all remaining references to DCC whatsoever
+* Fix things called out by clang and gcc static analyzers.
+* Sunset /redirect and /flush
+* Add a new /pyload newmail   mail checker.
+* Add back /set status_mail and %M for now.
+* Improve newmail by modularizing the mail checker so it can be extended
+* Also, create a consolidated mail checker to add mbox + Maildir together.
+* So now /set mail_status_format can support {cur} and {new} counts 
+* For now, always show the python stack trace to help me debug.
+* Add /load notify, to implement /notify on top of MONITOR
+* Now /load notify and /load mail are loaded in 'builtins'
+* Fix bogon in mail.py (rb wcarson)
+* Fix another bogon for mails w/o message-id's [bah!]
+* Add is_word_in_wordlist() for "in" and "not in" operators
+* Add "in" and "not in" operators -- ie, if ([x] in var) {...}
+* Adjust some of the sasl scripts to use it instead of expando ons
+* Revert the changes I just made to the sasl scripts
+* Complete refactor of cJSON.c, updated to latest upstream commit
+* Add /slurp_file and /filter file to /load files
+* Create /load json, to work with json files
+* Split connect_to_server() out into  bootstrap_server_connection()
+* This allows support for the "POLICY" server state (see UPDATES)
+*  This will be used for CAP/SASL soon enough...
+* Change callbacks to add_wait_prompt() to take two (const char *s)
+* Change the default for $json_implode() to "compact"
+* Switch from select() to poll() for multiplexing.
+* Remove the rest of the remnants of select() and friends.
+* Add compat strlcpy()/strlcat() for legacy glibc
+* Remove remaining uses of strcpy/strcat/sprintf() in cJSON.c
+* Don't use INFTIM, that's a bsd-ism. -1 is fine for poll().
+* Various and Sundry Changes suggested by static analyzers.
+* Stop checking for standard things in 'configure.ac'.
+* More removals from configure.ac.
+* Even more removals for historical unix behaviors!
+* First round of c-ares support, $iptoname(), $nametoip()
+* Apparently linux needs <sys/ioctl.h> to define 'struct winsize'
+* Nearly complete refactor of network.c, all things sockets and dns
+* Stop using getaddrinfo() and friends except for non-dns things
+* Sunset support for unix domain sockets (for /server)
+* Retrench on using poll(2) for everything; refactor newio to pass 'revent'
+* You now tell new_open() what poll(2) flags you are interested in.
+* The new c-ares stuff is built on the refactored newio stuff
+* Rename inet_* functions to avoid obsolete jargon abbreviations 
+* $iptolong() is reverted to using inet_aton().
+* $longtoip() is reverted to using inet_ntoa().
+* The ^S keybinding to TOGGLE_STOP_SCREEN is no longer a default
+* Refactor how vhosts are handled, with caching.
+* Unfortunately, vhost handling is still blocking.
+* Don't bother to figure out what hosename or modes to send at USER time
+* <- (2158) Better handle IRC/IRC-SSL when servers don't respond
+* Use getifaddrs() to pull our local ips at start-up.
+* Add undocumented /vhosts command -- it's just for debugging for now.
+* Use -Wshadow and -Wpedantic if they're available
+  - Fix all warnings thereupon
+* Restart refactoring global variables
+* Don't require a valid hostname upon startup (we use vhosts above)
+* Remove the 'now' variable -- just check the time when you need it.
+* Deprecate all (Timeval), move to (Timespec) 
+* Create_new_screen() now is told if this is 1st or 2nd screen
+* Switch \e to \x1B in literal strings (\e is non-standard)
+* Roll /hostname in with vhost support so we track "default" vhost
+* Fix bug in kreadable() that broke /window create
+* Refactor /window create to avoid a "resource leak" clang insists upon
+* Deprecate /WHO queue debugging.
+* Switch /server dns lookup from dns helper to c-ares. Yay! \o/
+* This includes some vibe code from gemini which I did as an experiment.
+* This uncovered some weaknesses in how poll() errors are handled. ummm...
+* There are a lot more debug info for the moment.
+* Make socklen() a global function
+* Removal of #if 0'd out code.
+* Fix <xlocale.h> and <ioctl.h> madness for mac os x.
+* Remove the rest of the who queue debugging.
+* Add configure check for xlocale.h (rb fro)
+* Add a handler for dns failure (rb fro)
+* Sunset the now unused async dns helper. yay!
+* Sunset the now unused old vhost handler. yay!
+* Getaddrinfo() now stops you from using it in a blocking way
+* Getnameinfo() now stops you from using it in a blocking way
+* Add ecdsatool.c, which facilitates SASL key sign-ins
+* This includes $ecdsatool() [see UPDATES]
+* Further refinements to the chatty-ness of the nonblocking dns stuff
+* Add /xdebug newio to hide a lot of newio chatter
+* Add /on authenticate, and /on cap -- more on this later
+* Sort of adapt the 'capctl' and 'sasl_auth' scripts to use them.
+* The other sasl scripts are still TBD (and now broken)
+* Why, in the name of anything, was i watching /exec stderr with POLLOUT?
+* ZNC does not send "*" as the placeholder nick during CAP negotiation
+* Refine scripts/capctl to match on both ourname and itsname
+* Fix bad type in param for check_permissions (rb fro)
+* Change $glob() to return empty on zero matches, for backwards compat
+  - POSIX requires glob(3) to return -3 on zero matches these days...
+* Add some more debugging diagnostics for p_cap
+* Put queue.c and queue.h back for fudd. :) 
+* Add ssuport() and setssuport() to get ports in and out of SSus'
+* Hide much of the chattyness for dns, vhost, behind /xdebug server_connect
+* Refine /on cap -- $0 = from, $1 = LS, $2 = key, $3- = value
+* Introduce the idea of "cap hold" -- so CAP END doesn't get sent too early.
+$ Add $serverctl(GET|SET x CAP_HOLD y)
+* Add $serverctl(SET x PORT y) that actually works correctly.
+* Once again try to ensure the port and the type (IRC/IRC-SSL) are reasonable
+* Set the port in a sockaddr from the server desc before we use it.
+* Add $serverctl(SET x CERT y)
+* Add /load sasl - unified sasl handling (tested on libera)
+* Fix a typo in /load sas (rb zlonix)
+* Refactor irc_std.h.  All #include <x.h>'s now must be there.
+* Reduce some chattiness of debugging info now that things are solidifying up.
+* Add /ON CONTEXT and /SHH (see UPDATES)
+* Add /SHH which suppresses output for the current context
+* Add coalesce() to reduce dependency on ?: operator
+* Make paddr_to_ssu() external so it can be used by $iptolong()
+* This allows us to retire the final inet_aton() and inet_ntoa(). yay!
+* Sunset the "what's our userhost?" feature, which was used for DCC
+* Refactor message_from() to set_context().
+* /load sasl now supports SCRAM-SHA-512 (see UPDATES)
+* Add scrambox.c, all the gory C stuff for scram handling
+* Add /xdebug scram for my own edification
+* Add $scrambox() for the sasl support
+* Fix /load sasl to match sasl rules with server support [see UPDATES]
+* Provide decls for strlcpy()/strlcat() if needed (rb fudd)
+* Fix some compiler warnings. (rb fro)
+* Base85 string transformation (see UPDATES)
+* Introduce internal "coalesce()" function: coalesce(x,y) is like x ?? y
+* Convert is_string_empty() users to empty().
+* Allow base85 internally; switch $regcomp() et al to use base85.
+* Add coments, move functions, refactors in ircaux.c
+* Refactor base85 converter to use pure math and no bit extracts
+* Sunset the "hold/unhold" stuff in newio.  I feel a refactor coming on!
+* Add comments, move functions, refactors in parse.c
+* Reorganize/refactor newio.c.  Fixed a bug rb wcarson along the way!
+* Fix off-by-one error (rb fro)
+* Remove -Wno-unused-parameter and -Wno-unused-function warnings
+* Mostly, this entails adding __attribute__((unused)) to a lot of things.
+* Although I did find a few problems here and there.
+* Add (vibe) code to parse out the server descriptions, WIP for now.
+* Convert A005 data structure to "OPTION" data, shoehorn 005s into it.
+* This will lead to storing CAPs in there eventually
+* Start fussing around with ServerInfo data structure...
+* Fix bugs found by clang static analyzer.
+* Fix /whois without arg (rb wcarson, fudd)
+* Add $serverctl(RESET <x>) for znc resets (for wcarson)
+* Fix $winchan() when chanwin is -1 (rb roar)
+* Replace vibe code for kwarg handling with code that actually works
+* Sunset the legacy ircII regex matcher.
+* Sunset /xdebug regex and /xdebug no_color.  
+* Add /xdebug kwarg_parse and /xdebug rfc1459
+* Add coalesce_empty() to get a non-"empty" string
+* Add "kwarg_string_to_json()" -- server descriptions to json
+* Add debug() which replaces if (x_debug & XXX) yell(...)
+* Put a cJSON "root" item in the ServerInfo.
+* Migrate all debug output to use debug()
+* Actually fix /whois this time
+* Explicitly handle 'localhost' special, to work around c-ares weirdness 
+* Begin major refactor of "ServerInfo" data structure.
+* We are moving away from a C struct to a cJSON Object.  One step at a time.
+* Finalize the API to get ServerInfo values, and constrain ServerInfo use
+* Start storing the ServerInfo in the json object as well as the struct
+* Sunset check for sa_len - we don't work on raw sa's any more.
+* Sunset check for UDS support in getaddrinfo - we don't do that any more.
+* Sunset historical weirdness for alloca().  It's not 1992 any more.
+* Add support for pcre2 -- use it if you got it!
+* Several adaptations of the json support
+  - Collapse "True/False" types to "Bool" with a valuebool.
+  - Reorg the header file, remove stuff we don't use
+  - Introduce the notion of "casting" by allowing a value to be represented
+    in different types (ie, string to bool, or to number)  Perhaps I will 
+    regret this someday...
+  - Support resetting a scalar item's type and value, which i already regret,
+    but I need to be able to use these as variables.  You can't reset an 
+    array or object.
+* Don't make /load loadformats look at $info(o), that's unnecessary
+* Sunset worrying if non-standard SA_INTERRUPT exists.
+* Sunset code behind #define's we've removed already
+* Fix runaway loop
+* Begin the refactoring of server project...
+* Allow cJSON values to be coalesced and unconditionally reset by type 
+* Rename cJSON_ArrayForEach -> ForEach since it can be used on objects as well
+* Change WAIT_PROMPT_DUMMY to WAIT_PROMPT_NOOP for kindness sake
+* Create formal abstraction layers for serverdesc, server info, server, 
+  and server list, and create APIs for each layer
+* ServerInfos no longer contain a rigid compiled-in schema, they're just 
+  a cJSON object with whatever fields you want.
+* Getting a value from a serverinfo now requires getters and setters
+* Function names get changed so they're always like serverlist_<whatever>
+* Remove the "funny stuff" handling for /names and /list
+* Refactor /pause to not use static global variables
+* Fix so many compiler warnings at -O2 and without it
+* Try to make /bind DELETE_TO_PREVIOUS_SPACE behave like epic4 did.
+* Fix bogon (rb fusion)
+* SI's must be deep copied (with cJSON_Duplicate()) (rb fusion)
+* When normalizing levels, use commas instead of spaces (see UPDATES)
+* Call @scrambox(RESET) more often.  Fixes sasl scram on reconnects.
+* Update colors script, (zlonix)
+* The sqlite library is spelled -lsqlite3
+* Sunset "funny stuff" (client side filtering of /names, /list, etc)
+* Remove more problematic words
+* Check for nulls passed to wild_match() in serverinfo_matches_servref()
+* Neither status.c nor window.c require putchar_x(). yay!
+* Do not initialize a variable declaration with a fn call (generally)
+* Rename get_window2() to get_window_from_args()
+* Refactor implementation, comments of various /window subcommands
+* Particularly, remove unnecessary uses of Window * ptrs
+* Fix add_wait_prompt() to take a (void *) cookie instead of a C string
+* Refactor all callers of add_wait_prompt()
+* Kludge /load notify so $notify(on) doesn't malfunction
+* Fix syntax error in /load ignore (rb zlonix)
+* Fix off-by-one buffer overrun (rb ryan_ -- thanks!)
+* Fix /server \\\\\\\\ (rb fusion)
+* Fix null deref with unloading timers triggered by /unload  (rb ryan_)
+* When doing /server <desc> don't do an upsert unless a straight lookup fails
+* Same thing, but for /window server
+* Append /set input_right_indicator with a space, because reasons.
+* Have the math parser output the expression when there is an error.
+* Add ./configure --with-installtype=prod  (rb skered)
+* Changes to the 'colors' script (zlonix)
+* Reorganize 'configure.ac'
+* - Move the --with-installtype support from the middle of library checks
+* - Fix a typo with PYTHON_O
+* Remove several previously sunset ONs; look for them when scripted ONs appear
+* - ENCRYPTED_NOTICE, ENCRYPTED_PRIVMSG, FLOOD, HELP, NOTE,
+* - NOTIFY_SIGNON, NOTIFY_SIGNOFF, REDIRECT, WALL, 
+* Fix several ON WINDOW_*'s that were out of order
+* Refactor how epic's operational mode is handled in global flags
+* -  "background" -> "detached"
+* -  "dumb_mode" ~-> "terminfo_mode"
+* -  foreground stays the same
+* -  "my_path"    -> "my_homedir"
+* Create an ov_strcpy2() which doesn't require aliased pointers.
+* Sunset STOP_IRC (^Z, term_pause(), etc.)  This was nice before gnu screen...
+* Fix bug in mail.py 
+* Various and sundry changes suggested by clang and gcc static analyzers
+* Use memmove() instead of memcpy() as its params are identical but it works in more cases
+* Sunset /BOTMODE -- just use -b 
+* Begin refactoring the command line argument parser to handle defaults more sensibly
+* At startup, explain where we got the user's username from
+* Use cppcheck to find countless code quality improvements.
+* Some useful things learned:
+  - All values (including NULLs) passed to variadic functions must be typed.
+  - Checking the NULLness of a pointer invalidates previous assumptions about its non-NULL-ness
+  - Code should not give instructions, it should specify requirements
+  - That is to say, "don't tell the compiler what to do, tell it what must be done"
+  - Clever code is always a trap in c99.  Don't be clever.
+  - Don't initialize variables just to do it if you reset them later.
+  - Don't use localtime(), ttyname(), or getpwuid().
+  - Literal strings should be const, even if they are  char var[].
+  - Don't do !~var  to see if a bitmask var has no bits set.  Just == 0.
+  - Use %02hhX to print a (unsigned char) as a two-digit hex
+  - %X always takes an unsigned type, always.
+  - "not" is apparently a reserved word these days.  go figure.
+  - Local variables that point to a global object need to be 'volatile' if a 
+    function call might change the underlying global object (such as do_hook())
+  - Code appearing after something that shouldn't return upsets the checker
+* Remove reference to the help files from the man page and redirect to the website
+* Rename init_input() to clear_input() to be clearer
+* Rename update_input() to redraw_input(), same
+* Change "current_numberic" from an int to a function so it can be per-server.
+* Always include <term.h> -- it's required for terminfo support
+* NSIG is non-standard before Issue 8, so it's better to use a magic value (128 for now)
+* Add a my_getpwuid() so we can use getpwuid_r() but still treat it like getpwuid()
+* Rename "init_screen()" to "init_display()" to indicate it's a tty thing not (Screen *) thing
+* Beginning of a terminfo refactor
+  - Be more straightforward in tracking SGR changes
+  - Don't keep track of things we can do that we don't actually need to do
+  - Don't go out of our way to support historical, obsolete ways that hardware terminals
+    used to do things.  Just do things the way terminal emulators do today.
+  - Switch from tparm() to tiparm()
+  - Don't try to reason what "normal" means, just send an SGR0
+  - Deprecate using outcap() -- a victim of sgr simplification
+  - Remove term_echo() and the ability to have invisible output.
+  - There were like 5 or 6 bona fide bugs it found. yay!
+* Sunset /MESG a command to help you avoid talk bombs (which are no longer a thing)
+* Sunset /OPER prompting you for a password either before or after a wrong password
+* Signficant rewrite of /FE (and /FEC) to make it less clever
+* Simplify how your username, nickname, and realname are determined at startup
+* Simplify/unify how epic decides what your startup file is
+* Add support for the IRCCHANNEL env variable for default channel
+* Avoid using the phrase "dumb mode", prefer "non-terminfo" or "non-fullscreen" mode
+* ircII calls it "basic mode" -- I might do that as well
+* Refactor how epic launches detached (bot) mode, the -d CLI flag
+* Refactor/unify how terminfo mode and non-terminfo mode bootstrap themselves.
+  - Eventually it'd be nice if you could switch this on or off at runtime
+* Change -S so it just tells you to use /server to see your server list.
+* Sunset the now-unused exec_pipe() internal function.
+* Don't exit the client if it's in detached mode and you're killed.
+* Major revamp to term_attribute() to use our new terminfo support
+  - This should cut down on bytes output on attribute changes
+* Check for <sys/ioctl.h> for linux for struct winsize
+* Fix typo with PYTHON_OH -> PYTHON_O
+* No longer explicitly check for struct winsize, it lives somewhere
+* Add functions for cJSON_Upsert*ToObject
+* Put parenthesis around #define MAX_PROTOCOL_SIZE
+* Make SIGNAL_HANDLER() a typedef not a #define
+* Completely refactor terminfo handling.
+* Cache all terminfo stuff in a cJSON instead of a hardcoded data struct
+* Sunset "current_term" and TI_* attrs. Yay!
+* Remove (FILE *)s in (Screen).  Yay!
+* Sunset /ALLOW_C1_CHARS
+* Fix a couple of calls to alloca()
+* Remove a few VLAs. 
+* Start thinking about refactoring the global vars for startup
+* Refactor signal handling, add comments.
+* Fix initial nickname generation (rb fusion)
+* No longer use the obsolete AC_FUNCTION_ALLOC macro (configure.ac)
+* Rename "terminfo mode" to "fullscreen mode"
+* Begin migrating stack-strings "char x[1024];" to using alloca explicitly
+* This enables a later switch to arena allocations.
+* There are so many of these, i might have botched some of them.
+* Remove size limitations by using malloc_sprintf() instead of snprintf()
+* This makes /echo unlimited. yay!
+* Begin rewriting scrambox.c to improve its quality
+* Introduce make targets for cppcheck
+    make cppcheck
+* Introduce "atonce" compiling for debug purposes
+  - make atonce   make cppcheck-atonce
+* Fix various issues found by cppcheck-atonce, scan-build atonce
+* Fix namespace shadow issues uncovered by atonce (global-vs-local conflicts)
+* Migrate more stack strings.  These are surprisingly tricky to regex!
+* Fix a use-after-free with a window's clear point
+* Change "nickname" to "default_nickname" to avoid shadow declarations
+* Change /oper to provide usage info if you don't provide arguments.
+* Add is_valid_time_t() to ensure an (intmax_t) won't overflow a (time_t)
+* Migrate mask handling from bsd bitmasks to level masks (rb fusion)
+* Begin a large refactoring project for built in functions
+  - Make sure every function is commented, using a standard pattern
+  - Make sure every function accepts json arguments
+  - Make every implementation follow a consistent pattern
+  - Reduce cleverness and increase clarity and correctness
+  - Some of these passes may be done at different time
+* Add -fsanitize=address to ./configure --with-clang-sanitizer
+  - Note - this makes address failures terminate with a debug log!
+* Switch cJSON to use (long double) for floating point everywhere
+* Add atolf() as a utility function for now
+* Add ld_to_intmax() to convert a (long double) to (intmax) with overflow
+* Revamp $mid(), $rand(), $srand(), $time(), $stime(), and $tdiff()
+* Did you know I can't spell Sentinel correctly?
+* If we're going to use (long double) then MO has to be 16 bytes.
+* Many many many many fixes suggested by coverity.  Thanks, coverity!
+* These include type problems, sizeof problems, printf format problems,
+* Typos, mistakes, memory leaks, buffer overflows, buffer underflows,
+* #ifdef mistakes, unreachable code, return value errors, 
+* Sometimes it was more pedantic than i would care for, but oh well!
+* Did you know ubuntu doesn't have memcpy_s(), required by c11?
+* Fix a bogon if you don't have libarchive
+* More coverity fixes from round two.
+* More (probably vain) attempts to appease the coverity monster
+* Sunset $uhc()  -- the code was smelly and people should use $mask()
+* Sunset /set suppress_from_remote_server
+* Fix the remaining coverity issues -- famous last words!
+* Add DEPENDENCIES.md
+* Add support for tracking dependency satisfaction in configure
+* Revamp the libarchive support (vibe coded with gemini)
+* Fix a warning about snprintf() in wserv that clang is being picky about.
+* Add OpenBSD to DEPENDENCIES.md
+* Wrap fopen()s in umask(077) to prevent a race conditioning on access.
+* Fix a bug in script/ambig that i found while debugigng something else
+* Make random_number() unconditionally a 64 bit integer
+* NULLs passed through ... must always be cast (to (char *))
+* (I've been sitting on these changes for a while...)
+* Clarify that only python 3.8 or later is supported
+* Fix or clarify feedback to the user, add comments
+* Officially support hex constants (0x4000) which is a new thing
+* Create tricks to make c99 compilers not optimize out memset()
+* Convert /load python to a pf script
+* It is no longer necessary to cache /set clock_format into a global var
+* Nor 12 hour clock nor 24 hour clock fomats, either
+* Fix fix_string_width().
+* Don't warn if a kwarg value is empty
+* Fix chop_columns() and chop_final_columns() to not remove highlight chars
+* Make it clear termcap is no longer supported.
+* Add comments to stuff in term.c
+* /TIMERs no longer track the number of times they are fired
+* Ensure /on window_rebuild is called in the context of the window
+* Add new scripts 'nicklist' and 'nickcolor.irc'  See UPDATES
+* Change the "swap" operator to => (was <=>)
+* Reclaim the <=> operator for "strcmp"
+* Update /load nicklist to sort by nick by alphabeticals only
+* Add $stricmp() function
+* Add $sortby() function
+* Fix bug with privmsgs that need recoding
+* >>> These were all recommended by an LLM static code analysis
+* Review all uses of va_list and va_copy to be safe 
+* Do not use anonymous structs (MO and AtExitFunction) in c99.
+* Fix a sizeof bug 
+* When new_free() wipes, wipe the data, not the header.
+* <<< End of LLM review suggestions
+* Add support for CPPFLAGS in configure (rb skully, for openssl on mac)
+* Do not let <term.h> #define lines underneath us.
+* Refactor /away, /cd, /clear, /ctcp, /me, /send, /say in the ordinary way.
+* Refactor /nick, /msg, /topic, /wallop, /xecho in the ordinary way
+* Update the copyright year for /info and /license 
+* Refactor /load, /pretend, /quote, /squit, /invite  in the ordinary way.
+* Change the message chonk from 480 to 440, as 480 is just a little too big.
+* Temporarily let windows have 100 toplines even if we don't display them.
+* Valiently keep trying to work around gnu screen bogons with cursor pos
+* >>> These were all recommended by another LLM static code analysis
+* do_ctcp's 4th argument should be const, and it should return amloc.
+* Double $'s with /timer and /defer so they're not expanded twice
+* Don't try to be clever with /python {...}.  It doesn't like that
+* Make add_to_alist() smarter about when it swaps out items
+* Refactor do_ctcp() to make it clear the 4th argument is const.
+  - If any work is done to modify it, create a new object and return that.
+  - Callers to do_ctcp() must now handle return value sensibly.
+* Make $ctcpctl(GET x) be smarter about syntax errors
+* Reformat /xdebug in the ordinary way;  
+* Fix $ecdsatool() to be case insensitive about params (duh)
+* In lexerr() {math parser) 'buffer' must be init properly
+* Refactor the ctcp handling in p_privmsg and p_notice() per above.
+* Explain in the TLS validator why we must accept some invalid tls certs
+* Something something new inbound data changes?
+* Refactor /disconnect/reconnect (sb skered)
+* <<< End of LLM review suggestions
+* Add support for refusing to do SASL PLAIN on imperfect TLS certs

@@ -1,0 +1,427 @@
+EPIC6-0.0.1
+
+*** News 08/30/2026 -- Wow, I haven't documented things for a long time
+	It's been a long time since i updated this file.  All of the things
+	below dated 8/30/2026 happened between 12/17/2025 and 8/30/2026
+
+*** News 08/30/2026 -- New built-in function $sortby(func-name word-list)
+	You can now sort a word-list using your own alias rather than
+		$sortby(stricmp word-list) 
+	is the same as
+		$sort(word-list) 
+	See the 'nicklist' script for how this can be used in a new way.
+
+	If you didn't want to wrap your sorter into an alias (but you really
+	should), you can pass a lambda function, which is a bit wonky:
+
+	Here's how $sort() might look with a lambda (inline) function:
+		$sortby({(one dword, two dword) { \
+			@ function_return = one <=> two \
+		}} word-list)
+	Note how the first "argument" is a code block wrapped in {}s,
+	but the body of that code block is an arglist block statement
+	You have to do it this way because $sortby() looks for a {
+	to differentiate it from an ordinary function name.
+
+*** News 08/30/2026 -- New built in function $stricmp("word1" "word2")
+	The $stricmp() function takes two qwords, that means they should
+	always be surrounded by double quotes.  The surrounding double
+	quotes get stripped out.  This function does the same thing
+	as the sort operator.
+
+*** News 08/30/2026 -- New built in math operator, "sort operator" <=>
+	The "sort operator", <=> is found in many languages,
+	It returns negative, zero, or positive, depending on how the 
+	two operands sort out
+		@ var1 = [one]
+		@ var2 = [two]
+		@ var1 <=> var2		
+			is negative, because "one" comes before "two"
+	This is strictly a string comparison.
+
+	The comparisons are strictly case insensitive, because ircII is
+	a fully case insensitive language, and I'm not going to make this
+	an exception.   You can use $encode() to do that
+		@ var1 = [one]
+		@ var2 = [TWO]
+	normally TWO comes before one, on a strictly byte-by-byte basis.
+	You can do:
+		@ encode($var1) <=> encode($var2)
+	to sort them case sensitively
+
+*** News 08/30/2026 -- Changing the "swap operator" from <=> to =>
+	The "swap operator> which as far as i can tell nobody ever used,
+	allows you to switch the rvals between two lvals.  You can still
+	do it, but the operator has changed
+		@ var1 = [one]
+		@ var2 = [two]
+		@ var1 => var2
+	then
+		$var1 is "two" and $var2 is "one"
+
+*** News 08/30/2026 -- New scripts, /load nicklist and /load nickcolor.irc
+	The /load nicklist script puts the nicks of everyone on a channel
+	at the top of that channel's window.  Neat!
+
+	The /load nickcolor.irc converts a nickname to a color, to help 
+	you differentiate nicks.  You can use it for more than just nick
+	lists, of course!
+
+*** News 08/30/2026 -- Hex constants are supported in integer contexts
+	You can now do things like
+		@ varname = 0x80
+
+*** News 08/30/2026 -- Officially, only Python 3.8 or newer is supported
+	Although you might get EPIC to build against python 3.7 or earlier,
+	that is not supported and might not work and I won't help you try.
+
+*** News 08/30/2026 -- Sunset /SET SUPPRESS_FROM_REMOTE_SERVER
+	When you get a numeric from a remote server, ircII has traditionally
+	appended "(from irc.server.com").  I don't know why i ever added
+	this feature instead of scripting it away.
+
+*** News 08/30/2026 -- Sunset $uhc()
+	The $uhc() function was superceded by $mask() like 30 years ago.
+
+*** News 08/30/2026 -- Sunset /SET ALLOW_C1_CHARS
+	This /SET served no purpose once we introduced UTF-8 support 
+	10 years ago
+
+*** News 08/30/2026 -- New env variable, IRCCHANNEL
+	You can set the IRCCHANNEL environment variable to set a channel
+	to join after connecting to your first server.  It does the same
+	thing as the -c command line option.
+
+*** News 08/30/2026 -- Sunset password prompting
+	Traditionally if you connected to a server that required a password
+	or you did /OPER, but didn't supply a password, ircII would prompt
+	you for one.  These features existed because on multi-user systems,
+	people might shoulder-surf you at the lab and see your password
+	as you typed it at the input line.  That's not relevant any longer.
+
+*** News 08/30/2026 -- Sunset /MESG
+	The /MESG command existed to help you defend against talk bombs.
+	Neither talk bombs nor /MESG are relevant any longer.
+
+*** News 08/30/2026 -- Sunset of termcap support
+	Originally ircII supported only termcap.  EPIC supports both termcap
+	and terminfo through libncurses.  Now it supports only terminfo
+	(through ncurses)
+
+*** News 08/30/2026 -- CPPCheck and Coverity finds a bunch of bugs
+	During 2026 we used several static analyzers to find and fix bugs. 
+
+*** News 08/30/2026 -- Sunset /BOTMODE -- just use -b
+	The /BOTMODE command which allowed you to take a foreground epic
+	process and send it to the background has been sunset. 
+	Switching between attached and detached after boot is no longer
+	supported.  Use the -b command line argument
+
+*** News 08/30/2026 -- Sunset /bind <X> STOP_IRC
+	The STOP_IRC keybinding, which heralds back to the day before
+	we all used gnu screen/tmux, and which only causes pain and misery,
+	has been retired.
+
+*** News 08/30/2026 -- Removal of sunset /on's
+	The features using these /on's were previously sunset.
+		ENCRYPTED_NOTICE	ENCRYPTED_PRIVMSG
+		FLOOD		HELP		NOTE
+		NOTIFY_SIGNON		NOTIFY_SIGNOFF
+		REDIRECT			WALL
+
+*** News 12/17/2025 -- New configure flag, "--with-installtype"
+	Traditionally epic installs its binary as epic6-<version>
+	and a symlink from "epic6" to "epic6-<version>".
+
+	It does this because that's what ircII has always done, 
+	and that was inherited from gnu screen's behavior
+
+	For those who would prefer to do without this quirk, you can 
+	now do 
+		./configure --with-installtype=prod
+	and then the epic binary will be installed as "epic6" without
+	the version suffix and without the symlink.
+
+*** News 08/18/2025 -- Level-sets represented as a single word now
+	From the very beginnings of ircII, level sets ("MSGS PUBLICS
+	JOINS OTHER") have been represented as a space-seperated 
+	list of levels.  This makes it hard to capture the level as
+	a word and makes it hard to pass to /window notify_level which
+	expects only one word and doesn't support double quoted words.
+
+	Starting from now, level sets will be comma-seperated instead
+	of space seperated, to make them easier to work with in scripts,
+	without being harder to read
+
+	Historically:	*** Window level is MSG PUBLICS JOINS OTHER
+	Going Forward:	*** Window level is MSG,PUBLICS,JOINS,OTHER
+
+*** News 06/05/2025 -- $regcomp() and friends now use base85.
+	This will probably not affect you -- but previously, $regcomp()
+	and friends who work with compiled regexes, had "encoded" the 
+	compiled regex.  They now use base85.  If you notice anything
+	weird with regexes, this may be why.  Please report it.
+
+*** News 06/01/2025 -- New xform, base85 -- $xform(+B85 ...)
+	You can now transform strings to and from base85 with the "B85"
+	transform with $xform().  Technically these are "ascii85" strings,
+	because they have the <~...~> wrapper and they use the ascii85
+	alphabet.  I have in mind to use these for encrypted strings in
+	the future.  I haven't tested this extensively for edge cases.
+
+	Example:
+		$xform(+B85 this is a string)
+	would return
+		<~FD,B0+DGm>@3BZ'F*%~>
+	and 	
+		$xform(-B85 <~FD,B0+DGm>@3BZ'F*%~>)
+	would return
+		this is a string
+
+*** News 05/27/2025 -- Clarification on SASL types and configuration
+	In a previous version of this file, I had used informal names
+	of SASL types, like "nistp256".  However, it seems better to
+	compel the user to use the same spellings as the server, because
+	otherwise we're just trying to be clever and that confuses people.
+	When you register a sasl rule, it must be spelled like the server
+	spells it, and it must be in the same case as the server has it.
+
+		/load sasl
+		sasl *.network.org EXTERNAL /path/to/cert.pem
+		sasl *.network.org ECDSA-NIST256P-CHALLENGE <nick> /path/to/eckey.pem
+		sasl *.network.org SCRAM-SHA-512 <nick> <password>
+		sasl *.network.org PLAIN <nick> <password>
+
+	If SASL isn't working for you, make sure you have it spelled and cased
+	the same way as the server.  The sasl script does not support trying
+	multiple rules per server -- it will use the "best" one, in the above
+	order.
+
+*** News 05/26/2025 -- SASL SCRAM-SHA-512 support
+	The /load sasl script now supports SCRAM-SHA-512.  I can support other
+	kinds of SHAs, contact me for details.  I only tested this with libera.
+
+	Just like with other sasl types, add a line to your ~/.epicrc 
+		sasl *.network.org scram-sha-512 <nick> <password>
+
+	There is a new $scrambox() function, but it's only intended to be used
+	by the /load sasl script for the stuff that has to be done in C.
+
+*** News 05/26/2025 -- New /ON, /ON CONTEXT, new command /SHH
+	This one takes more explanation than normal.  See the file 'doc/set_context'.
+
+	The /ON CONTEXT event is thrown each time a new output context is set up.
+	This happens a lot more than you might think!
+	The only officially supported operation is /SHH, which will set the
+	"suppress display" flag for the lifetime of the context.
+	It's expected this will create a foundation for a new /IGNORE
+	Using /SHH outside of an /on context has unspecified behavior.
+
+		$0      The server (usually from_server)
+		$1      The window override (usually -1 meaning "no override")
+		$2      The sender (could be "*" meaning "no sender")
+		$3      The target (could be "*" meaning "no target")
+		$4      The level
+
+*** News 05/16/2025 -- SASL handling, /load sasl
+	There is now a unified sasl handling script that will do all
+	the sasl things in one place.
+
+		[see examples above]
+
+	It's kind of assumed you know what to do with this.  If you don't,
+	then it probably won't affect you.  I may write more on this in
+	the future.  There are now no external dependencies, and no /SETs 
+	to configure.
+
+	This script is sort of opinionated, and will try to steer you
+	to success.
+
+*** News 05/16/2025 -- CAP handling, /ON CAP
+	The client will now automatically request CAPs when you connect 
+	to a server.  If your script is trying to do this manually, you 
+	will need to migrate it to the new way.
+
+		/ON CAP "<server> LS <CAP> <VALUE>" {...}
+	When the server responds with its CAPs, the client will offer 
+	them to you, one at a time, with /on cap.  Even though most CAPs 
+	do not have <value>, there will always be a <value>, even if it's
+	an empty string -- so watch out for that trailing space!
+
+		/quote CAP req $2
+	If you wanted to turn on a cap (in an /on cap) you could do it
+	like this.
+
+		/ON CAP "<server> ACK <CAP>" {...}
+	The server has agreed to turn on <CAP> for you.  If there is 
+	anything you need to do this would be a great time
+
+		/ON CAP "<server> NACK <CAP>" {...}
+	The server has rejected your attempt to turn on <CAP>.  I do
+	not know why this would ever happen, but just in case...
+
+	After the client has offered very CAP via /ON CAP, it will send 
+	a CAP END to continue registration.  If for whatever reason you 
+	need CAP END to be delayed, you may set a "cap hold"
+		@serverctl(SET $0 CAP_HOLD 1)
+	The CAP END will not be sent until you release the hold
+		@serverctl(SET $0 CAP_HOLD 0)
+
+	---WARNING--- You can jam the client by setting a hold and
+	not releasing it later.  I recommend doing something like:
+		timer 15 {@serverctl(SET $servernum() CAP HOLD 0)}
+	which will unjam-it as a safety valve.  There is no harm in 
+	releasing a hold if it's not being held.
+
+*** News 05/16/2025 -- $serverctl PORT and CERT
+	These are values that are usually set in the server description,
+	but now you can get/set them via $serverctl() as well
+		$serverctl(GET x PORT)
+		@serverctl(SET x PORT y)
+		$serverctl(GET x CERT)
+		@serverctl(SET x CERT y)
+
+*** News 05/12/2025 -- New function $ecdsatool()
+	This is based on/forked from the "ecdsatool" and libecdsa projects.
+
+	$ecdsatool(keygen file.pem)
+		Create a new keypair and save it to "file.pem".
+		The file will be created with permissions 0400.
+		If for any reason it can't be created securely,
+		it won't be created at all.
+		The return value is the base64 encoded public key
+
+	$ecdsatool(pubkey file.pem)
+		Output the public key for 'file.pem'
+		The file must have permissions 0400.  
+		If it has insecure permissions, it won't be loaded.
+		The return value is the base64 encoded public key
+
+	$ecdsatool(sign file.pem base64-challenge)
+		Sign the <base64-challenge> with the private key in file.pem.
+		The file must have permissions 0400.  
+		If it has insecure permissions, it won't be used.
+		The return value is the base64 encoded signed challenge
+
+	Maybe in the future we will support 'verify', but I need to find
+	a use case for that first.
+
+*** News 05/12/2025 -- Improvements to vhost handling
+	Vhost handling used to be fully blocking.  Now it blocks only when 
+	(1) You are using a hostname, not an IP address, and
+	(2) It is the first time you're using that vhost.
+	After you use a vhost, it is cached, and doesn't block again.
+	It will never block if you use an IP address.
+
+*** News 04/30/2025 -- Unix Domain Sockets support sunset
+	ircII has traditionally supported unix domain sockets to connect to
+	servers, as in  /server /tmp/.ircd/6667.  I bet you didn't even know
+	that.  I bet I was the only one who ever even used that.
+
+*** News 04/30/2025 -- ^S is no longer bound to TOGGLE_STOP_SCREEN by default
+	TOGGLE_STOP_SCREEN toggles "hold mode" which most people do not 
+	want to use anyways.  It's one of those things that everyone turns
+	off, so why not just make it opt-in instead of opt-out?
+
+*** News 04/10/2025 -- $json_implode() now defaults to "compact:true"
+	The $json_implode() function takes an assign tree root
+	and converts everything underneath it into a json doc.
+	Previously, the default was "compact:false" which gave you 
+	a multi-string line.  That's wonderful for /echo but kind of
+	stinks if you want to write it to a file.  The default is
+	now to return it in one line -- suitable for /msg'ing or
+	writing or whatever.  
+
+	You can still use kwargs to turn compact:false if you want.
+		/echo $json_implode({"root":"q", "compact":false})
+
+*** News 04/10/2025 -- New server state, POLICY
+	There is a new server state POLICY between "RECONNECT" and "DNS".
+	Just for completeness, here are the states in order
+		CREATED		RECONNECT	POLICY
+		DNS		CONNECTING	SSL_CONNECTING
+		REGISTERING	SYNCING		ACTIVE
+		EOF		ERROR		CLOSING
+		CLOSED		DELETED
+	These states reflect the progress of a connection to the server
+	from the moment it is born through a connection until it is closed
+
+	The POLICY state is where you would want to modify a server's 
+	description information _after_ the user asks to connect to it
+	but _before_ anything happens.  This could be useful for things
+	like changing the hostname, or changing the port or IRC-SSL things,
+	or supplying a password, you know, I haven't decided what-all yet.
+
+*** News 03/08/2025 -- A note about EPIC6
+	I dislike software that seems to grow new features without any
+	sense of purpose; and the bloat makes it difficult to do the
+	core things you need to do.  One cause of this problem is 
+	cognitive overload.  The more features software has, the harder
+	it is to keep everything focused.
+
+	For each new generation of EPIC, features get sunset whose
+	utility served us well 30 years ago, but are not so useful now.
+	By removing such features, it is possible to add new features 
+	without things getting "bloated"
+
+	In EPIC6, the following features have been removed and are not 
+	expected to return.  If you strongly disagree with the retirement 
+	of these features, please contact us and we can talk about it!
+		C90-only environs	Shebang support
+		/REDIRECT and /FLUSH	(/queue was removed but put back)
+		CPU Saver		Flood Control
+		Pthreads/select/kqueue/etc
+		Ruby			Perl 		
+		External cryptography	Blowfish, FiSH, SED, CAST5
+		ircII's original math parser
+		Shift-JIS		termcap-only
+
+	Also, some features were hardcoded (written in C) but are now
+	implemented as a script:
+		Mail checking		/NOTIFY
+
+	Some features were hardcoded but are coming back in the future
+		E2E encryption		ignore
+		$dbmctl() 		/DCC
+
+	Because of these removals, EPIC6 has already sprouted these
+	exciting new features!
+		Unlimited input line (with message breaking)
+		Mouse support (click-to-focus, scrollwheel)
+		SQLite support
+
+	Even more things are coming down the pipeline!
+
+*** News 02/17/2025 [3018] -- Mouse support (click-to-focus, scrolling)
+	If you /SET MOUSE ON and if your terminal emulator cooperates,
+	EPIC will support:
+	  1. Clicking on a window will switch to that window
+	  2. Using the scrollwheel will scroll the _current input window_
+	When mouse support is turned on, other things you do with your 
+	mouse -- like selecting text -- will probably not work.  Some 
+	emulators will let you do that if you're holding the shift key.
+	I haven't tested this at all with multiple screens.
+
+*** News 12/12/2024 [3008] -- New function $token(<lval> <string>) 
+	By special request of fusion!
+
+	Usage: 	$token(<lval> <string>)
+	<lval> refers to a variable name that has some value in it.
+
+	The value in $<lval> is divided into three parts:
+	  1. The part before <string>
+	  2. The part that is exactly <string>
+	  3. The part that comes after <string>
+
+	When <string> is found in $<lval>:
+		The return function is the first part
+		$<lval> is assigned to the third part
+	When <string> is not found in $<lval>
+		The return value is the value of $<lval>
+		$<lval> is removed
+
+	In all cases, spaces are ordinary characters.
+
+*** News 08/26/2024 -- EPIC6 forked from EPIC5
+	A new journey awaits!
+
