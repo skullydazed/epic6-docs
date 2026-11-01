@@ -4,10 +4,6 @@ This page covers EPIC6 development news and historical EPIC4/EPIC5 announcements
 
 ## EPIC6
 
-### 2026-10-31: Channel resynchronization after a ZNC reconnect
-
-When a network behind ZNC reconnects while EPIC6 stays connected to ZNC, the client could retain stale channel state. A new `JOIN` now replaces the previous state, allowing channel membership and its associated hooks and styling to resynchronize.
-
 ### 2026-10-30: Authentication checks and scripting fixes
 
 Upstream commit `70a655b6` (internal commit ID 3106) includes static-analysis fixes and these interface changes:
