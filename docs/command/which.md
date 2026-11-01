@@ -9,7 +9,7 @@
 
 ## Description
 
-`which` looks for files using the colon-separated [`load_path`](../settings/load_path.md) setting, as [`load`](load.md) does, and displays each resolved filename. Use it to see which script a normal load-path search would select. The effective search directories depend on your configured `load_path`; inspect them with `/set load_path` rather than assuming a fixed library or home-directory layout.
+`which` looks for files using the colon-separated [`load_path`](../set/load_path.md) setting, as [`load`](load.md) does, and displays each resolved filename. Use it to see which script a normal load-path search would select. The effective search directories depend on your configured `load_path`; inspect them with `/set load_path` rather than assuming a fixed library or home-directory layout.
 
 A bare filename is searched through the load path. A filename containing `/` is first tried as its explicit path or relative to the current directory, then through the load path if that fails. Tilde paths are expanded. Even an explicit path requires `load_path` to be set; otherwise the handler reports `LOAD_PATH has not been set`. Names are whitespace-delimited, without quote grouping, so this argument parser does not support filenames containing spaces.
 

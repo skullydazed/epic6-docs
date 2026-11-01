@@ -8,11 +8,11 @@
 
 Returns the sine of the angle given in radians. Finite real inputs have results between `-1` and `1`. [$asin()](asin.md) returns a principal inverse angle.
 
-The first function word is converted with `atof()`, accepting decimal fractions and scientific notation. Additional words are ignored. Missing input returns empty. Nonnumeric input becomes zero, and a numeric prefix can be accepted before trailing nonnumeric text. See the [rules about number arguments](../rules_about_number_arguments.md).
+The first function word is converted with `atof()`, accepting decimal fractions and scientific notation. Additional words are ignored. Missing input returns empty. Nonnumeric input becomes zero, and a numeric prefix can be accepted before trailing nonnumeric text. See the [rules about number arguments](../special/rules_about_number_arguments.md).
 
 ## Returns
 
-The calculation uses the C library's `sin()` and a C `double`. Results are formatted with `%.50g`, rather than limited to six decimal places. The [floating_point_math](../settings/floating_point_math.md) and [floating_point_precision](../settings/floating_point_precision.md) settings do not change this function's calculation or formatting. Extra printed digits do not mean 50 digits of accuracy.
+The calculation uses the C library's `sin()` and a C `double`. Results are formatted with `%.50g`, rather than limited to six decimal places. The [floating_point_math](../set/floating_point_math.md) and [floating_point_precision](../set/floating_point_precision.md) settings do not change this function's calculation or formatting. Extra printed digits do not mean 50 digits of accuracy.
 
 The wrapper clears `errno` after argument conversion, then returns `DOM` for a library-reported domain error, `RANGE` for a reported range error, or empty for another reported error. It checks `errno`, not floating-point exception flags.
 

@@ -8,7 +8,7 @@
 
 ## Description
 
-`type` simulates user keystrokes. Ordinary characters normally appear in the input line, while bound keys perform their usual actions. Text is inserted at the current cursor, respecting the [`insert_mode`](../settings/insert_mode.md) setting; it is not automatically appended at the end.
+`type` simulates user keystrokes. Ordinary characters normally appear in the input line, while bound keys perform their usual actions. Text is inserted at the current cursor, respecting the [`insert_mode`](../set/insert_mode.md) setting; it is not automatically appended at the end.
 
 The argument text uses caret notation for control keys: `^A` through `^Z` represent their control characters, `^[` represents Escape, and `^?` represents Delete. Lowercase letters after a caret are converted to uppercase. A backslash quotes the next character for this notation parser: `\^` types a caret and `\\` types a backslash. This quoting does not bypass key bindings. A final caret or backslash without a following character is ignored. An invalid caret sequence such as `^1` displays `Invalid key sequence: ^1` and stops, leaving earlier keystrokes already processed.
 

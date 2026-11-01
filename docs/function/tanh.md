@@ -12,7 +12,7 @@ The first function word is converted with `atof`, accepting fractions, scientifi
 
 ## Returns
 
-The hyperbolic tangent, formatted with `%.50g`, rather than limited to six decimal places. Extra printed digits do not imply 50 digits of accuracy. The [floating_point_math](../settings/floating_point_math.md) and [floating_point_precision](../settings/floating_point_precision.md) settings do not change this function's calculation or formatting.
+The hyperbolic tangent, formatted with `%.50g`, rather than limited to six decimal places. Extra printed digits do not imply 50 digits of accuracy. The [floating_point_math](../set/floating_point_math.md) and [floating_point_precision](../set/floating_point_precision.md) settings do not change this function's calculation or formatting.
 
 Positive infinity returns `1`, negative infinity returns `-1`, and signed zero retains its sign. NaN input ordinarily returns NaN. These special values follow the [C library hyperbolic tangent interface](https://man7.org/linux/man-pages/man3/tanh.3.html).
 

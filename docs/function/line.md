@@ -18,7 +18,7 @@ The stored text is returned with its formatting bytes. `-level` appends its cano
 
 ## Practical
 
-Use this to inspect stored text, extract URLs, or implement searches and transformations beyond the [lastlog command](../command/lastlog.md). The [lastlog function](lastlog.md) returns positions suitable for this function when the same window's lastlog has not changed between calls. Positions shift as entries are added, removed, or moved; they are not persistent identifiers. See [lastlogctl](lastlogctl.md) for reference-based access.
+Use this to inspect stored text, extract URLs, or implement searches and transformations beyond the [lastlog command](../command/lastlog.md). The [lastlog function](lastlog.md) returns positions suitable for this function when the same window's lastlog has not changed between calls. Positions shift as entries are added, removed, or moved; they are not persistent identifiers. See `lastlogctl` for reference-based access.
 
 ## Returns
 

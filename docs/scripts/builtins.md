@@ -100,7 +100,7 @@ The following settings are supplied or initialized by this script:
 
 `beep_on_msg` recognizes `action`, `crap`, `ctcp`, `msgs`, `notices`, `opnotes`, `public`, `snotes`, and `wallops`. Categories are selected by word-list membership; not every event at a similarly named output level has a matching hook. Actual sound also depends on the current beep implementation and terminal.
 
-The script loads [newnick](newnick.md) for nickname-conflict handling, [ctcp](ctcp.md) for CTCP responders, [mail](mail.md) for Python-based mail support, and [notify](notify.md) for server MONITOR support. Their behavior and requirements belong to those scripts; loading `builtins` does not make Python mail checking or server MONITOR universally available. It also installs a replacement `send_public` display hook.
+The script loads [newnick](newnick.md) for nickname-conflict handling, `ctcp` for CTCP responders, [mail](mail.md) for Python-based mail support, and [notify](notify.md) for server MONITOR support. Their behavior and requirements belong to those scripts; loading `builtins` does not make Python mail checking or server MONITOR universally available. It also installs a replacement `send_public` display hook.
 
 The `command_mode` block is disabled and creates no setting or input hooks. Retained DCC beep hooks and `dcc_timeout` code refer to removed DCC interfaces; setting their values does not restore DCC transfers or idle-transfer closure. Compatibility definitions and stale code in this file should not be treated as proof that their former subsystems still exist.
 

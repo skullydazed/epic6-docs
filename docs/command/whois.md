@@ -35,7 +35,7 @@ These conventionally query several users locally, query them through a specified
 
 ## Privacy
 
-Do not assume WHOIS is private: servers can log requests or notify targeted users or operators. The realname field is client-supplied text, not verified identity. EPIC registers its own realname using the per-server default or [`default_realname`](../settings/default_realname.md). At startup the default can come from `IRCNAME`, `NAME`, or `REALNAME`, an existing default setting, the local account's GECOS field, or a username fallback. Inspect the configured value if you do not want account information disclosed. Changing a default affects subsequent registration rather than automatically rewriting an existing connection's realname.
+Do not assume WHOIS is private: servers can log requests or notify targeted users or operators. The realname field is client-supplied text, not verified identity. EPIC registers its own realname using the per-server default or [`default_realname`](../set/default_realname.md). At startup the default can come from `IRCNAME`, `NAME`, or `REALNAME`, an existing default setting, the local account's GECOS field, or a username fallback. Inspect the configured value if you do not want account information disclosed. Changing a default affects subsequent registration rather than automatically rewriting an existing connection's realname.
 
 ## Source
 

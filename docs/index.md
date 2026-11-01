@@ -1,6 +1,6 @@
 # Welcome to EPIC6
 
-EPIC is a terminal IRC client descended from ircII, designed for interactive IRC use and scripting. Its aliases, hooks, functions, windows, and loadable scripts let you shape the experience. Start with [about EPIC](about_epic.md) for background or the [introduction](introduction.md) for basic use.
+EPIC is a terminal IRC client descended from ircII, designed for interactive IRC use and scripting. Its aliases, hooks, functions, windows, and loadable scripts let you shape the experience. Start with [about EPIC](special/about_epic.md) for background or the [introduction](special/introduction.md) for basic use.
 
 ## Getting EPIC6
 
@@ -12,7 +12,7 @@ make
 make install
 ```
 
-Configuration checks the local compiler and libraries. The intended environment is a modern POSIX system with a C99-or-newer compiler and terminfo support, plus the required libraries identified by configuration. Installation writes to the configured prefix; choose one appropriate for your system. See [compile options](compile_opts.md) and the repository's `configure.ac` for build requirements and options. Optional integrations depend on how the client was built.
+Configuration checks the local compiler and libraries. The intended environment is a modern POSIX system with a C99-or-newer compiler and terminfo support, plus the required libraries identified by configuration. Installation writes to the configured prefix; choose one appropriate for your system. See [compile options](special/compile_opts.md) and the repository's `configure.ac` for build requirements and options. Optional integrations depend on how the client was built.
 
 EPIC6 is an evolving development line. Features, defaults, and script interfaces can differ from EPIC4 or EPIC5; an older package or script pack is not automatically an EPIC6-compatible installation. The repository's [UPDATES](UPDATES.md) and [KNOWNBUGS](KNOWNBUGS.md) describe changes and ongoing work. Distribution package names and availability depend on the operating system and its maintainers.
 
@@ -30,7 +30,7 @@ Provide a nickname and a server description when starting the client:
 epic6 mynick irc.example.net
 ```
 
-Replace the example hostname with your network's server. This requests a connection using `mynick`; the server decides whether the nickname and registration are accepted. Network addresses, TLS requirements, authentication, channel rules, and available extensions vary. See [server descriptions](server_description.md) for specifying the connection.
+Replace the example hostname with your network's server. This requests a connection using `mynick`; the server decides whether the nickname and registration are accepted. Network addresses, TLS requirements, authentication, channel rules, and available extensions vary. See [server descriptions](special/server_description.md) for specifying the connection.
 
 To display command-line options:
 
@@ -38,17 +38,17 @@ To display command-line options:
 epic6 -h
 ```
 
-See [command-line options](command_line.md) for details. If typing or display is incorrect, consult [output help](output-help.md), [input handling](input_handling.md), and [graphics characters](graphics_chars.md). Terminal configuration, fonts, and encoding all affect the result.
+See [command-line options](special/command_line.md) for details. If typing or display is incorrect, consult [output help](special/output-help.md), [input handling](special/input_handling.md), and [graphics characters](special/graphics_chars.md). Terminal configuration, fonts, and encoding all affect the result.
 
 ## What is IRC?
 
-IRC connects people through servers and networks. Users join channels and exchange messages with other people on the same network. EPIC can manage connections to multiple servers, but channel names and nicknames belong to their network context. IRC has multiple server implementations and protocol extensions; support for a particular operation depends on the server and client implementation. See [new users](new_user.md) and [IRC etiquette](etiquette.md).
+IRC connects people through servers and networks. Users join channels and exchange messages with other people on the same network. EPIC can manage connections to multiple servers, but channel names and nicknames belong to their network context. IRC has multiple server implementations and protocol extensions; support for a particular operation depends on the server and client implementation. See [new users](special/new_user.md) and [IRC etiquette](special/etiquette.md).
 
 ## Help and programming
 
-These pages document client features and supplied scripts. Useful reference starting points are [commands](commands_overview.md), [functions](functions_overview.md), [key bindings](key_bindings.md), and [special variables](special_vars.md).
+These pages document client features and supplied scripts. Useful reference starting points are [commands](special/commands_overview.md), [functions](special/functions_overview.md), [key bindings](special/key_bindings.md), and [special variables](special/special_vars.md).
 
-To customize or automate the client, begin with [programming](programming.md), [ircII syntax](ircii_syntax.md), and [expando substitution](expando_substitution.md). Scripts execute local client operations as well as server requests, so read their requirements and effects before loading them.
+To customize or automate the client, begin with [programming](special/programming.md), [ircII syntax](special/ircii_syntax.md), and [expando substitution](special/expando_substitution.md). Scripts execute local client operations as well as server requests, so read their requirements and effects before loading them.
 
 ## Repository references
 

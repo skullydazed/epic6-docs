@@ -10,7 +10,7 @@ Returns the Bessel function of the first kind of integer order `<level>` evaluat
 
 The order uses base-detecting integer conversion, accepting decimal, hexadecimal, and leading-zero octal, then is stored as a C `int`. Keep it within that type's range. The number uses `atof`, accepting decimal fractions and scientific notation. Nonnumeric arguments convert to zero, and numeric prefixes can be accepted despite trailing text. Negative orders and arguments are passed to the library without an EPIC restriction.
 
-The calculation uses a C `double`. Results are formatted with `%.50g`, not limited to six decimal places; extra digits do not imply 50 digits of accuracy. The [floating_point_math](../settings/floating_point_math.md) and [floating_point_precision](../settings/floating_point_precision.md) settings do not change this calculation or formatting.
+The calculation uses a C `double`. Results are formatted with `%.50g`, not limited to six decimal places; extra digits do not imply 50 digits of accuracy. The [floating_point_math](../set/floating_point_math.md) and [floating_point_precision](../set/floating_point_precision.md) settings do not change this calculation or formatting.
 
 ## Returns
 

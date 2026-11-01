@@ -17,7 +17,7 @@
 
 ## Description
 
-This script provides aliases for delaying, deduplicating, and queueing commands while avoiding an extra expansion of their arguments before execution. To reduce [quoting problems](../other/quoting_hell.md), put code in an [alias](../command/alias.md) and pass its name to these commands. Expansion already performed by the calling alias or hook still applies; these helpers do not undo it. Explicit `eval` inside the command deliberately adds expansion.
+This script provides aliases for delaying, deduplicating, and queueing commands while avoiding an extra expansion of their arguments before execution. To reduce [quoting problems](../special/quoting_hell.md), put code in an [alias](../command/alias.md) and pass its name to these commands. Expansion already performed by the calling alias or hook still applies; these helpers do not undo it. Explicit `eval` inside the command deliberately adds expansion.
 
 The script uses `encode`, `decode`, and `servernum` from [builtins](builtins.md), normally loaded by the default startup script. Load `builtins` first if your configuration does not provide them. The queues and execution-history variables are in memory, not saved across restarts.
 

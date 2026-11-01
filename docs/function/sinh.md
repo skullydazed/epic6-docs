@@ -8,11 +8,11 @@
 
 Returns the hyperbolic sine of the number, mathematically `(exp(x) - exp(-x)) / 2`. It accepts real inputs of either sign and is not bounded between `-1` and `1`. [$asinh()](asinh.md) is the inverse hyperbolic sine.
 
-The first function word is converted with `atof()`, accepting decimal fractions and scientific notation. Additional words are ignored. Missing input returns empty. Nonnumeric input becomes zero, and numeric prefixes can be accepted before trailing nonnumeric text. See the [rules about number arguments](../rules_about_number_arguments.md).
+The first function word is converted with `atof()`, accepting decimal fractions and scientific notation. Additional words are ignored. Missing input returns empty. Nonnumeric input becomes zero, and numeric prefixes can be accepted before trailing nonnumeric text. See the [rules about number arguments](../special/rules_about_number_arguments.md).
 
 ## Returns
 
-The calculation uses the C library's `sinh()` and a C `double`. Results are formatted with `%.50g`, rather than limited to six decimal places. The [floating_point_math](../settings/floating_point_math.md) and [floating_point_precision](../settings/floating_point_precision.md) settings do not change this function's calculation or formatting. Extra printed digits do not imply 50 digits of accuracy.
+The calculation uses the C library's `sinh()` and a C `double`. Results are formatted with `%.50g`, rather than limited to six decimal places. The [floating_point_math](../set/floating_point_math.md) and [floating_point_precision](../set/floating_point_precision.md) settings do not change this function's calculation or formatting. Extra printed digits do not imply 50 digits of accuracy.
 
 The wrapper clears `errno` after argument conversion and returns `RANGE` for a library-reported range error, `DOM` for a reported domain error, or empty for another reported error. Large finite inputs can overflow. EPIC checks `errno`, not floating-point exception flags; if overflow is reported only through exception flags, it can return an infinity string instead of `RANGE`.
 

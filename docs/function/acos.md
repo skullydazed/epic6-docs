@@ -10,11 +10,11 @@ $acos(number)
 
 `acos()` calls the C library's `acos()` function to return the principal arc cosine of `number`. For a number between -1 and 1 inclusive, the result is an angle between zero and pi radians. It does not return degrees. [`cos()`](cos.md) performs the corresponding cosine operation.
 
-The normal [rules about number arguments](../rules_about_number_arguments.md) apply. The first argument word is converted with `atof()`, accepting decimal fractions and scientific notation; further words are ignored. Missing input returns the empty string. Nonnumeric input converts to zero, and trailing nonnumeric characters do not necessarily prevent a numeric prefix from being used.
+The normal [rules about number arguments](../special/rules_about_number_arguments.md) apply. The first argument word is converted with `atof()`, accepting decimal fractions and scientific notation; further words are ignored. Missing input returns the empty string. Nonnumeric input converts to zero, and trailing nonnumeric characters do not necessarily prevent a numeric prefix from being used.
 
 ## Returns and restrictions
 
-Results use a C `double` and are formatted with `%.50g`. The [`floating_point_math`](../settings/floating_point_math.md) and [`floating_point_precision`](../settings/floating_point_precision.md) settings do not change this function's calculation or formatting. The long result string can expose rounding digits; it does not imply 50 digits of accuracy.
+Results use a C `double` and are formatted with `%.50g`. The [`floating_point_math`](../set/floating_point_math.md) and [`floating_point_precision`](../set/floating_point_precision.md) settings do not change this function's calculation or formatting. The long result string can expose rounding digits; it does not imply 50 digits of accuracy.
 
 Arguments outside [-1, 1] cause a domain error in the library operation. EPIC returns `DOM` if the library reports that error through `errno`; a platform that reports it only as a floating-point exception can instead produce a NaN result string. The wrapper also returns `RANGE` for a reported range error, or the empty string for another reported error. It checks `errno`, not floating-point exception flags. Validate the argument's range rather than relying on one particular error string.
 

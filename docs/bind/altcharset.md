@@ -8,7 +8,7 @@
 
 ## Description
 
-This built-in keybinding inserts the alternate character set toggle character (Control-E, byte `0x05`) at the cursor in the input line. The character appears as a reverse capital E. Insertion respects [insert_mode](../sets/insert_mode.md): in overwrite mode it replaces the character at the cursor instead. The cursor advances past the inserted character.
+This built-in keybinding inserts the alternate character set toggle character (Control-E, byte `0x05`) at the cursor in the input line. The character appears as a reverse capital E. Insertion respects [insert_mode](../set/insert_mode.md): in overwrite mode it replaces the character at the cursor instead. The cursor advances past the inserted character.
 
 When EPIC displays text containing this character, it toggles the terminal's alternate character set attribute. Whether that changes the appearance of subsequent characters depends on the terminal emulator and its terminal capabilities. It does not convert text to Unicode or select a different text encoding; for ordinary Unicode/UTF-8 text, use the desired Unicode characters directly.
 

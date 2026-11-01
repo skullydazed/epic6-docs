@@ -12,7 +12,7 @@ The first function word is converted with `atof`, accepting fractions, scientifi
 
 ## Returns
 
-The tangent, formatted with `%.50g`, rather than limited to six decimal places. Extra printed digits do not imply 50 digits of accuracy. The [floating_point_math](../settings/floating_point_math.md) and [floating_point_precision](../settings/floating_point_precision.md) settings do not change this function's calculation or formatting.
+The tangent, formatted with `%.50g`, rather than limited to six decimal places. Extra printed digits do not imply 50 digits of accuracy. The [floating_point_math](../set/floating_point_math.md) and [floating_point_precision](../set/floating_point_precision.md) settings do not change this function's calculation or formatting.
 
 The wrapper clears `errno` after argument conversion, then returns `DOM` for a library-reported domain error, `RANGE` for a reported range error, or empty for another reported error. It checks `errno`, not floating-point exception flags. Infinite input ordinarily produces a domain error and NaN; EPIC returns `DOM` if reported through `errno`, otherwise it can return a NaN string. NaN input ordinarily returns NaN. See the [C library tangent interface](https://man7.org/linux/man-pages/man3/tan.3.html).
 

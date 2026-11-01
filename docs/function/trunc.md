@@ -16,7 +16,7 @@ Precision uses base-zero integer parsing, while the value uses `atof` on the nex
 
 ## Practical
 
-Use this function for decimal output such as displaying two fractional places. The [floating_point_math](../settings/floating_point_math.md) setting may affect expressions that calculate its input, but this function itself always converts to C `double` and does not consult that setting or [floating_point_precision](../settings/floating_point_precision.md).
+Use this function for decimal output such as displaying two fractional places. The [floating_point_math](../set/floating_point_math.md) setting may affect expressions that calculate its input, but this function itself always converts to C `double` and does not consult that setting or [floating_point_precision](../set/floating_point_precision.md).
 
 ## Returns and restrictions
 

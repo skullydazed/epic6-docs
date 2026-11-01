@@ -2,7 +2,7 @@
 
 ## Description
 
-A **block** is a sequence of [statements](statements.md) separated by semicolons. A **block statement** groups such a sequence inside curly braces:
+A **block** is a sequence of [statements](ircii_syntax.md#statement-forms) separated by semicolons. A **block statement** groups such a sequence inside curly braces:
 
 ```text
 {

@@ -9,7 +9,7 @@
 
 ## Description
 
-Add targets to the selected window's target list and make them current queries. With no window selector, use the current window. The comma-separated targets are processed left to right, normally making the final target the current query. Previous targets remain in the list, so output associated with them can continue going to this window. See [window add](add.md) for target-list routing and [window target](target.md) for the window's effective target.
+Add targets to the selected window's target list and make them current queries. With no window selector, use the current window. The comma-separated targets are processed left to right, normally making the final target the current query. Previous targets remain in the list, so output associated with them can continue going to this window. See [window add](add.md) for target-list routing and [window target](targets.md) for the window's effective target.
 
 The current query takes precedence over the current channel as the window's default conversation target. Setting a query does not send a message, verify that a nickname is online, or join a channel. The eventual sending command and server determine whether a target accepts messages. A query can be set on an invisible window without showing or selecting it.
 

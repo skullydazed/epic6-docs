@@ -12,7 +12,7 @@ $usermode([<server refnum>])
 
 With no arguments, the function uses the current execution server, normally the current window's server. With an argument, it uses the first word as an integer server reference number; additional words are ignored. `-1` selects the current execution server when one exists. Other negative references and nonexistent server references return an empty string.
 
-Server names and descriptions are not resolved. The argument is parsed as a base-zero integer, so a nonnumeric name becomes `0` and can accidentally select server zero. Use [winserv](winserv.md) to obtain the server reference for a window.
+Server names and descriptions are not resolved. The argument is parsed as a base-zero integer, so a nonnumeric name becomes `0` and can accidentally select server zero. Use [winserv](../scripts/builtins.md#other-compatibility-functions) to obtain the server reference for a window.
 
 The result contains the cached mode letters without a leading `+`, sorted by character value and without duplicates. It concerns your own user modes, rather than channel modes or another nickname's modes. No IRC request is sent, and no connection-state check is made; the result is the stored value for the selected server entry. Mode meanings depend on the IRC server.
 

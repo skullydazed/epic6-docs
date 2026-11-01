@@ -10,7 +10,7 @@
 
 Delete the character immediately before the cursor in the input line, moving the cursor left and closing the gap. If the input cursor is at the start of the input line, nothing happens. The input prompt cannot be erased this way.
 
-This built-in action combines [backward_character](bind_backward_character.md) and [delete_character](bind_delete_character.md), with a check for the start of the line before either action runs. Deletion uses the input editor's logical character boundaries rather than deleting a single byte, so an ordinary multibyte UTF-8 character is removed as a unit.
+This built-in action combines [backward_character](backward_character.md) and [delete_character](delete_character.md), with a check for the start of the line before either action runs. Deletion uses the input editor's logical character boundaries rather than deleting a single byte, so an ordinary multibyte UTF-8 character is removed as a unit.
 
 The action takes no arguments or options; extra text supplied with the binding is ignored. It behaves the same in insert and overwrite modes. Deleted text is not saved in the cut buffer, and the action does not send the line or issue an IRC request.
 

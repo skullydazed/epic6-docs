@@ -6,7 +6,7 @@
 
 ## Technical
 
-Sets an ordinary file stream's position to `position` bytes away from `anchor`. After a successful seek, [$read()](read.md) or [$readb()](readb.md) starts reading at the new position. Use an EPIC file handle returned by [$open()](open.md), rather than an operating system file descriptor.
+Sets an ordinary file stream's position to `position` bytes away from `anchor`. After a successful seek, [$read()](read.md), including [binary reads with a byte count](read.md), starts reading at the new position. Use an EPIC file handle returned by [$open()](open.md), rather than an operating system file descriptor.
 
 Position can be positive or negative, provided the resulting position is valid. All three arguments are required; additional words are ignored. The handle and position are converted with `strtoimax()` using base detection, accepting decimal, hexadecimal, and leading-zero octal notation. Nonnumeric input converts to zero, and a numeric prefix can be accepted despite trailing nonnumeric text.
 

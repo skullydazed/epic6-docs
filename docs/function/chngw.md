@@ -20,7 +20,7 @@ Replacement parsing and list extraction honor [`xdebug dword`](../command/xdebug
 
 Use this function to change an entry in a word list, such as an access level or a named list element, then assign the returned list back to the desired variable.
 
-The result is assembled from the slices before and after the selected word, with separators around the replacement. Internal spacing within those slices can be retained, while surrounding whitespace can be trimmed or changed. Do not rely on exact leading or trailing whitespace. See [`insertw()`](insertw.md) to insert without replacing and [`delw()`](delw.md) to remove an indexed word.
+The result is assembled from the slices before and after the selected word, with separators around the replacement. Internal spacing within those slices can be retained, while surrounding whitespace can be trimmed or changed. Do not rely on exact leading or trailing whitespace. See [`insertw()`](insertw.md) to insert without replacing and [`notw()`](notw.md) to remove an indexed word.
 
 ## Returns and examples
 

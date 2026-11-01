@@ -10,7 +10,7 @@ Returns a small numeric hash of the first `length` bytes in `word`, or the entir
 
 The algorithm folds each byte to lowercase with C's `tolower()`, then combines two shifting accumulators and masks the result. ASCII uppercase and lowercase spellings therefore hash identically. Length counts bytes, not Unicode characters. The final masks limit the returned value to `0` through `65535`, despite the function's name.
 
-Hashing is lossy: different words can produce the same result, and the original text cannot be recovered from the hash. For reversible encoding instead, see [$encode()](encode.md). The result is deterministic within the client, but the algorithm may change in future versions; do not save hashes expecting permanent compatibility.
+Hashing is lossy: different words can produce the same result, and the original text cannot be recovered from the hash. For reversible encoding instead, see [$encode()](../disambiguation/encode.md). The result is deterministic within the client, but the algorithm may change in future versions; do not save hashes expecting permanent compatibility.
 
 Normally extra arguments are ignored. An empty or missing word instead falls back to the remaining input after the length argument has been consumed. Thus `$hash_32bit()` and `$hash_32bit("" 20)` return `0`, while `$hash_32bit("" 20 hello)` hashes `hello`. Avoid the empty-word form when supplying extra text.
 

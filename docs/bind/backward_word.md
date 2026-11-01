@@ -10,7 +10,7 @@
 
 Move the cursor left to the beginning of the current or previous word in the input line. Within a word, the cursor moves to its first character. At the first character of a word, on a separator, or at the end of the input line, it moves backward through separators and the preceding word. At the start of the input line, it does not move.
 
-Words are separated by characters in [word_break](../set/set_word_break.md), which defaults to space and tab. If that setting is unset, the action also uses space and tab. Only ASCII characters below DEL are recognized as separators; adding a non-ASCII character to `word_break` does not make it a separator for this action.
+Words are separated by characters in [word_break](../set/word_break.md), which defaults to space and tab. If that setting is unset, the action also uses space and tab. Only ASCII characters below DEL are recognized as separators; adding a non-ASCII character to `word_break` does not make it a separator for this action.
 
 If movement reaches the start of the input line, the cursor stops there, even if the first character is a separator. For example, with two spaces followed by `hello`, invoking this action from the end of `hello` stops on the first space.
 
@@ -26,7 +26,7 @@ The default binding is `^[b`: Escape followed by lowercase `b`. A terminal that 
 
 With the default word separators and `one two` in the input line, invoking the action at the end of the line moves onto the `t` in `two`. Invoking it again moves onto the `o` in `one`.
 
-See [bind](../command/bind.md) for key sequence syntax and [forward_word](bind_forward_word.md) to move forward by a word.
+See [bind](../command/bind.md) for key sequence syntax and [forward_word](forward_word.md) to move forward by a word.
 
 ## Source references
 

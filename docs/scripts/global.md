@@ -23,11 +23,11 @@ The current file loads these in order:
 | [builtins](builtins.md) | Compatibility commands, function wrappers, script-defined settings, and its own supporting scripts. |
 | [history](history.md) | Script-based command history and related bindings. |
 | [hold_mode](hold_mode.md) | Compatibility settings that apply hold behavior and intervals to windows. |
-| [help](help.md) | The bundled help alias definitions. The current `help.irc` implementation still depends on obsolete DCC raw hooks; loading it is not a guarantee of working help retrieval in EPIC6. |
+| [help](../disambiguation/scripts_help.md) | The bundled help alias definitions. The current `help.irc` implementation still depends on obsolete DCC raw hooks; loading it is not a guarantee of working help retrieval in EPIC6. |
 | [2.8script](2.8script.md) | Traditional IRC-client convenience aliases and display hooks. |
-| [ambig](ambig.md) | Unknown-command handling that resolves a unique command-name prefix or reports ambiguity. |
+| `ambig` | Unknown-command handling that resolves a unique command-name prefix or reports ambiguity. |
 | [newnick](newnick.md) | Nickname-conflict handling and its settings. |
-| [python](python.md) | Python setup, helper aliases, and module-path configuration when the embedded Python interface is available. |
+| [python](../special/using_python.md#getting-started) | Python setup, helper aliases, and module-path configuration when the embedded Python interface is available. |
 
 The commented-out `find_ssl_root_certs` load is not executed. `global` itself defines no `d+` or `d-` display aliases; its direct job is to load the listed scripts and the optional local configuration.
 

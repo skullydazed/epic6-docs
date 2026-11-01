@@ -11,7 +11,7 @@
 
 ## Overview
 
-EPIC uses UTF-8 internally and normally sends IRC messages in UTF-8. Valid incoming UTF-8 is accepted without applying a legacy-encoding conversion. If you receive non-UTF-8 text, or need to send another encoding, use `encoding` rules to tell EPIC how to convert it. See [encodings and locales](../encodings_and_locales.md) for console configuration.
+EPIC uses UTF-8 internally and normally sends IRC messages in UTF-8. Valid incoming UTF-8 is accepted without applying a legacy-encoding conversion. If you receive non-UTF-8 text, or need to send another encoding, use `encoding` rules to tell EPIC how to convert it. See [encodings and locales](../special/encodings_and_locales.md) for console configuration.
 
 Rules are local client settings, not requests to negotiate an encoding with the server or recipient. The command is available in every build and needs no server connection to list or change rules. Available encodings depend on the platform's iconv conversion support.
 

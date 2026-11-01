@@ -14,7 +14,7 @@ For ordinary streams, the indicator is set when a read attempts to encounter end
 
 ## Practical
 
-Use this function after reading an ordinary file to determine whether the end has been encountered. An empty `$read()` result can also represent a blank line or a read error; [`$error()`](error.md) checks an ordinary stream's error indicator separately. EOF is not a test for whether data is ready to read, so a zero result on a pipe does not mean the next read will finish immediately.
+Use this function after reading an ordinary file to determine whether the end has been encountered. An empty `$read()` result can also represent a blank line or a read error; [`$ferror()`](ferror.md) checks an ordinary stream's error indicator separately. EOF is not a test for whether data is ready to read, so a zero result on a pipe does not mean the next read will finish immediately.
 
 ## Returns
 
@@ -27,7 +27,7 @@ Use this function after reading an ordinary file to determine whether the end ha
 
 ## Restrictions
 
-For a libarchive-backed file, the function returns EPIC's stored archive EOF flag. The current archive paths used by `$read()` and `$readb()` do not update this flag when they exhaust the entry, so `$eof()` can remain `0` after those reads reach the end. Do not rely on it to terminate an archive-reading loop. Archive support is conditional on libarchive; the function itself is always registered.
+For a libarchive-backed file, the function returns EPIC's stored archive EOF flag. The current archive paths used by `$read()` in line and binary modes do not update this flag when they exhaust the entry, so `$eof()` can remain `0` after those reads reach the end. Do not rely on it to terminate an archive-reading loop. Archive support is conditional on libarchive; the function itself is always registered.
 
 ## Examples
 

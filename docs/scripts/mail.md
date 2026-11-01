@@ -15,7 +15,7 @@
 
 The bundled `mail` wrapper imports the Python `mail` module, which checks local mailbox sources and displays counts in the status bar. This replaces the older mbox-list script. It no longer defines `mbox add`, `mbox del`, `mbox list`, or `mail_watch_time`, and it does not use a separate built-in mail checker or the retired `on mail` event.
 
-It requires a build with embedded Python support, the bundled `epic` Python module, and the `addset` alias normally supplied by [builtins](builtins.md). [python](python.md) defines `pyload` and adds the script directory to Python's import path; initialize that support before loading `mail`. In the default `global` order, `builtins` attempts its mail load before `python` defines `pyload`, so that earlier attempt does not guarantee successful initialization.
+It requires a build with embedded Python support, the bundled `epic` Python module, and the `addset` alias normally supplied by [builtins](builtins.md). [python](../special/using_python.md#getting-started) defines `pyload` and adds the script directory to Python's import path; initialize that support before loading `mail`. In the default `global` order, `builtins` attempts its mail load before `python` defines `pyload`, so that earlier attempt does not guarantee successful initialization.
 
 The first successful module import defines `check_mail` and the `set_mail` callback, creates the settings below, and enables checking. A subsequent `/load mail` uses ordinary Python import caching; it does not necessarily rerun module initialization. The checker sends no IRC request and does not connect to IMAP or POP services.
 

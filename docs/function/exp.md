@@ -8,11 +8,11 @@
 
 Returns the value of *e* raised to `number`, where *e* is the base of natural logarithms. Every finite real number is in its mathematical domain. The inverse operation for positive values is [$log()](log.md).
 
-The normal [rules about number arguments](../rules_about_number_arguments.md) apply. The first argument word is converted with `atof()`, accepting decimal fractions and scientific notation; additional words are ignored. Missing input returns the empty string. Nonnumeric input converts to zero, and a numeric prefix can be accepted even when followed by nonnumeric text.
+The normal [rules about number arguments](../special/rules_about_number_arguments.md) apply. The first argument word is converted with `atof()`, accepting decimal fractions and scientific notation; additional words are ignored. Missing input returns the empty string. Nonnumeric input converts to zero, and a numeric prefix can be accepted even when followed by nonnumeric text.
 
 ## Returns and restrictions
 
-The calculation uses the C library's `exp()` and a C `double`. Successful results are formatted with `%.50g`, rather than being limited to six decimal places. The [`floating_point_math`](../settings/floating_point_math.md) and [`floating_point_precision`](../settings/floating_point_precision.md) settings do not change this calculation or formatting. Extra displayed digits do not imply 50 digits of accuracy.
+The calculation uses the C library's `exp()` and a C `double`. Successful results are formatted with `%.50g`, rather than being limited to six decimal places. The [`floating_point_math`](../set/floating_point_math.md) and [`floating_point_precision`](../set/floating_point_precision.md) settings do not change this calculation or formatting. Extra displayed digits do not imply 50 digits of accuracy.
 
 Large positive finite inputs can overflow; sufficiently negative finite inputs can underflow to a very small value or zero. If the library reports a range error through `errno`, EPIC returns `RANGE`. If it does not, EPIC formats the library's returned value instead. Positive infinity ordinarily produces positive infinity, negative infinity produces zero, and NaN produces NaN.
 
