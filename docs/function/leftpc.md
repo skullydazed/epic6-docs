@@ -16,7 +16,7 @@ Everything after the count is text, including spaces and literal quotation marks
 
 Returns the first prepared line in logical IRC formatting. This is a display-pipeline operation, not a guaranteed exact-width Unicode substring. Use [left](left.md) for code-point extraction.
 
-The preparer prepends [first_line](../settings/first_line.md), so that setting can add text to the result. [indent](../settings/indent.md) and [continued_line](../settings/continued_line.md) participate in its inherited line-break logic and can affect the boundary. It adds no padding to fill the requested width.
+The preparer prepends [first_line](../set/first_line.md), so that setting can add text to the result. [indent](../set/indent.md) and [continued_line](../set/continued_line.md) participate in its inherited line-break logic and can affect the boundary. It adds no padding to fill the requested width.
 
 The current line-break code uses a byte boundary when truncating, so multibyte characters at the boundary can be cut incorrectly. Its near-end shortcut and continuation-marker adjustments can also retain more than the requested width. Do not rely on a strict width limit or intact UTF-8 at every boundary. Returned formatting can include attribute changes or resets beyond the printable text.
 

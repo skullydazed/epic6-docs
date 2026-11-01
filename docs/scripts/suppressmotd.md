@@ -11,7 +11,7 @@
 
 This script implements the historical `suppress_server_motd` setting. The default is `off`, explicitly reapplied when the script loads. When enabled before the server's first MOTD sequence, it attempts to hide that sequence while leaving a later [motd](../command/motd.md) request visible.
 
-It affects local display only. It does not prevent the server from sending its message, alter registration, or request an MOTD itself. It is separate from the local installation's [motd script](motd_script.md).
+It affects local display only. It does not prevent the server from sending its message, alter registration, or request an MOTD itself. It is separate from the local installation's [motd script](motd.md).
 
 With suppression off, the script prints the intercepted MOTD numeric arguments with the normal message prefix. This is replacement output from the script rather than a promise that the client's untouched numeric formatting is retained.
 

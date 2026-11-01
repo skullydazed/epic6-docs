@@ -12,7 +12,7 @@ All three arguments use `atof` conversion to C `double`, so fractional steps and
 
 If start is less than stop, the interval is added repeatedly while the current value is less than or equal to stop. Otherwise it is subtracted while the value is greater than or equal to stop. Equal endpoints produce one value with an ordinary nonzero finite interval. The endpoint is included only if the sequence reaches it without passing it.
 
-Values are first formatted with `%f` (six fractional decimal places). With [floating_point_math](../settings/floating_point_math.md) enabled, trailing fractional zeros and the decimal point are removed. With that setting disabled, the decimal point and everything after it are discarded, even though sequence generation still uses doubles. [floating_point_precision](../settings/floating_point_precision.md) does not control this formatting. Floating-point rounding can omit an expected endpoint or make distinct small steps print as identical values.
+Values are first formatted with `%f` (six fractional decimal places). With [floating_point_math](../set/floating_point_math.md) enabled, trailing fractional zeros and the decimal point are removed. With that setting disabled, the decimal point and everything after it are discarded, even though sequence generation still uses doubles. [floating_point_precision](../set/floating_point_precision.md) does not control this formatting. Floating-point rounding can omit an expected endpoint or make distinct small steps print as identical values.
 
 ## Practical
 

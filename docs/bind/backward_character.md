@@ -22,7 +22,7 @@ The default bindings are `^[OD` and `^[[D`, the common escape sequences sent by 
 
 Press Control-X followed by Control-B to move left once. With `hello` in the input line and the cursor at its end, the cursor moves onto the `o`; the text stays `hello`.
 
-See [bind](../command/bind.md) for key sequence syntax, [forward_character](bind_forward_character.md) to move right, and [backspace](bind_backspace.md) to delete the preceding character.
+See [bind](../command/bind.md) for key sequence syntax, [forward_character](forward_character.md) to move right, and [backspace](backspace.md) to delete the preceding character.
 
 ## Source references
 

@@ -45,7 +45,7 @@ Read forward using the prompt, or press `q` to stop displaying pages, accounting
 
 ## History
 
-Written for EPIC3 by hop in 1996, inspired by archon's [more](more.md) script. Later revisions added argument lists, wrapped-line counting, and temporary formatting changes.
+Written for EPIC3 by hop in 1996, inspired by archon's `more` script. Later revisions added argument lists, wrapped-line counting, and temporary formatting changes.
 
 ## Source references
 

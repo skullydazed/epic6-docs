@@ -10,9 +10,9 @@ Compiles and generates a temporary single status bar for the specified window, u
 
 The first argument is a normal function word identifying a window by name or numeric refnum; `0` selects the current input window. Quoted grouping for the description follows [/xdebug dword](../command/xdebug.md). The complete remaining text is the format, including spaces and literal quotation marks. Omitting it supplies an empty format, not the window's existing format.
 
-Formats use the normal percent-based status expandos and their associated settings. Generation uses the window's screen width, or the main screen's width for a hidden window. Text undergoes normal status normalization, truncation, padding, and right justification. [status_no_repeat](../settings/status_no_repeat.md) controls fill behavior. The returned string converts internal display attributes to IRC formatting controls and is not necessarily plain text.
+Formats use the normal percent-based status expandos and their associated settings. Generation uses the window's screen width, or the main screen's width for a hidden window. Text undergoes normal status normalization, truncation, padding, and right justification. [status_no_repeat](../set/status_no_repeat.md) controls fill behavior. The returned string converts internal display attributes to IRC formatting controls and is not necessarily plain text.
 
-If [status_does_expandos](../settings/status_does_expandos.md) is enabled, generation also expands EPIC variables and function calls in the generated text. This pass temporarily selects the target window and its server context, suppresses ordinary window display, then restores that context. Called functions can still have their own effects. Normal argument expansion can also occur before the built-in receives its format.
+If [status_does_expandos](../set/status_does_expandos.md) is enabled, generation also expands EPIC variables and function calls in the generated text. This pass temporarily selects the target window and its server context, suppresses ordinary window display, then restores that context. Called functions can still have their own effects. Normal argument expansion can also occur before the built-in receives its format.
 
 ## Practical
 

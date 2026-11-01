@@ -61,7 +61,7 @@ To expand the nickname expando:
 
 ## See also
 
-[`echo`](echo.md), [`do`](do.md), [`alias`](alias.md), and [script syntax](../ircii_syntax.md).
+[`echo`](echo.md), [`do`](do.md), [`alias`](alias.md), and [script syntax](../special/ircii_syntax.md).
 
 ## Source
 

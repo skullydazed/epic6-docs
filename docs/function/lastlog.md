@@ -16,7 +16,7 @@ Only lastlog entries marked visible in the selected window are searched. Here vi
 
 ## Practical
 
-Use the returned positions with [line](line.md) to obtain matching text, supplying the same window. They remain meaningful only while that window's lastlog contents and visibility have not changed. They are not persistent entry reference numbers; see [lastlogctl](lastlogctl.md) for reference-based access.
+Use the returned positions with [line](line.md) to obtain matching text, supplying the same window. They remain meaningful only while that window's lastlog contents and visibility have not changed. They are not persistent entry reference numbers; see `lastlogctl` for reference-based access.
 
 ## Returns
 

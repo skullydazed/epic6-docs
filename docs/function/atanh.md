@@ -10,11 +10,11 @@ $atanh(number)
 
 `atanh()` calls the C library's `atanh()` function to return the inverse hyperbolic tangent of `number`. A finite result requires a number strictly between -1 and 1. [`tanh()`](tanh.md) performs the corresponding hyperbolic tangent operation.
 
-The normal [rules about number arguments](../rules_about_number_arguments.md) apply. The first argument word is converted with `atof()`, accepting decimal fractions and scientific notation; additional words are ignored. Missing input returns the empty string. Nonnumeric input converts to zero, and a numeric prefix can be accepted even when followed by nonnumeric text.
+The normal [rules about number arguments](../special/rules_about_number_arguments.md) apply. The first argument word is converted with `atof()`, accepting decimal fractions and scientific notation; additional words are ignored. Missing input returns the empty string. Nonnumeric input converts to zero, and a numeric prefix can be accepted even when followed by nonnumeric text.
 
 ## Returns
 
-The calculation uses a C `double`, and the result string is formatted with `%.50g`, rather than being limited to six decimal places. The [`floating_point_math`](../settings/floating_point_math.md) and [`floating_point_precision`](../settings/floating_point_precision.md) settings do not change this calculation or formatting. Additional displayed rounding digits do not imply 50 digits of accuracy.
+The calculation uses a C `double`, and the result string is formatted with `%.50g`, rather than being limited to six decimal places. The [`floating_point_math`](../set/floating_point_math.md) and [`floating_point_precision`](../set/floating_point_precision.md) settings do not change this calculation or formatting. Additional displayed rounding digits do not imply 50 digits of accuracy.
 
 The library reports a domain error for values below -1 or above 1, including infinities. Exactly -1 or 1 causes a pole error instead. EPIC returns `DOM` for a reported `EDOM` error and `RANGE` for a reported `ERANGE` error, including a pole error. A platform that reports errors only through floating-point exception flags can instead produce a NaN string for an out-of-domain input or a signed infinity string at a pole. Validate the range rather than relying on one particular error string.
 

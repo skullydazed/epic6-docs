@@ -15,7 +15,7 @@ Arrays use zero-based numeric components such as `foo.0` and `foo.1`. No array-l
 | JSON value | Variable handling |
 | --- | --- |
 | String | Decoded string, truncated at an embedded Unicode NUL. |
-| Number | Converted to a C double and formatted according to [floating_point_math](../settings/floating_point_math.md) and [floating_point_precision](../settings/floating_point_precision.md). With floating-point math disabled, the fractional part is discarded. |
+| Number | Converted to a C double and formatted according to [floating_point_math](../set/floating_point_math.md) and [floating_point_precision](../set/floating_point_precision.md). With floating-point math disabled, the fractional part is discarded. |
 | `false` | Assigned `0`. |
 | `null` | Assigned an empty value; a global assign is removed. |
 | `true` | Currently unhandled: prints `Odd cJSON type in $json_explode` and leaves that target unchanged. |

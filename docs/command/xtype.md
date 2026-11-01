@@ -11,7 +11,7 @@
 
 Without an option, `xtype` behaves like [`type`](type.md): it simulates keystrokes, interprets caret notation and backslash quoting, and allows key bindings to perform actions. With no text, it does nothing.
 
-With `-literal`, each character of the text is inserted directly into the input line, ignoring key bindings, as though it were handled by the `self_insert` action. Insertion starts at the current cursor and advances it, respecting [`insert_mode`](../settings/insert_mode.md): characters are inserted before existing text when that setting is on and replace existing characters when it is off. At the end of the line, they are appended.
+With `-literal`, each character of the text is inserted directly into the input line, ignoring key bindings, as though it were handled by the `self_insert` action. Insertion starts at the current cursor and advances it, respecting [`insert_mode`](../set/insert_mode.md): characters are inserted before existing text when that setting is on and replace existing characters when it is off. At the end of the line, they are appended.
 
 Unlike `type`, literal mode inserts a caret followed by another character as two characters; `^A` does not become Control-A. It also preserves backslashes instead of using them to quote the following character. Actual control characters bypass their key bindings too, so inserting a newline does not invoke the usual submit-line binding.
 

@@ -10,7 +10,7 @@
 
 Insert the boldface toggle character (Control-B, byte `0x02`) into the input line at the cursor. It appears as a reverse capital B in the input line, regardless of which key invokes the action. When EPIC displays text containing this character, it toggles boldface for subsequent text.
 
-This built-in action respects [insert_mode](../set/set_insert_mode.md): it inserts the character in insert mode or replaces the character under the cursor in overwrite mode, then advances the cursor. It takes no arguments or options; extra text supplied with the binding is ignored. It edits the input line without sending it or issuing an IRC request.
+This built-in action respects [insert_mode](../set/insert_mode.md): it inserts the character in insert mode or replaces the character under the cursor in overwrite mode, then advances the cursor. It takes no arguments or options; extra text supplied with the binding is ignored. It edits the input line without sending it or issuing an IRC request.
 
 The default binding is Control-B (`^B`). Scripts can change it.
 
@@ -18,7 +18,7 @@ The default binding is Control-B (`^B`). Scripts can change it.
 
 The visible result depends on your terminal emulator and its terminal capabilities. With an ANSI foreground color from 0 through 7, EPIC also selects the corresponding bright foreground while boldface is active.
 
-[mangle_display](../set/set_mangle_display.md) can strip bold attributes from displayed text when its `bold` option is enabled. There is no `bold_video` setting in EPIC6.
+[mangle_display](../set/mangle_display.md) can strip bold attributes from displayed text when its `bold` option is enabled. There is no `bold_video` setting in EPIC6.
 
 ## Example
 

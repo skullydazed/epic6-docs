@@ -10,11 +10,11 @@ $asin(number)
 
 `asin()` calls the C library's `asin()` function to return the principal arc sine of `number`. For a number between -1 and 1 inclusive, the result is between -pi/2 and pi/2 radians. It does not return degrees. [`sin()`](sin.md) performs the corresponding sine operation.
 
-The normal [rules about number arguments](../rules_about_number_arguments.md) apply. The first argument word is converted with `atof()`, accepting decimal fractions and scientific notation; additional words are ignored. Missing input returns the empty string. Nonnumeric input converts to zero, and a numeric prefix can be accepted even when followed by nonnumeric text.
+The normal [rules about number arguments](../special/rules_about_number_arguments.md) apply. The first argument word is converted with `atof()`, accepting decimal fractions and scientific notation; additional words are ignored. Missing input returns the empty string. Nonnumeric input converts to zero, and a numeric prefix can be accepted even when followed by nonnumeric text.
 
 ## Returns and restrictions
 
-The calculation uses a C `double`, and results are formatted with `%.50g`. The [`floating_point_math`](../settings/floating_point_math.md) and [`floating_point_precision`](../settings/floating_point_precision.md) settings do not change this function's calculation or formatting. Additional displayed rounding digits do not imply 50 digits of accuracy.
+The calculation uses a C `double`, and results are formatted with `%.50g`. The [`floating_point_math`](../set/floating_point_math.md) and [`floating_point_precision`](../set/floating_point_precision.md) settings do not change this function's calculation or formatting. Additional displayed rounding digits do not imply 50 digits of accuracy.
 
 Arguments outside [-1, 1] cause a library domain error. EPIC returns `DOM` when the library reports that error through `errno`; if the platform reports it only through a floating-point exception, the result can instead be a NaN string. Very small subnormal inputs can cause a platform-dependent range error. The wrapper returns `RANGE` for a reported range error and the empty string for another reported error. It checks `errno`, not floating-point exception flags. Validate the input range rather than relying on one particular error string.
 

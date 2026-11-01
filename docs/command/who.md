@@ -47,7 +47,7 @@ Extended modes are server-specific and are not automatically selected from netwo
 
 ## Reply processing
 
-For ordinary numeric 352 replies, accepted data is offered to the WHO hook and then the 352 hook before default display. The display shows channel, nickname, status, `user@host`, and hop-count/realname text. [`channel_name_width`](../settings/channel_name_width.md) controls the displayed channel width. Normal data is supplied to `-line` as:
+For ordinary numeric 352 replies, accepted data is offered to the WHO hook and then the 352 hook before default display. The display shows channel, nickname, status, `user@host`, and hop-count/realname text. [`channel_name_width`](../set/channel_name_width.md) controls the displayed channel width. Normal data is supplied to `-line` as:
 
 ```text
 $0 channel

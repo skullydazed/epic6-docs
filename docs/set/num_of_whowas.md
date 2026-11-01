@@ -10,7 +10,7 @@ Provided by the bundled `builtins` script. Default: `1` when that script initial
 
 ## Description
 
-Controls the default number of historical nickname records requested by the script-provided [whowas](../command/whowas.md) alias. It also applies when [auto_whowas](auto_whowas.md) invokes that alias after a no-such-nickname reply.
+Controls the default number of historical nickname records requested by the script-provided [whowas](../command/whowas.md) alias. It also applies when [auto_whowas](../scripts/builtins.md#settings-and-hooks) invokes that alias after a no-such-nickname reply.
 
 The alias adds this value as the count argument when no explicit arguments follow the nickname. It does not count or suppress replies locally. The IRC server determines how many records are available and how it interprets the requested count. Zero conventionally requests all available records, but server limits and policy still apply.
 

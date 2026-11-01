@@ -10,7 +10,7 @@ Returns the base-ten logarithm of `<number>`: the value `x` such that `10` raise
 
 The first function argument is converted with `atof`, accepting decimal fractions and scientific notation. Additional arguments are ignored. Missing input returns the empty string. Nonnumeric text converts to zero, and numeric prefixes may be accepted despite trailing text.
 
-The calculation uses the C library's `log10` and a C `double`. Results are formatted with `%.50g`, not limited to six decimal places. The [floating_point_math](../settings/floating_point_math.md) and [floating_point_precision](../settings/floating_point_precision.md) settings do not affect the calculation or formatting. Extra displayed digits do not imply 50 digits of accuracy.
+The calculation uses the C library's `log10` and a C `double`. Results are formatted with `%.50g`, not limited to six decimal places. The [floating_point_math](../set/floating_point_math.md) and [floating_point_precision](../set/floating_point_precision.md) settings do not affect the calculation or formatting. Extra displayed digits do not imply 50 digits of accuracy.
 
 ## Returns and restrictions
 

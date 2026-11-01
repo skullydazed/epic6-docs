@@ -22,7 +22,7 @@ The default binding is Control-A (`^A`). Scripts can change it.
 
 With `hello` in the input line, pressing Control-A places the cursor before the `h`, ready to insert or overwrite text according to the current input mode.
 
-See [bind](../command/bind.md) for key sequence syntax and [end_of_line](bind_end_of_line.md) to move to the end of the input line.
+See [bind](../command/bind.md) for key sequence syntax and [end_of_line](end_of_line.md) to move to the end of the input line.
 
 ## Source references
 

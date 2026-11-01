@@ -47,7 +47,7 @@ To create local variables explicitly, see [`local`](local.md). Listing with `ass
 @ foo = []
 ```
 
-`/assign foo` lists variables rather than setting `foo` to an empty string. Quoting an empty value as `""` passes quotation characters to this handler; it is not an empty-value syntax. See [expressions](../expressions.md).
+`/assign foo` lists variables rather than setting `foo` to an empty string. Quoting an empty value as `""` passes quotation characters to this handler; it is not an empty-value syntax. See [expressions](../special/expressions.md).
 
 ## Examples
 
@@ -74,7 +74,7 @@ At the interactive input prompt, prefix command forms with `/`.
 
 ## See also
 
-[Expressions](../expressions.md), [special variables](../special_vars.md), [`alias`](alias.md), [`eval`](eval.md), and [`local`](local.md).
+[Expressions](../special/expressions.md), [special variables](../special/special_vars.md), [`alias`](alias.md), [`eval`](eval.md), and [`local`](local.md).
 
 ## History
 

@@ -30,7 +30,7 @@ Inspects and configures the independent logfiles managed by the [log command](..
 | `get` | Return the selected property. |
 | `set` | Invoke the property setter and normally return `1`; this is not confirmation that the change succeeded. |
 | `match` / `pmatch` | Unimplemented; always return empty. |
-| `current` | Reference of the logfile currently being written: `-1` outside a write, `0` for global/window logging, positive for an independent logfile. Useful inside [log_rewrite](../settings/log_rewrite.md). |
+| `current` | Reference of the logfile currently being written: `-1` outside a write, `0` for global/window logging, positive for an independent logfile. Useful inside [log_rewrite](../set/log_rewrite.md). |
 
 Missing required operation/descriptor/property arguments, unknown descriptors or properties, and unsupported operations return empty. Operation/property matching is case-insensitive but uses fixed comparison lengths, not uniform abbreviation rules; use complete names.
 

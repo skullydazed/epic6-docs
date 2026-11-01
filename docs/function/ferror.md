@@ -8,7 +8,7 @@
 
 Returns the error indicator for an ordinary file stream identified by an EPIC file handle from [$open()](open.md) or [$exec()](exec.md). This is a stream status, rather than an operating system error number or message. Use EPIC's handle, not an operating system file descriptor.
 
-[$read()](read.md) and [$readb()](readb.md) clear the ordinary stream's error and end-of-file indicators before reading. Check `$ferror()` immediately after the operation you want to inspect, before another read clears its status. Other operations, including writes, can also set the stream's error indicator. Calling `$ferror()` does not clear it.
+[$read()](read.md), including [binary reads with a byte count](read.md), clears the ordinary stream's error and end-of-file indicators before reading. Check `$ferror()` immediately after the operation you want to inspect, before another read clears its status. Other operations, including writes, can also set the stream's error indicator. Calling `$ferror()` does not clear it.
 
 An empty `$read()` result can represent a blank line, end of file, or an error. `$ferror()` checks for a stream error; [$eof()](eof.md) checks for end of file. Neither function reports whether a pipe read will block.
 

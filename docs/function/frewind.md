@@ -6,7 +6,7 @@
 
 ## Technical
 
-Attempts to reset an ordinary file stream's position to the beginning, using an EPIC file handle returned by [$open()](open.md). After a successful reset, [$read()](read.md) reads the first line again and [$readb()](readb.md) reads bytes starting at the beginning.
+Attempts to reset an ordinary file stream's position to the beginning, using an EPIC file handle returned by [$open()](open.md). After a successful reset, [$read()](read.md) reads the first line again and [$read() with a byte count](read.md) reads bytes starting at the beginning.
 
 The first argument word is converted to an integer; additional words are ignored. Missing input returns the empty string. This takes an EPIC file handle, not an operating system file descriptor.
 

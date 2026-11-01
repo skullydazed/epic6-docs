@@ -23,7 +23,7 @@ The prefix comparison is case-sensitive. The prefix itself is omitted from this 
 
 ## Default behavior and suppression
 
-There is no direct built-in display for `operwall`. If it permits default handling, EPIC continues to [on wallops](wallops.md), passing the original message with its operwall prefix. If that event also permits default handling, ordinary wallops formatting displays the message.
+There is no direct built-in display for `operwall`. If it permits default handling, EPIC continues to [on wallop](wallop.md), passing the original message with its operwall prefix. If that event also permits default handling, ordinary wallops formatting displays the message.
 
 A suppressing hook, such as a serial-zero `^operwall` hook, prevents the later wallops event and its built-in line. Merely registering a nonsuppressing handler does not stop that chain, so both events can run for the same message.
 

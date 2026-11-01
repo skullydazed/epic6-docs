@@ -10,11 +10,11 @@ $floor(number)
 
 `floor()` calculates the largest integral value less than or equal to `number`, using the C library's `floor()` operation. It rounds toward negative infinity: `3.2` becomes `3`, while `-3.2` becomes `-4`. An already integral value remains unchanged. See [`ceil()`](ceil.md) for rounding toward positive infinity.
 
-The normal [rules about number arguments](../rules_about_number_arguments.md) apply. The first argument word is converted with `atof()`, accepting decimal fractions and scientific notation; additional words are ignored. Nonnumeric input converts to zero, and a numeric prefix can be accepted even when followed by nonnumeric text. Missing input returns the empty string.
+The normal [rules about number arguments](../special/rules_about_number_arguments.md) apply. The first argument word is converted with `atof()`, accepting decimal fractions and scientific notation; additional words are ignored. Nonnumeric input converts to zero, and a numeric prefix can be accepted even when followed by nonnumeric text. Missing input returns the empty string.
 
 ## Returns
 
-The result is integral in value but is calculated as a C `double` and returned as a string using `%.50g`, not converted to an integer type. Ordinary whole-number results have no decimal point; very large values may use scientific notation. The [`floating_point_math`](../settings/floating_point_math.md) and [`floating_point_precision`](../settings/floating_point_precision.md) settings do not affect this function.
+The result is integral in value but is calculated as a C `double` and returned as a string using `%.50g`, not converted to an integer type. Ordinary whole-number results have no decimal point; very large values may use scientific notation. The [`floating_point_math`](../set/floating_point_math.md) and [`floating_point_precision`](../set/floating_point_precision.md) settings do not affect this function.
 
 The result retains floating-point precision limits, and may exceed the range of EPIC's integer arithmetic. Rounding happens after conversion to `double`, so digits already lost during conversion cannot be recovered. The library preserves infinities and returns NaN for NaN input.
 
