@@ -1,5 +1,9 @@
 # EPIC6-0.0.1
 
+## News 10/31/2026 [3107] -- Fix channel syncing after a ZNC reconnect
+
+When a network behind ZNC reconnects while EPIC6 remains connected to ZNC, the client could keep stale channel state. Channels might then appear in the wrong window or fail to trigger expected hooks and styling. EPIC6 now replaces the old channel state when it receives a new `JOIN`, allowing channel syncing to recover.
+
 ## News 08/30/2026 -- Wow, I haven't documented things for a long time
 
 It's been a long time since i updated this file.  All of the things below dated 8/30/2026 happened between 12/17/2025 and 8/30/2026
