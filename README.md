@@ -16,7 +16,7 @@ The dev tooling uses Python 3.12, which uv can install automatically. The Python
 
 The checker scans Markdown files under `docs/` using GitHub Flavored Markdown. It checks local links and images, Markdown heading anchors, and explicit HTML anchors. Relative paths start from the containing document; paths beginning with `/` start from the repository root. Local destinations must exist and remain inside `docs/` after resolving symlinks. Fragments on non-Markdown files and directories are not checked. External URLs are skipped without network requests; `file:` URLs are rejected.
 
-Failures include the source file, destination, and reason. When the parser provides a source position, the reported line is the start of the containing Markdown block. The checker exits nonzero for broken links, destinations outside `docs/`, and input errors. It checks the whole documentation tree and has no exception list, so existing broken links also fail. The [Check documentation links workflow](.github/workflows/check-doc-links.yml) runs the tests and checker on pull requests, pushes, and manual runs.
+Failures include the source file, destination, and reason. When the parser provides a source position, the reported line is the start of the containing Markdown block. The checker exits nonzero for broken links, destinations outside `docs/`, and input errors. It checks the whole documentation tree and has no exception list, so existing broken links also fail. The [Check documentation links workflow](.github/workflows/check-doc-links.yml) runs the tests and checker on pull requests, pushes to `main`, and manual runs.
 
 ## Scheduled documentation updates
 
