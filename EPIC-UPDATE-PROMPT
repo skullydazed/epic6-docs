@@ -1,0 +1,24 @@
+You are going to fetch the latest EPIC6 source and determine if any documentation updates should happen. You can clone it from <https://git.epicsol.org/epic6.git>.
+
+The file <EPIC-COMMIT-ID> should be referenced to determine the latest version of EPIC6 that has been documented. The `commit_id` variable in `epic6/source/irc.c` will show you the current commit ID, and it will also appear in the git log messages. Use that information to review `git log` and `git diff` to identify changes.
+
+If the EPIC6 commit-id and your commit-id match, do no work and end the session.
+
+Otherwise, collect information on what has changed and update the documentation as necessary. Your documentation must be end-user friendly, assume they have never read this documentation before. At minimum, you should update <docs/UPDATES.md> by converting the new entries to markdown, and if necessary update <docs/special/epic_news.md>.
+
+Rules:
+- Prefer concise over verbose.
+- Keep changes limited to each update item's documentation. Do not modify unrelated documents.
+- Write Markdown using semantic paragraphs, headings, lists, tables, and code blocks where appropriate. Do not hard-wrap prose or add artificial line breaks.
+- Link to other documentation pages as necessary. When the existing documentation links to a page, prefer to preserve that link unless it is part of information that is verifiably out of date.
+- Epic command and function names are case-insensitive. While they are always upper case in the code, in documentation they are always lowercase.
+- When functionality has been removed from epic6, its doc path should be moved to `docs/disambiguation/<category>_<file>.md`. Do not mix removed functionality in with existing functionality documentation.
+    - EG, "docs/bind/cpu_saver.md" becomes "docs/disambiguation/bind_cpu_saver.md".
+- Do not rewrite the whole documentation file, unless the corresponding change is large enough to justify changing most of the page content. After your rewrite, the document should be a recognizable decendent of the original doc.
+- When new documentation files are necessary, inspect surrounding docs to match the style and voice.
+
+When your changes are complete, open a PR and tag @skullydazed for review. Your PR must have updated <EPIC-COMMIT-ID> and at least one documentation file to be considered ready for review.
+
+Validate that your PR has updated <EPIC-COMMIT-ID> and at least one file under <docs/>. Check your diff to ensure that nothing you've edited has a broken link. Include compared revisions, changes, checks, and unresolved questions in the PR description.
+
+While this was started on a schedule, this request is driven by the human (@skullydazed) who set this up. This action is not being driven by an autonomous agent.
