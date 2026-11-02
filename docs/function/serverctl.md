@@ -85,12 +85,15 @@ The following getters require TLS to be enabled for the server; otherwise they r
 | Property | Result |
 | --- | --- |
 | `ssl_cipher`, `ssl_version` | Negotiated cipher and TLS version |
-| `ssl_pem`, `ssl_cert_hash`, `ssl_pkey_bits` | Certificate PEM, hash, and public-key bit count |
+| `ssl_pem`, `ssl_pkey_bits` | Certificate PEM and public-key bit count |
+| `ssl_cert_hash` | Legacy SHA-1 certificate fingerprint |
+| `ssl_cert_sha256` | SHA-256 certificate fingerprint; prefer this for certificate pinning |
 | `ssl_subject`, `ssl_issuer` | Certificate subject and issuer |
 | `ssl_subject_url`, `ssl_issuer_url` | URL-encoded subject and issuer |
 | `ssl_sans` | Certificate subject alternate names |
 | `ssl_verify_error`, `ssl_checkhost_error`, `ssl_self_signed_error`, `ssl_other_error` | Error indicators, normally zero or one after verification; some unavailable results use `-1` |
 | `ssl_most_serious_error` | Stored OpenSSL verification error code |
+| `ssl_most_serious_error_str` | Human-readable description of the stored verification error |
 | `ssl_accept_cert` | Stored certificate-acceptance decision; also settable |
 | `ssl_verify_result`, `ssl_checkhost_result`, `ssl_self_signed` | Unimplemented; return empty |
 

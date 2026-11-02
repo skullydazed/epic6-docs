@@ -1,5 +1,13 @@
 # EPIC6-0.0.1
 
+## News 10/31/2026 [3108] -- TLS connections require TLS 1.2 or newer
+
+EPIC now uses TLS 1.2 as the minimum version for server connections. You can set [`ssl_min_version`](set/ssl_min_version.md) to `1.3` to require TLS 1.3; if the server cannot use that version, the connection fails. The setting applies to new connections.
+
+## News 10/31/2026 [3108] -- New TLS certificate details in `$serverctl()`
+
+`$serverctl(get <refnum> ssl_cert_sha256)` returns the connected server's SHA-256 certificate fingerprint. Use this instead of the legacy SHA-1 `ssl_cert_hash` when pinning a certificate. `$serverctl(get <refnum> ssl_most_serious_error_str)` returns a readable description of the most serious certificate verification error.
+
 ## News 10/31/2026 [3107] -- Fix channel syncing after a ZNC reconnect
 
 When a network behind ZNC reconnects while EPIC6 remains connected to ZNC, the client could keep stale channel state. Channels might then appear in the wrong window or fail to trigger expected hooks and styling. EPIC6 now replaces the old channel state when it receives a new `JOIN`, allowing channel syncing to recover.

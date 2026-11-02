@@ -10,7 +10,7 @@ Request a TLS connection with a server description such as:
 /SERVER irc.example.com:6697:type=irc-ssl
 ```
 
-Replace the example hostname with the server you intend to use. EPIC first establishes the TCP connection, then starts a nonblocking `SSL_connect()` handshake. Selecting port 6697 alone does not request TLS; the `IRC-SSL` connection type does. See [server](../command/server.md) for server-description syntax.
+Replace the example hostname with the server you intend to use. EPIC first establishes the TCP connection, then starts a nonblocking `SSL_connect()` handshake. Selecting port 6697 alone does not request TLS; the `IRC-SSL` connection type does. EPIC sends SNI for hostnames, but not IP addresses. By default, the handshake requires TLS 1.2 or newer; see [`ssl_min_version`](../set/ssl_min_version.md) to require TLS 1.3. See [server](../command/server.md) for server-description syntax.
 
 ## Step two: Complete the handshake
 
@@ -40,7 +40,7 @@ Before calling `ssl_connected()`, the server connection code initializes its `SS
 | `$3` | Public key length in bits. |
 | `$4` | Representative OpenSSL error code: 0 for no error, 18 for the depth-zero self-signed error, 62 for hostname mismatch, or another verification error code. |
 | `$5` | Negotiated TLS protocol version, such as `TLSv1.2` or `TLSv1.3`. |
-| `$6` | Certificate digest, currently SHA-1 as lowercase hexadecimal bytes separated by colons. |
+| `$6` | Legacy SHA-1 certificate digest as lowercase hexadecimal bytes separated by colons. |
 | `$7` | Hostname mismatch flag: 0 for no error, 1 for an error. |
 | `$8` | Depth-zero self-signed flag: 0 for no error, 1 for an error. |
 | `$9` | Other verification error flag: 0 for no error, 1 for an error. |
@@ -83,7 +83,8 @@ Use `$serverctl(GET <refnum> <item>)` to read certificate and connection metadat
 | --- | --- |
 | `SSL_CIPHER` | Negotiated cipher name. |
 | `SSL_PEM` | Peer certificate in PEM format. |
-| `SSL_CERT_HASH` | Certificate digest, currently SHA-1 with colon-separated hexadecimal bytes. |
+| `SSL_CERT_HASH` | Legacy SHA-1 certificate digest with colon-separated hexadecimal bytes. |
+| `SSL_CERT_SHA256` | SHA-256 certificate digest with colon-separated hexadecimal bytes; prefer this for certificate pinning. |
 | `SSL_PKEY_BITS` | Public key length in bits. |
 | `SSL_SUBJECT` | Certificate subject. |
 | `SSL_SUBJECT_URL` | URL-encoded certificate subject. |
@@ -95,6 +96,7 @@ Use `$serverctl(GET <refnum> <item>)` to read certificate and connection metadat
 | `SSL_SELF_SIGNED_ERROR` | Depth-zero self-signed flag: 0 or 1. |
 | `SSL_OTHER_ERROR` | Other verification error flag: 0 or 1. |
 | `SSL_MOST_SERIOUS_ERROR` | Representative OpenSSL verification error code, or 0 for no error. |
+| `SSL_MOST_SERIOUS_ERROR_STR` | Human-readable description of the representative verification error. |
 | `SSL_VERIFY_ERROR` | Any verification error flag: 0 or 1. |
 | `SSL_ACCEPT_CERT` | Current decision field: initially -1 in the early hook, then normally 0 or 1. |
 
@@ -120,13 +122,13 @@ After `SERVER_SSL_EVAL` returns, EPIC rejects the connection when `SSL_ACCEPT_CE
 
 ## SASL PLAIN authentication
 
-The supplied sasl script checks certificate verification separately before sending a PLAIN password. Accepting a TLS connection through `accept_invalid_ssl_cert` or a certificate hook does not by itself authorize PLAIN authentication. The script requires TLS and either `SSL_VERIFY_ERROR` equal to `0` or a matching optional certificate hash in the rule:
+The supplied sasl script checks certificate verification separately before sending a PLAIN password. Accepting a TLS connection through `accept_invalid_ssl_cert` or a certificate hook does not by itself authorize PLAIN authentication. The script requires TLS and either `SSL_VERIFY_ERROR` equal to `0` or a matching optional certificate fingerprint in the rule. Use the SHA-256 fingerprint; legacy SHA-1 fingerprints are still accepted:
 
 ```irc
 /sasl <server-pattern> PLAIN <username> <password> [<certificate-hash>]
 ```
 
-Read the connected server's hash with `/eval echo $serverctl(GET <refnum> SSL_CERT_HASH)`. A supplied hash permits a certificate with recorded verification errors when it matches that value. A cleanly verified certificate is accepted even when a supplied hash differs. This rule does not override the earlier connection-level certificate acceptance policy.
+Read the connected server's SHA-256 fingerprint with `/eval echo $serverctl(GET <refnum> SSL_CERT_SHA256)`. A supplied fingerprint permits a certificate with recorded verification errors when it matches that value. A cleanly verified certificate is accepted even when a supplied fingerprint differs. This rule does not override the earlier connection-level certificate acceptance policy.
 
 The script checks before requesting the SASL capability and again before sending credentials. If the check fails, it reports the refusal and continues the connection without SASL. These checks apply to the script's PLAIN mechanism; other mechanisms have their own requirements.
 
