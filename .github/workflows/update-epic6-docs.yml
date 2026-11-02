@@ -2,7 +2,7 @@ name: Update EPIC6 documentation
 
 on:
   schedule:
-    - cron: '0 0 * * 1'
+    - cron: '23 0 * * 1'
       timezone: America/Los_Angeles
   workflow_dispatch:
 
