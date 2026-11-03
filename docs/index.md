@@ -1,6 +1,8 @@
 # Welcome to EPIC6
 
-EPIC is a terminal IRC client descended from ircII, designed for interactive IRC use and scripting. Its aliases, hooks, functions, windows, and loadable scripts let you shape the experience. Start with [about EPIC](special/about_epic.md) for background or the [introduction](special/introduction.md) for basic use.
+EPIC is a terminal IRC client forked from ircII over 30 years ago. It focuses on old school irc users and scripters and those who just enjoy irc the way it used to be. It is mature, stable, and behaves just like ircII out of the box, but can be so much more with some configuration! Start with [about EPIC](special/about_epic.md) for background or the [introduction](special/introduction.md) for basic use.
+
+EPIC6 was forked from EPIC5 on 08/26/2024, and has been in active development since. It is a deliberate modernization of a mature, highly programmable IRC client, emphasizing architectural simplicity, scriptability, security, and long-term maintainability over historical compatibility and feature accumulation.
 
 ## Getting EPIC6
 
