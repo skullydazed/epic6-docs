@@ -1,5 +1,9 @@
 # EPIC6-0.0.1
 
+## News 11/07/2026 [3109] -- Numeric `010` no longer suggests a server switch
+
+EPIC no longer handles numeric `010` by creating a server entry and suggesting that you switch to it. The reply now follows the ordinary numeric display and hook path. See [Hooking server numerics](special/server_numerics.md) to customize numeric handling.
+
 ## News 10/31/2026 [3108] -- TLS connections require TLS 1.2 or newer
 
 EPIC now uses TLS 1.2 as the minimum version for server connections. You can set [`ssl_min_version`](set/ssl_min_version.md) to `1.3` to require TLS 1.3; if the server cannot use that version, the connection fails. The setting applies to new connections.
