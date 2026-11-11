@@ -4,6 +4,10 @@ This page covers EPIC6 development news and historical EPIC4/EPIC5 announcements
 
 ## EPIC6
 
+### 2026-11-07: Numeric `010` handling
+
+EPIC no longer automatically creates a server entry and suggests switching when it receives numeric `010`; the reply follows the ordinary numeric display and hook path. See [Hooking server numerics](server_numerics.md).
+
 ### 2026-10-30: Authentication checks and scripting fixes
 
 Upstream commit `70a655b6` (internal commit ID 3106) includes static-analysis fixes and these interface changes:
