@@ -31,13 +31,13 @@ Use the bundled SASL script for an IRC authentication exchange. A caller using t
 
 The generated message, `+` after successful server-signature verification, or the empty string on failure. Missing input or an unknown operation also returns empty. Missing credentials return empty. Unsupported server refnums and authentication-processing failures print diagnostics; `reset` silently does nothing for an unsupported refnum. Empty alone therefore does not distinguish reset, invalid syntax, and authentication failure.
 
-A successful signature check is not an IRC server's confirmation that authentication has completed; the script separately handles the server's success numeric.
+A successful signature check is not an IRC server's confirmation that authentication has completed; the script separately handles the server's success numeric. For SCRAM-SHA-512, the bundled script accepts the server's success reply only after the signature check succeeds. A missing or invalid server signature causes authentication to fail.
 
 ## Restrictions
 
 This built-in is always registered and uses the build's OpenSSL and libsodium dependencies. It implements SCRAM-SHA-512 without channel binding (`c=biws`). Its purported SASLPrep helper currently only copies strings: it does not normalize Unicode or escape special username characters. Username and password storage is limited to 255 bytes, with longer values silently truncated. Other exchange fields also have fixed-size buffers and can fail or truncate when oversized.
 
-[/xdebug scram](../command/xdebug.md) can log credentials and exchange details through this implementation's debugging calls.
+Treat [/xdebug scram](../command/xdebug.md) output as sensitive. The `begin` diagnostic redacts the plain-text password, but SCRAM exchange details are still logged.
 
 ## Examples
 

@@ -1,5 +1,9 @@
 # EPIC6-0.0.1
 
+## News 11/14/2026 [3111] -- Verify SCRAM server proof and bound `$hex()` widths
+
+The bundled `/load sasl` script now rejects SCRAM-SHA-512 authentication unless the server proves it knows the password; `/xdebug scram` also redacts the plain-text password in its `begin` diagnostic. `$hex()` accepts widths from 1 through 100; other widths return an empty string. `/userhost -count` values below 1 now default to 5. If EPIC still tracks a channel but has no window for it when a kick arrives, EPIC reports the problem and removes the channel instead of panicking. Log mangling now applies `no_control_log` to a nonempty per-log mask; with an empty per-log mask, a nonempty `mangle_logfiles` selection takes precedence, and `no_control_log` applies only when no global rules are selected. See [`$scrambox()`](function/scrambox.md), [`$hex()`](function/hex.md), [`userhost`](command/userhost.md), [`on kick`](on/kick.md), [`no_control_log`](set/no_control_log.md), and [`mangle_logfiles`](set/mangle_logfiles.md).
+
 ## News 11/07/2026 [3109] -- Numeric `010` no longer suggests a server switch
 
 EPIC no longer handles numeric `010` by creating a server entry and suggesting that you switch to it. The reply now follows the ordinary numeric display and hook path. See [Hooking server numerics](special/server_numerics.md) to customize numeric handling.

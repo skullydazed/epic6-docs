@@ -12,9 +12,9 @@ Default: `off`. With no argument, [set](../command/set.md) displays the current 
 
 Enables additional unprintable-character stripping during logfile processing, subject to the log's mangling selection. Turning it off removes this additional rule; other selected mangling rules still apply.
 
-The current implementation applies this setting only when a logging destination supplies a nonempty log-specific mangling mask. This includes per-window [log_mangle](../window/log_mangle.md) rules and selective [log](../command/log.md) objects with their own `mangle` rules. With `no_control_log` on, EPIC adds the `unprintable` rule to that mask for each write.
+When a destination supplies a nonempty log-specific mangling mask, this setting adds the `unprintable` rule to that mask for each write. This includes per-window [log_mangle](../window/log_mangle.md) rules and selective [log](../command/log.md) objects with their own `mangle` rules. If the log-specific mask is empty, a nonempty global [mangle_logfiles](mangle_logfiles.md) selection takes precedence; when that global selection is also empty, `no_control_log` selects `unprintable` by itself.
 
-When a destination's own mask is empty, the logging routine instead falls back to [mangle_logfiles](mangle_logfiles.md) and does not consult `no_control_log`. The global session [log](log.md) always uses this fallback path. Consequently, turning this setting on by itself does not strip controls from the global session log or from logs without nonempty overrides.
+The global session [log](log.md) uses the fallback path when its log-specific mask is empty. Turning this setting on strips controls from that log only when the global selection is empty; if `mangle_logfiles` has rules, those rules are used without adding `unprintable`.
 
 ## What is stripped
 
@@ -46,6 +46,6 @@ This policy applies to logs using the global fallback regardless of `no_control_
 ## Source references
 
 - `source/vars.c` and `include/config.h`: boolean registration and off default.
-- `source/log.c`: `add_to_log` adds `unprintable` only in the nonzero caller-mask branch, before rewriting.
+- `source/log.c`: `add_to_log` selects the caller mask, global fallback, or `no_control_log` fallback before rewriting.
 - `source/output.c`, `source/screen.c`, and `source/logfiles.c`: global, window, and selective-log callers supply their masks.
 - `source/screen.c`: `new_normalize_string` implements control-character, color, escape, and tab handling.
