@@ -23,7 +23,7 @@ Supported rules are `normalize` (alias `ansi`), `color`, `bold`, `blink`, `rever
 
 The global [log](log.md) uses this selection. Per-window logs and selective [log](../command/log.md) objects also use it when their own mangling mask is empty. A nonempty `/window log_mangle` or selective-log `mangle` selection replaces the global rules for that destination. Clearing an override with `none` restores the global fallback; it does not force unmangled logging while the global selection is nonempty.
 
-The current implementation adds [no_control_log](no_control_log.md)'s unprintable-character stripping only when the logging caller supplies a nonempty log-specific mask. It does not add that rule when falling back to this global selection.
+When a logging caller supplies a nonempty log-specific mask, [no_control_log](no_control_log.md) adds unprintable-character stripping to it. If that mask is empty, this global selection takes precedence; `no_control_log` selects `unprintable` by itself only when this global selection is also empty.
 
 Mangling precedes [log_rewrite](log_rewrite.md) or a log-specific rewrite. Text introduced by rewriting is not mangled again. A nonempty mangling mask invokes the shared normalizer, which also expands tabs and discards Unicode C1 control characters. With no effective mask, the logging routine copies the line without this pass. Log start/end markers are written directly and bypass it.
 
@@ -58,6 +58,6 @@ Disable global logfile mangling with `/set -mangle_logfiles`; nonempty log-speci
 ## Source references
 
 - `source/vars.c`: unset default, registration, and callback.
-- `source/log.c`: `add_to_log` chooses rules, applies mangling before rewriting, and writes records; start/end markers bypass this routine.
+- `source/log.c`: `add_to_log` chooses caller rules, the global fallback, or the `no_control_log` fallback, then applies mangling before rewriting and writes records; start/end markers bypass this routine.
 - `source/logfiles.c` and `source/window.c`: log-specific mangling selections.
 - `source/output.c` and `source/screen.c`: global and window logging callers; `parse_mangle` and `new_normalize_string` implement the rules.

@@ -4,6 +4,14 @@ This page covers EPIC6 development news and historical EPIC4/EPIC5 announcements
 
 ## EPIC6
 
+### 2026-11-14: Intentional behaviors and limitations (3110)
+
+Upstream recorded existing behaviors that are intentional rather than defects: permissive certificate defaults, the local helper connection race in `window create`, signal handlers that can act while the client is jammed, file permissions and build hardening that depend on the user or package maintainer, risks from extreme inputs, and acceptance of numerics that are not exactly three digits. See [UPDATES](../UPDATES.md) for user guidance and references.
+
+### 2026-11-14: SCRAM verification and bug fixes
+
+The bundled `sasl` script now requires a valid server signature before accepting SCRAM-SHA-512 authentication, and `/xdebug scram` redacts the plain-text password in its `begin` diagnostic. [`$hex()`](../function/hex.md) accepts widths from 1 through 100, and [`userhost -count`](../command/userhost.md) defaults to five when given a value below 1. EPIC also recovers from a kick for a channel without a window instead of panicking; see [on kick](../on/kick.md). See [UPDATES](../UPDATES.md) for the logfile mangling behavior change.
+
 ### 2026-11-07: Numeric `010` handling
 
 EPIC no longer automatically creates a server entry and suggests switching when it receives numeric `010`; the reply follows the ordinary numeric display and hook path. See [Hooking server numerics](server_numerics.md).
@@ -135,7 +143,8 @@ EPIC4 2.10.4, internal commit ID 778, was released February 11, 2014. Its change
 
 - Upstream commit `70a655b6` and [KNOWNBUGS](../KNOWNBUGS.md): October 30, 2026 changes, including authentication, regex consumers, command parsing, message splitting, and topline limits.
 - Upstream revision 3107: a new `JOIN` replaces stale channel state after the network behind a ZNC connection reconnects.
-- [UPDATES](../UPDATES.md): dated EPIC6 development announcements from August 2024 through October 2026.
+- Upstream revision 3111: SCRAM server-signature verification, `$hex()` width limits, USERHOST count defaults, KICK recovery, and logfile mangling behavior.
+- [UPDATES](../UPDATES.md): dated EPIC6 development announcements from August 2024 through November 2026.
 - Repository tag `epic5-2.0`, `source/irc.c`: version name, internal release date, and commit ID; tag commit `075087c1` records the release.
 - Repository commit `8390b7ef`, `source/irc.c` and `UPDATES`: EPIC5 1.1.10 release identity and contemporary encoding/function changes.
 - Repository commit `d0ac3ed1`, `source/irc.c`: EPIC5 1.1.8, release date `20140404`, and commit ID 1775.

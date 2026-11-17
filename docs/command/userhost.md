@@ -28,7 +28,7 @@ Callbacks receive their own argument context and local scope, rather than retain
 | Option | Effect |
 | --- | --- |
 | `-direct` | Bypass the cache and query the server. |
-| `-count number` | Change the number of nicknames per request from five. Use a positive count within the server's supported limit; the client does not validate it. |
+| `-count number` | Change the number of nicknames per request from five. Values below 1 default to 5; the client does not cap positive counts to the server's limit. |
 | `-extra variable` | Save the variable's current value and append it to callback or normal-output hook arguments. Supply its name, not its expanded value. |
 | `-cmd commands` | Use all remaining text as the callback body; put nicknames and other options before it. |
 | `-flush` | Discard requests still waiting to be sent on this server. Already outstanding requests are not canceled. |
