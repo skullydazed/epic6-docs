@@ -16,6 +16,7 @@ Rules:
     - EG, "docs/bind/cpu_saver.md" becomes "docs/disambiguation/bind_cpu_saver.md".
 - Do not rewrite the whole documentation file, unless the corresponding change is large enough to justify changing most of the page content. After your rewrite, the document should be a recognizable decendent of the original doc.
 - When new documentation files are necessary, inspect surrounding docs to match the style and voice.
+- The commit-ids are consecutive integers, there is one for each commit in the upstream tree. Ensure you document every commit between the last one documented and the latest one you've pulled.
 
 When your changes are complete, open a PR and tag @skullydazed for review. Your PR must have updated <EPIC-COMMIT-ID> and at least one documentation file to be considered ready for review.
 
