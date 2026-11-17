@@ -4,6 +4,10 @@ This page covers EPIC6 development news and historical EPIC4/EPIC5 announcements
 
 ## EPIC6
 
+### 2026-11-14: Intentional behaviors and limitations (3110)
+
+Upstream recorded existing behaviors that are intentional rather than defects: permissive certificate defaults, the local helper connection race in `window create`, signal handlers that can act while the client is jammed, file permissions and build hardening that depend on the user or package maintainer, risks from extreme inputs, and acceptance of numerics that are not exactly three digits. See [UPDATES](../UPDATES.md) for user guidance and references.
+
 ### 2026-11-14: SCRAM verification and bug fixes
 
 The bundled `sasl` script now requires a valid server signature before accepting SCRAM-SHA-512 authentication, and `/xdebug scram` redacts the plain-text password in its `begin` diagnostic. [`$hex()`](../function/hex.md) accepts widths from 1 through 100, and [`userhost -count`](../command/userhost.md) defaults to five when given a value below 1. EPIC also recovers from a kick for a channel without a window instead of panicking; see [on kick](../on/kick.md). See [UPDATES](../UPDATES.md) for the logfile mangling behavior change.
