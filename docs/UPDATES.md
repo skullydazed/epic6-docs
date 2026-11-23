@@ -1,5 +1,9 @@
 # EPIC6-0.0.1
 
+## News 11/21/2026 [3112–3117] -- Defensive fixes and cached server tokens
+
+Revisions 3112–3117 fix malformed-input, memory-safety, and state-handling bugs. To remove an individual cached ISUPPORT (`005`) token, use `$serverctl(set <refnum> 005 -<token>)`; setting `005 <token>` without a value keeps the token but gives it an empty value. Alias argument lists are limited to 31 named parameters; excess entries are ignored with a diagnostic. When EPIC still tracks your channel membership but has no window for it, `on kick` now runs before the membership is removed; EPIC still does not automatically rejoin. See [`$serverctl()`](function/serverctl.md), [`alias`](command/alias.md), and [`on kick`](on/kick.md).
+
 ## News 11/14/2026 [3111] -- Verify SCRAM server proof and bound `$hex()` widths
 
 The bundled `/load sasl` script now rejects SCRAM-SHA-512 authentication unless the server proves it knows the password; `/xdebug scram` also redacts the plain-text password in its `begin` diagnostic. `$hex()` accepts widths from 1 through 100; other widths return an empty string. `/userhost -count` values below 1 now default to 5. If EPIC still tracks a channel but has no window for it when a kick arrives, EPIC reports the problem and removes the channel instead of panicking. Log mangling now applies `no_control_log` to a nonempty per-log mask; with an empty per-log mask, a nonempty `mangle_logfiles` selection takes precedence, and `no_control_log` applies only when no global rules are selected. See [`$scrambox()`](function/scrambox.md), [`$hex()`](function/hex.md), [`userhost`](command/userhost.md), [`on kick`](on/kick.md), [`no_control_log`](set/no_control_log.md), and [`mangle_logfiles`](set/mangle_logfiles.md).

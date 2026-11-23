@@ -36,7 +36,7 @@ The hook runs before EPIC removes membership information. For another person's k
 
 For your own removal, EPIC temporarily makes the channel's owning window the global current window and directs output there. It restores the previous global current window before channel removal. This is an internal current-window change, not an input-focus selection. Other victims' kicks use normal channel routing. Both paths use the `kick` message level.
 
-If EPIC still has your channel membership record but has no associated window, it prints a diagnostic, removes the channel record, updates status, and returns without running this hook or attempting to rejoin. If EPIC does not believe you are on the channel and has no associated window, it prints a diagnostic and returns without this hook. The handler does not automatically rejoin. Any rejoin performed by a script is a new server request and is subject to channel rules.
+If EPIC still has your channel membership record but has no associated window, it prints a diagnostic and runs this hook in the kick context before removing the channel record and updating status. It does not attempt to rejoin. If EPIC does not believe you are on the channel and has no associated window, it prints a diagnostic and returns without running the hook. The handler does not automatically rejoin. Any rejoin performed by a script is a new server request and is subject to channel rules.
 
 ## Example
 
