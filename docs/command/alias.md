@@ -42,6 +42,8 @@ An optional parenthesized argument list assigns arguments to local variables. Fo
 
 Each named entry can have modifiers such as `default "fallback"`, `words 2`, `uwords 2`, `qwords 2`, or `dwords 2`. `uwords` uses whitespace-separated words; `qwords` groups double-quoted text and preserves its quotes; `dwords` groups double-quoted text and removes its quotes. `words` follows the client's `dword` debugging mode. Counts apply to entries consumed before the final catch-all variable. Default text is expanded when the alias is called. See [argument lists](../special/arglist.md) for the full word-parsing rules.
 
+An argument list can name at most 31 parameters. If a definition has more, EPIC prints a diagnostic and ignores the extra parameters and the rest of the list.
+
 Malformed parentheses, braces, missing bodies after an argument list, and text after a closing brace produce diagnostics. These checks do not reliably cancel registration: the handler can still store the remaining or truncated text. Correct the definition and inspect it with `/alias name` before using it.
 
 ## Local variables and return value

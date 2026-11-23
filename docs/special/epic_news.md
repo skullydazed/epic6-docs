@@ -4,6 +4,10 @@ This page covers EPIC6 development news and historical EPIC4/EPIC5 announcements
 
 ## EPIC6
 
+### 2026-11-21: Bug fixes and cached ISUPPORT tokens (3112–3117)
+
+Revisions 3112–3117 fix malformed-input, memory-safety, and state-handling bugs. `$serverctl(set <refnum> 005 -<token>)` removes a cached ISUPPORT token, and alias argument lists are limited to 31 parameters. The `on kick` hook also runs when EPIC still tracks your membership but has no associated window; EPIC removes the channel without automatically rejoining. See [UPDATES](../UPDATES.md) for details.
+
 ### 2026-11-14: Intentional behaviors and limitations (3110)
 
 Upstream recorded existing behaviors that are intentional rather than defects: permissive certificate defaults, the local helper connection race in `window create`, signal handlers that can act while the client is jammed, file permissions and build hardening that depend on the user or package maintainer, risks from extreme inputs, and acceptance of numerics that are not exactly three digits. See [UPDATES](../UPDATES.md) for user guidance and references.

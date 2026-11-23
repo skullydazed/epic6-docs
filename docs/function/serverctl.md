@@ -61,7 +61,7 @@ Description lookup prefers an open matching entry, then a closed entry, with asc
 | `isonlen` | Both | ISON request length budget in bytes, not number of nicknames; this setter does not enforce a minimum |
 | `maxison`, `maxuserhost` | Both | Limits concurrent dispatched requests; zero removes the limit, rather than rejecting queued commands |
 | `itsname`, `cookie`, `unique_id`, `userhost`, `version` | Both | Locally stored protocol server name, reconnection cookie, identifier, userhost, and version; setters do not send corresponding requests |
-| `005 <token>` | Both | Cached ISUPPORT token value; empty setter value stores an empty value, retaining the token |
+| `005 <token>` | Both | Cached ISUPPORT token value; an empty setter value keeps the token with an empty value; use `-<token>` to remove it |
 | `005s [pattern]` | Get | Cached ISUPPORT token names, optionally wildcard-filtered |
 | `connected` | Get | Whether an IRC protocol session is registered |
 | `open` | Get | Whether a server socket is open; distinct from registered |
@@ -101,7 +101,7 @@ The following getters require TLS to be enabled for the server; otherwise they r
 
 Getters return the selected string, integer, or list. Empty can mean unavailable data, invalid refnum/property, or a legitimate empty value.
 
-Most setters return `1`. Setters for `ssl`, `tls`, `unique_id`, `userhost`, `version`, `vhost`, `altname`, `altnames`, `realname`, and `default_realname` return empty even after changing state. `set ... 005` returns `1` for a nonempty value and `0` when storing an empty value. `umode` returns empty while open. An unknown `ssl_...` setter can return `1` without changing anything when TLS is enabled. A setter result does not confirm server acceptance of a request.
+Most setters return `1`. Setters for `ssl`, `tls`, `unique_id`, `userhost`, `version`, `vhost`, `altname`, `altnames`, `realname`, and `default_realname` return empty even after changing state. `set ... 005` returns `1` for a nonempty value and `0` when setting an empty value or removing a token. `umode` returns empty while open. An unknown `ssl_...` setter can return `1` without changing anything when TLS is enabled. A setter result does not confirm server acceptance of a request.
 
 ## Examples
 
@@ -112,5 +112,6 @@ Most setters return `1`. Setters for `ssl`, `tls`, `unique_id`, `userhost`, `ver
 | `$serverctl(gmatch EFnet)` | Refnums in matching server groups |
 | `$serverctl(set 1 ssl IRC-SSL)` | Configure TLS for server 1's next connection; returns empty |
 | `$serverctl(get -1 005 CHANTYPES)` | Current execution server's cached channel prefixes |
+| `$serverctl(set 1 005 -CHANTYPES)` | Remove the cached `CHANTYPES` token from server 1 |
 
 Implementation, dispatch, lookup, setters, and state table: `source/server.c`. Registration and wrapper: `source/functions.c`. TLS metadata: `source/ssl.c`. Queue handling: `source/who.c`. CAP negotiation: `source/parse.c`.
